@@ -1,0 +1,3580 @@
+('D:\\PyCharm Community Edition '
+ '2021.1.3\\pythonProject2\\build\\Test\\PYZ-00.pyz',
+ [('PIL',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FitsStubImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PyAccess',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\PyAccess.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\__future__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_bootsubprocess.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_compression.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\argparse.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ast.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\base64.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\bdb.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\bisect.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\bz2.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\calendar.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\cmd.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\codeop.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\colorsys.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\configparser.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('contourpy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\contourpy\\__init__.py',
+   'PYMODULE'),
+  ('contourpy._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\contourpy\\_version.py',
+   'PYMODULE'),
+  ('contourpy.chunk',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\contourpy\\chunk.py',
+   'PYMODULE'),
+  ('contourpy.enum_util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\contourpy\\enum_util.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\copy.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\csv.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('cycler',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\cycler.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\dataclasses.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\datetime.py',
+   'PYMODULE'),
+  ('dateutil',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\__init__.py',
+   'PYMODULE'),
+  ('dateutil._common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\_common.py',
+   'PYMODULE'),
+  ('dateutil._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\_version.py',
+   'PYMODULE'),
+  ('dateutil.easter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\easter.py',
+   'PYMODULE'),
+  ('dateutil.parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\parser\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.parser._parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\parser\\_parser.py',
+   'PYMODULE'),
+  ('dateutil.parser.isoparser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\parser\\isoparser.py',
+   'PYMODULE'),
+  ('dateutil.relativedelta',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\relativedelta.py',
+   'PYMODULE'),
+  ('dateutil.rrule',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\rrule.py',
+   'PYMODULE'),
+  ('dateutil.tz',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\tz\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.tz._common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\tz\\_common.py',
+   'PYMODULE'),
+  ('dateutil.tz._factories',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\tz\\_factories.py',
+   'PYMODULE'),
+  ('dateutil.tz.tz',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\tz\\tz.py',
+   'PYMODULE'),
+  ('dateutil.tz.win',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\tz\\win.py',
+   'PYMODULE'),
+  ('dateutil.zoneinfo',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\dateutil\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\decimal.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\difflib.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\dis.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\doctest.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\fractions.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\getopt.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\getpass.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\gettext.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\glob.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\gzip.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\hmac.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('imp',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\imp.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib._common',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\_common.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\metadata.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\resources.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('importlib_resources',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib_resources._adapters',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\_adapters.py',
+   'PYMODULE'),
+  ('importlib_resources._common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\_common.py',
+   'PYMODULE'),
+  ('importlib_resources._compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\_compat.py',
+   'PYMODULE'),
+  ('importlib_resources._itertools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\_itertools.py',
+   'PYMODULE'),
+  ('importlib_resources._legacy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib_resources.abc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\abc.py',
+   'PYMODULE'),
+  ('importlib_resources.readers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\importlib_resources\\readers.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\inspect.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('kiwisolver',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\kiwisolver\\__init__.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\lzma.py',
+   'PYMODULE'),
+  ('matplotlib',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib._afm',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_afm.py',
+   'PYMODULE'),
+  ('matplotlib._api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_api\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib._api.deprecation',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_api\\deprecation.py',
+   'PYMODULE'),
+  ('matplotlib._blocking_input',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_blocking_input.py',
+   'PYMODULE'),
+  ('matplotlib._cm',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_cm.py',
+   'PYMODULE'),
+  ('matplotlib._cm_listed',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_cm_listed.py',
+   'PYMODULE'),
+  ('matplotlib._color_data',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_color_data.py',
+   'PYMODULE'),
+  ('matplotlib._constrained_layout',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_constrained_layout.py',
+   'PYMODULE'),
+  ('matplotlib._docstring',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_docstring.py',
+   'PYMODULE'),
+  ('matplotlib._enums',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_enums.py',
+   'PYMODULE'),
+  ('matplotlib._fontconfig_pattern',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_fontconfig_pattern.py',
+   'PYMODULE'),
+  ('matplotlib._layoutgrid',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_layoutgrid.py',
+   'PYMODULE'),
+  ('matplotlib._mathtext',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_mathtext.py',
+   'PYMODULE'),
+  ('matplotlib._mathtext_data',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_mathtext_data.py',
+   'PYMODULE'),
+  ('matplotlib._pylab_helpers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_pylab_helpers.py',
+   'PYMODULE'),
+  ('matplotlib._text_helpers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_text_helpers.py',
+   'PYMODULE'),
+  ('matplotlib._tight_bbox',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_tight_bbox.py',
+   'PYMODULE'),
+  ('matplotlib._tight_layout',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_tight_layout.py',
+   'PYMODULE'),
+  ('matplotlib._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\_version.py',
+   'PYMODULE'),
+  ('matplotlib.artist',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\artist.py',
+   'PYMODULE'),
+  ('matplotlib.axes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\axes\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.axes._axes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\axes\\_axes.py',
+   'PYMODULE'),
+  ('matplotlib.axes._base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\axes\\_base.py',
+   'PYMODULE'),
+  ('matplotlib.axes._secondary_axes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\axes\\_secondary_axes.py',
+   'PYMODULE'),
+  ('matplotlib.axis',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\axis.py',
+   'PYMODULE'),
+  ('matplotlib.backend_bases',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backend_bases.py',
+   'PYMODULE'),
+  ('matplotlib.backend_managers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backend_managers.py',
+   'PYMODULE'),
+  ('matplotlib.backend_tools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backend_tools.py',
+   'PYMODULE'),
+  ('matplotlib.backends',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.backends._backend_tk',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\_backend_tk.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_agg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\backend_agg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_tkagg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\backend_tkagg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_webagg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\backend_webagg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_webagg_core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\backends\\backend_webagg_core.py',
+   'PYMODULE'),
+  ('matplotlib.bezier',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\bezier.py',
+   'PYMODULE'),
+  ('matplotlib.category',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\category.py',
+   'PYMODULE'),
+  ('matplotlib.cbook',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\cbook\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.cm',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\cm.py',
+   'PYMODULE'),
+  ('matplotlib.collections',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\collections.py',
+   'PYMODULE'),
+  ('matplotlib.colorbar',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\colorbar.py',
+   'PYMODULE'),
+  ('matplotlib.colors',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\colors.py',
+   'PYMODULE'),
+  ('matplotlib.container',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\container.py',
+   'PYMODULE'),
+  ('matplotlib.contour',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\contour.py',
+   'PYMODULE'),
+  ('matplotlib.dates',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\dates.py',
+   'PYMODULE'),
+  ('matplotlib.dviread',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\dviread.py',
+   'PYMODULE'),
+  ('matplotlib.figure',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\figure.py',
+   'PYMODULE'),
+  ('matplotlib.font_manager',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\font_manager.py',
+   'PYMODULE'),
+  ('matplotlib.gridspec',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\gridspec.py',
+   'PYMODULE'),
+  ('matplotlib.hatch',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\hatch.py',
+   'PYMODULE'),
+  ('matplotlib.image',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\image.py',
+   'PYMODULE'),
+  ('matplotlib.layout_engine',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\layout_engine.py',
+   'PYMODULE'),
+  ('matplotlib.legend',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\legend.py',
+   'PYMODULE'),
+  ('matplotlib.legend_handler',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\legend_handler.py',
+   'PYMODULE'),
+  ('matplotlib.lines',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\lines.py',
+   'PYMODULE'),
+  ('matplotlib.markers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\markers.py',
+   'PYMODULE'),
+  ('matplotlib.mathtext',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\mathtext.py',
+   'PYMODULE'),
+  ('matplotlib.mlab',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\mlab.py',
+   'PYMODULE'),
+  ('matplotlib.offsetbox',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\offsetbox.py',
+   'PYMODULE'),
+  ('matplotlib.patches',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\patches.py',
+   'PYMODULE'),
+  ('matplotlib.path',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\path.py',
+   'PYMODULE'),
+  ('matplotlib.patheffects',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\patheffects.py',
+   'PYMODULE'),
+  ('matplotlib.projections',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\projections\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.projections.geo',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\projections\\geo.py',
+   'PYMODULE'),
+  ('matplotlib.projections.polar',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\projections\\polar.py',
+   'PYMODULE'),
+  ('matplotlib.pylab',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\pylab.py',
+   'PYMODULE'),
+  ('matplotlib.pyplot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\pyplot.py',
+   'PYMODULE'),
+  ('matplotlib.quiver',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\quiver.py',
+   'PYMODULE'),
+  ('matplotlib.rcsetup',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\rcsetup.py',
+   'PYMODULE'),
+  ('matplotlib.scale',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\scale.py',
+   'PYMODULE'),
+  ('matplotlib.spines',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\spines.py',
+   'PYMODULE'),
+  ('matplotlib.stackplot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\stackplot.py',
+   'PYMODULE'),
+  ('matplotlib.streamplot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\streamplot.py',
+   'PYMODULE'),
+  ('matplotlib.style',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\style\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.style.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\style\\core.py',
+   'PYMODULE'),
+  ('matplotlib.table',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\table.py',
+   'PYMODULE'),
+  ('matplotlib.texmanager',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\texmanager.py',
+   'PYMODULE'),
+  ('matplotlib.text',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\text.py',
+   'PYMODULE'),
+  ('matplotlib.textpath',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\textpath.py',
+   'PYMODULE'),
+  ('matplotlib.ticker',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\ticker.py',
+   'PYMODULE'),
+  ('matplotlib.transforms',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\transforms.py',
+   'PYMODULE'),
+  ('matplotlib.tri',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triangulation',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_triangulation.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tricontour',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_tricontour.py',
+   'PYMODULE'),
+  ('matplotlib.tri._trifinder',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_trifinder.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triinterpolate',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_triinterpolate.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tripcolor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_tripcolor.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triplot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_triplot.py',
+   'PYMODULE'),
+  ('matplotlib.tri._trirefine',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_trirefine.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tritools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\tri\\_tritools.py',
+   'PYMODULE'),
+  ('matplotlib.units',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\units.py',
+   'PYMODULE'),
+  ('matplotlib.widgets',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\matplotlib\\widgets.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('mpl_toolkits',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\__init__.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\mplot3d\\__init__.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.art3d',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\mplot3d\\art3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.axes3d',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\mplot3d\\axes3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.axis3d',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\mplot3d\\axis3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.proj3d',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\mpl_toolkits\\mplot3d\\proj3d.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\netrc.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\numbers.py',
+   'PYMODULE'),
+  ('numpy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._generic_alias',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_generic_alias.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\_version.py',
+   'PYMODULE'),
+  ('numpy.array_api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\__init__.py',
+   'PYMODULE'),
+  ('numpy.array_api._array_object',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_array_object.py',
+   'PYMODULE'),
+  ('numpy.array_api._constants',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_constants.py',
+   'PYMODULE'),
+  ('numpy.array_api._creation_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_creation_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._data_type_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_data_type_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._dtypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_dtypes.py',
+   'PYMODULE'),
+  ('numpy.array_api._elementwise_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_elementwise_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._manipulation_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_manipulation_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._searching_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_searching_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._set_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_set_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._sorting_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_sorting_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._statistical_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_statistical_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api._typing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_typing.py',
+   'PYMODULE'),
+  ('numpy.array_api._utility_functions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\_utility_functions.py',
+   'PYMODULE'),
+  ('numpy.array_api.linalg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\array_api\\linalg.py',
+   'PYMODULE'),
+  ('numpy.compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\compat\\__init__.py',
+   'PYMODULE'),
+  ('numpy.compat._inspect',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\compat\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.compat.py3k',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\compat\\py3k.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._add_newdocs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy.core._add_newdocs_scalars',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy.core._asarray',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy.core._dtype',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy.core._dtype_ctypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy.core._exceptions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy.core._internal',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_internal.py',
+   'PYMODULE'),
+  ('numpy.core._machar',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_machar.py',
+   'PYMODULE'),
+  ('numpy.core._methods',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_methods.py',
+   'PYMODULE'),
+  ('numpy.core._string_helpers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy.core._type_aliases',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy.core._ufunc_config',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy.core.arrayprint',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy.core.defchararray',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy.core.einsumfunc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy.core.fromnumeric',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy.core.function_base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\function_base.py',
+   'PYMODULE'),
+  ('numpy.core.getlimits',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy.core.memmap',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\memmap.py',
+   'PYMODULE'),
+  ('numpy.core.multiarray',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy.core.numeric',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\numeric.py',
+   'PYMODULE'),
+  ('numpy.core.numerictypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy.core.overrides',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\overrides.py',
+   'PYMODULE'),
+  ('numpy.core.records',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\records.py',
+   'PYMODULE'),
+  ('numpy.core.shape_base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.core.umath',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\core\\umath.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.distutils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('numpy.distutils.cpuinfo',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\distutils\\cpuinfo.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.arraypad',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\arraypad.py',
+   'PYMODULE'),
+  ('numpy.lib.arraysetops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\arraysetops.py',
+   'PYMODULE'),
+  ('numpy.lib.arrayterator',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\arrayterator.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.function_base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\function_base.py',
+   'PYMODULE'),
+  ('numpy.lib.histograms',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\histograms.py',
+   'PYMODULE'),
+  ('numpy.lib.index_tricks',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\index_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.nanfunctions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\nanfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.polynomial',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.shape_base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.twodim_base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\twodim_base.py',
+   'PYMODULE'),
+  ('numpy.lib.type_check',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\type_check.py',
+   'PYMODULE'),
+  ('numpy.lib.ufunclike',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\ufunclike.py',
+   'PYMODULE'),
+  ('numpy.lib.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\lib\\utils.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.decorators',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\decorators.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.noseclasses',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\noseclasses.py',
+   'PYMODULE'),
+  ('numpy.testing._private.nosetester',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\nosetester.py',
+   'PYMODULE'),
+  ('numpy.testing._private.parameterized',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\parameterized.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\opcode.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\optparse.py',
+   'PYMODULE'),
+  ('packaging',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._elffile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('packaging._manylinux',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('packaging._musllinux',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('packaging._parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging._tokenizer',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('packaging.markers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\markers.py',
+   'PYMODULE'),
+  ('packaging.metadata',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\metadata.py',
+   'PYMODULE'),
+  ('packaging.requirements',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('packaging.specifiers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('packaging.tags',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\tags.py',
+   'PYMODULE'),
+  ('packaging.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\utils.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('pandas',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_config\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config.config',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_config\\config.py',
+   'PYMODULE'),
+  ('pandas._config.dates',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_config\\dates.py',
+   'PYMODULE'),
+  ('pandas._config.display',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_config\\display.py',
+   'PYMODULE'),
+  ('pandas._config.localization',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_config\\localization.py',
+   'PYMODULE'),
+  ('pandas._libs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_libs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.window',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing._io',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\_io.py',
+   'PYMODULE'),
+  ('pandas._testing._random',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\_random.py',
+   'PYMODULE'),
+  ('pandas._testing._warnings',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\_warnings.py',
+   'PYMODULE'),
+  ('pandas._testing.asserters',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\asserters.py',
+   'PYMODULE'),
+  ('pandas._testing.compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\compat.py',
+   'PYMODULE'),
+  ('pandas._testing.contexts',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_testing\\contexts.py',
+   'PYMODULE'),
+  ('pandas._typing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_typing.py',
+   'PYMODULE'),
+  ('pandas._version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\_version.py',
+   'PYMODULE'),
+  ('pandas.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\api\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.extensions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\api\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.indexers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\api\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.interchange',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\api\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.types',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\api\\types\\__init__.py',
+   'PYMODULE'),
+  ('pandas.arrays',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat._constants',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\_constants.py',
+   'PYMODULE'),
+  ('pandas.compat._optional',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\_optional.py',
+   'PYMODULE'),
+  ('pandas.compat.compressors',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\compressors.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy.function',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\numpy\\function.py',
+   'PYMODULE'),
+  ('pandas.compat.pickle_compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\pickle_compat.py',
+   'PYMODULE'),
+  ('pandas.compat.pyarrow',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\compat\\pyarrow.py',
+   'PYMODULE'),
+  ('pandas.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.executor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\executor.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.mean_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\mean_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.min_max_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\min_max_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.shared',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\shared.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.sum_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\sum_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.var_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\_numba\\kernels\\var_.py',
+   'PYMODULE'),
+  ('pandas.core.accessor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.algorithms',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\algorithms.py',
+   'PYMODULE'),
+  ('pandas.core.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\api.py',
+   'PYMODULE'),
+  ('pandas.core.apply',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\apply.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.datetimelike_accumulations',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\datetimelike_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_accumulations',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\masked_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_reductions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\masked_reductions.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.putmask',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\putmask.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.quantile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\quantile.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.replace',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\replace.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.take',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\take.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.transforms',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\array_algos\\transforms.py',
+   'PYMODULE'),
+  ('pandas.core.arraylike',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arraylike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._mixins',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._ranges',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\_ranges.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\arrow\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow._arrow_utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\arrow\\_arrow_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.array',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\arrow\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.dtype',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\arrow\\dtype.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.extension_types',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\arrow\\extension_types.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\base.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.boolean',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\boolean.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.categorical',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimelike',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.floating',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\floating.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.integer',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\integer.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.interval',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.masked',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\masked.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numeric',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numpy_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\numpy_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.period',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\period.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.accessor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\sparse\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.array',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\sparse\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.dtype',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\sparse\\dtype.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.scipy_sparse',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\sparse\\scipy_sparse.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\string_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_arrow',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\string_arrow.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.timedeltas',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\arrays\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\base.py',
+   'PYMODULE'),
+  ('pandas.core.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.computation.align',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\align.py',
+   'PYMODULE'),
+  ('pandas.core.computation.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\api.py',
+   'PYMODULE'),
+  ('pandas.core.computation.check',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\check.py',
+   'PYMODULE'),
+  ('pandas.core.computation.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation.engines',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\engines.py',
+   'PYMODULE'),
+  ('pandas.core.computation.eval',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\eval.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expr',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\expr.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expressions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\expressions.py',
+   'PYMODULE'),
+  ('pandas.core.computation.ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.computation.parsing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\parsing.py',
+   'PYMODULE'),
+  ('pandas.core.computation.pytables',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\pytables.py',
+   'PYMODULE'),
+  ('pandas.core.computation.scope',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\computation\\scope.py',
+   'PYMODULE'),
+  ('pandas.core.config_init',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\config_init.py',
+   'PYMODULE'),
+  ('pandas.core.construction',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.astype',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\astype.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.cast',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\cast.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\common.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.concat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.dtypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\dtypes.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.generic',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.inference',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\inference.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.missing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\dtypes\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.flags',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\flags.py',
+   'PYMODULE'),
+  ('pandas.core.frame',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\frame.py',
+   'PYMODULE'),
+  ('pandas.core.generic',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\base.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.categorical',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.generic',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.groupby',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\groupby.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.grouper',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\grouper.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.indexing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.numba_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\groupby\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.indexers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.objects',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexers\\objects.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexers\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.indexes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.accessors',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.category',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\category.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimelike',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.extension',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\extension.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.frozen',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\frozen.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.interval',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.multi',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\multi.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.period',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\period.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.range',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\range.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.timedeltas',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexes\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.indexing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.interchange',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.buffer',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\buffer.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.column',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\column.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe_protocol',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\dataframe_protocol.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.from_dataframe',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\from_dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\interchange\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.internals',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.internals.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\api.py',
+   'PYMODULE'),
+  ('pandas.core.internals.array_manager',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\array_manager.py',
+   'PYMODULE'),
+  ('pandas.core.internals.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\base.py',
+   'PYMODULE'),
+  ('pandas.core.internals.blocks',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\blocks.py',
+   'PYMODULE'),
+  ('pandas.core.internals.concat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.internals.construction',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.internals.managers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\managers.py',
+   'PYMODULE'),
+  ('pandas.core.internals.ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\internals\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.methods',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\methods\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.methods.describe',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\methods\\describe.py',
+   'PYMODULE'),
+  ('pandas.core.methods.selectn',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\methods\\selectn.py',
+   'PYMODULE'),
+  ('pandas.core.methods.to_dict',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\methods\\to_dict.py',
+   'PYMODULE'),
+  ('pandas.core.missing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.nanops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\nanops.py',
+   'PYMODULE'),
+  ('pandas.core.ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.ops.array_ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\array_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\common.py',
+   'PYMODULE'),
+  ('pandas.core.ops.dispatch',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\dispatch.py',
+   'PYMODULE'),
+  ('pandas.core.ops.docstrings',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\docstrings.py',
+   'PYMODULE'),
+  ('pandas.core.ops.invalid',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\invalid.py',
+   'PYMODULE'),
+  ('pandas.core.ops.mask_ops',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\mask_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.methods',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\methods.py',
+   'PYMODULE'),
+  ('pandas.core.ops.missing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\ops\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.resample',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\resample.py',
+   'PYMODULE'),
+  ('pandas.core.reshape',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\api.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.concat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.encoding',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\encoding.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.melt',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\melt.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.merge',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\merge.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.pivot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\pivot.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.reshape',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\reshape.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.tile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\tile.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\reshape\\util.py',
+   'PYMODULE'),
+  ('pandas.core.roperator',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\roperator.py',
+   'PYMODULE'),
+  ('pandas.core.sample',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\sample.py',
+   'PYMODULE'),
+  ('pandas.core.series',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\series.py',
+   'PYMODULE'),
+  ('pandas.core.shared_docs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\shared_docs.py',
+   'PYMODULE'),
+  ('pandas.core.sorting',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\sorting.py',
+   'PYMODULE'),
+  ('pandas.core.strings',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\strings\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.strings.accessor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\strings\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.strings.base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\strings\\base.py',
+   'PYMODULE'),
+  ('pandas.core.strings.object_array',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\strings\\object_array.py',
+   'PYMODULE'),
+  ('pandas.core.tools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\tools\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.tools.datetimes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\tools\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.tools.numeric',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\tools\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.tools.timedeltas',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\tools\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.tools.times',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\tools\\times.py',
+   'PYMODULE'),
+  ('pandas.core.util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.util.hashing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\util\\hashing.py',
+   'PYMODULE'),
+  ('pandas.core.util.numba_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\util\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.window.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\common.py',
+   'PYMODULE'),
+  ('pandas.core.window.doc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\doc.py',
+   'PYMODULE'),
+  ('pandas.core.window.ewm',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\ewm.py',
+   'PYMODULE'),
+  ('pandas.core.window.expanding',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\expanding.py',
+   'PYMODULE'),
+  ('pandas.core.window.numba_',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window.online',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\online.py',
+   'PYMODULE'),
+  ('pandas.core.window.rolling',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\core\\window\\rolling.py',
+   'PYMODULE'),
+  ('pandas.errors',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\errors\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io._util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\api.py',
+   'PYMODULE'),
+  ('pandas.io.clipboard',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.clipboards',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\clipboards.py',
+   'PYMODULE'),
+  ('pandas.io.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\common.py',
+   'PYMODULE'),
+  ('pandas.io.excel',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.excel._base',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_base.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odfreader',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_odfreader.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odswriter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_odswriter.py',
+   'PYMODULE'),
+  ('pandas.io.excel._openpyxl',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('pandas.io.excel._pyxlsb',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_pyxlsb.py',
+   'PYMODULE'),
+  ('pandas.io.excel._util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlrd',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_xlrd.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlsxwriter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\excel\\_xlsxwriter.py',
+   'PYMODULE'),
+  ('pandas.io.feather_format',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\feather_format.py',
+   'PYMODULE'),
+  ('pandas.io.formats',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.formats._color_data',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\_color_data.py',
+   'PYMODULE'),
+  ('pandas.io.formats.console',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\console.py',
+   'PYMODULE'),
+  ('pandas.io.formats.css',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\css.py',
+   'PYMODULE'),
+  ('pandas.io.formats.csvs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\csvs.py',
+   'PYMODULE'),
+  ('pandas.io.formats.excel',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\excel.py',
+   'PYMODULE'),
+  ('pandas.io.formats.format',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\format.py',
+   'PYMODULE'),
+  ('pandas.io.formats.html',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\html.py',
+   'PYMODULE'),
+  ('pandas.io.formats.info',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\info.py',
+   'PYMODULE'),
+  ('pandas.io.formats.latex',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\latex.py',
+   'PYMODULE'),
+  ('pandas.io.formats.printing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\printing.py',
+   'PYMODULE'),
+  ('pandas.io.formats.string',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\string.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\style.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style_render',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\style_render.py',
+   'PYMODULE'),
+  ('pandas.io.formats.xml',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\formats\\xml.py',
+   'PYMODULE'),
+  ('pandas.io.gbq',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\gbq.py',
+   'PYMODULE'),
+  ('pandas.io.html',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\html.py',
+   'PYMODULE'),
+  ('pandas.io.json',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\json\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.json._json',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\json\\_json.py',
+   'PYMODULE'),
+  ('pandas.io.json._normalize',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\json\\_normalize.py',
+   'PYMODULE'),
+  ('pandas.io.json._table_schema',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\json\\_table_schema.py',
+   'PYMODULE'),
+  ('pandas.io.orc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\orc.py',
+   'PYMODULE'),
+  ('pandas.io.parquet',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parquet.py',
+   'PYMODULE'),
+  ('pandas.io.parsers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.arrow_parser_wrapper',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\arrow_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.base_parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\base_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.c_parser_wrapper',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.python_parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\python_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.readers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\parsers\\readers.py',
+   'PYMODULE'),
+  ('pandas.io.pickle',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\pickle.py',
+   'PYMODULE'),
+  ('pandas.io.pytables',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\pytables.py',
+   'PYMODULE'),
+  ('pandas.io.sas',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sas\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas7bdat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sas\\sas7bdat.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_constants',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sas\\sas_constants.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_xport',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sas\\sas_xport.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sasreader',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sas\\sasreader.py',
+   'PYMODULE'),
+  ('pandas.io.spss',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\spss.py',
+   'PYMODULE'),
+  ('pandas.io.sql',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\sql.py',
+   'PYMODULE'),
+  ('pandas.io.stata',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\stata.py',
+   'PYMODULE'),
+  ('pandas.io.xml',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\io\\xml.py',
+   'PYMODULE'),
+  ('pandas.plotting',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_core.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.boxplot',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\boxplot.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.converter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\converter.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\core.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.groupby',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\groupby.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.hist',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\hist.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.misc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\misc.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.style',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\style.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.timeseries',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\timeseries.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.tools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_matplotlib\\tools.py',
+   'PYMODULE'),
+  ('pandas.plotting._misc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\plotting\\_misc.py',
+   'PYMODULE'),
+  ('pandas.testing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\testing.py',
+   'PYMODULE'),
+  ('pandas.tseries',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\tseries\\__init__.py',
+   'PYMODULE'),
+  ('pandas.tseries.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\tseries\\api.py',
+   'PYMODULE'),
+  ('pandas.tseries.frequencies',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\tseries\\frequencies.py',
+   'PYMODULE'),
+  ('pandas.tseries.offsets',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\tseries\\offsets.py',
+   'PYMODULE'),
+  ('pandas.util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.util._decorators',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._exceptions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_exceptions.py',
+   'PYMODULE'),
+  ('pandas.util._print_versions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_print_versions.py',
+   'PYMODULE'),
+  ('pandas.util._str_methods',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_str_methods.py',
+   'PYMODULE'),
+  ('pandas.util._tester',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_tester.py',
+   'PYMODULE'),
+  ('pandas.util._validators',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\_validators.py',
+   'PYMODULE'),
+  ('pandas.util.version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pandas\\util\\version\\__init__.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pdb.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pickle.py',
+   'PYMODULE'),
+  ('pkg_resources',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._adapters',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_adapters.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_common.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._itertools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_itertools.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources._legacy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\_legacy.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.abc',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\abc.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.readers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\readers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.importlib_resources.simple',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\importlib_resources\\simple.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.context',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\context.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.functools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\functools.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.jaraco.text',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\jaraco\\text\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools.more',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\more.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.more_itertools.recipes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\more_itertools\\recipes.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._elffile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._manylinux',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._musllinux',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._parser',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._tokenizer',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.tags',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.__main__',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\__main__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.android',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\android.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.api',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\api.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.macos',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\macos.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.unix',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\unix.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.version',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.platformdirs.windows',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\platformdirs\\windows.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.typing_extensions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\typing_extensions.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.zipp',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\zipp.py',
+   'PYMODULE'),
+  ('pkg_resources.extern',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pkg_resources\\extern\\__init__.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\platform.py',
+   'PYMODULE'),
+  ('plistlib',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pprint.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pydoc.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pyparsing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\__init__.py',
+   'PYMODULE'),
+  ('pyparsing.actions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\actions.py',
+   'PYMODULE'),
+  ('pyparsing.common',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\common.py',
+   'PYMODULE'),
+  ('pyparsing.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\core.py',
+   'PYMODULE'),
+  ('pyparsing.diagram',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\diagram\\__init__.py',
+   'PYMODULE'),
+  ('pyparsing.exceptions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\exceptions.py',
+   'PYMODULE'),
+  ('pyparsing.helpers',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\helpers.py',
+   'PYMODULE'),
+  ('pyparsing.results',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\results.py',
+   'PYMODULE'),
+  ('pyparsing.testing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\testing.py',
+   'PYMODULE'),
+  ('pyparsing.unicode',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\unicode.py',
+   'PYMODULE'),
+  ('pyparsing.util',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pyparsing\\util.py',
+   'PYMODULE'),
+  ('pytz',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pytz\\__init__.py',
+   'PYMODULE'),
+  ('pytz.exceptions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pytz\\exceptions.py',
+   'PYMODULE'),
+  ('pytz.lazy',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pytz\\lazy.py',
+   'PYMODULE'),
+  ('pytz.tzfile',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pytz\\tzfile.py',
+   'PYMODULE'),
+  ('pytz.tzinfo',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\pytz\\tzinfo.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\queue.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\quopri.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\random.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\runpy.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\secrets.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\selectors.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\shlex.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\shutil.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\signal.py',
+   'PYMODULE'),
+  ('six',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\six.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\socket.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('sqlite3',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\__init__.py',
+   'PYMODULE'),
+  ('sqlite3.dbapi2',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dbapi2.py',
+   'PYMODULE'),
+  ('sqlite3.dump',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sqlite3\\dump.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\ssl.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\statistics.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\string.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\threading.py',
+   'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\__init__.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.dialog',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\dialog.py',
+   'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.font',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\font.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\tty.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\typing.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest._log',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\_log.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('uu',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\uu.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\uuid.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('xlsxwriter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\__init__.py',
+   'PYMODULE'),
+  ('xlsxwriter.app',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\app.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_area',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_area.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_bar',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_bar.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_column',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_column.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_doughnut',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_doughnut.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_line',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_line.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_pie',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_pie.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_radar',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_radar.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_scatter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_scatter.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_stock',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chart_stock.py',
+   'PYMODULE'),
+  ('xlsxwriter.chartsheet',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\chartsheet.py',
+   'PYMODULE'),
+  ('xlsxwriter.comments',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\comments.py',
+   'PYMODULE'),
+  ('xlsxwriter.contenttypes',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\contenttypes.py',
+   'PYMODULE'),
+  ('xlsxwriter.core',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\core.py',
+   'PYMODULE'),
+  ('xlsxwriter.custom',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\custom.py',
+   'PYMODULE'),
+  ('xlsxwriter.drawing',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\drawing.py',
+   'PYMODULE'),
+  ('xlsxwriter.exceptions',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\exceptions.py',
+   'PYMODULE'),
+  ('xlsxwriter.format',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\format.py',
+   'PYMODULE'),
+  ('xlsxwriter.metadata',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\metadata.py',
+   'PYMODULE'),
+  ('xlsxwriter.packager',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\packager.py',
+   'PYMODULE'),
+  ('xlsxwriter.relationships',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\relationships.py',
+   'PYMODULE'),
+  ('xlsxwriter.shape',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\shape.py',
+   'PYMODULE'),
+  ('xlsxwriter.sharedstrings',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\sharedstrings.py',
+   'PYMODULE'),
+  ('xlsxwriter.styles',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\styles.py',
+   'PYMODULE'),
+  ('xlsxwriter.table',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\table.py',
+   'PYMODULE'),
+  ('xlsxwriter.theme',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\theme.py',
+   'PYMODULE'),
+  ('xlsxwriter.utility',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\utility.py',
+   'PYMODULE'),
+  ('xlsxwriter.vml',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\vml.py',
+   'PYMODULE'),
+  ('xlsxwriter.workbook',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\workbook.py',
+   'PYMODULE'),
+  ('xlsxwriter.worksheet',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\worksheet.py',
+   'PYMODULE'),
+  ('xlsxwriter.xmlwriter',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\xlsxwriter\\xmlwriter.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\lib\\zipimport.py',
+   'PYMODULE'),
+  ('zipp',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\zipp\\__init__.py',
+   'PYMODULE'),
+  ('zipp.py310compat',
+   'd:\\pycharm community edition '
+   '2021.1.3\\pythonproject2\\venv\\lib\\site-packages\\zipp\\py310compat.py',
+   'PYMODULE')])
