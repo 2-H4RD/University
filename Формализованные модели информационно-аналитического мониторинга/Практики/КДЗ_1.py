@@ -5,22 +5,22 @@ import os
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
-# 1️⃣ Устанавливаем параметр n
+#Устанавливаем параметр n
 n = 5
 
-# 2️⃣ Определяем границы для f1 и f2
+#Определяем границы для f1 и f2
 f1_min, f1_max = n / 2, 3 * n
 f2_min, f2_max = n / 2, 2 * n
 
 
-# 3️⃣ Функция проверки, лежит ли точка в заданной области
+#Функция проверки, лежит ли точка в заданной области
 def is_inside_region(f1, f2):
     term1 = ((f1 - n) ** 2) / (4 * n ** 2)
     term2 = ((f2 - n) ** 2) / (n ** 2)
     return (term1 + term2) <= 1
 
 
-# 4️⃣ Генерируем 200 случайных точек
+#Генерируем 200 случайных точек
 num_points = 200
 points = []
 statuses = []
@@ -35,7 +35,7 @@ while len(points) < num_points:
 points = np.array(points)
 statuses = np.array(statuses, dtype=object)
 
-# 5️⃣ Создаем DataFrame для Excel
+#Создаем DataFrame для Excel
 df = pd.DataFrame({
     "номер точки": np.arange(1, len(points) + 1),
     "f1": points[:, 0],
@@ -46,7 +46,6 @@ df = pd.DataFrame({
 # Алгоритм исключения заведомо не оптимальных точек
 # ---------------------------------------------
 
-# 6️⃣ Алгоритм исключения неэффективных точек
 i = 0
 step = 1  # Шаг алгоритма
 while i < len(points):
@@ -78,7 +77,7 @@ while i < len(points):
     i += 1
     step += 1
 
-# 7️⃣ Определение финальных Парето-оптимальных точек
+#Определение финальных Парето-оптимальных точек
 final_pareto_points = set()
 for idx in range(len(points)):
     row_statuses = df.iloc[idx, 3:].values  # Берем только статусы из шагов
@@ -91,7 +90,7 @@ for idx in range(len(points)):
     if last_plus_index is not None and all(s != "-" for s in row_statuses[last_plus_index + 1:]):
         final_pareto_points.add(idx)
 
-# 8️⃣ Сохранение в Excel
+#Сохранение в Excel
 file_name = "КДЗ_1.xlsx"
 
 # Удаляем старый файл перед сохранением нового
@@ -102,7 +101,7 @@ if os.path.exists(file_name):
 with pd.ExcelWriter(file_name, engine="openpyxl") as writer:
     df.to_excel(writer, index=False, sheet_name="Заведомо не оптимальные")
 
-# 9️⃣ Раскрашивание финальных Парето-оптимальных точек в зеленый
+#Раскрашивание финальных Парето-оптимальных точек в зеленый
 wb = load_workbook(file_name)
 ws = wb["Заведомо не оптимальные"]
 
@@ -162,6 +161,18 @@ wb.save(file_name)
 # ---------------------------------------------
 # Отображение графиков
 # ---------------------------------------------
+# Отображение всех точек
+plt.figure(figsize=(8, 6))
+inefficient = points[statuses == "-"]
+plt.scatter(inefficient[:, 0], inefficient[:, 1], color="black")
+optimal = points[statuses == "+"]
+plt.scatter(optimal[:, 0], optimal[:, 1],color="black",label="Сгенерированные точки")
+plt.xlabel("f1")
+plt.ylabel("f2")
+plt.title("Входные данные")
+plt.legend()
+plt.grid()
+plt.show()
 
 #Отображение графика Парето-оптимальных точек
 plt.figure(figsize=(8, 6))
