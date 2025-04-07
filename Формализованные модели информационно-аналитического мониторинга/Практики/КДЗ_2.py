@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+n = 5
+f1min,f1max,f2min,f2max=0,3*n,0,3*n
 # === Генерация бинарных кодов Грея ===
 def gray_codes(n):
     if n == 0:
@@ -15,9 +16,9 @@ def generate_feasible_points(N=1000):
     """Генерирует N точек, удовлетворяющих условию f1 * f2 <= 5."""
     points = []
     while len(points) < N:
-        f1 = np.random.uniform(0, 15)
-        f2 = np.random.uniform(0, 15)
-        if f1 * f2 <= 5:
+        f1 = np.random.uniform(f1min, f1max)
+        f2 = np.random.uniform(f1min, f2max)
+        if f1 * f2 <= n:
             points.append([f1, f2])
     return np.array(points)
 
@@ -31,7 +32,7 @@ def find_intersection_with_hyperbola(vector, origin=(0, 0)):
     dx, dy = vector
     if dy == 0 or dx == 0:  # Если вектор параллелен осям
         return None
-    x_intersect = np.sqrt(5 * dx / dy)  # решаем для x
+    x_intersect = np.sqrt(n * dx / dy)  # решаем для x
     y_intersect = (dy / dx) * x_intersect  # решаем для y
     return (x_intersect, y_intersect)
 
