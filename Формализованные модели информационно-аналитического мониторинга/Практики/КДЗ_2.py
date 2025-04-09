@@ -2,14 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+n = 5
+f1_min,f1_max,f2_min,f2_max=0,3*n,0,3*n
 # === Генерация допустимых точек (условие f1*f2 >= 5) ===
 def generate_feasible_points(N=100):
     """Генерирует N точек, удовлетворяющих условию f1 * f2 >= 5."""
     points = []
     while len(points) < N:
-        f1 = np.random.uniform(0, 15)
-        f2 = np.random.uniform(0, 15)
-        if f1 * f2 >= 5:  # Условие минимизации
+        f1 = np.random.uniform(f1_min, f1_max)
+        f2 = np.random.uniform(f2_min, f2_max)
+        if f1 * f2 >= n:  # Условие минимизации
             points.append([f1, f2])
     return np.array(points)
 
