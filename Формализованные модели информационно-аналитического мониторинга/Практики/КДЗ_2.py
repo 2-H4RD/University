@@ -1,136 +1,170 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-n = 5
-f1min,f1max,f2min,f2max=0,3*n,0,3*n
-# === Генерация бинарных кодов Грея ===
-def gray_codes(n):
-    if n == 0:
-        return ['']
-    prev = gray_codes(n - 1)
-    return ['0' + code for code in prev] + ['1' + code for code in reversed(prev)]
 
-
-# === Шаг 1. Генерация допустимых точек ===
-def generate_feasible_points(N=1000):
-    """Генерирует N точек, удовлетворяющих условию f1 * f2 <= 5."""
+# === Генерация допустимых точек (условие f1*f2 >= 5) ===
+def generate_feasible_points(N=100):
+    """Генерирует N точек, удовлетворяющих условию f1 * f2 >= 5."""
     points = []
     while len(points) < N:
-        f1 = np.random.uniform(f1min, f1max)
-        f2 = np.random.uniform(f1min, f2max)
-        if f1 * f2 <= n:
+        f1 = np.random.uniform(0, 15)
+        f2 = np.random.uniform(0, 15)
+        if f1 * f2 >= 5:  # Условие минимизации
             points.append([f1, f2])
     return np.array(points)
 
 
-# === Шаг 2. Нахождение пересечений с гиперболой f1 * f2 = 5 ===
-def find_intersection_with_hyperbola(vector, origin=(0, 0)):
-    """
-    Для заданного вектора находим точку пересечения с гиперболой f1 * f2 = 5.
-    Вектор задается как координаты (dx, dy).
-    """
-    dx, dy = vector
-    if dy == 0 or dx == 0:  # Если вектор параллелен осям
-        return None
-    x_intersect = np.sqrt(n * dx / dy)  # решаем для x
-    y_intersect = (dy / dx) * x_intersect  # решаем для y
-    return (x_intersect, y_intersect)
+# === Шаг 2. Построение полиэдрального конуса доминирования (с динамическим пересчетом векторов) ===
+def find_intersection(mu_min, mu_max):
+    """Находим точку пересечения прямой L(μ) = 0 с ребрами гиперпараллелепипеда."""
+
+    # Прямая L(μ) = 0: соединение точек (0,1) и (1,0)
+    # Линия y = 1 - x (так как проходящая через (0,1) и (1,0))
+
+    intersections = []
+
+    # Пересечение с ребром, где f1 = μ1min
+    x_intersect1 = mu_min[0]
+    y_intersect1 = 1 - x_intersect1  # y = 1 - x
+    if mu_min[1] <= y_intersect1 <= mu_max[1]:
+        intersections.append([x_intersect1, y_intersect1])
+
+    # Пересечение с ребром, где f1 = μ1max
+    x_intersect2 = mu_max[0]
+    y_intersect2 = 1 - x_intersect2  # y = 1 - x
+    if mu_min[1] <= y_intersect2 <= mu_max[1]:
+        intersections.append([x_intersect2, y_intersect2])
+
+    # Пересечение с ребром, где f2 = μ2min
+    y_intersect3 = mu_min[1]
+    x_intersect3 = 1 - y_intersect3  # x = 1 - y
+    if mu_min[0] <= x_intersect3 <= mu_max[0]:
+        intersections.append([x_intersect3, y_intersect3])
+
+    # Пересечение с ребром, где f2 = μ2max
+    y_intersect4 = mu_max[1]
+    x_intersect4 = 1 - y_intersect4  # x = 1 - y
+    if mu_min[0] <= x_intersect4 <= mu_max[0]:
+        intersections.append([x_intersect4, y_intersect4])
+
+    return np.array(intersections)
 
 
-# === Шаг 3. Нахождение угла между двумя векторами ===
-def angle_between_vectors(v1, v2):
-    """Вычисляет угол между двумя векторами в радианах."""
-    dot_product = np.dot(v1, v2)
-    norm_v1 = np.linalg.norm(v1)
-    norm_v2 = np.linalg.norm(v2)
-    cos_theta = dot_product / (norm_v1 * norm_v2)
-    cos_theta = np.clip(cos_theta, -1.0, 1.0)  # Для числовой стабильности
-    return np.arccos(cos_theta)
+# === Вычисление угла между вектором и осью абсцисс ===
+def compute_angle(v):
+    """Вычисляет угол между вектором v и осью абсцисс."""
+    return np.arctan2(v[1], v[0])  # arctan2 учитывает и знак угла
 
 
-# === Шаг 4. Нахождение Парето-оптимальных точек (максимизация) ===
-def pareto_front_maximization(points):
-    pareto = []
-    for i, p in enumerate(points):
-        if not any(np.all(q >= p) and np.any(q > p) for j, q in enumerate(points) if j != i):
-            pareto.append(p)
-    return np.array(pareto)
+# === Шаг 3. Проверка попадания точки в полиэдральный конус ===
+def is_point_in_cone(F, B):
+    """Проверяет, попадает ли точка F в полиэдральный конус, определенный матрицей B."""
+
+    # Вычисляем углы для всех векторов в B
+    angles = [compute_angle(b) for b in B]
+
+    # Нахождение минимального и максимального углов
+    fi_min = min(angles)
+    fi_max = max(angles)
+
+    # Вычисляем угол для точки F
+    fi = compute_angle(F)
+
+    # Точка попадает в полиэдральный конус, если угол лежит в пределах [fi_min, fi_max]
+    return fi_min <= fi <= fi_max
 
 
-# === Шаг 5. Построение матрицы B с учетом интервала неопределенности для весов ===
-def construct_B(mu_min, mu_max):
-    """Строим матрицу B, содержащую векторы, определяющие конус."""
-    # В этой матрице будем хранить вектора (направления)
+# === Шаг 4. Проверка доминирования между двумя точками для минимизации ===
+def is_dominating(F_i, F_j):
+    """Проверяет, доминирует ли точка F_i над точкой F_j в задаче минимизации."""
+    return (F_i[0] <= F_j[0] and F_i[1] <= F_j[1]) and (F_i[0] < F_j[0] or F_i[1] < F_j[1])
+
+
+# === Шаг 5. Нахождение точек, принадлежащих полиэдральному конусу доминирования ===
+def find_points_in_cone(fx, B):
+    """Находим все точки, которые принадлежат полиэдральному конусу доминирования."""
+    points_in_cone = []
+    for F in fx:
+        if is_point_in_cone(F, B):
+            # Проверяем, что точка не доминируется другими точками
+            is_efficient = True
+            for F_j in fx:
+                if F is not F_j and is_dominating(F_j, F):
+                    is_efficient = False
+                    break
+            if is_efficient:
+                points_in_cone.append(F)
+    return np.array(points_in_cone)
+
+
+# === Шаг 6. Построение полиэдрального конуса доминирования (с динамическим пересчетом векторов) ===
+def construct_polyhedral_cone(mu_min, mu_max):
+    """Строим полиэдральный конус доминирования с учетом пересечений прямой L(μ) = 0 и ребер гиперпараллелепипеда."""
     B = []
 
-    # Генерируем все возможные комбинации для 2D (mu_min и mu_max)
-    v1 = np.array([mu_min[0], mu_min[1]])
-    v2 = np.array([mu_min[0], mu_max[1]])
-    v3 = np.array([mu_max[0], mu_min[1]])
-    v4 = np.array([mu_max[0], mu_max[1]])
+    # Пересекаем гиперпараллелепипед с прямой L(μ) = 0
+    intersections = find_intersection(mu_min, mu_max)
 
-    # Добавляем все возможные вектора в список B
-    B.append(v1)
-    B.append(v2)
-    B.append(v3)
-    B.append(v4)
+    # Добавляем все пересечения в список B (векторы от (0, 0) к точкам пересечения)
+    for point in intersections:
+        B.append(point)
 
     return np.array(B)
 
 
-# === Шаг 6. Нахождение Ω-оптимальных точек с использованием углов ===
-def find_omega_optimal_points(fx, B, pareto):
-    omega_opt = []
+# === Отображение графиков ===
+def plot_lights_and_optimal_points(fx, pareto, f_omega, B, mu_min, mu_max, case_num):
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
 
-    # Шаг 1: Вычисляем углы для каждого вектора
-    angles = []
+    # 1-й график: Геометрическое построение конуса доминирования
+    axes[0].set_title(f'Геометрическое построение конуса доминирования (Вариант {case_num})')
+    axes[0].set_xlabel('f1')
+    axes[0].set_ylabel('f2')
+
+    # Рисуем лучи для каждого пересечения
+    mem=0
     for b in B:
-        angle = angle_between_vectors(np.array([1, 0]), b)  # угол с осью абсцисс
-        angles.append(angle)
+        if mem == 0:
+            axes[0].plot([0, b[0]], [0, b[1]], 'r-', label='Вектора')  # Непрерывные красные линии
+            mem +=1
+        else:
+            axes[0].plot([0, b[0]], [0, b[1]], 'r-')
+    # Рисуем прямую L(μ) = 0 (от (0, 1) до (1, 0))
+    axes[0].plot([0, 1], [1, 0], 'b-', label='L(μ) = 0')  # Прямая L(μ) = 0 (синий)
 
-    # Шаг 2: Находим минимальный и максимальный углы для конуса
-    min_angle = min(angles)
-    max_angle = max(angles)
+    # Рисуем гиперпараллелепипед (прямоугольник с синими линиями)
+    axes[0].plot([mu_min[0], mu_max[0]], [mu_min[1], mu_min[1]], 'b-')  # Нижняя граница
+    axes[0].plot([mu_min[0], mu_max[0]], [mu_max[1], mu_max[1]], 'b-')  # Верхняя граница
+    axes[0].plot([mu_min[0], mu_min[0]], [mu_min[1], mu_max[1]], 'b-')  # Левая граница
+    axes[0].plot([mu_max[0], mu_max[0]], [mu_min[1], mu_max[1]], 'b-')  # Правая граница
 
-    # Шаг 3: Проверяем, попадает ли угол прямой, идущей из каждой точки, в диапазон углов конуса
-    for p in pareto:  # Только по парето-оптимальным точкам
-        vector_p = np.array(p)
-        angle_p = angle_between_vectors(np.array([1, 0]), vector_p)  # угол с осью абсцисс
-
-        if min_angle <= angle_p <= max_angle:
-            omega_opt.append(p)
-
-    return np.array(omega_opt)
-
-
-# === Шаг 7. Отображение лучей и Ω-оптимальных точек ===
-def plot_lights_and_optimal_points(fx, pareto, f_omega, B):
-    fig, axes = plt.subplots(1, 1, figsize=(12, 7))
-
-    # График Парето и Ω-оптимальных точек
-    axes.scatter(fx[:, 0], fx[:, 1], s=10, alpha=0.3, color='gray', label='F(X)')
+    # 2-й график: Все точки (черные) и парето-оптимальные точки (зеленые)
+    axes[1].scatter(fx[:, 0], fx[:, 1], s=10, alpha=0.3, color='black')
     if pareto.size > 0:
-        axes.scatter(pareto[:, 0], pareto[:, 1], s=20, color='green', label='Парето-оптимальные')
+        axes[1].scatter(pareto[:, 0], pareto[:, 1], s=20, color='green')
+    axes[1].set_title(f'Все точки и Парето-оптимальные (Вариант {case_num})')
+    axes[1].set_xlabel('f1')
+    axes[1].set_ylabel('f2')
+
+    # 3-й график: Все точки (черные), парето-оптимальные точки, омега-оптимальные (красные)
+    axes[2].scatter(fx[:, 0], fx[:, 1], s=10, alpha=0.3, color='black')
+    if pareto.size > 0:
+        axes[2].scatter(pareto[:, 0], pareto[:, 1], s=20, color='green')
     if f_omega.size > 0:
-        axes.scatter(f_omega[:, 0], f_omega[:, 1], s=20, color='yellow', label='Ω-оптимальные')
+        axes[2].scatter(f_omega[:, 0], f_omega[:, 1], s=20, color='red')
+    axes[2].set_title(f'Парето и Омега-оптимальные (Вариант {case_num})')
+    axes[2].set_xlabel('f1')
+    axes[2].set_ylabel('f2')
 
-    # Добавляем лучи
-    for b in B:
-        intersection = find_intersection_with_hyperbola(b)
-        if intersection:
-            axes.plot([0, intersection[0]], [0, intersection[1]], 'r--', label='Лучи')
-
-    axes.set_title(f'Парето и Ω-оптимальные точки')
-    axes.set_xlabel('f1')
-    axes.set_ylabel('f2')
-    axes.legend()
-    axes.grid(True)
+    for ax in axes:
+        ax.grid(True)
+        ax.legend()
 
     plt.tight_layout()
     plt.show()
 
 
-# === Шаг 8. Основной анализ с учетом пересечений и разбиений области Парето ===
+# === Шаг 7. Основной анализ с учетом пересечений и разбиений области Парето ===
 def analyze_all_cases():
     cases = [
         (0.2, 0.6, 0.4, 0.8),
@@ -138,21 +172,21 @@ def analyze_all_cases():
         (0.3, 0.6, 0.3, 0.6)
     ]
 
-    for N in [100, 1000]:
+    for N in [10000]:
         print(f"\n==== Анализ для N = {N} ====")
         fx = generate_feasible_points(N)
-        pareto = pareto_front_maximization(fx)
+        pareto = find_points_in_cone(fx,construct_polyhedral_cone([0, 0], [1,1]))  # для парето-оптимальных точек использовать веса 0,1,0,1
         print(f"|F(X)| = {len(fx)}")
         print(f"|Fp(X)| = {len(pareto)}")
 
         for i, (mu1min, mu1max, mu2min, mu2max) in enumerate(cases):
-            B = construct_B([mu1min, mu2min], [mu1max, mu2max])
-            f_omega = find_omega_optimal_points(fx, B, pareto)
+            B = construct_polyhedral_cone([mu1min, mu2min], [mu1max, mu2max])
+            f_omega = find_points_in_cone(fx, B)
 
             print(f"Кейс {i + 1}: |FΩ(X)| = {len(f_omega)}")
 
-            # Визуализируем лучи и Ω-оптимальные точки на одном графике
-            plot_lights_and_optimal_points(fx, pareto, f_omega, B)
+            # Визуализируем результаты
+            plot_lights_and_optimal_points(fx, pareto, f_omega, B, [mu1min, mu2min], [mu1max, mu2max], i + 1)
 
 
 # === Запуск анализа ===
