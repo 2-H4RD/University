@@ -1,0 +1,5 @@
+Now listening on: http://localhost:5144
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: D:\University\Распределенные ИАС\Практики\HelloWorld
+Path: /  Time:12:40:59

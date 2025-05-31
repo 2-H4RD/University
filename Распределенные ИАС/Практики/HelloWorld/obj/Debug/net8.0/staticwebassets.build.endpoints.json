@@ -1,5 +1,252 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "html/UrlRewritingApp.cs",
+      "AssetFile": "html/UrlRewritingApp.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:43:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw="
+        }
+      ]
+    },
+    {
+      "Route": "html/UrlRewritingApp.oir8k63w5s.cs",
+      "AssetFile": "html/UrlRewritingApp.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:43:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oir8k63w5s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw="
+        },
+        {
+          "Name": "label",
+          "Value": "html/UrlRewritingApp.cs"
+        }
+      ]
+    },
+    {
+      "Route": "html/hello.4m1yz6giwg.html",
+      "AssetFile": "html/hello.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:13:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4m1yz6giwg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg="
+        },
+        {
+          "Name": "label",
+          "Value": "html/hello.html"
+        }
+      ]
+    },
+    {
+      "Route": "html/hello.html",
+      "AssetFile": "html/hello.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:13:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg="
+        }
+      ]
+    },
+    {
+      "Route": "index.fix8x5z4hs.html",
+      "AssetFile": "index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 10:38:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fix8x5z4hs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw="
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 10:38:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw="
+        }
+      ]
+    }
+  ]
 }

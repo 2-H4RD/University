@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CORS_Test.props" />
+</Project>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test CORS</title>
+</head>
+<body>
+    <h2 id="result"></h2>
+    <button id="btn" value="Запрос">Запрос</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const result = document.getElementById("result");
+        btn.addEventListener("click", async () => {
+
+        try {
+            const response = await fetch("http://localhost:5144/");
+            if (response.ok) result.innerText = await response.text();
+        }
+        catch (e) {
+            result.innerText = e.message;
+        }
+        });
+    </script>
+</body>
+</html>

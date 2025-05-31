@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|d:\\university\\\u0440\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0438\u0430\u0441\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\helloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|d:\\university\\\u0440\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0438\u0430\u0441\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\helloworld\\agerequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|solutionrelative:agerequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|d:\\university\\\u0440\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0438\u0430\u0441\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\helloworld\\agehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CDD50C9-5C18-46DA-AD65-2D7895AA8717}|HelloWorld.csproj|solutionrelative:agehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgeRequirement.cs",
+              "DocumentMoniker": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\AgeRequirement.cs",
+              "RelativeDocumentMoniker": "AgeRequirement.cs",
+              "ToolTip": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\AgeRequirement.cs",
+              "RelativeToolTip": "AgeRequirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T11:02:17.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgeHandler.cs",
+              "DocumentMoniker": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\AgeHandler.cs",
+              "RelativeDocumentMoniker": "AgeHandler.cs",
+              "ToolTip": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\AgeHandler.cs",
+              "RelativeToolTip": "AgeHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T10:58:56.078Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABZAAAAAAAAAA==",
+              "ToolTip": "D:\\University\\\u0420\u0430\u0441\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0435 \u0418\u0410\u0421\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0438\\HelloWorld\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwGMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T15:22:29.55Z",
+              "WhenOpened": "2025-05-25T11:19:59.735Z",
               "EditorCaption": ""
             }
           ]

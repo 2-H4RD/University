@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "62OVlnCf4/ZzsLgOZWj30FwuM/axPPHdMu3YvOOBUyQ=",
+  "Hash": "AgZtqEgpmZi9GFBRcLvJ7BJA2xznZyZTQO+Y7QFNgh8=",
   "Source": "HelloWorld",
   "BasePath": "_content/HelloWorld",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "HelloWorld\\wwwroot",
+      "Source": "HelloWorld",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\hello.html",
+      "SourceId": "HelloWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "RelativePath": "html/hello#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4m1yz6giwg",
+      "Integrity": "rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\hello.html"
+    },
+    {
+      "Identity": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\UrlRewritingApp.cs",
+      "SourceId": "HelloWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "RelativePath": "html/UrlRewritingApp#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oir8k63w5s",
+      "Integrity": "UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\UrlRewritingApp.cs"
+    },
+    {
+      "Identity": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\index.html",
+      "SourceId": "HelloWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fix8x5z4hs",
+      "Integrity": "WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "html/hello.4m1yz6giwg.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\hello.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:13:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4m1yz6giwg"
+        },
+        {
+          "Name": "label",
+          "Value": "html/hello.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg="
+        }
+      ]
+    },
+    {
+      "Route": "html/hello.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\hello.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 09:13:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rJf6qBi44VVulciYt9bW1Rz4LWSf2Jzmc3gS2oSIgcg="
+        }
+      ]
+    },
+    {
+      "Route": "html/UrlRewritingApp.cs",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\UrlRewritingApp.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw="
+        }
+      ]
+    },
+    {
+      "Route": "html/UrlRewritingApp.oir8k63w5s.cs",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\html\\UrlRewritingApp.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oir8k63w5s"
+        },
+        {
+          "Name": "label",
+          "Value": "html/UrlRewritingApp.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNmQiBqY1isUo4h1jZXpcktpZVECkbfaTiI0sP8ARPw="
+        }
+      ]
+    },
+    {
+      "Route": "index.fix8x5z4hs.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 10:38:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fix8x5z4hs"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\HelloWorld\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 10:38:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WX+tR3njjNSk8ZeZV9F3EqWa0404dIOJBnHp34mUQTw="
+        }
+      ]
+    }
+  ]
 }

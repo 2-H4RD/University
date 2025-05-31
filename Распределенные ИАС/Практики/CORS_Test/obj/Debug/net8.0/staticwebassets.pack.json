@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CORS_Test.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CORS_Test.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CORS_Test.props",
+      "PackagePath": "build\\CORS_Test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CORS_Test.props",
+      "PackagePath": "buildMultiTargeting\\CORS_Test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CORS_Test.props",
+      "PackagePath": "buildTransitive\\CORS_Test.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
