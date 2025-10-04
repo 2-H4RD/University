@@ -210,7 +210,7 @@ for i in range(len(min_points_f1)):
     plt.figtext(0.91, 0.93 - (i + 1) * y_offset, f"X{i + 1} ({min_points_f1[i]}, {min_points_f2[i]})", ha='left',
                 va='top', fontsize=9)
     if min_points_f1[i] == optimal_point[0] and min_points_f2[i] == optimal_point[1]:
-        solution_pont_mimnax = i+1
+        solution_pont_mimnax = i
 # Рисуем все точки чёрным цветом
 plt.scatter(min_points_f1, min_points_f2, color='black', marker='o', label="Все точки")
 
@@ -265,7 +265,7 @@ y_offset = 0.05  # Смещение по оси Y для текста
 for i, point in enumerate(ideal_points_for_projects):
     plt.figtext(0.91, 0.93 - (i + 1) * y_offset, f"X{i + 1} ({point[0]}, {point[1]})", ha='left', va='top', fontsize=9)
     if point[0] == optimal_point[0] and point[1] == optimal_point[1]:
-        solution_pont_maxmin = i+1
+        solution_pont_maxmin = i
 # Настройки графика
 plt.xlabel('f1')  # Подпись оси x
 plt.ylabel('f2')  # Подпись оси y
@@ -312,9 +312,10 @@ print(f"Оптимальный проект по принципу Лапласа
 #-------------------------МАТРИЦА ГОЛОСОВАНИЯ-----------------------------------------------------------
 voting_matrix = np.zeros((len(Q), 11), dtype=int)
 max_total = 0
+print(len(Q))
 for i in range (len(Q)):
     total = 0
-    if i== solution_pont_mimnax:
+    if i == solution_pont_mimnax:
         voting_matrix[i][0] = 1
         total += 1
     if i== solution_pont_maxmin:
@@ -349,7 +350,7 @@ for i in range (len(Q)):
         max_total = total
 # Формируем заголовки столбцов
 headers = [
-    "Вальд.f1", "Сэвидж.f1", "Гурвиц.f1", "Лапл.f1", "ВекторМаксМин.f1", "ВекторМинМакс.f1",
+    "ВекторМаксМин.f1", "ВекторМинМакс.f1","Вальд.f1", "Сэвидж.f1", "Гурвиц.f1", "Лапл.f1",
     "Вальд.f2", "Сэвидж.f2", "Гурвиц.f2", "Лапл.f2", "Итог"
 ]
 
