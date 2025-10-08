@@ -1,268 +1,626 @@
+from tabulate import tabulate
 import matplotlib.pyplot as plt
 import numpy as np
-from itertools import combinations
+import random
+
+
+# =============================================================================
+# ЗАДАНИЕ 1: Анализ матричной игры
+# =============================================================================
+
+def check_saddle_point(matrix):
+    """
+    Проверяет наличие седловой точки в матричной игре
+    """
+    row_minima = [min(row) for row in matrix]
+    alpha = max(row_minima)
+
+    cols = len(matrix[0])
+    col_maxima = [max(matrix[i][j] for i in range(len(matrix))) for j in range(cols)]
+    beta = min(col_maxima)
+
+    has_saddle = alpha == beta
+
+    return has_saddle, alpha, beta
 
 
 def calculate_payment_functions(payment_matrix):
     """
-    Вычисляет коэффициенты платежных функций на основе платежной матрицы
+    Вычисляет коэффициенты платежных функций
     """
     num_attacks = len(payment_matrix[0])
     functions = []
 
     for j in range(num_attacks):
-        # Получаем значения для текущей атаки
         a1j = payment_matrix[0][j]
         a2j = payment_matrix[1][j]
 
-        # Вычисляем коэффициенты линейной функции: k*p + b
         k = a1j - a2j
         b = a2j
 
-        # Формируем описание функции
         function_info = {
             'attack_num': j + 1,
             'a1j': a1j,
             'a2j': a2j,
             'k': k,
             'b': b,
-            'equation': f"W(B{j + 1})(p) = {a1j}*p + {a2j}*(1-p) = {k}p + {b}"
+            'equation': f"f(p₁, {j + 1}) = {a1j}*p + {a2j}*(1-p) = {k}p + {b}"
         }
         functions.append(function_info)
 
     return functions
 
 
-def find_intersections(functions):
-    intersections = []
+def plot_payment_functions(functions):
+    """
+    Строит график платежных функций с верхней огибающей и точкой минимакса
+    """
+    p = np.linspace(0, 1, 1000)
 
-    # Перебираем все пары функций
-    for i, j in combinations(range(len(functions)), 2):
-        func1 = functions[i]
-        func2 = functions[j]
+    plt.figure(figsize=(10, 6))
 
-        # Проверяем, не параллельны ли прямые
-        if func1['k'] != func2['k']:
-            # Находим точку пересечения: k1*p + b1 = k2*p + b2
-            p_intersect = (func2['b'] - func1['b']) / (func1['k'] - func2['k'])
+    colors = ['red', 'blue', 'green', 'orange', 'purple']
 
-            # Проверяем, что точка в допустимом диапазоне
-            if 0 <= p_intersect <= 1:
-                # Вычисляем значение в точке пересечения
-                value = func1['k'] * p_intersect + func1['b']
+    all_y = []
 
-                intersection_info = {
-                    'p': p_intersect,
-                    'value': value,
-                    'func1': func1['attack_num'],
-                    'func2': func2['attack_num'],
-                    'label': f"B{func1['attack_num']}∩B{func2['attack_num']}"
-                }
-                intersections.append(intersection_info)
-
-    return intersections
-
-
-def find_envelope_points(intersections, functions, p_values):
-    # Вычисляем значения всех функций для всех p
-    all_values = []
-    for func in functions:
-        func_values = []
-        for p in p_values:
-            value = func['k'] * p + func['b']
-            func_values.append(value)
-        all_values.append(func_values)
-
-    # Вычисляем верхнюю огибающую (максимум в каждой точке)
-    upper_envelope = []
-    for i in range(len(p_values)):
-        max_val = -float('inf')
-        for j in range(len(functions)):
-            if all_values[j][i] > max_val:
-                max_val = all_values[j][i]
-        upper_envelope.append(max_val)
-
-    # Вычисляем нижнюю огибающую (минимум в каждой точке)
-    lower_envelope = []
-    for i in range(len(p_values)):
-        min_val = float('inf')
-        for j in range(len(functions)):
-            if all_values[j][i] < min_val:
-                min_val = all_values[j][i]
-        lower_envelope.append(min_val)
-
-    # Находим точки пересечения, принадлежащие огибающим
-    upper_points = []
-    lower_points = []
-
-    for intersection in intersections:
-        p = intersection['p']
-        value = intersection['value']
-
-        # Находим ближайшую точку в дискретном массиве
-        idx = np.argmin(np.abs(p_values - p))
-
-        # Проверяем принадлежность к верхней огибающей (с допуском)
-        if abs(upper_envelope[idx] - value) < 0.1:
-            upper_points.append(intersection)
-
-        # Проверяем принадлежность к нижней огибающей (с допуском)
-        if abs(lower_envelope[idx] - value) < 0.1:
-            lower_points.append(intersection)
-
-    # Сортируем точки по координате p
-    upper_points.sort(key=lambda x: x['p'])
-    lower_points.sort(key=lambda x: x['p'])
-
-    return upper_points, lower_points, upper_envelope, lower_envelope
-
-
-def plot_payment_functions_with_envelopes(payment_matrix):
-
-    # Вычисляем платежные функции
-    functions = calculate_payment_functions(payment_matrix)
-
-    # Находим точки пересечения
-    intersections = find_intersections(functions)
-
-    # Создаем диапазон значений p от 0 до 1
-    p_values = np.arange(0, 1.01, 0.01)
-
-    # Находим точки огибающих
-    upper_points, lower_points, upper_envelope, lower_envelope = find_envelope_points(
-        intersections, functions, p_values)
-
-    # Создаем график
-    plt.figure(figsize=(14, 10))
-
-    # Цвета для разных типов атак
-    colors = ['red', 'blue', 'green', 'orange', 'purple', 'brown', 'pink', 'gray', 'olive', 'cyan']
-
-    # Строим графики для каждой атаки
     for i, func in enumerate(functions):
-        # Вычисляем значения функции для всех p
-        w_values = []
-        for p in p_values:
-            w = func['k'] * p + func['b']
-            w_values.append(w)
+        k = func['k']
+        b = func['b']
+        y = k * p + b
+        all_y.append(y)
+        plt.plot(p, y, color=colors[i % len(colors)], linewidth=2, label=f"Атака {func['attack_num']}")
 
-        # Строим график
-        color_index = i % len(colors)
-        plt.plot(p_values, w_values,
-                 color=colors[color_index],
-                 linewidth=1.5,
-                 alpha=0.7,
-                 label=f'Атака {func["attack_num"]}')
+    all_y_array = np.array(all_y)
+    # Ищем верхнюю огибающую (максимум для каждого p)
+    upper_envelope = np.max(all_y_array, axis=0)
 
     # Строим верхнюю огибающую
-    plt.plot(p_values, upper_envelope, 'red', linewidth=3, label='Верхняя огибающая')
+    plt.plot(p, upper_envelope, 'k-', linewidth=3, label='Верхняя огибающая')
 
-    # Строим нижнюю огибающую
-    plt.plot(p_values, lower_envelope, 'blue', linewidth=3, label='Нижняя огибающая')
+    # Находим точку минимакса (минимум верхней огибающей)
+    min_index = np.argmin(upper_envelope)
+    p_optimal = p[min_index]
+    value_optimal = upper_envelope[min_index]
 
-    # Отмечаем точки верхней огибающей (красные) и нумеруем их
-    for i, point in enumerate(upper_points):
-        plt.plot(point['p'], point['value'], 'ro', markersize=8, markeredgecolor='darkred', markeredgewidth=2)
-        plt.annotate(f'X{i + 1}',
-                     xy=(point['p'], point['value']),
-                     xytext=(8, 8),
-                     textcoords='offset points',
-                     fontsize=10,
-                     fontweight='bold',
-                     color='red')
+    # Отмечаем точку минимакса на графике
+    plt.plot(p_optimal, value_optimal, 'ro', markersize=8,
+             label=f'Точка минимакса (p={p_optimal:.3f}, V={value_optimal:.3f})')
 
-    # Отмечаем точки нижней огибающей (зеленые) и нумеруем их
-    for i, point in enumerate(lower_points):
-        plt.plot(point['p'], point['value'], 'go', markersize=8, markeredgecolor='darkgreen', markeredgewidth=2)
-        plt.annotate(f'Y{i + 1}',
-                     xy=(point['p'], point['value']),
-                     xytext=(8, 8),
-                     textcoords='offset points',
-                     fontsize=10,
-                     fontweight='bold',
-                     color='green')
-
-    # Находим и отмечаем точку минимакса (минимум верхней огибающей)
-    min_upper_value = min(upper_envelope)
-    min_upper_index = upper_envelope.index(min_upper_value)
-    min_upper_p = p_values[min_upper_index]
-
-    plt.plot(min_upper_p, min_upper_value, 's', markersize=12, markerfacecolor='none', markeredgecolor='black',
-             markeredgewidth=3)
-    plt.annotate(f'Минимакс\np={min_upper_p:.3f}\nV={min_upper_value:.3f}',
-                 xy=(min_upper_p, min_upper_value),
-                 xytext=(15, 15),
-                 textcoords='offset points',
-                 fontsize=10,
-                 bbox=dict(boxstyle="round,pad=0.3", fc="lightcoral", alpha=0.7),
-                 arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0.2"))
-
-    # Создаем текст с координатами точек пересечения
-    intersection_text = "Точки пересечения:\n"
-    for i, point in enumerate(upper_points):
-        intersection_text += f"X{i + 1}({point['p']:.3f}, {point['value']:.3f})\n"
-    for i, point in enumerate(lower_points):
-        intersection_text += f"Y{i + 1}({point['p']:.3f}, {point['value']:.3f})\n"
-
-    # Добавляем текст на график
-    plt.figtext(0.02, 0.02, intersection_text, fontsize=9,
-                bbox=dict(boxstyle="round,pad=0.5", fc="lightyellow", alpha=0.8))
-
-    # Настраиваем график
-    plt.xlabel('Вероятность p (использования Протокола 1)', fontsize=12)
-    plt.ylabel('Среднее время передачи', fontsize=12)
-    plt.title('Платежные функции с верхней и нижней огибающими', fontsize=14)
-    plt.grid(True, alpha=0.3)
-    plt.legend(fontsize=10, loc='upper right')
-
-    # Устанавливаем пределы осей
+    plt.title("График платежных функций с верхней огибающей", fontsize=14)
+    plt.xlabel("Вероятность выбора протокола 1 (p)", fontsize=12)
+    plt.ylabel("Среднее время передачи", fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
     plt.xlim(0, 1)
 
-    # Автоматически устанавливаем пределы по Y
-    y_min = min(lower_envelope) - 2
-    y_max = max(upper_envelope) + 2
-    plt.ylim(max(0, y_min), y_max)
-
-    # Отображаем график
     plt.tight_layout()
-    #plt.show()
+    plt.show()
 
-    return functions, intersections, (min_upper_p, min_upper_value), upper_points, lower_points
+    return p_optimal, value_optimal
 
 
-# Основная программа
-payment_matrix = [
-    [21, 12, 15, 23, 18],  # Протокол 1
-    [11, 33, 28, 16, 19]  # Протокол 2
-]
+def find_optimal_strategies(matrix, p_optimal, value_optimal):
+    """
+    Находит оптимальные вероятности для игрока B по указанному методу
+    """
+    active_strategies = []
+    tolerance = 0.01
 
-print("Платежная матрица:")
-print("       B1  B2  B3  B4  B5")
-print(f"A1:   {payment_matrix[0]}")
-print(f"A2:   {payment_matrix[1]}")
-print()
+    for j in range(len(matrix[0])):
+        a1j = matrix[0][j]
+        a2j = matrix[1][j]
+        value_at_p = a1j * p_optimal + a2j * (1 - p_optimal)
 
-# Строим графики и получаем информацию о функциях и пересечениях
-functions, intersections, minimax_point, upper_points, lower_points = plot_payment_functions_with_envelopes(
-    payment_matrix)
-# Выводим уравнения платежных функций
-print("Уравнения платежных функций:")
-for func in functions:
-    print(func['equation'])
-print()
-# Выводим информацию о точках пересечения на огибающих
-print("Точки верхней огибающей:")
-for i, point in enumerate(upper_points):
-    print(f"X{i + 1}: p = {point['p']:.3f}, значение = {point['value']:.3f} (B{point['func1']}∩B{point['func2']})")
+        if abs(value_at_p - value_optimal) < tolerance:
+            active_strategies.append(j + 1)
 
-print("\nТочки нижней огибающей:")
-for i, point in enumerate(lower_points):
-    print(f"Y{i + 1}: p = {point['p']:.3f}, значение = {point['value']:.3f} (B{point['func1']}∩B{point['func2']})")
-print()
-# Выводим информацию о минимаксной точке
-print("Минимаксная точка (оптимальная стратегия):")
-print(f"Вероятность p = {minimax_point[0]:.4f}")
-print(f"Цена игры V = {minimax_point[1]:.4f}")
-print(f"Оптимальная смешанная стратегия:")
-print(f"  Использовать Протокол 1 с вероятностью {minimax_point[0]:.3f}")
-print(f"  Использовать Протокол 2 с вероятностью {1 - minimax_point[0]:.3f}")
+    if len(active_strategies) < 2:
+        differences = []
+        for j in range(len(matrix[0])):
+            a1j = matrix[0][j]
+            a2j = matrix[1][j]
+            value_at_p = a1j * p_optimal + a2j * (1 - p_optimal)
+            differences.append((j + 1, abs(value_at_p - value_optimal)))
+
+        differences.sort(key=lambda x: x[1])
+        active_strategies = [diff[0] for diff in differences[:2]]
+
+    q_probabilities = [0] * len(matrix[0])
+
+    if len(active_strategies) == 2:
+        i, j = active_strategies[0] - 1, active_strategies[1] - 1
+
+        a1i, a1j = matrix[0][i], matrix[0][j]
+        a2i, a2j = matrix[1][i], matrix[1][j]
+
+        # Решаем уравнения для каждого протокола и находим q1
+        # Для протокола 1: q1 * a1i + (1-q1) * a1j = V
+        if (a1i - a1j) != 0:
+            q1_from_protocol1 = (value_optimal - a1j) / (a1i - a1j)
+        else:
+            q1_from_protocol1 = 0.5
+
+        # Для протокола 2: q1 * a2i + (1-q1) * a2j = V
+        if (a2i - a2j) != 0:
+            q1_from_protocol2 = (value_optimal - a2j) / (a2i - a2j)
+        else:
+            q1_from_protocol2 = 0.5
+
+        # Находим среднее значение q1
+        q1_avg = (q1_from_protocol1 + q1_from_protocol2) / 2
+
+        # Округляем до 0.001
+        q1 = round(q1_avg, 3)
+        q2 = round(1 - q1, 3)
+
+        # Корректируем сумму до 1.000
+        if q1 + q2 != 1.0:
+            q1 = 1.0 - q2
+
+        q_probabilities[i] = q1
+        q_probabilities[j] = q2
+
+    return q_probabilities, active_strategies
+
+
+# =============================================================================
+# ЗАДАНИЕ 2: Моделирование экспериментов
+# =============================================================================
+
+def generate_player_A_choices(p_optimal, num_experiments=1000):
+    """
+    Генерирует массив выборов игрока A на основе вероятности p_optimal
+    """
+    return [1 if random.random() < p_optimal else 2 for _ in range(num_experiments)]
+
+
+def generate_player_B_choices(q_probabilities, num_experiments=1000):
+    """
+    Генерирует массив выборов игрока B на основе вероятностей q_probabilities
+    """
+    choices = []
+    for _ in range(num_experiments):
+        rand_val = random.random()
+        cumulative_prob = 0
+        attack_type = 1
+
+        for j, prob in enumerate(q_probabilities):
+            cumulative_prob += prob
+            if rand_val <= cumulative_prob:
+                attack_type = j + 1
+                break
+
+        choices.append(attack_type)
+
+    return choices
+
+
+def generate_player_B_uniform_choices(active_strategies, num_experiments=1000):
+    """
+    Генерирует массив выборов игрока B с равномерным распределением между активными стратегиями
+    """
+    return [random.choice(active_strategies) for _ in range(num_experiments)]
+
+
+def generate_player_B_all_uniform_choices(num_attacks, num_experiments=1000):
+    """
+    Генерирует массив выборов игрока B с равномерным распределением между всеми стратегиями
+    """
+    return [random.randint(1, num_attacks) for _ in range(num_experiments)]
+
+
+def generate_player_A_wald_choices(optimal_protocol, num_experiments=1000):
+    """
+    Генерирует массив выборов игрока A, всегда выбирающего оптимальный протокол по Вальду
+    """
+    return [optimal_protocol for _ in range(num_experiments)]
+
+
+def calculate_experiment_results(matrix, player_A_choices, player_B_choices):
+    """
+    Вычисляет результаты экспериментов на основе массивов выборов игроков
+    """
+    results = []
+    cumulative_sum = 0
+    cumulative_averages = []
+
+    for i in range(len(player_A_choices)):
+        protocol = player_A_choices[i]
+        attack_type = player_B_choices[i]
+
+        time = matrix[protocol - 1][attack_type - 1]
+
+        results.append(time)
+        cumulative_sum += time
+        cumulative_averages.append(cumulative_sum / (i + 1))
+
+    return results, cumulative_averages
+
+
+def plot_experiment_results_task2(results_A_then_B, cumulative_averages_A_then_B,
+                                  results_B_then_A, cumulative_averages_B_then_A):
+    """
+    Строит графики результатов экспериментов задания 2 в одном окне
+    """
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
+
+    # График для эксперимента A затем B
+    ax1.plot(range(1, len(results_A_then_B) + 1), results_A_then_B, 'b-', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+    final_average_A_then_B = cumulative_averages_A_then_B[-1]
+    ax1.axhline(y=final_average_A_then_B, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_A_then_B:.2f})')
+    ax1.set_title('Модель 1: Эксперимент A затем B (оптимальные стратегии)', fontsize=14)
+    ax1.set_xlabel('Номер эксперимента', fontsize=12)
+    ax1.set_ylabel('Время передачи', fontsize=12)
+    ax1.grid(True, linestyle='--', alpha=0.7)
+    ax1.legend()
+    ax1.set_xlim(1, len(results_A_then_B))
+
+    # График для эксперимента B затем A
+    ax2.plot(range(1, len(results_B_then_A) + 1), results_B_then_A, 'g-', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+    final_average_B_then_A = cumulative_averages_B_then_A[-1]
+    ax2.axhline(y=final_average_B_then_A, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_B_then_A:.2f})')
+    ax2.set_title('Модель 1: Эксперимент B затем A (оптимальные стратегии)', fontsize=14)
+    ax2.set_xlabel('Номер эксперимента', fontsize=12)
+    ax2.set_ylabel('Время передачи', fontsize=12)
+    ax2.grid(True, linestyle='--', alpha=0.7)
+    ax2.legend()
+    ax2.set_xlim(1, len(results_B_then_A))
+
+    plt.tight_layout()
+    plt.show()
+
+    return final_average_A_then_B, final_average_B_then_A
+
+
+def plot_experiment_results_task3(results_uniform, cumulative_averages_uniform):
+    """
+    Строит график результатов эксперимента задания 3 в отдельном окне
+    """
+    plt.figure(figsize=(12, 6))
+
+    plt.plot(range(1, len(results_uniform) + 1), results_uniform, 'purple', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+
+    final_average_uniform = cumulative_averages_uniform[-1]
+    plt.axhline(y=final_average_uniform, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_uniform:.2f})')
+
+    plt.title('Модель 2: Эксперимент с равномерным распределением атак (активные стратегии)', fontsize=14)
+    plt.xlabel('Номер эксперимента', fontsize=12)
+    plt.ylabel('Время передачи', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
+    plt.xlim(1, len(results_uniform))
+
+    plt.tight_layout()
+    plt.show()
+
+    return final_average_uniform
+
+
+def plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform):
+    """
+    Строит график результатов эксперимента задания 4 в отдельном окне
+    """
+    plt.figure(figsize=(12, 6))
+
+    plt.plot(range(1, len(results_all_uniform) + 1), results_all_uniform, 'orange', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+
+    final_average_all_uniform = cumulative_averages_all_uniform[-1]
+    plt.axhline(y=final_average_all_uniform, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_all_uniform:.2f})')
+
+    plt.title('Модель 3: Эксперимент с равномерным распределением атак (все стратегии)', fontsize=14)
+    plt.xlabel('Номер эксперимента', fontsize=12)
+    plt.ylabel('Время передачи', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
+    plt.xlim(1, len(results_all_uniform))
+
+    plt.tight_layout()
+    plt.show()
+
+    return final_average_all_uniform
+
+
+def plot_experiment_results_task5(results_wald, cumulative_averages_wald):
+    """
+    Строит график результатов эксперимента задания 5 в отдельном окне
+    """
+    plt.figure(figsize=(12, 6))
+
+    plt.plot(range(1, len(results_wald) + 1), results_wald, 'brown', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+
+    final_average_wald = cumulative_averages_wald[-1]
+    plt.axhline(y=final_average_wald, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_wald:.2f})')
+
+    plt.title('Модель 4: Эксперимент с оптимальным протоколом по Вальду', fontsize=14)
+    plt.xlabel('Номер эксперимента', fontsize=12)
+    plt.ylabel('Время передачи', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
+    plt.xlim(1, len(results_wald))
+
+    plt.tight_layout()
+    plt.show()
+
+    return final_average_wald
+
+
+def find_optimal_protocol_wald(matrix):
+    """
+    Находит оптимальный протокол по критерию Вальда
+    """
+    # Находим максимальное время передачи для каждого протокола
+    max_time_protocol1 = max(matrix[0])
+    max_time_protocol2 = max(matrix[1])
+
+    # Выбираем протокол с минимальным максимальным временем
+    if max_time_protocol1 <= max_time_protocol2:
+        optimal_protocol = 1
+        max_time = max_time_protocol1
+    else:
+        optimal_protocol = 2
+        max_time = max_time_protocol2
+
+    return optimal_protocol, max_time
+
+
+# =============================================================================
+# ОСНОВНАЯ ПРОГРАММА
+# =============================================================================
+
+if __name__ == "__main__":
+    M = [
+        [21, 12, 15, 23, 18],
+        [11, 33, 28, 16, 19]
+    ]
+
+    # Вывод исходной матрицы
+    headers = ["Протокол/Атака", "Тип 1", "Тип 2", "Тип 3", "Тип 4", "Тип 5"]
+    table_data = [
+        ["Протокол 1"] + M[0],
+        ["Протокол 2"] + M[1]
+    ]
+
+    print("ИСХОДНАЯ МАТРИЦА ИГРЫ:")
+    print(tabulate(table_data, headers=headers, tablefmt="grid", stralign="center"))
+
+    # Задание 1: Проверка седловой точки
+    print("\n" + "=" * 50)
+    print("Анализ матричной игры")
+    print("=" * 50)
+
+    has_saddle, alpha, beta = check_saddle_point(M)
+
+    print("\nПРОВЕРКА СЕДЛОВОЙ ТОЧКИ:")
+    print(f"Нижняя цена игры (α): {alpha}")
+    print(f"Верхняя цена игры (β): {beta}")
+
+    if has_saddle:
+        print("Седловая точка НАЙДЕНА - игра имеет решение в чистых стратегиях")
+    else:
+        print("Седловая точка НЕ НАЙДЕНА - необходимо решение в смешанных стратегиях")
+
+    # Уравнения платежных функций
+    functions = calculate_payment_functions(M)
+
+    print("\nУРАВНЕНИЯ ПЛАТЕЖНЫХ ФУНКЦИЙ:")
+    for func in functions:
+        print(func['equation'])
+
+    # Построение графика и нахождение оптимальных вероятностей для A
+    p_optimal, value_optimal = plot_payment_functions(functions)
+
+    print(f"\nОПТИМАЛЬНЫЕ ВЕРОЯТНОСТИ ДЛЯ ИГРОКА A:")
+    print(f"Вероятность выбора протокола 1 (p): {p_optimal:.3f}")
+    print(f"Вероятность выбора протокола 2 (1-p): {1 - p_optimal:.3f}")
+    print(f"Цена игры (V): {value_optimal:.3f}")
+
+    # Задание 2: Нахождение оптимальных стратегий для B
+    print("\n" + "=" * 50)
+    print("Определение оптимальных стратегий для игрока B")
+    print("=" * 50)
+
+    q_probabilities, active_strategies = find_optimal_strategies(M, p_optimal, value_optimal)
+
+    print(f"\nАКТИВНЫЕ СТРАТЕГИИ ИГРОКА B: {active_strategies}")
+
+    print(f"\nОПТИМАЛЬНЫЕ ВЕРОЯТНОСТИ ДЛЯ ИГРОКА B:")
+    for i, prob in enumerate(q_probabilities):
+        if prob > 0:
+            print(f"Вероятность выбора атаки {i + 1} (q_{i + 1}): {prob:.3f}")
+
+    # Проверка суммы вероятностей
+    total_q = sum(q_probabilities)
+    print(f"Сумма вероятностей: {total_q:.3f}")
+
+    # Вывод уравнений для игрока B
+    print(f"\nУРАВНЕНИЯ ДЛЯ ИГРОКА B:")
+    if len(active_strategies) == 2:
+        i, j = active_strategies[0] - 1, active_strategies[1] - 1
+        q_i = q_probabilities[i]
+        q_j = q_probabilities[j]
+
+        print(f"Для протокола 1: q_{i + 1} × {M[0][i]} + q_{j + 1} × {M[0][j]} = {value_optimal:.3f}")
+        print(f"Для протокола 2: q_{i + 1} × {M[1][i]} + q_{j + 1} × {M[1][j]} = {value_optimal:.3f}")
+        print(f"q_{i + 1} + q_{j + 1} = 1.000")
+
+    # Генерация массивов выборов игроков
+    # Генерируем общий массив выборов игрока A
+    player_A_choices = generate_player_A_choices(p_optimal, 1000)
+
+    # Генерируем массивы выборов игрока B для разных экспериментов
+    player_B_choices_optimal = generate_player_B_choices(q_probabilities, 1000)
+    player_B_choices_uniform = generate_player_B_uniform_choices(active_strategies, 1000)
+    player_B_choices_all_uniform = generate_player_B_all_uniform_choices(len(M[0]), 1000)
+    # Проведение экспериментов задания 2
+    print("\n" + "=" * 50)
+    print("ПРОВЕДЕНИЕ ЭКСПЕРИМЕНТОВ")
+    print("=" * 50)
+
+    # Эксперимент 1: A затем B (оптимальные стратегии)
+    results_A_then_B, cumulative_averages_A_then_B = calculate_experiment_results(
+        M, player_A_choices, player_B_choices_optimal
+    )
+
+    # Эксперимент 2: B затем A (оптимальные стратегии) - используем те же массивы, но в другом порядке
+    # Для этого создаем копии массивов с измененным порядком
+    player_B_choices_optimal_reordered = player_B_choices_optimal.copy()
+    player_A_choices_reordered = player_A_choices.copy()
+
+    results_B_then_A, cumulative_averages_B_then_A = calculate_experiment_results(
+        M, player_A_choices_reordered, player_B_choices_optimal_reordered
+    )
+    final_average_A_then_B, final_average_B_then_A = plot_experiment_results_task2(
+        results_A_then_B, cumulative_averages_A_then_B,
+        results_B_then_A, cumulative_averages_B_then_A
+    )
+
+    print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТОВ МОДЕЛИ 1:")
+    print(f"Теоретическая цена игры: {value_optimal:.3f}")
+    print(f"Практическое среднее время (A затем B, оптимальные стратегии): {final_average_A_then_B:.3f}")
+    print(f"Практическое среднее время (B затем A, оптимальные стратегии): {final_average_B_then_A:.3f}")
+
+    # Сравнение результатов задания 2
+    difference_optimal = abs(final_average_A_then_B - value_optimal)
+
+    print(f"\nСРАВНЕНИЕ РЕЗУЛЬТАТОВ МОДЕЛИ 1:")
+    print(f"Разница между теоретической и практической ценой игры (оптимальные стратегии): {difference_optimal:.3f}")
+
+    if difference_optimal < 0.5:
+        print("Практический результат с оптимальными стратегиями близок к теоретическому")
+    else:
+        print("Заметное расхождение между теоретическим и практическим результатами с оптимальными стратегиями")
+
+    # =============================================================================
+    # ЗАДАНИЕ 3: Эксперимент с равномерным распределением атак (активные стратегии)
+    # =============================================================================
+
+    print("\n" + "=" * 50)
+    print("ЗАДАНИЕ 2: Эксперимент с равномерным распределением атак (активные стратегии)")
+    print("=" * 50)
+
+    # Эксперимент 3: равномерное распределение атак (активные стратегии)
+    results_uniform, cumulative_averages_uniform = calculate_experiment_results(
+        M, player_A_choices, player_B_choices_uniform
+    )
+
+    final_average_uniform = plot_experiment_results_task3(results_uniform, cumulative_averages_uniform)
+
+    print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 2:")
+    print(
+        f"Практическое среднее время (равномерное распределение атак, активные стратегии): {final_average_uniform:.3f}")
+    print(f"Практическое среднее время (оптимальные стратегии): {final_average_A_then_B:.3f}")
+
+    # Сравнение результатов задания 3
+    difference_uniform = final_average_uniform - final_average_A_then_B
+
+    print(f"\nСРАВНЕНИЕ РЕЗУЛЬТАТОВ МОДЕЛИ 2:")
+    print(f"Разница между равномерным (активные стратегии) и оптимальным распределением атак: {difference_uniform:.3f}")
+
+    if difference_uniform < 0:
+        print(
+            "Реальная цена игры с равномерным распределением атак (активные стратегии) НИЖЕ, чем с оптимальными стратегиями")
+    else:
+        print(
+            "Реальная цена игры с равномерным распределением атак (активные стратегии) ВЫШЕ, чем с оптимальными стратегиями")
+
+    # =============================================================================
+    # ЗАДАНИЕ 4: Эксперимент с равномерным распределением атак (все стратегии)
+    # =============================================================================
+
+    print("\n" + "=" * 50)
+    print("ЗАДАНИЕ 3: Эксперимент с равномерным распределением атак (все стратегии)")
+    print("=" * 50)
+
+    # Эксперимент 4: равномерное распределение атак (все стратегии)
+    results_all_uniform, cumulative_averages_all_uniform = calculate_experiment_results(
+        M, player_A_choices, player_B_choices_all_uniform
+    )
+
+    final_average_all_uniform = plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform)
+
+    print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 3:")
+    print(
+        f"Практическое среднее время (равномерное распределение атак, все стратегии): {final_average_all_uniform:.3f}")
+    print(f"Практическое среднее время (оптимальные стратегии): {final_average_A_then_B:.3f}")
+
+    # Сравнение результатов задания 4
+    difference_all_uniform = final_average_all_uniform - final_average_A_then_B
+
+    print(f"\nСРАВНЕНИЕ РЕЗУЛЬТАТОВ МОДЕЛИ 3:")
+    print(f"Разница между равномерным (все стратегии) и оптимальным распределением атак: {difference_all_uniform:.3f}")
+
+    if difference_all_uniform < 0:
+        print(
+            "Реальная цена игры с равномерным распределением атак (все стратегии) НИЖЕ, чем с оптимальными стратегиями")
+    else:
+        print(
+            "Реальная цена игры с равномерным распределением атак (все стратегии) ВЫШЕ, чем с оптимальными стратегиями")
+
+    # =============================================================================
+    # ЗАДАНИЕ 5: Эксперимент с оптимальным протоколом по критерию Вальда
+    # =============================================================================
+
+    print("\n" + "=" * 50)
+    print("ЗАДАНИЕ 4: Эксперимент с оптимальным протоколом по критерию Вальда")
+    print("=" * 50)
+
+    # Находим оптимальный протокол по критерию Вальда
+    optimal_protocol_wald, max_time_wald = find_optimal_protocol_wald(M)
+
+    print(f"\nОПТИМАЛЬНЫЙ ПРОТОКОЛ ПО КРИТЕРИЮ ВАЛЬДА:")
+    print(f"Максимальное время передачи для протокола 1: {max(M[0])}")
+    print(f"Максимальное время передачи для протокола 2: {max(M[1])}")
+    print(f"Оптимальный протокол: {optimal_protocol_wald}")
+    print(f"Максимальное гарантированное время: {max_time_wald}")
+
+    # Генерируем массив выборов игрока A для критерия Вальда
+    player_A_choices_wald = generate_player_A_wald_choices(optimal_protocol_wald, 1000)
+
+    # Эксперимент 5: оптимальный протокол по Вальду
+    results_wald, cumulative_averages_wald = calculate_experiment_results(
+        M, player_A_choices_wald, player_B_choices_optimal
+    )
+
+    final_average_wald = plot_experiment_results_task5(results_wald, cumulative_averages_wald)
+
+    print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 4:")
+    print(f"Практическое среднее время (оптимальный протокол по Вальду): {final_average_wald:.3f}")
+    print(f"Практическое среднее время (оптимальные стратегии): {final_average_A_then_B:.3f}")
+
+    # Сравнение результатов задания 5
+    difference_wald = final_average_wald - final_average_A_then_B
+
+    print(f"\nСРАВНЕНИЕ РЕЗУЛЬТАТОВ МОДЕЛИ 4:")
+    print(f"Разница между оптимальным протоколом по Вальду и оптимальными стратегиями: {difference_wald:.3f}")
+
+    if difference_wald < 0:
+        print("Реальная цена игры с оптимальным протоколом по Вальду НИЖЕ, чем с оптимальными стратегиями")
+    else:
+        print("Реальная цена игры с оптимальным протоколом по Вальду ВЫШЕ, чем с оптимальными стратегиями")
+
+    # =============================================================================
+    # ИТОГОВОЕ СРАВНЕНИЕ ВСЕХ ЭКСПЕРИМЕНТОВ
+    # =============================================================================
+
+    print("\n" + "=" * 50)
+    print("ИТОГОВОЕ СРАВНЕНИЕ ВСЕХ ЭКСПЕРИМЕНТОВ")
+    print("=" * 50)
+
+    print(f"Теоретическая цена игры: {value_optimal:.3f}")
+    print(f"Оптимальные стратегии (A затем B): {final_average_A_then_B:.3f}")
+    print(f"Равномерное распределение (активные стратегии): {final_average_uniform:.3f}")
+    print(f"Равномерное распределение (все стратегии): {final_average_all_uniform:.3f}")
+    print(f"Оптимальный протокол по Вальду: {final_average_wald:.3f}")
+
+    print(
+        f"\nЛУЧШИЙ РЕЗУЛЬТАТ (ДЛЯ B): {max(final_average_A_then_B, final_average_uniform, final_average_all_uniform, final_average_wald):.3f}")
