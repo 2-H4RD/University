@@ -167,14 +167,14 @@ def find_optimal_strategies(matrix, p_optimal, value_optimal):
 # ЗАДАНИЕ 2: Моделирование экспериментов
 # =============================================================================
 
-def generate_player_A_choices(p_optimal, num_experiments=1000):
+def generate_player_A_choices(p_optimal, num_experiments=10000):
     """
     Генерирует массив выборов игрока A на основе вероятности p_optimal
     """
     return [1 if random.random() < p_optimal else 2 for _ in range(num_experiments)]
 
 
-def generate_player_B_choices(q_probabilities, num_experiments=1000):
+def generate_player_B_choices(q_probabilities, num_experiments=10000):
     """
     Генерирует массив выборов игрока B на основе вероятностей q_probabilities
     """
@@ -195,21 +195,21 @@ def generate_player_B_choices(q_probabilities, num_experiments=1000):
     return choices
 
 
-def generate_player_B_uniform_choices(active_strategies, num_experiments=1000):
+def generate_player_B_uniform_choices(active_strategies, num_experiments=10000):
     """
     Генерирует массив выборов игрока B с равномерным распределением между активными стратегиями
     """
     return [random.choice(active_strategies) for _ in range(num_experiments)]
 
 
-def generate_player_B_all_uniform_choices(num_attacks, num_experiments=1000):
+def generate_player_B_all_uniform_choices(num_attacks, num_experiments=10000):
     """
     Генерирует массив выборов игрока B с равномерным распределением между всеми стратегиями
     """
     return [random.randint(1, num_attacks) for _ in range(num_experiments)]
 
 
-def generate_player_A_wald_choices(optimal_protocol, num_experiments=1000):
+def generate_player_A_wald_choices(optimal_protocol, num_experiments=10000):
     """
     Генерирует массив выборов игрока A, всегда выбирающего оптимальный протокол по Вальду
     """
@@ -237,51 +237,46 @@ def calculate_experiment_results(matrix, player_A_choices, player_B_choices):
     return results, cumulative_averages
 
 
-def plot_experiment_results_task2(results_A_then_B, cumulative_averages_A_then_B,
-                                  results_B_then_A, cumulative_averages_B_then_A):
+def plot_experiment_results_task2(results_A_then_B, cumulative_averages_A_then_B, active_strategies,M):
     """
     Строит графики результатов экспериментов задания 2 в одном окне
     """
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
-
-    # График для эксперимента A затем B
-    ax1.plot(range(1, len(results_A_then_B) + 1), results_A_then_B, 'b-', alpha=0.7, linewidth=0.8,
-             label='Время передачи в эксперименте')
+    plt.figure(figsize=(12, 6))
     final_average_A_then_B = cumulative_averages_A_then_B[-1]
-    ax1.axhline(y=final_average_A_then_B, color='r', linestyle='--', linewidth=2,
-                label=f'Среднее значение ({final_average_A_then_B:.2f})')
-    ax1.set_title('Модель 1: Эксперимент A затем B (оптимальные стратегии)', fontsize=14)
-    ax1.set_xlabel('Номер эксперимента', fontsize=12)
-    ax1.set_ylabel('Время передачи', fontsize=12)
-    ax1.grid(True, linestyle='--', alpha=0.7)
-    ax1.legend()
-    ax1.set_xlim(1, len(results_A_then_B))
-
-    # График для эксперимента B затем A
-    ax2.plot(range(1, len(results_B_then_A) + 1), results_B_then_A, 'g-', alpha=0.7, linewidth=0.8,
+    # График для эксперимента A затем B
+    plt.plot(range(1, len(results_A_then_B) + 1), results_A_then_B, 'b-', alpha=0.7, linewidth=0.8,
              label='Время передачи в эксперименте')
-    final_average_B_then_A = cumulative_averages_B_then_A[-1]
-    ax2.axhline(y=final_average_B_then_A, color='r', linestyle='--', linewidth=2,
-                label=f'Среднее значение ({final_average_B_then_A:.2f})')
-    ax2.set_title('Модель 1: Эксперимент B затем A (оптимальные стратегии)', fontsize=14)
-    ax2.set_xlabel('Номер эксперимента', fontsize=12)
-    ax2.set_ylabel('Время передачи', fontsize=12)
-    ax2.grid(True, linestyle='--', alpha=0.7)
-    ax2.legend()
-    ax2.set_xlim(1, len(results_B_then_A))
+    for i in range(len(M)):
+        for j in active_strategies:
+            plt.axhline(y=M[i][j-1], color='black', linewidth=2,
+                label=f"Время передачи {M[i][j-1]}")
+    plt.plot(range(1, len(results_A_then_B) + 1), results_A_then_B, 'b-', alpha=0.7, linewidth=0.8,
+             label='Время передачи в эксперименте')
+    plt.axhline(y=final_average_A_then_B, color='r', linestyle='--', linewidth=2,
+                label=f'Среднее значение ({final_average_A_then_B:.2f})')
+    plt.title('Модель 1: Оптимальные стратегии', fontsize=14)
+    plt.xlabel('Номер эксперимента', fontsize=12)
+    plt.ylabel('Время передачи', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend()
 
+    plt.xlim(1, len(results_A_then_B))
     plt.tight_layout()
     plt.show()
 
-    return final_average_A_then_B, final_average_B_then_A
+    return final_average_A_then_B
 
 
-def plot_experiment_results_task3(results_uniform, cumulative_averages_uniform):
+def plot_experiment_results_task3(results_uniform, cumulative_averages_uniform, M):
     """
     Строит график результатов эксперимента задания 3 в отдельном окне
     """
     plt.figure(figsize=(12, 6))
 
+    for i in range(len(M)):
+        for j in active_strategies:
+            plt.axhline(y=M[i][j-1], color='black', linewidth=2,
+                label=f"Время передачи {M[i][j-1]}")
     plt.plot(range(1, len(results_uniform) + 1), results_uniform, 'purple', alpha=0.7, linewidth=0.8,
              label='Время передачи в эксперименте')
 
@@ -302,11 +297,16 @@ def plot_experiment_results_task3(results_uniform, cumulative_averages_uniform):
     return final_average_uniform
 
 
-def plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform):
+def plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform, M):
     """
     Строит график результатов эксперимента задания 4 в отдельном окне
     """
     plt.figure(figsize=(12, 6))
+
+    for i in range(len(M)):
+        for j in range(5):
+            plt.axhline(y=M[i][j], color='black', linewidth=1,
+                label=f"Время передачи {M[i][j]}")
 
     plt.plot(range(1, len(results_all_uniform) + 1), results_all_uniform, 'orange', alpha=0.7, linewidth=0.8,
              label='Время передачи в эксперименте')
@@ -328,12 +328,14 @@ def plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_u
     return final_average_all_uniform
 
 
-def plot_experiment_results_task5(results_wald, cumulative_averages_wald):
+def plot_experiment_results_task5(results_wald, cumulative_averages_wald,M, strategy):
     """
     Строит график результатов эксперимента задания 5 в отдельном окне
     """
     plt.figure(figsize=(12, 6))
-
+    for j in active_strategies:
+        plt.axhline(y=M[strategy-1][j-1], color='black', linewidth=2,
+            label=f"Время передачи {M[strategy-1][j-1]}")
     plt.plot(range(1, len(results_wald) + 1), results_wald, 'brown', alpha=0.7, linewidth=0.8,
              label='Время передачи в эксперименте')
 
@@ -455,12 +457,12 @@ if __name__ == "__main__":
 
     # Генерация массивов выборов игроков
     # Генерируем общий массив выборов игрока A
-    player_A_choices = generate_player_A_choices(p_optimal, 1000)
+    player_A_choices = generate_player_A_choices(p_optimal, 10000)
 
     # Генерируем массивы выборов игрока B для разных экспериментов
-    player_B_choices_optimal = generate_player_B_choices(q_probabilities, 1000)
-    player_B_choices_uniform = generate_player_B_uniform_choices(active_strategies, 1000)
-    player_B_choices_all_uniform = generate_player_B_all_uniform_choices(len(M[0]), 1000)
+    player_B_choices_optimal = generate_player_B_choices(q_probabilities, 10000)
+    player_B_choices_uniform = generate_player_B_uniform_choices(active_strategies, 10000)
+    player_B_choices_all_uniform = generate_player_B_all_uniform_choices(len(M[0]), 10000)
     # Проведение экспериментов задания 2
     print("\n" + "=" * 50)
     print("ПРОВЕДЕНИЕ ЭКСПЕРИМЕНТОВ")
@@ -470,24 +472,12 @@ if __name__ == "__main__":
     results_A_then_B, cumulative_averages_A_then_B = calculate_experiment_results(
         M, player_A_choices, player_B_choices_optimal
     )
-
-    # Эксперимент 2: B затем A (оптимальные стратегии) - используем те же массивы, но в другом порядке
-    # Для этого создаем копии массивов с измененным порядком
-    player_B_choices_optimal_reordered = player_B_choices_optimal.copy()
-    player_A_choices_reordered = player_A_choices.copy()
-
-    results_B_then_A, cumulative_averages_B_then_A = calculate_experiment_results(
-        M, player_A_choices_reordered, player_B_choices_optimal_reordered
-    )
-    final_average_A_then_B, final_average_B_then_A = plot_experiment_results_task2(
-        results_A_then_B, cumulative_averages_A_then_B,
-        results_B_then_A, cumulative_averages_B_then_A
-    )
+    final_average_A_then_B = plot_experiment_results_task2(results_A_then_B, cumulative_averages_A_then_B,
+                                                           active_strategies, M)
 
     print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТОВ МОДЕЛИ 1:")
     print(f"Теоретическая цена игры: {value_optimal:.3f}")
-    print(f"Практическое среднее время (A затем B, оптимальные стратегии): {final_average_A_then_B:.3f}")
-    print(f"Практическое среднее время (B затем A, оптимальные стратегии): {final_average_B_then_A:.3f}")
+    print(f"Практическое среднее время: {final_average_A_then_B:.3f}")
 
     # Сравнение результатов задания 2
     difference_optimal = abs(final_average_A_then_B - value_optimal)
@@ -501,7 +491,7 @@ if __name__ == "__main__":
         print("Заметное расхождение между теоретическим и практическим результатами с оптимальными стратегиями")
 
     # =============================================================================
-    # ЗАДАНИЕ 3: Эксперимент с равномерным распределением атак (активные стратегии)
+    # ЗАДАНИЕ 2: Эксперимент с равномерным распределением атак (активные стратегии)
     # =============================================================================
 
     print("\n" + "=" * 50)
@@ -513,7 +503,7 @@ if __name__ == "__main__":
         M, player_A_choices, player_B_choices_uniform
     )
 
-    final_average_uniform = plot_experiment_results_task3(results_uniform, cumulative_averages_uniform)
+    final_average_uniform = plot_experiment_results_task3(results_uniform, cumulative_averages_uniform,M)
 
     print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 2:")
     print(
@@ -546,7 +536,7 @@ if __name__ == "__main__":
         M, player_A_choices, player_B_choices_all_uniform
     )
 
-    final_average_all_uniform = plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform)
+    final_average_all_uniform = plot_experiment_results_task4(results_all_uniform, cumulative_averages_all_uniform,M)
 
     print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 3:")
     print(
@@ -584,14 +574,14 @@ if __name__ == "__main__":
     print(f"Максимальное гарантированное время: {max_time_wald}")
 
     # Генерируем массив выборов игрока A для критерия Вальда
-    player_A_choices_wald = generate_player_A_wald_choices(optimal_protocol_wald, 1000)
+    player_A_choices_wald = generate_player_A_wald_choices(optimal_protocol_wald, 10000)
 
     # Эксперимент 5: оптимальный протокол по Вальду
     results_wald, cumulative_averages_wald = calculate_experiment_results(
         M, player_A_choices_wald, player_B_choices_optimal
     )
-
-    final_average_wald = plot_experiment_results_task5(results_wald, cumulative_averages_wald)
+    final_average_wald = plot_experiment_results_task5(results_wald, cumulative_averages_wald,
+                                                       M, player_A_choices_wald[0])
 
     print(f"\nРЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА МОДЕЛИ 4:")
     print(f"Практическое среднее время (оптимальный протокол по Вальду): {final_average_wald:.3f}")
