@@ -1,6 +1,10 @@
+# main.py
+# -*- coding: utf-8 -*-
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+# === Импорты из модулей проекта ===
 from num_generator import (
     generate_gost_pq,
     generate_gost_a,
@@ -12,7 +16,7 @@ from num_generator import (
 from gost_hash_3411 import gost3411_94_full
 
 
-WINDOW_WIDTH = 800
+WINDOW_WIDTH = 700
 WINDOW_HEIGHT = 700
 
 
@@ -75,6 +79,10 @@ class GostApp:
         self.a = None
         self.x = None  # секретный ключ
         self.y = None  # открытый ключ
+
+        # состояние для контроля изменений и хэша
+        self.last_signed_message = None      # текст, который подписывали
+        self.received_hash_hex = None        # хэш, переданный отправителем (как строка hex)
 
         # запрет закрытия окна получателя напрямую
         self.receiver.protocol("WM_DELETE_WINDOW", self.on_receiver_close_attempt)
@@ -191,13 +199,13 @@ class GostApp:
         self.y_text.pack(fill=tk.X, padx=5, pady=(0, 5))
 
         # ---------- фрейм хэша и подписи ----------
-        crypto_frame = ttk.LabelFrame(self.root, text="Хэш и подпись")
+        crypto_frame = ttk.LabelFrame(self.root, text="Хэш-значение и подпись")
         crypto_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
 
         # хэш
         hash_label = ttk.Label(
             crypto_frame,
-            text="Хэш сообщения (ГОСТ 34.11-94, hex, младшие байты первыми):"
+            text="Хэш-значние сообщения (ГОСТ 34.11-94, hex, младшие байты первыми):"
         )
         hash_label.pack(anchor="w", padx=5, pady=(5, 0))
 
@@ -211,17 +219,6 @@ class GostApp:
         self.signature_text = tk.Text(crypto_frame, height=2, wrap="word")
         self.signature_text.pack(fill=tk.X, padx=5, pady=(0, 5))
 
-        # делаем поля только для чтения
-        for widget in (
-            self.p_text,
-            self.q_text,
-            self.a_text,
-            self.y_text,
-            self.hash_text,
-            self.signature_text,
-        ):
-            widget.configure(state="disabled")
-
     # ======================= UI получателя =======================
 
     def build_receiver_ui(self):
@@ -229,11 +226,11 @@ class GostApp:
         Окно 'Получатель':
         - поле для полученного сообщения;
         - поле для открытого ключа y;
-        - поле для полученного хэша;
+        - поле для вычисленного хэша;
         - поле для полученной подписи;
         - статус проверки хэша;
         - поля для z1, z2, u;
-        - кнопки 'Проверить хэш' и 'Проверить подпись'.
+        - кнопки 'Вычислить хэш' и 'Проверить подпись'.
         """
         # полученное сообщение
         msg_frame = ttk.LabelFrame(self.receiver, text="Полученное сообщение (получатель)")
@@ -248,15 +245,13 @@ class GostApp:
 
         self.receiver_key_text = tk.Text(key_frame, height=2, wrap="word")
         self.receiver_key_text.pack(fill=tk.X, padx=5, pady=5)
-        self.receiver_key_text.configure(state="disabled")
 
-        # окно для полученного хэша
-        recv_hash_frame = ttk.LabelFrame(self.receiver, text="Полученный хэш (hex)")
-        recv_hash_frame.pack(fill=tk.BOTH, expand=False, padx=10, pady=(0, 10))
+        # окно для вычисленного хэша
+        calc_hash_frame = ttk.LabelFrame(self.receiver, text="Вычисленное хэш-значение (hex)")
+        calc_hash_frame.pack(fill=tk.BOTH, expand=False, padx=10, pady=(0, 10))
 
-        self.receiver_hash_text = tk.Text(recv_hash_frame, height=2, wrap="word")
+        self.receiver_hash_text = tk.Text(calc_hash_frame, height=2, wrap="word")
         self.receiver_hash_text.pack(fill=tk.X, padx=5, pady=5)
-        self.receiver_hash_text.configure(state="disabled")
 
         # окно для полученной подписи
         recv_sig_frame = ttk.LabelFrame(self.receiver, text="Полученная подпись (r, s)")
@@ -264,13 +259,12 @@ class GostApp:
 
         self.receiver_sig_text = tk.Text(recv_sig_frame, height=2, wrap="word")
         self.receiver_sig_text.pack(fill=tk.X, padx=5, pady=5)
-        self.receiver_sig_text.configure(state="disabled")
 
         # статус проверки хэша
         status_frame = ttk.Frame(self.receiver)
         status_frame.pack(fill=tk.X, padx=10, pady=(0, 10))
 
-        self.hash_status_label = ttk.Label(status_frame, text="Статус хэша: не проверен")
+        self.hash_status_label = ttk.Label(status_frame, text="Статус хэша-значения: не проверен")
         self.hash_status_label.pack(anchor="w", padx=5)
 
         # поля для z1, z2, u
@@ -292,16 +286,13 @@ class GostApp:
         self.u_text = tk.Text(params_frame, height=1, wrap="word")
         self.u_text.pack(fill=tk.X, padx=5, pady=(0, 5))
 
-        for w in (self.z1_text, self.z2_text, self.u_text):
-            w.configure(state="disabled")
-
         # кнопки проверки хэша и подписи
         btn_frame = ttk.Frame(self.receiver)
         btn_frame.pack(fill=tk.X, padx=10, pady=(0, 10))
 
         verify_hash_btn = ttk.Button(
             btn_frame,
-            text="Проверить хэш",
+            text="Вычислить хэш-значение",
             command=self.on_verify_hash
         )
         verify_hash_btn.pack(side=tk.LEFT, padx=(0, 5))
@@ -318,18 +309,18 @@ class GostApp:
     @staticmethod
     def _set_text(widget: tk.Text, content: str):
         """
-        Обновляет содержимое Text-поля в режиме read-only.
+        Обновляет содержимое Text-поля.
         """
-        widget.configure(state="normal")
         widget.delete("1.0", tk.END)
         widget.insert(tk.END, content)
-        widget.configure(state="disabled")
 
     def on_sender_text_changed(self, event=None):
         """
         Вызывается при изменении текста сообщения отправителя.
-        (Сейчас без логики, но можно расширять при необходимости.)
+        Если сообщение было уже подписано и затем изменено — при следующей
+        попытке подписи будет показано предупреждение.
         """
+        # Ничего специально не делаем здесь, проверка будет в on_sign_and_send
         pass
 
     # ======================= Генерация ключей =======================
@@ -374,9 +365,11 @@ class GostApp:
             self._set_text(self.a_text, a_hex)
             self._set_text(self.y_text, y_hex)
 
-            # флаги
+            # флаги и состояния
             self.keys_generated = True
             self.key_transmitted = False
+            self.last_signed_message = None
+            self.received_hash_hex = None
 
             # чистим отображение у получателя
             self._set_text(self.receiver_key_text, "")
@@ -390,8 +383,9 @@ class GostApp:
             self._set_text(self.signature_text, "")
 
             # чистим z1, z2, u
-            for w in (self.z1_text, self.z2_text, self.u_text):
-                self._set_text(w, "")
+            self._set_text(self.z1_text, "")
+            self._set_text(self.z2_text, "")
+            self._set_text(self.u_text, "")
 
             messagebox.showinfo(
                 "Ключи сгенерированы",
@@ -464,6 +458,15 @@ class GostApp:
             )
             return
 
+        # Если сообщение уже было подписано ранее и теперь изменилось —
+        # покажем предупреждение перед повторной подписью.
+        if self.last_signed_message is not None and self.last_signed_message != message_str:
+            messagebox.showinfo(
+                "Сообщение изменено",
+                "Сообщение было изменено после предыдущей подписи.\n"
+                "Будет сформирована новая подпись для нового текста."
+            )
+
         try:
             # ---------- хэш сообщения (ГОСТ 34.11-94) ----------
             msg_bytes = message_str.encode("utf-8")
@@ -509,38 +512,52 @@ class GostApp:
 
             # ---------- "передаём" данные получателю ----------
             self._set_text(self.receiver_text, message_str)
-            self._set_text(self.receiver_hash_text, digest_hex)
+            # Хэш теперь НЕ заполняет поле получателя, а сохраняется отдельно
+            self._set_text(self.receiver_hash_text, "")  # вычисленный будет позже
             self._set_text(self.receiver_sig_text, sig_str)
             self.hash_status_label.config(text="Статус хэша: не проверен")
 
+            # Сохраняем, что именно мы подписывали и какой хэш передали
+            self.last_signed_message = message_str
+            self.received_hash_hex = digest_hex
+
             # чистим z1, z2, u
-            for w in (self.z1_text, self.z2_text, self.u_text):
-                self._set_text(w, "")
+            self._set_text(self.z1_text, "")
+            self._set_text(self.z2_text, "")
+            self._set_text(self.u_text, "")
 
             messagebox.showinfo(
                 "Готово",
-                "Сообщение подписано.\nТекст, хэш и подпись переданы получателю."
+                "Сообщение подписано.\nТекст и подпись переданы получателю.\n"
+                "Получатель может вычислить хэш и сверить его с переданным."
             )
 
         except Exception as e:
             messagebox.showerror("Ошибка при подписи", f"Произошла ошибка: {e}")
 
-    # ======================= Проверка хэша у получателя =======================
+    # ======================= Проверка/вычисление хэша у получателя =======================
 
     def on_verify_hash(self):
         """
         Получатель:
-        - читает сообщение и присланный хэш;
+        - читает сообщение;
         - пересчитывает ГОСТ 34.11-94 от полученного сообщения;
-        - сравнивает хэши и обновляет hash_status_label.
+        - записывает вычисленный хэш в соответствующее поле;
+        - сравнивает вычисленный хэш с тем, что передал отправитель.
+          (переданный хэш хранится в self.received_hash_hex)
         """
         msg_str = self.receiver_text.get("1.0", tk.END).strip()
-        recv_hash_hex = self.receiver_hash_text.get("1.0", tk.END).strip()
-
-        if not msg_str or not recv_hash_hex:
+        if not msg_str:
             messagebox.showwarning(
-                "Нет данных",
-                "Нет сообщения или хэша для проверки."
+                "Нет сообщения",
+                "Нет сообщения для вычисления хэша."
+            )
+            return
+
+        if self.received_hash_hex is None:
+            messagebox.showwarning(
+                "Нет переданного хэша",
+                "Хэш от отправителя не был передан.\nСначала отправитель должен подписать сообщение."
             )
             return
 
@@ -549,14 +566,19 @@ class GostApp:
             H_be = gost3411_94_full(msg_bytes)
             digest_calc_hex = H_be[::-1].hex().upper()
 
-            if digest_calc_hex == recv_hash_hex:
+            # Пишем вычисленный хэш в поле
+            self._set_text(self.receiver_hash_text, digest_calc_hex)
+
+            # Сравниваем вычисленный с переданным (из отправителя)
+            if digest_calc_hex == self.received_hash_hex:
                 self.hash_status_label.config(text="Статус хэша: совпадает")
-                messagebox.showinfo("Проверка хэша", "Хэш совпадает с присланным.")
+                messagebox.showinfo("Проверка хэша", "Хэш совпадает с тем, который передал отправитель.")
             else:
                 self.hash_status_label.config(text="Статус хэша: НЕ совпадает")
                 messagebox.showerror(
                     "Проверка хэша",
-                    "Хэши не совпадают.\nСообщение или хэш были изменены."
+                    "Вычисленный хэш не совпадает с хэшем отправителя.\n"
+                    "Вероятно, полученное сообщение было изменено."
                 )
 
         except Exception as e:
@@ -567,11 +589,13 @@ class GostApp:
     def on_verify_signature(self):
         """
         Получатель:
-        - читает сообщение, хэш и подпись;
+        - читает сообщение и подпись;
         - пересчитывает ГОСТ 34.11-94 от сообщения;
         - вычисляет h, v, z1, z2, u;
         - выводит z1, z2, u в отдельные поля;
         - проверяет условие u == r и сообщает, корректна ли подпись.
+        Дополнительно: если вычисленный хэш не совпадает с тем, что передал
+        отправитель, показывается предупреждение о возможном изменении сообщения.
         """
         # Проверка наличия открытого ключа
         if not self.key_transmitted or self.y is None:
@@ -592,11 +616,32 @@ class GostApp:
             )
             return
 
+        if self.received_hash_hex is None:
+            messagebox.showwarning(
+                "Нет переданного хэша",
+                "Отправитель ещё не подписал/не передал хэш для этого сообщения."
+            )
+            return
+
         try:
             msg_bytes = msg_str.encode("utf-8")
 
             # --- Пересчитываем ГОСТ 34.11-94 ---
             H_be = gost3411_94_full(msg_bytes)
+            digest_calc_hex = H_be[::-1].hex().upper()
+
+            # Проверим совпадение хэша
+            if digest_calc_hex != self.received_hash_hex:
+                # Обновим поле вычисленного хэша, чтобы студент видел разницу
+                self._set_text(self.receiver_hash_text, digest_calc_hex)
+                self.hash_status_label.config(text="Статус хэша: НЕ совпадает")
+                messagebox.showerror(
+                    "Несовпадение хэша",
+                    "Вычисленный хэш не совпадает с хэшем отправителя.\n"
+                    "Сообщение, вероятно, было изменено.\n"
+                    "Проверка подписи в таких условиях может показать неверный результат."
+                )
+                # Можно продолжить проверку подписи, чтобы показать, что она не проходит.
 
             # --- Подготовка данных для проверки подписи по ГОСТ 34.10-94 ---
             h_int = int.from_bytes(H_be, "big") % self.q
@@ -657,7 +702,8 @@ class GostApp:
             else:
                 messagebox.showerror(
                     "Неверная подпись",
-                    "Подпись не прошла проверку.\nСообщение или подпись могли быть подделаны."
+                    "Подпись не прошла проверку.\n"
+                    "Сообщение или подпись могли быть подделаны."
                 )
 
         except Exception as e:
