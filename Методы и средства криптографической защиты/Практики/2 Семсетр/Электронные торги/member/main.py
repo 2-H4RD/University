@@ -93,7 +93,6 @@ class MemberApp:
         # Сетевое/протокольное состояние
         self.client: AuctionMemberClient | None = None
         self.connected_to_server = False
-        self.auth_window_active = False   # логический флаг, когда мы пытаемся аутентифицироваться
         self.auth_completed = False
         self.trade_phase_open = False
 
@@ -184,28 +183,19 @@ class MemberApp:
         )
         btn_start_auth.pack(side="left", padx=5)
 
-        btn_end_auth = ttk.Button(
-            top_frame, text="Завершить аутентификацию", command=self.on_end_auth_window
-        )
-        btn_end_auth.pack(side="left", padx=5)
-
         status_frame = ttk.LabelFrame(self.tab_auth, text="Состояние")
         status_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
         self.lbl_conn_status = ttk.Label(status_frame, text="Соединение с сервером: НЕТ")
         self.lbl_conn_status.pack(anchor="w", padx=5, pady=2)
 
-        self.lbl_auth_window_status = ttk.Label(status_frame, text="Окно аутентификации: ЗАКРЫТО")
-        self.lbl_auth_window_status.pack(anchor="w", padx=5, pady=2)
-
-        self.lbl_auth_status = ttk.Label(status_frame, text="Статус участника: НЕ АУТЕНТИФИЦИРОВАН")
+        self.lbl_auth_status = ttk.Label(status_frame, text="Статус аутентификации: НЕ ПРОЙДЕНА")
         self.lbl_auth_status.pack(anchor="w", padx=5, pady=2)
 
         info = (
             "Примечания:\n"
-            " - Аутентификация возможна только при активном окне аутентификации на сервере;\n"
             " - Участник должен иметь сгенерированные RSA-ключи и ID;\n"
-            " - После успешной аутентификации участник допускается к торгам."
+            " - После успешной аутентификации участник может отправлять заявки."
         )
         ttk.Label(status_frame, text=info, wraplength=900, foreground="gray").pack(
             anchor="w", padx=5, pady=5
@@ -423,12 +413,8 @@ class MemberApp:
             return
 
         print("[CLIENT GUI] Запуск аутентификации по RSA через сеть...")
-        self.auth_window_active = True
-        self.lbl_auth_window_status.config(
-            text="Окно аутентификации: АКТИВНО (запрос к серверу)", foreground="green"
-        )
         self.lbl_auth_status.config(
-            text="Статус участника: В ПРОЦЕССЕ АУТЕНТИФИКАЦИИ", foreground="orange"
+            text="Статус аутентификации: В ПРОЦЕССЕ", foreground="orange"
         )
 
         ok = self.client.authenticate()
@@ -439,42 +425,18 @@ class MemberApp:
             )
             self.auth_completed = False
             self.lbl_auth_status.config(
-                text="Статус участника: НЕ АУТЕНТИФИЦИРОВАН", foreground="red"
+                text="Статус аутентификации: НЕ ПРОЙДЕНА", foreground="red"
             )
+            self.trade_phase_open = False
             return
 
         # Успех
         self.auth_completed = True
+        self.trade_phase_open = True
         self.lbl_auth_status.config(
-            text="Статус участника: АУТЕНТИФИЦИРОВАН", foreground="green"
+            text="Статус аутентификации: ПРОЙДЕНА", foreground="green"
         )
         print("[CLIENT GUI] Аутентификация успешно пройдена.")
-
-    def on_end_auth_window(self):
-        """
-        Локальное завершение "окна аутентификации" с точки зрения GUI.
-        На сети ничего не отправляется — реальное закрытие окна управляется сервером.
-        """
-        if not self.auth_window_active:
-            messagebox.showinfo("Информация", "Окно аутентификации уже закрыто.")
-            return
-
-        print("[CLIENT GUI] Завершение окна аутентификации (локальное).")
-        self.auth_window_active = False
-        self.lbl_auth_window_status.config(
-            text="Окно аутентификации: ЗАКРЫТО (GUI)", foreground="red"
-        )
-
-        if self.auth_completed:
-            self.trade_phase_open = True
-            self.lbl_trade_status.config(
-                text="Статус: участник допущен к торгам", foreground="green"
-            )
-        else:
-            self.trade_phase_open = False
-            self.lbl_trade_status.config(
-                text="Статус: участник НЕ допущен к торгам (нет аутентификации)", foreground="red"
-            )
 
     # ==================================================================
     # Обработчики вкладки "Торги"
@@ -495,6 +457,14 @@ class MemberApp:
             messagebox.showwarning(
                 "Нет соединения",
                 "Сначала подключитесь к серверу (вкладка «Аутентификация»)."
+            )
+            return
+
+        # --- 0.1. Проверка статуса аутентификации ---
+        if not self.auth_completed:
+            messagebox.showwarning(
+                "Нет доступа",
+                "Сначала пройдите аутентификацию, затем отправляйте заявки."
             )
             return
 
