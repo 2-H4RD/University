@@ -523,114 +523,37 @@ class MemberApp:
             )
             return
 
-        # --- 2. Проверяем, что известен открытый RSA-ключ сервера ---
-        n_srv = getattr(self.client, "server_rsa_n", None)
-        e_srv = getattr(self.client, "server_rsa_e", None)
-
-        if not n_srv or not e_srv:
-            messagebox.showerror(
-                "Нет ключа сервера",
-                "Открытый ключ сервера (n,e) ещё не получен.\n"
-                "Убедитесь, что сервер опубликовал ключи и вы подключились."
-            )
-            return
-
-        # --- 3. Шифруем заявку: y = x^e_srv mod n_srv ---
+        # --- 2. Запрос у сетевого клиента на шифрование, подпись и отправку ---
         try:
-            y_enc = rsa_encrypt_int(bid_value, e_srv, n_srv)
-        except ValueError as ex:
-            messagebox.showerror(
-                "Ошибка шифрования",
-                f"Не удалось зашифровать ставку:\n{ex}"
-            )
-            return
-
-        # --- 4. Проверяем наличие ГОСТ-параметров и секретного ключа x ---
-        if not hasattr(self, "gost_p") or self.gost_p is None:
-            messagebox.showerror(
-                "ГОСТ-параметры",
-                "Сначала сгенерируйте параметры p, q, a для ГОСТ 34.10-94."
-            )
-            return
-        if not hasattr(self, "gost_q") or self.gost_q is None:
-            messagebox.showerror(
-                "ГОСТ-параметры",
-                "Параметр q для ГОСТ 34.10-94 не задан."
-            )
-            return
-        if not hasattr(self, "gost_a") or self.gost_a is None:
-            messagebox.showerror(
-                "ГОСТ-параметры",
-                "Параметр a для ГОСТ 34.10-94 не задан."
-            )
-            return
-        if not hasattr(self, "gost_x") or self.gost_x is None:
-            messagebox.showerror(
-                "Секретный ключ ГОСТ",
-                "Секретный ключ x для ГОСТ 34.10-94 не задан.\n"
-                "Сгенерируйте его на вкладке «Подготовка»."
-            )
-            return
-
-        p = self.gost_p
-        q = self.gost_q
-        a = self.gost_a
-        x_secret = self.gost_x
-
-        # --- 5. Подписываем зашифрованную заявку y по ГОСТ 34.10-94 ---
-        # Предполагаем, что gost_sign_message_int(y, p,q,a,x)
-        # возвращает тройку (h_int, r, s), где:
-        #   - h_int — значение хэша (e(h)) как целое;
-        #   - r, s   — компоненты подписи.
-        try:
-            h_int, r, s = gost_sign_message_int(
-                y_enc, p, q, a, x_secret
-            )
-        except Exception as ex:
-            messagebox.showerror(
-                "Ошибка подписи",
-                f"Не удалось подписать заявку по ГОСТ 34.10-94:\n{ex}"
-            )
-            return
-
-        # Переведём h в удобное шестнадцатеричное представление
-        h_hex = hex(h_int)[2:].upper()
-
-        # --- 6. Обновляем GUI: показываем y, h, r, s ---
-        try:
-            # зашифрованная заявка y
-            self.entry_enc_y.delete(0, END)
-            self.entry_enc_y.insert(0, str(y_enc))
-
-            # хэш / e(h)
-            self.entry_hash_h.delete(0, END)
-            self.entry_hash_h.insert(0, h_hex)
-
-            # подпись (r, s)
-            self.entry_sig_r.delete(0, END)
-            self.entry_sig_r.insert(0, str(r))
-
-            self.entry_sig_s.delete(0, END)
-            self.entry_sig_s.insert(0, str(s))
-        except Exception:
-            # Если имена полей отличаются — просто поправь их у себя
-            pass
-
-        # --- 7. Отправляем заявку и подпись на сервер ---
-        try:
-            self.client.send_bid(
-                bid_value=bid_value,
-                y=y_enc,
-                h=h_int,
-                r=r,
-                s=s,
-            )
+            result = self.client.send_bid(bid_value=bid_value)
         except Exception as ex:
             messagebox.showerror(
                 "Ошибка отправки",
                 f"Не удалось отправить заявку на сервер:\n{ex}"
             )
             return
+
+        if not result:
+            messagebox.showerror(
+                "Ошибка отправки",
+                "Не удалось отправить заявку (нет соединения или ключей сервера)."
+            )
+            return
+
+        # --- 3. Обновляем GUI: показываем y, h, r, s ---
+        y_enc = result["y"]
+        h_hex = hex(result["h"])[2:].upper()
+        r = result["r"]
+        s = result["s"]
+
+        self.txt_enc_bid.delete("1.0", "end")
+        self.txt_enc_bid.insert("end", str(y_enc))
+
+        self.txt_hash.delete("1.0", "end")
+        self.txt_hash.insert("end", h_hex)
+
+        self.txt_signature.delete("1.0", "end")
+        self.txt_signature.insert("end", f"r = {r}\ns = {s}")
 
         messagebox.showinfo(
             "Заявка отправлена",

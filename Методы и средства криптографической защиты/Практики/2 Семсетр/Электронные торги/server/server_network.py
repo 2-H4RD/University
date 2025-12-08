@@ -412,11 +412,22 @@ class AuctionServerCore:
         info = self._get_or_create_participant(participant_id)
         info.send_fn = send_json
         self._log(f"[SERVER][HELLO] Участник '{participant_id}' принят, можно регистрировать ключи.")
-        send_json({
+
+        # Добавим открытый ключ сервера, чтобы клиент мог шифровать ставки
+        welcome_payload = {
             "type": "WELCOME",
             "ok": True,
-            "message": "HELLO принят. Ожидается регистрация ключей."
-        })
+            "message": "HELLO принят. Ожидается регистрация ключей.",
+        }
+        if self.rsa_n and self.rsa_e:
+            welcome_payload["server_rsa_n"] = self.rsa_n
+            welcome_payload["server_rsa_e"] = self.rsa_e
+        else:
+            # если ключи не заданы, клиент увидит, что ставки шифровать пока нечем
+            welcome_payload["server_rsa_n"] = None
+            welcome_payload["server_rsa_e"] = None
+
+        send_json(welcome_payload)
 
     # --- REGISTER_KEYS --- #
     def _handle_register_keys(self, send_json, pid: str, rsa: dict, gost: dict):
