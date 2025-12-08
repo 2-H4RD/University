@@ -275,6 +275,14 @@ class AuctionMemberClient:
             print(f"[CLIENT][ERROR] hello: сервер отказал: {resp.get('message')}")
             return False
 
+        # Сохраняем открытый ключ сервера, если он передан
+        self.server_rsa_n = resp.get("server_rsa_n")
+        self.server_rsa_e = resp.get("server_rsa_e")
+        if self.server_rsa_n and self.server_rsa_e:
+            print(f"[CLIENT] Получен открытый ключ сервера: n={self.server_rsa_n}, e={self.server_rsa_e}")
+        else:
+            print("[CLIENT][WARN] Сервер не передал открытый ключ (n,e); отправка ставок может быть недоступна.")
+
         print("[CLIENT] HELLO успешно обработан сервером.")
         return True
 
@@ -367,7 +375,7 @@ class AuctionMemberClient:
         print("[CLIENT] Аутентификация по RSA успешно пройдена.")
         return True
 
-    def send_bid(self, bid_value: int) -> bool:
+    def send_bid(self, bid_value: int) -> Optional[dict]:
         """
         Отправка заявки:
           - реальное RSA-шифрование x -> y = x^e_ot mod n_ot,
@@ -379,7 +387,7 @@ class AuctionMemberClient:
 
         if self.server_rsa_n is None or self.server_rsa_e is None:
             print("[CLIENT][ERROR] Не известен открытый ключ сервера (n,e).")
-            return False
+            return None
 
         x = int(bid_value)
 
@@ -415,10 +423,10 @@ class AuctionMemberClient:
             self.tcp_file_w.flush()
         except Exception as ex:
             print(f"[CLIENT][ERROR] Ошибка при отправке BID: {ex}")
-            return False
+            return None
 
         print("[CLIENT] BID отправлен серверу.")
-        return True
+        return {"bid_value": x, "y": y, "h": h, "r": r, "s": s}
 
     def _gost_hash_to_int_q(message: bytes, q: int) -> int:
         """
