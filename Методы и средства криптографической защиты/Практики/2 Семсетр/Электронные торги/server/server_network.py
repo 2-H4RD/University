@@ -203,9 +203,17 @@ class AuctionServerCore:
                 data, addr = sock.recvfrom(1024)
             except socket.timeout:
                 continue
+            except OSError as ex:
+                # Windows: WinError 10054 может прилетать на UDP recvfrom из-за ICMP "Port unreachable"
+                # Это не критично — discovery должен продолжать работать.
+                if getattr(ex, "winerror", None) == 10054:
+                    self._log(f"[SERVER][UDP][WARN] recvfrom WinError 10054 (игнорируем): {ex}")
+                    continue
+                self._log(f"[SERVER][UDP][ERROR] recvfrom: {ex}")
+                continue
             except Exception as ex:
                 self._log(f"[SERVER][UDP][ERROR] recvfrom: {ex}")
-                break
+                continue
 
             try:
                 text = data.decode("utf-8", errors="ignore").strip()
