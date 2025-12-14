@@ -16,7 +16,6 @@ rsa_utils.py
     - шифрование / расшифрование
     - подпись / проверка подписи
 """
-from html.parser import attrfind_tolerant
 
 from common.num_generator import generate_gost_pq, secure_random_int
 

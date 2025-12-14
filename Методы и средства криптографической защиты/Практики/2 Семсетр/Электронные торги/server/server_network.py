@@ -366,7 +366,7 @@ class AuctionServerCore:
                 pass
             self._log(f"[SERVER][TCP] Соединение с {addr} закрыто.")
 
-    def _gost_hash_to_int_q(message: bytes, q: int) -> int:
+    def _gost_hash_to_int_q(self, message: bytes, q: int) -> int:
         H_be = gost3411_94_full(message)
         h = int.from_bytes(H_be[::-1], "big") % q
         return h or 1
@@ -577,106 +577,108 @@ class AuctionServerCore:
     # --- BID --- #
     def _handle_bid(self, send_json, pid: str,
                     bid_value, y_val, h_val, r_val, s_val):
-        if not pid:
-            send_json({"type": "BID_RESULT", "ok": False, "reason": "Нет id участника."})
-            return
-
-        if not self.bidding_open:
-            reason = "Окно приёма заявок закрыто."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
-
-        info = self._participants.get(pid)
-        if not info:
-            reason = "Участник не известен серверу."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
-
-        if not info.authenticated:
-            reason = "Участник не прошёл аутентификацию."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
-
-        # --- Приводим поля к int ---
         try:
-            x_int = int(bid_value) if bid_value is not None else None
-            y_int = int(y_val)
-            h_int = int(h_val)
-            r_int = int(r_val)
-            s_int = int(s_val)
-        except Exception as ex:
-            reason = f"Некорректные числовые поля BID: {ex}"
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
+            if not pid:
+                send_json({"type": "BID_RESULT", "ok": False, "reason": "Нет id участника."})
+                return
 
-        if x_int is None:
-            reason = "Сервер не получил исходное значение ставки bid_value."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
+            if not self.bidding_open:
+                reason = "Окно приёма заявок закрыто."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
 
-        # --- Проверка хэша h ---
-        msg_bytes = f"bid={x_int}".encode("utf-8")
-        h_check = _gost_hash_to_int_q(msg_bytes, info.gost_q)
+            info = self._participants.get(pid)
+            if not info:
+                reason = "Участник не известен серверу."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
 
-        if h_check != h_int:
-            reason = "Хэш заявки не совпадает с переданным h (возможна подмена)."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
+            if not info.authenticated:
+                reason = "Участник не прошёл аутентификацию."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
 
-        # --- Проверка ГОСТ-подписи ---
-        p = info.gost_p
-        q = info.gost_q
-        a = info.gost_a
-        y_pub = info.gost_y
-
-        try:
-            # Стандартная проверка:
-            # v = a^s * y^{-r} (mod p), r' = v mod q, должно быть r' == r
-            v1 = pow(a, s_int, p)
-            # y^{-r} mod p = y^{(p-1-r) mod (p-1)}, но удобнее использовать q:
-            y_inv = pow(y_pub, q - 1 - r_int, p)
-            v = (v1 * y_inv) % p
-            r_check = v % q
-        except Exception as ex:
-            reason = f"Ошибка при проверке ГОСТ-подписи: {ex}"
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
-
-        if r_check != r_int:
-            reason = "ГОСТ-подпись заявки неверна."
-            self._log(f"[SERVER][BID] {pid}: {reason}")
-            send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
-            return
-
-        # --- Если мы здесь — заявка корректна и подписана ---
-        self._log(f"[SERVER][BID] {pid}: заявка принята (подпись корректна).")
-
-        self._bids.append(
-            {
-                "id": pid,
-                "bid_value": x_int,
-                "y": y_int,
-                "h": h_int,
-                "r": r_int,
-                "s": s_int,
-            }
-        )
-
-        # Уведомить GUI
-        if self.on_bid_received:
+            # --- Приводим поля к int ---
             try:
-                self.on_bid_received(pid, x_int, y_int, h_int, r_int, s_int)
+                x_int = int(bid_value) if bid_value is not None else None
+                y_int = int(y_val)
+                h_int = int(h_val)
+                r_int = int(r_val)
+                s_int = int(s_val)
+            except Exception as ex:
+                reason = f"Некорректные числовые поля BID: {ex}"
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
+
+            if x_int is None:
+                reason = "Сервер не получил исходное значение ставки bid_value."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
+
+            # --- Проверка хэша h ---
+            msg_bytes = f"bid={x_int}".encode("utf-8")
+            h_check = self._gost_hash_to_int_q(msg_bytes, info.gost_q)
+
+            if h_check != h_int:
+                reason = "Хэш заявки не совпадает с переданным h (возможна подмена)."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
+
+            # --- Проверка ГОСТ-подписи (вариант ГОСТ 34.10-94) ---
+            p = info.gost_p
+            q = info.gost_q
+            a = info.gost_a
+            y_pub = info.gost_y
+
+            # v = h^{-1} mod q (по теореме Ферма: h^{q-2} mod q)
+            h_inv = pow(h_int, q - 2, q)
+            z1 = (s_int * h_inv) % q
+            z2 = ((q - r_int) * h_inv) % q
+            v = (pow(a, z1, p) * pow(y_pub, z2, p)) % p
+            r_check = v % q
+
+            if r_check != r_int:
+                reason = "ГОСТ-подпись заявки неверна."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
+
+            # --- Если мы здесь — заявка корректна и подписана ---
+            self._log(f"[SERVER][BID] {pid}: заявка принята (подпись корректна).")
+
+            self._bids.append(
+                {
+                    "id": pid,
+                    "bid_value": x_int,
+                    "y": y_int,
+                    "h": h_int,
+                    "r": r_int,
+                    "s": s_int,
+                }
+            )
+
+            # Уведомить GUI
+            if self.on_bid_received:
+                try:
+                    self.on_bid_received(pid, x_int, y_int, h_int, r_int, s_int)
+                except Exception as cb_ex:
+                    self._log(f"[SERVER][BID][WARN] on_bid_received callback error: {cb_ex}")
+
+            send_json({"type": "BID_RESULT", "ok": True, "reason": ""})
+
+        except Exception as ex:
+            reason = f"Ошибка сервера при обработке заявки: {ex}"
+            self._log(f"[SERVER][BID][ERROR] {pid}: {reason}")
+            try:
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
             except Exception:
                 pass
-
-        send_json({"type": "BID_RESULT", "ok": True, "reason": ""})
 
     def start_auth(self):
         self.set_auth_window_open(True)
@@ -695,12 +697,24 @@ class AuctionServerCore:
         self.stop_event.set()
 
     def decrypt_and_choose_winner(self):
+        """
+        Расшифровывает заявки и выбирает победителя.
+        Для каждого участника берётся только последняя заявка.
+        """
+        # Собираем последние заявки для каждого участника
+        last_bids = {}  # {participant_id: bid_dict}
+        
+        for bid in self._bids:
+            pid = bid["id"]
+            # Перезаписываем заявку для этого участника (последняя будет сохранена)
+            last_bids[pid] = bid
+        
         results = []
         winner_id = None
         max_bid = -1
 
-        for bid in self._bids:
-            pid = bid["id"]
+        # Обрабатываем только последние заявки каждого участника
+        for pid, bid in last_bids.items():
             y = bid["y"]
             s = bid["s"]
 
@@ -726,43 +740,62 @@ class AuctionServerCore:
 
     def broadcast_encrypted_bids(self):
         """
-        Отправить всем участникам список зашифрованных заявок:
-        [{id, y, s}, ...]
+        Отправить всем аутентифицированным участникам список зашифрованных заявок.
+        Для каждого участника берётся только последняя заявка.
+        Формат: [{id, y, s}, ...]
         """
-        payload = []
+        # Собираем последние заявки для каждого участника
+        last_bids = {}  # {participant_id: bid_dict}
+        
         for bid in self._bids:
+            pid = bid["id"]
+            # Перезаписываем заявку для этого участника (последняя будет сохранена)
+            last_bids[pid] = bid
+        
+        payload = []
+        for pid, bid in last_bids.items():
             payload.append({
-                "id": bid["id"],
+                "id": pid,
                 "y": bid["y"],
                 "s": bid["s"],
             })
 
-        self._log(f"[SERVER] Публикуем зашифрованные заявки ({len(payload)} шт.) всем участникам")
+        self._log(f"[SERVER] Публикуем зашифрованные заявки ({len(payload)} шт.) всем аутентифицированным участникам")
 
+        # Отправляем только аутентифицированным участникам
+        sent_count = 0
         for info in self._participants.values():
-            if info.send_fn is None:
+            if not info.authenticated or info.send_fn is None:
                 continue
             try:
                 info.send_fn({
                     "type": "BIDS_PUBLISHED",
                     "bids": payload,
                 })
+                sent_count += 1
             except Exception as ex:
                 self._log(f"[SERVER][BIDS_PUBLISHED][ERROR] отправка участнику {info.participant_id}: {ex}")
+        
+        self._log(f"[SERVER] Зашифрованные заявки отправлены {sent_count} аутентифицированным участникам")
 
     def broadcast_results(self, results: List[dict]):
         """
         Публикация расшифрованных результатов:
-        [{id, x}, ...] всем участникам.
+        [{id, x}, ...] всем участникам + winner_id.
         """
         payload = []
-        for rec in results:
-            payload.append({
-                "id": rec.get("id"),
-                "x": rec.get("x"),
-            })
+        winner_id = None
 
-        self._log(f"[SERVER] Публикуем расшифрованные результаты ({len(payload)} шт.) всем участникам")
+        for rec in results:
+            pid = rec.get("id")
+            x = rec.get("x")
+            payload.append({"id": pid, "x": x})
+
+            if rec.get("winner", False):
+                winner_id = pid
+
+        self._log(
+            f"[SERVER] Публикуем расшифрованные результаты ({len(payload)} шт.) всем участникам. winner_id={winner_id!r}")
 
         for info in self._participants.values():
             if info.send_fn is None:
@@ -771,10 +804,10 @@ class AuctionServerCore:
                 info.send_fn({
                     "type": "RESULTS_PUBLISHED",
                     "results": payload,
+                    "winner_id": winner_id,
                 })
             except Exception as ex:
                 self._log(f"[SERVER][RESULTS_PUBLISHED][ERROR] отправка участнику {info.participant_id}: {ex}")
-
 
 
 # ------------------- Пример standalone-запуска ------------------- #

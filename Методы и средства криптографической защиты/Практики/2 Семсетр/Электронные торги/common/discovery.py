@@ -1,4 +1,4 @@
-# server/main.py
+# server/member_main(1).py
 
 import socket
 import threading
