@@ -226,6 +226,12 @@ class MemberApp:
         )
         btn_send_bid.pack(side="left", padx=10)
 
+        btn_send_fake = ttk.Button(
+            top_frame, text="Отправить фиктивную заявку", command=self.on_send_fake_bid
+        )
+        btn_send_fake.pack(side="left", padx=10)
+
+
         status_frame = ttk.LabelFrame(self.tab_trade, text="Заявка и подпись")
         status_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -566,6 +572,61 @@ class MemberApp:
             "Заявка отправлена",
             "Ваша зашифрованная и подписанная заявка успешно отправлена на сервер."
         )
+
+    def on_send_fake_bid(self):
+        if self.client is None or not getattr(self.client, "running", False):
+            messagebox.showwarning("Нет соединения", "Сначала подключитесь к серверу.")
+            return
+        if not self.auth_completed:
+            messagebox.showwarning("Нет доступа", "Сначала пройдите аутентификацию.")
+            return
+
+        bid_str = self.entry_bid.get().strip()
+        if not bid_str:
+            messagebox.showwarning("Пустая ставка", "Введите ставку (например 10000).")
+            return
+
+        try:
+            bid_value = int(bid_str)
+        except ValueError:
+            messagebox.showerror("Неверный формат", "Ставка должна быть целым числом.")
+            return
+
+        # ВАЖНО: для атаки подпись считается НЕ на тот y, который отправляется серверу.
+        # Поэтому fake_signed_value должен отличаться от bid_value.
+        fake_signed_value = 1000
+        if bid_value == fake_signed_value:
+            # чтобы атака гарантированно была "фиктивной"
+            fake_signed_value = bid_value + 1
+
+        try:
+            # В client_network.py метод должен принимать параметры:
+            # send_fake_bid(bid_value: int, fake_signed_value: int = 1000)
+            resp = self.client.send_fake_bid(bid_value=bid_value, fake_signed_value=fake_signed_value)
+        except TypeError:
+            # если у тебя пока старое имя параметра в client_network.py
+            resp = self.client.send_fake_bid(bid_value=bid_value, signed_value=fake_signed_value)
+        except Exception as ex:
+            messagebox.showerror("Ошибка", f"Не удалось отправить фиктивную заявку:\n{ex}")
+            return
+
+        if not resp:
+            messagebox.showerror("Ошибка", "Нет ответа от сервера.")
+            return
+
+        ok = resp.get("ok", False)
+        reason = resp.get("reason", "")
+
+        if not ok:
+            messagebox.showinfo(
+                "Фиктивная заявка отклонена (ожидаемо)",
+                f"Сервер отклонил заявку:\n\n{reason}"
+            )
+        else:
+            messagebox.showwarning(
+                "Фиктивная заявка принята",
+                "Неожиданно: сервер принял фиктивную заявку. Проверьте, что сервер сравнивает Hash(y) с h из подписи."
+            )
 
     # ------------------------------------------------------------------
     # Вкладка "Аутентификация"

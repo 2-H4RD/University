@@ -628,12 +628,12 @@ class AuctionServerCore:
                 send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
                 return
 
-            # --- Проверка хэша h ---
-            msg_bytes = f"bid={x_int}".encode("utf-8")
+            # Сервер хэширует зашифрованную заявку y
+            msg_bytes = f"y={y_int}".encode("utf-8")
             h_check = self._gost_hash_to_int_q(msg_bytes, info.gost_q)
 
             if h_check != h_int:
-                reason = "Хэш заявки не совпадает с переданным h (возможна подмена)."
+                reason = "Хэш(зашифрованной заявки y) не совпадает с h из подписи."
                 self._log(f"[SERVER][BID] {pid}: {reason}")
                 send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
                 return

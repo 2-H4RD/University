@@ -552,14 +552,15 @@ class AuctionMemberClient:
         print(f"[CLIENT] BID: исходная ставка x={x}, зашифрованная y={y}")
 
         # --- 2. ГОСТ-подпись хэша сообщения "bid=x" ---
-        msg_bytes = f"bid={x}".encode("utf-8")
+        msg_bytes = f"y={y}".encode("utf-8")
         r, s, h = self._gost_sign_message(
             msg_bytes,
             self.gost_keys.p,
             self.gost_keys.q,
             self.gost_keys.a,
-            self.gost_keys.x,
+            self.gost_keys.x
         )
+
         print(f"[CLIENT] BID: ГОСТ-подпись r={r}, s={s}, h={h}")
 
         # --- 3. Формируем и отправляем JSON ---
@@ -604,6 +605,53 @@ class AuctionMemberClient:
             "r": r,
             "s": s,
         }
+
+    def send_fake_bid(self, bid_value: int, fake_signed_value: int = 1000):
+        """
+        Атака 3 (ДЕМО):
+        - y считается от bid_value
+        - подпись считается от ДРУГОГО y (fake_signed_value)
+        Сервер ОБЯЗАН отклонить заявку.
+        """
+
+        if not self.running:
+            return None
+
+        # --- Реальный y (то, что видит сервер как заявку) ---
+        y_real = pow(int(bid_value), self.server_rsa_e, self.server_rsa_n)
+
+        # --- Фейковый y, от которого считаем подпись ---
+        y_fake = pow(int(fake_signed_value), self.server_rsa_e, self.server_rsa_n)
+
+        # <<< ПОДПИСЫВАЕМ НЕ ТО >>>
+        msg_bytes = f"y={y_fake}".encode("utf-8")
+
+        r, s, h = self._gost_sign_message(
+            msg_bytes,
+            self.gost_keys.p,
+            self.gost_keys.q,
+            self.gost_keys.a,
+            self.gost_keys.x
+        )
+
+        payload = {
+            "type": "BID",
+            "id": self.participant_id,
+
+            # <<< ВАЖНО: bid_value и y ОТ РЕАЛЬНОЙ СТАВКИ >>>
+            "bid_value": int(bid_value),
+            "y": int(y_real),
+
+            # <<< А h,r,s ОТ ДРУГОГО y >>>
+            "h": int(h),
+            "r": int(r),
+            "s": int(s),
+        }
+
+        if not self._send_json(payload):
+            return None
+
+        return self._recv_json(timeout=5.0)
 
     def _gost_hash_to_int_q(self, message: bytes, q: int) -> int:
         """

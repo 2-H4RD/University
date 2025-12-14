@@ -34,6 +34,10 @@ class AuctionServerApp(tk.Tk):
         self.e = None
         self.d = None
 
+        #Флаг атаки с подменой ставки
+        self.attack2_enabled = tk.BooleanVar(value=False)
+
+
         # подготовим UI
         self._build_ui()
 
@@ -214,6 +218,14 @@ class AuctionServerApp(tk.Tk):
             command=self._decrypt_and_choose_clicked, state="disabled"
         )
         self.btn_decrypt_and_choose.pack(side="left", padx=5)
+
+        chk_attack2 = ttk.Checkbutton(
+            top_controls,
+            text="Атака: подменить одну открытую ставку перед публикацией итога",
+            variable=self.attack2_enabled
+        )
+        chk_attack2.pack(side="left", padx=10)
+
 
         self.label_bidding_status = ttk.Label(frame, text="Приём заявок: закрыт", foreground="red")
         self.label_bidding_status.pack(anchor="w", pady=(0, 10))
@@ -538,6 +550,33 @@ class AuctionServerApp(tk.Tk):
 
         try:
             results = self.server_core.decrypt_and_choose_winner()
+            # --- АТАКА 2: подмена открытой ставки одного участника перед публикацией ---
+            if self.attack2_enabled.get() and results:
+                # выберем “жертву” — первого участника, который НЕ победитель (если есть)
+                victim = None
+                for rec in results:
+                    if not rec.get("winner", False):
+                        victim = rec
+                        break
+                if victim is None:
+                    victim = results[0]
+
+                # Подменяем открытую ставку x так, чтобы она стала максимальной
+                # (не трогаем y и s — именно это и будет обнаружено клиентами)
+                xs = [r.get("x") for r in results if isinstance(r.get("x"), int)]
+                max_x = max(xs) if xs else 0
+                victim["x"] = max_x + 99999
+                victim["winner"] = True
+
+                # Снимаем флаг winner со всех остальных
+                for rec in results:
+                    if rec is not victim:
+                        rec["winner"] = False
+
+                self._set_status(
+                    f"АТАКА 2: подменили открытую ставку участника {victim.get('id')} на {victim.get('x')}"
+                )
+
         except AttributeError:
             messagebox.showerror(
                 "Торги",
