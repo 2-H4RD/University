@@ -1,4 +1,4 @@
-# member/main.py
+# member/member_main.py
 # GUI участника торгов:
 # - Подготовка: ввод ID, генерация RSA и ГОСТ-ключей;
 # - Аутентификация: подключение к серверу, запуск/завершение аутентификации;
@@ -96,6 +96,11 @@ class MemberApp:
         self.auth_completed = False
         self.trade_phase_open = False
 
+        # --- Данные для вкладки "Проверка" ---
+        self.published_bids = {}     # {id: {"y": int, "s": int}}
+        self.published_results = {}  # {id: int}
+        self.winner_id = None
+
         self._build_ui()
 
     # ------------------------------------------------------------------
@@ -113,9 +118,13 @@ class MemberApp:
         notebook.add(self.tab_auth, text="Аутентификация")
         notebook.add(self.tab_trade, text="Торги")
 
+        self.tab_verify = ttk.Frame(notebook)
+        notebook.add(self.tab_verify, text="Проверка")
+
         self._build_tab_prep()
         self._build_tab_auth()
         self._build_tab_trade()
+        self._build_tab_verify()
 
     # ------------------------------------------------------------------
     # Вкладка "Подготовка"
@@ -389,6 +398,14 @@ class MemberApp:
             self.lbl_conn_status.config(text="Соединение с сервером: НЕТ", foreground="red")
             return
 
+        # Подписываемся на PUSH-публикации сервера (через единый reader-thread)
+        client.start_push_listener(
+            on_bids_published=self.on_bids_published,
+            on_results_published=self.on_results_published,
+            on_log=lambda s: print("[CLIENT PUSH]", s)
+        )
+
+
         # Всё ок — сохраняем клиента
         self.client = client
         self.connected_to_server = True
@@ -400,6 +417,10 @@ class MemberApp:
         Запуск процедуры аутентификации по RSA через AuctionMemberClient.
         По сути — вызов client.authenticate().
         """
+        if self.auth_completed:
+            messagebox.showinfo("Аутентификация", "Вы уже прошли аутентификацию. Повторная не требуется.")
+            return
+
         if not self.connected_to_server or not self.client:
             messagebox.showerror("Ошибка", "Сначала подключитесь к серверу.")
             return
@@ -423,11 +444,13 @@ class MemberApp:
                 "Ошибка аутентификации",
                 "Сервер отклонил аутентификацию или окно аутентификации не активно."
             )
-            self.auth_completed = False
+            # НЕ сбрасываем, если ранее уже было успешно
+            if not self.auth_completed:
+                self.auth_completed = False
+                self.trade_phase_open = False
             self.lbl_auth_status.config(
                 text="Статус аутентификации: НЕ ПРОЙДЕНА", foreground="red"
             )
-            self.trade_phase_open = False
             return
 
         # Успех
@@ -529,6 +552,151 @@ class MemberApp:
             "Заявка отправлена",
             "Ваша зашифрованная и подписанная заявка успешно отправлена на сервер."
         )
+
+    # ------------------------------------------------------------------
+    # Вкладка "Аутентификация"
+    # ------------------------------------------------------------------
+    def _build_tab_verify(self):
+        frame = ttk.Frame(self.tab_verify)
+        frame.pack(fill="both", expand=True, padx=10, pady=10)
+
+        top = ttk.Frame(frame)
+        top.pack(fill="x", pady=(0, 10))
+
+        self.lbl_verify_winner = ttk.Label(top, text="Победитель: Не определен", foreground="blue")
+        self.lbl_verify_winner.pack(side="left")
+
+        btn_check = ttk.Button(top, text="Проверить результаты", command=self.on_verify_results_clicked)
+        btn_check.pack(side="right")
+
+        # Таблица 1: опубликованные зашифрованные заявки
+        bids_frame = ttk.LabelFrame(frame, text="Опубликованные зашифрованные заявки")
+        bids_frame.pack(fill="both", expand=True, pady=(0, 10))
+
+        cols1 = ("id", "y", "s")
+        self.tree_verify_bids = ttk.Treeview(bids_frame, columns=cols1, show="headings", height=10)
+        self.tree_verify_bids.heading("id", text="ID участника")
+        self.tree_verify_bids.heading("y", text="Зашифрованная ставка (y)")
+        self.tree_verify_bids.heading("s", text="Подпись (s)")
+        self.tree_verify_bids.column("id", width=140, anchor="center")
+        self.tree_verify_bids.column("y", width=320, anchor="center")
+        self.tree_verify_bids.column("s", width=320, anchor="center")
+        self.tree_verify_bids.pack(side="left", fill="both", expand=True)
+
+        sb1 = ttk.Scrollbar(bids_frame, orient="vertical", command=self.tree_verify_bids.yview)
+        sb1.pack(side="right", fill="y")
+        self.tree_verify_bids.configure(yscrollcommand=sb1.set)
+
+        # Таблица 2: опубликованные открытые результаты
+        res_frame = ttk.LabelFrame(frame, text="Опубликованные открытые результаты")
+        res_frame.pack(fill="both", expand=True)
+
+        cols2 = ("id", "x")
+        self.tree_verify_results = ttk.Treeview(res_frame, columns=cols2, show="headings", height=10)
+        self.tree_verify_results.heading("id", text="ID участника")
+        self.tree_verify_results.heading("x", text="Ставка (x)")
+        self.tree_verify_results.column("id", width=140, anchor="center")
+        self.tree_verify_results.column("x", width=200, anchor="center")
+        self.tree_verify_results.pack(side="left", fill="both", expand=True)
+
+        sb2 = ttk.Scrollbar(res_frame, orient="vertical", command=self.tree_verify_results.yview)
+        sb2.pack(side="right", fill="y")
+        self.tree_verify_results.configure(yscrollcommand=sb2.set)
+
+    def on_bids_published(self, bids: list[dict]):
+        # bids: [{id, y, s}, ...]
+        self.published_bids.clear()
+        for item in self.tree_verify_bids.get_children():
+            self.tree_verify_bids.delete(item)
+
+        for rec in bids:
+            pid = rec.get("id")
+            y = rec.get("y")
+            s = rec.get("s")
+            if pid is None:
+                continue
+            try:
+                y = int(y)
+                s = int(s)
+            except Exception:
+                continue
+
+            self.published_bids[pid] = {"y": y, "s": s}
+            self.tree_verify_bids.insert("", "end", values=(pid, str(y), str(s)))
+
+    def on_results_published(self, results: list[dict], winner_id):
+        # results: [{id, x}, ...]
+        self.published_results.clear()
+        for item in self.tree_verify_results.get_children():
+            self.tree_verify_results.delete(item)
+
+        for rec in results:
+            pid = rec.get("id")
+            x = rec.get("x")
+            if pid is None:
+                continue
+            try:
+                x = int(x) if x is not None else None
+            except Exception:
+                x = None
+
+            self.published_results[pid] = x
+            self.tree_verify_results.insert("", "end", values=(pid, "" if x is None else str(x)))
+
+        self.winner_id = winner_id
+        if winner_id:
+            self.lbl_verify_winner.config(text=f"Победитель: {winner_id}", foreground="green")
+        else:
+            self.lbl_verify_winner.config(text="Победитель: Не определен", foreground="blue")
+
+    def on_verify_results_clicked(self):
+        if not self.client or not self.connected_to_server:
+            messagebox.showwarning("Проверка", "Нет подключения к серверу.")
+            return
+
+        # Нужны и зашифрованные заявки, и открытые результаты
+        if not self.published_bids:
+            messagebox.showwarning("Проверка", "Нет опубликованных зашифрованных заявок.")
+            return
+        if not self.published_results:
+            messagebox.showwarning("Проверка", "Нет опубликованных открытых результатов.")
+            return
+
+        # Нужен открытый ключ сервера
+        n = getattr(self.client, "server_rsa_n", None)
+        e = getattr(self.client, "server_rsa_e", None)
+        if not n or not e:
+            messagebox.showerror("Проверка", "Неизвестен открытый ключ сервера (n,e).")
+            return
+
+        mismatches = []
+        checked = 0
+
+        for pid, x in self.published_results.items():
+            if pid not in self.published_bids:
+                continue
+            if x is None:
+                mismatches.append((pid, "x=None"))
+                continue
+
+            y_expected = self.published_bids[pid]["y"]
+            y_calc = pow(int(x), int(e), int(n))
+            checked += 1
+            if y_calc != int(y_expected):
+                mismatches.append((pid, f"calc={y_calc} != pub={y_expected}"))
+
+        if checked == 0:
+            messagebox.showwarning("Проверка", "Нет пересечения между опубликованными заявками и результатами.")
+            return
+
+        if not mismatches:
+            messagebox.showinfo("Проверка", f"Проверка пройдена: несоответствий не обнаружено. Проверено записей: {checked}")
+        else:
+            # Не выводим огромные числа полностью в MessageBox — кратко
+            lines = "\n".join([f"{pid}: {reason}" for pid, reason in mismatches[:20]])
+            more = "" if len(mismatches) <= 20 else f"\n... и ещё {len(mismatches)-20} несовпадений"
+            messagebox.showerror("Проверка", f"Обнаружены несоответствия ({len(mismatches)}):\n{lines}{more}")
+
 
 
 # ======================================================================

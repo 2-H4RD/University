@@ -55,8 +55,10 @@
 
 import socket
 import json
+import threading
+import queue
 from dataclasses import dataclass, field
-from typing import Optional, Tuple
+from typing import Optional, Tuple, List
 from common.gost_hash_3411 import gost3411_94_full
 from common.num_generator import secure_random_int
 
@@ -100,6 +102,14 @@ class AuctionMemberClient:
       4) authenticate(...)       — пройти аутентификацию по RSA;
       5) send_bid(...)           — отправить заявку с ГОСТ-подписью.
     """
+    _reader_thread: Optional[threading.Thread] = field(default=None, init=False)
+    _reader_stop: threading.Event = field(default_factory=threading.Event, init=False)
+    _inbox: "queue.Queue[dict]" = field(default_factory=queue.Queue, init=False)
+    _send_lock: threading.Lock = field(default_factory=threading.Lock, init=False)
+
+    _on_bids_published = None
+    _on_results_published = None
+    _on_push_log = None
 
     participant_id: str
     rsa_keys: RSAKeys
@@ -112,6 +122,9 @@ class AuctionMemberClient:
 
     server_rsa_n: Optional[int] = None
     server_rsa_e: Optional[int] = None
+
+    # индикатор активного TCP-подключения
+    running: bool = field(default=False, init=False)
 
     def discover_and_connect(self) -> bool:
         """
@@ -157,7 +170,9 @@ class AuctionMemberClient:
             except Exception:
                 pass
 
-        return self._connect_tcp()
+        ok = self._connect_tcp()
+        self.running = ok
+        return ok
 
     def _connect_tcp(self) -> bool:
         """
@@ -179,11 +194,17 @@ class AuctionMemberClient:
             return False
 
         self.tcp_sock = sock
+        # Устанавливаем таймаут в None для синхронного чтения (будет устанавливаться по необходимости)
+        sock.settimeout(None)
         # Разделяем reader/writer для удобства
         self.tcp_file_r = sock.makefile("r", encoding="utf-8", newline="\n")
         self.tcp_file_w = sock.makefile("w", encoding="utf-8", newline="\n")
+        # Запускаем единый поток чтения
+        self._start_reader_thread()
+
 
         print("[CLIENT] TCP-соединение установлено.")
+        self.running = True
         return True
 
     # ------------------------------------------------------------------
@@ -196,39 +217,89 @@ class AuctionMemberClient:
 
         try:
             line = json.dumps(obj, ensure_ascii=False)
-            self.tcp_file_w.write(line + "\n")
-            self.tcp_file_w.flush()
+            with self._send_lock:
+                self.tcp_file_w.write(line + "\n")
+                self.tcp_file_w.flush()
             print(f"[CLIENT -> SERVER] {line}")
             return True
         except Exception as ex:
             print(f"[CLIENT][ERROR] _send_json: {ex}")
             return False
 
-    def _recv_json(self) -> Optional[dict]:
-        if not self.tcp_file_r:
-            print("[CLIENT][ERROR] _recv_json: нет TCP-подключения.")
+    def _recv_json(self, timeout: float = 10.0) -> Optional[dict]:
+        try:
+            return self._inbox.get(timeout=timeout)
+        except queue.Empty:
+            print("[CLIENT][ERROR] _recv_json: таймаут ожидания ответа от сервера.")
             return None
 
+    def receive_published_bids(self, timeout: float = 10.0) -> Optional[List[dict]]:
+        """
+        Получить опубликованные заявки от сервера.
+        Ожидает сообщение BIDS_PUBLISHED с таймаутом.
+        """
+        if not self.tcp_file_r:
+            print("[CLIENT][ERROR] receive_published_bids: нет TCP-подключения.")
+            return None
+        
         try:
+            # Устанавливаем таймаут для ожидания сообщения
+            if self.tcp_sock:
+                self.tcp_sock.settimeout(timeout)
+            
             line = self.tcp_file_r.readline()
             if not line:
-                print("[CLIENT][ERROR] _recv_json: соединение закрыто сервером.")
+                print("[CLIENT][ERROR] receive_published_bids: соединение закрыто сервером.")
                 return None
+            
             line = line.strip()
-            print(f"[SERVER -> CLIENT] {line}")
-            return json.loads(line)
-        except json.JSONDecodeError as ex:
-            print(f"[CLIENT][ERROR] _recv_json: ошибка JSON {ex}")
+            print(f"[CLIENT][RECEIVE] Получено: {line}")
+            
+            try:
+                msg = json.loads(line)
+                msg_type = msg.get("type")
+                
+                if msg_type == "BIDS_PUBLISHED":
+                    bids = msg.get("bids", [])
+                    print(f"[CLIENT] Получены опубликованные заявки: {len(bids)} шт.")
+                    return bids
+                else:
+                    print(f"[CLIENT][WARN] Получено неожиданное сообщение типа '{msg_type}' вместо BIDS_PUBLISHED")
+                    return None
+                    
+            except json.JSONDecodeError as ex:
+                print(f"[CLIENT][ERROR] Ошибка парсинга JSON: {ex}")
+                return None
+                
+        except socket.timeout:
+            print(f"[CLIENT][ERROR] receive_published_bids: таймаут ожидания сообщения ({timeout} сек)")
             return None
         except Exception as ex:
-            print(f"[CLIENT][ERROR] _recv_json: {ex}")
+            print(f"[CLIENT][ERROR] receive_published_bids: {ex}")
             return None
-
+        finally:
+            # Возвращаем таймаут в None для обычных операций
+            if self.tcp_sock:
+                self.tcp_sock.settimeout(None)
+    
     def close(self):
         """
         Закрыть TCP-соединение.
         """
         print("[CLIENT] Закрытие TCP-соединения.")
+        self.running = False
+
+        try:
+            self._reader_stop.set()
+        except Exception:
+            pass
+
+        try:
+            if self._reader_thread:
+                self._reader_thread.join(timeout=0.5)
+        except Exception:
+            pass
+
         try:
             if self.tcp_file_w:
                 self.tcp_file_w.close()
@@ -247,6 +318,75 @@ class AuctionMemberClient:
         self.tcp_sock = None
         self.tcp_file_r = None
         self.tcp_file_w = None
+        self.running = False
+    def _start_reader_thread(self):
+        if self._reader_thread and self._reader_thread.is_alive():
+            return
+
+        self._reader_stop.clear()
+
+        def _loop():
+            if self._on_push_log:
+                self._on_push_log("[CLIENT] Reader-thread стартовал.")
+            while not self._reader_stop.is_set():
+                try:
+                    line = self.tcp_file_r.readline()
+                    if not line:
+                        if self._on_push_log:
+                            self._on_push_log("[CLIENT] Reader-thread: соединение закрыто сервером.")
+                        break
+                    line = line.strip()
+                    if not line:
+                        continue
+
+                    try:
+                        msg = json.loads(line)
+                    except Exception as ex:
+                        if self._on_push_log:
+                            self._on_push_log(f"[CLIENT] Reader-thread: JSON parse error: {ex}")
+                        continue
+
+                    mtype = msg.get("type", "")
+
+                    # PUSH сообщения
+                    if mtype == "BIDS_PUBLISHED":
+                        bids = msg.get("bids", [])
+                        if self._on_push_log:
+                            self._on_push_log(f"[CLIENT] PUSH: BIDS_PUBLISHED ({len(bids)} записей)")
+                        if self._on_bids_published:
+                            try:
+                                self._on_bids_published(bids)
+                            except Exception as cb_ex:
+                                if self._on_push_log:
+                                    self._on_push_log(f"[CLIENT] on_bids_published error: {cb_ex!r}")
+                        continue
+
+                    if mtype == "RESULTS_PUBLISHED":
+                        results = msg.get("results", [])
+                        winner_id = msg.get("winner_id", None)
+                        if self._on_push_log:
+                            self._on_push_log(f"[CLIENT] PUSH: RESULTS_PUBLISHED ({len(results)} записей), winner={winner_id!r}")
+                        if self._on_results_published:
+                            try:
+                                self._on_results_published(results, winner_id)
+                            except Exception as cb_ex:
+                                if self._on_push_log:
+                                    self._on_push_log(f"[CLIENT] on_results_published error: {cb_ex!r}")
+                        continue
+
+                    # Обычные ответы — в очередь
+                    self._inbox.put(msg)
+
+                except Exception as ex:
+                    if self._on_push_log:
+                        self._on_push_log(f"[CLIENT] Reader-thread exception: {ex!r}")
+                    break
+
+            if self._on_push_log:
+                self._on_push_log("[CLIENT] Reader-thread остановлен.")
+
+        self._reader_thread = threading.Thread(target=_loop, daemon=True)
+        self._reader_thread.start()
 
     # ------------------------------------------------------------------
     # Высокоуровневые операции протокола
@@ -397,7 +537,7 @@ class AuctionMemberClient:
 
         # --- 2. ГОСТ-подпись хэша сообщения "bid=x" ---
         msg_bytes = f"bid={x}".encode("utf-8")
-        r, s, h = _gost_sign_message(
+        r, s, h = self._gost_sign_message(
             msg_bytes,
             self.gost_keys.p,
             self.gost_keys.q,
@@ -425,10 +565,31 @@ class AuctionMemberClient:
             print(f"[CLIENT][ERROR] Ошибка при отправке BID: {ex}")
             return None
 
-        print("[CLIENT] BID отправлен серверу.")
-        return {"bid_value": x, "y": y, "h": h, "r": r, "s": s}
+        print("[CLIENT] BID отправлен серверу, ожидаем результат...")
 
-    def _gost_hash_to_int_q(message: bytes, q: int) -> int:
+        # Ждём BID_RESULT от сервера
+        resp = self._recv_json()
+        if not resp or resp.get("type") != "BID_RESULT":
+            print("[CLIENT][ERROR] Не получили BID_RESULT от сервера.")
+            return {"ok": False, "reason": "Нет ответа от сервера."}
+
+        ok = resp.get("ok", False)
+        reason = resp.get("reason", "")
+        if not ok:
+            print(f"[CLIENT][WARN] BID отклонён сервером: {reason}")
+            return {"ok": False, "reason": reason or "Заявка отклонена сервером."}
+
+        print("[CLIENT] BID принят сервером.")
+        return {
+            "ok": True,
+            "bid_value": x,
+            "y": y,
+            "h": h,
+            "r": r,
+            "s": s,
+        }
+
+    def _gost_hash_to_int_q(self, message: bytes, q: int) -> int:
         """
         Хэш ГОСТ 34.11-94 -> целое по модулю q, как в GUI.
         """
@@ -439,12 +600,12 @@ class AuctionMemberClient:
             h = 1
         return h
 
-    def _gost_sign_message(message: bytes, p: int, q: int, a: int, x: int):
+    def _gost_sign_message(self, message: bytes, p: int, q: int, a: int, x: int):
         """
         Подпись по ГОСТ Р 34.10-94. Возвращает (r, s, h).
         Полностью совпадает с gost_sign_message из GUI.
         """
-        h = _gost_hash_to_int_q(message, q)
+        h = self._gost_hash_to_int_q(message, q)
 
         while True:
             k = secure_random_int(1, q - 1)
@@ -455,6 +616,21 @@ class AuctionMemberClient:
             if s == 0:
                 continue
             return r, s, h
+
+    # -------------------- PUSH LISTENER (server -> client) --------------------
+
+    def start_push_listener(self, on_bids_published=None, on_results_published=None, on_log=None):
+        self._on_bids_published = on_bids_published
+        self._on_results_published = on_results_published
+        self._on_push_log = on_log
+        if self._on_push_log:
+            self._on_push_log("[CLIENT] Push callbacks зарегистрированы (reader-thread используется общий).")
+
+    def stop_push_listener(self):
+        """Останавливает push listener (если запущен)."""
+        if hasattr(self, "_push_stop") and self._push_stop:
+            self._push_stop.set()
+
 
 
 # Пример использования как standalone (для отладки без GUI):
@@ -475,6 +651,6 @@ if __name__ == "__main__":
     else:
         if client.hello() and client.register_keys() and client.authenticate():
             # Фиктивные данные заявки:
-            client.send_bid(bid_value=1000, y=66, h=42, r=7, s=13)
+            client.send_bid(bid_value=1000)
 
         client.close()

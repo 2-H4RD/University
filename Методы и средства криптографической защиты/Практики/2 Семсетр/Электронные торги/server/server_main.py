@@ -1,4 +1,4 @@
-# server/main.py
+# server/member_main(1).py
 # GUI организатора торгов + интеграция с AuctionServerCore
 
 import threading
@@ -497,6 +497,7 @@ class AuctionServerApp(tk.Tk):
         self.btn_bidding_open.config(state="disabled")
         self.btn_bidding_close.config(state="normal")
         self.btn_decrypt_and_choose.config(state="disabled")
+        self.btn_publish_encrypted.config(state="disabled")
 
         if self.server_core is not None:
             try:
@@ -511,12 +512,17 @@ class AuctionServerApp(tk.Tk):
         self.btn_bidding_open.config(state="normal")
         self.btn_bidding_close.config(state="disabled")
         self.btn_decrypt_and_choose.config(state="normal")
+        self.btn_publish_encrypted.config(state="normal")
 
         if self.server_core is not None:
             try:
                 self.server_core.set_bidding_active(False)
+                # Автоматически публикуем зашифрованные заявки после закрытия окна торгов
+                self._set_status("Зашифрованные заявки автоматически опубликованы участникам.")
             except AttributeError:
                 pass
+            except Exception as ex:
+                messagebox.showerror("Торги", f"Ошибка при публикации зашифрованных заявок:\n{ex}")
 
     def _decrypt_and_choose_clicked(self):
         """
