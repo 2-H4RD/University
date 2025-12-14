@@ -385,10 +385,24 @@ class MemberApp:
             return
 
         # HELLO
-        if not client.hello():
-            messagebox.showerror("Ошибка", "Сервер отклонил HELLO.")
-            client.close()
-            self.lbl_conn_status.config(text="Соединение с сервером: НЕТ", foreground="red")
+        ok, reason = client.hello()
+        if not ok:
+            messagebox.showerror(
+                "Подключение отклонено",
+                f"Невозможно подключиться к серверу:\n\n{reason}"
+            )
+
+            try:
+                client.close()
+            except Exception:
+                pass
+
+            self.client = None
+            self.connected_to_server = False
+            self.lbl_conn_status.config(
+                text="Соединение с сервером: НЕТ",
+                foreground="red"
+            )
             return
 
         # REGISTER_KEYS

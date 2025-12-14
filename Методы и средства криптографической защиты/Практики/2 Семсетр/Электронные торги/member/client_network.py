@@ -281,22 +281,36 @@ class AuctionMemberClient:
             # Возвращаем таймаут в None для обычных операций
             if self.tcp_sock:
                 self.tcp_sock.settimeout(None)
-    
+
     def close(self):
         """
         Закрыть TCP-соединение.
+        ВАЖНО: на Windows makefile().readline() в другом потоке может зависать,
+        поэтому сначала делаем shutdown сокета, чтобы гарантированно разбудить reader-thread.
         """
         print("[CLIENT] Закрытие TCP-соединения.")
         self.running = False
 
+        # 1) останавливаем reader-loop
         try:
             self._reader_stop.set()
         except Exception:
             pass
 
+        # 2) жёстко "будим" поток чтения: shutdown сокета
         try:
-            if self._reader_thread:
-                self._reader_thread.join(timeout=0.5)
+            if self.tcp_sock:
+                try:
+                    self.tcp_sock.shutdown(socket.SHUT_RDWR)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+        # 3) закрываем файловые обёртки (после shutdown)
+        try:
+            if self.tcp_file_r:
+                self.tcp_file_r.close()
         except Exception:
             pass
 
@@ -305,20 +319,26 @@ class AuctionMemberClient:
                 self.tcp_file_w.close()
         except Exception:
             pass
-        try:
-            if self.tcp_file_r:
-                self.tcp_file_r.close()
-        except Exception:
-            pass
+
+        # 4) закрываем сокет
         try:
             if self.tcp_sock:
                 self.tcp_sock.close()
         except Exception:
             pass
+
+        # 5) НЕ делаем blocking-join в GUI потоке (или делаем микро-таймаут)
+        try:
+            if self._reader_thread and self._reader_thread.is_alive():
+                self._reader_thread.join(timeout=0.2)
+        except Exception:
+            pass
+
         self.tcp_sock = None
         self.tcp_file_r = None
         self.tcp_file_w = None
         self.running = False
+
     def _start_reader_thread(self):
         if self._reader_thread and self._reader_thread.is_alive():
             return
@@ -333,7 +353,7 @@ class AuctionMemberClient:
                     line = self.tcp_file_r.readline()
                     if not line:
                         if self._on_push_log:
-                            self._on_push_log("[CLIENT] Reader-thread: соединение закрыто сервером.")
+                            self._on_push_log("[CLIENT] Reader-thread: EOF от сервера (readline вернул пусто).")
                         break
                     line = line.strip()
                     if not line:
@@ -391,40 +411,36 @@ class AuctionMemberClient:
     # ------------------------------------------------------------------
     # Высокоуровневые операции протокола
     # ------------------------------------------------------------------
-    def hello(self) -> bool:
+    def hello(self) -> tuple[bool, str | None]:
         """
-        Шаг: HELLO — участник представляет себя серверу.
+        HELLO — представление клиента серверу.
+        ВАЖНО: метод НИКОГДА не закрывает соединение сам.
         """
         msg = {
             "type": "HELLO",
             "role": "member",
             "id": self.participant_id,
         }
-        if not self._send_json(msg):
-            return False
 
-        resp = self._recv_json()
+        if not self._send_json(msg):
+            return False, "Не удалось отправить HELLO серверу."
+
+        resp = self._recv_json(timeout=5.0)
         if not resp:
-            return False
+            return False, "Сервер не ответил на HELLO."
 
         if resp.get("type") != "WELCOME":
-            print("[CLIENT][ERROR] hello: ожидался тип 'WELCOME'.")
-            return False
+            return False, "Некорректный ответ сервера на HELLO."
 
         if not resp.get("ok", False):
-            print(f"[CLIENT][ERROR] hello: сервер отказал: {resp.get('message')}")
-            return False
+            reason = resp.get("message", "Сервер отклонил подключение.")
+            return False, reason
 
-        # Сохраняем открытый ключ сервера, если он передан
+        # Сохраняем открытый ключ сервера
         self.server_rsa_n = resp.get("server_rsa_n")
         self.server_rsa_e = resp.get("server_rsa_e")
-        if self.server_rsa_n and self.server_rsa_e:
-            print(f"[CLIENT] Получен открытый ключ сервера: n={self.server_rsa_n}, e={self.server_rsa_e}")
-        else:
-            print("[CLIENT][WARN] Сервер не передал открытый ключ (n,e); отправка ставок может быть недоступна.")
 
-        print("[CLIENT] HELLO успешно обработан сервером.")
-        return True
+        return True, None
 
     def register_keys(self) -> bool:
         """
