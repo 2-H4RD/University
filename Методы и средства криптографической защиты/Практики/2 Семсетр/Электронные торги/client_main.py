@@ -8,13 +8,13 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 
-from common.num_generator import (
+from num_generator import (
     generate_gost_pq,
     generate_gost_a,
     secure_random_int,
 )
-from common.rsa_utils import generate_rsa_keys
-from common.gost_hash_3411 import gost3411_94_full
+from rsa_utils import generate_rsa_keys
+from gost_hash_3411 import gost3411_94_full
 
 # сетевой клиент
 from client_network import AuctionMemberClient, RSAKeys, GostKeys
