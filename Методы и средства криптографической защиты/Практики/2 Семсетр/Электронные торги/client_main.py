@@ -1,11 +1,15 @@
-# member/member_main.py
+# member/client_main.py
 # GUI участника торгов:
 # - Подготовка: ввод ID, генерация RSA и ГОСТ-ключей;
 # - Аутентификация: подключение к серверу, запуск/завершение аутентификации;
 # - Торги: ввод ставки, хэширование и подпись заявки по ГОСТ 34.10-94,
 #          отправка на сервер через AuctionMemberClient.
+# - Подготовка: ввод ID, подключение к серверу, регистрация открытых ключей,
+#               взаимная аутентификация Клаусса–Шнорра (Schnorr), отображение шагов протокола;
+# - Торги: ввод ставки, ГОСТ-подпись заявки, отправка на сервер через AuctionMemberClient.
 
 import tkinter as tk
+import threading
 from tkinter import ttk, messagebox, scrolledtext
 
 from num_generator import (
@@ -13,11 +17,11 @@ from num_generator import (
     generate_gost_a,
     secure_random_int,
 )
-from rsa_utils import generate_rsa_keys
+from num_generator import secure_random_int
 from gost_hash_3411 import gost3411_94_full
 
 # сетевой клиент
-from client_network import AuctionMemberClient, RSAKeys, GostKeys
+from client_network import AuctionMemberClient, GostKeys
 
 
 # ======================================================================
@@ -72,18 +76,13 @@ class MemberApp:
         # Состояние участника
         self.participant_id: str | None = None
 
-        # RSA-ключи участника (для аутентификации по RSA)
-        self.rsa_n = None
-        self.rsa_e = None
-        self.rsa_d = None
-        self.rsa_keys_obj: RSAKeys | None = None
 
-        # ГОСТ-параметры и ключи
-        self.gost_p = None
-        self.gost_q = None
-        self.gost_a = None
-        self.gost_x = None  # закрытый
-        self.gost_y = None  # открытый
+        # Параметры и ключи ГОСТ/Шнорра (p,q,g) выдаёт сервер при HELLO.
+        self.gost_p: int | None = None
+        self.gost_q: int | None = None
+        self.gost_a: int | None = None
+        self.gost_x: int | None = None  # закрытый (один и тот же x используется и в ГОСТ подписи, и в Шнорре)
+        self.gost_y: int | None = None  # открытый y = g^x mod p
         self.gost_keys_obj: GostKeys | None = None
 
         # Публичный ключ организатора торгов
@@ -111,18 +110,15 @@ class MemberApp:
         notebook.pack(fill="both", expand=True)
 
         self.tab_prep = ttk.Frame(notebook)
-        self.tab_auth = ttk.Frame(notebook)
         self.tab_trade = ttk.Frame(notebook)
 
         notebook.add(self.tab_prep, text="Подготовка")
-        notebook.add(self.tab_auth, text="Аутентификация")
         notebook.add(self.tab_trade, text="Торги")
 
         self.tab_verify = ttk.Frame(notebook)
         notebook.add(self.tab_verify, text="Проверка")
 
         self._build_tab_prep()
-        self._build_tab_auth()
         self._build_tab_trade()
         self._build_tab_verify()
 
@@ -137,36 +133,48 @@ class MemberApp:
         self.entry_member_id = ttk.Entry(frame_top, width=30)
         self.entry_member_id.pack(side="left", padx=5)
 
-        btn_gen_keys = ttk.Button(
-            frame_top, text="Сгенерировать ключи (RSA + ГОСТ)",
-            command=self.on_generate_keys_clicked
+        self.btn_connect = ttk.Button(
+            frame_top,
+            text = "Подключиться к серверу",
+            command = self.on_connect_to_server
         )
-        btn_gen_keys.pack(side="left", padx=10)
+        self.btn_connect.pack(side="left", padx=10)
 
-        # Раздел RSA
-        rsa_frame = ttk.LabelFrame(self.tab_prep, text="Ключи для аутентификации (RSA)")
-        rsa_frame.pack(fill="both", expand=True, padx=10, pady=5)
+        self.btn_authenticate = ttk.Button(
+            frame_top,
+            text = "Пройти аутентификацию",
+            command = self.on_start_auth_window,
+            state = "disabled",
+        )
+        self.btn_authenticate.pack(side="left", padx=5)
+        status_frame = ttk.LabelFrame(self.tab_prep, text="Состояние")
+        status_frame.pack(fill="x", padx=10, pady=(0, 10))
 
-        rsa_pub_frame = ttk.LabelFrame(rsa_frame, text="Открытый ключ (e, n)")
-        rsa_pub_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.lbl_conn_status = ttk.Label(status_frame, text="Соединение с сервером: НЕТ", foreground="red")
+        self.lbl_conn_status.pack(anchor="w", padx=5, pady=2)
 
-        rsa_priv_frame = ttk.LabelFrame(rsa_frame, text="Закрытый ключ (d, n)")
-        rsa_priv_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.lbl_auth_status = ttk.Label(status_frame, text="Статус аутентификации: НЕ ПРОЙДЕНА", foreground="red")
+        self.lbl_auth_status.pack(anchor="w", padx=5, pady=2)
 
-        self.txt_rsa_pub = scrolledtext.ScrolledText(rsa_pub_frame, height=8)
-        self.txt_rsa_pub.pack(fill="both", expand=True, padx=5, pady=5)
+        # --- Открытые ключи RSA сервера (получаем при HELLO) ---
+        server_rsa_frame = ttk.LabelFrame(self.tab_prep, text="Открытые ключи RSA сервера (e, n)")
+        server_rsa_frame.pack(fill="both", expand=False, padx=10, pady=5)
+        self.txt_server_rsa_pub = scrolledtext.ScrolledText(server_rsa_frame, height=6)
+        self.txt_server_rsa_pub.pack(fill="both", expand=True, padx=5, pady=5)
+        self.txt_server_rsa_pub.insert(
+            "end",
+            "Нет данных. Подключитесь к серверу — ключи RSA (e,n) будут получены при HELLO.\n"
+        )
 
-        self.txt_rsa_priv = scrolledtext.ScrolledText(rsa_priv_frame, height=8)
-        self.txt_rsa_priv.pack(fill="both", expand=True, padx=5, pady=5)
-
-        # Раздел ГОСТ
-        gost_frame = ttk.LabelFrame(self.tab_prep, text="Ключи для подписи (ГОСТ Р 34.10-94)")
+        # Раздел ГОСТ + Шнорр (общие параметры p,q,g и секрет x клиента)
+        gost_frame = ttk.LabelFrame(self.tab_prep,
+                                    text="ГОСТ 34.10-94 (подпись) + Клаусс–Шнорр (аутентификация)")
         gost_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
-        gost_pub_frame = ttk.LabelFrame(gost_frame, text="Параметры и открытый ключ (p, q, a, y)")
+        gost_pub_frame = ttk.LabelFrame(gost_frame, text="Параметры (p, q, g) и открытый ключ y")
         gost_pub_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
 
-        gost_priv_frame = ttk.LabelFrame(gost_frame, text="Закрытый ключ (x)")
+        gost_priv_frame = ttk.LabelFrame(gost_frame, text="Секретный ключ x")
         gost_priv_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
 
         self.txt_gost_pub = scrolledtext.ScrolledText(gost_pub_frame, height=10)
@@ -175,41 +183,17 @@ class MemberApp:
         self.txt_gost_priv = scrolledtext.ScrolledText(gost_priv_frame, height=10)
         self.txt_gost_priv.pack(fill="both", expand=True, padx=5, pady=5)
 
-    # ------------------------------------------------------------------
-    # Вкладка "Аутентификация"
-    # ------------------------------------------------------------------
-    def _build_tab_auth(self):
-        top_frame = ttk.Frame(self.tab_auth)
-        top_frame.pack(fill="x", padx=10, pady=10)
-
-        btn_connect = ttk.Button(
-            top_frame, text="Подключиться к серверу", command=self.on_connect_to_server
+        self.txt_gost_pub.insert(
+            "end",
+            "Параметры p,q,g (a) будут получены от сервера после подключения.\n"
+            "После этого клиент сгенерирует x и вычислит y = g^x mod p.\n"
         )
-        btn_connect.pack(side="left", padx=5)
+        # Лог аутентификации (локально на клиенте)
+        log_frame = ttk.LabelFrame(self.tab_prep, text="Логи прохождения аутентификации (клиент)")
+        log_frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
-        btn_start_auth = ttk.Button(
-            top_frame, text="Начать аутентификацию", command=self.on_start_auth_window
-        )
-        btn_start_auth.pack(side="left", padx=5)
-
-        status_frame = ttk.LabelFrame(self.tab_auth, text="Состояние")
-        status_frame.pack(fill="both", expand=True, padx=10, pady=5)
-
-        self.lbl_conn_status = ttk.Label(status_frame, text="Соединение с сервером: НЕТ")
-        self.lbl_conn_status.pack(anchor="w", padx=5, pady=2)
-
-        self.lbl_auth_status = ttk.Label(status_frame, text="Статус аутентификации: НЕ ПРОЙДЕНА")
-        self.lbl_auth_status.pack(anchor="w", padx=5, pady=2)
-
-        info = (
-            "Примечания:\n"
-            " - Участник должен иметь сгенерированные RSA-ключи и ID;\n"
-            " - После успешной аутентификации участник может отправлять заявки."
-        )
-        ttk.Label(status_frame, text=info, wraplength=900, foreground="gray").pack(
-            anchor="w", padx=5, pady=5
-        )
-
+        self.txt_auth_log = scrolledtext.ScrolledText(log_frame, height=10)
+        self.txt_auth_log.pack(fill="both", expand=True, padx=5, pady=5)
     # ------------------------------------------------------------------
     # Вкладка "Торги"
     # ------------------------------------------------------------------
@@ -264,177 +248,157 @@ class MemberApp:
         )
         self.lbl_trade_status.pack(anchor="w", padx=5, pady=5)
 
-        info = (
-            "Примечания:\n"
-            " - Сервер публикует параметры своей RSA-схемы (в упрощённой версии можно\n"
-            "   использовать открытый ключ сервера, известный заранее);\n"
-            " - Участник шифрует ставку открытым ключом сервера и подписывает\n"
-            "   хэш заявки по ГОСТ Р 34.10-94;\n"
-            " - Ниже реализовано вычисление хэша и подписи, а также отправка заявки\n"
-            "   на сервер через AuctionMemberClient."
-        )
-        ttk.Label(status_frame, text=info, wraplength=900, foreground="gray").pack(
-            anchor="w", padx=5, pady=5
-        )
-
     # ==================================================================
     # Обработчики вкладки "Подготовка"
     # ==================================================================
-    def on_generate_keys_clicked(self):
-        member_id = self.entry_member_id.get().strip()
-        if not member_id:
-            messagebox.showerror("Ошибка", "Сначала введите идентификатор участника.")
+    def _append_auth_log(self, line: str):
+        if not hasattr(self, "txt_auth_log"):
             return
-
-        self.participant_id = member_id
-        print(f"[CLIENT GUI] Генерация ключей для участника '{member_id}'...")
-
-        # --- Генерация RSA-ключей (для аутентификации по RSA) ---
-        try:
-            n, e, d, p1, p2 = generate_rsa_keys(bits_p=512)
-        except Exception as ex:
-            messagebox.showerror("Ошибка RSA", f"Не удалось сгенерировать RSA-ключи: {ex}")
-            return
-
-        self.rsa_n = n
-        self.rsa_e = e
-        self.rsa_d = d
-        self.rsa_keys_obj = RSAKeys(n=n, e=e, d=d)
-
-        self.txt_rsa_pub.delete("1.0", "end")
-        self.txt_rsa_pub.insert(
-            "end",
-            f"e = {e}\n"
-            f"n = {n}\n\n"
-            f"(простые множители p1, p2 скрыты для участника в этом интерфейсе)"
-        )
-
-        self.txt_rsa_priv.delete("1.0", "end")
-        self.txt_rsa_priv.insert(
-            "end",
-            f"d = {d}\n"
-            f"n = {n}\n"
-            f"p1 (внутренний) = {p1}\n"
-            f"p2 (внутренний) = {p2}\n"
-        )
-
-        # --- Генерация ГОСТ-параметров (p, q, a) и ключей (x, y) ---
-        try:
-            gost_p, gost_q = generate_gost_pq(bits_p=512)
-            gost_a = generate_gost_a(gost_p, gost_q)
-            gost_x = secure_random_int(1, gost_q - 1)
-            gost_y = pow(gost_a, gost_x, gost_p)
-        except Exception as ex:
-            messagebox.showerror("Ошибка ГОСТ", f"Не удалось сгенерировать ГОСТ-параметры: {ex}")
-            return
-
-        self.gost_p = gost_p
-        self.gost_q = gost_q
-        self.gost_a = gost_a
-        self.gost_x = gost_x
-        self.gost_y = gost_y
-        self.gost_keys_obj = GostKeys(p=gost_p, q=gost_q, a=gost_a, x=gost_x, y=gost_y)
-
-        self.txt_gost_pub.delete("1.0", "end")
-        self.txt_gost_pub.insert(
-            "end",
-            f"p = {gost_p}\n\n"
-            f"q = {gost_q}\n\n"
-            f"a = {gost_a}\n\n"
-            f"Открытый ключ y = {gost_y}\n"
-        )
-
-        self.txt_gost_priv.delete("1.0", "end")
-        self.txt_gost_priv.insert(
-            "end",
-            f"Закрытый ключ x = {gost_x}\n"
-        )
-
-        print("[CLIENT GUI] Ключи RSA и ГОСТ успешно сгенерированы.")
+        def _write():
+            self.txt_auth_log.insert("end", str(line) + "\n")
+            self.txt_auth_log.see("end")
+        if threading.current_thread() is threading.main_thread():
+            _write()
+        else:
+            self.root.after(0, _write)
 
     # ==================================================================
     # Обработчики вкладки "Аутентификация"
     # ==================================================================
     def on_connect_to_server(self):
-        """
-        Подключение к серверу через AuctionMemberClient:
-          1) discovery + TCP connect;
-          2) HELLO;
-          3) REGISTER_KEYS (отправка открытых ключей).
-        """
-        if not self.participant_id:
-            messagebox.showerror("Ошибка", "Сначала введите идентификатор участника на вкладке 'Подготовка'.")
-            return
-        if not self.rsa_keys_obj or not self.gost_keys_obj:
-            messagebox.showerror("Ошибка", "Сначала сгенерируйте ключи RSA и ГОСТ на вкладке 'Подготовка'.")
+        # RSA-ключи участника больше не требуются для аутентификации (перешли на Шнорра).
+        # Если RSA-ключи сгенерированы — они будут отправлены на сервер в REGISTER_KEYS для совместимости.
+        participant_id = self.entry_member_id.get().strip()
+        if not participant_id:
+            messagebox.showerror("Ошибка", "Введите идентификатор участника.")
             return
 
-        # Если уже есть клиент и подключение — сначала закрываем.
-        if self.client:
-            try:
-                self.client.close()
-            except Exception:
-                pass
-            self.client = None
-            self.connected_to_server = False
+        self.participant_id = participant_id
+        if hasattr(self, "txt_auth_log"):
+            self.txt_auth_log.delete("1.0", "end")
 
         print("[CLIENT GUI] Запуск discovery и подключение к серверу...")
-        client = AuctionMemberClient(
-            participant_id=self.participant_id,
-            rsa_keys=self.rsa_keys_obj,
-            gost_keys=self.gost_keys_obj,
-        )
 
-        if not client.discover_and_connect():
-            messagebox.showerror("Ошибка", "Не удалось найти или подключиться к серверу.")
-            self.lbl_conn_status.config(text="Соединение с сервером: НЕТ", foreground="red")
+        client = AuctionMemberClient(
+            participant_id=participant_id,
+            gost_keys=None  # будет установлено после HELLO
+        )
+        try:
+            client._on_push_log = self._append_auth_log
+        except Exception:
+            pass
+
+        # 1) Поиск сервера + TCP connect (как у вас устроено)
+        ok = client.discover_and_connect()
+        if not ok:
+            messagebox.showerror("Ошибка", "Не удалось найти сервер (discovery) или подключиться по TCP.")
             return
 
-        # HELLO
+        # 2) HELLO — получаем RSA сервера и ГОСТ p,q,a
         ok, reason = client.hello()
         if not ok:
-            messagebox.showerror(
-                "Подключение отклонено",
-                f"Невозможно подключиться к серверу:\n\n{reason}"
-            )
-
+            messagebox.showerror("Подключение отклонено", reason or "Сервер отклонил подключение.")
             try:
                 client.close()
             except Exception:
                 pass
+            return
+        #3) Сохраняем и отображаем открытые ключи RSA сервера (e, n)
+        self.server_rsa_n = getattr(client, "server_rsa_n", None)
+        self.server_rsa_e = getattr(client, "server_rsa_e", None)
+        try:
+            if hasattr(self, "txt_server_rsa_pub") and self.txt_server_rsa_pub:
+                self.txt_server_rsa_pub.delete("1.0", "end")
+                if self.server_rsa_n and self.server_rsa_e:
+                    self.txt_server_rsa_pub.insert(
+                        "end",
+                        "Получено от сервера при HELLO:\n"
+                        f"e = {self.server_rsa_e}\n\n"
+                        f"n = {self.server_rsa_n}\n"
+                    )
+                else:
+                    self.txt_server_rsa_pub.insert("end", "Сервер не передал RSA-ключи (e,n).\n")
+        except Exception:
+            pass
 
-            self.client = None
-            self.connected_to_server = False
-            self.lbl_conn_status.config(
-                text="Соединение с сервером: НЕТ",
-                foreground="red"
-            )
+        # 3) Получить p,q,a от сервера и отобразить на вкладке "Подготовка"
+        p = getattr(client, "server_gost_p", None)
+        q = getattr(client, "server_gost_q", None)
+        a = getattr(client, "server_gost_a", None)
+
+        if not p or not q or not a:
+            messagebox.showerror("ГОСТ", "Сервер не передал параметры ГОСТ (p,q,a).")
+            try:
+                client.close()
+            except Exception:
+                pass
             return
 
-        # REGISTER_KEYS
-        if not client.register_keys():
-            messagebox.showerror("Ошибка", "Сервер отклонил регистрацию ключей.")
-            client.close()
-            self.lbl_conn_status.config(text="Соединение с сервером: НЕТ", foreground="red")
+        # 4) Сгенерировать x и вычислить y на клиенте (после получения q)
+        try:
+            # secure_random_int должен быть доступен (если у вас он импортирован как-то иначе — подставьте вашу функцию)
+            gost_x = secure_random_int(1, int(q) - 1)
+            gost_y = pow(int(a), int(gost_x), int(p))
+        except Exception as ex:
+            messagebox.showerror("ГОСТ", f"Не удалось сгенерировать (x,y):\n{ex}")
+            try:
+                client.close()
+            except Exception:
+                pass
             return
 
-        # Подписываемся на PUSH-публикации сервера (через единый reader-thread)
-        client.start_push_listener(
-            on_bids_published=self.on_bids_published,
-            on_results_published=self.on_results_published,
-            on_log=lambda s: print("[CLIENT PUSH]", s)
+        self.gost_p, self.gost_q, self.gost_a = int(p), int(q), int(a)
+        self.gost_x, self.gost_y = int(gost_x), int(gost_y)
+        self.gost_keys_obj = GostKeys(p=self.gost_p, q=self.gost_q, a=self.gost_a, x=self.gost_x, y=self.gost_y)
+
+        # Показываем p,q,a и y (публичное) + x (приватное)
+        self.txt_gost_pub.delete("1.0", "end")
+        self.txt_gost_pub.insert(
+            "end",
+            f"Получено от сервера:\n"
+            f"p = {self.gost_p}\n\nq = {self.gost_q}\n\na = {self.gost_a}\n\n"
+            f"Открытый ключ участника y = {self.gost_y}\n"
         )
 
+        self.txt_gost_priv.delete("1.0", "end")
+        self.txt_gost_priv.insert("end", f"Закрытый ключ участника x = {self.gost_x}\n")
 
-        # Всё ок — сохраняем клиента
+        # 5) Установить gost_keys в клиент и зарегистрировать ключи на сервере
+        client.gost_keys = self.gost_keys_obj
+
+        if not client.register_keys():
+            messagebox.showerror("Ошибка", "Сервер отклонил регистрацию ключей.")
+            try:
+                client.close()
+            except Exception:
+                pass
+            return
+
+        # 6) Подключение успешно — сохранить client и обновить статус GUI
         self.client = client
         self.connected_to_server = True
-        self.lbl_conn_status.config(text="Соединение с сервером: УСТАНОВЛЕНО", foreground="green")
-        print("[CLIENT GUI] Подключение и регистрация ключей на сервере завершены успешно.")
+
+        if hasattr(self, "btn_authenticate"):
+            self.btn_authenticate.config(state="normal")
+
+        self.lbl_conn_status.config(text="Соединение с сервером: ДА", foreground="green")
+        messagebox.showinfo("Подключение", "Подключение установлено и ключи зарегистрированы.")
+
+        # 7) Регистрация push callbacks (если у вас так принято)
+        try:
+            client.start_push_listener(
+                on_bids_published=self.on_bids_published,
+                on_results_published=self.on_results_published,
+                on_bidding_status=self.on_bidding_status_changed,
+                on_log=self._append_auth_log
+            )
+
+        except Exception:
+            pass
 
     def on_start_auth_window(self):
         """
-        Запуск процедуры аутентификации по RSA через AuctionMemberClient.
+        Запуск процедуры взаимной аутентификации по Шнорру через AuctionMemberClient.
         По сути — вызов client.authenticate().
         """
         if self.auth_completed:
@@ -445,15 +409,12 @@ class MemberApp:
             messagebox.showerror("Ошибка", "Сначала подключитесь к серверу.")
             return
 
-        if not self.rsa_keys_obj:
-            messagebox.showerror("Ошибка", "Нет RSA-ключей. Сгенерируйте их на вкладке 'Подготовка'.")
-            return
-
+        # RSA-ключи участника для аутентификации больше не нужны.
         if not self.participant_id:
             messagebox.showerror("Ошибка", "Сначала укажите идентификатор участника.")
             return
 
-        print("[CLIENT GUI] Запуск аутентификации по RSA через сеть...")
+        self._append_auth_log("[CLIENT GUI] Запуск взаимной аутентификации (Клаусс–Шнорр)...")
         self.lbl_auth_status.config(
             text="Статус аутентификации: В ПРОЦЕССЕ", foreground="orange"
         )
@@ -467,7 +428,6 @@ class MemberApp:
             # НЕ сбрасываем, если ранее уже было успешно
             if not self.auth_completed:
                 self.auth_completed = False
-                self.trade_phase_open = False
             self.lbl_auth_status.config(
                 text="Статус аутентификации: НЕ ПРОЙДЕНА", foreground="red"
             )
@@ -479,7 +439,7 @@ class MemberApp:
         self.lbl_auth_status.config(
             text="Статус аутентификации: ПРОЙДЕНА", foreground="green"
         )
-        print("[CLIENT GUI] Аутентификация успешно пройдена.")
+        self._append_auth_log("[CLIENT GUI] Аутентификация успешно пройдена.")
 
     # ==================================================================
     # Обработчики вкладки "Торги"
@@ -499,7 +459,7 @@ class MemberApp:
         if self.client is None or not getattr(self.client, "running", False):
             messagebox.showwarning(
                 "Нет соединения",
-                "Сначала подключитесь к серверу (вкладка «Аутентификация»)."
+                "Сначала подключитесь к серверу (вкладка «Подготовка»)."
             )
             return
 
@@ -619,7 +579,7 @@ class MemberApp:
 
         if not ok:
             messagebox.showinfo(
-                "Фиктивная заявка отклонена (ожидаемо)",
+                "Фиктивная заявка отклонена",
                 f"Сервер отклонил заявку:\n\n{reason}"
             )
         else:
@@ -629,7 +589,7 @@ class MemberApp:
             )
 
     # ------------------------------------------------------------------
-    # Вкладка "Аутентификация"
+    # Вкладка "Проверка"
     # ------------------------------------------------------------------
     def _build_tab_verify(self):
         frame = ttk.Frame(self.tab_verify)
@@ -648,13 +608,15 @@ class MemberApp:
         bids_frame = ttk.LabelFrame(frame, text="Опубликованные зашифрованные заявки")
         bids_frame.pack(fill="both", expand=True, pady=(0, 10))
 
-        cols1 = ("id", "y", "s")
+        cols1 = ("id", "y", "r","s")
         self.tree_verify_bids = ttk.Treeview(bids_frame, columns=cols1, show="headings", height=10)
         self.tree_verify_bids.heading("id", text="ID участника")
         self.tree_verify_bids.heading("y", text="Зашифрованная ставка (y)")
-        self.tree_verify_bids.heading("s", text="Подпись (s)")
+        self.tree_verify_bids.heading("r", text="Часть подписи r")
+        self.tree_verify_bids.heading("s", text="Часть подписи s")
         self.tree_verify_bids.column("id", width=140, anchor="center")
         self.tree_verify_bids.column("y", width=320, anchor="center")
+        self.tree_verify_bids.column("r", width=320, anchor="center")
         self.tree_verify_bids.column("s", width=320, anchor="center")
         self.tree_verify_bids.pack(side="left", fill="both", expand=True)
 
@@ -678,6 +640,14 @@ class MemberApp:
         sb2.pack(side="right", fill="y")
         self.tree_verify_results.configure(yscrollcommand=sb2.set)
 
+    def on_bidding_status_changed(self, is_open: bool):
+        self.trade_phase_open = bool(is_open)
+
+        if self.trade_phase_open:
+            self.lbl_trade_status.config(text="Статус: приём заявок ОТКРЫТ", foreground="green")
+        else:
+            self.lbl_trade_status.config(text="Статус: приём заявок ЗАКРЫТ", foreground="red")
+
     def on_bids_published(self, bids: list[dict]):
         # bids: [{id, y, s}, ...]
         self.published_bids.clear()
@@ -687,17 +657,19 @@ class MemberApp:
         for rec in bids:
             pid = rec.get("id")
             y = rec.get("y")
+            r= rec.get("r")
             s = rec.get("s")
             if pid is None:
                 continue
             try:
                 y = int(y)
+                r = int(r)
                 s = int(s)
             except Exception:
                 continue
 
-            self.published_bids[pid] = {"y": y, "s": s}
-            self.tree_verify_bids.insert("", "end", values=(pid, str(y), str(s)))
+            self.published_bids[pid] = {"y": y, "r": r, "s": s}
+            self.tree_verify_bids.insert("", "end", values=(pid, str(y), str(r), str(s)))
 
     def on_results_published(self, results: list[dict], winner_id):
         # results: [{id, x}, ...]
@@ -725,10 +697,45 @@ class MemberApp:
             self.lbl_verify_winner.config(text="Победитель: Не определен", foreground="blue")
 
     def on_verify_results_clicked(self):
+        def build_verify_report(mismatches: list[dict], checked: int) -> str:
+            def _short_int(v, head: int = 18, tail: int = 18) -> str:
+                if v is None:
+                    return "None"
+                s = str(v)
+                if len(s) <= head + tail + 3:
+                    return s
+                return s[:head] + "..." + s[-tail:]
+
+            lines = []
+            lines.append(f"Проверено записей: {checked}")
+            lines.append(f"Несоответствий: {len(mismatches)}")
+            lines.append("")
+
+            for i, m in enumerate(mismatches[:20], start=1):
+                pid = m.get("id")
+                x = m.get("x")
+                y_pub = m.get("y_pub")
+                y_calc = m.get("y_calc")
+                reason = m.get("reason", "")
+
+                lines.append(f"{i}) Участник ID={pid}")
+                if reason:
+                    lines.append(f"   Причина: {reason}")
+                if x is not None:
+                    lines.append(f"   Опубликованная открытая ставка x: {_short_int(x)}")
+                lines.append(f"   Опубликованная зашифрованная заявка y: {_short_int(y_pub)}")
+                if y_calc is not None:
+                    lines.append(f"   Enc(x), вычисленная клиентом:         {_short_int(y_calc)}")
+                lines.append("")
+
+            if len(mismatches) > 20:
+                lines.append(f"... и ещё {len(mismatches) - 20} несоответствий (не показаны).")
+
+            return "\n".join(lines)
+        # bids: [{id, y, r, s}, ...]
         if not self.client or not self.connected_to_server:
             messagebox.showwarning("Проверка", "Нет подключения к серверу.")
             return
-
         # Нужны и зашифрованные заявки, и открытые результаты
         if not self.published_bids:
             messagebox.showwarning("Проверка", "Нет опубликованных зашифрованных заявок.")
@@ -744,34 +751,64 @@ class MemberApp:
             messagebox.showerror("Проверка", "Неизвестен открытый ключ сервера (n,e).")
             return
 
-        mismatches = []
+        mismatches: list[dict] = []
         checked = 0
 
         for pid, x in self.published_results.items():
             if pid not in self.published_bids:
                 continue
+
+            y_pub = self.published_bids[pid].get("y")
+
             if x is None:
-                mismatches.append((pid, "x=None"))
+                mismatches.append({
+                    "id": pid,
+                    "x": None,
+                    "y_pub": y_pub,
+                    "y_calc": None,
+                    "reason": "Сервер опубликовал результат без ставки x (x=None)."
+                })
                 continue
 
-            y_expected = self.published_bids[pid]["y"]
-            y_calc = pow(int(x), int(e), int(n))
+            try:
+                x_int = int(x)
+                y_pub_int = int(y_pub)
+            except Exception:
+                mismatches.append({
+                    "id": pid,
+                    "x": x,
+                    "y_pub": y_pub,
+                    "y_calc": None,
+                    "reason": "Некорректный формат данных (x или y не приводятся к int)."
+                })
+                continue
+
+            y_calc = pow(x_int, int(e), int(n))
             checked += 1
-            if y_calc != int(y_expected):
-                mismatches.append((pid, f"calc={y_calc} != pub={y_expected}"))
+
+            if y_calc != y_pub_int:
+                mismatches.append({
+                    "id": pid,
+                    "x": x_int,
+                    "y_pub": y_pub_int,
+                    "y_calc": y_calc,
+                    "reason": "Enc(x) не совпадает с опубликованным y."
+                })
 
         if checked == 0:
             messagebox.showwarning("Проверка", "Нет пересечения между опубликованными заявками и результатами.")
             return
 
         if not mismatches:
-            messagebox.showinfo("Проверка", f"Проверка пройдена: несоответствий не обнаружено. Проверено записей: {checked}")
+            messagebox.showinfo(
+                "Проверка честности пройдена",
+                "Несоответствий не обнаружено.\n\n"
+                f"Проверено записей: {checked}\n\n"
+                "Организатор торгов не подменил заявки"
+            )
         else:
-            # Не выводим огромные числа полностью в MessageBox — кратко
-            lines = "\n".join([f"{pid}: {reason}" for pid, reason in mismatches[:20]])
-            more = "" if len(mismatches) <= 20 else f"\n... и ещё {len(mismatches)-20} несовпадений"
-            messagebox.showerror("Проверка", f"Обнаружены несоответствия ({len(mismatches)}):\n{lines}{more}")
-
+            report = build_verify_report(mismatches, checked)
+            messagebox.showerror("Проверка честности НЕ пройдена", report)
 
 
 # ======================================================================

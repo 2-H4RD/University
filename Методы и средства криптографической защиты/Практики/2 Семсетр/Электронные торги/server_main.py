@@ -1,12 +1,14 @@
-# server/member_main(1).py
+# server/member_main.py
 # GUI организатора торгов + интеграция с AuctionServerCore
 
 import threading
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-from common.rsa_utils import generate_rsa_keys
-from server.server_network import AuctionServerCore
+from rsa_utils import generate_rsa_keys
+from server_network import AuctionServerCore
+from num_generator import generate_gost_pq, generate_gost_a, secure_random_int
+
 
 
 class AuctionServerApp(tk.Tk):
@@ -14,8 +16,10 @@ class AuctionServerApp(tk.Tk):
         super().__init__()
 
         self.title("Организатор торгов (сервер)")
-        self.geometry("1100x700")
-        self.minsize(900, 600)
+        self.geometry("1350x850")
+        self.minsize(1100, 750)
+        # На Windows можно раскомментировать
+        #self.state("zoomed")
 
         # --- состояние сервера / протокола ---
         self.registry_published = False
@@ -33,6 +37,16 @@ class AuctionServerApp(tk.Tk):
         self.n = None
         self.e = None
         self.d = None
+
+        # ГОСТ ключи сервера (для подписи заявок)
+        self.gost_p = None
+        self.gost_q = None
+        self.gost_a = None
+
+        # Ключи Клаусса–Шнорра (Schnorr) сервера (для взаимной аутентификации)
+        # Примечание: используются те же параметры (p,q,a), что и ГОСТ 34.10-94.
+        self.schnorr_x = None  # секретный ключ
+        self.schnorr_y = None  # публичный ключ (a^x mod p)
 
         #Флаг атаки с подменой ставки
         self.attack2_enabled = tk.BooleanVar(value=False)
@@ -74,7 +88,7 @@ class AuctionServerApp(tk.Tk):
         left = ttk.Frame(frame_top)
         left.pack(side="left", fill="both", expand=True, padx=10, pady=10)
 
-        ttk.Label(left, text="Правило торгов: побеждает участник с максимальной ставкой.",
+        ttk.Label(left, text="Правило торгов: побеждает участник с максимальной ставкой. Количество ставок не ограничено.",
                   foreground="blue").pack(anchor="w", pady=(0, 10))
 
         # Строка для ввода ID
@@ -134,6 +148,130 @@ class AuctionServerApp(tk.Tk):
 
         self.text_priv_key = tk.Text(priv_frame, height=4, wrap="word", foreground="darkred")
         self.text_priv_key.pack(fill="both", expand=True)
+
+        gost_frame = ttk.LabelFrame(self.tab_prepare, text="Параметры ГОСТ (общие для всех участников)")
+        gost_frame.pack(fill="x", padx=10, pady=10)
+
+        btn_gen_gost = ttk.Button(gost_frame, text="Сгенерировать p,q,a", command=self._generate_gost_params_clicked)
+        btn_gen_gost.pack(anchor="w", padx=5, pady=5)
+
+        self.txt_gost_params = tk.Text(gost_frame, height=8, wrap="word")
+        self.txt_gost_params.pack(fill="x", padx=5, pady=5)
+
+        # --- Клаусс–Шнорр (Schnorr) для взаимной аутентификации ---
+        schnorr_frame = ttk.LabelFrame(self.tab_prepare, text="Ключи аутентификации Клаусса–Шнорра (Schnorr)")
+        schnorr_frame.pack(fill="both", expand=True, padx=10, pady=10)
+        btn_gen_schnorr = ttk.Button(
+            schnorr_frame,
+            text = "Сгенерировать ключи Шнорра (p,q,g, x, y)",
+            command = self._generate_schnorr_keys_clicked,
+        )
+        btn_gen_schnorr.pack(anchor="w", padx=5, pady=(5, 8))
+        schnorr_pub = ttk.LabelFrame(schnorr_frame, text="Публичные параметры и ключ (публикуются)")
+        schnorr_pub.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.txt_schnorr_pub = tk.Text(schnorr_pub, height=8, wrap="word")
+        self.txt_schnorr_pub.pack(fill="both", expand=True)
+
+        schnorr_priv = ttk.LabelFrame(schnorr_frame, text="Секретный ключ")
+        schnorr_priv.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.txt_schnorr_priv = tk.Text(schnorr_priv, height=8, wrap="word", foreground="darkred")
+        self.txt_schnorr_priv.pack(fill="both", expand=True)
+
+    def _generate_gost_params_clicked(self):
+        try:
+            p, q = generate_gost_pq(bits_p=512)
+            a = generate_gost_a(p, q)
+        except Exception as ex:
+            messagebox.showerror("ГОСТ", f"Не удалось сгенерировать параметры ГОСТ:\n{ex}")
+            return
+
+        self.gost_p, self.gost_q, self.gost_a = p, q, a
+
+        self.txt_gost_params.delete("1.0", "end")
+        self.txt_gost_params.insert("end", f"p = {p}\n\nq = {q}\n\na = {a}\n")
+
+        # Если меняем p,q,a — ранее сгенерированные ключи Шнорра становятся невалидными.
+        self.schnorr_x = None
+        self.schnorr_y = None
+
+        if hasattr(self, "txt_schnorr_pub"):
+            self.txt_schnorr_pub.delete("1.0", "end")
+            self.txt_schnorr_pub.insert(
+                "end",
+                "Параметры (p,q,g) обновлены. Сгенерируйте заново ключи Шнорра (x,y).\n"
+            )
+        if hasattr(self, "txt_schnorr_priv"):
+            self.txt_schnorr_priv.delete("1.0", "end")
+
+        # если серверное ядро уже запущено — прокинем параметры туда
+        if self.server_core is not None:
+            try:
+                self.server_core.set_gost_params(p, q, a)
+            except AttributeError:
+                pass
+    def _generate_schnorr_keys_clicked(self):
+        """Учебная генерация ключей Шнорра на стороне сервера и отображение в UI."""
+        # 1) Гарантируем наличие p,q,a:
+        # - если уже сгенерированы в ГОСТ-блоке, используем их
+        # - иначе генерируем здесь
+        if self.gost_p is None or self.gost_q is None or self.gost_a is None:
+            try:
+                p, q = generate_gost_pq(bits_p=512)
+                a = generate_gost_a(p, q)
+                self.gost_p, self.gost_q, self.gost_a = int(p), int(q), int(a)
+
+                self.txt_gost_params.delete("1.0", "end")
+                self.txt_gost_params.insert(
+                    "end",
+                    f"p = {self.gost_p}\n\nq = {self.gost_q}\n\na = {self.gost_a}\n"
+                )
+                # если ядро уже запущено — прокинем параметры туда
+                if self.server_core is not None:
+                    try:
+                        self.server_core.set_gost_params(self.gost_p, self.gost_q, self.gost_a)
+                    except Exception:
+                        pass
+            except Exception as ex:
+                messagebox.showerror("Шнорр", f"Не удалось сгенерировать параметры (p,q,g):\n{ex}")
+                return
+
+        # На этом месте параметры точно есть
+        p = int(self.gost_p)
+        q = int(self.gost_q)
+        a = int(self.gost_a)
+
+        # 2) Генерация x,y
+        try:
+            x = secure_random_int(1, q - 1)
+            y = pow(a, int(x), p)
+        except Exception as ex:
+            messagebox.showerror("Шнорр", f"Не удалось сгенерировать ключи (x,y):\n{ex}")
+            return
+
+        self.schnorr_x = int(x)
+        self.schnorr_y = int(y)
+        # 3) Отображение
+        self.txt_schnorr_pub.delete("1.0", "end")
+        self.txt_schnorr_pub.insert(
+            "end",
+            "Параметры (используются совместно с ГОСТ 34.10-94):\n"
+             f"p = {p}\n\nq = {q}\n\ng (a) = {a}\n\n"
+             f"Публичный ключ сервера y = g^x mod p = {self.schnorr_y}\n"
+            )
+        self.txt_schnorr_priv.delete("1.0", "end")
+        self.txt_schnorr_priv.insert("end", f"Секретный ключ сервера x = {self.schnorr_x}\n")
+
+        # 4) Если ядро уже запущено — применим ключи туда (важно для учебного режима)
+
+        if self.server_core is not None:
+            try:
+                self.server_core.schnorr_x = self.schnorr_x
+                self.server_core.schnorr_y = self.schnorr_y
+            # Если параметры на ядре отличаются — синхронизируем (set_gost_params сохранит согласованные ключи)
+                if self.server_core.gost_p != self.gost_p or self.server_core.gost_q != self.gost_q or self.server_core.gost_a != self.gost_a:
+                    self.server_core.set_gost_params(int(self.gost_p), int(self.gost_q), int(self.gost_a))
+            except Exception:
+                pass
 
     # -------------------------------------------------------------------------
     #  Вкладка "Аутентификация"
@@ -234,14 +372,16 @@ class AuctionServerApp(tk.Tk):
         bids_frame = ttk.LabelFrame(frame, text="Полученные заявки")
         bids_frame.pack(fill="both", expand=True)
 
-        columns = ("id", "y", "s", "x")
+        columns = ("id", "y", "r","s", "x")
         self.tree_bids = ttk.Treeview(bids_frame, columns=columns, show="headings", height=12)
         self.tree_bids.heading("id", text="ID участника")
         self.tree_bids.heading("y", text="Зашифр. заявка y")
-        self.tree_bids.heading("s", text="Подпись s")
+        self.tree_bids.heading("r", text="Часть подписи r")
+        self.tree_bids.heading("s", text="Часть подписи s")
         self.tree_bids.heading("x", text="Расшифр. ставка x")
         self.tree_bids.column("id", width=120, anchor="center")
         self.tree_bids.column("y", width=220, anchor="center")
+        self.tree_bids.column("r", width=220, anchor="center")
         self.tree_bids.column("s", width=220, anchor="center")
         self.tree_bids.column("x", width=150, anchor="center")
         self.tree_bids.pack(side="left", fill="both", expand=True)
@@ -289,6 +429,32 @@ class AuctionServerApp(tk.Tk):
         self.status_var.set(text)
         # заставим Tk обновить строку статуса
         self.update_idletasks()
+        """
+        ВАЖНО: Tkinter не потокобезопасен.
+        Этот метод может вызываться из сетевого потока через колбэки ядра —
+        поэтому обновление GUI делаем через after().
+        """
+        def _apply():
+            try:
+                self.status_var.set(text)
+                self.update_idletasks()
+            except Exception:
+                # Не даём падать сетевым потокам из-за GUI
+                pass
+
+        # Если мы уже в GUI-потоке — применяем сразу, иначе планируем в главный цикл Tk
+        try:
+            import threading as _th
+            if _th.current_thread() is _th.main_thread():
+                _apply()
+            else:
+                self.after(0, _apply)
+        except Exception:
+            # На всякий случай — максимально безопасно
+            try:
+                self.after(0, _apply)
+            except Exception:
+                pass
 
     # -------------------------------------------------------------------------
     #  Логика вкладки "Подготовка"
@@ -402,6 +568,10 @@ class AuctionServerApp(tk.Tk):
             messagebox.showerror("Ошибка", "Сначала сгенерируйте ключи RSA")
             return
 
+        if self.gost_p is None or self.gost_q is None or self.gost_a is None:
+            messagebox.showwarning("Подготовка", "Сначала сгенерируйте параметры ГОСТ (p,q,a) на вкладке 'Подготовка'.")
+            return
+
         print("[SERVER GUI] Запуск серверного ядра AuctionServerCore...")
 
         self.server_core = AuctionServerCore(
@@ -409,9 +579,14 @@ class AuctionServerApp(tk.Tk):
             rsa_n=self.server_rsa_n,
             rsa_e=self.server_rsa_e,
             rsa_d=self.server_rsa_d,
+            schnorr_x = self.schnorr_x,
+            schnorr_y = self.schnorr_y,
             on_log=self._on_core_log,
             on_auth_update=self._on_member_authenticated,
-            on_bid_received=self._on_bid_received
+            on_bid_received=self._on_bid_received,
+            gost_p=self.gost_p,
+            gost_q=self.gost_q,
+            gost_a=self.gost_a
         )
 
         # Запускаем сервер в отдельном потоке
@@ -599,12 +774,13 @@ class AuctionServerApp(tk.Tk):
             decrypted_x = rec.get("x")  # расшифрованная ставка
             encrypted_y = rec.get("y")  # зашифрованная заявка
             s = rec.get("s")
+            r= rec.get("r")
             is_winner = rec.get("winner", False)
 
-            # >>> ВАЖНО: порядок колонок (id, y, s, x) <<<
+            # >>> ВАЖНО: порядок колонок (id, y, r, s, x) <<<
             self.tree_bids.insert(
                 "", tk.END,
-                values=(pid, str(encrypted_y), str(s), str(decrypted_x))
+                values=(pid, str(encrypted_y),str(r), str(s), str(decrypted_x))
             )
 
             if is_winner:
@@ -642,49 +818,70 @@ class AuctionServerApp(tk.Tk):
         Общий лог от ядра сервера — выводим в консоль и в статус-бар.
         """
         print("[SERVER CORE]", msg)
+        # _set_status уже потокобезопасен
         self._set_status(msg)
-
     def _on_member_authenticated(self, participant_id: str, authenticated: bool):
         """
         Ядро сервера сообщает, что участник успешно аутентифицирован (или, в будущем, отозван).
         Обновляем статус в таблице.
         """
-        for item in self.tree_auth.get_children():
-            pid, status = self.tree_auth.item(item, "values")
-            if pid == participant_id:
-                new_status = "допущен" if authenticated else "не допущен"
-                self.tree_auth.item(item, values=(pid, new_status))
-                break
 
-    def _on_bid_received(self, participant_id: str,
-                         bid_value: int, y: int, h: int, r: int, s: int):
+        def _apply():
+            try:
+                for item in self.tree_auth.get_children():
+                    pid, status = self.tree_auth.item(item, "values")
+                    if pid == participant_id:
+                        new_status = "допущен" if authenticated else "не допущен"
+                        self.tree_auth.item(item, values=(pid, new_status))
+                        break
+            except Exception:
+                pass
+        # Планируем в GUI-поток
+        try:
+            self.after(0, _apply)
+        except Exception:
+            pass
+
+
+    def _on_bid_received(self, participant_id: str, bid_value: int, y: int, h: int, r: int, s: int):
         encrypted_y = y
-        signature_s = s
 
-        for item in self.tree_bids.get_children():
-            pid, _, _, _ = self.tree_bids.item(item, "values")
-            if pid == participant_id:
-                self.tree_bids.item(
-                    item,
-                    values=(pid, str(encrypted_y), str(signature_s), "")
-                )
-                return
-
-        self.tree_bids.insert(
-            "", tk.END,
-            values=(participant_id, str(encrypted_y), str(signature_s), "")
-        )
+        def _apply():
+            try:
+                # Пытаемся найти существующую строку по id
+                for item in self.tree_bids.get_children():
+                    vals = self.tree_bids.item(item, "values")
+                    if vals and vals[0] == participant_id:
+                        self.tree_bids.item(item,values=(participant_id, str(encrypted_y), str(r), str(s), ""))
+                        return
+                # Если строки нет — добавляем
+                self.tree_bids.insert("", tk.END,values=(participant_id, str(encrypted_y), str(r), str(s), ""))
+            except Exception:
+                pass
+        try:
+            self.after(0, _apply)
+        except Exception:
+            pass
 
     def _on_bidding_finished(self):
         """
         Если ядро сервера само решит, что приём заявок завершён — можем обновить GUI.
         """
-        self.bidding_open = False
-        self.label_bidding_status.config(text="Приём заявок: закрыт", foreground="red")
-        self.btn_bidding_open.config(state="normal")
-        self.btn_bidding_close.config(state="disabled")
-        self.btn_decrypt_and_choose.config(state="normal")
-        self._set_status("Приём заявок завершён ядром сервера.")
+        def _apply():
+            try:
+                self.bidding_open = False
+
+                self.label_bidding_status.config(text="Приём заявок: закрыт", foreground="red")
+                self.btn_bidding_open.config(state="normal")
+                self.btn_bidding_close.config(state="disabled")
+                self.btn_decrypt_and_choose.config(state="normal")
+                self._set_status("Приём заявок завершён ядром сервера.")
+            except Exception:
+                pass
+        try:
+            self.after(0, _apply)
+        except Exception:
+            pass
 
     # -------------------------------------------------------------------------
     #  Закрытие приложения
