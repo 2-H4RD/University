@@ -4,7 +4,7 @@
 # Шифр Магма вынесен в модуль common/gost_28147_89.py
 
 from typing import List, Tuple
-from common.gost_28147_89 import magma_encrypt_block
+from gost_28147_89 import magma_encrypt_block
 
 # ---------- Keygen (LE-модель) ----------
 

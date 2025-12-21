@@ -9,8 +9,8 @@
 # СОВМЕСТИМ с новым вариантом gost_hash_3411.py
 
 from typing import Tuple
-from common.num_generator import generate_gost_pq, generate_gost_a, secure_random_int
-from common.gost_hash_3411 import gost_hash_3411 as _gost_hash
+from num_generator import generate_gost_pq, generate_gost_a, secure_random_int
+from gost_hash_3411 import gost_hash_3411 as _gost_hash
 # ---------------------------------------------------------------------
 #  Преобразование хэша из 32-байтового массива в число (big-endian)
 # ---------------------------------------------------------------------

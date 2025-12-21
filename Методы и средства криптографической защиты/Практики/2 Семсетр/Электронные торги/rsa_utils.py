@@ -17,7 +17,7 @@ rsa_utils.py
     - подпись / проверка подписи
 """
 
-from common.num_generator import generate_gost_pq, secure_random_int
+from num_generator import generate_gost_pq, secure_random_int
 
 
 # ================================================================

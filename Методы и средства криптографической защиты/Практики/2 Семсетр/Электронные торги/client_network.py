@@ -59,8 +59,8 @@ import threading
 import queue
 from dataclasses import dataclass, field
 from typing import Optional, Tuple, List
-from common.gost_hash_3411 import gost3411_94_full
-from common.num_generator import secure_random_int
+from gost_hash_3411 import gost3411_94_full
+from num_generator import secure_random_int
 
 
 # Порты и «магические» строки для discovery
@@ -109,11 +109,12 @@ class AuctionMemberClient:
 
     _on_bids_published = None
     _on_results_published = None
+    _on_bidding_status = None
     _on_push_log = None
 
     participant_id: str
-    rsa_keys: RSAKeys
-    gost_keys: GostKeys
+    rsa_keys: Optional[RSAKeys] = None
+    gost_keys: Optional[GostKeys] = None
 
     server_addr: Optional[Tuple[str, int]] = None
     tcp_sock: Optional[socket.socket] = field(default=None, init=False)
@@ -122,6 +123,10 @@ class AuctionMemberClient:
 
     server_rsa_n: Optional[int] = None
     server_rsa_e: Optional[int] = None
+    server_gost_p: Optional[int] = None
+    server_gost_q: Optional[int] = None
+    server_gost_a: Optional[int] = None
+    server_schnorr_y: Optional[int] = None
 
     # индикатор активного TCP-подключения
     running: bool = field(default=False, init=False)
@@ -194,13 +199,12 @@ class AuctionMemberClient:
             return False
 
         self.tcp_sock = sock
-        # Устанавливаем таймаут в None для синхронного чтения (будет устанавливаться по необходимости)
-        sock.settimeout(None)
-        # Разделяем reader/writer для удобства
+
+        # Разделяем reader/writer для удобства.
+        # Важно: reader-thread НЕ стартуем здесь, чтобы не было гонки за первые ответы протокола (WELCOME/REGISTER_RESULT
+        # и т.п.). Синхронные ответы читаются напрямую через _recv_json_direct().
         self.tcp_file_r = sock.makefile("r", encoding="utf-8", newline="\n")
         self.tcp_file_w = sock.makefile("w", encoding="utf-8", newline="\n")
-        # Запускаем единый поток чтения
-        self._start_reader_thread()
 
 
         print("[CLIENT] TCP-соединение установлено.")
@@ -227,11 +231,76 @@ class AuctionMemberClient:
             return False
 
     def _recv_json(self, timeout: float = 10.0) -> Optional[dict]:
+        """
+        Получение JSON-ответа.
+        Если reader-thread уже запущен — читаем из очереди (_inbox).
+        Если reader-thread ещё не запущен (этап HELLO/REGISTER и т.п.) — читаем напрямую из TCP.
+        """
+        if self._reader_thread is None or not self._reader_thread.is_alive():
+            return self._recv_json_direct(timeout=timeout)
         try:
             return self._inbox.get(timeout=timeout)
         except queue.Empty:
             print("[CLIENT][ERROR] _recv_json: таймаут ожидания ответа от сервера.")
             return None
+    def _recv_json_direct(self, timeout: float = 10.0) -> Optional[dict]:
+        """
+        Синхронное чтение JSON по строкам из TCP.
+        Используется ДО запуска reader-thread, чтобы исключить гонки за первый ответ WELCOME.
+        """
+        if not self.tcp_sock or not self.tcp_file_r:
+            print("[CLIENT][ERROR] _recv_json_direct: нет TCP-подключения.")
+            return None
+        prev_timeout = None
+        try:
+            prev_timeout = self.tcp_sock.gettimeout()
+        except Exception:
+            prev_timeout = None
+
+        try:
+            # Временно выставляем таймаут на чтение.
+            try:
+                self.tcp_sock.settimeout(timeout)
+            except Exception:
+                pass
+            while True:
+                line = self.tcp_file_r.readline()
+                if not line:
+                    print("[CLIENT][ERROR] _recv_json_direct: сервер закрыл соединение (EOF).")
+                    return None
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    return json.loads(line)
+                except json.JSONDecodeError as ex:
+                    print(f"[CLIENT][WARN] _recv_json_direct: некорректный JSON ({ex}), строка пропущена.")
+                    continue
+        except socket.timeout:
+            print("[CLIENT][ERROR] _recv_json_direct: таймаут ожидания ответа от сервера.")
+            return None
+        except Exception as ex:
+            print(f"[CLIENT][ERROR] _recv_json_direct: {ex}")
+            return None
+        finally:
+            # Возвращаем исходный таймаут.
+            try:
+                self.tcp_sock.settimeout(prev_timeout)
+            except Exception:
+                pass
+
+    # ------------------------------------------------------------------
+    # Локальное логирование (в т.ч. в GUI)
+    # ------------------------------------------------------------------
+
+    def _log(self, msg: str):
+        """Лог в консоль и (если подключено) в GUI-виджет клиента."""
+        print(msg)
+        if self._on_push_log:
+            try:
+                self._on_push_log(msg)
+            except Exception:
+                pass
 
     def receive_published_bids(self, timeout: float = 10.0) -> Optional[List[dict]]:
         """
@@ -342,18 +411,36 @@ class AuctionMemberClient:
     def _start_reader_thread(self):
         if self._reader_thread and self._reader_thread.is_alive():
             return
+        # Для reader-thread нужен блокирующий режим, иначе socket.timeout может преждевременно рвать чтение.
+        try:
+            if self.tcp_sock:
+                self.tcp_sock.settimeout(None)
+        except Exception:
+            pass
 
         self._reader_stop.clear()
 
+        def _safe_push_log(text: str):
+            """
+            Никогда не даём reader-thread упасть из-за лог-колбэка (особенно из-за Tkinter).
+            """
+            try:
+                if self._on_push_log:
+                    self._on_push_log(text)
+                else:
+                    # если GUI-колбэка нет — хотя бы в консоль
+                    print(text)
+            except Exception as ex:
+                # важная диагностика: видно, почему умирает поток чтения
+                print(f"[CLIENT][WARN] on_push_log callback failed: {ex!r}. msg={text!r}")
+
         def _loop():
-            if self._on_push_log:
-                self._on_push_log("[CLIENT] Reader-thread стартовал.")
+            _safe_push_log("[CLIENT] Reader-thread стартовал.")
             while not self._reader_stop.is_set():
                 try:
                     line = self.tcp_file_r.readline()
                     if not line:
-                        if self._on_push_log:
-                            self._on_push_log("[CLIENT] Reader-thread: EOF от сервера (readline вернул пусто).")
+                        _safe_push_log("[CLIENT] Reader-thread: EOF от сервера (readline вернул пусто).")
                         break
                     line = line.strip()
                     if not line:
@@ -362,8 +449,7 @@ class AuctionMemberClient:
                     try:
                         msg = json.loads(line)
                     except Exception as ex:
-                        if self._on_push_log:
-                            self._on_push_log(f"[CLIENT] Reader-thread: JSON parse error: {ex}")
+                        _safe_push_log(f"[CLIENT] Reader-thread: JSON parse error: {ex!r}. line={line!r}")
                         continue
 
                     mtype = msg.get("type", "")
@@ -371,39 +457,43 @@ class AuctionMemberClient:
                     # PUSH сообщения
                     if mtype == "BIDS_PUBLISHED":
                         bids = msg.get("bids", [])
-                        if self._on_push_log:
-                            self._on_push_log(f"[CLIENT] PUSH: BIDS_PUBLISHED ({len(bids)} записей)")
+                        _safe_push_log(f"[CLIENT] PUSH: BIDS_PUBLISHED ({len(bids)} записей)")
                         if self._on_bids_published:
                             try:
                                 self._on_bids_published(bids)
                             except Exception as cb_ex:
-                                if self._on_push_log:
-                                    self._on_push_log(f"[CLIENT] on_bids_published error: {cb_ex!r}")
+                                _safe_push_log(f"[CLIENT] on_bids_published error: {cb_ex!r}")
                         continue
 
                     if mtype == "RESULTS_PUBLISHED":
                         results = msg.get("results", [])
                         winner_id = msg.get("winner_id", None)
-                        if self._on_push_log:
-                            self._on_push_log(f"[CLIENT] PUSH: RESULTS_PUBLISHED ({len(results)} записей), winner={winner_id!r}")
+                        _safe_push_log(f"[CLIENT] PUSH: RESULTS_PUBLISHED ({len(results)} записей), winner={winner_id!r}")
                         if self._on_results_published:
                             try:
                                 self._on_results_published(results, winner_id)
                             except Exception as cb_ex:
-                                if self._on_push_log:
-                                    self._on_push_log(f"[CLIENT] on_results_published error: {cb_ex!r}")
+                                _safe_push_log(f"[CLIENT] on_results_published error: {cb_ex!r}")
+                        continue
+
+                    if mtype == "BIDDING_STATUS":
+                        is_open = bool(msg.get("open", False))
+                        _safe_push_log(f"[CLIENT] PUSH: BIDDING_STATUS open={is_open}")
+                        if self._on_bidding_status:
+                            try:
+                                self._on_bidding_status(is_open)
+                            except Exception as cb_ex:
+                                _safe_push_log(f"[CLIENT] on_bidding_status error: {cb_ex!r}")
                         continue
 
                     # Обычные ответы — в очередь
                     self._inbox.put(msg)
 
                 except Exception as ex:
-                    if self._on_push_log:
-                        self._on_push_log(f"[CLIENT] Reader-thread exception: {ex!r}")
+                    _safe_push_log(f"[CLIENT] Reader-thread exception: {ex!r}")
                     break
 
-            if self._on_push_log:
-                self._on_push_log("[CLIENT] Reader-thread остановлен.")
+            _safe_push_log("[CLIENT] Reader-thread остановлен.")
 
         self._reader_thread = threading.Thread(target=_loop, daemon=True)
         self._reader_thread.start()
@@ -439,6 +529,10 @@ class AuctionMemberClient:
         # Сохраняем открытый ключ сервера
         self.server_rsa_n = resp.get("server_rsa_n")
         self.server_rsa_e = resp.get("server_rsa_e")
+        self.server_gost_p = resp.get("gost_p")
+        self.server_gost_q = resp.get("gost_q")
+        self.server_gost_a = resp.get("gost_a")
+        self.server_schnorr_y = resp.get("server_schnorr_y")
 
         return True, None
 
@@ -446,20 +540,17 @@ class AuctionMemberClient:
         """
         Регистрация открытых ключей на сервере.
         """
+        if not self.gost_keys:
+            self._log("[CLIENT][ERROR] authenticate: нет gost_keys (x/y). Сначала получите p,q,a и сгенерируйте ключи ГОСТ/Шнорра.")
+            return False
+
         msg = {
             "type": "REGISTER_KEYS",
             "id": self.participant_id,
-            "rsa": {
-                "n": self.rsa_keys.n,
-                "e": self.rsa_keys.e,
-            },
-            "gost": {
-                "p": self.gost_keys.p,
-                "q": self.gost_keys.q,
-                "a": self.gost_keys.a,
-                "y": self.gost_keys.y,
-            },
+            "gost": {"y": self.gost_keys.y},
         }
+        if self.rsa_keys is not None:
+            msg["rsa"] = {"n": self.rsa_keys.n, "e": self.rsa_keys.e}
         if not self._send_json(msg):
             return False
 
@@ -479,56 +570,159 @@ class AuctionMemberClient:
 
     def authenticate(self) -> bool:
         """
-        Аутентификация по RSA:
-          - запрос окна аутентификации,
-          - получение r от сервера,
-          - вычисление s = r^d mod n,
-          - отправка s,
-          - получение результата.
+        Двухсторонняя аутентификация по протоколу Клаусса–Шнорра (Schnorr identification).
+
+        Фаза A (клиент -> сервер):
+          - клиент отправляет t = a^v mod p
+          - сервер отвечает challenge c
+          - клиент отправляет s = (v + c*x) mod q
+          - сервер отвечает AUTH_RESULT
+
+        Фаза B (сервер -> клиент):
+          - клиент инициирует SERVER_AUTH_REQUEST
+          - сервер присылает commitment t_srv
+          - клиент присылает challenge c_srv
+          - сервер присылает ответ s_srv
+          - клиент проверяет: a^s_srv == t_srv * (y_srv^c_srv) (mod p)
+          - клиент отправляет MUTUAL_AUTH_CONFIRM
         """
-        msg_req = {
-            "type": "AUTH_REQUEST",
-            "id": self.participant_id,
-        }
-        if not self._send_json(msg_req):
+        if not self.gost_keys:
+            print("[CLIENT][ERROR] authenticate: нет gost_keys (x/y). Сначала получите p,q,a и сгенерируйте ключи ГОСТ/Шнорра.")
             return False
 
-        resp = self._recv_json()
+        # сервер должен прислать параметры и server_schnorr_y в WELCOME
+        if self.server_schnorr_y is None:
+            self._log("[CLIENT][ERROR] authenticate: сервер не передал server_schnorr_y (взаимная аутентификация невозможна).")
+            return False
+
+        p = self.gost_keys.p
+        q = self.gost_keys.q
+        a = self.gost_keys.a
+        x = self.gost_keys.x
+
+        # -------------------- Фаза A: клиент доказывает серверу --------------------
+        self._log("[CLIENT][AUTH] === Schnorr: фаза A (клиент -> сервер) ===")
+        v = secure_random_int(1, q - 1)
+        t = pow(a, v, p)
+        self._log(f"[CLIENT][AUTH] Выбрано v ∈ [1,q-1]. v = {v}")
+        self._log(f"[CLIENT][AUTH] Сформировано commitment t = g^v mod p = {t}")
+
+        if not self._send_json({"type": "AUTH_REQUEST", "id": self.participant_id, "t": t}):
+            return False
+
+        resp = self._recv_json(timeout=10.0)
         if not resp:
             return False
+
+        if resp.get("type") == "AUTH_RESULT" and not resp.get("ok", False):
+            self._log(f"[CLIENT][ERROR] authenticate: сервер отказал на шаге AUTH_REQUEST: {resp.get('reason')}")
+            return False
+
         if resp.get("type") != "AUTH_CHALLENGE":
-            print("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_CHALLENGE'.")
+            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_CHALLENGE'.")
             return False
 
-        r = resp.get("r")
-        if not isinstance(r, int):
-            print("[CLIENT][ERROR] authenticate: 'r' не является целым.")
+        c = resp.get("c")
+        if not isinstance(c, int):
+            self._log("[CLIENT][ERROR] authenticate: 'c' не является целым.")
+            return False
+        if c < 0 or c >= q:
+            self._log("[CLIENT][ERROR] authenticate: 'c' вне диапазона [0, q).")
             return False
 
-        print(f"[CLIENT] Получен челлендж r = {r}. Вычисляем s = r^d mod n...")
-        s = pow(r, self.rsa_keys.d, self.rsa_keys.n)
-        print(f"[CLIENT] Вычислено s = {s}")
+        self._log(f"[CLIENT][AUTH] Получен challenge c ∈ [0,q). c = {c}")
+        s = (v + c * x) % q
+        self._log(f"[CLIENT][AUTH] Вычислен ответ s = (v + c·x) mod q = {s}")
 
-        msg_resp = {
-            "type": "AUTH_RESPONSE",
-            "id": self.participant_id,
-            "s": s,
-        }
-        if not self._send_json(msg_resp):
+        if not self._send_json({"type": "AUTH_RESPONSE", "id": self.participant_id, "s": s}):
             return False
 
-        resp2 = self._recv_json()
+        resp2 = self._recv_json(timeout=10.0)
         if not resp2:
             return False
         if resp2.get("type") != "AUTH_RESULT":
-            print("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_RESULT'.")
+            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_RESULT'.")
             return False
-
         if not resp2.get("ok", False):
-            print(f"[CLIENT][ERROR] authenticate: сервер отклонил аутентификацию: {resp2.get('reason')}")
+            self._log(f"[CLIENT][ERROR] authenticate: сервер отклонил аутентификацию (фаза A): {resp2.get('reason')}")
             return False
 
-        print("[CLIENT] Аутентификация по RSA успешно пройдена.")
+        self._log("[CLIENT][AUTH] Фаза A: сервер подтвердил подлинность клиента.")
+
+        # -------------------- Фаза B: сервер доказывает клиенту --------------------
+        self._log("[CLIENT][AUTH] === Schnorr: фаза B (сервер -> клиент) ===")
+        if not self._send_json({"type": "SERVER_AUTH_REQUEST", "id": self.participant_id}):
+            return False
+
+        resp3 = self._recv_json(timeout=10.0)
+        if not resp3:
+            return False
+        if resp3.get("type") != "SERVER_AUTH_COMMIT":
+            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'SERVER_AUTH_COMMIT'.")
+            return False
+        if not resp3.get("ok", False):
+            self._log(f"[CLIENT][ERROR] authenticate: сервер отказал в server-auth: {resp3.get('reason')}")
+            return False
+
+        t_srv = resp3.get("t")
+        if not isinstance(t_srv, int):
+            self._log("[CLIENT][ERROR] authenticate: t_srv не является целым.")
+            return False
+        if t_srv <= 0 or t_srv >= p:
+            self._log("[CLIENT][ERROR] authenticate: t_srv вне диапазона (0 < t < p).")
+            return False
+
+        self._log(f"[CLIENT][AUTH] Получен commitment сервера t_srv = {t_srv}")
+        c_srv = secure_random_int(0, q - 1)
+        self._log(f"[CLIENT][AUTH] Сформирован challenge серверу c_srv = {c_srv}")
+
+        if not self._send_json({"type": "SERVER_AUTH_CHALLENGE", "id": self.participant_id, "c": c_srv}):
+            return False
+
+        resp4 = self._recv_json(timeout=10.0)
+        if not resp4:
+            return False
+        if resp4.get("type") != "SERVER_AUTH_RESPONSE":
+            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'SERVER_AUTH_RESPONSE'.")
+            return False
+        if not resp4.get("ok", False):
+            self._log(f"[CLIENT][ERROR] authenticate: сервер вернул ошибку на server-auth: {resp4.get('reason')}")
+            return False
+
+        s_srv = resp4.get("s")
+
+        if not isinstance(s_srv, int):
+            self._log("[CLIENT][ERROR] authenticate: s_srv не является целым.")
+            return False
+        if s_srv < 0 or s_srv >= q:
+            self._log("[CLIENT][ERROR] authenticate: s_srv вне диапазона [0, q).")
+            return False
+
+        self._log(f"[CLIENT][AUTH] Получен ответ сервера s_srv = {s_srv}")
+
+        y_srv = int(self.server_schnorr_y)
+        left = pow(a, s_srv, p)
+        right = (t_srv * pow(y_srv, c_srv, p)) % p
+
+        self._log(f"[CLIENT][AUTH] Проверка: left = g^s_srv mod p = {left}")
+        self._log(f"[CLIENT][AUTH] Проверка: right = t_srv · y_srv^c_srv mod p = {right}")
+
+        if left != right:
+            self._log("[CLIENT][ERROR] authenticate: проверка server-auth (Шнорр) не сошлась. Сервер НЕ аутентичен.")
+            self._send_json({"type": "MUTUAL_AUTH_CONFIRM", "id": self.participant_id, "ok": False, "reason": "Schnorr verify failed"})
+            return False
+
+        if not self._send_json({"type": "MUTUAL_AUTH_CONFIRM", "id": self.participant_id, "ok": True, "reason": ""}):
+            return False
+
+        resp5 = self._recv_json(timeout=10.0)
+        if not resp5:
+            return False
+        if resp5.get("type") == "MUTUAL_AUTH_RESULT" and not resp5.get("ok", False):
+            self._log(f"[CLIENT][ERROR] authenticate: сервер не принял подтверждение взаимной аутентификации: {resp5.get('reason')}")
+            return False
+
+        self._log("[CLIENT][AUTH] Фаза B: сервер успешно проверен. Взаимная аутентификация завершена.")
         return True
 
     def send_bid(self, bid_value: int) -> Optional[dict]:
@@ -683,10 +877,16 @@ class AuctionMemberClient:
 
     # -------------------- PUSH LISTENER (server -> client) --------------------
 
-    def start_push_listener(self, on_bids_published=None, on_results_published=None, on_log=None):
+    def start_push_listener(self, on_bids_published=None, on_results_published=None, on_bidding_status=None,
+                            on_log=None):
         self._on_bids_published = on_bids_published
         self._on_results_published = on_results_published
+        self._on_bidding_status = on_bidding_status
         self._on_push_log = on_log
+        # Reader-thread поднимаем только после завершения "handshake" (HELLO/REGISTER/AUTH),
+        # чтобы исключить гонки за синхронные ответы протокола.
+        if self.running and (self._reader_thread is None or not self._reader_thread.is_alive()):
+            self._start_reader_thread()
         if self._on_push_log:
             self._on_push_log("[CLIENT] Push callbacks зарегистрированы (reader-thread используется общий).")
 

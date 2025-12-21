@@ -27,7 +27,8 @@ import json
 import time
 from dataclasses import dataclass, field
 from typing import Dict, Optional, Callable, Tuple, List
-from common.gost_hash_3411 import gost3411_94_full
+from gost_hash_3411 import gost3411_94_full
+from num_generator import secure_random_int
 
 
 # Те же константы, что и у клиента
@@ -48,17 +49,36 @@ BidReceivedCallback = Callable[[str, int, int, int, int, int], None]
 class ParticipantInfo:
     """Информация о конкретном участнике торгов на сервере."""
     participant_id: str
+    # (опционально) публичный RSA-ключ участника — больше НЕ используется для аутентификации,
+    # оставляем поле только ради обратной совместимости на время миграции.
     rsa_n: Optional[int] = None
     rsa_e: Optional[int] = None
+
+    # Параметры ГОСТ/Шнорра (общие p,q,a приходят от сервера; y — публичный ключ участника)
     gost_p: Optional[int] = None
     gost_q: Optional[int] = None
     gost_a: Optional[int] = None
     gost_y: Optional[int] = None
 
-    registered: bool = False          # прошёл REGISTER_KEYS
-    authenticated: bool = False       # прошёл аутентификацию
-    last_challenge: Optional[int] = None  # r от сервера для RSA-аутентификации
+    registered: bool = False  # прошёл REGISTER_KEYS
+    authenticated: bool = False  # прошёл Шнорр-аутентификацию (участник -> сервер)
+    mutual_confirmed: bool = False  # клиент подтвердил успешную проверку сервера (сервер -> клиент)
+
+    # --- Состояние для аутентификации Шнорра (участник -> сервер) ---
+    last_t: Optional[int] = None  # commitment t = a^v mod p
+    last_c: Optional[int] = None  # challenge c
+
+    # --- Состояние для аутентификации Шнорра (сервер -> участник) ---
+    srv_v: Optional[int] = None  # одноразовый секрет v (на период сеанса)
+    srv_t: Optional[int] = None  # commitment t_srv
+    srv_c: Optional[int] = None  # challenge, полученный от клиента
+
     send_fn: Optional[Callable[[dict], None]] = None
+
+    # --- Schnorr mutual auth (server -> client) ---
+    srv_auth_v: Optional[int] = None  # временный секрет v_srv
+    srv_auth_t: Optional[int] = None  # commitment t_srv = g^v_srv mod p
+    srv_auth_c: Optional[int] = None  # challenge c_srv (для отладки)
 
 
 @dataclass
@@ -82,6 +102,15 @@ class AuctionServerCore:
     rsa_e: Optional[int] = None
     rsa_d: Optional[int] = None
 
+    # --- ГОСТ-ключи организатора торгов (сервер) ---
+    gost_p: Optional[int] = None
+    gost_q: Optional[int] = None
+    gost_a: Optional[int] = None
+
+    # --- Ключи Шнорра сервера для взаимной аутентификации ---
+    schnorr_x: Optional[int] = None  # секретный ключ сервера
+    schnorr_y: Optional[int] = None  # публичный ключ сервера (a^x mod p)
+
     # --- Управляющие флаги (GUI может менять) ---
     allowed_ids: List[str] = field(default_factory=list)  # список ID из опубликованного реестра
     auth_window_open: bool = False                        # окно аутентификации открыто?
@@ -103,6 +132,14 @@ class AuctionServerCore:
     _stop_event: threading.Event = field(default_factory=threading.Event, init=False)
 
     _tcp_sock: Optional[socket.socket] = field(default=None, init=False)
+
+    def __post_init__(self):
+        # В server_main.py параметры ГОСТ (p,q,a) часто передаются в конструктор напрямую (через поля dataclass),
+        # поэтому set_gost_params() может не вызываться. В таком случае ключи Шнорра для взаимной аутентификации
+        # нужно сгенерировать здесь.
+        if self.gost_p and self.gost_q and self.gost_a and (self.schnorr_x is None or self.schnorr_y is None):
+            # set_gost_params() помимо установки p,q,a также формирует (schnorr_x, schnorr_y).
+            self.set_gost_params(int(self.gost_p), int(self.gost_q), int(self.gost_a))
 
     # ------------------- Вспомогательные методы логирования ------------------- #
 
@@ -145,10 +182,35 @@ class AuctionServerCore:
     def set_bidding_open(self, is_open: bool):
         self.bidding_open = is_open
         self._log(f"[SERVER] Окно приёма заявок: {'ОТКРЫТО' if is_open else 'ЗАКРЫТО'}")
+        self._broadcast_bidding_status(is_open)
 
     def get_current_bids(self) -> List[dict]:
         """Вернуть копию списка всех принятых заявок."""
         return list(self._bids)
+
+    def set_gost_params(self, p: int, q: int, a: int):
+        self.gost_p, self.gost_q, self.gost_a = p, q, a
+        self._log(f"[SERVER] Установлены параметры ГОСТ: p(bitlen)={p.bit_length()}, q(bitlen)={q.bit_length()}")
+        # Важно для учебного режима: GUI может заранее сгенерировать и «вбить» schnorr_x/schnorr_y.
+        # В таком случае НЕ перегенерируем ключи, если они согласованы с (p,q,a).
+        if self.schnorr_x is not None and self.schnorr_y is not None:
+            try:
+                expected_y = pow(a, int(self.schnorr_x), p)
+                if int(self.schnorr_y) == expected_y:
+                    self._log("[SERVER] Ключи Шнорра сервера уже заданы (GUI) и согласованы с текущими параметрами.")
+                    return
+                self._log("[SERVER][WARN] Заданные ключи Шнорра не согласованы с новыми (p,q,a). Перегенерируем.")
+            except Exception:
+                self._log("[SERVER][WARN] Не удалось проверить согласованность ключей Шнорра. Перегенерируем.")
+                # Если ключей нет (или они не согласованы) — генерируем заново
+        try:
+            self.schnorr_x = secure_random_int(1, q - 1)
+            self.schnorr_y = pow(a, self.schnorr_x, p)
+            self._log("[SERVER] Сгенерированы ключи Шнорра сервера (x_srv скрыт, y_srv опубликован в WELCOME).")
+        except Exception as ex:
+            self.schnorr_x = None
+            self.schnorr_y = None
+            self._log(f"[SERVER][ERROR] Не удалось сгенерировать ключи Шнорра сервера: {ex}")
 
     # ------------------- Жизненный цикл сервера ------------------- #
 
@@ -336,13 +398,31 @@ class AuctionServerCore:
                 # --- AUTH_REQUEST ---
                 elif mtype == "AUTH_REQUEST":
                     pid = msg.get("id")
-                    self._handle_auth_request(send_json, pid)
+                    t_val = msg.get("t")
+                    t_val = msg.get("t")
+                    self._handle_auth_request(send_json, pid, t_val)
 
                 # --- AUTH_RESPONSE ---
                 elif mtype == "AUTH_RESPONSE":
                     pid = msg.get("id")
                     s_val = msg.get("s")
                     self._handle_auth_response(send_json, pid, s_val)
+
+                 # --- SERVER_AUTH_REQUEST (взаимная аутентификация: сервер доказывает клиенту) ---
+                elif mtype == "SERVER_AUTH_REQUEST":
+                    pid = msg.get("id")
+                    self._handle_server_auth_request(send_json, pid)
+                # --- SERVER_AUTH_CHALLENGE ---
+                elif mtype == "SERVER_AUTH_CHALLENGE":
+                    pid = msg.get("id")
+                    c_val = msg.get("c")
+                    self._handle_server_auth_challenge(send_json, pid, c_val)
+                # --- MUTUAL_AUTH_CONFIRM (клиент подтверждает, что проверил сервер) ---
+                elif mtype == "MUTUAL_AUTH_CONFIRM":
+                    pid = msg.get("id")
+                    ok_val = msg.get("ok")
+                    reason = msg.get("reason", "")
+                    self._handle_mutual_auth_confirm(send_json, pid, ok_val, reason)
 
                 # --- BID ---
                 elif mtype == "BID":
@@ -385,6 +465,24 @@ class AuctionServerCore:
         if participant_id not in self._participants:
             self._participants[participant_id] = ParticipantInfo(participant_id=participant_id)
         return self._participants[participant_id]
+
+    def _broadcast_bidding_status(self, is_open: bool):
+        """PUSH всем клиентам: открыт/закрыт приём заявок."""
+        payload = {"type": "BIDDING_STATUS", "open": bool(is_open)}
+
+        sent = 0
+        for info in self._participants.values():
+            if info.send_fn is None:
+                continue
+            # Можно ограничить только аутентифицированными:
+            # if not info.authenticated: continue
+            try:
+                info.send_fn(payload)
+                sent += 1
+            except Exception as ex:
+                self._log(f"[SERVER][BIDDING_STATUS][ERROR] {info.participant_id}: {ex}")
+
+        self._log(f"[SERVER] BIDDING_STATUS отправлен {sent} участникам (open={is_open}).")
 
     def _is_id_allowed(self, participant_id: str) -> bool:
         """Проверка, есть ли ID в опубликованном реестре (allowed_ids)."""
@@ -430,58 +528,102 @@ class AuctionServerCore:
         if self.rsa_n and self.rsa_e:
             welcome_payload["server_rsa_n"] = self.rsa_n
             welcome_payload["server_rsa_e"] = self.rsa_e
+
         else:
             # если ключи не заданы, клиент увидит, что ставки шифровать пока нечем
             welcome_payload["server_rsa_n"] = None
             welcome_payload["server_rsa_e"] = None
 
+        if not self.gost_p or not self.gost_q or not self.gost_a:
+            welcome_payload["gost_p"] = None
+            welcome_payload["gost_q"] = None
+            welcome_payload["gost_a"] = None
+            welcome_payload["server_schnorr_y"] = None
+
+        else:
+            welcome_payload["gost_p"] = self.gost_p
+            welcome_payload["gost_q"] = self.gost_q
+            welcome_payload["gost_a"] = self.gost_a
+            welcome_payload["server_schnorr_y"] = self.schnorr_y
         send_json(welcome_payload)
 
     # --- REGISTER_KEYS --- #
     def _handle_register_keys(self, send_json, pid: str, rsa: dict, gost: dict):
+        """
+        REGISTER_KEYS:
+          - RSA: участник присылает свой публичный ключ (n,e)
+          - ГОСТ: участник присылает ТОЛЬКО свой публичный ключ y
+          - p,q,a генерируются сервером (self.gost_p/q/a) и общие для всех
+        """
+        # 0) Проверка ID
         if not pid:
-            send_json({"type": "REGISTER_RESULT", "ok": False, "reason": "Нет id участника."})
-            return
-
-        if not self._is_id_allowed(pid):
-            reason = "Идентификатор не в опубликованном реестре."
-            self._log(f"[SERVER][REGISTER_KEYS] {pid}: {reason}")
+            reason = "Пустой идентификатор участника."
+            self._log(f"[SERVER][REGISTER_KEYS] {reason}")
             send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
             return
 
-        info = self._get_or_create_participant(pid)
+        info = self._participants.get(pid)
+        if info is None:
+            # на всякий случай, но обычно info создаётся на HELLO
+            info = ParticipantInfo(participant_id=pid)
+            self._participants[pid] = info
 
+        # 1) RSA pubkey участника (опционально; для аутентификации больше не используется)
+        # Оставляем ради обратной совместимости: если клиент прислал — сохраним, если нет — это не ошибка.
         try:
-            info.rsa_n = int(rsa.get("n"))
-            info.rsa_e = int(rsa.get("e"))
-            info.gost_p = int(gost.get("p"))
-            info.gost_q = int(gost.get("q"))
-            info.gost_a = int(gost.get("a"))
-            info.gost_y = int(gost.get("y"))
+            if rsa and rsa.get("n") is not None and rsa.get("e") is not None:
+                rsa_n = int(rsa.get("n"))
+                rsa_e = int(rsa.get("e"))
+                if rsa_n <= 0 or rsa_e <= 0:
+                    raise ValueError("RSA n/e должны быть положительными.")
+                info.rsa_n = rsa_n
+                info.rsa_e = rsa_e
+            else:
+                info.rsa_n = None
+                info.rsa_e = None
         except Exception as ex:
-            reason = f"Ошибка при разборе ключей: {ex}"
+            reason = f"Некорректные RSA-ключи участника: {ex}"
             self._log(f"[SERVER][REGISTER_KEYS] {pid}: {reason}")
             send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
             return
 
-        # Простая проверка на заполненность
-        if not info.rsa_n or not info.rsa_e:
-            reason = "Некорректные RSA-ключи."
-            self._log(f"[SERVER][REGISTER_KEYS] {pid}: {reason}")
-            send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
-            return
-        if not info.gost_p or not info.gost_q or not info.gost_a or not info.gost_y:
-            reason = "Некорректные ГОСТ-ключи."
+# 2) ГОСТ параметры должны быть установлены на сервере
+        if not self.gost_p or not self.gost_q or not self.gost_a:
+            reason = "На сервере не заданы параметры ГОСТ (p,q,a)."
             self._log(f"[SERVER][REGISTER_KEYS] {pid}: {reason}")
             send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
             return
 
+        # 3) ГОСТ y участника
+        try:
+            y_pub = int(gost.get("y"))
+            if y_pub <= 0:
+                raise ValueError("ГОСТ y должен быть положительным.")
+        except Exception as ex:
+            reason = f"Некорректный ГОСТ-ключ участника y: {ex}"
+            self._log(f"[SERVER][REGISTER_KEYS] {pid}: {reason}")
+            send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
+            return
+
+        # сохраняем общие параметры ГОСТ в info (можно не хранить, но у вас структура уже так устроена)
+        info.gost_p = int(self.gost_p)
+        info.gost_q = int(self.gost_q)
+        info.gost_a = int(self.gost_a)
+        info.gost_y = y_pub
+
+        # 4) Регистрируем
         info.registered = True
-        self._log(f"[SERVER][REGISTER_KEYS] Участник '{pid}' зарегистрировал ключи.")
+
+        self._log(f"[SERVER][REGISTER_KEYS] Участник '{pid}' зарегистрировал ключи (ГОСТ/Шнорр).")
         send_json({"type": "REGISTER_RESULT", "ok": True, "reason": ""})
 
     # --- AUTH_REQUEST --- #
-    def _handle_auth_request(self, send_json, pid: str):
+    def _handle_auth_request(self, send_json, pid: str, t_val):
+        """
+        Шнорр-аутентификация (участник -> сервер), шаг 1/2.
+        Клиент присылает commitment t = a^v mod p.
+        Сервер отвечает challenge c.
+        """
         if not pid:
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
             return
@@ -489,91 +631,93 @@ class AuctionServerCore:
         if not self.auth_window_open:
             reason = "Окно аутентификации закрыто."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
-            # В примере нам нужно, чтобы клиент видел это явно
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-
         if not self._is_id_allowed(pid):
             reason = "Идентификатор не в опубликованном реестре."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-
         info = self._get_or_create_participant(pid)
-        if not info.registered or not info.rsa_n or not info.rsa_e:
-            reason = "Участник не зарегистрировал ключи."
+        if not info.registered or not info.gost_y or not info.gost_p or not info.gost_q or not info.gost_a:
+            reason = "Участник не зарегистрировал ГОСТ/Шнорр ключи."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
+        # commitment t от клиента
+        try:
+            t = int(t_val)
+            if t <= 0 or t >= info.gost_p:
+                raise ValueError("t вне допустимого диапазона (0 < t < p).")
+        except Exception as ex:
+            reason = f"Некорректный commitment t: {ex}"
+            self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            return
+        c = secure_random_int(0, info.gost_q - 1)
+        info.last_t = t
+        info.last_c = c
+        info.authenticated = False
+        info.mutual_confirmed = False
 
-        # Выбираем случайный r: 1 < r < n (для простоты — псевдо-r)
-        # В production лучше использовать криптогенератор.
-        n = info.rsa_n
-        import random
-        r = random.randrange(2, n - 1)
-        info.last_challenge = r
-
-        self._log(f"[SERVER][AUTH_REQUEST] {pid}: выдаём челлендж r={r}")
+        self._log(f"[SERVER][AUTH_REQUEST] {pid}: получили t={t}, выдаём challenge c={c}")
         send_json({
             "type": "AUTH_CHALLENGE",
             "id": pid,
-            "r": r
+            "c": c
         })
 
-    # --- AUTH_RESPONSE --- #
+# --- AUTH_RESPONSE --- #
     def _handle_auth_response(self, send_json, pid: str, s_val):
+        """
+        Шнорр-аутентификация (участник -> сервер), шаг 2/2.
+        Клиент присылает ответ s = v + c*x (mod q).
+        Сервер проверяет: a^s == t * y^c (mod p).
+        """
         if not pid:
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
             return
-
         info = self._participants.get(pid)
-        if not info:
-            reason = "Участник не известен серверу."
+        if not info or not info.registered:
+            reason = "Участник не зарегистрирован."
             self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-
-        if not info.registered or not info.rsa_n or not info.rsa_e:
-            reason = "Участник не зарегистрировал ключи."
+        if info.last_t is None or info.last_c is None:
+            reason = "Нет активного challenge для участника (сначала AUTH_REQUEST)."
             self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-
-        if info.last_challenge is None:
-            reason = "Сервер не выдавал челлендж этому участнику."
-            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
-            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
-            return
-
-        if not isinstance(s_val, int):
-            reason = "Некорректный формат ответа s."
-            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
-            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
-            return
-
-        # Проверяем, что s^e mod n == r
-        n = info.rsa_n
-        e = info.rsa_e
-        r = info.last_challenge
-
-        self._log(f"[SERVER][AUTH_RESPONSE] {pid}: проверяем s^e mod n == r ...")
+        # Парсим s
         try:
-            r_check = pow(s_val, e, n)
+            s = int(s_val)
+            if s < 0 or s >= info.gost_q:
+                raise ValueError("s вне диапазона [0, q).")
         except Exception as ex:
-            reason = f"Ошибка при вычислении pow(s,e,n): {ex}"
+            reason = f"Некорректный ответ s: {ex}"
             self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
+        p = info.gost_p
+        q = info.gost_q
+        a = info.gost_a
+        y = info.gost_y
+        t = info.last_t
+        c = info.last_c
 
-        if r_check != r:
-            reason = "Аутентификация не пройдена (s^e mod n != r)."
-            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
+        left = pow(a, s, p)
+        right = (t * pow(y, c, p)) % p
+
+        if left != right:
+            reason = "Аутентификация не пройдена (проверка Шнорра не сошлась)."
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason} left={left} right={right}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-
         info.authenticated = True
-        info.last_challenge = None
-        self._log(f"[SERVER][AUTH_RESPONSE] {pid}: Аутентификация УСПЕШНА.")
+        info.last_t = None
+        info.last_c = None
+
+        self._log(f"[SERVER][AUTH_RESPONSE] {pid}: Аутентификация Шнорра УСПЕШНА.")
         send_json({"type": "AUTH_RESULT", "ok": True, "reason": ""})
 
         if self.on_auth_update:
@@ -582,7 +726,160 @@ class AuctionServerCore:
             except Exception:
                 pass
 
-    # --- BID --- #
+        # --- SERVER_AUTH_REQUEST / SERVER_AUTH_CHALLENGE --- #
+    def _handle_server_auth_request(self, send_json, pid: str):
+        """Взаимная аутентификация (сервер -> клиент): сервер доказывает знание x_srv (Шнорр)."""
+        if not pid:
+            send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": "Нет id участника."})
+            return
+
+        info = self._participants.get(pid)
+        if not info or not info.authenticated:
+            reason = "Сначала участник должен пройти аутентификацию (AUTH_*)."
+            self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason})
+            return
+
+        if (not self.gost_p) or (not self.gost_q) or (not self.gost_a) or (self.schnorr_x is None) or (self.schnorr_y is None):
+            reason = "На сервере не готовы параметры/ключи Шнорра."
+            self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason})
+            return
+
+        # 1) сервер выбирает v_srv и публикует t_srv = a^v_srv mod p
+        v_srv = secure_random_int(1, self.gost_q - 1)
+        t_srv = pow(self.gost_a, v_srv, self.gost_p)
+
+        # сохраняем одноразовый секрет до получения challenge
+        info.srv_v = v_srv
+        info.srv_t = t_srv
+        info.srv_c = None
+        info.mutual_confirmed = False
+
+        self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: отправляем commitment t_srv.")
+        send_json({"type": "SERVER_AUTH_COMMIT", "id": pid, "t": t_srv, "ok": True})
+
+    def _handle_server_auth_challenge(self, send_json, pid: str, c_val):
+        """Получить challenge от клиента и ответить s_srv."""
+        if not pid:
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": "Нет id участника."})
+            return
+
+        info = self._participants.get(pid)
+
+        if not info or info.srv_v is None or info.srv_t is None:
+            reason = "Нет активного server-auth сеанса (сначала SERVER_AUTH_REQUEST)."
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+            return
+        try:
+            c = int(c_val)
+            if c < 0 or c >= self.gost_q:
+                raise ValueError("c вне диапазона [0, q).")
+        except Exception as ex:
+            reason = f"Некорректный challenge c: {ex}"
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+
+        info.srv_c = c
+        s_srv = (info.srv_v + c * self.schnorr_x) % self.gost_q
+        # одноразовое состояние можно очистить после формирования ответа
+        info.srv_v = None
+        self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: отправляем ответ s_srv={s_srv}")
+        send_json({"type": "SERVER_AUTH_RESPONSE", "id": pid, "s": s_srv, "ok": True})
+
+        # --- MUTUAL_AUTH_CONFIRM --- #
+    def _handle_mutual_auth_confirm(self, send_json, pid: str, ok_val, reason: str):
+        """Клиент сообщает серверу результат проверки server-auth."""
+        if not pid:
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
+            return
+        info = self._participants.get(pid)
+        if not info or not info.authenticated:
+            r = "Участник не аутентифицирован на сервере."
+            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: {r}")
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
+            return
+        ok = bool(ok_val)
+        if not ok:
+            # Клиент не доверяет серверу — считаем сессию невалидной
+            info.mutual_confirmed = False
+            info.authenticated = False
+            r = reason or "Клиент не подтвердил аутентичность сервера."
+            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: FAIL: {r}")
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
+            return
+
+        info.mutual_confirmed = True
+        self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: взаимная аутентификация подтверждена клиентом.")
+        send_json({"type": "MUTUAL_AUTH_RESULT", "ok": True, "reason": ""})
+
+    def _handle_server_auth_challenge(self, send_json, pid: str, c_val):
+        """Сервер получает challenge и отвечает s_srv."""
+        if not pid:
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": "Нет id участника."})
+            return
+
+        info = self._participants.get(pid)
+        if not info or info.srv_v is None or info.srv_t is None:
+            reason = "Нет активного server-auth сеанса (сначала SERVER_AUTH_REQUEST)."
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+            return
+
+        try:
+            c = int(c_val)
+            if c < 0 or c >= self.gost_q:
+                raise ValueError("c вне диапазона [0, q).")
+        except Exception as ex:
+            reason = f"Некорректный challenge c: {ex}"
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+            return
+
+        if self.schnorr_x is None:
+            reason = "На сервере не готовы ключи Шнорра."
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+            return
+
+        s_srv = (info.srv_v + c * self.schnorr_x) % self.gost_q
+
+        # очищаем одноразовые значения сеанса server-auth
+        info.srv_v = None
+        info.srv_t = None
+        info.srv_c = None
+
+        self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: отправляем ответ s_srv.")
+        send_json({"type": "SERVER_AUTH_RESPONSE", "id": pid, "s": s_srv, "ok": True})
+
+    def _handle_mutual_auth_confirm(self, send_json, pid: str, ok_val, reason: str):
+        """Клиент подтверждает результат проверки server-auth."""
+        if not pid:
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
+            return
+
+        info = self._participants.get(pid)
+        if not info or not info.authenticated:
+            r = "Участник не аутентифицирован на сервере."
+            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: {r}")
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
+            return
+
+        ok = bool(ok_val)
+        if not ok:
+            info.mutual_confirmed = False
+            info.authenticated = False
+            r = reason or "Клиент не подтвердил аутентичность сервера."
+            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: FAIL: {r}")
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
+            return
+
+        info.mutual_confirmed = True
+        self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: взаимная аутентификация подтверждена.")
+        send_json({"type": "MUTUAL_AUTH_RESULT", "ok": True, "reason": ""})
+
+# --- BID --- #
     def _handle_bid(self, send_json, pid: str,
                     bid_value, y_val, h_val, r_val, s_val):
         try:
@@ -605,6 +902,12 @@ class AuctionServerCore:
 
             if not info.authenticated:
                 reason = "Участник не прошёл аутентификацию."
+                self._log(f"[SERVER][BID] {pid}: {reason}")
+                send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
+                return
+
+            if not info.mutual_confirmed:
+                reason = "Нет подтверждения взаимной аутентификации (сервер не был проверен клиентом)."
                 self._log(f"[SERVER][BID] {pid}: {reason}")
                 send_json({"type": "BID_RESULT", "ok": False, "reason": reason})
                 return
@@ -724,6 +1027,7 @@ class AuctionServerCore:
         # Обрабатываем только последние заявки каждого участника
         for pid, bid in last_bids.items():
             y = bid["y"]
+            r= bid["r"]
             s = bid["s"]
 
             # RSA-расшифровка
@@ -732,7 +1036,7 @@ class AuctionServerCore:
             except Exception:
                 x = None
 
-            rec = {"id": pid, "y": y, "s": s, "x": x, "winner": False}
+            rec = {"id": pid, "y": y, "r": r, "s": s, "x": x, "winner": False}
             results.append(rec)
 
             if x is not None and x > max_bid:
@@ -765,6 +1069,7 @@ class AuctionServerCore:
             payload.append({
                 "id": pid,
                 "y": bid["y"],
+                "r": bid["r"],
                 "s": bid["s"],
             })
 

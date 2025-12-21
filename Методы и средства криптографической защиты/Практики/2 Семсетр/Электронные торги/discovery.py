@@ -11,10 +11,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 
-from common.protocol import send_json, recv_json
-from common.rsa_utils import generate_rsa_keys
-from common.num_generator import secure_random_int
-from common.discovery import server_broadcast_loop
+from protocol import send_json, recv_json
+from rsa_utils import generate_rsa_keys
+from num_generator import secure_random_int
+from discovery import server_broadcast_loop
 
 HOST = "0.0.0.0"   # слушаем все интерфейсы
 PORT = 5000
