@@ -103,20 +103,73 @@ class MemberApp:
         self._build_ui()
 
     # ------------------------------------------------------------------
+    # Scrollable tabs (Canvas + vertical Scrollbar)
+    # ------------------------------------------------------------------
+    def _create_scrollable_tab(self, notebook: ttk.Notebook):
+        container = ttk.Frame(notebook)
+
+        canvas = tk.Canvas(container, highlightthickness=0)
+        vbar = ttk.Scrollbar(container, orient="vertical", command=canvas.yview)
+        canvas.configure(yscrollcommand=vbar.set)
+
+        vbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+
+        inner = ttk.Frame(canvas)
+        window_id = canvas.create_window((0, 0), window=inner, anchor="nw")
+
+        def _on_inner_configure(_event):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+
+        def _on_canvas_configure(event):
+            canvas.itemconfigure(window_id, width=event.width)
+
+        inner.bind("<Configure>", _on_inner_configure)
+        canvas.bind("<Configure>", _on_canvas_configure)
+
+        # Mousewheel: не перехватываем скролл у Text/Listbox/Entry — пусть они скроллятся сами
+        def _wheel(event):
+            w = event.widget
+            if isinstance(w, (tk.Text, tk.Entry, tk.Listbox)):
+                return
+            # ttk.Entry не является tk.Entry, поэтому проверяем по имени класса
+            if w.__class__.__name__ in ("Entry", "Combobox"):
+                return
+            delta = -1 * int(event.delta / 120)
+            canvas.yview_scroll(delta, "units")
+
+        def _bind(_event):
+            canvas.bind_all("<MouseWheel>", _wheel)
+            # Linux fallback
+            canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-3, "units"))
+            canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(3, "units"))
+
+        def _unbind(_event):
+            canvas.unbind_all("<MouseWheel>")
+            canvas.unbind_all("<Button-4>")
+            canvas.unbind_all("<Button-5>")
+
+        container.bind("<Enter>", _bind)
+        container.bind("<Leave>", _unbind)
+
+        return container, inner
+
+    # ------------------------------------------------------------------
     # Построение интерфейса
     # ------------------------------------------------------------------
     def _build_ui(self):
         notebook = ttk.Notebook(self.root)
         notebook.pack(fill="both", expand=True)
 
-        self.tab_prep = ttk.Frame(notebook)
-        self.tab_trade = ttk.Frame(notebook)
+        self._tab_prep_container, self.tab_prep = self._create_scrollable_tab(notebook)
+        self._tab_auth_container, self.tab_auth = self._create_scrollable_tab(notebook)
+        self._tab_trade_container, self.tab_trade = self._create_scrollable_tab(notebook)
+        self._tab_verify_container, self.tab_verify = self._create_scrollable_tab(notebook)
 
-        notebook.add(self.tab_prep, text="Подготовка")
-        notebook.add(self.tab_trade, text="Торги")
-
-        self.tab_verify = ttk.Frame(notebook)
-        notebook.add(self.tab_verify, text="Проверка")
+        notebook.add(self._tab_prep_container, text="Подготовка")
+        notebook.add(self._tab_auth_container, text="Аутентификация")
+        notebook.add(self._tab_trade_container, text="Торги")
+        notebook.add(self._tab_verify_container, text="Проверка")
 
         self._build_tab_prep()
         self._build_tab_trade()
@@ -185,8 +238,7 @@ class MemberApp:
 
         self.txt_gost_pub.insert(
             "end",
-            "Параметры p,q,g (a) будут получены от сервера после подключения.\n"
-            "После этого клиент сгенерирует x и вычислит y = g^x mod p.\n"
+            "Нет данных. Подключитесь к серверу — ключи ГОСТ + Клаусс-Шнорр (p,q,a(g)) будут получены при HELLO."
         )
         # Лог аутентификации (локально на клиенте)
         log_frame = ttk.LabelFrame(self.tab_prep, text="Логи прохождения аутентификации (клиент)")
@@ -513,6 +565,19 @@ class MemberApp:
             )
             return
 
+        # Сервер мог отклонить заявку (например, окно приёма закрыто)
+        if isinstance(result, dict) and (result.get("ok") is False):
+            reason = result.get("reason") or "Заявка отклонена сервером."
+            messagebox.showerror("Заявка отклонена", reason)
+
+            # Дополнительно обновим строку статуса, если она есть
+            try:
+                if hasattr(self, "lbl_trade_status") and self.lbl_trade_status:
+                    self.lbl_trade_status.config(text=f"Статус: {reason}")
+            except Exception:
+                pass
+            return
+
         # --- 3. Обновляем GUI: показываем y, h, r, s ---
         y_enc = result["y"]
         h_hex = hex(result["h"])[2:].upper()
@@ -573,6 +638,20 @@ class MemberApp:
         if not resp:
             messagebox.showerror("Ошибка", "Нет ответа от сервера.")
             return
+
+        # Сервер мог отклонить заявку (например, окно приёма закрыто)
+        if isinstance(resp, dict) and (resp.get("ok") is False):
+            reason = resp.get("reason") or "Заявка отклонена сервером."
+            messagebox.showerror("Заявка отклонена", reason)
+
+            # Дополнительно обновим строку статуса, если она есть
+            try:
+                if hasattr(self, "lbl_trade_status") and self.lbl_trade_status:
+                    self.lbl_trade_status.config(text=f"Статус: {reason}")
+            except Exception:
+                pass
+            return
+
 
         ok = resp.get("ok", False)
         reason = resp.get("reason", "")

@@ -58,19 +58,69 @@ class AuctionServerApp(tk.Tk):
         self.server_core: AuctionServerCore | None = None
 
     # -------------------------------------------------------------------------
+    # Scrollable tabs (Canvas + vertical Scrollbar)
+    # -------------------------------------------------------------------------
+    def _create_scrollable_tab(self, notebook: ttk.Notebook):
+        container = ttk.Frame(notebook)
+
+        canvas = tk.Canvas(container, highlightthickness=0)
+        vbar = ttk.Scrollbar(container, orient="vertical", command=canvas.yview)
+        canvas.configure(yscrollcommand=vbar.set)
+
+        vbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+
+        inner = ttk.Frame(canvas)
+        window_id = canvas.create_window((0, 0), window=inner, anchor="nw")
+
+        def _on_inner_configure(_event):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+
+        def _on_canvas_configure(event):
+            canvas.itemconfigure(window_id, width=event.width)
+
+        inner.bind("<Configure>", _on_inner_configure)
+        canvas.bind("<Configure>", _on_canvas_configure)
+
+        def _wheel(event):
+            w = event.widget
+            if isinstance(w, (tk.Text, tk.Entry, tk.Listbox)):
+                return
+            if w.__class__.__name__ in ("Entry", "Combobox", "Treeview"):
+                return
+            delta = -1 * int(event.delta / 120)
+            canvas.yview_scroll(delta, "units")
+
+        def _bind(_event):
+            canvas.bind_all("<MouseWheel>", _wheel)
+            canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-3, "units"))
+            canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(3, "units"))
+
+        def _unbind(_event):
+            canvas.unbind_all("<MouseWheel>")
+            canvas.unbind_all("<Button-4>")
+            canvas.unbind_all("<Button-5>")
+
+        container.bind("<Enter>", _bind)
+        container.bind("<Leave>", _unbind)
+
+        return container, inner
+
+
+    # -------------------------------------------------------------------------
     #  Построение интерфейса
     # -------------------------------------------------------------------------
     def _build_ui(self):
         notebook = ttk.Notebook(self)
         notebook.pack(fill="both", expand=True)
 
-        self.tab_prepare = ttk.Frame(notebook)
-        self.tab_auth = ttk.Frame(notebook)
-        self.tab_bidding = ttk.Frame(notebook)
+        self._tab_prepare_container, self.tab_prepare = self._create_scrollable_tab(notebook)
+        self._tab_auth_container, self.tab_auth = self._create_scrollable_tab(notebook)
+        self._tab_bidding_container, self.tab_bidding = self._create_scrollable_tab(notebook)
 
-        notebook.add(self.tab_prepare, text="Подготовка")
-        notebook.add(self.tab_auth, text="Аутентификация")
-        notebook.add(self.tab_bidding, text="Торги")
+        notebook.add(self._tab_prepare_container, text="Подготовка")
+        notebook.add(self._tab_auth_container, text="Аутентификация")
+        notebook.add(self._tab_bidding_container, text="Торги")
 
         self._build_prepare_tab()
         self._build_auth_tab()
