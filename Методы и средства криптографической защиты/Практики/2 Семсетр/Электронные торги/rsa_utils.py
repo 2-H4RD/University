@@ -140,6 +140,86 @@ def rsa_verify(message: int, signature: int, e: int, n: int) -> bool:
 
 
 # ================================================================
+# FFS (Feige–Fiat–Shamir) — ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
+# ================================================================
+# Учебный вариант, согласованный с таблицами вида:
+#   n = p*q
+#   выбираем секрет s, gcd(s,n)=1
+#   публикуем v = (s^2)^(-1) mod n
+# Раунд:
+#   prover: выбирает r, отправляет z = r^2 mod n
+#   verifier: бит b ∈ {0,1}
+#   prover: если b=0 -> resp=r, иначе resp = y = r*s mod n
+#   verify: b=0 -> z == resp^2 mod n
+#           b=1 -> z == (resp^2 * v) mod n
+
+def _gcd(a: int, b: int) -> int:
+    while b:
+        a, b = b, a % b
+    return abs(a)
+
+def ffs_generate_secret_and_public(n: int, max_tries: int = 10_000) -> tuple[int, int]:
+    """Сгенерировать FFS секрет s и публичный ключ v для заданного модуля n.
+
+    Публичный ключ в учебном соглашении:
+        v = (s^2)^(-1) mod n
+
+    Возвращает (s, v).
+    """
+    if n <= 3:
+        raise ValueError("ffs_generate_secret_and_public: n слишком мал")
+
+    for _ in range(max_tries):
+        s = secure_random_int(2, n - 2)
+        if _gcd(s, n) != 1:
+            continue
+        s2 = pow(s, 2, n)
+        try:
+            v = modinv(s2, n)
+        except Exception:
+            continue
+        if (s2 * v) % n != 1:
+            continue
+        return int(s), int(v)
+
+    raise RuntimeError("ffs_generate_secret_and_public: не удалось подобрать s, взаимно простое с n")
+
+def ffs_commit(n: int) -> tuple[int, int]:
+    """Сформировать commitment (r, z=r^2 mod n)."""
+    if n <= 3:
+        raise ValueError("ffs_commit: n слишком мал")
+    while True:
+        r = secure_random_int(2, n - 2)
+        if _gcd(r, n) != 1:
+            continue
+        z = pow(r, 2, n)
+        if z == 0:
+            continue
+        return int(r), int(z)
+
+def ffs_respond(r: int, s: int, b: int, n: int) -> int:
+    """Ответ prover'а на challenge b∈{0,1}."""
+    if b not in (0, 1):
+        raise ValueError("ffs_respond: b должен быть 0 или 1")
+    r = int(r) % n
+    s = int(s) % n
+    if b == 0:
+        return int(r)
+    return int((r * s) % n)
+
+def ffs_verify(z: int, resp: int, b: int, v: int, n: int) -> bool:
+    """Проверка раунда FFS в учебном соглашении v=(s^2)^(-1) mod n."""
+    z = int(z) % n
+    resp = int(resp) % n
+    v = int(v) % n
+    if b == 0:
+        return pow(resp, 2, n) == z
+    if b == 1:
+        return (pow(resp, 2, n) * v) % n == z
+    return False
+
+
+# ================================================================
 # ДЕМОНСТРАЦИЯ
 # ================================================================
 
