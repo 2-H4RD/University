@@ -3,13 +3,62 @@
 
 import threading
 import tkinter as tk
-from tkinter import ttk, messagebox
+import tkinter.ttk as ttk
+from tkinter import messagebox
+
 
 from rsa_utils import generate_rsa_keys
+
+# FFS helper (добавляется поддержкой FFS в rsa_utils.py)
+try:
+    from rsa_utils import ffs_generate_secret_and_public
+except Exception:
+    ffs_generate_secret_and_public = None
+
 from server_network import AuctionServerCore
 from num_generator import generate_gost_pq, generate_gost_a, secure_random_int
 
+# ------------------------------------------------------------------
+# Класс scrollable GUI
+# ------------------------------------------------------------------
+class ScrollableTab(ttk.Frame):
+    def __init__(self, master, *args, **kwargs):
+        super().__init__(master, *args, **kwargs)
 
+        self._canvas = tk.Canvas(self, highlightthickness=0)
+        self._vbar = ttk.Scrollbar(self, orient="vertical", command=self._canvas.yview)
+        self._hbar = ttk.Scrollbar(self, orient="horizontal", command=self._canvas.xview)
+
+        self._canvas.configure(yscrollcommand=self._vbar.set, xscrollcommand=self._hbar.set)
+
+        self._vbar.pack(side="right", fill="y")
+        self._hbar.pack(side="bottom", fill="x")
+        self._canvas.pack(side="left", fill="both", expand=True)
+
+        self.inner = ttk.Frame(self._canvas)
+        self._win_id = self._canvas.create_window((0, 0), window=self.inner, anchor="nw")
+
+        # update scrollregion when inner size changes
+        self.inner.bind("<Configure>", self._on_inner_configure)
+        self._canvas.bind("<Configure>", self._on_canvas_configure)
+
+        # mouse wheel scrolling
+        self._canvas.bind_all("<MouseWheel>", self._on_mousewheel)      # Windows
+        self._canvas.bind_all("<Shift-MouseWheel>", self._on_shiftwheel)
+
+    def _on_inner_configure(self, _event=None):
+        self._canvas.configure(scrollregion=self._canvas.bbox("all"))
+
+    def _on_canvas_configure(self, event):
+        # stretch inner width to canvas width
+        self._canvas.itemconfigure(self._win_id, width=event.width)
+
+    def _on_mousewheel(self, event):
+        # Windows: event.delta is multiple of 120
+        self._canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    def _on_shiftwheel(self, event):
+        self._canvas.xview_scroll(int(-1 * (event.delta / 120)), "units")
 
 class AuctionServerApp(tk.Tk):
     def __init__(self):
@@ -34,19 +83,23 @@ class AuctionServerApp(tk.Tk):
         self.bidding_open = False           # «окно подачи заявок» открыто/закрыто
 
         # RSA ключи сервера (для аутентификации / шифрования заявок)
-        self.n = None
-        self.e = None
-        self.d = None
+        self.server_rsa_n = None
+        self.server_rsa_e = None
+        self.server_rsa_d = None
 
         # ГОСТ ключи сервера (для подписи заявок)
         self.gost_p = None
         self.gost_q = None
         self.gost_a = None
 
-        # Ключи Клаусса–Шнорра (Schnorr) сервера (для взаимной аутентификации)
-        # Примечание: используются те же параметры (p,q,a), что и ГОСТ 34.10-94.
-        self.schnorr_x = None  # секретный ключ
-        self.schnorr_y = None  # публичный ключ (a^x mod p)
+        # Параметры/ключи аутентификации FFS (Feige–Fiat–Shamir)
+        # Модуль n переиспользуется из RSA сервера; публикуется v, секрет — s.
+        self.ffs_s = None  # секретный ключ FFS
+        self.ffs_v = None  # публичный ключ FFS (v = (s^2)^(-1) mod n)
+
+        # Старые поля (legacy) оставлены для совместимости (в FFS-варианте не используются)
+        self.schnorr_x = None
+        self.schnorr_y = None
 
         #Флаг атаки с подменой ставки
         self.attack2_enabled = tk.BooleanVar(value=False)
@@ -58,69 +111,19 @@ class AuctionServerApp(tk.Tk):
         self.server_core: AuctionServerCore | None = None
 
     # -------------------------------------------------------------------------
-    # Scrollable tabs (Canvas + vertical Scrollbar)
-    # -------------------------------------------------------------------------
-    def _create_scrollable_tab(self, notebook: ttk.Notebook):
-        container = ttk.Frame(notebook)
-
-        canvas = tk.Canvas(container, highlightthickness=0)
-        vbar = ttk.Scrollbar(container, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=vbar.set)
-
-        vbar.pack(side="right", fill="y")
-        canvas.pack(side="left", fill="both", expand=True)
-
-        inner = ttk.Frame(canvas)
-        window_id = canvas.create_window((0, 0), window=inner, anchor="nw")
-
-        def _on_inner_configure(_event):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-
-        def _on_canvas_configure(event):
-            canvas.itemconfigure(window_id, width=event.width)
-
-        inner.bind("<Configure>", _on_inner_configure)
-        canvas.bind("<Configure>", _on_canvas_configure)
-
-        def _wheel(event):
-            w = event.widget
-            if isinstance(w, (tk.Text, tk.Entry, tk.Listbox)):
-                return
-            if w.__class__.__name__ in ("Entry", "Combobox", "Treeview"):
-                return
-            delta = -1 * int(event.delta / 120)
-            canvas.yview_scroll(delta, "units")
-
-        def _bind(_event):
-            canvas.bind_all("<MouseWheel>", _wheel)
-            canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-3, "units"))
-            canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(3, "units"))
-
-        def _unbind(_event):
-            canvas.unbind_all("<MouseWheel>")
-            canvas.unbind_all("<Button-4>")
-            canvas.unbind_all("<Button-5>")
-
-        container.bind("<Enter>", _bind)
-        container.bind("<Leave>", _unbind)
-
-        return container, inner
-
-
-    # -------------------------------------------------------------------------
     #  Построение интерфейса
     # -------------------------------------------------------------------------
     def _build_ui(self):
         notebook = ttk.Notebook(self)
         notebook.pack(fill="both", expand=True)
 
-        self._tab_prepare_container, self.tab_prepare = self._create_scrollable_tab(notebook)
-        self._tab_auth_container, self.tab_auth = self._create_scrollable_tab(notebook)
-        self._tab_bidding_container, self.tab_bidding = self._create_scrollable_tab(notebook)
+        self.tab_prepare = ScrollableTab(notebook)
+        self.tab_auth = ScrollableTab(notebook)
+        self.tab_bidding = ScrollableTab(notebook)
 
-        notebook.add(self._tab_prepare_container, text="Подготовка")
-        notebook.add(self._tab_auth_container, text="Аутентификация")
-        notebook.add(self._tab_bidding_container, text="Торги")
+        notebook.add(self.tab_prepare, text="Подготовка")
+        notebook.add(self.tab_auth, text="Аутентификация")
+        notebook.add(self.tab_bidding, text="Торги")
 
         self._build_prepare_tab()
         self._build_auth_tab()
@@ -131,7 +134,7 @@ class AuctionServerApp(tk.Tk):
     #  Вкладка "Подготовка"
     # -------------------------------------------------------------------------
     def _build_prepare_tab(self):
-        frame_top = ttk.LabelFrame(self.tab_prepare, text="Условия и реестр участников")
+        frame_top = ttk.LabelFrame(self.tab_prepare.inner, text="Условия и реестр участников")
         frame_top.pack(fill="both", expand=True, padx=10, pady=10)
 
         # Левая часть — список идентификаторов и управление
@@ -199,7 +202,7 @@ class AuctionServerApp(tk.Tk):
         self.text_priv_key = tk.Text(priv_frame, height=4, wrap="word", foreground="darkred")
         self.text_priv_key.pack(fill="both", expand=True)
 
-        gost_frame = ttk.LabelFrame(self.tab_prepare, text="Параметры ГОСТ (общие для всех участников)")
+        gost_frame = ttk.LabelFrame(self.tab_prepare.inner, text="Параметры ГОСТ (общие для всех участников)")
         gost_frame.pack(fill="x", padx=10, pady=10)
 
         btn_gen_gost = ttk.Button(gost_frame, text="Сгенерировать p,q,a", command=self._generate_gost_params_clicked)
@@ -208,24 +211,25 @@ class AuctionServerApp(tk.Tk):
         self.txt_gost_params = tk.Text(gost_frame, height=8, wrap="word")
         self.txt_gost_params.pack(fill="x", padx=5, pady=5)
 
-        # --- Клаусс–Шнорр (Schnorr) для взаимной аутентификации ---
-        schnorr_frame = ttk.LabelFrame(self.tab_prepare, text="Ключи аутентификации Клаусса–Шнорра (Schnorr)")
-        schnorr_frame.pack(fill="both", expand=True, padx=10, pady=10)
-        btn_gen_schnorr = ttk.Button(
-            schnorr_frame,
-            text = "Сгенерировать ключи Шнорра (p,q,g, x, y)",
-            command = self._generate_schnorr_keys_clicked,
+        # --- FFS (Feige–Fiat–Shamir) для взаимной аутентификации ---
+        ffs_frame = ttk.LabelFrame(self.tab_prepare.inner, text="Ключи аутентификации FFS (Feige–Fiat–Shamir)")
+        ffs_frame.pack(fill="both", expand=True, padx=10, pady=10)
+        btn_gen_ffs = ttk.Button(
+            ffs_frame,
+            text="Сгенерировать ключи FFS (s, v) на модуле n (RSA сервера)",
+            command=self._generate_ffs_keys_clicked,
         )
-        btn_gen_schnorr.pack(anchor="w", padx=5, pady=(5, 8))
-        schnorr_pub = ttk.LabelFrame(schnorr_frame, text="Публичные параметры и ключ (публикуются)")
-        schnorr_pub.pack(side="left", fill="both", expand=True, padx=5, pady=5)
-        self.txt_schnorr_pub = tk.Text(schnorr_pub, height=8, wrap="word")
-        self.txt_schnorr_pub.pack(fill="both", expand=True)
+        btn_gen_ffs.pack(anchor="w", padx=5, pady=(5, 8))
 
-        schnorr_priv = ttk.LabelFrame(schnorr_frame, text="Секретный ключ")
-        schnorr_priv.pack(side="left", fill="both", expand=True, padx=5, pady=5)
-        self.txt_schnorr_priv = tk.Text(schnorr_priv, height=8, wrap="word", foreground="darkred")
-        self.txt_schnorr_priv.pack(fill="both", expand=True)
+        ffs_pub = ttk.LabelFrame(ffs_frame, text="Публичные параметры (публикуются)")
+        ffs_pub.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.txt_ffs_pub = tk.Text(ffs_pub, height=8, wrap="word")
+        self.txt_ffs_pub.pack(fill="both", expand=True)
+
+        ffs_priv = ttk.LabelFrame(ffs_frame, text="Секретный ключ (не публикуется)")
+        ffs_priv.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.txt_ffs_priv = tk.Text(ffs_priv, height=8, wrap="word", foreground="darkred")
+        self.txt_ffs_priv.pack(fill="both", expand=True)
 
     def _generate_gost_params_clicked(self):
         try:
@@ -240,18 +244,7 @@ class AuctionServerApp(tk.Tk):
         self.txt_gost_params.delete("1.0", "end")
         self.txt_gost_params.insert("end", f"p = {p}\n\nq = {q}\n\na = {a}\n")
 
-        # Если меняем p,q,a — ранее сгенерированные ключи Шнорра становятся невалидными.
-        self.schnorr_x = None
-        self.schnorr_y = None
-
-        if hasattr(self, "txt_schnorr_pub"):
-            self.txt_schnorr_pub.delete("1.0", "end")
-            self.txt_schnorr_pub.insert(
-                "end",
-                "Параметры (p,q,g) обновлены. Сгенерируйте заново ключи Шнорра (x,y).\n"
-            )
-        if hasattr(self, "txt_schnorr_priv"):
-            self.txt_schnorr_priv.delete("1.0", "end")
+        # Примечание: изменение p,q,a влияет только на ГОСТ.
 
         # если серверное ядро уже запущено — прокинем параметры туда
         if self.server_core is not None:
@@ -259,75 +252,71 @@ class AuctionServerApp(tk.Tk):
                 self.server_core.set_gost_params(p, q, a)
             except AttributeError:
                 pass
-    def _generate_schnorr_keys_clicked(self):
-        """Учебная генерация ключей Шнорра на стороне сервера и отображение в UI."""
-        # 1) Гарантируем наличие p,q,a:
-        # - если уже сгенерированы в ГОСТ-блоке, используем их
-        # - иначе генерируем здесь
-        if self.gost_p is None or self.gost_q is None or self.gost_a is None:
-            try:
-                p, q = generate_gost_pq(bits_p=512)
-                a = generate_gost_a(p, q)
-                self.gost_p, self.gost_q, self.gost_a = int(p), int(q), int(a)
 
-                self.txt_gost_params.delete("1.0", "end")
-                self.txt_gost_params.insert(
-                    "end",
-                    f"p = {self.gost_p}\n\nq = {self.gost_q}\n\na = {self.gost_a}\n"
-                )
-                # если ядро уже запущено — прокинем параметры туда
-                if self.server_core is not None:
-                    try:
-                        self.server_core.set_gost_params(self.gost_p, self.gost_q, self.gost_a)
-                    except Exception:
-                        pass
-            except Exception as ex:
-                messagebox.showerror("Шнорр", f"Не удалось сгенерировать параметры (p,q,g):\n{ex}")
-                return
-
-        # На этом месте параметры точно есть
-        p = int(self.gost_p)
-        q = int(self.gost_q)
-        a = int(self.gost_a)
-
-        # 2) Генерация x,y
-        try:
-            x = secure_random_int(1, q - 1)
-            y = pow(a, int(x), p)
-        except Exception as ex:
-            messagebox.showerror("Шнорр", f"Не удалось сгенерировать ключи (x,y):\n{ex}")
+    def _generate_ffs_keys_clicked(self):
+        """
+        Генерация ключей аутентификации по схеме Фейге–Фиата–Шамира (FFS).
+        В учебной постановке:
+        - модуль n переиспользуется из RSA ключей сервера;
+        - секрет: s;
+        - публичный ключ: v = (s^2)^(-1) mod n.
+        Эти (n, v) публикуются участникам в WELCOME/HELLO; s хранится только на сервере.
+        """
+        if self.server_rsa_n is None:
+            messagebox.showerror("FFS", "Сначала сгенерируйте RSA-ключи сервера (нужен модуль n).")
             return
 
-        self.schnorr_x = int(x)
-        self.schnorr_y = int(y)
-        # 3) Отображение
-        self.txt_schnorr_pub.delete("1.0", "end")
-        self.txt_schnorr_pub.insert(
-            "end",
-            "Параметры (используются совместно с ГОСТ 34.10-94):\n"
-             f"p = {p}\n\nq = {q}\n\ng (a) = {a}\n\n"
-             f"Публичный ключ сервера y = g^x mod p = {self.schnorr_y}\n"
+        if ffs_generate_secret_and_public is None:
+            messagebox.showerror(
+                "FFS",
+                "В rsa_utils.py не найден ffs_generate_secret_and_public.\n"
+                "Обновите rsa_utils.py (добавьте поддержку FFS)."
             )
-        self.txt_schnorr_priv.delete("1.0", "end")
-        self.txt_schnorr_priv.insert("end", f"Секретный ключ сервера x = {self.schnorr_x}\n")
+            return
 
-        # 4) Если ядро уже запущено — применим ключи туда (важно для учебного режима)
+        try:
+            s_val, v_val = ffs_generate_secret_and_public(int(self.server_rsa_n))
+        except Exception as ex:
+            messagebox.showerror("FFS", f"Не удалось сгенерировать ключи FFS (s,v):\n{ex}")
+            return
 
+        self.ffs_s = int(s_val)
+        self.ffs_v = int(v_val)
+        # Обновить UI
+        try:
+            self.txt_ffs_pub.delete("1.0", "end")
+            self.txt_ffs_pub.insert(
+                "end",
+                f"n = {int(self.server_rsa_n)}\n\n"
+                f"v = {self.ffs_v}\n"
+            )
+        except Exception:
+            pass
+
+        try:
+            self.txt_ffs_priv.delete("1.0", "end")
+            self.txt_ffs_priv.insert(
+                "end",
+                f"s = {self.ffs_s}\n"
+            )
+        except Exception:
+            pass
+        # Если ядро уже запущено — попробуем прокинуть ключи туда (если поле/метод существует)
         if self.server_core is not None:
             try:
-                self.server_core.schnorr_x = self.schnorr_x
-                self.server_core.schnorr_y = self.schnorr_y
-            # Если параметры на ядре отличаются — синхронизируем (set_gost_params сохранит согласованные ключи)
-                if self.server_core.gost_p != self.gost_p or self.server_core.gost_q != self.gost_q or self.server_core.gost_a != self.gost_a:
-                    self.server_core.set_gost_params(int(self.gost_p), int(self.gost_q), int(self.gost_a))
+                setattr(self.server_core, "ffs_s", self.ffs_s)
+                setattr(self.server_core, "ffs_v", self.ffs_v)
             except Exception:
-                pass
+                try:
+                    self.server_core.set_ffs_keys(self.ffs_s, self.ffs_v)  # type: ignore[attr-defined]
+                except Exception:
+                    pass
 
     # -------------------------------------------------------------------------
     #  Вкладка "Аутентификация"
     # -------------------------------------------------------------------------
     def _build_auth_tab(self):
-        frame = ttk.Frame(self.tab_auth)
+        frame = ttk.Frame(self.tab_auth.inner)
         frame.pack(fill="both", expand=True, padx=10, pady=10)
 
         top_controls = ttk.Frame(frame)
@@ -372,7 +361,7 @@ class AuctionServerApp(tk.Tk):
     #  Вкладка "Торги"
     # -------------------------------------------------------------------------
     def _build_bidding_tab(self):
-        frame = ttk.Frame(self.tab_bidding)
+        frame = ttk.Frame(self.tab_bidding.inner)
         frame.pack(fill="both", expand=True, padx=10, pady=10)
 
         top_controls = ttk.Frame(frame)
@@ -587,6 +576,20 @@ class AuctionServerApp(tk.Tk):
         self.server_rsa_e = e
         self.server_rsa_d = d
 
+        # RSA модуль n изменился => ранее сгенерированные FFS-ключи больше невалидны
+        self.ffs_s = None
+        self.ffs_v = None
+
+        # Сообщение пользователю: после смены RSA нужно заново сгенерировать FFS (s, v)
+        if hasattr(self, "txt_ffs_pub"):
+            self.txt_ffs_pub.delete("1.0", "end")
+            self.txt_ffs_pub.insert(
+                "end",
+                "Параметры RSA (p,q) обновлены. Cгенерируйте/обновите ключи FFS (s,v).\n"
+            )
+        if hasattr(self, "txt_ffs_priv"):
+            self.txt_ffs_priv.delete("1.0", "end")
+
         self.text_pub_key.delete("1.0", tk.END)
         self.text_pub_key.insert(tk.END, f"e = {e}\n")
         self.text_pub_key.insert(tk.END, f"n = {n}\n")
@@ -619,25 +622,41 @@ class AuctionServerApp(tk.Tk):
             return
 
         if self.gost_p is None or self.gost_q is None or self.gost_a is None:
-            messagebox.showwarning("Подготовка", "Сначала сгенерируйте параметры ГОСТ (p,q,a) на вкладке 'Подготовка'.")
+            messagebox.showwarning("Подготовка", "Сначала сгенерируйте параметры RSA(p,q)на вкладке 'Подготовка'.")
             return
 
         print("[SERVER GUI] Запуск серверного ядра AuctionServerCore...")
 
-        self.server_core = AuctionServerCore(
-            allowed_ids=list(self.allowed_ids),
-            rsa_n=self.server_rsa_n,
-            rsa_e=self.server_rsa_e,
-            rsa_d=self.server_rsa_d,
-            schnorr_x = self.schnorr_x,
-            schnorr_y = self.schnorr_y,
-            on_log=self._on_core_log,
-            on_auth_update=self._on_member_authenticated,
-            on_bid_received=self._on_bid_received,
-            gost_p=self.gost_p,
-            gost_q=self.gost_q,
-            gost_a=self.gost_a
-        )
+        # Создание сетевого ядра. Передаём только те параметры, которые реально объявлены в AuctionServerCore.
+        core_kwargs = {
+            "allowed_ids": list(self.allowed_ids),
+            "rsa_n": self.server_rsa_n,
+            "rsa_e": self.server_rsa_e,
+            "rsa_d": self.server_rsa_d,
+            "on_log": self._on_core_log,
+            "on_auth_update": self._on_member_authenticated,
+            "on_bid_received": self._on_bid_received,
+            "gost_p": self.gost_p,
+            "gost_q": self.gost_q,
+            "gost_a": self.gost_a,
+        }
+
+        # FFS (новая схема аутентификации)
+        if self.ffs_s is not None:
+            core_kwargs["ffs_s"] = self.ffs_s
+        if self.ffs_v is not None:
+            core_kwargs["ffs_v"] = self.ffs_v
+
+        # legacy (если ещё присутствует в ядре)
+        if self.schnorr_x is not None:
+            core_kwargs["schnorr_x"] = self.schnorr_x
+        if self.schnorr_y is not None:
+            core_kwargs["schnorr_y"] = self.schnorr_y
+
+        declared = set(getattr(AuctionServerCore, "__annotations__", {}).keys())
+        core_kwargs = {k: v for k, v in core_kwargs.items() if k in declared}
+
+        self.server_core = AuctionServerCore(**core_kwargs)
 
         # Запускаем сервер в отдельном потоке
         t = threading.Thread(target=self.server_core.run_blocking, daemon=True)

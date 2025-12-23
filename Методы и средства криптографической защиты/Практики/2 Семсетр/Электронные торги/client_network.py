@@ -61,6 +61,12 @@ from dataclasses import dataclass, field
 from typing import Optional, Tuple, List
 from gost_hash_3411 import gost3411_94_full
 from num_generator import secure_random_int
+from rsa_utils import (
+    ffs_generate_secret_and_public,
+    ffs_commit,
+    ffs_respond,
+    ffs_verify,
+)
 
 
 # Порты и «магические» строки для discovery
@@ -127,6 +133,14 @@ class AuctionMemberClient:
     server_gost_q: Optional[int] = None
     server_gost_a: Optional[int] = None
     server_schnorr_y: Optional[int] = None
+
+    # --- FFS public key of server (n is reused from server RSA) ---
+    server_ffs_n: Optional[int] = None
+    server_ffs_v: Optional[int] = None
+
+    # --- FFS keys of client (secret s + public v) ---
+    ffs_s: Optional[int] = None
+    ffs_v: Optional[int] = None
 
     # индикатор активного TCP-подключения
     running: bool = field(default=False, init=False)
@@ -533,24 +547,42 @@ class AuctionMemberClient:
         self.server_gost_q = resp.get("gost_q")
         self.server_gost_a = resp.get("gost_a")
         self.server_schnorr_y = resp.get("server_schnorr_y")
+        self.server_ffs_n = resp.get("server_ffs_n")
+        self.server_ffs_v = resp.get("server_ffs_v")
 
         return True, None
 
     def register_keys(self) -> bool:
         """
         Регистрация открытых ключей на сервере.
+
+        Отправляем:
+          - ГОСТ: y (публичный ключ подписи)
+          - FFS:  v (публичный ключ идентификации; модуль n общий — n сервера)
+
+        RSA-ключи участника оставлены как опциональные и могут не отправляться.
         """
         if not self.gost_keys:
-            self._log("[CLIENT][ERROR] authenticate: нет gost_keys (x/y). Сначала получите p,q,a и сгенерируйте ключи ГОСТ/Шнорра.")
+            self._log("[CLIENT][ERROR] register_keys: нет gost_keys (x/y). Сначала получите p,q,a и сгенерируйте ключи ГОСТ.")
+            return False
+
+        if self.server_rsa_n is None:
+            self._log("[CLIENT][ERROR] register_keys: сервер не передал server_rsa_n (n требуется как модуль для FFS).")
+            return False
+
+        # Генерируем FFS-ключи клиента (s, v) на модуле n сервера (в учебном протоколе n общий).
+        if not self._ensure_ffs_keys():
             return False
 
         msg = {
             "type": "REGISTER_KEYS",
             "id": self.participant_id,
             "gost": {"y": self.gost_keys.y},
+            "ffs": {"v": int(self.ffs_v)},
         }
         if self.rsa_keys is not None:
             msg["rsa"] = {"n": self.rsa_keys.n, "e": self.rsa_keys.e}
+
         if not self._send_json(msg):
             return False
 
@@ -568,164 +600,238 @@ class AuctionMemberClient:
         print("[CLIENT] Открытые ключи успешно зарегистрированы на сервере.")
         return True
 
+    def _ensure_ffs_keys(self) -> bool:
+        """Убедиться, что у клиента есть FFS-ключи (s, v).
+
+        Используем модуль n сервера (тот же, что используется для RSA-шифрования заявок).
+        """
+        if self.ffs_s is not None and self.ffs_v is not None:
+            return True
+        if self.server_rsa_n is None:
+            return False
+        try:
+            s, v = ffs_generate_secret_and_public(int(self.server_rsa_n))
+            self.ffs_s = int(s)
+            self.ffs_v = int(v)
+            self._log(f"[CLIENT][FFS] Сгенерированы FFS-ключи клиента: v={self.ffs_v} (s скрыт)")
+            return True
+        except Exception as ex:
+            self._log(f"[CLIENT][ERROR] Не удалось сгенерировать FFS-ключи клиента: {ex}")
+            return False
+
     def authenticate(self) -> bool:
         """
-        Двухсторонняя аутентификация по протоколу Клаусса–Шнорра (Schnorr identification).
+        Двухсторонняя аутентификация по схеме Фейге–Фиата–Шамира (FFS, single-bit).
 
-        Фаза A (клиент -> сервер):
-          - клиент отправляет t = a^v mod p
-          - сервер отвечает challenge c
-          - клиент отправляет s = (v + c*x) mod q
-          - сервер отвечает AUTH_RESULT
-
-        Фаза B (сервер -> клиент):
-          - клиент инициирует SERVER_AUTH_REQUEST
-          - сервер присылает commitment t_srv
-          - клиент присылает challenge c_srv
-          - сервер присылает ответ s_srv
-          - клиент проверяет: a^s_srv == t_srv * (y_srv^c_srv) (mod p)
-          - клиент отправляет MUTUAL_AUTH_CONFIRM
+        ВАЖНО: используем многократное повторение (k=16 раундов).
+        Вероятность подделки без секрета ~ 2^-k.
         """
-        if not self.gost_keys:
-            print("[CLIENT][ERROR] authenticate: нет gost_keys (x/y). Сначала получите p,q,a и сгенерируйте ключи ГОСТ/Шнорра.")
+        ROUNDS = 16
+
+        if self.server_rsa_n is None:
+            self._log("[CLIENT][ERROR] authenticate: сервер не передал server_rsa_n.")
             return False
 
-        # сервер должен прислать параметры и server_schnorr_y в WELCOME
-        if self.server_schnorr_y is None:
-            self._log("[CLIENT][ERROR] authenticate: сервер не передал server_schnorr_y (взаимная аутентификация невозможна).")
+        if self.server_ffs_v is None:
+            self._log(
+                "[CLIENT][ERROR] authenticate: сервер не передал server_ffs_v (взаимная аутентификация невозможна).")
             return False
 
-        p = self.gost_keys.p
-        q = self.gost_keys.q
-        a = self.gost_keys.a
-        x = self.gost_keys.x
+        if not self._ensure_ffs_keys():
+            return False
+
+        n = int(self.server_rsa_n)
+        s = int(self.ffs_s)
+        v = int(self.ffs_v)
 
         # -------------------- Фаза A: клиент доказывает серверу --------------------
-        self._log("[CLIENT][AUTH] === Schnorr: фаза A (клиент -> сервер) ===")
-        v = secure_random_int(1, q - 1)
-        t = pow(a, v, p)
-        self._log(f"[CLIENT][AUTH] Выбрано v ∈ [1,q-1]. v = {v}")
-        self._log(f"[CLIENT][AUTH] Сформировано commitment t = g^v mod p = {t}")
+        self._log(f"[CLIENT][AUTH] === FFS: фаза A (клиент -> сервер), раундов: {ROUNDS} ===")
 
-        if not self._send_json({"type": "AUTH_REQUEST", "id": self.participant_id, "t": t}):
-            return False
+        for i in range(1, ROUNDS + 1):
+            r, z = ffs_commit(n)
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: выбрано r ∈ [1,n-1]. r = {r}")
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: commitment z = r^2 mod n = {z}")
 
-        resp = self._recv_json(timeout=10.0)
-        if not resp:
-            return False
+            if not self._send_json({
+                "type": "AUTH_REQUEST",
+                "id": self.participant_id,
+                "z": z,
+                "round": i,
+                "rounds": ROUNDS,
+            }):
+                return False
 
-        if resp.get("type") == "AUTH_RESULT" and not resp.get("ok", False):
-            self._log(f"[CLIENT][ERROR] authenticate: сервер отказал на шаге AUTH_REQUEST: {resp.get('reason')}")
-            return False
+            resp = self._recv_json(timeout=10.0)
+            if not resp:
+                return False
 
-        if resp.get("type") != "AUTH_CHALLENGE":
-            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_CHALLENGE'.")
-            return False
+            # сервер может ответить отказом сразу
+            if resp.get("type") == "AUTH_RESULT" and not resp.get("ok", False):
+                self._log(
+                    f"[CLIENT][ERROR] authenticate: сервер отказал на шаге AUTH_REQUEST (раунд {i}): {resp.get('reason')}")
+                return False
 
-        c = resp.get("c")
-        if not isinstance(c, int):
-            self._log("[CLIENT][ERROR] authenticate: 'c' не является целым.")
-            return False
-        if c < 0 or c >= q:
-            self._log("[CLIENT][ERROR] authenticate: 'c' вне диапазона [0, q).")
-            return False
+            if resp.get("type") != "AUTH_CHALLENGE":
+                self._log(f"[CLIENT][ERROR] authenticate: ожидался 'AUTH_CHALLENGE' (раунд {i}).")
+                return False
 
-        self._log(f"[CLIENT][AUTH] Получен challenge c ∈ [0,q). c = {c}")
-        s = (v + c * x) % q
-        self._log(f"[CLIENT][AUTH] Вычислен ответ s = (v + c·x) mod q = {s}")
+            b = resp.get("b")
+            srv_round = resp.get("round")
+            if srv_round is not None and srv_round != i:
+                self._log(f"[CLIENT][ERROR] authenticate: сервер вернул round={srv_round}, ожидался {i}.")
+                return False
 
-        if not self._send_json({"type": "AUTH_RESPONSE", "id": self.participant_id, "s": s}):
-            return False
+            if not isinstance(b, int) or b not in (0, 1):
+                self._log(f"[CLIENT][ERROR] authenticate: 'b' должен быть битом 0/1 (раунд {i}).")
+                return False
 
-        resp2 = self._recv_json(timeout=10.0)
-        if not resp2:
-            return False
-        if resp2.get("type") != "AUTH_RESULT":
-            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'AUTH_RESULT'.")
-            return False
-        if not resp2.get("ok", False):
-            self._log(f"[CLIENT][ERROR] authenticate: сервер отклонил аутентификацию (фаза A): {resp2.get('reason')}")
-            return False
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: получен challenge b = {b}")
+            resp_val = ffs_respond(r=r, s=s, b=b, n=n)
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: ответ resp = {resp_val}")
 
-        self._log("[CLIENT][AUTH] Фаза A: сервер подтвердил подлинность клиента.")
+            if not self._send_json({
+                "type": "AUTH_RESPONSE",
+                "id": self.participant_id,
+                "resp": resp_val,
+                "round": i,
+            }):
+                return False
+
+            resp2 = self._recv_json(timeout=10.0)
+            if not resp2:
+                return False
+
+            if resp2.get("type") != "AUTH_RESULT":
+                self._log(f"[CLIENT][ERROR] authenticate: ожидался 'AUTH_RESULT' (раунд {i}).")
+                return False
+
+            res_round = resp2.get("round")
+            if res_round is not None and res_round != i:
+                self._log(f"[CLIENT][ERROR] authenticate: сервер вернул AUTH_RESULT round={res_round}, ожидался {i}.")
+                return False
+
+            if not resp2.get("ok", False):
+                self._log(
+                    f"[CLIENT][ERROR] authenticate: сервер отклонил аутентификацию (раунд {i}): {resp2.get('reason')}")
+                return False
+
+            done = resp2.get("done", None)
+            if i < ROUNDS:
+                self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: OK (done={done})")
+            else:
+                self._log("[CLIENT][AUTH] Фаза A: все раунды пройдены, сервер подтвердил подлинность клиента.")
 
         # -------------------- Фаза B: сервер доказывает клиенту --------------------
-        self._log("[CLIENT][AUTH] === Schnorr: фаза B (сервер -> клиент) ===")
-        if not self._send_json({"type": "SERVER_AUTH_REQUEST", "id": self.participant_id}):
-            return False
+        self._log(f"[CLIENT][AUTH] === FFS: фаза B (сервер -> клиент), раундов: {ROUNDS} ===")
+        v_srv = int(self.server_ffs_v)
 
-        resp3 = self._recv_json(timeout=10.0)
-        if not resp3:
-            return False
-        if resp3.get("type") != "SERVER_AUTH_COMMIT":
-            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'SERVER_AUTH_COMMIT'.")
-            return False
-        if not resp3.get("ok", False):
-            self._log(f"[CLIENT][ERROR] authenticate: сервер отказал в server-auth: {resp3.get('reason')}")
-            return False
+        for i in range(1, ROUNDS + 1):
+            if not self._send_json({
+                "type": "SERVER_AUTH_REQUEST",
+                "id": self.participant_id,
+                "round": i,
+                "rounds": ROUNDS,
+            }):
+                return False
 
-        t_srv = resp3.get("t")
-        if not isinstance(t_srv, int):
-            self._log("[CLIENT][ERROR] authenticate: t_srv не является целым.")
-            return False
-        if t_srv <= 0 or t_srv >= p:
-            self._log("[CLIENT][ERROR] authenticate: t_srv вне диапазона (0 < t < p).")
-            return False
+            resp3 = self._recv_json(timeout=10.0)
+            if not resp3:
+                return False
 
-        self._log(f"[CLIENT][AUTH] Получен commitment сервера t_srv = {t_srv}")
-        c_srv = secure_random_int(0, q - 1)
-        self._log(f"[CLIENT][AUTH] Сформирован challenge серверу c_srv = {c_srv}")
+            if resp3.get("type") != "SERVER_AUTH_COMMIT":
+                self._log(f"[CLIENT][ERROR] authenticate: ожидался 'SERVER_AUTH_COMMIT' (раунд {i}).")
+                return False
 
-        if not self._send_json({"type": "SERVER_AUTH_CHALLENGE", "id": self.participant_id, "c": c_srv}):
-            return False
+            if not resp3.get("ok", False):
+                self._log(
+                    f"[CLIENT][ERROR] authenticate: сервер отказал в server-auth (раунд {i}): {resp3.get('reason')}")
+                return False
 
-        resp4 = self._recv_json(timeout=10.0)
-        if not resp4:
-            return False
-        if resp4.get("type") != "SERVER_AUTH_RESPONSE":
-            self._log("[CLIENT][ERROR] authenticate: ожидался тип 'SERVER_AUTH_RESPONSE'.")
-            return False
-        if not resp4.get("ok", False):
-            self._log(f"[CLIENT][ERROR] authenticate: сервер вернул ошибку на server-auth: {resp4.get('reason')}")
-            return False
+            z_srv = resp3.get("z")
+            srv_round = resp3.get("round")
+            if srv_round is not None and srv_round != i:
+                self._log(f"[CLIENT][ERROR] authenticate: server-auth commit round={srv_round}, ожидался {i}.")
+                return False
 
-        s_srv = resp4.get("s")
+            if not isinstance(z_srv, int) or z_srv <= 0 or z_srv >= n:
+                self._log(f"[CLIENT][ERROR] authenticate: z_srv некорректен (раунд {i}).")
+                return False
 
-        if not isinstance(s_srv, int):
-            self._log("[CLIENT][ERROR] authenticate: s_srv не является целым.")
-            return False
-        if s_srv < 0 or s_srv >= q:
-            self._log("[CLIENT][ERROR] authenticate: s_srv вне диапазона [0, q).")
-            return False
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: получен commitment сервера z_srv = {z_srv}")
+            b_srv = secure_random_int(0, 1)
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: сформирован challenge серверу b_srv = {b_srv}")
 
-        self._log(f"[CLIENT][AUTH] Получен ответ сервера s_srv = {s_srv}")
+            if not self._send_json({
+                "type": "SERVER_AUTH_CHALLENGE",
+                "id": self.participant_id,
+                "b": b_srv,
+                "round": i,
+            }):
+                return False
 
-        y_srv = int(self.server_schnorr_y)
-        left = pow(a, s_srv, p)
-        right = (t_srv * pow(y_srv, c_srv, p)) % p
+            resp4 = self._recv_json(timeout=10.0)
+            if not resp4:
+                return False
 
-        self._log(f"[CLIENT][AUTH] Проверка: left = g^s_srv mod p = {left}")
-        self._log(f"[CLIENT][AUTH] Проверка: right = t_srv · y_srv^c_srv mod p = {right}")
+            if resp4.get("type") != "SERVER_AUTH_RESPONSE":
+                self._log(f"[CLIENT][ERROR] authenticate: ожидался 'SERVER_AUTH_RESPONSE' (раунд {i}).")
+                return False
 
-        if left != right:
-            self._log("[CLIENT][ERROR] authenticate: проверка server-auth (Шнорр) не сошлась. Сервер НЕ аутентичен.")
-            self._send_json({"type": "MUTUAL_AUTH_CONFIRM", "id": self.participant_id, "ok": False, "reason": "Schnorr verify failed"})
-            return False
+            if not resp4.get("ok", False):
+                self._log(
+                    f"[CLIENT][ERROR] authenticate: сервер вернул ошибку на server-auth (раунд {i}): {resp4.get('reason')}")
+                return False
 
-        if not self._send_json({"type": "MUTUAL_AUTH_CONFIRM", "id": self.participant_id, "ok": True, "reason": ""}):
+            resp_srv = resp4.get("resp")
+            srv_round2 = resp4.get("round")
+            if srv_round2 is not None and srv_round2 != i:
+                self._log(f"[CLIENT][ERROR] authenticate: server-auth response round={srv_round2}, ожидался {i}.")
+                return False
+
+            if not isinstance(resp_srv, int) or resp_srv <= 0 or resp_srv >= n:
+                self._log(f"[CLIENT][ERROR] authenticate: resp_srv некорректен (раунд {i}).")
+                return False
+
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: получен ответ сервера resp_srv = {resp_srv}")
+
+            ok_srv = ffs_verify(z=int(z_srv), resp=int(resp_srv), b=int(b_srv), v=v_srv, n=n)
+            self._log(f"[CLIENT][AUTH] Раунд {i}/{ROUNDS}: проверка server-auth (FFS) = {ok_srv}")
+
+            if not ok_srv:
+                self._log(
+                    f"[CLIENT][ERROR] authenticate: server-auth FFS verify failed (раунд {i}). Сервер НЕ аутентичен.")
+                self._send_json({
+                    "type": "MUTUAL_AUTH_CONFIRM",
+                    "id": self.participant_id,
+                    "ok": False,
+                    "reason": f"FFS verify failed at round {i}"
+                })
+                return False
+
+        # подтверждаем серверу, что все раунды проверки сервера успешны
+        if not self._send_json({
+            "type": "MUTUAL_AUTH_CONFIRM",
+            "id": self.participant_id,
+            "ok": True,
+            "reason": "",
+            "rounds": ROUNDS,
+        }):
             return False
 
         resp5 = self._recv_json(timeout=10.0)
         if not resp5:
             return False
+
         if resp5.get("type") == "MUTUAL_AUTH_RESULT" and not resp5.get("ok", False):
-            self._log(f"[CLIENT][ERROR] authenticate: сервер не принял подтверждение взаимной аутентификации: {resp5.get('reason')}")
+            self._log(
+                f"[CLIENT][ERROR] authenticate: сервер не принял подтверждение взаимной аутентификации: {resp5.get('reason')}")
             return False
 
         self._log("[CLIENT][AUTH] Фаза B: сервер успешно проверен. Взаимная аутентификация завершена.")
         return True
 
     def send_bid(self, bid_value: int) -> Optional[dict]:
+
         """
         Отправка заявки:
           - реальное RSA-шифрование x -> y = x^e_ot mod n_ot,

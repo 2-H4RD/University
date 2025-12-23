@@ -29,6 +29,12 @@ from dataclasses import dataclass, field
 from typing import Dict, Optional, Callable, Tuple, List
 from gost_hash_3411 import gost3411_94_full
 from num_generator import secure_random_int
+from rsa_utils import (
+    ffs_generate_secret_and_public,
+    ffs_commit,
+    ffs_respond,
+    ffs_verify,
+)
 
 
 # Те же константы, что и у клиента
@@ -54,14 +60,36 @@ class ParticipantInfo:
     rsa_n: Optional[int] = None
     rsa_e: Optional[int] = None
 
-    # Параметры ГОСТ/Шнорра (общие p,q,a приходят от сервера; y — публичный ключ участника)
+    # Параметры ГОСТ (подпись) (общие p,q,a приходят от сервера; y — публичный ключ участника)
     gost_p: Optional[int] = None
     gost_q: Optional[int] = None
     gost_a: Optional[int] = None
     gost_y: Optional[int] = None
 
+    # --- Параметры FFS участника (публичный ключ v; модуль n общий, берём rsa_n сервера) ---
+    ffs_v: Optional[int] = None
+
+    # --- Состояние FFS-аутентификации (участник -> сервер) ---
+    last_z: Optional[int] = None  # commitment z = r^2 mod n
+    last_b: Optional[int] = None  # challenge bit b
+
+    # --- Счётчики раундов FFS (участник -> сервер) ---
+    ffs_rounds_total: int = 16
+    ffs_round_done: int = 0
+    ffs_round_pending: Optional[int] = None  # какой раунд сейчас ожидает AUTH_RESPONSE
+
+    # --- Счётчики раундов FFS (сервер -> участник) ---
+    srv_rounds_total: int = 16
+    srv_round_done: int = 0
+    srv_round_pending: Optional[int] = None  # какой раунд сейчас ожидает SERVER_AUTH_CHALLENGE
+
+    # --- Состояние FFS-аутентификации (сервер -> участник) ---
+    srv_r: Optional[int] = None
+    srv_z: Optional[int] = None
+    srv_b: Optional[int] = None
+
     registered: bool = False  # прошёл REGISTER_KEYS
-    authenticated: bool = False  # прошёл Шнорр-аутентификацию (участник -> сервер)
+    authenticated: bool = False  # прошёл FFS-аутентификацию (участник -> сервер)
     mutual_confirmed: bool = False  # клиент подтвердил успешную проверку сервера (сервер -> клиент)
 
     # --- Состояние для аутентификации Шнорра (участник -> сервер) ---
@@ -102,6 +130,11 @@ class AuctionServerCore:
     rsa_e: Optional[int] = None
     rsa_d: Optional[int] = None
 
+    # --- FFS-ключи организатора торгов (сервер) ---
+    # Используем тот же модуль n, что и для RSA-шифрования заявок.
+    ffs_s: Optional[int] = None  # секрет s (НЕ публикуется)
+    ffs_v: Optional[int] = None  # публичный v
+
     # --- ГОСТ-ключи организатора торгов (сервер) ---
     gost_p: Optional[int] = None
     gost_q: Optional[int] = None
@@ -140,6 +173,16 @@ class AuctionServerCore:
         if self.gost_p and self.gost_q and self.gost_a and (self.schnorr_x is None or self.schnorr_y is None):
             # set_gost_params() помимо установки p,q,a также формирует (schnorr_x, schnorr_y).
             self.set_gost_params(int(self.gost_p), int(self.gost_q), int(self.gost_a))
+
+        # FFS-ключи: если RSA n уже задан, генерируем (s, v) один раз на запуск.
+        if self.rsa_n and (self.ffs_s is None or self.ffs_v is None):
+            try:
+                self.ffs_s, self.ffs_v = ffs_generate_secret_and_public(int(self.rsa_n))
+                self._log('[SERVER] Сгенерированы FFS-ключи сервера (s скрыт, v публикуется в WELCOME).')
+            except Exception as ex:
+                self.ffs_s = None
+                self.ffs_v = None
+                self._log(f'[SERVER][ERROR] Не удалось сгенерировать FFS-ключи сервера: {ex}')
 
     # ------------------- Вспомогательные методы логирования ------------------- #
 
@@ -393,30 +436,38 @@ class AuctionServerCore:
                     pid = msg.get("id")
                     rsa = msg.get("rsa") or {}
                     gost = msg.get("gost") or {}
-                    self._handle_register_keys(send_json, pid, rsa, gost)
+                    ffs = msg.get("ffs") or {}
+                    self._handle_register_keys(send_json, pid, rsa, gost, ffs)
 
                 # --- AUTH_REQUEST ---
                 elif mtype == "AUTH_REQUEST":
                     pid = msg.get("id")
-                    t_val = msg.get("t")
-                    t_val = msg.get("t")
-                    self._handle_auth_request(send_json, pid, t_val)
+                    z_val = msg.get("z")
+                    round_no = msg.get("round")
+                    rounds_total = msg.get("rounds")
+                    self._handle_auth_request(send_json, pid, z_val, round_no, rounds_total)
 
                 # --- AUTH_RESPONSE ---
                 elif mtype == "AUTH_RESPONSE":
                     pid = msg.get("id")
-                    s_val = msg.get("s")
-                    self._handle_auth_response(send_json, pid, s_val)
+                    resp_val = msg.get("resp")
+                    round_no = msg.get("round")
+                    self._handle_auth_response(send_json, pid, resp_val, round_no)
 
-                 # --- SERVER_AUTH_REQUEST (взаимная аутентификация: сервер доказывает клиенту) ---
+                # --- SERVER_AUTH_REQUEST (взаимная аутентификация: сервер доказывает клиенту) ---
                 elif mtype == "SERVER_AUTH_REQUEST":
                     pid = msg.get("id")
-                    self._handle_server_auth_request(send_json, pid)
+                    round_no = msg.get("round")
+                    rounds_total = msg.get("rounds")
+                    self._handle_server_auth_request(send_json, pid, round_no, rounds_total)
+
                 # --- SERVER_AUTH_CHALLENGE ---
                 elif mtype == "SERVER_AUTH_CHALLENGE":
                     pid = msg.get("id")
-                    c_val = msg.get("c")
-                    self._handle_server_auth_challenge(send_json, pid, c_val)
+                    b_val = msg.get("b")
+                    round_no = msg.get("round")
+                    self._handle_server_auth_challenge(send_json, pid, b_val, round_no)
+
                 # --- MUTUAL_AUTH_CONFIRM (клиент подтверждает, что проверил сервер) ---
                 elif mtype == "MUTUAL_AUTH_CONFIRM":
                     pid = msg.get("id")
@@ -528,11 +579,15 @@ class AuctionServerCore:
         if self.rsa_n and self.rsa_e:
             welcome_payload["server_rsa_n"] = self.rsa_n
             welcome_payload["server_rsa_e"] = self.rsa_e
+            welcome_payload["server_ffs_n"] = self.rsa_n
+            welcome_payload["server_ffs_v"] = self.ffs_v
 
         else:
             # если ключи не заданы, клиент увидит, что ставки шифровать пока нечем
             welcome_payload["server_rsa_n"] = None
             welcome_payload["server_rsa_e"] = None
+            welcome_payload["server_ffs_n"] = None
+            welcome_payload["server_ffs_v"] = None
 
         if not self.gost_p or not self.gost_q or not self.gost_a:
             welcome_payload["gost_p"] = None
@@ -548,7 +603,7 @@ class AuctionServerCore:
         send_json(welcome_payload)
 
     # --- REGISTER_KEYS --- #
-    def _handle_register_keys(self, send_json, pid: str, rsa: dict, gost: dict):
+    def _handle_register_keys(self, send_json, pid: str, rsa: dict, gost: dict, ffs: dict):
         """
         REGISTER_KEYS:
           - RSA: участник присылает свой публичный ключ (n,e)
@@ -605,7 +660,29 @@ class AuctionServerCore:
             send_json({"type": "REGISTER_RESULT", "ok": False, "reason": reason})
             return
 
-        # сохраняем общие параметры ГОСТ в info (можно не хранить, но у вас структура уже так устроена)
+        # сохраняем общие параметры ГОСТ в info
+
+        # 3.1) FFS public key v участника (обязателен для новой схемы аутентификации)
+        if self.rsa_n is None:
+            reason = 'На сервере не задан RSA-модуль n (он же используется как модуль FFS).'
+            self._log(f'[SERVER][REGISTER_KEYS] {pid}: {reason}')
+            send_json({'type': 'REGISTER_RESULT', 'ok': False, 'reason': reason})
+            return
+        try:
+            v_pub = int((ffs or {}).get('v'))
+            if v_pub <= 0 or v_pub >= int(self.rsa_n):
+                raise ValueError('FFS v вне диапазона (0 < v < n).')
+            # v должен быть обратим по модулю n (иначе проверка невозможна)
+            import math
+            if math.gcd(v_pub, int(self.rsa_n)) != 1:
+                raise ValueError('FFS v не взаимно просто с n (gcd(v,n) != 1).')
+        except Exception as ex:
+            reason = f'Некорректный публичный ключ FFS v: {ex}'
+            self._log(f'[SERVER][REGISTER_KEYS] {pid}: {reason}')
+            send_json({'type': 'REGISTER_RESULT', 'ok': False, 'reason': reason})
+            return
+        info.ffs_v = int(v_pub)
+        # (можно не хранить, но у вас структура уже так устроена)
         info.gost_p = int(self.gost_p)
         info.gost_q = int(self.gost_q)
         info.gost_a = int(self.gost_a)
@@ -614,15 +691,15 @@ class AuctionServerCore:
         # 4) Регистрируем
         info.registered = True
 
-        self._log(f"[SERVER][REGISTER_KEYS] Участник '{pid}' зарегистрировал ключи (ГОСТ/Шнорр).")
+        self._log(f"[SERVER][REGISTER_KEYS] Участник '{pid}' зарегистрировал ключи (ГОСТ + FFS).")
         send_json({"type": "REGISTER_RESULT", "ok": True, "reason": ""})
 
     # --- AUTH_REQUEST --- #
-    def _handle_auth_request(self, send_json, pid: str, t_val):
+    def _handle_auth_request(self, send_json, pid: str, z_val, round_no=None, rounds_total=None):
         """
-        Шнорр-аутентификация (участник -> сервер), шаг 1/2.
-        Клиент присылает commitment t = a^v mod p.
-        Сервер отвечает challenge c.
+        FFS-аутентификация (участник -> сервер), раунд i из k.
+        Клиент присылает commitment z = r^2 mod n.
+        Сервер отвечает случайным битом b ∈ {0,1}.
         """
         if not pid:
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
@@ -633,102 +710,201 @@ class AuctionServerCore:
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
+
         if not self._is_id_allowed(pid):
             reason = "Идентификатор не в опубликованном реестре."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
+
+        if self.rsa_n is None:
+            reason = "На сервере не задан модуль n (он же используется как модуль FFS)."
+            self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            return
+
         info = self._get_or_create_participant(pid)
+
         if not info.registered or not info.gost_y or not info.gost_p or not info.gost_q or not info.gost_a:
-            reason = "Участник не зарегистрировал ГОСТ/Шнорр ключи."
+            reason = "Участник не зарегистрировал ГОСТ-ключи."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-        # commitment t от клиента
+
+        if info.ffs_v is None:
+            reason = "Участник не зарегистрировал публичный ключ FFS v."
+            self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            return
+
+        # раунды
         try:
-            t = int(t_val)
-            if t <= 0 or t >= info.gost_p:
-                raise ValueError("t вне допустимого диапазона (0 < t < p).")
-        except Exception as ex:
-            reason = f"Некорректный commitment t: {ex}"
+            k = int(rounds_total) if rounds_total is not None else int(info.ffs_rounds_total)
+            if k <= 0 or k > 1024:
+                raise ValueError("rounds_total вне допустимого диапазона")
+        except Exception:
+            k = int(info.ffs_rounds_total) if info.ffs_rounds_total else 16
+
+        try:
+            i = int(round_no) if round_no is not None else (int(info.ffs_round_done) + 1)
+        except Exception:
+            i = int(info.ffs_round_done) + 1
+
+        # если клиент начал заново с 1-го раунда — сбрасываем прогресс
+        if i == 1:
+            info.ffs_round_done = 0
+            info.ffs_rounds_total = k
+            info.ffs_round_pending = None
+            info.last_z = None
+            info.last_b = None
+            info.authenticated = False
+            info.mutual_confirmed = False
+
+        expected = int(info.ffs_round_done) + 1
+        if i != expected:
+            reason = f"Неверный номер раунда: получено {i}, ожидалось {expected}."
             self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
-            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i})
             return
-        c = secure_random_int(0, info.gost_q - 1)
-        info.last_t = t
-        info.last_c = c
+
+        if info.ffs_round_pending is not None or info.last_z is not None or info.last_b is not None:
+            reason = "Предыдущий раунд не завершён (ожидается AUTH_RESPONSE)."
+            self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i})
+            return
+
+        # commitment z от клиента
+        try:
+            z = int(z_val)
+            n = int(self.rsa_n)
+            if z <= 0 or z >= n:
+                raise ValueError("z вне допустимого диапазона (0 < z < n).")
+        except Exception as ex:
+            reason = f"Некорректный commitment z: {ex}"
+            self._log(f"[SERVER][AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i})
+            return
+
+        b = secure_random_int(0, 1)
+        info.last_z = z
+        info.last_b = b
+        info.ffs_round_pending = i
         info.authenticated = False
         info.mutual_confirmed = False
+        info.ffs_rounds_total = k
 
-        self._log(f"[SERVER][AUTH_REQUEST] {pid}: получили t={t}, выдаём challenge c={c}")
-        send_json({
-            "type": "AUTH_CHALLENGE",
-            "id": pid,
-            "c": c
-        })
+        self._log(f"[SERVER][AUTH_REQUEST] {pid}: раунд {i}/{k}: получили z={z}, выдаём challenge b={b}")
+        send_json({"type": "AUTH_CHALLENGE", "id": pid, "b": b, "round": i, "rounds": k})
 
-# --- AUTH_RESPONSE --- #
-    def _handle_auth_response(self, send_json, pid: str, s_val):
+    # --- AUTH_RESPONSE --- #
+    def _handle_auth_response(self, send_json, pid: str, resp_val, round_no=None):
         """
-        Шнорр-аутентификация (участник -> сервер), шаг 2/2.
-        Клиент присылает ответ s = v + c*x (mod q).
-        Сервер проверяет: a^s == t * y^c (mod p).
+        FFS-аутентификация (участник -> сервер), раунд i из k.
+        Клиент присылает ответ resp.
+        Сервер проверяет корректность и накапливает успешные раунды.
         """
         if not pid:
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
             return
+
         info = self._participants.get(pid)
         if not info or not info.registered:
             reason = "Участник не зарегистрирован."
             self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-        if info.last_t is None or info.last_c is None:
+
+        if self.rsa_n is None:
+            reason = "На сервере не задан модуль n (он же используется как модуль FFS)."
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            return
+
+        if info.ffs_v is None:
+            reason = "Нет публичного ключа FFS v участника."
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
+            return
+
+        if info.last_z is None or info.last_b is None or info.ffs_round_pending is None:
             reason = "Нет активного challenge для участника (сначала AUTH_REQUEST)."
             self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
             send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
             return
-        # Парсим s
-        try:
-            s = int(s_val)
-            if s < 0 or s >= info.gost_q:
-                raise ValueError("s вне диапазона [0, q).")
-        except Exception as ex:
-            reason = f"Некорректный ответ s: {ex}"
-            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
-            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
-            return
-        p = info.gost_p
-        q = info.gost_q
-        a = info.gost_a
-        y = info.gost_y
-        t = info.last_t
-        c = info.last_c
 
-        left = pow(a, s, p)
-        right = (t * pow(y, c, p)) % p
-
-        if left != right:
-            reason = "Аутентификация не пройдена (проверка Шнорра не сошлась)."
-            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason} left={left} right={right}")
-            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason})
-            return
-        info.authenticated = True
-        info.last_t = None
-        info.last_c = None
-
-        self._log(f"[SERVER][AUTH_RESPONSE] {pid}: Аутентификация Шнорра УСПЕШНА.")
-        send_json({"type": "AUTH_RESULT", "ok": True, "reason": ""})
-
-        if self.on_auth_update:
+        i_expected = int(info.ffs_round_pending)
+        if round_no is not None:
             try:
-                self.on_auth_update(pid, True)
+                i = int(round_no)
             except Exception:
-                pass
+                i = i_expected
+            if i != i_expected:
+                reason = f"Неверный номер раунда в AUTH_RESPONSE: получено {i}, ожидалось {i_expected}."
+                self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
+                send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i})
+                return
+        else:
+            i = i_expected
 
-        # --- SERVER_AUTH_REQUEST / SERVER_AUTH_CHALLENGE --- #
-    def _handle_server_auth_request(self, send_json, pid: str):
-        """Взаимная аутентификация (сервер -> клиент): сервер доказывает знание x_srv (Шнорр)."""
+        k = int(info.ffs_rounds_total) if info.ffs_rounds_total else 16
+
+        try:
+            resp = int(resp_val)
+            n = int(self.rsa_n)
+            if resp <= 0 or resp >= n:
+                raise ValueError("resp вне диапазона (0 < resp < n).")
+        except Exception as ex:
+            reason = f"Некорректный ответ resp: {ex}"
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: {reason}")
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i})
+            return
+
+        z = int(info.last_z)
+        b = int(info.last_b)
+        v = int(info.ffs_v)
+        n = int(self.rsa_n)
+
+        ok = ffs_verify(z=z, resp=resp, b=b, v=v, n=n)
+        if not ok:
+            reason = "Аутентификация не пройдена (FFS-проверка не сошлась)."
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: раунд {i}/{k}: FAIL (b={b})")
+            # сброс прогресса
+            info.ffs_round_done = 0
+            info.ffs_round_pending = None
+            info.last_z = None
+            info.last_b = None
+            info.authenticated = False
+            info.mutual_confirmed = False
+            send_json({"type": "AUTH_RESULT", "ok": False, "reason": reason, "round": i, "rounds": k})
+            return
+
+        # раунд успешен
+        info.last_z = None
+        info.last_b = None
+        info.ffs_round_pending = None
+        info.ffs_round_done = int(info.ffs_round_done) + 1
+
+        if info.ffs_round_done >= k:
+            info.authenticated = True
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: раунд {i}/{k}: OK. ВСЕ РАУНДЫ ПРОЙДЕНЫ -> AUTHENTICATED.")
+            send_json({"type": "AUTH_RESULT", "ok": True, "reason": "", "round": i, "rounds": k, "done": True})
+
+            if self.on_auth_update:
+                try:
+                    self.on_auth_update(pid, True)
+                except Exception:
+                    pass
+        else:
+            next_round = int(info.ffs_round_done) + 1
+            self._log(f"[SERVER][AUTH_RESPONSE] {pid}: раунд {i}/{k}: OK. Следующий раунд: {next_round}.")
+            send_json({"type": "AUTH_RESULT", "ok": True, "reason": "", "round": i, "rounds": k, "done": False,
+                       "next_round": next_round})
+
+    # --- SERVER_AUTH_REQUEST / SERVER_AUTH_CHALLENGE --- #
+    def _handle_server_auth_request(self, send_json, pid: str, round_no=None, rounds_total=None):
+        """
+        Взаимная аутентификация (сервер -> клиент) по FFS, раунд i из k.
+        """
         if not pid:
             send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": "Нет id участника."})
             return
@@ -740,55 +916,122 @@ class AuctionServerCore:
             send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason})
             return
 
-        if (not self.gost_p) or (not self.gost_q) or (not self.gost_a) or (self.schnorr_x is None) or (self.schnorr_y is None):
-            reason = "На сервере не готовы параметры/ключи Шнорра."
+        if self.rsa_n is None or self.ffs_s is None or self.ffs_v is None:
+            reason = "На сервере не готовы FFS-ключи (n, s, v)."
             self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: {reason}")
             send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason})
             return
 
-        # 1) сервер выбирает v_srv и публикует t_srv = a^v_srv mod p
-        v_srv = secure_random_int(1, self.gost_q - 1)
-        t_srv = pow(self.gost_a, v_srv, self.gost_p)
+        # раунды
+        try:
+            k = int(rounds_total) if rounds_total is not None else int(info.srv_rounds_total)
+            if k <= 0 or k > 1024:
+                raise ValueError("rounds_total вне допустимого диапазона")
+        except Exception:
+            k = int(info.srv_rounds_total) if info.srv_rounds_total else 16
 
-        # сохраняем одноразовый секрет до получения challenge
-        info.srv_v = v_srv
-        info.srv_t = t_srv
-        info.srv_c = None
+        try:
+            i = int(round_no) if round_no is not None else (int(info.srv_round_done) + 1)
+        except Exception:
+            i = int(info.srv_round_done) + 1
+
+        # если клиент начал заново с 1-го раунда — сбрасываем прогресс server-auth
+        if i == 1:
+            info.srv_round_done = 0
+            info.srv_round_pending = None
+            info.srv_r = None
+            info.srv_z = None
+            info.srv_b = None
+            info.mutual_confirmed = False
+            info.srv_rounds_total = k
+
+        expected = int(info.srv_round_done) + 1
+        if i != expected:
+            reason = f"Неверный номер раунда server-auth: получено {i}, ожидалось {expected}."
+            self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason, "round": i})
+            return
+
+        if info.srv_round_pending is not None or info.srv_r is not None or info.srv_z is not None:
+            reason = "Предыдущий раунд server-auth не завершён (ожидается SERVER_AUTH_CHALLENGE)."
+            self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_COMMIT", "ok": False, "reason": reason, "round": i})
+            return
+
+        # commitment
+        r_srv, z_srv = ffs_commit(int(self.rsa_n))
+        info.srv_r = r_srv
+        info.srv_z = z_srv
+        info.srv_b = None
+        info.srv_round_pending = i
+        info.srv_rounds_total = k
         info.mutual_confirmed = False
 
-        self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: отправляем commitment t_srv.")
-        send_json({"type": "SERVER_AUTH_COMMIT", "id": pid, "t": t_srv, "ok": True})
+        self._log(f"[SERVER][SERVER_AUTH_REQUEST] {pid}: раунд {i}/{k}: отправляем commitment z_srv={z_srv}.")
+        send_json({"type": "SERVER_AUTH_COMMIT", "id": pid, "z": z_srv, "ok": True, "round": i, "rounds": k})
 
-    def _handle_server_auth_challenge(self, send_json, pid: str, c_val):
-        """Получить challenge от клиента и ответить s_srv."""
+    def _handle_server_auth_challenge(self, send_json, pid: str, b_val, round_no=None):
+        """
+        Взаимная аутентификация (сервер -> клиент) по FFS, раунд i из k:
+        получить бит b и отправить resp.
+        """
         if not pid:
             send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": "Нет id участника."})
             return
 
         info = self._participants.get(pid)
-
-        if not info or info.srv_v is None or info.srv_t is None:
+        if not info or info.srv_r is None or info.srv_z is None or info.srv_round_pending is None:
             reason = "Нет активного server-auth сеанса (сначала SERVER_AUTH_REQUEST)."
             self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
             send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
             return
-        try:
-            c = int(c_val)
-            if c < 0 or c >= self.gost_q:
-                raise ValueError("c вне диапазона [0, q).")
-        except Exception as ex:
-            reason = f"Некорректный challenge c: {ex}"
+
+        if self.rsa_n is None or self.ffs_s is None:
+            reason = "На сервере не готовы FFS-ключи."
             self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
             send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
+            return
 
-        info.srv_c = c
-        s_srv = (info.srv_v + c * self.schnorr_x) % self.gost_q
-        # одноразовое состояние можно очистить после формирования ответа
-        info.srv_v = None
-        self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: отправляем ответ s_srv={s_srv}")
-        send_json({"type": "SERVER_AUTH_RESPONSE", "id": pid, "s": s_srv, "ok": True})
+        i_expected = int(info.srv_round_pending)
+        if round_no is not None:
+            try:
+                i = int(round_no)
+            except Exception:
+                i = i_expected
+            if i != i_expected:
+                reason = f"Неверный номер раунда в SERVER_AUTH_CHALLENGE: получено {i}, ожидалось {i_expected}."
+                self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+                send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason, "round": i})
+                return
+        else:
+            i = i_expected
 
-        # --- MUTUAL_AUTH_CONFIRM --- #
+        k = int(info.srv_rounds_total) if info.srv_rounds_total else 16
+
+        try:
+            b = int(b_val)
+            if b not in (0, 1):
+                raise ValueError("b must be 0 or 1")
+        except Exception as ex:
+            reason = f"Некорректный бит challenge b: {ex}"
+            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
+            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason, "round": i, "rounds": k})
+            return
+
+        resp = ffs_respond(r=int(info.srv_r), s=int(self.ffs_s), b=b, n=int(self.rsa_n))
+
+        # очищаем одноразовое состояние и фиксируем прогресс
+        info.srv_r = None
+        info.srv_z = None
+        info.srv_b = None
+        info.srv_round_pending = None
+        info.srv_round_done = int(info.srv_round_done) + 1
+
+        done = (info.srv_round_done >= k)
+        self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: раунд {i}/{k}: отправляем resp (b={b}), done={done}.")
+        send_json({"type": "SERVER_AUTH_RESPONSE", "id": pid, "resp": resp, "ok": True, "round": i, "rounds": k,
+                   "done": done})
+
     def _handle_mutual_auth_confirm(self, send_json, pid: str, ok_val, reason: str):
         """Клиент сообщает серверу результат проверки server-auth."""
         if not pid:
@@ -797,6 +1040,13 @@ class AuctionServerCore:
         info = self._participants.get(pid)
         if not info or not info.authenticated:
             r = "Участник не аутентифицирован на сервере."
+            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: {r}")
+            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
+            return
+        # Требуем, чтобы клиент реально прошёл k раундов проверки сервера (иначе confirm преждевременен)
+        k = int(info.srv_rounds_total) if info.srv_rounds_total else 16
+        if int(info.srv_round_done) < k:
+            r = f"Клиент подтвердил server-auth слишком рано: выполнено {info.srv_round_done}/{k} раундов."
             self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: {r}")
             send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
             return
@@ -814,72 +1064,6 @@ class AuctionServerCore:
         self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: взаимная аутентификация подтверждена клиентом.")
         send_json({"type": "MUTUAL_AUTH_RESULT", "ok": True, "reason": ""})
 
-    def _handle_server_auth_challenge(self, send_json, pid: str, c_val):
-        """Сервер получает challenge и отвечает s_srv."""
-        if not pid:
-            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": "Нет id участника."})
-            return
-
-        info = self._participants.get(pid)
-        if not info or info.srv_v is None or info.srv_t is None:
-            reason = "Нет активного server-auth сеанса (сначала SERVER_AUTH_REQUEST)."
-            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
-            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
-            return
-
-        try:
-            c = int(c_val)
-            if c < 0 or c >= self.gost_q:
-                raise ValueError("c вне диапазона [0, q).")
-        except Exception as ex:
-            reason = f"Некорректный challenge c: {ex}"
-            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
-            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
-            return
-
-        if self.schnorr_x is None:
-            reason = "На сервере не готовы ключи Шнорра."
-            self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: {reason}")
-            send_json({"type": "SERVER_AUTH_RESPONSE", "ok": False, "reason": reason})
-            return
-
-        s_srv = (info.srv_v + c * self.schnorr_x) % self.gost_q
-
-        # очищаем одноразовые значения сеанса server-auth
-        info.srv_v = None
-        info.srv_t = None
-        info.srv_c = None
-
-        self._log(f"[SERVER][SERVER_AUTH_CHALLENGE] {pid}: отправляем ответ s_srv.")
-        send_json({"type": "SERVER_AUTH_RESPONSE", "id": pid, "s": s_srv, "ok": True})
-
-    def _handle_mutual_auth_confirm(self, send_json, pid: str, ok_val, reason: str):
-        """Клиент подтверждает результат проверки server-auth."""
-        if not pid:
-            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": "Нет id участника."})
-            return
-
-        info = self._participants.get(pid)
-        if not info or not info.authenticated:
-            r = "Участник не аутентифицирован на сервере."
-            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: {r}")
-            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
-            return
-
-        ok = bool(ok_val)
-        if not ok:
-            info.mutual_confirmed = False
-            info.authenticated = False
-            r = reason or "Клиент не подтвердил аутентичность сервера."
-            self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: FAIL: {r}")
-            send_json({"type": "MUTUAL_AUTH_RESULT", "ok": False, "reason": r})
-            return
-
-        info.mutual_confirmed = True
-        self._log(f"[SERVER][MUTUAL_AUTH_CONFIRM] {pid}: взаимная аутентификация подтверждена.")
-        send_json({"type": "MUTUAL_AUTH_RESULT", "ok": True, "reason": ""})
-
-# --- BID --- #
     def _handle_bid(self, send_json, pid: str,
                     bid_value, y_val, h_val, r_val, s_val):
         try:
@@ -1123,7 +1307,7 @@ class AuctionServerCore:
                 self._log(f"[SERVER][RESULTS_PUBLISHED][ERROR] отправка участнику {info.participant_id}: {ex}")
 
 
-# ------------------- Пример standalone-запуска ------------------- #
+    # ------------------- Пример standalone-запуска ------------------- #
 
 if __name__ == "__main__":
     # Небольшой тест без GUI: сервер слушает discovery+TCP,

@@ -5,7 +5,7 @@
 # - Торги: ввод ставки, хэширование и подпись заявки по ГОСТ 34.10-94,
 #          отправка на сервер через AuctionMemberClient.
 # - Подготовка: ввод ID, подключение к серверу, регистрация открытых ключей,
-#               взаимная аутентификация Клаусса–Шнорра (Schnorr), отображение шагов протокола;
+#               взаимная аутентификация Фейге–Фиата–Шамира (FFS), отображение шагов протокола;
 # - Торги: ввод ставки, ГОСТ-подпись заявки, отправка на сервер через AuctionMemberClient.
 
 import tkinter as tk
@@ -62,6 +62,47 @@ def gost_sign_message(message: bytes, p: int, q: int, a: int, x: int):
             continue
         return r, s, h
 
+# ------------------------------------------------------------------
+# Класс scrollable GUI
+# ------------------------------------------------------------------
+class ScrollableTab(ttk.Frame):
+    def __init__(self, master, *args, **kwargs):
+        super().__init__(master, *args, **kwargs)
+
+        self._canvas = tk.Canvas(self, highlightthickness=0)
+        self._vbar = ttk.Scrollbar(self, orient="vertical", command=self._canvas.yview)
+        self._hbar = ttk.Scrollbar(self, orient="horizontal", command=self._canvas.xview)
+
+        self._canvas.configure(yscrollcommand=self._vbar.set, xscrollcommand=self._hbar.set)
+
+        self._vbar.pack(side="right", fill="y")
+        self._hbar.pack(side="bottom", fill="x")
+        self._canvas.pack(side="left", fill="both", expand=True)
+
+        self.inner = ttk.Frame(self._canvas)
+        self._win_id = self._canvas.create_window((0, 0), window=self.inner, anchor="nw")
+
+        # update scrollregion when inner size changes
+        self.inner.bind("<Configure>", self._on_inner_configure)
+        self._canvas.bind("<Configure>", self._on_canvas_configure)
+
+        # mouse wheel scrolling
+        self._canvas.bind_all("<MouseWheel>", self._on_mousewheel)      # Windows
+        self._canvas.bind_all("<Shift-MouseWheel>", self._on_shiftwheel)
+
+    def _on_inner_configure(self, _event=None):
+        self._canvas.configure(scrollregion=self._canvas.bbox("all"))
+
+    def _on_canvas_configure(self, event):
+        # stretch inner width to canvas width
+        self._canvas.itemconfigure(self._win_id, width=event.width)
+
+    def _on_mousewheel(self, event):
+        # Windows: event.delta is multiple of 120
+        self._canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    def _on_shiftwheel(self, event):
+        self._canvas.xview_scroll(int(-1 * (event.delta / 120)), "units")
 
 # ======================================================================
 # Класс GUI участника торгов
@@ -77,11 +118,11 @@ class MemberApp:
         self.participant_id: str | None = None
 
 
-        # Параметры и ключи ГОСТ/Шнорра (p,q,g) выдаёт сервер при HELLO.
+        # Параметры ГОСТ (p,q,a) выдаёт сервер при HELLO; аутентификация выполняется по FFS на модуле n (RSA сервера).
         self.gost_p: int | None = None
         self.gost_q: int | None = None
         self.gost_a: int | None = None
-        self.gost_x: int | None = None  # закрытый (один и тот же x используется и в ГОСТ подписи, и в Шнорре)
+        self.gost_x: int | None = None  # закрытый (используется для подписи по ГОСТ 34.10-94)
         self.gost_y: int | None = None  # открытый y = g^x mod p
         self.gost_keys_obj: GostKeys | None = None
 
@@ -103,73 +144,19 @@ class MemberApp:
         self._build_ui()
 
     # ------------------------------------------------------------------
-    # Scrollable tabs (Canvas + vertical Scrollbar)
-    # ------------------------------------------------------------------
-    def _create_scrollable_tab(self, notebook: ttk.Notebook):
-        container = ttk.Frame(notebook)
-
-        canvas = tk.Canvas(container, highlightthickness=0)
-        vbar = ttk.Scrollbar(container, orient="vertical", command=canvas.yview)
-        canvas.configure(yscrollcommand=vbar.set)
-
-        vbar.pack(side="right", fill="y")
-        canvas.pack(side="left", fill="both", expand=True)
-
-        inner = ttk.Frame(canvas)
-        window_id = canvas.create_window((0, 0), window=inner, anchor="nw")
-
-        def _on_inner_configure(_event):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-
-        def _on_canvas_configure(event):
-            canvas.itemconfigure(window_id, width=event.width)
-
-        inner.bind("<Configure>", _on_inner_configure)
-        canvas.bind("<Configure>", _on_canvas_configure)
-
-        # Mousewheel: не перехватываем скролл у Text/Listbox/Entry — пусть они скроллятся сами
-        def _wheel(event):
-            w = event.widget
-            if isinstance(w, (tk.Text, tk.Entry, tk.Listbox)):
-                return
-            # ttk.Entry не является tk.Entry, поэтому проверяем по имени класса
-            if w.__class__.__name__ in ("Entry", "Combobox"):
-                return
-            delta = -1 * int(event.delta / 120)
-            canvas.yview_scroll(delta, "units")
-
-        def _bind(_event):
-            canvas.bind_all("<MouseWheel>", _wheel)
-            # Linux fallback
-            canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-3, "units"))
-            canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(3, "units"))
-
-        def _unbind(_event):
-            canvas.unbind_all("<MouseWheel>")
-            canvas.unbind_all("<Button-4>")
-            canvas.unbind_all("<Button-5>")
-
-        container.bind("<Enter>", _bind)
-        container.bind("<Leave>", _unbind)
-
-        return container, inner
-
-    # ------------------------------------------------------------------
     # Построение интерфейса
     # ------------------------------------------------------------------
     def _build_ui(self):
         notebook = ttk.Notebook(self.root)
         notebook.pack(fill="both", expand=True)
 
-        self._tab_prep_container, self.tab_prep = self._create_scrollable_tab(notebook)
-        self._tab_auth_container, self.tab_auth = self._create_scrollable_tab(notebook)
-        self._tab_trade_container, self.tab_trade = self._create_scrollable_tab(notebook)
-        self._tab_verify_container, self.tab_verify = self._create_scrollable_tab(notebook)
+        self.tab_prep = ScrollableTab(notebook)
+        self.tab_trade = ScrollableTab(notebook)
+        self.tab_verify = ScrollableTab(notebook)
 
-        notebook.add(self._tab_prep_container, text="Подготовка")
-        notebook.add(self._tab_auth_container, text="Аутентификация")
-        notebook.add(self._tab_trade_container, text="Торги")
-        notebook.add(self._tab_verify_container, text="Проверка")
+        notebook.add(self.tab_prep, text="Подготовка")
+        notebook.add(self.tab_trade, text="Торги")
+        notebook.add(self.tab_verify, text="Проверка")
 
         self._build_tab_prep()
         self._build_tab_trade()
@@ -179,7 +166,7 @@ class MemberApp:
     # Вкладка "Подготовка"
     # ------------------------------------------------------------------
     def _build_tab_prep(self):
-        frame_top = ttk.Frame(self.tab_prep)
+        frame_top = ttk.Frame(self.tab_prep.inner)
         frame_top.pack(fill="x", padx=10, pady=10)
 
         ttk.Label(frame_top, text="Идентификатор участника:").pack(side="left")
@@ -195,12 +182,12 @@ class MemberApp:
 
         self.btn_authenticate = ttk.Button(
             frame_top,
-            text = "Пройти аутентификацию",
+            text = "Пройти взаимную аутентификацию (FFS)",
             command = self.on_start_auth_window,
             state = "disabled",
         )
         self.btn_authenticate.pack(side="left", padx=5)
-        status_frame = ttk.LabelFrame(self.tab_prep, text="Состояние")
+        status_frame = ttk.LabelFrame(self.tab_prep.inner, text="Состояние")
         status_frame.pack(fill="x", padx=10, pady=(0, 10))
 
         self.lbl_conn_status = ttk.Label(status_frame, text="Соединение с сервером: НЕТ", foreground="red")
@@ -210,7 +197,7 @@ class MemberApp:
         self.lbl_auth_status.pack(anchor="w", padx=5, pady=2)
 
         # --- Открытые ключи RSA сервера (получаем при HELLO) ---
-        server_rsa_frame = ttk.LabelFrame(self.tab_prep, text="Открытые ключи RSA сервера (e, n)")
+        server_rsa_frame = ttk.LabelFrame(self.tab_prep.inner, text="Открытые ключи RSA сервера (e, n)")
         server_rsa_frame.pack(fill="both", expand=False, padx=10, pady=5)
         self.txt_server_rsa_pub = scrolledtext.ScrolledText(server_rsa_frame, height=6)
         self.txt_server_rsa_pub.pack(fill="both", expand=True, padx=5, pady=5)
@@ -219,15 +206,15 @@ class MemberApp:
             "Нет данных. Подключитесь к серверу — ключи RSA (e,n) будут получены при HELLO.\n"
         )
 
-        # Раздел ГОСТ + Шнорр (общие параметры p,q,g и секрет x клиента)
-        gost_frame = ttk.LabelFrame(self.tab_prep,
-                                    text="ГОСТ 34.10-94 (подпись) + Клаусс–Шнорр (аутентификация)")
+        # Раздел ГОСТ (подпись) + FFS (аутентификация)
+        gost_frame = ttk.LabelFrame(self.tab_prep.inner,
+                                    text="ГОСТ 34.10-94 (подпись) + FFS (Feige–Fiat–Shamir, аутентификация)")
         gost_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
-        gost_pub_frame = ttk.LabelFrame(gost_frame, text="Параметры (p, q, g) и открытый ключ y")
+        gost_pub_frame = ttk.LabelFrame(gost_frame, text="Параметры (p, q, a) и открытый ключ y (ГОСТ)")
         gost_pub_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
 
-        gost_priv_frame = ttk.LabelFrame(gost_frame, text="Секретный ключ x")
+        gost_priv_frame = ttk.LabelFrame(gost_frame, text="Секретный ключ x (ГОСТ)")
         gost_priv_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
 
         self.txt_gost_pub = scrolledtext.ScrolledText(gost_pub_frame, height=10)
@@ -238,10 +225,24 @@ class MemberApp:
 
         self.txt_gost_pub.insert(
             "end",
-            "Нет данных. Подключитесь к серверу — ключи ГОСТ + Клаусс-Шнорр (p,q,a(g)) будут получены при HELLO."
+            "Параметры ГОСТ p,q,a будут получены от сервера после подключения.\n"
         )
+
+        # --- FFS (Feige–Fiat–Shamir) параметры аутентификации ---
+        # Требуемое расположение: под блоком ГОСТ, но над логами аутентификации.
+        ffs_frame = ttk.LabelFrame(self.tab_prep.inner, text="FFS (аутентификация): параметры и ключи")
+        ffs_frame.pack(fill="both", expand=False, padx=10, pady=5)
+
+        self.txt_ffs_info = scrolledtext.ScrolledText(ffs_frame, height=6)
+        self.txt_ffs_info.pack(fill="both", expand=True, padx=5, pady=5)
+
+        self.txt_ffs_info.insert(
+            "end",
+            "Нет данных. Подключитесь к серверу — параметры FFS будут получены при HELLO/REGISTER.\n"
+        )
+
         # Лог аутентификации (локально на клиенте)
-        log_frame = ttk.LabelFrame(self.tab_prep, text="Логи прохождения аутентификации (клиент)")
+        log_frame = ttk.LabelFrame(self.tab_prep.inner, text="Логи прохождения аутентификации (клиент)")
         log_frame.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
         self.txt_auth_log = scrolledtext.ScrolledText(log_frame, height=10)
@@ -250,7 +251,7 @@ class MemberApp:
     # Вкладка "Торги"
     # ------------------------------------------------------------------
     def _build_tab_trade(self):
-        top_frame = ttk.Frame(self.tab_trade)
+        top_frame = ttk.Frame(self.tab_trade.inner)
         top_frame.pack(fill="x", padx=10, pady=10)
 
         ttk.Label(top_frame, text="Ваша ставка (целое число):").pack(side="left")
@@ -268,7 +269,7 @@ class MemberApp:
         btn_send_fake.pack(side="left", padx=10)
 
 
-        status_frame = ttk.LabelFrame(self.tab_trade, text="Заявка и подпись")
+        status_frame = ttk.LabelFrame(self.tab_trade.inner, text="Заявка и подпись")
         status_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
         inner = ttk.Frame(status_frame)
@@ -318,7 +319,7 @@ class MemberApp:
     # Обработчики вкладки "Аутентификация"
     # ==================================================================
     def on_connect_to_server(self):
-        # RSA-ключи участника больше не требуются для аутентификации (перешли на Шнорра).
+        # RSA-ключи участника не требуются для аутентификации; используется FFS-секрет s (публикуется v).
         # Если RSA-ключи сгенерированы — они будут отправлены на сервер в REGISTER_KEYS для совместимости.
         participant_id = self.entry_member_id.get().strip()
         if not participant_id:
@@ -372,6 +373,26 @@ class MemberApp:
                     self.txt_server_rsa_pub.insert("end", "Сервер не передал RSA-ключи (e,n).\n")
         except Exception:
             pass
+        # Обновить информацию по FFS (n берём из RSA, v сервера — из server_ffs_v)
+        try:
+            if hasattr(self, "txt_ffs_info") and self.txt_ffs_info:
+                self.txt_ffs_info.delete("1.0", "end")
+                ffs_n = getattr(client, "server_ffs_n", None) or getattr(client, "server_rsa_n", None)
+                ffs_v_srv = getattr(client, "server_ffs_v", None)
+                ffs_v_cli = getattr(client, "ffs_v", None)
+                ffs_s_cli = getattr(client, "ffs_s", None)  # <-- ДОБАВЛЕНО
+
+                self.txt_ffs_info.insert(
+                    "end",
+                    f"n (модуль) = {ffs_n}\n"
+                    f"v сервера = {ffs_v_srv}\n"
+                    f"v клиента  = {ffs_v_cli}\n"
+                    f"s клиента  = {ffs_s_cli}\n\n"
+                    "Примечание: s — секретный параметр FFS, он НЕ должен передаваться на сервер.\n"
+                )
+        except Exception:
+            pass
+
 
         # 3) Получить p,q,a от сервера и отобразить на вкладке "Подготовка"
         p = getattr(client, "server_gost_p", None)
@@ -426,6 +447,27 @@ class MemberApp:
                 pass
             return
 
+        # Обновить отображение FFS после регистрации ключей (v клиента может быть сгенерирован в register_keys)
+        try:
+            if hasattr(self, "txt_ffs_info") and self.txt_ffs_info:
+                ffs_n = getattr(client, "server_ffs_n", None) or getattr(client, "server_rsa_n", None)
+                ffs_v_srv = getattr(client, "server_ffs_v", None)
+                ffs_v_cli = getattr(client, "ffs_v", None)
+                ffs_s_cli = getattr(client, "ffs_s", None)  # <-- ДОБАВЛЕНО
+
+                self.txt_ffs_info.delete("1.0", "end")
+                self.txt_ffs_info.insert(
+                    "end",
+                    f"n (модуль) = {ffs_n}\n"
+                    f"v сервера = {ffs_v_srv}\n"
+                    f"v клиента  = {ffs_v_cli}\n"
+                    f"s клиента  = {ffs_s_cli}\n\n"
+                )
+
+
+        except Exception:
+            pass
+
         # 6) Подключение успешно — сохранить client и обновить статус GUI
         self.client = client
         self.connected_to_server = True
@@ -450,7 +492,7 @@ class MemberApp:
 
     def on_start_auth_window(self):
         """
-        Запуск процедуры взаимной аутентификации по Шнорру через AuctionMemberClient.
+        Запуск процедуры взаимной аутентификации по схеме FFS (Feige–Fiat–Shamir) через AuctionMemberClient.
         По сути — вызов client.authenticate().
         """
         if self.auth_completed:
@@ -466,7 +508,7 @@ class MemberApp:
             messagebox.showerror("Ошибка", "Сначала укажите идентификатор участника.")
             return
 
-        self._append_auth_log("[CLIENT GUI] Запуск взаимной аутентификации (Клаусс–Шнорр)...")
+        self._append_auth_log("[CLIENT GUI] Запуск взаимной аутентификации (FFS)...")
         self.lbl_auth_status.config(
             text="Статус аутентификации: В ПРОЦЕССЕ", foreground="orange"
         )
@@ -565,17 +607,10 @@ class MemberApp:
             )
             return
 
-        # Сервер мог отклонить заявку (например, окно приёма закрыто)
-        if isinstance(result, dict) and (result.get("ok") is False):
-            reason = result.get("reason") or "Заявка отклонена сервером."
+        # Если сервер отклонил заявку — показываем причину и выходим
+        if isinstance(result, dict) and not result.get("ok", True):
+            reason = result.get("reason", "") or "Заявка отклонена сервером."
             messagebox.showerror("Заявка отклонена", reason)
-
-            # Дополнительно обновим строку статуса, если она есть
-            try:
-                if hasattr(self, "lbl_trade_status") and self.lbl_trade_status:
-                    self.lbl_trade_status.config(text=f"Статус: {reason}")
-            except Exception:
-                pass
             return
 
         # --- 3. Обновляем GUI: показываем y, h, r, s ---
@@ -631,6 +666,9 @@ class MemberApp:
         except TypeError:
             # если у тебя пока старое имя параметра в client_network.py
             resp = self.client.send_fake_bid(bid_value=bid_value, signed_value=fake_signed_value)
+            if isinstance(resp, dict) and resp.get("type") == "BID_RESULT" and not resp.get("ok", True):
+                messagebox.showerror("Заявка отклонена", resp.get("reason", "") or "Заявка отклонена сервером.")
+                return
         except Exception as ex:
             messagebox.showerror("Ошибка", f"Не удалось отправить фиктивную заявку:\n{ex}")
             return
@@ -638,20 +676,6 @@ class MemberApp:
         if not resp:
             messagebox.showerror("Ошибка", "Нет ответа от сервера.")
             return
-
-        # Сервер мог отклонить заявку (например, окно приёма закрыто)
-        if isinstance(resp, dict) and (resp.get("ok") is False):
-            reason = resp.get("reason") or "Заявка отклонена сервером."
-            messagebox.showerror("Заявка отклонена", reason)
-
-            # Дополнительно обновим строку статуса, если она есть
-            try:
-                if hasattr(self, "lbl_trade_status") and self.lbl_trade_status:
-                    self.lbl_trade_status.config(text=f"Статус: {reason}")
-            except Exception:
-                pass
-            return
-
 
         ok = resp.get("ok", False)
         reason = resp.get("reason", "")
@@ -671,7 +695,7 @@ class MemberApp:
     # Вкладка "Проверка"
     # ------------------------------------------------------------------
     def _build_tab_verify(self):
-        frame = ttk.Frame(self.tab_verify)
+        frame = ttk.Frame(self.tab_verify.inner)
         frame.pack(fill="both", expand=True, padx=10, pady=10)
 
         top = ttk.Frame(frame)
