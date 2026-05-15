@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_ne02-s1">
+  <english>This is the reason Secretary of State Condoleezza Rice was cautious in her reaction to the Saudis ' ambiguous acceptance of their invitation to attend the conference .</english>
+  <czech>Právě z toho důvodu se ministryně zahraničí Condoleezza Riceová vyjádřila ve své reakci na nejednoznačný souhlas Saúdů s účastí na konferenci tak obezřetně .</czech>
+  <sure>1-3 4-4 5-6 7-7 8-8 9-9 10-10 11-23 12-11 13-12 14-13 15-14 17-17 19-15 20-16 21-18 25-19 27-21 28-24</sure>
+  <possible>1-1 3-4 6-7 10-5 16-16 18-17 24-19 26-21 27-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s2">
+  <english>The Syria - Iran - Hamas - Hezbollah axis would be emboldened in its challenge to American leadership in the region , and , with Palestinian President Mahmoud Abbas humbled and defeated , a third Intifada would be a likely scenario .</english>
+  <czech>Osu Sýrie - Írán - Hamás - Hizballáh by povzbudil v napadání americké vůdčí úlohy v regionu a poněvadž palestinský prezident Mahmúd Abbás by byl pokořen a poražen , pravděpodobným scénářem by byla třetí intifáda .</czech>
+  <sure>2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-1 13-11 15-12 17-13 18-14 18-15 19-16 21-17 23-18 26-20 27-21 28-22 29-23 30-26 31-27 32-28 33-29 35-34 36-35 38-33 40-30 41-31 42-36</sure>
+  <possible>1-1 10-10 11-10 12-9 16-15 20-17 22-17 24-18 30-24 30-25 34-35 37-33 38-32 39-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s3">
+  <english>It is therefore vitally important to take Syria , an ally of Iran and the patron of spoilers such as Hamas and Hezbollah , out of the war equation .</english>
+  <czech>Je tedy nesmírně důležité z válečné rovnice odebrat Sýrii , spojence Íránu a podporovatele záškodníků , jako jsou Hamás a Hizballáh .</czech>
+  <sure>2-1 3-2 4-3 5-4 7-8 8-9 9-10 11-11 13-12 14-13 16-14 18-15 19-17 20-17 21-19 22-20 23-21 25-5 26-5 28-6 29-7 30-22</sure>
+  <possible>1-1 6-8 10-11 12-12 15-14 17-15 18-16 24-21 27-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s4">
+  <english>But this requires that both Israel and the United States change course .</english>
+  <czech>To ale vyžaduje , aby Izrael i Spojené státy změnily kurz .</czech>
+  <sure>1-2 2-1 3-3 4-5 6-6 7-7 9-8 10-9 11-10 12-11 13-12</sure>
+  <possible>4-4 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s5">
+  <english>Last year , Russia 's Patriarch Aleksei gave his blessing to a visit to Moscow by the Catholic girls ' choir of the Saint Danilov monastery .</english>
+  <czech>Loni ruský patriarcha Aleksej požehnal moskevské návštěvě dívčího katolického sboru z kláštera sv . Danilova .</czech>
+  <sure>1-1 2-1 4-2 6-3 7-4 8-5 9-5 10-5 13-7 15-6 18-9 19-8 21-10 22-11 24-13 25-15 26-12 27-16</sure>
+  <possible>3-1 5-2 11-7 12-7 14-6 16-10 17-10 20-8 23-12 24-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s6">
+  <english>Soon after , and more importantly , the Patriarch raised the level of Orthodoxy 's representation at an ecumenical prayer called by Pope John Paul II in Assisi on January 24 th .</english>
+  <czech>Nedlouho poté došlo k čemusi dalece významnějšímu : patriarcha zvedl úroveň zastoupení pravoslavné církve při ekumenické bohoslužbě , svolané papežem Janem Pavlem II . na 24 . ledna do Assisi .</czech>
+  <sure>1-1 2-1 6-7 7-8 9-9 10-10 12-11 14-13 14-14 16-12 17-15 19-16 20-17 21-19 23-20 24-21 25-22 26-23 27-29 28-30 29-25 30-28 31-26 33-31</sure>
+  <possible>3-1 5-7 8-9 11-11 13-12 15-13 18-17 21-18 22-20 26-24 31-27 32-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s7">
+  <english>This was to be followed by a visit to Moscow by a senior Vatican cleric , Cardinal Walter Kasper , President of the Pontifical Council for Promoting Christian Unity and the man who helped organize last year 's papal visits to Ukraine , Kazakhstan and Armenia .</english>
+  <czech>Po ní měl do Moskvy zavítat vysoký vatikánský duchovní - předseda Pontifikální rady pro šíření křesťanské jednoty kardinál Walter Kasper , který v loňském roce významně pomáhal při organizaci papežské cesty na Ukrajinu , do Kazachstánu a Arménie .</czech>
+  <sure>1-2 9-4 10-5 13-7 14-8 15-9 16-10 17-18 18-19 19-20 20-21 21-11 24-12 25-13 26-14 27-15 28-16 29-17 33-22 34-27 35-29 36-24 37-25 39-30 40-31 41-32 41-35 42-33 43-34 44-36 45-37 46-38 47-39</sure>
+  <possible>11-9 12-9 22-13 23-13 37-23 38-25</possible>
+  <phrasal>3-1 4-1 5-1</phrasal>
+</s>
+<s id="project_syndicate_ne02-s8">
+  <english>As a Frenchman , I cannot wait for the next World Cup match between France and Germany .</english>
+  <czech>Já jako Francouz se například nemohu dočkat dalšího utkání mezi Francií a Německem na mistrovství světa .</czech>
+  <sure>1-2 3-3 5-1 6-6 7-7 10-8 11-16 12-15 13-9 14-10 15-11 16-12 17-13 18-17</sure>
+  <possible>2-3 7-4 8-9 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s9">
+  <english>But I want France to avenge its defeat at the last World Cup in Seville , not its defeat at Verdun .</english>
+  <czech>Přeji si však , aby Francie pomstila svou poslední porážku z mistrovství světa v Seville , nikoliv svou porážku u Verdunu .</czech>
+  <sure>1-3 3-1 4-6 6-7 7-8 8-10 9-11 11-9 12-13 13-12 14-14 15-15 16-16 17-17 18-18 19-19 20-20 21-21 22-22</sure>
+  <possible>2-1 3-2 5-4 5-5 5-7 10-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s10">
+  <english>Pascal Boniface is Director of the Institute for International and Strategic Relations ( IRIS ) , Paris .</english>
+  <czech>Pascal Boniface je ředitelem pařížského Institutu pro mezinárodní a strategické vztahy ( IRIS ) .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-6 8-7 9-8 10-9 11-10 12-11 13-12 14-13 15-14 17-5 18-15</sure>
+  <possible>5-6 6-6 16-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s11">
+  <english>From Khrushchev onward , Moscow 's rulers eyed the Vatican suspiciously but not without interest .</english>
+  <czech>Nedůvěřivě , ale nikoli bez zájmu sledovali Vatikán moskevští mocipáni už od dob Chruščova .</czech>
+  <sure>1-12 2-14 8-7 10-8 11-1 12-3 13-4 14-5 15-6 16-15</sure>
+  <possible>4-14 5-9 6-9 7-10 9-8 12-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s12">
+  <english>Kremlin leaders instinctively understood the benefits of normalising relations with the Holy See for Soviet propaganda and foreign policy , and meetings between the Pope and Andrei Gromyko and Nikolai Podgorny did take place .</english>
+  <czech>Kreml instinktivně chápal přínos normalizace vztahů se Svatým Stolcem pro sovětskou propagandu a zahraniční politiku ; došlo ostatně ke schůzkám mezi papežem a Andrejem Gromykem a Nikolajem Podgornym .</czech>
+  <sure>1-1 3-2 4-3 6-4 8-5 9-6 10-7 12-8 13-9 14-10 15-11 16-12 17-13 18-14 19-15 20-16 22-20 23-21 25-22 26-23 27-24 28-25 29-26 30-27 31-28 33-17 34-17 35-29</sure>
+  <possible>5-4 7-5 11-9 24-22 32-17 33-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s13">
+  <english>Not until 1989 , however , did Mikhail Gorbachev dare establish official relations with the Vatican , inviting Pope John Paul II to visit the Soviet Union .</english>
+  <czech>Až v roce 1989 se však Michail Gorbačov odvážil navázat oficiální vztahy s Vatikánem a pozvat papeže Jana Pavla II . na návštěvu Sovětského svazu .</czech>
+  <sure>3-4 5-6 8-7 9-8 10-9 11-10 12-11 13-12 14-13 16-14 18-16 19-17 20-18 21-19 22-20 23-22 24-23 26-24 27-25 28-26</sure>
+  <possible>4-2 6-6 7-9 15-14 17-15 22-21 25-25</possible>
+  <phrasal>1-1 2-1</phrasal>
+</s>
+<s id="project_syndicate_ne02-s14">
+  <english>Indeed , Brown , for whom America remains " Britain 's most important bilateral relationship , " recently blocked his foreign secretary , David Miliband , from delivering a speech that he considered excessively pro - Europe .</english>
+  <czech>Brown , pro něhož Amerika zůstává " nejvýznamnějším britským bilaterálním vztahem " , nedávno svému ministru zahraničí Davidu Milibandovi znemožnil , aby pronesl řeč , již považoval za příliš proevropskou .</czech>
+  <sure>3-1 4-2 5-3 6-4 7-5 8-6 9-7 10-9 13-8 14-10 15-11 16-13 17-12 18-14 19-20 20-15 21-17 22-16 24-18 25-19 26-21 27-22 28-23 30-24 31-26 33-27 34-29 35-30 36-30 37-30 38-31</sure>
+  <possible>11-9 12-8 23-19 29-24 31-25 32-27 33-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s15">
+  <english>But such uncertainty , common in times of transition , should not overshadow what the end of the Blair - Bush era in Britain holds in store .</english>
+  <czech>Taková nejistota , v transformačních dobách obvyklá , by ale neměla zastínit , co konec éry spojenectví Blair - Bush v Británii přináší .</czech>
+  <sure>1-10 2-1 3-2 4-3 5-7 6-4 7-6 9-5 10-8 11-11 13-12 14-14 16-15 19-18 20-19 21-20 22-16 23-21 24-22 28-24</sure>
+  <possible>8-5 11-9 12-11 14-13 15-15 17-16 18-16</possible>
+  <phrasal>25-23 26-23 27-23</phrasal>
+</s>
+<s id="project_syndicate_ne02-s16">
+  <english>Unilateralism and pre - emptive wars are to be replaced by what Brown defines as " an agenda for a hard - headed internationalism , " based on cooperation with multilateral agencies and alliances – the United Nations , NATO , the European Union , and the British Commonwealth .</english>
+  <czech>Unilateralismus a preemptivní války vystřídá to , co Brown definuje jako " agenda pro střízlivý internacionalismus " , založená na spolupráci s multilaterálními agenturami a aliancemi – Organizací spojených národů , NATO , Evropskou unií a britským společenstvím Commonwealth .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-3 6-4 10-5 12-8 13-9 14-10 15-11 16-12 18-13 19-14 21-15 22-15 23-15 24-16 25-18 26-17 27-19 28-20 29-21 30-22 31-23 32-24 33-25 34-26 35-27 37-29 38-30 39-31 40-32 41-33 43-34 44-35 46-36 48-37 49-39 50-40</sure>
+  <possible>7-5 8-5 9-5 11-8 17-13 20-16 36-30 42-35 45-36 47-39</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s17">
+  <english>A democracy that produces governments led by Hamas , Hezbollah , or the Muslim Brotherhood is inevitably bound to be anti - Western and opposed to an American - inspired " peace process " with Israel .</english>
+  <czech>Demokracie , jejímiž plody jsou vlády vedené Hamásem , Hizballáhem či Muslimským bratrstvem , bude nevyhnutelně protizápadní a bude se stavět proti Američany vštěpovanému " mírovému procesu " s Izraelem .</czech>
+  <sure>2-1 3-3 5-6 6-7 8-8 9-9 10-10 12-11 14-12 15-13 16-15 17-16 20-19 21-17 22-17 23-17 24-18 25-21 26-22 28-23 30-24 31-25 32-26 33-27 34-28 35-29 36-30 37-31</sure>
+  <possible>1-1 3-2 7-8 11-10 13-13 16-14 19-19 25-20 27-27 29-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s18">
+  <english>Syria has already sought to assure regime continuity through quasi - monarchic hereditary succession with the move from Hafez al - Assad to his son Bashar .</english>
+  <czech>Zajistit kontinuitu režimu prostřednictvím kvazimonarchického dědičného následnictví se už pokusila Sýrie , když došlo k přechodu od Háfize al - Asada k jeho synu Bašárovi .</czech>
+  <sure>1-11 3-9 4-10 6-1 7-3 8-2 9-4 10-5 11-5 12-5 13-6 14-7 17-16 18-17 19-18 20-19 21-20 22-21 23-22 24-23 25-24 26-25 27-26</sure>
+  <possible>2-10 4-8 5-1 16-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s19">
+  <english>There are indications that Egypt might follow suit , with Hosni Mubarak 's son , Gamal , taking over .</english>
+  <czech>Existují náznaky , že by příkladu mohl následovat Egypt , kde by moc převzal syn Husního Mubáraka Gamál .</czech>
+  <sure>3-2 4-4 5-9 6-7 7-8 8-8 9-10 11-16 12-17 14-15 16-18 18-14 19-14 20-19</sure>
+  <possible>4-3 6-5 13-17 15-18 17-18</possible>
+  <phrasal>1-1 2-1</phrasal>
+</s>
+<s id="project_syndicate_ne02-s20">
+  <english>But prying Syria from Iran 's embrace means , eventually , reopening the Golan Heights question .</english>
+  <czech>Vyrvat Sýrii z íránského objetí však v konečném důsledku znamená znovuotevřít otázku Golanských výšin .</czech>
+  <sure>1-6 2-1 3-2 4-3 5-4 7-5 8-10 12-11 14-13 15-14 16-12 17-15</sure>
+  <possible>6-4 9-10 11-9 13-12</possible>
+  <phrasal>10-7 10-8 10-9</phrasal>
+</s>
+<s id="project_syndicate_ne02-s21">
+  <english>A deal with Syria is not impossible , given the ambiguities in Assad 's position .</english>
+  <czech>Vzhledem k nejednoznačnosti Asadovy pozice není dohoda se Sýrií nemožná .</czech>
+  <sure>2-7 3-8 4-9 5-6 7-10 9-1 11-3 13-4 15-5 16-11</sure>
+  <possible>1-7 6-6 8-1 10-3 11-2 12-5 14-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s22">
+  <english>On the Israeli / American side , it would include recognition that Syria has security interests in Lebanon .</english>
+  <czech>Na straně Izraele a Spojených států by zahrnovala uznání , že Sýrie má v Libanonu bezpečnostní zájmy .</czech>
+  <sure>1-1 3-3 4-4 5-5 5-6 6-2 10-8 11-9 12-11 13-12 14-13 15-16 16-17 17-14 18-15 19-18</sure>
+  <possible>2-2 7-2 9-8 10-7 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s23">
+  <english>Today 's difficulties in the United States have exacted a heavy toll on growth in Latin America .</english>
+  <czech>Dnešní potíže ve Spojených státech si v Latinské Americe vynucují vyšší daň za ekonomický růst .</czech>
+  <sure>6-4 7-5 9-10 11-11 12-12 13-13 14-15 15-7 16-8 17-9 18-16</sure>
+  <possible>2-1 3-2 4-3 5-5 8-10 9-6 10-12</possible>
+  <phrasal>1-1</phrasal>
+</s>
+<s id="project_syndicate_ne02-s24">
+  <english>Mexico , with most of its exports destined for North America , is now in recession .</english>
+  <czech>Mexiko , jehož exportní většina je určená pro Severní Ameriku , nyní prožívá recesi .</czech>
+  <sure>1-1 2-2 4-5 6-3 7-4 8-7 9-8 10-9 11-10 12-11 13-13 14-12 16-14 17-15</sure>
+  <possible>5-4 15-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s25">
+  <english>Thus , growth in Asia and Latin America depends not only on sound domestic policies , but also on what happens elsewhere .</english>
+  <czech>Ekonomický růst v Asii a Latinské Americe tedy nezáleží pouze na domácí politice , záleží i na tom , co se děje jinde .</czech>
+  <sure>1-8 3-2 4-3 5-4 6-5 7-6 8-7 9-9 11-10 12-11 14-12 15-13 16-14 18-16 19-17 20-20 21-22 22-23 23-24</sure>
+  <possible>2-8 10-9 20-19 21-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s26">
+  <english>Germany and France were against meeting Saddam Hussein with military force , but had no alternative for getting rid of the butcher of Baghdad .</english>
+  <czech>Německo a Francie byly proti použití vojenské síly vůči Saddámu Husajnovi , ale nenabízely jinou možnost , jak bagdádského řezníka odstranit .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-10 8-11 10-7 11-8 12-12 13-13 16-15 16-16 17-18 18-21 19-21 22-20 24-19 25-22</sure>
+  <possible>8-9 9-6 14-14 15-14 17-17 20-21 21-20 23-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s27">
+  <english>" What was the European answer to the problem of Saddam Hussein ? " asked Senator Joe Biden in a panel discussion at the recent Davos forum .</english>
+  <czech>" Jak zněla evropská odpověď na problém Saddáma Husajna ? " ptal se senátor Joe Biden v panelové diskusi na nedávném davoském fóru .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 7-6 9-7 11-8 12-9 13-10 14-11 15-12 16-14 17-15 18-16 19-17 21-18 22-19 23-20 25-21 26-22 27-23 28-24</sure>
+  <possible>4-5 8-7 10-9 15-13 20-19 24-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s28">
+  <english>Biden is a Democrat and strong critic of President Bush .</english>
+  <czech>Biden je člen Demokratické strany a ostrý kritik prezident Bushe .</czech>
+  <sure>1-1 2-2 4-4 5-6 6-7 7-8 9-9 10-10 11-11</sure>
+  <possible>3-3 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s29">
+  <english>Once President Valéry Giscard d ' Estaing and Federal Chancellor Helmut Schmidt made the joint Franco German proposal for the Economic and Monetary Union ( EMU ) , both Belgium and the Netherlands worked together to achieve that common goal .</english>
+  <czech>Jakmile prezident Valéry Giscard d ' Estaing a federální kancléř Helmut Schmidt přednesli společný francouzsko - německý návrh Hospodářské a měnové unie ( HMU ) , Belgie a Nizozemsko ve shodě pracovaly na dosažení společného cíle .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-12 13-13 15-14 16-15 17-16 17-17 18-18 21-19 22-20 23-21 24-22 25-23 26-24 27-25 28-26 30-27 31-28 33-29 34-32 35-30 35-31 36-33 37-34 39-35 40-36 41-37</sure>
+  <possible>14-18 19-22 20-22 32-29 38-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s30">
+  <english>Along with Luxembourg , they were an important factor in creating EMU .</english>
+  <czech>Společně s Lucemburskem byly významným činitelem vytvoření HMU .</czech>
+  <sure>1-1 2-2 3-3 6-4 8-5 9-6 11-7 12-8 13-9</sure>
+  <possible>4-3 5-4 7-6 10-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s31">
+  <english>In 1991 , when the Netherlands held the European presidency , Belgium supported its far - reaching draft for a treaty of European Union .</english>
+  <czech>V roce 1991 , kdy Nizozemsko zastávalo evropské předsednictví , Belgie podpořila jeho dalekosáhlý návrh smlouvy o Evropské unii .</czech>
+  <sure>1-1 2-3 3-4 4-5 6-6 7-7 9-8 10-9 11-10 12-11 13-12 14-13 15-14 16-14 17-14 18-15 21-16 22-17 23-18 24-19 25-20</sure>
+  <possible>5-6 8-9 19-16 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s32">
+  <english>WASHINGTON , DC : I have no personal opinion on the virtues of Caio Koch - Weiser , Germany 's candidate to head the International Monetary Fund .</english>
+  <czech>WASHINGTON : Na Caia Koch - Weisera , německého kandidáta na vedení Mezinárodního měnového fondu , nemám dosud žádný názor .</czech>
+  <sure>1-1 3-1 4-2 6-17 7-19 9-20 10-3 14-4 15-5 16-6 17-7 18-8 19-9 21-10 22-11 23-12 25-13 26-14 27-15 28-21</sure>
+  <possible>2-1 5-17 13-5 20-9 24-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s33">
+  <english>But dithering over Michel Camdessus 's replacement ought to stop .</english>
+  <czech>Váhání ohledně nástupce Michela Camdessuse musí ale rozhodně skončit co nejdříve .</czech>
+  <sure>1-7 2-1 3-2 4-4 5-5 7-3 8-6 10-9 11-12</sure>
+  <possible>6-5 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s34">
+  <english>Stanley Fischer , a brilliant , experienced economist will lead the Fund very well in the interim .</english>
+  <czech>Prozatím je jisté , že Stanley Fischer , vynikající a zkušený ekonom , bude Fond dočasně řídit velice dobře .</czech>
+  <sure>1-6 2-7 5-9 6-10 7-11 8-12 10-17 12-15 13-18 14-19 18-20</sure>
+  <possible>3-7 4-12 8-8 8-13 9-17 10-14 11-15</possible>
+  <phrasal>15-16 16-16 17-16</phrasal>
+</s>
+<s id="project_syndicate_ne02-s35">
+  <english>But Kennedy was anxious about the consequences of having Soviet missiles in Cuba on Berlin .</english>
+  <czech>Kennedyho ale zneklidňovaly důsledky , jež by sovětské hlavice na Kubě mohly mít pro Berlín .</czech>
+  <sure>1-2 2-1 4-3 7-4 10-8 11-9 12-10 13-11 14-14 15-15 16-16</sure>
+  <possible>3-3 5-4 6-4 8-6 9-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s36">
+  <english>Nuclear pressures from Cuba would have made defense of Berlin more difficult , which was part of Khrushchev 's strategy .</english>
+  <czech>Jaderný tlak z Kuby by totiž ztížil obranu Berlína , což byla část Chruščovovy strategie .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-7 8-8 10-9 11-7 12-7 13-10 14-11 15-12 16-13 18-14 20-15 21-16</sure>
+  <possible>5-7 6-7 7-5 9-9 17-14 19-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s37">
+  <english>In the end , " the Berlin Crisis was solved through the outcome of the Cuban Missile Crisis , " the historian Ernest May argued .</english>
+  <czech>Nakonec však podle historika Ernesta Maye " berlínskou krizi vyřešil výsledek kubánské raketové krize " .</czech>
+  <sure>5-7 7-8 8-9 10-10 13-11 16-12 17-13 18-14 20-15 22-4 23-5 24-6 26-16</sure>
+  <possible>4-1 6-9 9-10 11-11 12-11 14-14 15-14 19-15 21-4</possible>
+  <phrasal>1-1 2-1 3-1</phrasal>
+</s>
+<s id="project_syndicate_ne02-s38">
+  <english>And Kosovo 's Albanian population is clamoring for independence , while Serbia tries to postpone a decision by blocking action in the Security Council .</english>
+  <czech>Albánské obyvatelstvo Kosova se dožaduje nezávislosti , zatímco Srbsko se snaží rozhodnutí zdržet a blokuje jednání v Radě bezpečnosti .</czech>
+  <sure>2-3 4-1 5-2 7-5 9-6 10-7 11-8 12-9 13-11 15-13 17-12 19-15 20-16 21-17 23-19 24-18 25-20</sure>
+  <possible>3-3 6-5 7-4 8-6 13-10 14-13 16-12 18-15 22-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s39">
+  <english>Similarly , any move by Bosnia 's Serb Republic to secede could incite instability there .</english>
+  <czech>Podobně by v Bosně mohl vyvolat nestabilitu jakýkoli krok bosenské Republiky srbské k odštěpení .</czech>
+  <sure>1-1 3-8 4-9 6-10 8-12 9-11 10-13 11-14 12-5 13-6 14-7 16-15</sure>
+  <possible>2-1 5-11 7-10 12-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s40">
+  <english>Serbia , which traded violent nationalism for nonviolent nationalism when Slobodan Milosevic was overthrown eight years ago , has done all it can to impede resolution of these issues , with strong support from Vladimir Putin 's Russia .</english>
+  <czech>Srbsko , jež po svržení Slobodana Miloševiće před osmi lety vyměnilo násilný nacionalismus za nacionalismus nenásilný , udělalo vše pro to , aby řešení těchto otázek brzdilo , za silné podpory Ruska Vladimíra Putina .</czech>
+  <sure>1-1 2-2 3-3 4-11 5-12 6-13 7-14 8-16 9-15 10-4 11-6 12-7 14-5 15-9 16-10 17-8 18-17 20-18 21-19 24-23 25-27 26-24 28-25 29-26 30-28 31-29 32-30 33-31 35-33 36-34 38-32 39-35</sure>
+  <possible>13-5 19-18 24-27 27-26 34-32 37-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s41">
+  <english>Serbia wants as much independence as possible for the Serb Republic , while asserting its own sovereignty over Kosovo .</english>
+  <czech>Srbsko chce maximum nezávislosti pro Republiku srbskou , zároveň ale prosazuje vlastní svrchovanost nad Kosovem .</czech>
+  <sure>1-1 2-2 5-4 8-5 10-7 11-6 12-8 13-9 14-11 16-12 17-13 18-14 19-15 20-16</sure>
+  <possible>9-6</possible>
+  <phrasal>3-3 4-3 6-3 7-3</phrasal>
+</s>
+<s id="project_syndicate_ne02-s42">
+  <english>Serbs governed only by Serbs on their own territory is still Serbia 's goal .</english>
+  <czech>Srbským cílem stále jsou Srbové pod vládou Srbů na svém vlastním území .</czech>
+  <sure>1-5 2-7 5-8 6-9 7-10 8-11 9-12 10-4 11-3 12-1 14-2 15-13</sure>
+  <possible>4-8 5-6 13-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s43">
+  <english>The United States and the European Union are committed to a different vision : democratic transition and integration of all of the Balkans into NATO and eventually the EU .</english>
+  <czech>Spojené státy a Evropská unie se hlásí k odlišné vizi : demokratické transformaci a integraci celého Balkánu do NATO a nakonec do EU .</czech>
+  <sure>2-1 3-2 4-3 6-4 7-5 9-7 10-8 12-9 13-10 14-11 15-12 16-13 17-14 18-15 20-16 23-17 24-18 24-22 25-19 26-20 27-21 29-23 30-24</sure>
+  <possible>1-2 5-5 8-7 9-6 11-10 19-17 21-17 22-17 28-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s44">
+  <english>But they have been reluctant to impose conditions on Serbia , for fear of bringing even more radical nationalists to power .</english>
+  <czech>Zdráhají se ale uvalit na Srbsko nějaké podmínky , neboť mají strach , že by přivedly k moci ještě radikálnější nacionalisty .</czech>
+  <sure>1-3 5-1 7-4 8-8 9-5 10-6 11-9 12-10 13-12 15-16 16-19 18-20 19-21 20-17 21-18 22-22</sure>
+  <possible>2-1 3-1 4-1 5-2 6-4 14-13 14-14 15-15 17-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s45">
+  <english>In Kosovo , now that a last - ditch round of negotiations has concluded with a report to the UN Secretary General , the US and the EU should agree to recognize Kosovo 's independence , provided the Kosovars agree to implement the plan submitted by Finnish mediator Marti Ahtisaari .</english>
+  <czech>Co se týče Kosova , USA a EU by se teď , když poslední , zoufalé kolo vyjednávání skončilo zprávou pro generálního tajemníka OSN , měly dohodnout na uznání kosovské nezávislosti , za předpokladu , že Kosované budou souhlasit s uskutečněním plánu předloženého finským zprostředkovatelem Martim Ahtisaarim .</czech>
+  <sure>2-4 3-5 4-11 5-13 7-14 9-16 10-17 12-18 14-19 17-20 18-21 20-24 21-23 22-22 23-25 25-6 26-7 28-8 29-26 30-27 31-28 32-29 33-30 35-31 36-32 37-33 37-34 39-37 40-39 41-40 42-41 44-42 45-43 47-44 48-45 49-46 50-47 51-48</sure>
+  <possible>5-12 6-17 8-16 9-15 11-18 13-19 15-20 16-20 19-23 24-6 27-8 29-9 30-10 34-30 37-35 37-36 38-37 40-38 43-42 46-45</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s46">
+  <english>The Ahtisaari plan provides ample protection for Serbs and an international presence in Kosovo – which the US and the EU will need to deploy even without a new Security Council resolution – to ensure implementation .</english>
+  <czech>Ahtisaariho plán zajišťuje dostatek ochrany pro Srby a mezinárodní přítomnost v Kosovu – již budou USA a EU muset zajistit i bez nové rezoluce Rady bezpečnosti , aby byla zabezpečena realizace .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 11-9 12-10 13-11 14-12 15-13 16-14 18-16 19-17 21-18 23-19 25-20 26-21 27-22 29-23 30-26 31-25 32-24 33-27 34-28 35-30 36-31 37-32</sure>
+  <possible>1-2 10-10 17-16 20-18 22-19 23-15 24-20 28-24 35-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s47">
+  <english>Ironically , Serbia 's resistance to the Ahtisaari plan undermines protection for Kosovo 's Serbs and increases the risk that they will be mistreated .</english>
+  <czech>Je ironické , že odpor Srbska vůči Ahtisaariho plánu podrývá ochranu kosovských Srbů a zvyšuje riziko , že s nimi bude zle nakládáno .</czech>
+  <sure>1-2 2-3 3-6 5-5 6-7 8-8 9-9 10-10 11-11 13-12 15-13 16-14 17-15 19-16 20-18 21-20 24-22 24-23 25-24</sure>
+  <possible>4-6 7-9 12-13 14-12 18-16 20-17 21-23 22-23 23-23 24-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s48">
+  <english>It worked against Libya , leading Muammar Khadafi in the late 1990 's to stop sponsoring terrorism , turn over the Lockerbie bombers for trial , and pay compensation to British and French victims of Libyan - sponsored terrorism .</english>
+  <czech>Osvědčilo se vůči Libyi , když na konci 90 . let přimělo Muammara Kaddáfího , aby přestal finančně podporovat terorismus , vydal atentátníky z aféry Lockerbie k soudu a vyplatil odškodné britským a francouzským obětem Libyí sponzorovaného terorismu .</czech>
+  <sure>2-1 3-3 4-4 5-5 6-12 7-13 8-14 9-7 11-8 14-16 15-17 16-18 16-19 17-20 18-21 19-22 20-22 22-26 23-23 24-27 25-28 27-29 28-30 29-31 31-32 32-33 33-34 34-35 36-36 38-37 39-38 40-39</sure>
+  <possible>1-1 1-39 2-2 10-8 14-15 21-23 26-29 30-35 35-38 37-36</possible>
+  <phrasal>12-9 12-10 12-11 13-9 13-10 13-11</phrasal>
+</s>
+<s id="project_syndicate_ne02-s49">
+  <english>Claims that he abandoned his nuclear program in response to the US - led invasion of Iraq have been refuted by Flynt Leverett , director for Middle Eastern affairs at the US National Security Council from 2002 to 2003 .</english>
+  <czech>Tvrzení , že od svého jaderného programu ustoupil v reakci na invazi do Iráku pod vedením USA , vyvrátil Flynt Leverett , ředitel pro otázky Středního východu Národní bezpečnostní rady USA v letech 2002 až 2003 .</czech>
+  <sure>1-1 2-3 4-8 5-5 6-6 7-7 8-9 9-10 10-11 12-17 14-16 15-12 17-14 20-19 22-20 23-21 24-22 25-23 26-24 27-26 28-27 29-25 32-31 33-28 34-29 35-30 37-34 38-35 39-36 40-37</sure>
+  <possible>2-2 3-8 4-4 11-12 13-16 14-15 16-14 18-19 19-19 20-18 21-21 30-30 31-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne02-s50">
+  <english>According to Leverett , Khadafi 's decision predated the invasion and was a response to an explicit quid - pro - quo to end international sanctions against Libya .</english>
+  <czech>Podle Leveretta padlo Kaddáfího rozhodnutí ještě před invazí a bylo odpovědí na explicitní podmínečnou nabídku ukončení mezinárodních sankcí vůči Libyi .</czech>
+  <sure>1-1 2-1 3-2 5-4 7-5 8-3 10-8 11-9 12-10 14-11 15-12 17-13 18-14 18-15 19-14 19-15 20-14 20-15 21-14 21-15 22-15 24-16 25-17 26-18 27-19 28-20 29-21</sure>
+  <possible>4-2 6-4 8-7 9-8 13-11 16-15 23-16</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

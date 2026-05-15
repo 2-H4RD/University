@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2435-s1">
+  <english>Matsushita Electric Industrial Co . of Japan and Siemens AG of West Germany announced they have completed a 100 million-mark ( $ 52.2 million ) joint venture to produce electronics parts .</english>
+  <czech>Firmy Matsushita Electric Industrial Co . z Japonska a Siemens AG ze Západního Německa oznámily , že uzavřely joint - venture na výrobu elektronických součástek v hodnotě 100 milionů marek ( 52,2 milionů $ ) .</czech>
+  <sure>1-2 10-11 11-12 12-13 13-14 14-15 16-18 17-18 19-28 2-3 20-29 20-30 21-31 22-34 23-32 24-33 25-35 26-19 27-21 28-22 29-23 3-4 30-24 31-25 32-36 4-5 5-6 6-7 7-8 8-9 9-10</sure>
+  <possible>15-18 18-21</possible>
+</s>
+<s id="wsj_2435-s2">
+  <english>In the venture 's first fiscal year , Siemens will hold 74.9 % of the venture and a Matsushita subsidiary , Matsushita Electronic Components Co . , 25.1 % .</english>
+  <czech>V prvním fiskálním roce tohoto podniku bude Siemens vlasnit 74,9 % podniku a dceřiná společnost Matsushity , Matsushita Electronic Components Co . , 25,1 % .</czech>
+  <sure>1-1 10-7 11-9 12-10 13-11 16-12 17-13 19-16 20-14 20-15 21-17 22-18 23-19 24-20 25-21 26-22 27-23 28-24 29-25 3-6 30-26 5-2 6-3 7-4 9-8</sure>
+  <possible>14-12 15-12 18-15 2-4 2-5 4-6</possible>
+</s>
+<s id="wsj_2435-s3">
+  <english>A basic agreement between the two companies was announced in June .</english>
+  <czech>Základní dohoda mezi těmito dvěma společnostmi byla oznámena v červnu .</czech>
+  <sure>10-9 11-10 12-11 2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8</sure>
+  <possible>1-2</possible>
+</s>
+<s id="wsj_2435-s4">
+  <english>The new company is to be called Siemens Matsushita Components G . m . b . H .</english>
+  <czech>Nová společnost se má jmenovat Siemens Matsushita Components G . m . b . H .</czech>
+  <sure>10-8 11-9 12-10 13-11 14-12 15-13 16-14 17-15 18-16 2-1 3-2 4-4 5-4 6-4 7-5 8-6 9-7</sure>
+  <possible>1-2 4-3 5-3 6-3</possible>
+</s>
+<s id="wsj_2435-s5">
+  <english>It will have its headquarters in Munich .</english>
+  <czech>Své ústředí bude mít v Mnichově .</czech>
+  <sure>2-3 3-4 4-1 5-2 6-5 7-6 8-7</sure>
+  <possible>1-3</possible>
+</s>
+<s id="wsj_2435-s6">
+  <english>Matsushita 's share in the venture will rise to 35 % Oct . 1 , 1990 , and to 50 % the following Oct . 1 .</english>
+  <czech>Podíl Matsushity v tomto podniku se zvýší 1 . října 1990 na 35 % a 1 . října následujícího roku na 50 % .</czech>
+  <sure>1-2 10-13 11-14 12-10 14-8 16-11 18-15 19-21 20-22 21-23 23-19 24-18 26-16 27-24 3-1 4-3 5-4 6-5 7-7 8-6 8-7 9-12</sure>
+  <possible>14-9 2-2 22-18 26-17</possible>
+</s>
+<s id="wsj_2435-s7">
+  <english>Siemens will retain majority voting rights .</english>
+  <czech>Siemens si ponechá většinová hlasovací práva .</czech>
+  <sure>1-1 2-3 3-3 4-4 5-5 6-6 7-7</sure>
+  <possible>3-2</possible>
+</s>
+<s id="wsj_2435-s8">
+  <english>The parent companies forecast sales for the venture of around 750 million marks for its first fiscal year , Matsushita said .</english>
+  <czech>Mateřské společnosti předpovídají v prvním fiskálním roce tržby podniku okolo 750 milionů marek , uvedli zástupci Matsushity .</czech>
+  <sure>10-10 11-11 12-12 13-13 19-14 2-1 20-17 21-15 22-18 3-2 4-3 5-8 8-9</sure>
+  <possible>1-2 14-4 15-5 16-5 16-6 17-6 17-7 18-4 18-7 18-8 6-9 7-9 9-10 9-13</possible>
+</s>
+<s id="wsj_2435-s9">
+  <english>Sales are expected to rise to one billion marks after four years .</english>
+  <czech>Očekává se , že tržby se po čtyřech letech zvýší na 1 miliardu marek .</czech>
+  <sure>1-5 10-7 11-8 12-9 13-15 2-1 3-1 5-10 6-11 7-12 8-13 9-14</sure>
+  <possible>2-2 2-3 2-4 3-2 3-3 3-4 4-10 5-6</possible>
+</s>
+<s id="wsj_2435-s10">
+  <english>The company will have production facilities in West Germany , Austria , France and Spain .</english>
+  <czech>Společnost bude mít výrobní zařízení v Západním Německu , Rakousku , Francii a Španělsku .</czech>
+  <sure>10-9 11-10 12-11 13-12 14-13 15-14 16-15 2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8</sure>
+  <possible>1-1</possible>
+</s>
+</sentences>

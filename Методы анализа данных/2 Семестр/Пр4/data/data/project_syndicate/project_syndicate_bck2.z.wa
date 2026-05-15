@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_bck2-s1">
+  <english>The Myth of Inter - generational Justice</english>
+  <czech>Mýtus o mezigenerační spravedlnosti</czech>
+  <sure>2-1 3-2 4-3 6-3 7-4</sure>
+  <possible>1-1 5-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s2">
+  <english>Wilfred Beckerman</english>
+  <czech>Wilfred Beckerman</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s3">
+  <english>OXFORD :</english>
+  <czech>OXFORD :</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s4">
+  <english>" Why do anything for posterity ? " is an old rhetorical question , usually followed by " after all , posterity has never done anything for us . "</english>
+  <czech>" Proč bychom měli všechno dělat jen v zájmu našich dětí " je prastará řečnická otázka , obvykle doprovázena dodatkem , že " koneckonců , naše děti pro nás taky nikdy nic neudělaly . "</czech>
+  <sure>1-1 2-2 3-6 4-5 5-8 5-9 6-11 8-12 9-13 11-14 12-15 13-16 14-17 15-18 16-19 18-23 19-24 20-24 21-25 22-27 24-31 25-33 26-32 27-28 28-29 29-34 30-35</sure>
+  <possible>6-10 10-14 17-19 22-26 23-33 24-33 26-33</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s5">
+  <english>This supposedly absolves us from obligations to future generations .</english>
+  <czech>To nás hypoteticky zbavuje povinností vůči všem budoucím pokolením .</czech>
+  <sure>1-1 2-3 3-4 4-2 6-5 7-6 8-8 9-9 10-10</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s6">
+  <english>The opposite view is held by many social and environmental activists .</english>
+  <czech>Ovšem mnoho společenských i ochranářských aktivistů zastává zcela opačný názor .</czech>
+  <sure>2-9 3-10 5-7 7-2 8-3 9-4 11-6 12-11</sure>
+  <possible>1-9 4-7 6-6 10-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s7">
+  <english>We must respect the " rights " of future generations , they say , we must take account of their interests in accordance with the dictates of some principles of justice .</english>
+  <czech>Ti říkají , že musíme respektovat " práva " budoucích generací a rovněž musíme dbát jejich zájmů dle příkazů určitých principů spravedlnosti .</czech>
+  <sure>2-5 3-6 5-7 6-8 7-9 9-10 10-11 12-1 13-2 14-3 16-14 17-15 18-15 20-16 21-17 22-18 23-18 26-19 28-20 29-21 31-22 32-23</sure>
+  <possible>1-5 4-8 8-11 15-14 19-17 24-19 25-19 27-21 30-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s8">
+  <english>The truth , as usual , lies somewhere in between .</english>
+  <czech>Pravda , jako obvykle , leží někde uprostřed .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 10-8 11-9</sure>
+  <possible>1-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s9">
+  <english>Future generations do not have any rights , but this does not absolve us from moral constraints on those of our policies that may affect their interests .</english>
+  <czech>Budoucí generace přirozeně nemají žádná práva , ale to nás nezbavuje povinnosti morálního nátlaku na ty z našich politiků , kteří by svými postoji mohli jejich zájmy poškodit .</czech>
+  <sure>1-1 2-2 4-4 5-4 6-5 7-6 8-7 9-8 10-9 12-11 13-11 14-10 16-13 17-14 18-15 19-16 20-17 21-18 22-19 23-21 24-25 25-28 26-26 27-27 28-29</sure>
+  <possible>3-4 11-11 15-14 23-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s10">
+  <english>The reason why unborn people do not have any rights is that unborn people do not have anything .</english>
+  <czech>Důvod , proč nenarození lidé nedisponují žádnými právy , je ten , že nenarození lidé nemají vůbec nic .</czech>
+  <sure>2-1 3-3 4-4 5-5 7-6 8-6 9-7 10-8 11-10 12-11 13-14 14-15 16-16 17-16 18-18 19-19</sure>
+  <possible>1-1 3-2 6-6 15-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s11">
+  <english>They do not have legs , or hair , or a taste for Mozart .</english>
+  <czech>Nemají končetiny , ani vlasy , a ani disposici milovat Mozarta .</czech>
+  <sure>3-1 4-1 5-2 6-3 7-4 8-5 9-6 10-8 14-11 15-12</sure>
+  <possible>1-1 2-1 13-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s12">
+  <english>They are not here ; they do not exist ; period .</english>
+  <czech>Zatím zde nejsou ; neexistují ; tečka .</czech>
+  <sure>2-3 3-3 4-2 5-4 8-5 9-5 10-6 11-7 12-8</sure>
+  <possible>1-3 6-5 7-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s13">
+  <english>Unborn people should not be thought of as some special class waiting in the wings for the cue to bring them onstage .</english>
+  <czech>Nenarození lidé by neměli být považováni za nějakou podivnou zvláštní třídu čekající kdesi nahoře na vhodný okamžik , aby se snesli na zem .</czech>
+  <sure>1-1 2-2 3-3 3-4 4-4 5-5 6-6 8-7 9-8 10-10 11-11 12-12 19-19 23-24</sure>
+  <possible>7-6 19-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s14">
+  <english>Of course , when born these future generations will have rights .</english>
+  <czech>Samozřejmě , v okamžiku zrození získávají tyto budoucí generace i svá práva .</czech>
+  <sure>1-1 2-1 3-2 4-3 4-4 5-5 6-7 7-8 8-9 10-6 11-12 12-13</sure>
+  <possible>9-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s15">
+  <english>The debate over what form these rights should take has been going on for over two millennia , so it is difficult to summarise .</english>
+  <czech>Debata nad tím , jakou podobu by tato práva měla mít , již probíhá přes dvě tisíciletí , a je tedy celkem obtížné ji ve zkratce shrnout .</czech>
+  <sure>2-1 3-2 4-5 5-6 6-8 7-9 8-7 8-10 9-11 12-14 13-14 15-15 16-16 17-17 18-18 19-19 21-20 22-23 24-27 25-28</sure>
+  <possible>1-1 4-3 4-4 10-14 11-14 14-16 20-20 23-27</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s16">
+  <english>Nevertheless , it can be said that the debate has been almost entirely about the rights that people have to what is available at the time , and this applies equally to future generations .</english>
+  <czech>Nicméně , je možné říci , že tato debata byla téměř vždy jen o právech , jež lidé mají při daných možnostech v daném čase , a to je možné plně aplikovat i na budoucí generace .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-7 8-8 9-9 11-10 12-11 13-12 14-14 16-15 17-17 18-18 19-19 20-20 23-22 24-23 25-24 26-25 27-26 28-27 29-28 30-32 32-34 33-35 34-36 35-37</sure>
+  <possible>5-5 7-6 10-10 15-15 17-16 21-21 22-22 31-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s17">
+  <english>If , at any point in time , people have any moral rights at all , they are rights to what is available .</english>
+  <czech>Pokud , ve kterémkoliv časovém okamžiku , lidé disponují nějakými morálními právy , jsou to vždy práva , jež jsou v dané chvíli dosažitelná .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 7-5 8-7 9-8 10-9 11-10 12-11 13-12 18-14 19-17 21-19 22-20 23-24 24-25</sure>
+  <possible>6-5 17-14 21-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s18">
+  <english>To begin with they will have basic natural rights to life and as much freedom and security to pursue whatever it is that makes their lives valuable to them as is compatible with the maximum freedom and security of others .</english>
+  <czech>Začněme tedy tím , že budou mít základní přirozená práva , jako je právo na život a právo na tolik svobody a bezpečnosti , kolik bude třeba k zajištění všeho , co jim zhodnotí jejich životy , až do míry , kdy se tato vyrovná maximální míře svobody a bezpečnosti ostatních .</czech>
+  <sure>2-1 5-6 6-7 7-8 8-9 9-10 10-15 11-16 12-17 13-20 14-20 15-21 16-22 17-23 18-28 19-29 20-30 22-26 23-32 25-35 26-36 27-34 30-42 32-43 32-45 35-46 36-48 37-49 38-50 40-51 41-52</sure>
+  <possible>1-1 3-1 4-6 21-26 24-34 27-33 31-45 33-46 34-46 35-47 39-51</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s19">
+  <english>These " rights " may also entail secondary moral rights to a certain share of the " goods " available to society at any point .</english>
+  <czech>Tato " práva " s sebou rovněž mohou přinést sekundární morální práva na jistý podíl " zboží " , jež má společnost k disposici v daném okamžiku .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-8 6-7 7-9 8-10 9-11 10-12 11-13 13-14 14-15 17-16 18-17 19-18 20-23 20-24 22-22 23-25 24-26 25-27 26-28</sure>
+  <possible>7-5 7-6 12-15 15-17 16-17 20-21 21-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s20">
+  <english>But they have no " right " to what was , or will become , available at any other time .</english>
+  <czech>Ale nemají žádná " práva " na cokoliv , co bylo , anebo bude k disposici v kterémkoliv jiném časovém okamžiku .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 10-11 11-12 12-13 14-14 16-15 16-16 17-17 18-18 19-19 20-20 20-21 21-22</sure>
+  <possible>2-2 4-2 13-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s21">
+  <english>For example , we may regret that we can no longer see some species of wild animal that has been hunted to extinction by people who lived centuries ago .</english>
+  <czech>Například , můžeme litovat , že už nikdy neuvidíme některé druhy divoké zvěře , které byly vyhubeny lidmi , jež žili před staletími .</czech>
+  <sure>1-1 2-1 3-2 5-3 6-4 7-6 12-9 13-10 14-11 16-12 17-13 18-15 20-16 23-17 25-18 26-20 27-21 28-23 29-22 30-24</sure>
+  <possible>4-3 7-5 8-9 9-9 10-9 15-13 18-14 19-16 21-17 22-17 24-18 26-19</possible>
+  <phrasal>10-7 10-8 11-7 11-8</phrasal>
+</s>
+<s id="project_syndicate_bck2-s22">
+  <english>But we would not claim that , in doing so , they violated our " rights " .</english>
+  <czech>Nemůžeme je totiž za to , že tak činili , pohnat k soudu pro poškození našich " práv . "</czech>
+  <sure>3-1 4-1 6-7 9-9 10-8 11-10 13-15 14-16 15-17 16-18 17-20 18-19</sure>
+  <possible>2-1 6-6 8-9 12-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s23">
+  <english>If we have a moral " right " it must be possible for us , in principle , to insist on its being respected , or to complain to whoever has the counterpart obligation if it is not being respected , or to delegate somebody else – such as our lawyer – to claim that our rights be respected .</english>
+  <czech>Pokud máme mít nějaké morální " právo " , musí to být právo , které umožňuje , abychom , z principu , trvali na jeho respektování , či abychom si mohli stěžovat komukoliv , kdo disponuje příslušnou pravomocí , na to , že naše právo není respektováno a ctěno , anebo pověřit někoho jiného – jako například svého právníka – aby za nás vznesl požadavek na dodržování našich práv .</czech>
+  <sure>1-1 3-2 4-4 5-5 6-6 7-7 8-8 10-10 11-12 12-16 15-19 16-20 17-21 18-22 20-23 21-24 22-25 24-26 25-27 26-28 27-29 28-30 28-32 30-33 31-36 34-38 36-41 37-46 38-46 40-47 41-50 42-51 44-52 45-53 46-54 47-55 48-56 49-56 50-58 51-59 52-60 53-61 54-64 54-65 56-68 57-69 59-67 60-70</sure>
+  <possible>2-2 9-10 13-18 14-18 19-23 23-26 29-33 32-38 33-37 39-47 43-52 55-66 58-67</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s24">
+  <english>In practice , in many parts of the world today , these courses of action are not open to most people .</english>
+  <czech>Praxe je ovšem taková , že v mnoha částech našeho světa dodnes nejsou tyto modely chování přístupné většině jejich obyvatel .</czech>
+  <sure>2-1 3-5 4-7 5-8 6-9 9-11 12-14 13-15 15-16 17-13 18-17 20-18 21-20 22-21</sure>
+  <possible>1-1 7-11 8-11 10-10 14-16 16-13 19-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s25">
+  <english>But this is because of a deficiency in their social arrangements and their political or judicial systems .</english>
+  <czech>Tak se ale děje kvůli nedostatkům v jejich společenském uspořádání a v jejich politických či soudních systémech .</czech>
+  <sure>1-3 2-1 3-2 3-4 4-5 5-5 7-6 8-7 9-8 10-9 11-10 12-11 13-13 14-14 15-15 16-16 17-17 18-18</sure>
+  <possible>6-6 17-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s26">
+  <english>It is not a matter of logical impossibility .</english>
+  <czech>Není to tedy věc logické nemožnosti .</czech>
+  <sure>1-2 2-1 3-1 5-4 7-5 8-6 9-7</sure>
+  <possible>4-4 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s27">
+  <english>Between distant generations , however , such is logically impossible .</english>
+  <czech>Ale mezi vzdálenými generacemi jsou výše popsané pře logicky nemožné .</czech>
+  <sure>1-2 2-3 3-4 5-1 8-5 9-9 10-10 11-11</sure>
+  <possible>4-1 6-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s28">
+  <english>Even in lawsuit - happy America one could not find a lawyer to represent my claim against the hunters who , three centuries ago , deprived me of the chance to see the now - extinct Dodo .</english>
+  <czech>Dokonce i v zemi soudních pří , Americe , bych jen těžko našel právníka , který by mě chtěl zastupovat v soudní při proti lovcům , jež mě , před třemi staletími , připravili o možnost zahlédnout nyní vymřelého ptáka Doda .</czech>
+  <sure>1-1 2-3 3-5 3-6 6-8 10-13 12-14 14-20 15-18 17-24 19-25 20-27 21-29 22-31 23-32 24-30 25-33 26-34 27-28 28-35 30-36 32-37 34-38 36-39 37-41 38-42</sure>
+  <possible>1-2 8-13 10-10 11-14 13-20 16-21 16-22 16-23 18-25 20-26 29-36 31-37 33-41 37-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s29">
+  <english>And if you have rights you must be able to waive them .</english>
+  <czech>A když máte nějaká práva , musíte mít i možnost se jich vzdát .</czech>
+  <sure>1-1 2-2 4-3 5-5 7-7 11-13 12-12 13-14</sure>
+  <possible>3-3 6-7 8-8 9-10 10-13 11-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s30">
+  <english>But there is no way I can say " O . K . Go ahead . Hunt the Dodo as much as you like .</english>
+  <czech>Ovšem v tomto případě není možné , abych řekl : " V pořádku , klidně pokračujte a lovte si Doda , jak jen chcete .</czech>
+  <sure>1-1 3-5 4-5 8-9 9-11 14-16 15-16 17-18 19-20 24-24 25-25</sure>
+  <possible>5-6 6-9 7-9 8-8 17-19 18-20 23-24</possible>
+  <phrasal>10-12 10-13 11-12 11-13 12-12 12-13 13-12 13-13 20-22 20-23 21-22 21-23 22-22 22-23</phrasal>
+</s>
+<s id="project_syndicate_bck2-s31">
+  <english>I never did care much for the beasts anyway . "</english>
+  <czech>Stejně jsem se nikdy o zvířata nijak zvlášť nestaral . "</czech>
+  <sure>2-4 4-3 4-9 5-8 6-5 8-6 9-1 10-10 11-11</sure>
+  <possible>1-9 2-9 3-9 4-2 7-6 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s32">
+  <english>If future generations lack moral " rights " it follows that they cannot be incorporated into any theory of justice .</english>
+  <czech>Pokud tedy budoucí generace morálními " právy " nedisponují , pak z toho vyplývá , že ani nemohou být zahrnovány do žádných teorií o spravedlnosti a právu .</czech>
+  <sure>1-1 2-3 3-4 4-9 5-5 6-6 7-7 8-8 10-14 11-16 13-18 14-19 15-20 16-21 17-22 18-23 19-24 20-25 21-28</sure>
+  <possible>9-14 10-12 10-13 11-15 12-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s33">
+  <english>For all theories of justice implicitly define moral rights .</english>
+  <czech>A jsou to právě teorie spravedlnosti , kde se morální práva bezvýhradně definují .</czech>
+  <sure>3-5 5-6 6-12 7-13 8-10 9-11 10-14</sure>
+  <possible>4-6 7-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s34">
+  <english>But although future generations will only have rights to what is available when they are alive , decent human beings today should nevertheless be concerned about the interests that future generations will have .</english>
+  <czech>Ale třebaže budoucí generace budou mít jen ta práva , která budou k disposici právě když oni budou žít své životy , měli by se slušní lidé přesto zajímat o všechny zájmy , které budoucí generace budou mít .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-7 7-6 8-9 10-11 11-12 12-13 12-14 13-16 14-17 15-18 16-19 17-22 18-26 19-27 20-27 22-23 22-24 23-28 25-25 25-29 26-30 27-31 28-32 29-34 30-35 31-36 32-37 33-38 34-39</sure>
+  <possible>8-8 9-9 10-10 24-29 29-33</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s35">
+  <english>To make " rights " or its related notion of " justice " the whole of morality would narrow and impoverish the very concept of morality .</english>
+  <czech>Aby bylo možné vytvořit " práva " a s nimi blízce spojenou ideu " spravedlnosti " , je třeba vymezit celý koncept morálky .</czech>
+  <sure>1-1 2-4 3-5 4-6 5-7 6-8 8-12 9-13 11-14 12-15 13-16 15-21 19-20 24-22 26-23 27-24</sure>
+  <possible>1-2 1-3 7-9 7-10 8-11 10-15 14-21 22-22 25-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s36">
+  <english>The reason why most of us would be horrified by the notion of killing or injuring somebody is not that we feel that we would be depriving the person concerned of his " rights " , or that we would be violating some principle of justice .</english>
+  <czech>Důvod , proč by většina z nás byla zděšena představou , že bychom někoho měli zabít či poranit , není v tom , že bychom tím danou osobu omezovali v jejích " právech " , anebo že bychom takovým chováním narušili principy spravedlnosti .</czech>
+  <sure>2-1 3-3 4-5 5-6 6-7 7-4 8-8 9-9 12-10 14-16 15-17 16-18 17-14 18-20 19-20 23-24 25-25 27-29 29-28 30-27 31-30 32-31 33-32 34-33 35-34 36-35 37-36 38-37 40-38 42-41 44-42 46-43 47-44</sure>
+  <possible>1-1 3-2 10-10 11-10 13-16 20-21 20-22 23-23 24-25 26-29 28-28 39-38 41-41 43-42 45-43</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s37">
+  <english>It would be an outrageous violation of our humanitarian instincts and feelings of compassion .</english>
+  <czech>Tím důvodem by bylo bezmezné porušení našich vlastních lidských instinktů a pocitů slitování .</czech>
+  <sure>1-1 2-3 3-4 5-5 6-6 8-7 9-9 10-10 11-11 12-12 14-13 15-14</sure>
+  <possible>4-5 7-10 8-8 13-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s38">
+  <english>For the same reason we should take into account the interests of future generations .</english>
+  <czech>A z toho samého důvodu bychom měli také věnovat naši pozornost zájmům budoucích generací .</czech>
+  <sure>1-2 2-3 3-4 4-5 6-6 6-7 11-12 13-13 14-14 15-15</sure>
+  <possible>5-7 10-12 12-14</possible>
+  <phrasal>7-9 7-11 8-9 8-11 9-9 9-11</phrasal>
+</s>
+<s id="project_syndicate_bck2-s39">
+  <english>We should not condemn them to poverty by depriving them of some essential resource .</english>
+  <czech>Neměli bychom je odsoudit k chudobě , jen proto , že je připravíme o některé ze základních zdrojů .</czech>
+  <sure>2-1 2-2 3-1 4-4 5-3 6-5 7-6 9-13 10-12 11-14 12-15 13-17 14-18 15-19</sure>
+  <possible>1-1 14-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s40">
+  <english>But the whole of history and economic theory shows that there is no danger of this happening .</english>
+  <czech>Ovšem celé dějiny , stejně jako ekonomické teorie , ukazují , že nebezpečí , že by se toto mohlo přihodit , neexistuje .</czech>
+  <sure>1-1 2-2 3-2 4-2 5-3 6-5 6-6 7-7 8-8 9-10 10-12 12-22 13-22 14-13 16-18 17-17 17-20 18-23</sure>
+  <possible>6-4 10-11 11-22 15-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s41">
+  <english>Instead , our most valuable contribution to the welfare of future generations would be to bequeath to them institutions that will help them respect each others ' basic natural rights .</english>
+  <czech>Naopak , naším nejcennějším příspěvkem blahobytné budoucnosti dalších generací by bylo , kdybychom jim mohli odkázat instituce , jež by jim pomohly udržovat respekt všech vzájemných základních přirozených práv .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-4 6-5 9-6 11-8 12-9 13-10 14-11 16-16 18-14 19-17 20-19 21-20 22-22 23-21 24-24 25-26 26-26 28-27 29-28 30-29 31-30</sure>
+  <possible>7-6 8-6 9-7 10-9 15-16 17-14 20-18 27-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s42">
+  <english>This work could start now , by promoting greater respect for basic human rights in those many parts of the world where they are inadequately protected .</english>
+  <czech>Práce na takovém odkazu může začít hned , tím , že posílíme úctu k základním lidským právům v těch mnoha částech tohoto světa , kde jsou prozatím nedostatečně chráněna .</czech>
+  <sure>1-3 2-1 3-5 4-6 5-7 6-8 7-9 8-12 10-13 11-14 12-15 13-16 14-17 15-18 16-19 17-20 18-21 20-22 21-23 22-25 24-26 25-28 26-29 27-30</sure>
+  <possible>7-10 7-11 19-23 22-24 23-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s43">
+  <english>We should also bequeath to them the best features of our culture , as well as qualities of mind and spirit , and tolerance of differences between people , that will help future generations live together peacefully and resolve their own conflicts of interest fairly and justly .</english>
+  <czech>Budoucím pokolením bychom také měli odkázat v co nejlepším stavu naši kulturu , stejně jako hodnoty rozumu i ducha , a tolerance rozdílů mezi lidmi , jež budoucím generacím umožní spolu žít v míru a napomůže řešit jejich konflikty zájmů čestně a spravedlivě .</czech>
+  <sure>2-3 2-5 3-4 4-6 8-9 11-11 12-12 13-13 14-14 15-14 16-15 17-16 19-17 20-18 21-19 22-20 23-21 24-22 26-23 27-24 28-25 29-26 30-27 32-30 33-28 34-29 35-32 36-31 37-33 37-34 38-35 39-37 40-38 42-39 44-40 45-41 46-42 47-43 48-44</sure>
+  <possible>1-5 7-9 9-10 10-12 18-17 25-23 31-30 41-38 43-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s44">
+  <english>[ None of these things is a " finite " or " scarce " resource the allocation of which between generations has to be governed by some principles of inter - generational justice ] .</english>
+  <czech>( Přičemž žádná z těchto věcí není " konečným " či " vzácným " zdrojem , jehož rozvržení mezi generace by muselo být řízeno nějakými principy mezinárodní spravedlnosti . )</czech>
+  <sure>1-1 2-3 3-4 4-5 5-6 6-7 8-8 9-9 10-10 11-11 12-12 13-13 14-14 15-15 17-18 19-17 20-19 21-20 22-22 23-22 24-23 25-24 27-25 28-26 33-28 34-30 35-29</sure>
+  <possible>2-7 7-9 16-18 18-17 19-16 22-21 26-26 29-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s45">
+  <english>In other words we should shift attention away from concern with the " rights " of future generations to some allegedly scarce resources and concentrate on the non - material legacy which can add far more to the well - being of future generations than a bit more oil or whatever .</english>
+  <czech>Jinými slovy , měli bychom se přestat starat o " práva " budoucích generací na nějaké údajné vzácné zdroje a místo toho bychom měli obrátit pozornost na ne - materiální dědictví , které by mohlo budoucím generacím přinést mnohem více , než trocha ropy či čehokoliv podobného navíc .</czech>
+  <sure>2-1 3-2 5-4 5-5 10-6 10-8 11-9 13-10 14-11 15-12 17-13 18-14 19-15 20-16 21-17 22-18 23-19 24-20 25-25 25-26 26-27 28-28 29-29 30-30 31-31 32-33 33-35 34-38 35-39 36-40 43-36 44-37 45-42 47-43 48-48 49-44 50-45 51-46 52-49</sure>
+  <possible>1-2 4-4 12-11 16-14 27-31 32-32 33-34 37-37 45-41 46-43</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s46">
+  <english>It is typical of the intellectual confusion that permeates most environmentalist thinking and is repeated parrot - like by politicians , that their emphasis on resource conservation and " sustainable development " is totally in conflict with assertions that the trouble with modern civilization is its pre - occupation with material prosperity .</english>
+  <czech>Je to zcela typický případ intelektuálního zmatení , které prostupuje myšlení většiny ochránců přírody a je neustále opakováno politiky , až se jejich důraz na zachování zdrojů a " přiměřený rozvoj " dostává do absolutního rozporu s tvrzeními , že potíž moderní civilizace vězí v její bezhlavé posedlostí materiální prosperitou .</czech>
+  <sure>1-2 2-1 3-4 6-6 7-7 8-9 9-10 10-12 11-13 11-14 12-11 13-15 14-16 15-18 20-19 21-20 22-21 23-23 24-24 25-25 26-27 27-26 28-28 29-29 30-30 31-31 32-32 34-35 35-34 36-36 37-37 38-38 39-40 41-41 43-42 44-43 45-44 46-46 47-48 49-48 51-49 52-50 53-51</sure>
+  <possible>4-7 5-7 8-8 19-19 33-22 33-33 39-39 40-41 42-43 46-45 48-48 50-50</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s47">
+  <english>It will not help future generations if they live in authoritarian regimes but have plenty of materials with which to build palaces for their rulers .</english>
+  <czech>Budoucím generacím totiž rozhodně nepomůže , když budou žít v autoritativních režimech , a budou mít sdostatek stavebního materiálu na budování paláců pro své vůdce .</czech>
+  <sure>3-5 4-5 5-1 6-2 7-7 9-9 10-10 11-11 12-12 13-14 14-16 15-17 17-19 20-20 21-21 22-22 23-23 24-24 25-25 26-26</sure>
+  <possible>1-5 2-5 7-6 8-9 9-8 13-13 14-15 16-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s48">
+  <english>Wilfred Beckerman is an Emeritus Fellow of Balliol College , Oxford .</english>
+  <czech>Wilfred Beckerman je emeritním členem oxfordské Balliol College .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 8-7 9-8 11-6 12-9</sure>
+  <possible>4-4 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bck2-s49">
+  <english>His latest book is Small is Stupid ( Duckworth , London , 1995 ) .</english>
+  <czech>Jeho poslední knihou je " Co je malé , je hloupé " ( Duckworth , London 1995 ) .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-8 6-10 7-11 8-13 9-14 10-15 11-16 13-17 14-18 15-19</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

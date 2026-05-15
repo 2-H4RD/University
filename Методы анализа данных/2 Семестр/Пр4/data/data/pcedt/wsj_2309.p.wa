@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2309-s1">
+  <english>Atco Ltd . said its utilities arm is considering building new electric power plants , some valued at more than one billion Canadian dollars ( US$ 851 million ) , in Great Britain and elsewhere .</english>
+  <czech>Firma Atco Ltd . oznámila , že její úsek energetiky zvažuje vybudování nových elektráren , z nichž některé jsou oceňovány na více než jednu miliardu kanadských dolarů ( 851 milionů amerických dolarů ) , ve Velké Británii a jinde .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-8 6-10 7-9 8-11 9-11 10-12 11-13 12-14 13-14 14-14 15-15 16-18 17-19 17-20 18-21 19-22 20-23 21-24 22-25 23-26 24-27 25-28 26-31 26-32 27-29 28-30 29-33 30-34 31-35 32-36 33-37 34-38 35-39 36-40</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s2">
+  <english>C . S . Richardson , Atco 's senior vice president , finance , said its 50.1%-owned Canadian Utilities Ltd . unit is reviewing cogeneration projects in eastern Canada , and conventional electric power generating plants elsewhere , including Britain , where the British government plans to allow limited competition in electrical generation from private-sector suppliers as part of its privatization program .</english>
+  <czech>C . S . Richardson , finanční viceprezident společnosti Atco , řekl , že jejich z 50,1 % vlastněná společnost Canadian Utilities Ltd . přezkoumává kogenerační projekty na východě Kanady a konvenční elektrárny jinde , včetně Británie , kde britská vláda plánuje v rámci svého privatizačního programu povolit omezenou konkurenci v výrobě elektřiny ze strany privátních dodavatelů .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-10 14-11 15-12 16-15 17-16 17-17 17-18 17-19 18-21 19-22 20-23 21-24 22-20 23-25 24-25 25-26 26-27 27-28 28-29 29-30 31-31 32-32 33-33 34-33 35-33 36-33 37-34 38-35 39-36 40-37 41-38 42-39 44-40 45-41 46-42 47-48 48-48 49-49 50-50 51-51 52-53 53-52 54-54 55-55 55-56 56-57 60-45 61-46 62-47 63-58</sure>
+  <possible>8-10 43-41</possible>
+  <phrasal>9-7 9-8 10-7 10-8 11-7 11-8 13-7 13-8 57-43 57-44 58-43 58-44 59-43 59-44</phrasal>
+</s>
+<s id="wsj_2309-s3">
+  <english>`` The projects are big .</english>
+  <czech>" Ty projekty jsou velké .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s4">
+  <english>They can be C$ 1 billion plus , '' Mr . Richardson said .</english>
+  <czech>Mohou přesáhnout 1 miliardu kanadských dolarů , " řekl pan Richardson .</czech>
+  <sure>1-1 2-1 3-2 4-5 4-6 5-3 6-4 7-2 8-7 9-8 10-10 12-11 13-9 14-12</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s5">
+  <english>`` But we would n't go into them alone , '' and Canadian Utilities ' equity stake would be small , he said .</english>
+  <czech>" Ale nešli bychom do nich sami , " a investovaný kapitál firmy Canadian Utilities by byl malý , řekl .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-3 6-3 7-5 8-6 9-7 10-8 11-9 12-10 13-14 14-15 16-12 17-11 18-16 19-17 20-18 21-19 22-20 23-20 24-21</sure>
+  <possible>15-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s6">
+  <english>`` Ideally , we 'd like to be the operator -LSB- of the project -RSB- and a modest equity investor .</english>
+  <czech>" V ideálním případě bychom byli rádi provozovatelem ( projektu ) a investorem se skrovným majetkovým podílem .</czech>
+  <sure>1-1 2-2 2-3 2-4 4-7 5-5 6-7 7-6 8-6 10-8 11-9 14-10 15-11 16-12 18-15 19-16 19-17 20-13 21-18</sure>
+  <possible>9-8 12-10 13-10 17-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s7">
+  <english>Our long suit is our proven ability to operate '' power plants , he said .</english>
+  <czech>Naší silnou stránkou je dokázaná schopnost provozovat elektrárny , " řekl .</czech>
+  <sure>1-1 4-4 6-5 7-6 8-7 9-7 10-10 11-8 12-8 13-9 14-11 15-11 16-12</sure>
+  <possible></possible>
+  <phrasal>2-2 2-3 3-2 3-3</phrasal>
+</s>
+<s id="wsj_2309-s8">
+  <english>Mr . Richardson would n't offer specifics regarding Atco 's proposed British project , but he said it would compete for customers with two huge British power generating companies that would be formed under the country 's plan to privatize its massive water and electric utilities .</english>
+  <czech>Pan Richardson neuvedl konkrétní informace týkající se projektu firmy Atco v Británii , ale řekl , že budou soutěžit o zákazníky se dvěma obrovskými britskými energetickými společnostmi , které se vytvoří v rámci plánu země zprivatizovat svůj rozsáhlý vodárenský a elektrárenský sektor .</czech>
+  <sure>1-1 3-2 4-3 5-3 6-3 7-4 7-5 8-6 8-7 9-10 12-12 13-8 14-13 15-14 16-15 17-15 18-18 19-18 20-19 21-20 22-21 23-22 24-23 25-24 26-25 27-26 28-26 29-27 30-29 31-31 32-31 33-31 34-32 34-33 36-35 38-34 39-36 40-36 41-37 42-38 43-39 44-40 45-41 46-42 47-43</sure>
+  <possible>10-10 12-11 33-30 35-34 37-35</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s9">
+  <english>Britain 's government plans to raise about # 20 billion ( $ 31.05 billion ) from the sale of most of its giant water and electric utilities , beginning next month .</english>
+  <czech>Britská vláda plánuje získat asi 20 miliard liber ( 31,05 miliard dolarů ) prodejem většiny svého gigantického vodárenského a elektrárenského sektoru od počátku příštího měsíce .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-4 7-5 8-8 9-6 10-7 11-9 12-12 13-10 14-11 15-13 16-14 17-14 18-14 20-15 22-16 23-17 24-18 25-19 26-20 27-21 29-22 29-23 30-24 31-25 32-26</sure>
+  <possible>2-1 19-15 21-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s10">
+  <english>The planned electric utility sale , scheduled for next year , is alone expected to raise # 13 billion , making it the world 's largest public offering .</english>
+  <czech>Plánovaný prodej elektroenergetiky , navržený pro příští rok , má jen sám o sobě vynést 13 miliard liber , což představuje největší veřejnou nabídku na světě .</czech>
+  <sure>2-1 3-3 4-3 5-2 6-4 7-5 8-6 9-7 10-8 11-9 12-10 13-11 13-12 13-13 13-14 14-10 16-15 17-18 18-16 19-17 20-19 24-26 26-22 27-23 28-24 29-27</sure>
+  <possible>1-2 15-10 23-24 24-25 25-26</possible>
+  <phrasal>21-20 21-21 22-20 22-21</phrasal>
+</s>
+<s id="wsj_2309-s11">
+  <english>Under terms of the plan , independent generators would be able to compete for 15 % of customers until 1994 , and for another 10 % between 1994 and 1998 .</english>
+  <czech>Podle podmínek plánu by se mohli nezávislí výrobci elektřiny ucházet o 15 % zákazníků do roku 1994 a o dalších 10 % v letech 1994 - 1998 .</czech>
+  <sure>1-1 2-2 5-3 7-7 8-8 8-9 9-4 10-6 11-6 12-10 13-10 14-11 15-12 16-13 18-14 19-15 20-17 22-18 23-19 24-20 25-21 26-22 27-23 28-25 29-26 30-27 31-28</sure>
+  <possible>3-3 4-3 10-5 17-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s12">
+  <english>Canadian Utilities had 1988 revenue of C$ 1.16 billion , mainly from its natural gas and electric utility businesses in Alberta , where the company serves about 800,000 customers .</english>
+  <czech>Společnost Canadian Utilities měla v roce 1988 tržby 1,16 miliard kanadských dolarů hlavně z jejich podniků se zemním plynem a elektřinou v Albertě , kde firma poskytuje služby asi 800 000 zákazníkům .</czech>
+  <sure>1-2 2-3 3-4 4-7 5-8 7-11 7-12 8-9 9-10 11-13 12-14 13-15 16-20 17-21 18-21 19-16 20-22 21-23 22-24 23-25 25-26 26-27 26-28 27-29 28-30 28-31 29-32 30-33</sure>
+  <possible>6-10 15-17 24-26</possible>
+  <phrasal>14-18 14-19 15-18 15-19</phrasal>
+</s>
+<s id="wsj_2309-s13">
+  <english>`` There seems to be a move around the world to deregulate the generation of electricity , '' Mr . Richardson said , and Canadian Utilities hopes to capitalize on it .</english>
+  <czech>" Zdá se , že na celém světě dochází k posunu směrem k deregulaci výroby elektřiny , " řekl Richardson , " a Canadian Utilities z toho doufá vytěžit . "</czech>
+  <sure>1-1 3-2 3-3 4-9 5-9 7-11 10-8 11-12 11-13 12-14 14-15 16-16 17-17 18-18 21-20 22-19 23-21 24-23 25-24 26-25 27-28 28-29 29-29 30-26 31-27 32-30</sure>
+  <possible>6-11 7-10 9-8 13-15 15-16</possible>
+  <phrasal>8-6 8-7</phrasal>
+</s>
+<s id="wsj_2309-s14">
+  <english>`` This is a real thrust on our utility side , '' he said , adding that Canadian Utilities is also mulling projects in underdeveloped countries , though he would be specific .</english>
+  <czech>" Je to opravdový impuls pro náš sektor služeb , " řekl a dodal , že Canadian Utilities také promýšlí projekty v zaostalých zemích , ale uvedl podrobnosti .</czech>
+  <sure>1-1 2-3 3-2 5-4 6-5 7-6 8-7 9-9 10-8 11-10 12-11 13-12 14-12 16-14 17-16 18-17 19-18 20-20 21-19 22-20 23-21 24-22 25-23 26-24 27-25 28-26 29-27 30-27 31-27 32-28 33-29</sure>
+  <possible>4-5 17-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s15">
+  <english>Canadian Utilities is n't alone in exploring power generation opportunities in Britain , in anticipation of the privatization program .</english>
+  <czech>Společnost Canadian Utilities není sama , kdo prozkoumává příležitosti pro výrobu elektřiny v Británii v očekávání privatizačního programu .</czech>
+  <sure>1-2 2-3 3-4 4-4 5-5 7-8 8-12 9-11 10-9 11-13 12-14 14-15 15-16 18-17 19-18 20-19</sure>
+  <possible>6-8 9-10 16-18 17-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2309-s16">
+  <english>`` We 're certainly looking at some power generating projects in England , '' said Bruce Stram , vice president , corporate strategy and corporate planning , with Enron Corp . , Houston , a big natural gas producer and pipeline operator .</english>
+  <czech>" Rozhodně zvažujeme některé energetické projekty v Anglii , " řekl Bruce Stram , viceprezident pro firemní strategii a plánování u Enron Corp . , Houston , velkého výrobce zemního plynu a provozovatele plynovodu .</czech>
+  <sure>1-1 2-3 3-3 4-2 5-3 6-3 7-4 8-5 9-5 10-6 11-7 12-8 13-9 14-10 15-11 16-12 17-13 18-14 19-15 20-15 22-17 23-18 24-19 26-20 28-21 29-22 30-23 31-24 32-25 33-26 34-27 36-28 39-29 40-32 41-34 42-33 43-35</sure>
+  <possible>23-16 35-29</possible>
+  <phrasal>37-30 37-31 38-30 38-31</phrasal>
+</s>
+<s id="wsj_2309-s17">
+  <english>Mr . Stram said Enron is considering building gas-fired power plants in the U . K . capable of producing about 500 megawatts of power at a cost of about $ 300 million to $ 400 million .</english>
+  <czech>Pan Stram řekl , že Enron uvažuje o vybudování plynové elektrárny ve Velké Británii , která bude schopna produkovat kolem 500 megawatt elektřiny , za cenu 300 až 400 milionů dolarů .</czech>
+  <sure>1-1 3-2 4-3 5-6 6-7 7-7 8-9 9-10 10-11 11-11 12-12 14-13 16-14 18-17 18-18 20-19 21-20 22-21 23-22 25-23 26-25 28-26 32-27 34-28 35-31 36-29 37-30 38-32</sure>
+  <possible>8-8 13-14 19-19 24-23 27-26</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

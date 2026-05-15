@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="celex_31958R0003-s1">
+  <english>This Regulation shall determine the security gradings and the security measures to be applied to information acquired by the Community or communicated by Member States which is covered by Articles 24 and 25 of the Treaty establishing the European Atomic Community ( hereinafter called " the Treaty " ) .</english>
+  <czech>Toto nařízení stanoví stupně utajení a bezpečnostní opatření , které mají být používány pro skutečnosti , které Společenství získalo nebo které sdělily členské státy a které jsou uvedeny v článcích 24 a 25 Smlouvy o založení Evropského společenství pro atomovou energii ( dále jen " Smlouva " ) .</czech>
+  <sure>1-1 2-2 4-3 6-5 7-4 8-6 10-7 11-8 12-11 13-12 14-13 15-14 16-15 17-19 20-18 21-20 22-22 24-23 25-24 26-26 27-27 28-28 29-29 30-30 31-31 32-32 33-33 36-34 37-36 39-37 40-40 41-38 42-42 43-43 45-45 47-46 48-47 49-48 50-49</sure>
+  <possible>3-3 5-4 9-8 12-12 18-18 19-18 23-24 34-34 35-34 37-35 38-38 40-39 40-41 43-44 46-46</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s2">
+  <english>Such information shall hereinafter be called : Euratom Classified Information ( " ECI " ) .</english>
+  <czech>Tyto skutečnosti jsou dále nazývány utajované skutečnosti Euratomu ( dále jen " USE " ) .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 8-8 9-6 10-7 11-9 12-12 13-13 14-14 15-15 16-16</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s3">
+  <english>However , when a State communicates information covered by Article 25 , the Regulation shall apply only if the use to which the information is put falls within the scope of the Treaty .</english>
+  <czech>Pokud však členský stát sděluje skutečnosti uvedené v článku 25 Smlouvy , uplatní se pro něj toto nařízení pouze v případě , že jejich používání spadá do oblasti působnosti Smlouvy .</czech>
+  <sure>1-2 3-1 5-4 6-5 7-6 8-7 9-8 10-9 11-10 12-12 13-17 14-18 16-13 17-19 18-20 18-21 20-25 27-26 28-27 30-28 30-29 33-30 34-31</sure>
+  <possible>2-1 4-4 15-13 16-14 19-25 29-28 31-30 32-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s4">
+  <english>Reports , data , documents , objects , reproducing media and matter relating to information as referred to in the first paragraph shall be treated as ECI .</english>
+  <czech>Zprávy , údaje , dokumenty , předměty , reprodukční média a další věci týkající se skutečností uvedených v prvním pododstavci se považují za USE .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-13 13-14 13-15 15-16 17-17 19-18 21-19 22-20 25-21 25-22 26-23 27-24 28-25</sure>
+  <possible>14-16 16-17 18-17 20-19 23-22 24-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s5">
+  <english>Contracts , transactions or agreements concerned with activities coming within the scope of the Treaty which are concluded , extended or renewed between a Member State and a natural or legal person after the entry into force of this Regulation shall not be relied upon as a ground for not complying with the provisions of this Regulation .</english>
+  <czech>Smlouvy , operace nebo dohody týkající se činností , které spadají do oblasti působnosti Smlouvy a které byly uzavřeny , prodlouženy nebo obnoveny mezi členským státem a fyzickou nebo právnickou osobou po vstupu tohoto nařízení v platnost , nemohou být důvodem pro porušování tohoto nařízení .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 6-7 8-8 9-11 10-12 12-13 12-14 15-15 16-17 17-18 18-19 19-20 20-21 21-22 22-23 23-24 25-25 26-26 27-27 29-28 30-29 31-30 32-31 33-32 35-33 36-36 37-37 39-34 40-35 41-39 42-39 43-40 48-41 49-42 50-43 51-43 56-44 57-45 58-46</sure>
+  <possible>7-8 11-13 13-15 14-15 24-26 28-31 34-33 38-35 47-41 55-45</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s6">
+  <english>Security measures which derive from contractual obligations put into effect prior to this Regulation may , however , be applied instead of the provisions of the Regulation for the period specified in the contract concerned .</english>
+  <czech>Bezpečnostní opatření smluvní povahy prováděná před vstupem tohoto nařízení v platnost však lze až do doby vymezené ve smlouvě , která je vytvořila , uplatňovat místo ustanovení tohoto nařízení .</czech>
+  <sure>1-1 2-2 6-3 7-4 11-6 13-8 14-9 15-13 17-12 20-25 21-26 24-27 26-28 27-29 28-15 30-16 31-17 32-18 34-19 36-30</sure>
+  <possible>12-6 16-12 18-12 19-25 22-26 23-27 25-29 29-16 33-19</possible>
+  <phrasal>8-7 8-10 8-11 9-7 9-10 9-11 10-7 10-10 10-11</phrasal>
+</s>
+<s id="celex_31958R0003-s7">
+  <english>Scope in relation to persons</english>
+  <czech>Osobní oblast působnosti</czech>
+  <sure>1-2 1-3 5-1</sure>
+  <possible>2-1 3-1 4-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s8">
+  <english>The security measures laid down in this Regulation shall be applied to ECI and the instructions needed to ensure that these measures are observed shall be issued by :</english>
+  <czech>Bezpečnostní opatření stanovená tímto nařízením jsou pro USE povinni uplatňovat a dávat pokyny nezbytné pro zajištění dodržování těchto opatření</czech>
+  <sure>2-1 3-2 4-3 5-3 7-4 8-5 10-6 11-10 12-7 13-8 14-11 16-13 17-14 18-15 19-16 21-18 22-19 24-17</sure>
+  <possible>1-2 6-4 9-6 15-13 23-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s9">
+  <english>( a ) institutions , committees , services and installations of the Community ;</english>
+  <czech>a ) orgány , výbory , útvary a zařízení Společenství ;</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 10-9 13-10 14-11</sure>
+  <possible>11-10 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s10">
+  <english>( b ) Member States and their authorities ;</english>
+  <czech>b ) členské státy a jejich orgány ;</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s11">
+  <english>( c ) Joint Undertakings ;</english>
+  <czech>c ) společné podniky ;</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s12">
+  <english>( d ) persons and undertakings as defined in Article 196 of the Treaty .</english>
+  <czech>d ) osoby a podniky vymezené v článku 196 Smlouvy .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 8-6 9-7 10-8 11-9 14-10 15-11</sure>
+  <possible>7-6 12-10 13-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s13">
+  <english>Joint Undertakings</english>
+  <czech>Společné podniky</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s14">
+  <english>The Statutes of each Joint Undertaking shall determine whether that Joint Undertaking is to be treated , for the purposes of this Regulation , in the same way as the institutions , services and installations of the Community or as persons and undertakings as defined in Article 196 of the Treaty .</english>
+  <czech>Stanovy každého Společného podniku určí , zda má být pro účely tohoto nařízení postaven na úroveň orgánu , služby a zařízení Společenství nebo na úroveň osob a podniků uvedených v článku 196 Smlouvy .</czech>
+  <sure>2-1 4-2 5-3 6-4 8-5 9-7 13-8 15-9 16-14 18-10 20-11 22-12 23-13 25-15 28-16 31-17 32-18 33-19 34-20 35-21 38-22 39-23 41-26 42-27 43-28 45-29 46-30 47-31 48-32 51-33 52-34</sure>
+  <possible>1-1 3-2 7-5 9-6 14-8 19-11 21-13 26-16 27-16 30-17 36-22 37-22 44-29 49-33 50-33</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s15">
+  <english>Provisions supplementing the Security Regulation</english>
+  <czech>Ustanovení doplňující bezpečnostní předpisy</czech>
+  <sure>1-1 2-2 4-3 5-4</sure>
+  <possible>3-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s16">
+  <english>The rules for the protection of ECI laid down in this Regulation shall be treated as minimum requirements .</english>
+  <czech>Předpisy pro ochranu USE stanovené tímto nařízením se považují za minimální požadavky .</czech>
+  <sure>2-1 3-2 5-3 7-4 8-5 9-5 11-6 12-7 15-8 15-9 16-10 17-11 18-12 19-13</sure>
+  <possible>1-1 4-3 6-4 10-7 13-9 14-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s17">
+  <english>Where necessary , the Community and the Member States shall supplement the Security Regulation within their respective jurisdictions to take due account of local conditions and may strengthen it by means of appropriate provisions of their own provided , however , that they do not adversely affect the uniform treatment of ECI .</english>
+  <czech>Společenství a členské státy případně doplní bezpečnostní předpisy v rámci své pravomoci s ohledem na místní podmínky a mohou je posílit prostřednictvím vlastních předpisů s výhradou , že nepříznivě neovlivní jednotné zacházení s USE .</czech>
+  <sure>5-1 6-2 8-3 9-4 11-6 13-7 14-8 15-9 16-11 17-10 18-12 22-14 23-15 24-16 25-17 26-18 27-19 28-21 29-20 30-22 31-22 34-24 37-23 38-26 42-28 45-30 46-29 47-30 49-31 50-32 51-33 52-34 53-35</sure>
+  <possible>1-5 2-5 3-5 4-1 7-4 10-6 12-8 19-14 20-14 21-14 22-13 35-23 36-23 38-25 42-27 43-30 44-30 48-32</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s18">
+  <english>Security Bureau</english>
+  <czech>Bezpečnostní úřad</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s19">
+  <english>Under the authority and responsibility of the Commission , the Security Bureau set up by the Commission shall :</english>
+  <czech>Bezpečností úřad zřízený Komisí , pod jejím dohledem a na její odpovědnost</czech>
+  <sure>1-6 2-7 3-8 4-9 5-12 6-10 11-1 12-2 13-3 14-3 17-4</sure>
+  <possible>7-11 10-2 15-4 16-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s20">
+  <english>( a ) co - ordinate and ensure the general application of security measures ;</english>
+  <czech>a ) koordinuje a zajišťuje obecné uplatňování bezpečnostních opatření ;</czech>
+  <sure>3-2 4-3 6-3 7-4 8-5 10-6 11-7 13-8 14-9 15-10</sure>
+  <possible>2-1 5-3 9-7 12-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s21">
+  <english>( b ) supervise the application of those measures in the institutions , committees , services and installations of the Community ;</english>
+  <czech>b ) kontroluje uplatňování těchto opatření v orgánech , výborech , útvarech a zařízeních Společenství ;</czech>
+  <sure>2-1 3-2 4-3 6-4 8-5 9-6 10-7 12-8 13-9 14-10 15-11 16-12 17-13 18-14 21-15 22-16</sure>
+  <possible>5-4 7-6 11-8 19-15 20-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s22">
+  <english>( c ) be empowered to have the application of the security measures for ECI as laid down in this Regulation verified in the territory of Member States by the national authorities and , if it considers this necessary , carry out such verification itself in collaboration with those authorities ;</english>
+  <czech>c ) je oprávněn prostřednictvím vnitrostátních orgánů , nebo považuje - li to za nezbytné , ve spojení s těmito orgány kontrolovat uplatňování bezpečnostních opatření podle tohoto nařízení na USE ;</czech>
+  <sure>2-1 3-2 4-3 5-4 9-23 12-24 13-25 14-29 15-30 20-27 21-28 31-6 32-7 34-8 35-12 37-10 38-13 39-15 44-22 46-17 47-18 48-19 49-20 50-21 51-31</sure>
+  <possible>6-23 7-23 8-23 10-25 11-25 16-26 17-26 18-26 19-26 29-7 30-7 33-9 35-11 36-10 39-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s23">
+  <english>( d ) propose any amendments it considers necessary for the application of this Regulation .</english>
+  <czech>d ) navrhuje změny , které považuje za nezbytné pro provádění tohoto nařízení .</czech>
+  <sure>2-1 3-2 4-3 6-4 8-7 9-9 10-10 12-11 14-12 15-13 16-14</sure>
+  <possible>5-4 7-7 9-8 11-11 13-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s24">
+  <english>Bodies responsible for applying security measures in Member States</english>
+  <czech>Úřady pověřené provádění bezpečnostních opatření v členských státech</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 7-6 8-7 9-8</sure>
+  <possible>3-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s25">
+  <english>Each Member State shall appoint an official body to be responsible for applying or causing to be applied in the territory within its jurisdiction the security measures laid down in this Regulation .</english>
+  <czech>Každý členský stát určí státní orgán pověřený uplatňováním nebo zajištěním uplatňování bezpečnostních opatření stanovených tímto nařízením na území , které spadá do jeho působnosti .</czech>
+  <sure>1-1 2-2 3-3 5-4 7-5 8-6 11-7 13-8 14-9 15-10 18-11 19-17 21-18 22-22 23-23 24-24 26-12 27-13 28-14 29-14 31-15 32-16 33-25</sure>
+  <possible>4-4 6-5 9-7 10-7 12-8 16-11 17-11 20-18 25-13 30-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s26">
+  <english>Security Officers</english>
+  <czech>Bezpečnostní referenti</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s27">
+  <english>In each institution , service and installation of the Community where ECI is prepared or kept , the Security Office shall appoint an official to be responsible for applying this Regulation ( hereinafter called " Security Officer " ) .</english>
+  <czech>V každém orgánu , útvaru a zařízení Společenství , kde se vypracovávají nebo uchovávají USE , určí bezpečnostní úřad osobu odpovědnou za uplatňování tohoto nařízení ( dále jen " bezpečnostní referent " ) .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 10-8 11-10 12-15 14-12 15-13 16-14 17-16 19-18 20-19 22-17 24-20 27-21 28-22 29-23 30-24 31-25 32-26 33-27 35-29 36-30 37-31 38-32 39-33 40-34</sure>
+  <possible>8-8 9-8 11-9 13-12 14-11 18-19 21-17 23-20 25-21 26-21 34-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s28">
+  <english>Authorities of Member States and all persons or undertakings as defined in Article 196 of the Treaty who prepare or have possession of ECI shall , with the approval of the official body responsible for security referred to in Article 7 , appoint an official to be responsible for applying this Regulation ( hereinafter called " Security Officer " ) .</english>
+  <czech>Orgány členských států a každá osoba nebo každý podnik uvedený v článku 196 Smlouvy , které vypracovávají nebo drží USE , určí se souhlasem státního orgánu odpovědného za bezpečnost uvedeného v článku 7 osobu odpovědnou za uplatňování tohoto nařízení ( dále jen " bezpečnostní referent " ) .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-9 11-10 12-11 13-12 14-13 17-14 18-16 19-17 20-18 21-19 22-19 24-20 26-21 27-23 29-24 32-25 33-26 34-27 35-28 36-29 37-30 39-31 40-32 41-33 43-22 45-34 48-35 49-36 50-37 51-38 52-39 53-40 54-41 56-43 57-44 58-45 59-46 60-47 61-48</sure>
+  <possible>2-3 10-10 15-14 16-14 18-15 23-20 25-22 28-24 30-26 31-26 38-30 44-34 46-35 47-35 55-42</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s29">
+  <english>Security Officers shall in particular be responsible for :</english>
+  <czech>Bezpečnostní referenti jsou zejména odpovědni za</czech>
+  <sure>1-1 2-2 4-4 5-4 6-3 7-5 8-6</sure>
+  <possible>3-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s30">
+  <english>( a ) effecting registration as provided in Article 23 ;</english>
+  <czech>a ) vedení registrace podle článku 23 ;</czech>
+  <sure>2-1 3-2 4-3 5-4 7-5 9-6 10-7 11-8</sure>
+  <possible>6-5 8-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s31">
+  <english>( b ) keeping up to date , by category , the list of all persons entitled to have access to ECI ;</english>
+  <czech>b ) aktualizaci kategorizovaného seznamu všech osob , které mají přístup k USE ;</czech>
+  <sure>2-1 3-2 4-3 5-3 6-3 7-3 10-4 13-5 15-6 16-7 19-10 20-11 21-12 22-13 23-14</sure>
+  <possible>9-4 12-5 14-7 18-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s32">
+  <english>( c ) instructing employees in their duties with regard to security ;</english>
+  <czech>c ) informování zaměstnanců o povinnostech ve věci ochrany tajemství ;</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 8-6 12-9 12-10 13-11</sure>
+  <possible></possible>
+  <phrasal>9-7 9-8 10-7 10-8 11-7 11-8</phrasal>
+</s>
+<s id="celex_31958R0003-s33">
+  <english>( d ) ensuring the application of the physical security measures .</english>
+  <czech>d ) uplatňování věcných bezpečnostních opatření .</czech>
+  <sure>2-1 3-2 6-3 9-4 10-5 11-6 12-7</sure>
+  <possible>5-3 7-4 8-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s34">
+  <english>Classification and declassification of ECI</english>
+  <czech>Utajení a odtajnění USE</czech>
+  <sure>1-1 2-2 3-3 5-4</sure>
+  <possible>4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s35">
+  <english>Security gradings shall be applied only to the extent strictly necessary .</english>
+  <czech>Stupně utajení se uplatňují pouze v nezbytně nutném rozsahu .</czech>
+  <sure>1-2 2-1 5-3 5-4 6-5 7-6 9-9 10-7 11-8 12-10</sure>
+  <possible>3-4 4-4 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s36">
+  <english>ECI shall be classified according to a scale of security gradings as follows :</english>
+  <czech>USE se klasifikují do stupňů utajení :</czech>
+  <sure>1-1 4-3 10-6 11-5 14-7</sure>
+  <possible>2-3 3-3 4-2 5-4 6-4 7-5 8-5 9-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s37">
+  <english>Eura - Top Secret : where unauthorised disclosure of the information would have extremely serious consequences for the defence interests of one or more Member States ;</english>
+  <czech>Eura — Přísně tajné : skutečnosti , jejichž neoprávněné vyzrazení by mohlo mít mimořádně vážné následky pro obranné zájmy jednoho nebo více členských států ;</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-8 7-9 8-10 11-6 12-11 13-13 14-14 15-15 16-16 17-17 19-18 20-19 22-20 23-21 24-22 25-23 26-24 27-25</sure>
+  <possible>6-7 9-6 10-6 12-12 18-19 21-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s38">
+  <english>Eura - Secret : where unauthorised disclosure of the information would have serious consequences for the defence interests of one or more Member States ;</english>
+  <czech>Eura — Tajné : skutečnosti , jejichž neoprávněné vyzrazení by mohlo mít vážné následky pro obranné zájmy jednoho nebo více členských států ;</czech>
+  <sure>1-1 2-2 3-3 4-4 5-7 6-8 7-9 10-5 11-10 12-12 13-13 14-14 15-15 17-16 18-17 20-18 21-19 22-20 23-21 24-22 25-23</sure>
+  <possible>5-6 8-5 9-5 11-11 16-17 19-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s39">
+  <english>Eura - Confidential : where unauthorised disclosure of the information would be harmful to the defence interests of one or more Member States ;</english>
+  <czech>Eura — Důvěrné : skutečnosti , jejichž neoprávněné vyzrazení by mohlo poškodit obranné zájmy jednoho nebo více členských států ;</czech>
+  <sure>1-1 2-2 3-3 4-4 5-7 6-8 7-9 10-5 11-10 13-12 16-13 17-14 19-15 20-16 21-17 22-18 23-19 24-20</sure>
+  <possible>5-6 8-5 9-5 11-11 12-12 14-14 15-14 18-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s40">
+  <english>Eura - Restricted : where unauthorised disclosure of the information would affect the defence interests of one or more Member States but where a lesser degree of security is required than in the case of documents classified as Eura - Confidential .</english>
+  <czech>Eura — Vyhrazené : skutečnosti , jejichž neoprávněné vyzrazení by se mohlo dotknout obranných zájmů jednoho nebo více členských států , které však vyžadují menší ochranu , než jaká je poskytována dokumentům klasifikovaným jako Eura — Důvěrné .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-7 6-8 7-9 10-5 11-10 12-13 14-14 15-15 17-16 18-17 19-18 20-19 21-20 22-23 23-22 25-25 28-26 30-24 31-28 36-32 37-33 38-34 39-35 40-36 41-37 42-38</sure>
+  <possible>5-6 8-5 9-5 11-12 12-11 13-15 16-20 23-21 24-25 26-25 27-26 29-24 31-27 35-32</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s41">
+  <english>Authorities competent in respect of classification</english>
+  <czech>Orgány příslušné v oblasti utajení</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s42">
+  <english>The Commission shall classify information covered by Article 24 of Treaty :</english>
+  <czech>Komise klasifikuje skutečnosti uvedené v článku 24 Smlouvy</czech>
+  <sure>2-1 4-2 5-3 6-4 7-5 8-6 9-7 11-8</sure>
+  <possible>1-1 3-2 10-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s43">
+  <english>( a ) provisionally , where it considers that disclosure is liable to harm the defence interests of one or more Member States ;</english>
+  <czech>a ) dočasně , pokud má za to , že jejich vyzrazení by mohlo poškodit obranné zájmy jednoho nebo více členských států ;</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 8-6 8-7 8-8 9-10 10-12 14-15 16-16 17-17 19-18 20-19 21-20 22-21 23-22 24-23</sure>
+  <possible>7-6 9-9 13-15 15-17 18-22</possible>
+  <phrasal>11-13 11-14 12-13 12-14</phrasal>
+</s>
+<s id="celex_31958R0003-s44">
+  <english>( b ) definitively , as soon as the Member States have made known the security grading they are requesting .</english>
+  <czech>b ) s konečnou platností , jakmile členský stát sdělí požadovaný stupeň utajení .</czech>
+  <sure>2-1 3-2 4-4 4-5 5-6 6-7 7-7 8-7 10-8 11-9 13-10 14-10 16-13 17-12 20-11 21-14</sure>
+  <possible>4-3 9-9 12-10 15-12 18-11 19-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s45">
+  <english>The highest grading so requested shall be applied .</english>
+  <czech>Použije se nejvyšší požadovaný stupeň utajení .</czech>
+  <sure>2-3 3-5 5-4 8-1 9-7</sure>
+  <possible>1-3 4-4 6-1 7-1 8-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s46">
+  <english>The Commission shall notify the Member States accordingly .</english>
+  <czech>Komise to oznámí členským státům .</czech>
+  <sure>2-1 4-3 6-4 7-5 9-6</sure>
+  <possible>1-1 3-3 5-5 8-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s47">
+  <english>The Commission shall establish and revise periodically , in collaboration with the competent authorities of the Member States , a non - exhaustive list of the categories of information to which a security grading should be applied .</english>
+  <czech>Ve spolupráci s příslušnými orgány členských států Komise vypracuje a pravidelně upravuje nevyčerpávající seznam kategorií skutečností , na které se vztahuje stupeň utajení .</czech>
+  <sure>2-8 4-9 5-10 6-12 7-11 9-1 10-2 11-3 13-4 14-5 17-6 18-7 21-13 23-13 24-14 27-15 29-16 30-18 31-19 33-23 34-22 37-20 37-21 38-24</sure>
+  <possible>1-8 3-9 12-5 15-7 16-7 20-14 22-13 25-15 26-15 28-16 31-17 32-22 35-21 36-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s48">
+  <english>The Commission shall notify both the competent institutions and the organs of the Community as well as the other Member States of the security grading required by the orginating State in respect of applications for patents or utility models covered by Article 25 of the Treaty .</english>
+  <czech>Komise sdělí příslušným orgánům a institucím Společenství a ostatním členským státům stupeň utajení požadovaný státem původu , pokud jde o přihlášky vynálezu nebo užitného vzoru uvedené v článku 25 Smlouvy .</czech>
+  <sure>2-1 4-2 7-3 8-6 9-5 11-4 14-7 15-8 16-8 17-8 19-9 20-10 21-11 24-13 25-12 26-14 29-16 30-15 34-21 36-22 37-23 38-24 39-25 40-26 41-27 42-28 43-29 46-30 47-31</sure>
+  <possible>1-1 3-2 6-6 10-4 12-7 13-7 18-9 22-12 23-12 27-15 28-15 35-22 44-30 45-30</possible>
+  <phrasal>31-18 31-19 31-20 32-18 32-19 32-20 33-18 33-19 33-20</phrasal>
+</s>
+<s id="celex_31958R0003-s49">
+  <english>The security grading applicable to a document relating to ECI shall be determined solely on the basis of the contents of the document in question and not on the basis of the grading of the ECI subject - matter to which it relates .</english>
+  <czech>Stupeň utajení uplatňovaný pro dokument , který se týká USE , se neurčuje podle stupně utajení uplatňovaného pro tuto USE , ale pouze v závislosti na obsahu dotyčného dokumentu .</czech>
+  <sure>2-2 3-1 4-3 5-4 7-5 8-8 8-9 10-10 13-13 14-23 15-24 17-25 18-26 20-27 23-29 25-28 27-13 28-14 30-14 33-15 34-18 35-19 36-20 44-30</sure>
+  <possible>1-1 6-5 9-9 11-13 12-13 13-12 16-25 19-27 21-29 22-29 24-28 29-14 31-14 32-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31958R0003-s50">
+  <english>To avoid endangering the security of documents which come under Eura - Secret and Eura - Top Secret gradings , references to such documents shall be kept to a minimum and made in a way which shall disclose neither their contents nor their security gradings .</english>
+  <czech>Aby se zamezilo ohrožení bezpečnosti dokumentů se stupněm utajení Eura — Tajné a Eura — Přísně tajné , musí být odkazy na tyto dokumenty omezeny na minimum , aby se neodhalil jejich obsah ani stupeň utajení , kterému podléhají .</czech>
+  <sure>1-1 2-3 3-4 5-5 7-6 11-10 12-11 13-12 14-13 15-14 16-15 17-16 18-17 20-18 21-21 22-22 23-23 24-24 25-19 26-20 27-25 28-26 38-31 40-32 41-33 42-34 44-36 45-35 46-40</sure>
+  <possible>2-2 4-5 6-6 29-27 30-27 38-30</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

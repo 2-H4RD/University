@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2211-s1">
+  <english>J . P . Morgan & Co . swung to a loss in the third quarter , while NCNB Corp . reported net income more than doubled , and Security Pacific Corp . net rose 10 % .</english>
+  <czech>Firma J . P . Morgan & Co . se ve třetím čtvrtletí ocitla ve ztrátě , zatímco NCNB Corp . oznámila více než dvojnásobný čistý příjem , přičemž čistý příjem Security Pacific Corp . stoupl o 10 % .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 7-8 8-9 9-10 9-14 10-15 12-16 13-11 15-12 16-13 17-17 18-18 19-19 20-20 21-21 22-22 23-26 24-27 25-23 26-24 27-25 28-28 30-32 31-33 32-34 33-35 34-30 34-31 35-36 36-38 37-39 38-40</sure>
+  <possible>11-16 14-13 37-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s2">
+  <english>J . P . Morgan & Co .</english>
+  <czech>J . P . Morgan & Co .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s3">
+  <english>J . P . Morgan , as expected , posted a $ 1.82 billion net loss for the quarter , reflecting the New York bank 's decision last month to add $ 2 billion to reserves for losses on loans to less-developed countries .</english>
+  <czech>J . P . Morgan podle očekávání ohlásil pro toto čtvrtletí čistou ztrátu ve výši 1,82 miliardy dolarů , což odráží rozhodnutí Newyorské banky z minulého měsíce , přidat 2 miliardy dolarů do rezervního fondu na ztráty z půjček méně rozvinutým zemím .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 10-8 12-18 13-16 14-17 15-12 16-13 17-9 18-10 19-11 20-19 21-21 23-23 24-23 25-24 27-22 28-26 29-27 31-29 32-32 33-30 34-31 35-33 36-34 36-35 37-36 38-37 39-38 40-39 42-40 42-41 43-42 44-43</sure>
+  <possible>11-13 22-22 26-24 29-25 30-29 41-42</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s4">
+  <english>The reserve addition placed the parent of Morgan Guaranty Trust Co . among a few major U . S . banks that have covered nearly all their medium and long-term portfolios to less-developed countries with reserves .</english>
+  <czech>Tímto navýšením rezerv se mateřská společnost firmy Morgan Guaranty Trust Co . staví mezi několik významných amerických bank , které pokryly téměř veškerá svá střední a dlouhodobá portfolia pro méně rozvinuté země rezervními fondy .</czech>
+  <sure>1-1 2-3 3-2 4-4 4-13 6-5 6-6 8-8 9-9 10-10 11-11 12-12 13-14 15-15 16-16 17-17 19-17 21-18 22-20 24-21 25-22 26-23 27-24 28-25 29-26 30-27 31-28 32-29 33-30 33-31 34-32 36-33 36-34 37-35</sure>
+  <possible>5-6 7-7 14-15 23-21 35-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s5">
+  <english>The latest quarter 's loss equals $ 9.92 a share .</english>
+  <czech>Ztráta za poslední čtvrtletí činí 9,92 dolaru na akcii .</czech>
+  <sure>2-3 3-4 5-1 6-5 7-7 8-6 9-8 10-9 11-10</sure>
+  <possible>1-4 3-2 4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s6">
+  <english>In the year-earlier quarter , Morgan earned $ 233.6 million , or $ 1.25 a share .</english>
+  <czech>Ve stejném čtvrtletí minulého roku vydělával Morgan 233,6 milionu dolarů nebo 1,25 dolaru na akcii .</czech>
+  <sure>1-1 3-4 3-5 4-3 6-7 7-6 8-10 9-8 10-9 12-11 13-13 14-12 15-14 16-15 17-16</sure>
+  <possible>2-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s7">
+  <english>George M . Salem , analyst at Prudential-Bache Securities Inc . , called the results `` mildly disappointing . ''</english>
+  <czech>George M . Salem , analytik u firmy Prudential - Bache Securities Inc . , označil výsledky za " mírné zklamání . "</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-9 8-10 8-11 9-12 10-13 11-14 12-15 13-16 15-17 16-19 17-20 18-21 19-22 20-23</sure>
+  <possible>14-17 18-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s8">
+  <english>Excluding the $ 2 billion provision and allowing for the taxes Morgan paid , earnings were about 65 cents a share , Mr . Salem said .</english>
+  <czech>Odečteme - li rezervy vy výši 2 miliardy dolarů a započítáme - li daně , které Morgan zaplatil , vychází zisk zhruba 65 centů na akcii , uvedl Salem .</czech>
+  <sure>1-1 1-2 1-3 3-9 4-7 5-8 6-4 7-10 8-11 8-12 8-13 11-14 12-17 13-18 14-19 15-21 16-20 17-22 18-23 19-24 20-25 21-26 22-27 25-29 26-28 27-30</sure>
+  <possible>2-4 5-5 9-14 10-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s9">
+  <english>In New York Stock Exchange composite trading yesterday , Morgan climbed $ 1.50 a share to $ 44.125 .</english>
+  <czech>V kombinovaném obchodování Newyorské burzy se Morgan včera vyšplhal o 1,50 dolaru na akcii , a to na 44,125 dolaru .</czech>
+  <sure>1-1 2-4 3-4 4-5 5-5 6-2 7-3 8-8 10-7 11-6 11-9 12-12 13-11 14-13 15-14 16-18 17-20 18-19 19-21</sure>
+  <possible>12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s10">
+  <english>Net interest income sank 27 % in the quarter to $ 254 million from $ 347 million .</english>
+  <czech>Čistý úrokový příjem klesl v tomto čtvrtletí o 27 % , tedy na 254 milionů , z 347 milionů .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-9 6-10 7-5 8-6 9-7 10-13 12-14 13-15 14-17 16-18 17-19 18-20</sure>
+  <possible>6-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s11">
+  <english>The interest rate on short-term funds , which banks borrow to finance longer-term loans to customers , was `` sharply higher , '' Morgan said .</english>
+  <czech>Úroková míra u krátkodobých fondů , které si banky půjčují , aby mohly financovat dlouhodobé úvěry svým klientům , se " prudce zvýšila " , uvedl Morgan .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 8-7 9-9 10-8 10-10 11-12 12-14 13-15 14-16 16-18 17-19 19-21 20-22 22-25 23-24 24-27 25-26 26-28</sure>
+  <possible>1-2 15-18</possible>
+  <phrasal>18-20 18-23 21-20 21-23</phrasal>
+</s>
+<s id="wsj_2211-s12">
+  <english>Morgan received $ 2 million of interest payments on its medium and long-term Brazilian loans ; had they been accruing interest , net interest income would have been $ 35 million higher in the quarter , Morgan said .</english>
+  <czech>Morgan obdržel 2 miliony dolarů úrokových plateb ze svých středních a dlouhodobých brazilských půjček ; kdyby se bylo jednalo o nahromaděný úrok , byl by čistý úrokový příjem za toto čtvrtletí o 35 milionů dolarů vyšší , uvedl Morgan .</czech>
+  <sure>1-1 2-2 3-5 4-3 5-4 7-6 8-7 9-8 10-9 11-10 12-11 13-12 14-13 15-14 16-15 20-21 21-22 22-23 23-26 24-27 25-28 26-25 28-24 29-35 30-33 31-34 32-36 33-29 34-30 35-31 36-37 37-39 38-38 39-40</sure>
+  <possible>6-7 21-20 27-24 31-32</possible>
+  <phrasal>17-16 17-17 17-18 17-19 18-16 18-17 18-18 18-19 19-16 19-17 19-18 19-19</phrasal>
+</s>
+<s id="wsj_2211-s13">
+  <english>Such loans to Argentina also remain classified as non-accruing , costing the bank $ 10 million of interest income in the third period .</english>
+  <czech>Také obdobné úvěry pro Argentinu jsou nadále klasifikovány jako nerostoucí , což banku ve třetím období stálo 10 milionů dolarů z úrokového příjmu .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-1 6-6 6-7 7-8 8-9 9-10 10-11 11-17 13-13 14-20 15-18 16-19 17-21 18-22 19-23 20-14 22-15 23-16 24-24</sure>
+  <possible>12-13 21-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s14">
+  <english>Income from sources other than interest climbed 12 % to $ 414 million , reflecting higher corporate-finance and other fees and gains on sales of investment securities .</english>
+  <czech>Příjmy z jiných než úrokových zdrojů se vyšplhaly o 12 % na 414 milionů dolarů , což odráží nárůst bankovního financování podniků a další poplatky a zisky z prodeje investičních cenných papírů .</czech>
+  <sure>1-1 2-2 3-6 4-3 5-4 6-5 7-7 7-8 8-10 9-11 10-12 11-15 12-13 13-14 14-16 15-18 16-19 17-20 17-21 17-22 18-23 19-24 20-25 21-26 22-27 23-28 24-29 26-30 27-31 27-32 28-33</sure>
+  <possible>9-9 25-32</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s15">
+  <english>`` These increases were partly offset by lower trading-related '' income , the bank said .</english>
+  <czech>" Tyto nárůsty byly z části kompenzovány snížením příjmu spojeného s obchodováním " , uvedla banka .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 6-7 8-8 9-10 9-11 9-12 10-13 11-9 12-14 14-16 15-15 16-17</sure>
+  <possible>5-5 7-9 13-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s16">
+  <english>Non-interest expenses grew 16 % to $ 496 million .</english>
+  <czech>Neúrokové výdaje se zvýšily o 16 % , tedy na 496 milionů dolarů .</czech>
+  <sure>1-1 2-2 3-3 3-4 4-6 5-7 6-10 7-13 8-11 9-12 10-14</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s17">
+  <english>NCNB Corp .</english>
+  <czech>NCNB Corp .</czech>
+  <sure>1-1 2-2 3-3</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s18">
+  <english>NCNB Corp . 's net income more than doubled in the period , largely because of continued strong performance by the bank 's Texas operations .</english>
+  <czech>Čistý zisk firmy NCNB Corp . ' s se za toto období více než zdvojnásobil , a to zejména díky trvale vysokému výnosu texaských poboček banky .</czech>
+  <sure>1-4 2-5 3-6 5-1 6-2 7-13 8-14 9-9 9-15 10-10 11-11 12-12 13-16 14-19 15-20 17-21 18-22 19-23 22-26 24-24 25-25 26-27</sure>
+  <possible>4-5 16-23 20-25 21-25 23-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s19">
+  <english>The Charlotte , N . C . , company said earnings rose to $ 143.6 million , or $ 1.45 a share , from $ 58.9 million , or 69 cents a share , a year earlier .</english>
+  <czech>Společnost Charlotte , N . C . , uvedla , že její příjem stoupl na 143,6 milionu dolarů ( 1,45 dolaru na akcii ) z loňských 58,9 milionů ( 69 centů na akcii ) .</czech>
+  <sure>2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-1 10-9 11-13 12-14 13-15 14-18 15-16 16-17 17-19 19-21 20-20 21-22 22-23 23-24 24-25 26-27 27-28 28-29 30-30 31-31 32-32 33-33 34-34 35-26 36-26 37-26 38-35</sure>
+  <possible>1-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s20">
+  <english>The latest quarter included a gain of $ 56.1 million , or 59 cents a share , related to the purchase of the remaining 51 % of NCNB Texas National Bank from the Federal Deposit Insurance Corp .</english>
+  <czech>Poslední čtvrtletí zahrnovalo zisk 56,1 milionu dolarů ( 59 centů na akcii ) v důsledku odkoupení zbývajících 51 % společnosti NCNB Texas National Bank od federální pojišťovny Federal Deposit Insurance Corp .</czech>
+  <sure>2-1 3-2 4-3 6-4 8-7 9-5 10-6 11-8 13-9 14-10 15-11 16-12 17-13 18-14 18-15 21-16 24-17 25-18 26-19 28-21 29-22 30-23 31-24 32-25 34-28 35-29 36-30 37-31 38-32</sure>
+  <possible>1-2 5-4 7-6 19-16 20-16 22-19 23-19 27-21 33-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s21">
+  <english>The strong performance , however , contrasted with an unexpectedly large increase in the size of NCNB 's problem loans , particularly in the Southeast .</english>
+  <czech>Tyto dobré výsledky však kontrastovaly s nečekaně velkým nárůstem problémových půjček NCNB , a to zejména na jihovýchodě .</czech>
+  <sure>1-1 2-2 3-3 5-4 7-5 8-6 10-7 11-8 12-9 17-12 19-10 20-11 21-13 22-16 23-17 25-18 26-19</sure>
+  <possible>9-9 18-12 24-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s22">
+  <english>In the third quarter , nonperforming assets jumped to $ 474.1 million , or 1.43 % of net loans and leases , from $ 232.8 million , or 1.13 % in the second quarter .</english>
+  <czech>Ve třetím čtvrtletí stouplo množství nevýnosných aktiv na 474,1 milionu dolarů , neboli 1,43 % čistých úvěrů a pronájmů , a to z původních 232,8 milionu dolarů ( 1,13 % ) ve druhém čtvrtletí .</czech>
+  <sure>1-1 3-2 4-3 6-6 7-7 8-4 9-8 10-11 11-9 12-10 13-12 14-13 15-14 16-15 18-16 19-17 20-18 21-19 22-20 23-23 24-27 25-25 26-26 27-28 29-29 30-30 31-32 33-33 34-34 35-35</sure>
+  <possible>2-3 17-17 32-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s23">
+  <english>Nonperformers totaled $ 230.8 million , or 1.27 % in the year-ago third quarter .</english>
+  <czech>Ve třetím čtvrtletí loňského roku činila celková výše nevýnosných aktiv 230,8 milionu dolarů ( 1,27 % ) .</czech>
+  <sure>1-9 1-10 2-6 2-7 2-8 3-13 4-11 5-12 6-14 8-15 9-16 10-1 12-4 12-5 13-2 14-3 15-18</sure>
+  <possible>11-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s24">
+  <english>Included in the increase in the most recent quarter is a $ 33 million loan , which NCNB said it `` expects to be fully repaid , with no loss , early in the fourth quarter . ''</english>
+  <czech>Do nárůstu za poslední čtvrtletí je zahrnuta i půjčka 33 milionů dolarů , u níž NCNB podle svých slov očekává , že bude " plně splacena bez jakékoli ztráty , a to počátkem čtvrtého čtvrtletí . "</czech>
+  <sure>1-7 2-1 4-2 5-3 7-4 8-4 9-5 10-6 12-12 13-10 14-11 15-9 16-13 17-15 18-16 21-24 24-23 25-25 26-26 31-30 32-33 35-34 36-35 37-36 38-37</sure>
+  <possible>3-2 6-5 11-9 17-14 23-23 33-35 34-35</possible>
+  <phrasal>19-17 19-18 19-19 19-20 20-17 20-18 20-19 20-20 22-17 22-18 22-19 22-20 28-27 28-28 28-29 29-27 29-28 29-29 30-27 30-28 30-29</phrasal>
+</s>
+<s id="wsj_2211-s25">
+  <english>The deterioration in credit quality offset strong loan growth of 17 % in NCNB 's Southeast operations , as well as a 28 % growth in deposits resulting from an aggressive marketing campaign .</english>
+  <czech>Zhoršení kvality úvěrů kompenzoval silný , 17 procentní růst půjček v operacích NCNB na Jihovýchodě a 28 % nárůst vkladů v důsledku agresivní marketingové kampaně .</czech>
+  <sure>2-1 4-3 5-2 6-4 7-5 8-10 9-9 11-7 12-8 13-11 14-13 16-15 17-12 19-16 20-16 21-16 23-17 24-18 25-19 27-20 28-22 31-23 32-24 33-25 34-26</sure>
+  <possible>1-1 3-2 10-8 15-13 16-14 22-19 26-20 28-21 29-25 30-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s26">
+  <english>The higher rates paid on deposits also helped squeeze NCNB 's net interest margin in the Southeast to 3.38 % from 3.80 % a year earlier .</english>
+  <czech>Zvýšení vkladových sazeb kromě toho pomohlo NCNB stlačit čistý zisk z úroků na Jihovýchodě na 3,38 % z loňských 3,80 % .</czech>
+  <sure>2-1 3-3 6-2 8-6 9-8 10-7 12-9 13-12 14-10 15-13 17-14 18-15 19-16 20-17 21-18 22-20 23-21 24-19 25-19 26-19 27-22</sure>
+  <possible>1-3 5-2 11-7 13-11 16-14</possible>
+  <phrasal>7-4 7-5</phrasal>
+</s>
+<s id="wsj_2211-s27">
+  <english>In Big Board composite trading yesterday , NCNB jumped $ 3.50 a share , to $ 51 .</english>
+  <czech>Ve smíšeném obchodování na Newyorské burze vyskočila NCNB o 3,50 dolaru na akcii , a to na 51 dolarů .</czech>
+  <sure>1-1 4-2 5-3 8-8 9-7 10-11 11-10 12-12 13-13 14-14 15-17 16-19 17-18 18-20</sure>
+  <possible>11-9</possible>
+  <phrasal>2-4 2-5 2-6 3-4 3-5 3-6</phrasal>
+</s>
+<s id="wsj_2211-s28">
+  <english>Results were released after the market closed .</english>
+  <czech>Výsledky byly zveřejněny po uzavření trhu .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-6 8-7</sure>
+  <possible>5-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s29">
+  <english>NCNB Texas National , formed from the remnants of of the failed First RepublicBank Corp . of Dallas , contributed $ 76.9 million to NCNB 's bottom line in the third quarter .</english>
+  <czech>NCNB Texas National , která vznikla z pozůstatků zkrachovalé dallaské First RepublicBank Corp . , přispěla ve třetím čtvrtletí k zisku NCNB částkou 76,9 milionu dolarů .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 6-7 8-8 12-9 13-11 14-12 15-13 16-14 18-10 19-15 20-16 21-26 22-24 23-25 24-20 25-22 27-21 28-21 29-17 31-18 32-19 33-27</sure>
+  <possible>7-8 9-13 11-13 17-10 26-22 30-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s30">
+  <english>NCNB said its third-quarter results reflect 100 % of earnings of the Texas operation since Aug . 1 .</english>
+  <czech>NCNB uvedla , že její výsledky za třetí čtvrtletí odrážejí 100 % zisku texaských poboček od 1 . srpna .</czech>
+  <sure>1-1 2-2 3-5 4-7 4-8 4-9 5-6 6-10 7-11 8-12 10-13 13-14 14-15 15-16 16-19 18-17 19-20</sure>
+  <possible>9-13 11-15 12-15 18-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s31">
+  <english>NCNB raised some $ 1.9 billion in new capital during the quarter to complete the NCNB Texas purchase , and to acquire several small failed thrifts to fill out its regional franchise .</english>
+  <czech>V průběhu čtvrtletí získala NCNB zhruba 1,9 miliardy dolarů nového kapitálu , aby mohla dokončit odkoupení NCNB Texas a získat kromě toho i několik malých neúspěšných spořitelen , kterými by vyplnila svou regionální koncesi .</czech>
+  <sure>1-5 2-4 3-6 4-9 5-7 6-8 8-10 9-11 10-1 10-2 12-3 13-13 14-15 16-17 17-18 18-16 20-19 22-20 23-24 24-25 25-26 26-27 30-32 31-33 32-34 33-35</sure>
+  <possible>7-11 11-3 15-16 21-20</possible>
+  <phrasal>27-29 27-30 27-31 28-29 28-30 28-31 29-29 29-30 29-31</phrasal>
+</s>
+<s id="wsj_2211-s32">
+  <english>Last week , the banking company said it purchased both Freedom Savings & Loan Association , Tampa , Fla . , and University Federal Savings Association of San Antonio , Texas , for $ 169.4 million .</english>
+  <czech>Minulý týden bankovní dům uvedl , že odkoupil jak Freedom Savings & Loan Association se sídlem ve floridské Tampě , tak University Federal Savings Association se sídlem v San Antoniu v Texasu , za 169,4 milionu dolarů .</czech>
+  <sure>1-1 2-2 5-3 6-4 7-5 9-8 11-10 12-11 13-12 14-13 15-14 17-19 19-18 21-20 23-22 24-23 25-24 26-25 27-28 28-29 29-30 31-32 33-34 34-37 35-35 36-36 37-38</sure>
+  <possible>4-4 31-31</possible>
+  <phrasal>10-9 10-21 22-9 22-21</phrasal>
+</s>
+<s id="wsj_2211-s33">
+  <english>In the first nine months , NCNB 's net income climbed 65 % to $ 310.9 million , or $ 3.30 a share , from $ 188.2 million , or $ 2.22 a share , a year earlier .</english>
+  <czech>Za prvních devět měsíců stoupl čistý příjem NCNB o 65 % , tedy na 310,9 milionu dolarů ( 3,30 na akcii ) , z loňských 188,2 milionu dolarů ( 2,22 na akcii ) .</czech>
+  <sure>1-1 3-2 4-3 5-4 7-8 9-6 10-7 11-5 12-10 13-11 14-14 15-17 16-15 17-16 18-18 21-19 22-20 23-21 24-22 25-24 26-28 27-26 28-27 29-29 32-30 33-31 34-32 35-33 36-25 37-25 38-25 39-34</sure>
+  <possible>2-4 8-8 13-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s34">
+  <english>Security Pacific Corp .</english>
+  <czech>Security Pacific Corp .</czech>
+  <sure>1-1 2-2 3-3 4-4</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s35">
+  <english>Security Pacific 's earnings growth slowed in the third quarter , but the Los Angeles bank holding company was still able to post a 10 % increase in net income because of robust growth in residential real-estate and consumer loans .</english>
+  <czech>Nárůst příjmů firmy Security Pacific se ve třetím čtvrtletí zpomalil , přesto však mohla tato bankovní společnost z Los Angeles ohlásit 10 % nárůst čistého zisku , a to díky silnému nárůstu úvěrů na bydlení a spotřebitelských úvěrů .</czech>
+  <sure>1-4 2-5 4-2 5-1 6-6 6-10 7-7 9-8 10-9 11-11 12-12 13-15 14-19 15-20 19-14 20-13 21-14 23-21 25-22 26-23 27-24 29-25 30-26 31-30 33-31 34-32 36-35 37-35 38-36 39-37 40-33 40-38 41-39</sure>
+  <possible>3-5 8-9 15-18 22-21 24-24 28-26 32-32 35-33 37-34</possible>
+  <phrasal>16-16 16-17 17-16 17-17 18-16 18-17</phrasal>
+</s>
+<s id="wsj_2211-s36">
+  <english>Net rose to $ 185.1 million , or $ 1.55 a share , from $ 167.9 million , or $ 1.47 a share , a year earlier .</english>
+  <czech>Čistý zisk stoupl na 185,1 milionu dolarů ( 1,55 dolaru na akcii ) z loňských 167,9 milionu dolarů ( 1,47 dolaru na akcii .</czech>
+  <sure>1-1 1-2 2-3 3-4 4-7 5-5 6-6 7-8 9-10 10-9 11-11 12-12 13-13 14-14 15-18 16-16 17-17 18-19 20-21 21-20 22-22 23-23 25-15 26-15 27-15 28-24</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s37">
+  <english>The company said the gain resulted mainly from a $ 54 million increase in net interest income , reflecting a 33 % increase in real estate loans -LRB- mainly residential -RRB- , and a 19 % rise in consumer loans .</english>
+  <czech>Společnost uvedla , že zisk je zejména výsledkem nárůstu čistého zisku z úroků o 54 milionů dolarů , což odráží 33 % nárůst realitních půjček ( především na bydlení ) a 19 % vzrůst spotřebitelských úvěrů .</czech>
+  <sure>2-1 3-2 5-5 6-6 6-8 7-7 10-17 11-15 12-16 13-9 15-10 16-13 17-11 18-18 19-20 21-21 22-22 23-23 25-24 26-24 27-25 28-26 29-27 30-29 31-30 33-31 35-32 36-33 37-34 39-35 40-36 41-37</sure>
+  <possible>1-1 4-5 8-9 9-9 12-14 14-11 16-12 20-23 24-25 30-28 34-34 38-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s38">
+  <english>These high-yielding loans in effect replaced some low-yielding assets such as inter-bank loans , which were allowed to decrease .</english>
+  <czech>Tyto vysoce výnosné půjčky ve skutečnosti nahradily některá málo výnosná aktiva , např . mezibankovní půjčky , které se mohly zmenšovat .</czech>
+  <sure>1-1 2-2 2-3 3-4 4-5 5-6 6-7 7-8 8-9 8-10 9-11 12-15 13-16 14-17 15-18 19-21 20-22</sure>
+  <possible>18-21</possible>
+  <phrasal>10-13 10-14 11-13 11-14 16-19 16-20 17-19 17-20</phrasal>
+</s>
+<s id="wsj_2211-s39">
+  <english>As a result , Security Pacific 's net interest margin fell only 13 basis points , a more mild decrease than some major banks outside California , which have been reporting more sluggish earnings .</english>
+  <czech>Výsledkem je , že čistý úrokový zisk firmy Security Pacific klesl o pouhých 13 základních bodů , což představuje mírnější pokles než u některých velkých bank za hranicemi Kalifornie , které hlásí pomalejší zisky .</czech>
+  <sure>5-9 6-10 8-5 9-6 10-7 11-11 12-13 13-14 14-15 15-16 16-17 18-20 19-20 20-21 21-22 22-24 23-25 24-26 25-27 25-28 26-29 27-30 28-31 31-32 32-33 33-33 34-34 35-35</sure>
+  <possible>7-10 15-12 17-21 24-23 29-32 30-32</possible>
+  <phrasal>1-1 1-2 1-3 1-4 2-1 2-2 2-3 2-4 3-1 3-2 3-3 3-4 4-1 4-2 4-3 4-4</phrasal>
+</s>
+<s id="wsj_2211-s40">
+  <english>Security Pacific shares closed at $ 44.625 , down 37.5 cents , in Big Board composite trading .</english>
+  <czech>Akcie Security Pacific uzavíraly v kombinovaném obchodování na Newyorské burze na ceně 44,625 dolaru , tedy o 37,5 centů méně .</czech>
+  <sure>1-2 2-3 3-1 4-4 5-11 6-14 7-13 9-20 10-18 11-19 13-5 16-6 17-7 18-21</sure>
+  <possible>11-17</possible>
+  <phrasal>14-8 14-9 14-10 15-8 15-9 15-10</phrasal>
+</s>
+<s id="wsj_2211-s41">
+  <english>The earnings represent a 0.89 % return on assets for Security Pacific , and an 18.9 % return on equity .</english>
+  <czech>Tento zisk představuje pro Security Pacific návratnost aktiv 0,89 % a návratnost kmenového jmění 18,9 % .</czech>
+  <sure>1-1 2-2 3-3 5-9 6-10 7-7 9-8 10-4 11-5 12-6 14-11 16-15 17-16 18-12 21-17</sure>
+  <possible>4-7 8-8 15-12</possible>
+  <phrasal>19-13 19-14 20-13 20-14</phrasal>
+</s>
+<s id="wsj_2211-s42">
+  <english>The loan growth offset continuing real-estate loan losses in the depressed Arizona market .</english>
+  <czech>Nárůst úvěrů kompenzuje dlouhodobé ztráty z realitních půjček na arizonském trhu , procházejícím krizí .</czech>
+  <sure>2-2 3-1 4-3 5-4 6-7 7-8 8-5 9-9 12-10 13-11 14-15</sure>
+  <possible>1-1 7-6 10-11</possible>
+  <phrasal>11-13 11-14</phrasal>
+</s>
+<s id="wsj_2211-s43">
+  <english>Security Pacific reported a 33 % increase in net credit losses for the quarter , to $ 109 million from $ 81.9 million in the year-ago period .</english>
+  <czech>Security Pacific hlásí za toto čtvrtletí nárůst čistých úvěrových ztrát o 33 % , tedy na 109 milionů dolarů , z 81,9 milionu dolarů ve stejném období minulého roku .</czech>
+  <sure>1-1 2-2 3-3 5-12 6-13 7-7 9-8 10-9 11-10 12-4 13-5 14-6 15-14 16-16 17-19 18-17 19-18 20-21 21-24 22-22 23-23 24-25 25-26 26-28 26-29 27-27 28-30</sure>
+  <possible>4-7 6-11 8-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s44">
+  <english>Nonperforming loans grew slightly to $ 1.75 billion at Sept . 30 , from $ 1.7 billion a year ago .</english>
+  <czech>Nevýdělečné půjčky mírně vzrostly , a to k 30 . září na 1,75 miliardy dolarů , oproti 1,7 miliardy dolarů v loňském roce .</czech>
+  <sure>1-1 2-2 3-4 4-3 5-12 6-15 7-13 8-14 9-8 10-11 12-9 13-16 14-17 15-20 16-18 17-19 21-24</sure>
+  <possible>12-10</possible>
+  <phrasal>18-21 18-22 18-23 19-21 19-22 19-23 20-21 20-22 20-23</phrasal>
+</s>
+<s id="wsj_2211-s45">
+  <english>Security Pacific 's loan-loss provision was down 22 % , or $ 30.4 million , because it added to its foreign-debt reserve the year before .</english>
+  <czech>Rezervní fond na krytí úvěrových ztrát firmy Security Pacific se snížil o 22 % , tedy 30,4 milionu dolarů , protože se přičetl k rezervám na zahraniční dluhy z loňského roku .</czech>
+  <sure>1-8 2-9 4-3 4-4 4-5 4-6 5-1 5-2 8-13 9-14 10-15 11-16 12-19 13-17 14-18 15-20 16-21 18-22 18-23 19-24 21-26 21-27 21-28 22-25 26-32</sure>
+  <possible>3-7 9-12</possible>
+  <phrasal>6-10 6-11 7-10 7-11 23-29 23-30 23-31 24-29 24-30 24-31 25-29 25-30 25-31</phrasal>
+</s>
+<s id="wsj_2211-s46">
+  <english>Non-interest income fell 6 % in the quarter , mainly because of an unusual gain a year earlier from the sale of Hong Kong banking operations .</english>
+  <czech>Neúrokové příjmy klesly v tomto čtvrtletí o 6 % , a to zejména v důsledku nebývalého zisku z prodeje bankovních poboček v Hongkongu v předchozím roce .</czech>
+  <sure>1-1 2-2 3-3 4-8 5-9 6-4 7-5 8-6 9-10 10-13 11-15 14-16 15-17 19-18 21-19 23-23 24-23 25-20 26-21 27-27</sure>
+  <possible>5-7 11-14 12-17 13-17 20-19 22-21 24-22</possible>
+  <phrasal>16-24 16-25 16-26 17-24 17-25 17-26 18-24 18-25 18-26</phrasal>
+</s>
+<s id="wsj_2211-s47">
+  <english>Non-interest expense grew only 4 % in the period .</english>
+  <czech>Neúrokové výdaje vzrostly za dané období o pouhé 4 % .</czech>
+  <sure>1-1 2-2 3-3 4-8 5-9 6-10 7-4 8-5 9-6 10-11</sure>
+  <possible>6-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2211-s48">
+  <english>For the nine months , net rose 17 % to $ 548.9 million , or $ 4.67 a share , from $ 469.4 million , or $ 4.13 a share , a year earlier .</english>
+  <czech>Za devět měsíců stoupl čistý příjem o 17 % na 548,9 milionu dolarů ( 4,67 dolaru na akcii ) , oproti 469,4 milionu dolarů ( 4,13 dolaru na akcii ) před rokem .</czech>
+  <sure>1-1 3-2 4-3 6-5 6-6 7-4 8-8 9-9 10-10 11-13 12-11 13-12 14-14 16-16 17-15 18-17 19-18 20-19 21-21 22-24 23-22 24-23 25-25 27-27 28-26 29-28 30-29 31-30 35-33</sure>
+  <possible>2-3 9-7</possible>
+  <phrasal>32-31 32-32 33-31 33-32 34-31 34-32</phrasal>
+</s>
+</sentences>

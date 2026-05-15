@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_bertram19-s1">
+  <english>Nato 's Next Moves East</english>
+  <czech>NATO : další tažení na východ</czech>
+  <sure>1-1 3-3 4-4 5-6</sure>
+  <possible>2-1 5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s2">
+  <english>BERLIN : Nato 's next summit will take place in Prague in the winter of 2002 – that is , if President Bush does n't call his allies together before then .</english>
+  <czech>BERLIN : Příští summit Severoatlantické aliance se bude konat v zimě roku 2002 v Praze – pokud ovšem prezident Bush nesvolá své spojence dříve .</czech>
+  <sure>1-1 2-2 3-5 3-6 5-3 6-4 7-8 10-14 11-15 12-10 14-11 16-13 17-16 21-17 22-19 23-20 24-21 25-21 26-21 27-22 28-23 29-21 30-24 32-25</sure>
+  <possible>4-6 13-11 15-13 16-12 31-24</possible>
+  <phrasal>8-7 8-9 9-7 9-9</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s3">
+  <english>But the questions to be answered leading up to the summit are already clear : which , if any , country will be asked to join Nato ; when will any new member join ?</english>
+  <czech>Otázky , které je do té doby třeba zodpovědět , jsou jasné už dnes : která další země – pokud vůbec nějaká – bude přizvána ke vstupu a kdy k tomu dojde ?</czech>
+  <sure>3-1 4-8 5-4 5-8 6-9 9-5 10-6 12-11 13-13 14-12 15-15 16-16 17-19 18-20 19-22 20-23 21-18 23-24 24-25 25-26 26-27 29-29 35-33</sure>
+  <possible>2-1 13-14 18-21 22-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s4">
+  <english>Whatever decisions are taken , it is also clear that preparatory work must begin as soon as possible , and at least before the end of the year .</english>
+  <czech>Ať už bude rozhodnutí jakékoliv , musí přípravné práce začít co nejdříve , a to nejpozději do konce tohoto roku .</czech>
+  <sure>1-5 2-4 3-3 5-6 11-8 12-9 13-7 14-10 19-13 20-14 22-16 23-17 25-18 27-19 28-20 29-21</sure>
+  <possible>4-4 20-15 21-16 24-18 26-20</possible>
+  <phrasal>15-11 15-12 16-11 16-12 17-11 17-12 18-11 18-12</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s5">
+  <english>All this is different from 1997 , when Poland , Hungary and the Czech Republic joined Nato .</english>
+  <czech>Situace je naprosto odlišná od roku 1997 , kdy se členy NATO staly Polsko , Maďarsko a Česko .</czech>
+  <sure>3-2 4-4 5-5 6-7 7-8 8-9 9-14 10-15 11-16 12-17 14-18 15-18 16-10 16-11 16-13 17-12 18-19</sure>
+  <possible>1-3 6-6 13-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s6">
+  <english>Back then , the outcome of the Madrid summit that agreed to their membership was uncertain until the final moments .</english>
+  <czech>Výsledek tehdejšího madridského summitu , kde se o jejich členství rozhodovalo , byl do samého závěru jednání nejasný .</czech>
+  <sure>2-2 5-1 8-3 9-4 10-6 12-8 13-9 14-10 15-13 16-18 17-14 19-16 20-16 21-19</sure>
+  <possible>1-2 4-1 6-4 7-4 10-5 11-7 11-11 18-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s7">
+  <english>That uncertainty ended when America succeeded in limiting invitations to three chosen countries , surprising those Alliance members who supported other candidates .</english>
+  <czech>Nejasnosti skončily , když Spojené státy omezily přijetí na tři vybrané země , čímž překvapily ty členy aliance , kteří podporovali jiné kandidáty .</czech>
+  <sure>2-1 3-2 4-4 5-5 5-6 8-7 9-8 10-9 11-10 12-11 13-12 14-13 15-15 16-16 17-18 18-17 19-20 20-21 21-22 22-23 23-24</sure>
+  <possible>1-1 4-3 6-7 7-7 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s8">
+  <english>Today , the most important issue facing Nato concerns whether or not to admit the Baltic states – Estonia , Latvia , and Lithuania – now , after some delay , or never .</english>
+  <czech>Nejožehavějším problémem dnešních dnů je členství pobaltských států – Estonska , Lotyšska a Litvy : přijmout je hned teď , po přechodném období , anebo vůbec nikdy ?</czech>
+  <sure>1-3 1-4 4-1 5-1 6-2 14-16 16-7 17-8 18-9 19-10 20-11 21-12 23-13 24-14 26-19 27-20 28-21 31-24 32-25 33-27 34-28</sure>
+  <possible>3-1 13-16 14-17 15-8 22-13 25-15 26-18 30-22 30-23 33-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s9">
+  <english>Turning down or delaying Baltic state membership will be seen as a concession to Russia ; acting in their favor will be regarded by Moscow as a slap - in - the - face .</english>
+  <czech>Zamítnutí nebo pozdržení členství pobaltských zemí v NATO bude vnímáno jako ústupek vůči Rusku ; jejich přijetí pak ale bude Moskva vnímat jako plivnutí do obličeje .</czech>
+  <sure>1-1 2-1 3-2 4-3 5-5 6-6 7-4 9-9 10-10 11-11 13-12 14-13 15-14 16-15 19-16 22-20 23-22 25-21 26-23 30-25 34-26 35-27</sure>
+  <possible>8-9 12-12 21-20 24-21 27-24 28-24 32-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s10">
+  <english>No matter what decision Nato takes , containing the negative fall - out – in Russia or the Baltics – will not be easy .</english>
+  <czech>Negativní dopad obou možných rozhodnutí – buď pro Rusko nebo státy Pobaltí – nebude jednoduchý .</czech>
+  <sure>4-5 10-1 11-2 13-2 14-6 15-8 16-9 17-10 19-11 19-12 20-13 22-14 23-14 24-15 25-16</sure>
+  <possible>9-2 12-2 18-11 21-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s11">
+  <english>So a surprise conclusion in the manner of Madrid will only make matters worse , because careful preparations will be needed to contain the damage , and too much time will be lost if everything is put off until the meeting in Prague .</english>
+  <czech>Překvapivý závěr v madridském stylu by situaci jen zhoršil , protože je třeba celou věc pečlivě připravit , aby se zabránilo škodám , a protože se promrhá spousta času , bude - li vše odloženo až na pražská jednání .</czech>
+  <sure>3-1 4-2 5-3 7-5 9-4 10-6 11-8 12-9 13-7 14-9 15-10 16-11 17-16 18-17 20-12 21-13 22-19 23-21 25-22 26-23 27-24 29-28 30-29 33-27 34-33 36-31 37-35 38-35 39-36 41-39 43-38 44-40</sure>
+  <possible>2-2 6-5 8-4 19-12 22-18 23-20 24-22 28-28 31-27 32-27 33-26 34-32 35-34 40-39 41-37 42-38</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s12">
+  <english>Some Nato members hope to evade these problems altogether through delay .</english>
+  <czech>Některé členské země NATO se snaží těmto problémům vyhnout odkladem .</czech>
+  <sure>1-1 2-4 3-2 3-3 6-9 7-7 8-8 11-10 12-11</sure>
+  <possible>4-5 4-6 5-9 10-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s13">
+  <english>Why not postpone enlargement , they ask , until some of the states demanding to join Nato have gained EU membership , where elements of their security concerns may be met ?</english>
+  <czech>Ptají se , proč bychom nemohli odložit rozšíření některých států žádajících o vstup do NATO na dobu , až se stanou členy Evropské unie , kdy už mnohé aspekty jejich bezpečnostní situace budou vyřešeny ?</czech>
+  <sure>1-4 3-7 4-8 7-1 7-2 8-18 9-16 9-17 10-9 13-10 14-11 15-12 16-13 17-15 19-21 20-23 20-24 21-22 22-25 23-26 24-29 26-30 27-31 28-32 30-33 31-34 32-35</sure>
+  <possible>1-3 2-7 3-5 3-6 6-1 11-10 12-10 16-14 18-21 19-19 19-20 25-32 29-33</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s14">
+  <english>But postponement is not a viable option , for the following reasons :</english>
+  <czech>Odklad ale není schůdné řešení , a to z následujících důvodů :</czech>
+  <sure>1-2 2-1 3-3 4-3 6-4 7-5 8-6 9-9 11-10 12-11 13-12</sure>
+  <possible>5-4 10-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s15">
+  <english>- Russia itself placed membership for the Baltic three atop Nato 's agenda .</english>
+  <czech>– Členství pobaltských zemí v NATO je pro alianci prioritou právě díky Rusku .</czech>
+  <sure>1-1 2-13 5-2 8-3 10-10 11-6 13-10 14-14</sure>
+  <possible>6-3 7-3 11-5 12-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s16">
+  <english>Time and again Moscow has thundered that Nato 's first eastward enlargement must be its last .</english>
+  <czech>Moskva nepřestává hřímat , že první vlna rozšíření NATO směrem na východ musí být zároveň poslední .</czech>
+  <sure>1-2 2-2 3-2 4-1 6-3 7-5 8-9 10-6 11-11 11-12 12-8 13-13 14-14 16-16 17-17</sure>
+  <possible>5-3 7-4 9-9 11-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s17">
+  <english>Bringing the Baltic states into Nato , Russia claims , would severely compromise its security ( for that read Russian self - esteem ) .</english>
+  <czech>Podle Ruska by členství Estonska , Lotyšska a Litvy v NATO vážně ohrozilo jeho bezpečnost ( čti sebevědomí ) .</czech>
+  <sure>5-10 6-11 8-2 9-1 11-3 12-12 13-13 14-14 15-15 16-16 19-17 21-18 23-18 24-19 25-20</sure>
+  <possible>2-5 2-7 2-9 3-6 3-8 4-6 4-8 22-18</possible>
+  <phrasal>3-5 3-7 3-9 4-5 4-7 4-9</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s18">
+  <english>The strength of these protests , however , will make dawdling over Nato enlargement appear as a kowtow to President Putin ;</english>
+  <czech>Vzhledem k síle těchto protestů by ale otálení s rozšiřováním mohlo nakonec Putinovi připadat jako podlézání ;</czech>
+  <sure>2-3 4-4 5-5 7-7 9-6 11-8 12-9 14-10 15-14 16-15 18-16 21-13 22-17</sure>
+  <possible>1-3 3-5 6-7 8-7 10-8 17-16 19-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s19">
+  <english>- The West promised to continue enlargement at the Washington Summit of April 1999 .</english>
+  <czech>– Na washingtonském summitu v roce 1999 se Západ zavázal , že v rozšiřování bude pokračovat .</czech>
+  <sure>1-1 3-9 4-8 4-10 5-12 6-16 7-14 8-2 10-3 11-4 12-5 14-7 15-17</sure>
+  <possible>2-9 5-11 6-15 7-13 9-4 14-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s20">
+  <english>Back then Nato heads - of - state welcomed the progress of various candidate countries , commending the Baltic states in particular .</english>
+  <czech>Hlavy států NATO tehdy přivítaly pokrok kandidátských zemí a pochválily konkrétně pobaltské země .</czech>
+  <sure>1-4 2-4 3-3 4-1 8-2 9-5 11-6 14-7 15-8 16-9 17-10 19-12 20-13 21-11 22-11 23-14</sure>
+  <possible>6-2 10-6 12-8 18-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s21">
+  <english>Nato 's leaders also promised to revisit enlargement by 2002 at the latest .</english>
+  <czech>Představitelé NATO rovněž slíbili , že se k otázce rozšíření vrátí nejpozději v roce 2002 .</czech>
+  <sure>1-2 3-1 4-3 5-4 6-6 7-11 8-10 9-13 10-15 12-12 13-12 14-16</sure>
+  <possible>2-2 6-5 7-7 8-8 10-14 11-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s22">
+  <english>So they cannot repeat the same formula in Prague and remain credible in both Russia and Eastern Europe ;</english>
+  <czech>Chtějí - li zůstat v očích Ruska a východní Evropy důvěryhodní , nemohou v Praze zopakovat stejný recept jako v Madridu ;</czech>
+  <sure>3-13 4-16 6-17 7-18 8-14 9-15 11-4 12-11 13-5 15-7 16-8 17-9 18-10 19-22</sure>
+  <possible>2-13 5-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s23">
+  <english>- EU enlargement takes time while Nato enlargement is relatively speedy .</english>
+  <czech>– Rozšiřování Evropské unie je zdlouhavější než relativně rychlejší rozšiřování NATO .</czech>
+  <sure>1-1 2-3 2-4 3-2 4-6 5-6 6-7 7-11 8-10 10-8 11-9 12-12</sure>
+  <possible>4-5 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s24">
+  <english>Were negotiations over EU - admission of the Baltics near conclusion , postponing Nato - membership could be justified because the EU , with its new defense identity , is now both a security and prosperity union .</english>
+  <czech>Kdyby se jednání o přijetí do EU se zeměmi Pobaltí blížila ke konci , byl by odklad členství v NATO ospravedlnitelný , neboť Evropská unie se svou novou obrannou identitou je dnes nejen ekonomicky prosperující , ale i bezpečnostní svazek .</czech>
+  <sure>1-1 2-3 3-4 4-7 6-5 9-9 9-10 10-2 10-11 11-13 12-14 13-17 14-20 16-18 17-16 18-15 19-21 20-23 22-24 22-25 24-26 25-27 26-28 27-29 28-30 30-31 31-32 32-33 34-39 35-38 36-35 37-40 38-41</sure>
+  <possible>6-6 7-9 8-9 11-12 14-19 17-15 20-22 21-25 33-40 35-36 35-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s25">
+  <english>As EU members , the Baltic states would indirectly come under Nato 's security shield , making explicit membership unnecessary perhaps .</english>
+  <czech>Kdyby se pobaltské státy staly členy EU , dostaly by se nepřímo pod bezpečnostní štít Severoatlantické aliance a jejich explicitní členství v NATO by tak možná bylo zbytečné .</czech>
+  <sure>1-1 2-7 3-6 4-8 6-3 7-4 8-10 9-12 10-9 10-11 11-13 12-16 12-17 14-14 15-15 16-18 18-20 19-21 20-28 21-26 22-29</sure>
+  <possible>5-4 13-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s26">
+  <english>Unfortunately , years will elapse before negotiations over EU membership will conclude and be ratified .</english>
+  <czech>Bohužel bude trvat ještě dlouho , než budou jednání o vstupu těchto zemí do EU uzavřena a ratifikována .</czech>
+  <sure>1-1 6-7 7-9 8-10 9-15 10-11 11-8 12-16 13-17 15-18 16-19</sure>
+  <possible>2-1 9-14 14-18</possible>
+  <phrasal>3-2 3-3 3-5 4-2 4-3 4-5 5-2 5-3 5-5</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s27">
+  <english>Stalling until that time is postponement by other means .</english>
+  <czech>Pozastavení jednání do této doby je jen jiný způsob odkladu .</czech>
+  <sure>1-1 2-3 3-4 4-5 5-6 6-10 8-8 9-9 10-11</sure>
+  <possible>7-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s28">
+  <english>- At the Cold War 's end , Nato redefined itself as a stability network for all the Euro - Atlantic community , which includes Eastern Europe 's new democracies .</english>
+  <czech>– Na konci studené války NATO redefinovalo svou funkci jako síť stability pro celé euroatlantické společenství , kam pochopitelně patří i mladé východoevropské demokracie .</czech>
+  <sure>1-1 2-2 4-4 5-5 7-3 9-6 10-7 12-10 14-12 15-11 16-13 17-14 19-15 21-15 22-16 23-17 24-18 25-20 26-23 27-23 29-22 30-24 31-25</sure>
+  <possible>3-3 6-5 11-8 13-11 18-15 20-15 28-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s29">
+  <english>Arguments which say that , because no direct security risk exists there is no need for a Nato guarantee of the Baltics – a view that sometimes gains attention in Berlin – break with this redefinition .</english>
+  <czech>Argumenty tvrdící , že nehrozí žádné přímé bezpečnostní riziko a že proto země Pobaltí nepotřebují záruky NATO – názor , který má nemalý ohlas v Berlíně – , jsou ale v přímém rozporu s touto novou definicí .</czech>
+  <sure>1-1 3-2 4-4 6-11 6-12 7-6 8-7 9-8 10-9 11-5 14-15 15-15 18-17 19-16 22-13 22-14 23-18 25-19 26-21 28-22 29-24 30-25 31-26 32-27 34-34 35-35 36-36 36-37 37-38</sure>
+  <possible>2-2 4-3 5-4 6-10 7-5 12-15 13-15 16-16 17-16 20-13 21-13 24-19 26-20</possible>
+  <phrasal>33-29 33-31 33-32 33-33</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s30">
+  <english>Even if some Nato members want to distance themselves from this strategy , the Bush Administration unambiguously supports Nato 's role as a stability network .</english>
+  <czech>I když některé členské státy NATO by se od této strategie nejraději distancovaly , Bushova administrativa jednoznačně podporuje roli NATO jako sítě , jež je zárukou stability .</czech>
+  <sure>1-1 2-2 3-3 4-6 5-4 5-5 8-13 9-8 10-9 11-10 12-11 13-14 15-15 16-16 17-17 18-18 19-20 21-19 22-21 24-27 25-22 26-28</sure>
+  <possible>6-12 7-12 14-16 20-20 23-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s31">
+  <english>Neither putative EU membership nor today 's favorable security conditions justify postponing enlargement .</english>
+  <czech>Ani možné budoucí členství v EU ani současné příznivé bezpečnostní podmínky neopodstatňují odklad rozšiřování Severoatlantické aliance .</czech>
+  <sure>1-1 2-2 3-6 4-4 5-7 6-8 8-9 9-10 10-11 11-12 12-13 13-14 14-17</sure>
+  <possible>3-5 5-12 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s32">
+  <english>Diplomatic tricks cannot finesse the issue .</english>
+  <czech>Finesy diplomacie nemohou mít v tomto případě velký vliv .</czech>
+  <sure>1-2 2-1 3-3 4-4 4-9 5-6 6-7 7-10</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s33">
+  <english>Nato must either say " Yes " or " No " to the Baltic states .</english>
+  <czech>NATO musí pobaltským zemím jasně říct ano nebo ne .</czech>
+  <sure>1-1 2-2 4-6 6-7 8-8 10-9 14-3 15-4 16-10</sure>
+  <possible>12-4 13-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s34">
+  <english>( To be precise , Nato must treat the applications of all three Baltic countries together .</english>
+  <czech>( NATO musí navíc přihlášky všech tří zemí projednávat současně .</czech>
+  <sure>1-1 6-2 7-3 8-9 10-5 12-6 13-7 15-8 16-10 17-11</sure>
+  <possible>2-4 3-4 4-4 5-4 9-5 11-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s35">
+  <english>If only one were invited to join as a symbol of western determination , Russia would interpret this as appeasement , not steadfastness )</english>
+  <czech>Pokud by se členem NATO stala jen jedna ze zemí Pobaltí coby symbol západní odhodlanosti , Rusko by to chápalo jako ústupek , ne jako neochvějnost . )</czech>
+  <sure>1-1 2-7 3-8 4-2 8-12 10-13 12-14 13-15 14-16 15-17 16-18 17-20 18-19 19-21 20-22 21-23 22-24 23-26 24-28</sure>
+  <possible>7-3 7-4 7-6 9-13 11-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s36">
+  <english>If Nato says " Yes " to the Baltics , it must make both Moscow and the Baltic three understand that enlargement is meant to increase stability along Russia 's western border , not threaten Russia .</english>
+  <czech>Pokud NATO řekne ano , musí dát Rusku i baltské trojce jasně na srozuměnou , že cílem rozšíření je zvýšit stabilitu podél západní hranice Ruska , nikoli Rusku vyhrožovat .</czech>
+  <sure>1-1 2-2 3-3 5-4 10-5 12-6 16-9 18-10 19-11 21-16 22-18 23-19 24-17 26-20 27-21 28-22 29-25 31-23 32-24 33-26 34-27 35-29 36-28 37-30</sure>
+  <possible>11-6 15-8 17-11 21-15 23-17 25-20 30-25</possible>
+  <phrasal>13-7 13-13 13-14 20-7 20-13 20-14</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s37">
+  <english>As a signal to both , Nato 's military presence in the Baltics should be kept to a minimum .</english>
+  <czech>Signálem pro obě strany by měla být minimální vojenská přítomnost NATO v regionu Pobaltí .</czech>
+  <sure>3-1 4-2 5-3 7-11 9-9 10-10 11-12 13-14 14-5 14-6 15-7 19-8 20-15</sure>
+  <possible>1-1 2-1 8-11 12-14 13-13 18-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s38">
+  <english>In addition , the prospect of a democratic Russia eventually joining Nato might be openly acknowledged .</english>
+  <czech>Kromě toho by měla konečně být otevřeně připuštěna perspektiva vstupu demokratického Ruska do Severoatlantické aliance .</czech>
+  <sure>5-9 8-11 9-12 10-5 11-10 12-14 12-15 13-3 13-4 14-6 15-7 16-8 17-16</sure>
+  <possible>3-1 3-2 4-9 6-11 7-11 12-13</possible>
+  <phrasal>1-1 1-2 2-1 2-2</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s39">
+  <english>Both must be done before any new enlargement is announced .</english>
+  <czech>Obojí je třeba provést dříve , než bude oficiálně oznámena nová vlna rozšíření .</czech>
+  <sure>1-1 2-2 2-3 4-4 5-5 7-11 8-13 9-8 10-10 11-14</sure>
+  <possible>3-4 5-6 5-7 6-11 10-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s40">
+  <english>If Nato rejects the Baltic states it will need to prevent Moscow from interpreting that decision as confirmation that Estonia , Latvia , and Lithuania remain locked within Russia 's sphere of influence and that its Great Power posturing has paid off .</english>
+  <czech>Pokud NATO pobaltské země zamítne , musí zabránit tomu , aby to Moskva interpretovala jako stvrzení toho , že Estonsko , Lotyšsko a Litva zůstávají uvězněny ve sféře ruského vlivu a že se jeho velmocenský přístup vyplatil .</czech>
+  <sure>1-1 2-2 3-5 5-3 6-4 9-7 11-8 12-13 13-11 14-14 15-12 17-15 18-16 19-19 20-20 21-21 22-22 24-23 25-24 26-25 27-26 28-27 29-29 31-28 33-30 34-31 35-32 36-34 37-35 38-35 39-36 41-33 41-37 42-37 43-38</sure>
+  <possible>4-4 7-7 8-7 10-8 13-10 19-17 19-18 23-23 30-29 32-30 40-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s41">
+  <english>Both inferences are potentially disastrous , not only for relations between West and Eastern Europe but , more importantly , for relations between Russia and the West .</english>
+  <czech>Oba důsledky jsou potenciálně katastrofální , a to nejen pro vztahy mezi Západem a východní Evropou , ale především pro vztahy mezi Ruskem a Západem .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-9 8-9 9-10 10-11 11-12 12-13 13-14 14-15 15-16 16-18 17-17 18-19 19-19 21-20 22-21 23-22 24-23 25-24 27-25 28-26</sure>
+  <possible>20-19 26-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s42">
+  <english>Russia must be persuaded to confirm – explicitly and formally – the right of the Baltics , on their own , to choose their allies .</english>
+  <czech>Rusko je třeba přimět k tomu , aby explicitně a formálně stvrdilo právo pobaltských zemí na svobodnou volbu spojenců .</czech>
+  <sure>1-1 2-3 3-2 4-4 5-8 6-12 8-9 9-10 10-11 13-13 16-14 16-15 18-16 23-18 25-19 26-20</sure>
+  <possible>5-5 5-6 5-7 12-13 14-15 15-15 19-17 20-17 22-18 24-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s43">
+  <english>In view of Moscow 's insistence that it will never accept such a decision , this will not be easy .</english>
+  <czech>Ve světle toho , jak Moskva trvá na tom , že takové rozhodnutí nikdy nepřijme , to bude těžký úkol .</czech>
+  <sure>1-1 2-2 4-6 6-7 7-11 10-14 11-15 12-12 14-13 15-16 16-17 19-18 21-21</sure>
+  <possible>3-6 5-6 7-10 8-15 9-15 10-15 13-13 17-18</possible>
+  <phrasal>18-19 20-19</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s44">
+  <english>Moreover , if Nato membership for the Baltics is rejected , they will need reassurance that the West will assist them , concretely , should their security be put at risk .</english>
+  <czech>Pokud bude členství v alianci pobaltským zemím zamítnuto , musí se jim dostat ujištění , že jim v případě bezpečnostního ohrožení Západ pomůže .</czech>
+  <sure>3-1 5-3 8-6 8-7 9-2 10-8 11-9 12-12 14-10 15-14 16-16 18-22 20-23 21-17 25-18 25-19 27-20 29-21 31-21 32-24</sure>
+  <possible>4-4 4-5 6-7 7-7 13-10 14-11 16-15 17-22 19-23 28-19 30-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s45">
+  <english>Admission or postponement are both legitimate decisions .</english>
+  <czech>Přijetí i odklad jsou legitimní rozhodnutí .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-6 8-7</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s46">
+  <english>But each will require considerable early efforts to reduce their fall - out .</english>
+  <czech>Každé z nich si ale žádá včasné zhodnocení , aby se minimalizovaly jejich negativní důsledky .</czech>
+  <sure>1-5 2-1 4-6 6-7 8-10 9-12 10-13 14-16</sure>
+  <possible>2-2 2-3 3-6 4-4 7-8 8-9 9-11</possible>
+  <phrasal>11-14 11-15 12-14 12-15 13-14 13-15</phrasal>
+</s>
+<s id="project_syndicate_bertram19-s47">
+  <english>In weighing these options , admission of the Baltic countries quickly seems the better solution .</english>
+  <czech>Při hodnocení obou variant se přijetí pobaltských zemí okamžitě jeví jako lepší řešení .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-6 9-7 10-8 11-9 12-5 12-10 13-11 14-12 15-13 16-14</sure>
+  <possible>7-8 8-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s48">
+  <english>Efforts to contain the damage caused by postponement will likely be far more demanding than any effort needed to ease tension after enlargement is announced .</english>
+  <czech>Pokusy napravit škody , které by způsobil odklad vstupu , budou mnohem nákladnější než veškeré snahy uvolnit napětí poté , co bude rozšíření oznámeno .</czech>
+  <sure>1-1 3-2 5-3 6-7 8-8 11-11 12-12 13-13 14-13 15-14 16-15 17-16 20-17 21-18 22-19 23-23 24-22 25-24 26-25</sure>
+  <possible>2-2 4-3 6-6 7-8 9-11 19-17 22-20 22-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s49">
+  <english>Moreover , at the next Summit following Prague , the Baltics must be at any rate be granted what , in view of their history , they have every right to demand : to be part of a stability alliance that is a matter of course for western democracies .</english>
+  <czech>Na dalším summitu , následujícím po tom pražském , se zemím Pobaltí musí v každém případě dostat ujištění , že z pohledu své historie mají naprosté právo žádat , aby byly součástí bezpečnostního spojenectví , které je pro západní demokracie samozřejmostí .</czech>
+  <sure>3-1 5-2 6-3 7-5 8-8 9-9 11-11 11-12 12-13 14-14 15-15 16-16 18-17 18-18 19-20 20-19 21-21 22-22 24-23 25-24 28-25 29-26 30-27 32-28 34-30 35-31 36-32 39-33 40-34 41-36 42-37 44-41 45-41 46-41 47-38 48-39 49-40 50-42</sure>
+  <possible>4-2 8-6 10-11 12-10 13-13 17-17 23-24 27-25 31-28 34-29 37-34 38-33 41-35 43-41</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_bertram19-s50">
+  <english>Christoph Bertram is Director of the Foundation for Science and Policy in Berlin .</english>
+  <czech>Christoph Bertram je ředitelem Nadace pro vědu a politiku v Berlíně .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-5 8-6 9-7 10-8 11-9 12-10 13-11 14-12</sure>
+  <possible>5-5 6-5</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

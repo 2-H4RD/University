@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2249-s1">
+  <english>Arthur M . Goldberg said he extended his unsolicited tender offer of $ 32 a share tender offer , or $ 154.3 million , for Di Giorgio Corp . to Nov . 1 .</english>
+  <czech>Arthur M . Goldberg oznámil , že prodloužil svoji nevyžádanou nabídku na odkup akcií Di Giorgio Corp . po 32 USD za kus , celkem 154,3 milionu , do 1 . listopadu .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-8 8-9 9-10 10-13 11-11 12-19 13-21 14-20 15-22 16-14 22-26 23-27 26-15 27-16 28-17 29-18 30-29 31-32 33-30 34-33</sure>
+  <possible>6-8 10-12 33-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s2">
+  <english>DIG Acquisition Corp . , the New Jersey investor 's acquisition vehicle , said that as of the close of business yesterday , 560,839 shares had been tendered .</english>
+  <czech>DIG Acquistition Corp . , akviziční prostředník newjerseyského investora , oznámil , že na konci včerejšího obchodování bylo odkoupeno 560 839 akcií .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-8 8-8 9-9 11-6 12-7 13-10 14-11 15-13 17-14 19-15 21-17 22-16 24-20 28-19 27-18 29-23 25-22 24-21</sure>
+  <possible>6-9 10-9 15-12 18-15 20-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s3">
+  <english>Including the stake DIG already held , DIG holds a total of about 25 % of Di Giorgio 's shares on a fully diluted basis .</english>
+  <czech>Včetně podílu , který už držela , vlastní DIG celkem přibližně 25 % akcií Di Giorgio všech cenných papírů a práv na cenné papíry .</czech>
+  <sure>1-1 3-2 5-5 6-6 7-7 8-9 9-8 11-10 13-11 14-12 15-13 17-15 18-16 20-14 23-17 26-25</sure>
+  <possible>2-2 10-10 12-10 16-16 19-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s4">
+  <english>The offer , which also includes common and preferred stock purchase rights , was to expire last night at midnight .</english>
+  <czech>Nabídka , která zahrnuje také práva na nákup obyčejných a prioritních akcií , měla vypršet včera o půlnoci .</czech>
+  <sure>2-1 3-2 4-3 5-5 6-4 7-9 8-10 9-11 10-12 11-8 12-6 13-13 14-14 15-14 16-15 17-16 18-16 19-17 20-18 21-19</sure>
+  <possible>1-1 11-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s5">
+  <english>The new expiration date is the date on which DIG 's financing commitments , which total about $ 240 million , are to expire .</english>
+  <czech>Nové datum vypršení nabídky je datem , kdy vyprší finanční závazky DIG , které čítají přibližně 240 milionů .</czech>
+  <sure>2-1 3-3 4-2 5-5 7-6 9-7 9-8 10-12 12-10 13-11 14-13 15-14 16-15 17-16 19-17 20-18 24-9 25-19</sure>
+  <possible>1-2 6-6 11-12 22-9 23-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s6">
+  <english>DIG is a unit of DIG Holding Corp . , a unit of Rose Partners L . P .</english>
+  <czech>DIG je divizí DIG Holding Corp . , divize Rose Partners L . P .</czech>
+  <sure>1-1 2-2 4-3 6-4 7-5 8-6 9-7 10-8 12-9 14-10 15-11 16-12 17-13 18-14 19-15</sure>
+  <possible>3-3 5-6 11-9 13-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s7">
+  <english>Mr . Goldberg is the sole general partner in Rose Partners .</english>
+  <czech>Goldberg je jediným veřejným partnerem v Rose Partners .</czech>
+  <sure>3-1 4-2 6-3 7-4 8-5 9-6 10-7 11-8 12-9</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s8">
+  <english>In August , Di Giorgio , a San Francisco food products and building materials marketing and distribution company , rejected Mr . Goldberg 's offer as inadequate .</english>
+  <czech>Di Giorgio , sanfranciská marketingová a distribuční společnost podnikající v oboru potravin a stavebních materiálů , v srpnu Goldbergovu nabídku odmítla jako nepřiměřenou .</czech>
+  <sure>1-17 2-18 4-1 5-2 6-3 8-4 9-4 10-12 11-12 12-13 13-14 14-15 15-5 16-6 17-7 18-8 20-21 23-19 25-20 26-22 27-23 28-24</sure>
+  <possible>24-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2249-s9">
+  <english>In New York Stock Exchange composite trading yesterday , Di Giorgio closed at $ 31.50 a share , down $ 1.75 .</english>
+  <czech>Při kombinovaném obchodování na newyorské Burze cenných papírů uzavírala Di Giorgio na 31,50 USD za akcii , což je pokles o 1,75 USD .</czech>
+  <sure>1-1 2-5 3-5 4-6 5-6 6-2 7-3 10-10 11-11 12-9 13-12 14-14 15-13 16-15 17-16 18-17 19-20 20-23 21-22 22-24</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

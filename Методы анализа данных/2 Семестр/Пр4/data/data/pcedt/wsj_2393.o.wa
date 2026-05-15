@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2393-s1">
+  <english>Investors who bought stock with borrowed money -- that is , `` on margin '' -- may be more worried than most following Friday 's market drop .</english>
+  <czech>Investostoři , kteří nakoupili akcie za půjčené peníze , tzn . " na zálohu " , si po pátečním pádu trhu možná dělají větší starosti než většina ostatních .</czech>
+  <sure>1-1 2-3 3-4 4-5 5-6 6-7 7-8 8-9 9-10 9-11 10-10 10-11 12-12 13-13 14-14 15-15 16-16 19-24 21-26 22-27 22-28 23-18 24-19 26-21 27-20 28-29</sure>
+  <possible>25-19</possible>
+  <phrasal>17-17 17-22 17-23 17-25 18-17 18-22 18-23 18-25 20-17 20-22 20-23 20-25</phrasal>
+</s>
+<s id="wsj_2393-s2">
+  <english>That 's because their brokers can require them to sell some shares or put up more cash to enhance the collateral backing their loans .</english>
+  <czech>To proto , že jejich makléři mohou od nich požadovat , aby prodali některé akcie nebo poskytli více hotovosti , kvůli zvýšení záruky zajišťující jejich půjčky .</czech>
+  <sure>1-1 3-2 4-5 5-6 6-7 7-10 8-9 9-12 10-13 11-14 12-15 13-16 14-17 15-17 16-18 17-19 18-21 19-22 21-23 22-24 23-25 24-26 25-27</sure>
+  <possible>8-8 20-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s3">
+  <english>In October 1987 , these margin calls were thought to have contributed to the downward spiral of the stock market .</english>
+  <czech>V říjnu 1987 se mělo za to , že tyto maržní výzvy přispěly k pádu trhu s cennými papíry .</czech>
+  <sure>1-1 2-2 3-3 5-10 6-11 7-12 10-9 11-13 12-13 13-14 15-15 16-15 19-17 19-18 19-19 20-16 21-20</sure>
+  <possible>14-15 17-16 18-16</possible>
+  <phrasal>8-4 8-5 8-6 8-7 9-4 9-5 9-6 9-7</phrasal>
+</s>
+<s id="wsj_2393-s4">
+  <english>Typically , a margin call occurs when the price of a stock falls below 75 % of its original value .</english>
+  <czech>K maržní výzvě obvykle dochází , když cena akcií klesne pod 75 % jejich původní hodnoty .</czech>
+  <sure>1-4 4-2 5-3 6-5 7-7 9-8 12-9 13-10 14-11 15-12 16-13 18-14 19-15 20-16 21-17</sure>
+  <possible>3-3 5-1 8-8 10-9 11-9 17-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s5">
+  <english>If the investor does n't put up the extra cash to satisfy the call , the brokerage firm may begin liquidating the securities .</english>
+  <czech>Jestliže investor neposkytne dodatečnou hotovost , která uspokojí tuto výzvu , potom makléřská firma může tyto akcie začít prodávat .</czech>
+  <sure>1-1 3-2 4-3 5-3 6-3 7-3 9-4 10-5 12-8 13-9 14-10 15-11 17-13 18-14 19-15 20-18 21-19 22-16 23-17 24-20</sure>
+  <possible>2-2 8-5 16-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s6">
+  <english>But some big brokerage firms said they do n't expect major problems as a result of margin calls .</english>
+  <czech>Některé velké makléřské firmy ale uvedly , že neočekávají žádné vážné problémy způsobené maržními výzvami .</czech>
+  <sure>1-5 2-1 3-2 4-3 5-4 6-6 8-9 9-9 10-9 11-11 12-12 13-13 14-13 15-13 17-14 18-15 19-16</sure>
+  <possible>16-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s7">
+  <english>Margin calls since Friday `` have been higher than usual , but reasonable , '' a spokesman for Shearson Lehman Hutton Inc . said .</english>
+  <czech>Mluvčí společnosti Sherson Lehman Hutton Inc . uvedl , že počet maržních výzev byl od pátku " vyšší než obvykle , ale přiměřený . "</czech>
+  <sure>1-12 2-13 3-15 4-16 5-17 7-14 8-18 9-19 10-20 11-21 12-22 13-23 15-25 17-1 19-3 20-4 21-5 22-6 23-7 24-8 25-24</sure>
+  <possible>6-14 16-1 18-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s8">
+  <english>Merrill Lynch & Co . officials `` do n't expect ( margin calls ) to be as big a factor as in 1987 '' because fewer individual investors are buying stock on margin , a spokesman said .</english>
+  <czech>Představitelé společnosti Merrill Lynch & Co . " neočekávají , že ( maržní výzvy ) budou tak důležitým faktorem jako v roce 1987 , " protože méně jednotlivých investorů kupuje akcie zálohově , uvedl mluvčí .</czech>
+  <sure>1-3 2-4 3-5 4-6 5-7 6-1 7-8 8-9 9-9 10-9 11-12 12-13 13-14 14-15 15-11 16-16 17-17 18-18 20-19 21-20 22-21 23-23 24-25 25-26 26-27 27-28 28-29 29-30 30-30 31-31 32-32 33-32 34-33 36-35 37-34 38-36</sure>
+  <possible>19-19 35-35</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s9">
+  <english>Hugo Quackenbush , senior vice president at Charles Schwab Corp . , the San Francisco-based discount brokerage firm , said he did n't expect any immediate problems with margin calls for Schwab customers .</english>
+  <czech>Hugo Quackenbush , který je vedoucím viceprezidentem u společnosti Charles Schwab Corp . , diskontní makléřské firmy se sídlem v San Franciscu , řekl , že pro klienty společnosti Schwab neočekává žádné bezprostřední problémy s maržními výzvami .</czech>
+  <sure>1-1 2-2 3-3 5-7 6-7 7-8 8-10 9-11 10-12 11-13 12-14 16-15 17-16 18-17 19-23 20-24 22-31 23-31 24-31 25-32 26-33 27-34 28-35 29-36 30-37 31-27 32-30 33-28 34-38</sure>
+  <possible>13-17</possible>
+  <phrasal>14-18 14-19 14-20 14-21 14-22 15-18 15-19 15-20 15-21 15-22</phrasal>
+</s>
+<s id="wsj_2393-s10">
+  <english>He said Schwab had increased margin requirements `` so customers have more of a cushion . ''</english>
+  <czech>Řekl , že společnost Schwab zpřísnila požadavky na zálohy , " takže zákazníci jsou lépe zabezpečení . "</czech>
+  <sure>2-1 3-5 4-6 5-6 6-8 6-9 7-7 8-11 9-12 10-13 11-14 12-15 15-16 16-17 17-18</sure>
+  <possible>13-16 14-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2393-s11">
+  <english>He added : `` We learned a lesson in 1987 about volatility .</english>
+  <czech>Dodal : " O nestabilitě jsme se poučili v roce 1987 . "</czech>
+  <sure>2-1 3-2 4-3 9-9 10-11 11-4 12-5 13-12</sure>
+  <possible></possible>
+  <phrasal>6-6 6-7 6-8 7-6 7-7 7-8 8-6 8-7 8-8</phrasal>
+</s>
+</sentences>

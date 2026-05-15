@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="celex_31980L0799-s1">
+  <english>The purpose of this Directive is to fix limit values ( Annex I ) and guide values ( Annex II ) for sulphur dioxide and suspended particulates in the atmosphere and the conditions for their application in order to improve :</english>
+  <czech>Účelem této směrnice je stanovit mezní hodnoty ( příloha I ) a směrné hodnoty ( příloha II ) pro oxid siřičitý a suspendované částice v ovzduší a podmínky jejich používání pro zlepšení :</czech>
+  <sure>2-1 4-2 5-3 6-4 8-5 9-6 10-7 11-8 12-9 13-10 14-11 15-12 16-13 17-14 18-15 19-16 20-17 21-18 22-19 23-21 24-20 25-22 26-23 27-24 28-25 30-26 31-27 33-28 35-29 36-30 37-31 38-31 39-31 40-32 41-33</sure>
+  <possible>1-1 3-3 7-5 29-26 32-28 34-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s2">
+  <english>- the protection of human health ,</english>
+  <czech>- ochrany lidského zdraví ,</czech>
+  <sure>1-1 3-2 5-3 6-4 7-5</sure>
+  <possible>2-2 4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s3">
+  <english>- the protection of the environment .</english>
+  <czech>- ochrany životního prostředí .</czech>
+  <sure>1-1 3-2 6-3 6-4 7-5</sure>
+  <possible>2-2 4-4 5-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s4">
+  <english>" Limit values " means :</english>
+  <czech>" Mezními hodnotami " se rozumějí :</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 6-7</sure>
+  <possible>5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s5">
+  <english>- the concentrations of sulphur dioxide and suspended particulates considered simultaneously in accordance with Table A in Annex I , and</english>
+  <czech>- koncentrace oxidu siřičitého a suspendovaných částic posuzované současně v souladu s přílohou I tabulkou A a</czech>
+  <sure>1-1 3-2 5-4 6-3 7-5 8-6 9-7 10-8 11-9 12-10 13-11 14-12 15-15 16-16 18-13 19-14 21-17</sure>
+  <possible>2-2 4-3 20-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s6">
+  <english>- the concentrations of suspended particulates considered separately in accordance with Table B in Annex I ,</english>
+  <czech>- koncentrace suspendovaných částic posuzované odděleně v souladu s přílohou I tabulkou B ,</czech>
+  <sure>1-1 3-2 5-3 6-4 7-5 8-6 9-7 10-8 11-9 12-12 13-13 15-10 16-11 17-14</sure>
+  <possible>2-2 4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s7">
+  <english>which , in order to protect human health in particular , must not be exceeded throughout the territory of the Member States during specified periods and under the conditions laid down in the following Articles .</english>
+  <czech>které nesmějí být zejména z důvodu ochrany lidského zdraví překročeny na území členských států ve stanovených obdobích a za podmínek stanovených v následujících článcích .</czech>
+  <sure>1-1 6-7 7-8 8-9 9-4 10-4 12-2 13-2 14-3 15-10 16-11 18-12 21-13 22-14 23-15 24-16 25-17 26-18 27-19 29-20 30-21 31-21 32-22 34-23 35-24 36-25</sure>
+  <possible>17-12 19-14 20-14 28-20 33-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s8">
+  <english>" Guide values " means the concentrations of sulphur dioxide and suspended particulates over specified periods which are given in Annex II and are intended to serve as :</english>
+  <czech>" Směrnými hodnotami " se rozumějí koncentrace oxidu siřičitého a suspendovaných částic ve stanovených obdobích uvedených v příloze II , které slouží jako :</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 7-7 9-9 10-8 11-10 12-11 13-12 14-13 15-14 16-15 20-17 21-18 22-19 27-22 28-23 29-24</sure>
+  <possible>5-5 6-7 8-8 19-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s9">
+  <english>- long - term precautions for health and the environment ,</english>
+  <czech>- dlouhodobá prevence ochrany zdraví a životního prostředí ,</czech>
+  <sure>1-1 2-2 4-2 7-5 8-6 10-7 10-8 11-9</sure>
+  <possible>3-2 5-3 5-4 6-3 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s10">
+  <english>- reference points for the establishment of specific schemes within zones determined by the Member States .</english>
+  <czech>- jako referenční body pro vytvoření specifických režimů v oblastech určených členskými státy .</czech>
+  <sure>1-1 2-3 3-4 4-5 6-6 8-7 9-8 10-9 11-10 12-11 15-12 16-13 17-14</sure>
+  <possible>5-6 7-8 13-13 14-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s11">
+  <english>Member States shall take appropriate measures to ensure that as from 1 April 1983 the concentrations of sulphur dioxide and suspended particulates in the atmosphere are not greater than the limit values given in Annex I , without prejudice to the following provisions .</english>
+  <czech>Členské státy přijmou vhodná opatření , aby zajistily , že od 1 . dubna 1983 nebudou koncentrace oxidu siřičitého a suspendovaných částic v ovzduší větší než mezní hodnoty stanovené v příloze , aniž jsou dotčena následující ustanovení .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 7-7 8-8 9-10 11-11 12-12 13-14 14-15 16-17 18-19 19-18 20-20 21-21 22-22 23-23 25-24 26-16 27-16 28-25 29-26 31-27 32-28 33-29 34-30 35-31 37-32 38-33 42-36 43-37 44-38</sure>
+  <possible>3-3 7-6 9-9 12-13 15-17 17-18 24-24 30-28 39-34 39-35 40-35 41-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s12">
+  <english>Where a Member State considers that there is a likelihood that , despite the measures taken , the concentrations of sulphur dioxide and suspended particulates in the atmosphere might , after 1 April 1983 , exceed in certain zones the limit values given in Annex I , it shall inform the Commission thereof before 1 October 1982 .</english>
+  <czech>Domnívá - li se členský stát , že je pravděpodobné , že navzdory přijatým opatřením mohou koncentrace oxidu siřičitého a suspendovaných částic v ovzduší po 1 . dubnu 1983 v některých oblastech překročit mezní hodnoty uvedené v příloze I , uvědomí o tom Komisi před 1 . říjnem 1982 .</czech>
+  <sure>1-3 3-5 4-6 5-1 6-8 8-9 11-12 13-13 15-15 16-14 19-17 21-19 22-18 23-20 24-21 25-22 26-23 28-24 29-16 31-25 32-26 33-28 34-29 36-33 37-30 38-31 39-32 41-34 42-35 43-36 44-37 45-38 46-39 47-40 50-41 52-44 53-42 53-43 54-45 55-46 56-48 57-49 58-50</sure>
+  <possible>1-2 2-6 5-4 6-7 7-9 9-10 10-10 11-11 12-13 14-15 18-17 20-18 27-24 32-27 40-35 48-41 49-41 51-44 55-47</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s13">
+  <english>It shall at the same time forward to the Commission plans for the progressive improvement of the quality of the air in those zones .</english>
+  <czech>Současně předloží Komisi plány postupného zlepšování kvality ovzduší v těchto oblastech .</czech>
+  <sure>3-1 4-1 5-1 6-1 7-2 10-3 11-4 14-5 15-6 18-7 21-8 22-9 23-10 24-11 25-12</sure>
+  <possible>1-2 2-2 8-3 9-3 12-4 13-6 16-7 17-7 19-8 20-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s14">
+  <english>These plans , drawn up on the basis of relevant information on the nature , origin and evolution of the pollution , shall describe in particular the measures taken or to be taken and the procedures implemented or to be implemented by the Member State concerned .</english>
+  <czech>Tyto plány sestavené na základě příslušných informací o povaze , původu a vývoji znečištění popisují zejména opatření , která jsou nebo mají být přijata , a postupy , které jsou nebo budou prováděny dotyčným členským státem .</czech>
+  <sure>1-1 2-2 4-3 5-3 6-4 8-5 10-6 11-7 12-8 14-9 15-10 16-11 17-12 18-13 21-14 24-15 25-16 26-16 28-17 29-24 30-21 32-23 34-26 36-27 37-33 38-31 44-35 45-36 46-34 47-37</sure>
+  <possible>7-5 9-7 13-9 19-14 20-14 23-15 27-17 31-23 32-22 34-25 35-27 42-36 43-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s15">
+  <english>These measures and procedures must bring the concentrations of sulphur dioxide and suspended particulates in the atmosphere within these zones to values below or equal to the limit values given in Annex I as soon as possible and by 1 April 1993 at the latest .</english>
+  <czech>Tato opatření a postupy musí co nejdříve a nejpozději do 1 . dubna 1993 snížit koncentrace oxidu siřičitého a suspendovaných částic v ovzduší v těchto oblastech na hodnoty nižší než mezní hodnoty uvedené nebo na hodnoty jim rovné .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 8-16 10-18 11-17 12-19 13-20 14-20 14-21 15-22 17-23 18-24 19-25 20-26 21-27 22-28 23-29 24-34 25-38 28-31 29-32 30-33 38-8 39-10 40-11 41-13 42-14 43-9 44-9 45-9 46-39</sure>
+  <possible>6-15 7-16 9-17 16-23 27-32 40-12</possible>
+  <phrasal>34-6 34-7 35-6 35-7 36-6 36-7 37-6 37-7</phrasal>
+</s>
+<s id="celex_31980L0799-s16">
+  <english>In the zones in which the Member State concerned considers it necessary to limit or prevent a foreseeable increase in pollution by sulphur dioxide and suspended particulates in the wake of development , in particular urban or industrial development , the Member State shall , taking the guide values in Annex II as a reference point , fix values which must be lower than the limit values in Annex I .</english>
+  <czech>V oblastech , ve kterých dotyčný členský stát považuje za nezbytné omezit očekávané zvýšení znečištění oxidem siřičitým a suspendovanými částicemi v důsledku nového , zejména urbanistického nebo průmyslového rozvoje , nebo takovému zvýšení předejít , stanoví členský stát při zohlednění směrných hodnot v příloze II jako referenčního bodu hodnoty , které musí být nižší než mezní hodnoty v příloze I .</czech>
+  <sure>1-1 3-2 4-4 5-5 7-7 8-8 9-6 10-9 12-11 14-12 15-31 16-34 18-13 19-14 21-15 23-17 24-16 25-18 26-19 27-20 28-21 34-25 35-25 36-26 37-27 38-28 39-29 40-30 42-37 43-38 46-40 48-41 49-42 50-43 51-44 52-45 53-46 55-47 56-48 58-36 59-49 60-51 61-52 62-53 63-54 64-55 66-56 67-57 68-58 69-59 70-60 71-61</sure>
+  <possible>2-2 5-3 6-8 10-10 11-9 13-12 17-14 20-14 22-16 41-38 44-36 46-39 47-42 54-48 60-50 65-57</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s17">
+  <english>In zones on its territory which the Member State concerned considers should be afforded special environmental protection , the Member State shall fix values which are generally lower than the guide values in Annex II .</english>
+  <czech>V oblastech na svém území , kterým dotyčný členský stát hodlá poskytnout zvláštní ochranu životního prostředí , stanoví členský stát hodnoty , které jsou obecně nižší než směrné hodnoty v příloze II .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-7 8-9 9-10 10-8 15-13 16-15 16-16 17-14 18-17 20-19 21-20 23-18 24-21 25-23 26-24 27-25 28-26 29-27 31-28 32-29 33-30 34-31 35-32 36-33</sure>
+  <possible>6-6 7-10 11-11 12-12 13-12 14-12 19-20 22-18 25-22 30-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s18">
+  <english>Member States shall inform the Commission of the values , deadlines and timetables they have laid down for the zones referred to in paragraphs 1 and 2 , and of any appropriate measures they have taken .</english>
+  <czech>Členské státy uvědomí Komisi o hodnotách , lhůtách a časových plánech , které stanovily pro oblasti podle odstavců 1 a 2 , a o všech vhodných opatřeních , která přijaly .</czech>
+  <sure>1-1 2-2 4-3 6-4 7-5 9-6 10-7 11-8 12-9 13-10 13-11 16-14 17-14 18-15 20-16 21-17 24-18 25-19 26-20 27-21 28-22 29-23 30-24 31-25 32-26 33-27 36-30 37-31</sure>
+  <possible>3-3 5-4 8-6 14-14 15-14 19-16 22-17 23-17 34-30 35-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s19">
+  <english>In addition to the provisions referred to in Article 3 ( 1 ) and Article 4 ( 1 ) , Member States shall , with the object of taking further precautions for the protection of health and the environment , endeavour to move towards the guide values in Annex II wherever the measured concentrations are higher than these values .</english>
+  <czech>Kromě ustanovení podle čl . 3 odst . 1 a čl . 4 odst . 1 se členské státy v zájmu přijetí dalších opatření pro ochranu zdraví a životního prostředí snaží přibližovat směrným hodnotám v příloze II , jsou - li naměřené koncentrace vyšší než tyto hodnoty .</czech>
+  <sure>5-2 6-3 9-4 10-6 12-9 14-10 15-11 16-13 18-16 21-18 22-19 29-22 30-23 31-24 32-25 34-26 36-27 37-28 39-29 39-30 41-31 43-32 46-33 47-34 48-35 49-36 50-37 53-42 54-43 55-39 56-44 57-45 58-46 59-47 60-48</sure>
+  <possible>1-1 2-1 3-1 4-2 7-3 8-3 9-5 15-12 23-31 33-26 35-27 38-30 42-32 44-34 45-34 51-40 51-41 52-43</possible>
+  <phrasal>25-20 25-21 26-20 26-21 27-20 27-21 28-20 28-21</phrasal>
+</s>
+<s id="celex_31980L0799-s20">
+  <english>Member States shall establish measuring stations designed to supply the data necessary for the application of this Directive , in particular in zones where the limit values referred to in Article 3 ( 1 ) are likely to be approached or exceeded and in the zones referred to in Article 3 ( 2 ) ; the stations must be located at sites where pollution is thought to be greatest and where the measured concentrations are representative of local conditions .</english>
+  <czech>Členské státy zřídí měřicí stanice k poskytování potřebných údajů pro používání této směrnice , zejména v oblastech , ve kterých je pravděpodobné dosažení nebo překročení mezních hodnot podle čl . 3 odst . 1 a v oblastech podle čl . 3 odst . 2 ; stanice musí být umístěny v lokalitách , kde je znečištění považováno za největší a kde jsou naměřené koncentrace reprezentativní pro místní podmínky .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 8-6 9-7 11-9 12-8 13-10 15-11 17-12 18-13 19-14 20-15 21-15 22-16 23-17 24-19 24-20 26-26 27-27 28-28 31-29 32-31 34-34 36-21 37-22 41-24 43-35 44-36 46-37 47-38 50-39 51-41 53-44 57-46 58-47 59-48 60-49 61-50 62-51 63-53 64-55 65-54 66-56 69-58 70-59 71-60 73-62 74-63 75-61 76-64 77-65 78-66 79-67 80-68</sure>
+  <possible>3-3 7-6 10-9 14-11 16-13 24-18 25-27 29-28 30-28 31-30 38-23 39-23 40-23 42-25 45-37 48-38 49-38 50-40 56-46 63-52 66-57 67-56 68-56 72-63</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s21">
+  <english>Following the entry into force of this Directive , Member States shall inform the Commission , not later than six months after the end ( 31 March ) of the annual reference period , of instances in which the limit values laid down in Annex I have been exceeded and of the concentrations recorded .</english>
+  <czech>Po vstupu této směrnice v platnost uvědomí členské státy Komisi nejpozději šest měsíců po skončení ročního referenčního období ( 31 . března ) o případech , ve kterých byly překročeny mezní hodnoty uvedené v příloze I , a o zaznamenaných koncentracích .</czech>
+  <sure>1-1 3-2 4-5 5-6 7-3 8-4 10-8 11-9 13-7 15-10 17-11 18-11 19-11 20-12 21-13 22-14 24-15 25-19 26-20 27-22 28-23 31-16 32-17 33-18 35-24 36-25 37-27 38-28 40-31 41-32 42-33 43-33 44-34 45-35 46-36 48-29 49-30 50-38 51-39 53-41 54-40 55-42</sure>
+  <possible>2-2 6-4 12-7 14-10 23-15 26-21 29-18 30-18 38-26 39-32 47-29 50-37 52-41</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s22">
+  <english>They shall also notify the Commission , not later than one year after the end of the annual reference period , of the reasons for such instances and of the measures they have taken to avoid their recurrence .</english>
+  <czech>Nejpozději jeden rok po skončení ročního referenčního období uvědomí Komisi rovněž o důvodech těchto případů a o přijatých opatřeních , která mají zabránit jejich opakování .</czech>
+  <sure>3-11 4-9 6-10 8-1 9-1 10-1 11-2 12-3 13-4 15-5 18-6 19-7 20-8 22-12 24-13 26-14 27-15 28-16 29-17 31-19 36-23 37-24 38-25 39-26</sure>
+  <possible>1-9 2-9 5-10 14-5 16-8 17-8 23-13 25-13 30-19 32-18 33-18 34-18 35-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s23">
+  <english>In addition , Member States shall forward information to the Commission , at its request , on the concentrations of sulphur dioxide and suspended particulates in any zones they have designated pursuant to Article 4 ( 1 ) and ( 2 ) .</english>
+  <czech>Členské státy navíc poskytují Komisi na její žádost informace o koncentracích oxidu siřičitého a suspendovaných částic ve všech oblastech , které určily podle čl . 4 odst . 1 a 2 .</czech>
+  <sure>1-3 2-3 4-1 5-2 7-4 8-9 11-5 13-6 14-7 15-8 17-10 19-11 21-13 22-12 23-14 24-15 25-16 26-17 27-18 28-19 31-22 32-23 34-24 35-26 37-29 39-30 41-31 43-32</sure>
+  <possible>3-3 6-4 9-5 10-5 18-11 20-12 29-22 30-22 33-23 34-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s24">
+  <english>The Commission shall each year publish a summary report on the application of this Directive .</english>
+  <czech>Komise každoročně zveřejní souhrnnou zprávu o používání této směrnice .</czech>
+  <sure>2-1 4-2 5-2 6-3 8-4 9-5 10-6 12-7 14-8 15-9 16-10</sure>
+  <possible>1-1 3-3 7-5 11-7 13-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s25">
+  <english>Application of the measures taken pursuant to this Directive must not bring about a significant deterioration in the quality of the air where the level of pollution by sulphur dioxide and suspended particulates at the time of implementation of this Directive is low in relation to the limit values set out in Annex I .</english>
+  <czech>Je - li úroveň znečištění oxidem siřičitým a suspendovanými částicemi v době uplatnění této směrnice vzhledem k mezním hodnotám uvedeným v příloze I nízká , nesmí používání opatření přijatých podle této směrnice nesmí způsobit významné zhoršení kvality ovzduší .</czech>
+  <sure>1-27 4-28 5-29 6-30 8-31 9-32 10-26 11-26 12-34 15-35 16-36 19-37 22-38 25-4 27-5 29-7 30-6 31-8 32-9 33-10 34-11 36-12 38-13 40-14 41-15 42-1 43-24 44-16 45-16 46-17 48-18 49-19 50-20 51-20 52-21 53-22 54-23 55-39</sure>
+  <possible>2-28 3-28 7-30 13-34 14-36 17-36 18-37 20-38 21-38 23-2 23-3 24-4 26-5 28-6 35-12 37-13 39-15 47-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s26">
+  <english>For the purposes of applying this Directive , the Member States shall use either the reference methods of sampling and analysis referred to in Annex III or any other method of sampling and analysis in respect of which they demonstrate to the Commission at regular intervals :</english>
+  <czech>Pro účely této směrnice používají členské státy buď referenčních metod odběru vzorků a rozboru podle přílohy III , nebo jiných metod odběru vzorků a rozboru , u kterých Komisi v pravidelných lhůtách prokazují :</czech>
+  <sure>1-1 3-2 6-3 7-4 10-6 11-7 13-5 14-8 16-9 17-10 19-11 19-12 20-13 21-14 22-15 25-16 26-17 27-19 29-20 30-21 32-22 32-23 33-24 34-25 38-28 39-33 40-33 43-29 44-30 45-31 46-32 47-34</sure>
+  <possible>2-2 4-4 9-7 12-5 15-10 18-11 23-15 24-15 27-18 28-20 31-22 35-27 36-27 37-27 38-26 41-29 42-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s27">
+  <english>- either that it ensures satisfactory correlation of results with those obtained using the reference method ;</english>
+  <czech>- že zaručují uspokojivý soulad výsledků s výsledky získanými referenční metodou ,</czech>
+  <sure>1-1 3-2 5-3 6-4 7-5 9-6 10-7 12-9 15-10 16-11</sure>
+  <possible>8-6 13-11 14-11 17-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s28">
+  <english>- or that measurements taken in parallel with the reference method at a series of representative stations chosen in accordance with the requirements laid down in Article 6 show that there is a reasonably stable relationship between the results obtained using that method and those obtained using the reference method .</english>
+  <czech>- nebo že měření prováděné paralelně s referenční metodou v řadě reprezentativních stanic zvolených v souladu s požadavky článku 6 prokazují , že existuje dostatečně pevný vztah mezi výsledky získanými touto metodou a výsledky získanými referenční metodou .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 10-8 11-9 12-10 14-11 16-12 17-13 18-14 19-15 20-16 21-17 23-18 27-19 28-20 29-21 30-23 32-24 34-25 35-26 36-27 37-28 39-29 40-30 42-31 43-32 44-33 46-35 49-36 50-37 51-38</sure>
+  <possible>6-6 9-9 13-11 15-13 22-18 30-22 31-24 33-27 38-29 41-32 47-37 48-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s29">
+  <english>Without prejudice to the provisions of this Directive , a Member State may also use , pending the decision of the Council on the proposals from the Commission referred to in paragraph 4 , the sampling and analysis methods laid down in Annex IV and the values associated with these methods also laid down in Annex IV in substitution for the limit values set out in Annex I .</english>
+  <czech>Aniž jsou dotčena ustanovení této směrnice , může členský stát do rozhodnutí Rady o návrhu Komise podle odstavce 4 používat rovněž metody odběru vzorků a rozboru uvedené v příloze IV a hodnoty související s těmito metodami rovněž uvedené v příloze IV namísto mezních hodnot v příloze I .</czech>
+  <sure>5-4 7-5 8-6 9-7 11-9 12-10 13-8 14-21 15-20 17-11 19-12 22-13 23-14 25-15 28-16 29-17 32-18 33-19 36-23 36-24 37-25 38-26 39-22 40-27 41-27 42-28 43-29 44-30 45-31 47-32 48-33 49-34 50-35 51-36 52-37 53-38 54-38 55-39 56-40 57-41 58-42 59-42 62-43 63-44 66-45 67-46 68-47 69-48</sure>
+  <possible>4-4 6-6 10-10 18-12 20-13 21-13 24-15 26-16 27-16 30-17 31-17 35-23 46-32 60-42 61-44</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3 3-1 3-2 3-3</phrasal>
+</s>
+<s id="celex_31980L0799-s30">
+  <english>A Member State which decides to avail itself of the provisions of paragraph 2 must however take measurements in parallel at a series of representative measuring stations , chosen in accordance with the requirements of Article 6 , in order to verify the corresponding stringency of the limit values set out in Annex IV and Annex I .</english>
+  <czech>Členský stát , který se rozhodne používat ustanovení odstavce 2 , však musí provádět paralelní měření v řadě reprezentativních měřicích stanic zvolených v souladu s požadavky článku 6 , aby byla ověřena odpovídající přísnost mezních hodnot v příloze IV a příloze I .</czech>
+  <sure>2-1 3-2 4-4 5-6 7-7 11-8 13-9 14-10 15-13 16-12 17-14 18-16 19-15 20-15 21-17 23-18 24-21 25-19 26-20 27-21 29-22 30-23 31-24 32-25 34-26 36-27 37-28 38-29 39-30 40-30 41-30 42-32 44-33 45-34 48-35 49-36 52-37 53-38 54-39 55-40 56-41 57-42 58-43</sure>
+  <possible>1-2 4-3 5-5 6-7 9-8 10-8 12-9 22-18 33-26 35-27 42-31 43-34 46-36 47-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s31">
+  <english>The Commission shall , after five years , but within six years of the expiry of the limit of 24 months specified in Article 15 ( 1 ) , submit a report to the Council on the results of the parallel measurements carried out under paragraph 3 and shall , having regard in particular to these results and to the need to avoid discriminatory provisions , make proposals relating to paragraph 2 and Annex IV . In the report provided for in Article 8 the Commission will indicate whether it has noted instances in which the limit values fixed in Annex I have been exceeded to a significant extent on repeated occasions .</english>
+  <czech>Po pěti letech , avšak do šesti let od uplynutí lhůty 24 měsíců podle čl . 15 odst . 1 předloží Komise Radě zprávu o výsledcích paralelních měření prováděných podle odstavce 3 , a zejména vzhledem k těmto výsledkům a potřebě vyloučit diskriminační opatření podá návrhy ohledně odstavce 2 a přílohy IV . Ve zprávě podle článku 8 Komise uvede , zda zaznamenala případy , ve kterých byly mezní hodnoty stanovené v příloze I významně opakovaně překročeny .</czech>
+  <sure>2-22 5-1 6-2 7-3 8-4 9-5 10-6 11-7 12-8 13-9 15-10 18-11 20-12 21-13 22-14 24-15 25-17 27-20 30-21 32-24 35-23 36-25 38-26 41-27 42-28 43-29 44-29 45-30 46-31 47-32 48-34 51-36 52-36 53-35 54-35 55-37 56-38 57-39 58-40 61-41 63-42 64-43 65-44 67-45 68-46 69-47 71-48 72-49 73-50 74-51 75-52 76-53 77-54 79-55 80-56 81-56 83-57 84-58 86-59 88-60 89-62 92-63 93-64 94-66 95-67 97-69 98-70 99-71 100-72 101-73 102-74 104-68 105-77 108-75 111-76 113-78</sure>
+  <possible>1-22 3-21 14-10 16-11 17-11 19-13 23-14 24-16 31-24 33-23 34-23 37-26 39-28 40-28 49-45 54-33 60-41 62-42 70-47 78-55 82-56 85-59 87-60 89-61 90-63 91-63 95-65 96-70 103-68 106-75 107-75 109-75 110-76 112-76</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s32">
+  <english>The Commission shall , in selected locations in the Member States and in cooperation with the latter , carry out studies on the sampling and analysis of sulphur dioxide , and of black smoke and suspended particulates .</english>
+  <czech>Komise provádí ve vybraných místech členských států a ve spolupráci s členskými státy průzkumy odběru vzorků a rozboru oxidu siřičitého , černého kouře a suspendovaných částic .</czech>
+  <sure>2-1 5-3 6-4 7-5 10-6 11-7 12-8 13-9 14-10 15-11 19-2 20-2 21-14 24-15 24-16 25-17 26-18 28-20 29-19 30-21 33-22 34-23 35-24 36-25 37-26 38-27</sure>
+  <possible>1-1 3-2 9-7 22-14 23-15 27-19 31-21 32-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s33">
+  <english>These studies shall be designed in particular to promote the harmonization of methods of sampling and analysis of these pollutants .</english>
+  <czech>Tyto průzkumy jsou určeny zejména na podporu harmonizace metod odběru vzorků a rozboru těchto znečišťujících látek .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 7-5 8-6 11-8 13-9 15-10 15-11 16-12 17-13 19-14 20-15 20-16 21-17</sure>
+  <possible>3-3 9-7 10-8 12-9 14-10 18-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s34">
+  <english>Where Member States fix in border regions values for concentrations of sulphur dioxide and suspended particulates in the atmosphere in accordance with Article 4 ( 1 ) and ( 2 ) , they shall hold prior consultations .</english>
+  <czech>Stanoví - li členské státy v hraničních oblastech hodnoty pro koncentrace oxidu siřičitého a suspendovaných částic v ovzduší v souladu s čl . 4 odst . 1 a 2 , provedou předběžné konzultace .</czech>
+  <sure>2-4 3-5 4-1 5-6 6-7 7-8 8-9 9-10 10-11 12-13 13-12 14-14 15-15 16-16 17-17 19-18 20-19 21-20 22-21 23-22 24-24 26-27 28-28 30-29 35-31 36-32 37-33 38-34</sure>
+  <possible>1-2 1-3 11-12 18-18 23-23 33-31 34-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s35">
+  <english>The Commission may attend such consultations .</english>
+  <czech>Komise se těchto konzultací může zúčastnit .</czech>
+  <sure>2-1 3-5 4-6 5-3 6-4 7-7</sure>
+  <possible>1-1 4-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s36">
+  <english>Where the limit values given in Annex I or the values referred to in Article 4 ( 1 ) and ( 2 ) , inasmuch as the latter values have been the subject of consultations in accordance with paragraph 1 , are or might be exceeded following significant pollution which originates or may have originated in another Member State , the Member States concerned shall hold consultations with a view to remedying the situation .</english>
+  <czech>Pokud mezní hodnoty uvedené v příloze I nebo hodnoty podle čl . 4 odst . 1 a 2 , jsou - li posledně jmenované hodnoty předmětem konzultací v souladu s odstavcem 1 , jsou nebo mohou být překročeny v důsledku významného znečištění , které pochází nebo může pocházet z jiného členského státu , provedou dotyčné členské státy konzultace pro nápravu situace .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 11-9 12-10 15-11 16-13 18-16 20-17 22-18 25-22 26-22 28-23 28-24 29-25 31-20 33-26 35-27 36-28 37-29 38-30 39-31 40-32 41-33 42-34 43-35 44-36 45-37 46-38 48-41 49-42 50-44 51-45 52-46 53-47 55-48 56-49 57-50 58-51 59-52 60-53 62-56 63-57 64-55 66-54 67-58 72-60 74-61 75-62</sure>
+  <possible>2-3 10-9 13-10 14-10 15-12 25-21 27-25 30-20 32-26 34-27 47-39 47-40 50-43 54-47 61-57 65-54 68-59 69-59 70-59 71-60 73-61</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s37">
+  <english>The Commission may attend such consultations .</english>
+  <czech>Komise se těchto konzultací může zúčastnit .</czech>
+  <sure>2-1 3-5 4-6 5-3 6-4 7-7</sure>
+  <possible>1-1 4-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s38">
+  <english>The procedure laid down in Articles 13 and 14 for the adaptation on this Directive to technical progress shall cover the subsequent development of the reference methods of sampling and analysis referred to in Annex III .</english>
+  <czech>Postup uvedený v článcích 13 a 14 pro přizpůsobení této směrnice technickému pokroku se vztahuje na další rozvoj referenčních metod odběru vzorků a rozboru podle přílohy III .</czech>
+  <sure>2-1 3-2 4-2 5-3 6-4 7-5 8-6 9-7 10-8 12-9 14-10 15-11 17-12 18-13 22-17 23-18 26-19 27-20 29-21 29-22 30-23 31-24 32-25 35-26 36-27 37-28</sure>
+  <possible>1-1 11-9 13-9 16-13 19-15 20-14 20-15 20-16 21-18 24-20 25-20 28-21 33-25 34-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s39">
+  <english>This adaptation must not result in any direct or indirect modification of effective concentration values given in Annexes I and II .</english>
+  <czech>Toto přizpůsobení nesmí způsobit přímou nebo nepřímou změnu hodnot účinných koncentrací uvedených v přílohách I a II .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 6-4 8-5 9-6 10-7 11-8 13-10 14-11 15-9 16-12 17-13 18-14 19-15 20-16 21-17 22-18</sure>
+  <possible>12-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s40">
+  <english>For the purpose of Article 12 a Committee on the adaptation of this Directive to scientific and technical progress , hereinafter called " the Committee " , shall be set up ;</english>
+  <czech>Pro účely článku 12 se zřizuje výbor pro přizpůsobování této směrnice vědeckému a technickému pokroku , dále jen " výbor " ;</czech>
+  <sure>1-1 3-2 5-3 6-4 8-7 9-8 11-9 13-10 14-11 16-12 17-13 18-14 19-15 20-16 23-19 25-20 26-21 30-6 31-6 32-22</sure>
+  <possible>2-2 4-3 7-7 10-9 12-11 15-15 24-20 28-6 29-6 30-5</possible>
+  <phrasal>21-17 21-18 22-17 22-18</phrasal>
+</s>
+<s id="celex_31980L0799-s41">
+  <english>it shall consist of representatives of the Member States , with a Commission representative as chairman .</english>
+  <czech>skládá se ze zástupců členských států a předsedá mu zástupce Komise .</czech>
+  <sure>3-1 4-3 5-4 8-5 9-6 13-11 14-10 17-12</sure>
+  <possible>1-1 2-1 3-2 6-6 7-6 12-10 16-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s42">
+  <english>The Committee shall adopt its own rules of procedure .</english>
+  <czech>Výbor přijme svůj jednací řád .</czech>
+  <sure>2-1 4-2 5-3 7-5 9-4 10-6</sure>
+  <possible>1-1 3-2 6-3 8-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s43">
+  <english>Where the procedure laid down in this Article is invoked , the Committee shall be convened by the chairman , either on his own initiative or at the request of the representative of a Member State .</english>
+  <czech>Má - li být zahájen postup podle tohoto článku , předseda svolá výbor buď z vlastního podnětu , nebo na žádost zástupce členského státu .</czech>
+  <sure>3-6 7-8 8-9 9-4 10-5 11-10 13-13 19-11 21-14 22-15 24-16 25-17 26-19 27-20 29-21 32-22 35-23 36-24 37-25</sure>
+  <possible>1-2 1-3 2-6 4-7 5-7 6-7 12-13 16-12 18-11 23-16 26-18 28-21 30-22 31-22 33-24 34-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s44">
+  <english>The Commission representative shall submit a draft of the measures to be taken to the Committee .</english>
+  <czech>Zástupce Komise předloží výboru návrh opatření , která mají být přijata .</czech>
+  <sure>2-2 3-1 5-3 7-5 10-6 12-10 13-11 16-4 17-12</sure>
+  <possible>1-1 4-3 6-5 8-6 9-6 11-10 12-7 12-8 12-9 14-4 15-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s45">
+  <english>The Committee shall give its opinion on the draft within a time limit set by the chairman having regard to the urgency of the matter .</english>
+  <czech>Výbor zaujme stanovisko k návrhu ve lhůtě , kterou stanoví předseda podle naléhavosti věci .</czech>
+  <sure>2-1 9-5 10-6 12-7 13-7 14-10 17-11 18-12 19-12 20-12 22-13 25-14 26-15</sure>
+  <possible>1-1 8-5 11-7 16-11 21-13 23-14 24-14</possible>
+  <phrasal>3-2 3-3 3-4 4-2 4-3 4-4 5-2 5-3 5-4 6-2 6-3 6-4 7-2 7-3 7-4</phrasal>
+</s>
+<s id="celex_31980L0799-s46">
+  <english>Decisions shall be taken by a majority of 41 votes , the votes of the Member States being weighted as provided in Article 148 ( 2 ) of the Treaty .</english>
+  <czech>Rozhodnutí se přijímá většinou 41 hlasů , přičemž hlasům členských států je přidělena váha podle čl . 148 odst . 2 Smlouvy .</czech>
+  <sure>1-1 4-3 7-4 9-5 10-6 11-7 13-9 16-10 17-11 18-12 21-15 23-16 24-18 26-21 30-22 31-23</sure>
+  <possible>2-3 3-3 4-2 5-4 6-4 8-4 12-9 14-11 15-11 18-8 19-13 19-14 20-15 22-15 23-17 28-22 29-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s47">
+  <english>The chairman shall not vote .</english>
+  <czech>Předseda nehlasuje .</czech>
+  <sure>2-1 4-2 5-2 6-3</sure>
+  <possible>1-1 3-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s48">
+  <english>The Commission shall adopt the proposed measures if they are consistent with the opinion of the Committee .</english>
+  <czech>Komise přijme zamýšlená opatření , jsou - li v souladu se stanoviskem výboru .</czech>
+  <sure>2-1 4-2 6-3 7-4 10-6 11-9 11-10 12-11 14-12 17-13 18-14</sure>
+  <possible>1-1 3-2 5-4 8-5 8-7 8-8 9-6 13-12 15-13 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s49">
+  <english>Where the proposed measures are not consistent with the opinion of the Committee , or if no opinion is delivered , the Commission shall without delay submit to the Council a proposal on the measures to be taken .</english>
+  <czech>Pokud zamýšlená opatření nejsou v souladu se stanoviskem výboru nebo pokud výbor žádné stanovisko nezaujme , předloží Komise Radě neprodleně návrh opatření , která mají být přijata .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-4 7-5 7-6 8-7 10-8 13-9 15-10 16-11 17-13 18-14 21-16 23-18 25-20 26-20 27-17 30-19 32-21 35-22 37-26 38-27 39-28</sure>
+  <possible>2-3 9-8 11-9 12-9 14-10 17-15 19-15 20-15 22-18 24-17 28-19 29-19 31-21 33-21 34-22 36-26 37-23 37-24 37-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31980L0799-s50">
+  <english>The Council shall decide by a qualified majority .</english>
+  <czech>Rada rozhodne kvalifikovanou většinou .</czech>
+  <sure>2-1 4-2 7-3 8-4 9-5</sure>
+  <possible>1-1 3-2 5-4 6-4</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

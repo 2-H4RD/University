@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2214-s1">
+  <english>U . S . Trade Representative Carla Hills said the first dispute-settlement panel set up under the U.S.-Canadian `` free trade '' agreement has ruled that Canada 's restrictions on exports of Pacific salmon and herring violate the accord .</english>
+  <czech>Americká obchodní zástupkyně Carla Hillsová uvedla , že první rozhodčí panel ustavený na základě dohody o " volném obchodu " mezi Spojenými státy a Kanadou rozhodl , že kanadské restrikce na vývoz pacifického lososa a sledě představují porušení dohody .</czech>
+  <sure>1-1 11-9 12-10 13-11 14-12 15-12 16-13 16-14 18-21 18-22 18-23 18-24 18-25 19-17 20-18 21-19 22-20 23-15 25-26 26-28 27-29 29-30 3-1 30-31 31-32 33-33 34-34 35-35 36-36 37-38 39-39 40-40 5-2 6-3 7-4 8-5 9-6</sure>
+  <possible>10-10 10-9 17-15 21-16 24-26 26-27 28-29 32-33 32-34 37-37 38-39</possible>
+</s>
+<s id="wsj_2214-s2">
+  <english>Mrs . Hills said the U . S . and Canada have until Nov . 13 to resolve the dispute .</english>
+  <czech>Paní Hillsová řekla , že Spojené státy a Kanada musí spor vyřešit do 13 . listopadu .</czech>
+  <sure>1-1 10-8 11-9 12-10 13-13 14-16 16-14 18-12 20-11 21-17 3-2 4-3 6-6 8-7</sure>
+  <possible>16-15 17-10 17-12 19-11 5-7</possible>
+</s>
+<s id="wsj_2214-s3">
+  <english>If a solution is n't reached by then , she said , the U . S . would have the right to suspend some trade concessions to Canada equivalent in value to the losses suffered by U.S . fish-processing companies in Alaska and the Pacific Northwest .</english>
+  <czech>Pokud do té doby nebude nalezeno řešení , uvedla dále , budou mít Spojené státy právo pozastavit některé obchodní ústupky vůči Kanadě , odpovídající svou hodnotou ztrátám , způsobeným rybářským zpracovatelským podnikům na Aljašce a na severozápadě země .</czech>
+  <sure>1-1 11-9 12-11 14-14 16-15 18-12 19-13 21-16 23-17 24-18 25-19 26-20 27-21 28-22 29-24 3-7 31-26 34-27 35-29 39-30 39-31 4-5 40-32 41-33 42-34 43-35 46-37 47-39 5-5 6-6 7-2 8-4 9-8</sure>
+  <possible>10-9 13-14 13-15 2-7 20-16 22-17 30-25 30-26 31-25 32-27 33-27 36-32 44-38 45-37 45-38 46-36 46-38 7-3 7-4 8-2 8-3</possible>
+</s>
+<s id="wsj_2214-s4">
+  <english>However , in Ottawa , Canadian Trade Minister John Crosbie said the dispute-settlement panel accepted the `` legitimacy of Canada 's position on the use of these landing requirements to conserve and manage these important fisheries . ''</english>
+  <czech>Kanadský ministr obchodu Crosbie však v Ottawě uvedl , že rozhodčí panel přijal " legitimitu kanadského stanoviska ohledně používání těchto přístavních požadavků , jejichž cílem je chránit a spravovat tyto významné rybářské zpracovatelské závody . "</czech>
+  <sure>1-5 10-4 11-8 13-11 14-12 15-13 17-14 18-15 20-16 22-17 23-18 25-19 27-20 28-21 29-22 3-6 31-27 32-28 33-29 34-30 35-31 36-32 36-33 36-34 37-35 38-36 4-7 6-1</sure>
+  <possible>12-11 12-12 16-15 19-16 19-17 21-16 24-19 26-22 30-27 7-2 7-3 8-2 8-3</possible>
+</s>
+<s id="wsj_2214-s5">
+  <english>Questioned about the seeming contradiction in the U . S . and Canadian government views of the panel 's report , an aide for Mrs . Hills said the panel had clearly ruled that the Canadian trade restrictions `` are illegal '' .</english>
+  <czech>Na dotaz ohledně zdánlivého rozporu mezi názorem vlád Spojených států a Kanady na zprávu panelu poradce paní Hillsové odpověděl , že panel jasně rozhodl , že kanadská obchodní omezení jsou " nezákonná " .</czech>
+  <sure>1-2 10-10 12-11 13-12 14-8 15-7 16-13 18-15 2-3 20-14 23-16 25-17 27-18 28-19 30-22 32-23 33-24 34-26 36-27 37-28 38-29 39-31 4-4 40-30 41-32 42-33 43-34 5-5 6-6 8-9</sure>
+  <possible>1-1 17-14 19-15 22-16 24-17 29-22 3-5 31-24 34-25 35-29 7-10</possible>
+</s>
+<s id="wsj_2214-s6">
+  <english>The U . S . trade representative declined to put a dollar estimate on the losses resulting from the Canadian export restrictions .</english>
+  <czech>Obchodní zástupkyně Spojených států odmítla odhadnout výši ztrát , způsobených kanadskými dovozními restrikcemi .</czech>
+  <sure>10-6 13-6 16-8 17-10 2-3 20-11 21-12 22-13 23-14 4-4 6-1 7-2 8-5</sure>
+  <possible>1-2 1-4 10-7 10-8 11-6 11-7 11-8 12-6 12-7 12-8 13-7 13-8 14-6 14-7 14-8 15-6 15-7 15-8 16-6 16-7 18-13 19-13 9-6 9-7 9-8</possible>
+</s>
+<s id="wsj_2214-s7">
+  <english>Canada initially had an export prohibition that was replaced by regulations requiring that such fish had to be brought ashore in British Columbia by commercial fishermen prior to export .</english>
+  <czech>Kanada měla původně zákaz vývozu , který byl poté nahrazen nařízením , aby rybářští obchodníci tyto ryby ještě před exportem vykládali na břeh v Britské Kolumbii .</czech>
+  <sure>1-1 11-11 13-13 14-16 15-17 19-21 2-3 20-23 21-24 22-25 23-26 25-15 26-14 27-19 29-20 3-2 30-27 5-5 6-4 7-7 8-8 9-10</sure>
+  <possible>10-11 13-12 17-21 18-21 19-22 19-23 20-21 20-22 24-15 27-18 28-20 4-4 7-6</possible>
+</s>
+<s id="wsj_2214-s8">
+  <english>This action was defended by the Canadian government on conservation grounds .</english>
+  <czech>Kanadská vláda toto opatření odůvodňovala na základě ochranářských zájmů .</czech>
+  <sure>1-3 10-8 11-9 12-10 2-4 4-5 7-1 8-2 9-6 9-7</sure>
+  <possible>3-5 5-1 5-2 6-1 6-2</possible>
+</s>
+<s id="wsj_2214-s9">
+  <english>Mrs . Hills said yesterday that the dispute-settlement panel rejected this Canadian government argument .</english>
+  <czech>Paní Hillsová včera uvedla , že rozhodčí panel tento argument kanadské vlády odmítl .</czech>
+  <sure>1-1 10-13 11-9 12-11 13-12 14-10 15-14 3-2 4-4 5-3 6-6 8-7 9-8</sure>
+  <possible>6-5 7-7 7-8</possible>
+</s>
+<s id="wsj_2214-s10">
+  <english>`` We fully expect that Canada will comply with the panel 's ruling '' that the `` landing requirement '' also must be ended , she said .</english>
+  <czech>" Rozhodně očekáváme , že se Kanada podrobí rozhodnutí panelu " , že " požadavek o přistávání " musí být také zrušen , uvedla .</czech>
+  <sure>1-1 11-10 13-9 14-11 15-13 17-14 18-17 19-15 20-18 21-21 22-19 23-20 24-22 25-23 27-24 28-25 3-2 4-3 5-5 6-7 8-6 8-8</sure>
+  <possible>10-10 10-9 12-10 15-12 16-15 18-16 2-3 26-24 5-4 7-8 9-9</possible>
+</s>
+<s id="wsj_2214-s11">
+  <english>Earlier , an international panel set up under the rules of the General Agreement on Tariffs and Trade in Geneva determined that the original Canadian fish-export restrictions violated GATT rules .</english>
+  <czech>Mezinárodní komise ustavená podle pravidel Všeobecné dohody o clech a obchodu v Ženevě již dříve rozhodla , že původní kanadské restrikce na vývoz ryb porušovaly pravidla dohody GATT .</czech>
+  <sure>1-15 10-5 13-6 14-7 15-8 16-9 17-10 18-11 19-12 20-13 21-16 22-18 24-19 25-20 26-22 26-23 26-24 27-21 28-25 29-28 30-26 31-29 4-1 5-2 6-3 7-3 8-4</sure>
+  <possible>1-14 11-6 11-7 12-6 12-7 22-17 23-21 3-2 9-5</possible>
+</s>
+<s id="wsj_2214-s12">
+  <english>Mrs . Hills said the U . S . wo n't accept any delays after Nov . 13 because U . S . fish-processing firms enter into contracts in the fall to purchase the next season 's catch .</english>
+  <czech>Paní Hillsová řekla , že USA nebudou akceptovat žádné odklady po 13 . listopadu , protože americké rybářské zpracovatelské firmy uzavírají na podzim smlouvy o koupi úlovků příští sezóny .</czech>
+  <sure>1-1 10-7 11-7 12-8 13-9 14-10 15-11 16-14 18-12 19-16 20-17 22-17 24-18 24-19 25-20 26-21 28-24 29-22 3-2 31-23 33-26 35-28 36-29 38-27 39-30 4-3 6-6 8-6</sure>
+  <possible>18-13 19-15 27-21 27-24 30-23 32-25 32-26 33-25 34-27 37-29 5-6</possible>
+</s>
+<s id="wsj_2214-s13">
+  <english>She said the Canadian restrictions must be removed before such contracts are concluded .</english>
+  <czech>Uvedla , že kanadské restrikce musí být odstraněny před uzavřením těchto smluv .</czech>
+  <sure>10-11 11-12 13-10 14-13 2-1 4-4 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>1-1 12-10 3-5</possible>
+</s>
+</sentences>

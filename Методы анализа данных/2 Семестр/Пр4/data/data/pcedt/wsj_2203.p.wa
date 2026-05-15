@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2203-s1">
+  <english>NCR Corp . reported a 10 % drop in third-quarter net income , citing intense competition that caused its gross profit margins to dip .</english>
+  <czech>Společnost NCR oznámila desetiprocentní pokles čistých příjmů ve 3 . čtvrtletí , odvolávajíc se na intenzivní konkurenci , která způsobila propad jejích hrubých ziskových marží .</czech>
+  <sure>1-2 2-1 4-3 6-4 7-4 8-5 9-8 10-9 10-10 10-11 11-6 12-7 13-12 14-13 15-16 16-17 17-19 18-20 19-22 20-23 21-24 22-25 24-21 25-26</sure>
+  <possible>5-5 16-15 17-18 23-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s2">
+  <english>Net income for the quarter fell to $ 93.1 million from $ 103.1 million , roughly what analysts had expected .</english>
+  <czech>Jak analytici zhruba očekávali , čistý příjem na čtvrtletí klesl z 103,1 na 93,1 milionu dolarů .</czech>
+  <sure>1-6 2-7 5-9 6-10 7-13 8-16 9-14 10-15 11-11 13-12 16-3 17-1 18-2 19-4 20-4 21-17</sure>
+  <possible>3-9 4-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s3">
+  <english>But per-share profit dropped only 2 % to $ 1.23 a share from $ 1.26 a share , as the company continued its stock buy-back plan .</english>
+  <czech>Zisk na akcii však klesl pouze o 2 % z 1,26 na 1,23 dolaru na akcii , neboť společnost pokračovala ve svém plánu zpětného odkupu akcií .</czech>
+  <sure>1-4 2-2 2-3 3-1 4-5 5-6 6-8 7-9 8-12 9-14 10-13 13-10 15-11 16-15 17-16 18-17 19-18 21-19 22-20 23-22 24-26 25-24 25-25 26-23 27-27</sure>
+  <possible>20-19 26-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s4">
+  <english>Average shares outstanding dropped to 75.8 million from 82.1 million .</english>
+  <czech>Průměrný akciový dluh klesl v průměru z 82,1 na 75,8 milionu .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-9 6-10 8-7 9-8 10-11 11-12</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s5">
+  <english>Revenue fell 1 % to $ 1.39 billion from $ 1.41 billion .</english>
+  <czech>Výnosy klesly o 1 % z 1,41 na 1,39 miliardy dolarů .</czech>
+  <sure>1-1 2-2 3-4 4-5 5-8 7-9 9-6 10-11 11-7 12-10 13-12</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s6">
+  <english>The computer maker , which sells more than half its goods outside the U . S . , also said the negative effect of a stronger U . S . dollar will `` adversely affect '' its fourth-quarter performance and `` make it difficult '' to better 1988 results .</english>
+  <czech>Výrobce počítačů , který prodává více než polovinu svého zboží mimo USA , také řekl , že negativní vliv silného amerického dolaru bude " nepříznivě ovlivňovat " jeho výkon ve čtvrtém čtvrtletí a " ztíží " překonání výsledků roku 1988 .</czech>
+  <sure>2-2 3-1 4-3 5-4 6-5 7-6 8-7 9-8 10-9 11-10 12-11 14-12 16-12 18-13 19-14 20-15 22-18 23-19 26-20 27-21 29-21 31-22 32-23 33-24 34-25 35-26 36-27 37-28 38-31 38-32 39-29 40-33 41-34 42-35 43-35 44-35 45-36 46-37 47-37 48-40 49-38 50-41</sure>
+  <possible>1-1 13-12 21-19 24-22 25-22 38-30 48-39</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s7">
+  <english>NCR said revenue declined both in the U . S . and overseas , reflecting a world-wide softening of the computer markets .</english>
+  <czech>Společnost NCR oznámila , že výnosy klesly jak v USA tak v zámoří a odrážejí celosvětové oslabení počítačového trhu .</czech>
+  <sure>1-2 2-3 3-6 4-7 6-9 8-10 10-10 13-13 15-15 17-16 18-17 21-18 22-19 23-20</sure>
+  <possible>7-10 13-12 16-17 19-18 20-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s8">
+  <english>The company , however , said orders in the U . S . showed `` good gains '' during the latest quarter .</english>
+  <czech>Společnost nicméně sdělila , že objednávky v USA vykazovaly " dobré přírůstky " během posledního čtvrtletí .</czech>
+  <sure>2-1 4-2 6-3 7-6 8-7 10-8 12-8 14-9 15-10 16-11 17-12 18-13 19-14 21-15 22-16 23-17</sure>
+  <possible>1-1 9-8 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s9">
+  <english>Analysts estimate those gains at 12 % to 13 % , a good part of it coming from large orders placed by a few of NCR 's major customers .</english>
+  <czech>Analytici odhadují tyto přírůstky na 12 % až 13 % , přičemž velká část z nich pochází z velkých objednávek několika větších zákazníků NCR .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 13-13 14-14 15-15 16-16 17-17 18-18 19-19 20-20 23-21 24-21 26-24 28-22 29-23 30-25</sure>
+  <possible>25-24 27-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s10">
+  <english>In addition to a general slowing of the computer industry , NCR , which sells automated teller machines and computerized cash registers , is also affected by the retail and financial sectors , `` areas of the economy that have generally not been robust , '' notes Sanjiv G . Hingorani , an analyst for Salomon Brothers Inc .</english>
+  <czech>Vedle všeobecného zpomalení počítačového průmyslu je NCR , která prodává signální hlásiče a počítačové platební registry , také ovlivněna maloobchodem a finančním sektorem , tedy " oblastmi ekonomiky , které celkem vzato nikdy nebyly nějak velké " , poznamenává Sanjiv G . Hingorani , analytik pracující pro Salomon Brothers Inc .</czech>
+  <sure>1-1 2-1 5-2 6-3 9-4 10-5 12-7 13-8 14-9 15-10 17-12 18-11 19-13 20-14 21-15 22-16 23-17 24-19 25-18 26-19 29-20 30-21 31-22 32-23 33-24 34-26 35-27 38-28 39-30 40-34 41-31 42-34 43-34 44-36 45-38 46-37 47-39 48-40 49-41 50-42 51-43 52-44 54-45 55-47 56-48 57-49 58-50 59-51</sure>
+  <possible>4-3 7-5 8-5 27-20 28-20 36-28 37-28 39-29 53-45</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s11">
+  <english>These factors , combined with a strong dollar , should negatively affect the current quarter 's results , NCR said .</english>
+  <czech>Tyto faktory , ve spojení se silným dolarem , by měly negativně ovlivnit výsledky současného čtvrtletí , řekla společnost NCR .</czech>
+  <sure>1-1 2-2 3-3 4-4 4-5 5-6 7-7 8-8 9-9 10-10 10-11 11-12 12-13 14-15 15-16 17-14 18-17 19-20 20-18 21-21</sure>
+  <possible>6-8 13-16 16-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s12">
+  <english>In the year-earlier fourth quarter , NCR had profit of $ 149.6 million , or $ 1.85 a share , on revenue of $ 1.8 billion .</english>
+  <czech>Ve čtvrtém čtvrtletí předchozího roku měla NCR při tržbách 1,8 miliardy dolarů zisk 149,6 milionu dolarů , tj . 1,85 dolarů na akcii .</czech>
+  <sure>1-1 3-4 3-5 4-2 5-3 7-7 8-6 9-13 11-16 12-14 13-15 14-17 15-18 15-19 16-21 17-20 18-22 19-23 21-8 22-9 24-12 25-10 26-11 27-24</sure>
+  <possible>2-3 10-15 23-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s13">
+  <english>Mr . Hingorani said he lowered his full-year estimates for 1989 to $ 5.35 a share from $ 5.50 a share .</english>
+  <czech>Pan Hingorani řekl , že snížil svůj celoroční odhad na rok 1989 z 5,50 na 5,35 dolaru na akcii .</czech>
+  <sure>1-1 3-2 4-3 6-6 7-7 8-8 9-9 10-10 11-12 12-15 14-16 17-13 18-17 19-14 20-18 21-19 22-20</sure>
+  <possible>5-6 11-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s14">
+  <english>Revenue projections were slashed to $ 6.03 billion from $ 6.20 billion .</english>
+  <czech>Plány tržeb byly sníženy z 6,20 na 6,03 miliardy dolarů .</czech>
+  <sure>1-2 2-1 3-3 4-4 5-7 7-8 9-5 10-10 11-6 12-9 13-11</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s15">
+  <english>Last year , NCR had net income of $ 439.3 million , or $ 5.33 a share , on $ 5.99 billion in revenue .</english>
+  <czech>Minulý rok měla NCR při tržbách 5,99 miliardy dolarů čistý příjem 439,3 milionu dolarů , tj . 5,33 dolaru na akcii .</czech>
+  <sure>1-1 2-2 4-4 5-3 6-10 7-11 9-14 10-12 11-13 12-15 13-16 13-17 14-19 15-18 16-20 17-21 19-5 20-9 21-7 22-8 23-6 24-6 25-22</sure>
+  <possible>8-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s16">
+  <english>For the nine months , the company 's earnings fell 9 % to $ 264.6 million , or $ 3.40 a share , from $ 289.7 million , or $ 3.49 a share .</english>
+  <czech>Během devíti měsíců klesly příjmy společnosti o 9 % , z 289,7 na 264,6 milionu dolarů , tj . z 3,49 na 3,40 dolaru na akcii .</czech>
+  <sure>1-1 3-2 4-3 7-6 9-5 10-4 11-8 12-9 13-13 14-16 15-14 16-15 17-17 18-18 18-19 20-23 24-11 26-12 30-24 31-21 32-25 33-26 34-27</sure>
+  <possible>2-3 6-6 8-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s17">
+  <english>Revenues declined 1 % to $ 4.17 billion from $ 4.19 billion .</english>
+  <czech>Tržby poklesly o 1 % z 4,19 na 4,17 miliardy dolarů .</czech>
+  <sure>1-1 2-2 3-4 4-5 5-8 7-9 9-6 10-11 11-7 12-10 13-12</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2203-s18">
+  <english>In New York Stock Exchange composite trading yesterday , NCR shares fell 75 cents to close at $ 57 .</english>
+  <czech>Při včerejším obchodování na newyorské burze klesly akcie NCR o 75 centů a uzavřely na 57 dolarech .</czech>
+  <sure>1-4 2-5 3-5 4-6 5-6 7-3 8-2 10-9 11-8 12-7 13-11 14-12 16-14 17-15 18-17 19-16 20-18</sure>
+  <possible>15-14</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

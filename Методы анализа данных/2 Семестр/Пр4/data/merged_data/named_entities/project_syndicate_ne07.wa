@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_ne07-s1">
+  <english>This was followed by a shareholders meeting of the RAO UES , Russia 's electricity giant , now headed by the reformer turned oligarch , Anatoly Chubais .</english>
+  <czech>Následovala valná hromada akcionářů společnosti RAO UES , elektrárenského giganta Ruska , v jejímž čele sedí bývalý reformátor , dnes oligarch Anatolij Čubajs .</czech>
+  <sure>10-6 11-7 12-8 13-11 15-9 16-10 19-15 22-18 24-21 26-22 27-23 28-24 3-1 6-4 7-2 7-3</sure>
+  <possible>14-11 17-11 18-20 19-13 19-16 20-18 21-18 23-17 25-19 4-3 5-3 8-5 8-6 9-5 9-6</possible>
+</s>
+<s id="project_syndicate_ne07-s2">
+  <english>The meeting was meant as a sign of Russia 's new business friendly climate , but the banner hanging over the hall - " Long Live the 80th Anniversary of Vladimir Lenin 's GOELRO Plan " - mocked that intent .</english>
+  <czech>Schůze měla být znamením nového , podnikání nakloněného klimatu v Rusku , ale pro transparent na zdi jednacího sálu – " Ať žije 80 . výročí plánu GOELRO Vladimíra Iljiče Lenina ! " – byl celý , jistě dobře míněný záměr pro smích .</czech>
+  <sure>11-5 12-7 13-8 14-9 15-12 16-13 18-15 2-1 22-19 23-20 24-21 26-23 28-24 28-25 29-26 31-29 32-31 34-28 35-27 36-33 37-34 41-44 7-4 9-11</sure>
+  <possible>1-1 10-11 17-15 21-19 25-22 25-23 26-22 27-24 27-26 3-2 30-27 30-31 33-31 38-42 38-43 4-3 40-40 40-41 5-4 6-4 8-10 8-9</possible>
+</s>
+<s id="project_syndicate_ne07-s3">
+  <english>GOELRO 's ( State Organization for the Reconstruction and Development of the Soviet People 's Economy ) slogan was " Socialism means Soviet rule plus electrification of the country . "</english>
+  <czech>Heslem plánu GOELRO ( Státního výboru pro elektrifikaci Ruska ) bylo : " Socialismus – vláda Sovětů plus elektrifikace země " .</czech>
+  <sure>1-3 17-10 18-1 19-11 20-13 21-14 23-17 24-16 25-18 26-19 29-20 3-4 30-22 31-21 4-5 5-6 6-7</sure>
+  <possible>2-3 22-15 27-20 28-20</possible>
+</s>
+<s id="project_syndicate_ne07-s4">
+  <english>Should Poland , Hungary and the Czech Republic be allowed in ?</english>
+  <czech>Mělo by být Polsku , Maďarsku a České republice umožněno přistoupit ?</czech>
+  <sure>1-1 1-2 10-10 11-11 12-12 2-4 3-5 4-6 5-7 7-8 8-9</sure>
+  <possible>6-9 9-10 9-3</possible>
+</s>
+<s id="project_syndicate_ne07-s5">
+  <english>Perhaps - but Serbia , Romania , Bulgaria are dubious ; even more so the idea of Russia as part of this new Europe .</english>
+  <czech>Možná – ale představa vstupu Srbska , Rumunska a Bulharska je zneklidňující a podivná ; a ještě více myšlenka , že by se částí této nové Evropy mělo jednou stát i Rusko .</czech>
+  <sure>1-1 10-12 12-17 13-18 16-19 18-32 2-2 20-24 22-25 23-26 24-27 25-33 3-3 4-6 5-7 6-8 7-9 8-10 9-11</sure>
+  <possible>11-15 15-19 19-24 21-27</possible>
+</s>
+<s id="project_syndicate_ne07-s6">
+  <english>Turkey is , of course , highly problematic .</english>
+  <czech>Také případ Turecka je samozřejmě nadmíru problematický .</czech>
+  <sure>1-3 2-4 4-5 5-5 7-6 8-7 9-8</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_ne07-s7">
+  <english>BERLIN : I learned that the Berlin Wall was falling during an official visit to Poland ten years ago .</english>
+  <czech>BERLÍN : O tom , že padla Berlínská zeď , jsem byl informován během své oficiální návštěvy Polska , právě před deseti lety .</czech>
+  <sure>1-1 10-7 11-14 13-16 14-17 16-18 17-22 18-23 19-21 2-2 20-24 4-13 5-6 7-8 8-9</sure>
+  <possible>12-17 15-18 3-12 4-11 4-12 5-5 6-9 9-7</possible>
+</s>
+<s id="project_syndicate_ne07-s8">
+  <english>On the evening of November 9th , Prime Minister Tadeusz Mazowiecki invited my delegation to a banquet in the former palace of Prince Radziwill .</english>
+  <czech>Na večer , 9 . listopadu toho roku pozval ministerský předseda Tadeusz Mazowiecki naši delegaci na banket do bývalého paláce knížete Radziwilla .</czech>
+  <sure>1-1 10-12 11-13 12-9 13-14 14-15 15-16 17-17 18-18 20-19 21-20 23-21 24-22 25-23 3-2 5-6 6-4 6-5 8-11 9-10</sure>
+  <possible>16-17 19-20 2-2 22-21 4-6</possible>
+</s>
+<s id="project_syndicate_ne07-s9">
+  <english>Before arriving at dinner , the Secretary of the Chancellery , Rudolf Seiters , called from Bonn .</english>
+  <czech>Ještě než jsme se dostavili na večeři zavolal z Bonnu sekretář Kancléřského úřadu , Rudolf Seiters .</czech>
+  <sure>10-12 10-13 11-14 12-15 13-16 15-8 16-9 17-10 18-17 2-4 2-5 3-6 4-7 7-11</sure>
+  <possible>1-2 2-3 6-11 8-13 9-13</possible>
+</s>
+<s id="project_syndicate_ne07-s10">
+  <english>The combative pacifist Gregory Yavlinsky of Yabloko and Sergei Stepashin , the former prime minister and architect of the Chechen War , now stand uneasily atop a joint party list for the December Duma elections .</english>
+  <czech>Bojovný pacifista Gregorij Javlinskij z hnutí Jabloko přešlapuje nejistě na špičce společné kandidátky pro prosincové volby do Dumy vedle Sergeje Štěpašina , bývalého premiéra a strůjce války v Čečensku .</czech>
+  <sure>10-21 13-23 14-24 15-24 16-25 17-26 2-1 20-29 21-27 26-11 28-12 29-13 3-2 30-13 31-14 33-15 34-18 35-16 36-30 4-3 5-4 6-5 7-7 9-20</sure>
+  <possible>1-2 11-22 12-24 18-27 19-27 24-8 25-9 26-10 27-12 32-16</possible>
+</s>
+<s id="project_syndicate_ne07-s11">
+  <english>Viktor Chernomyrdin says one day that he is willing to cooperate with his successor as prime minister , the free marketeer Sergei Kirienko , but huffs the next about dealing with his reform - minded predecessor , Yegor Gaidar .</english>
+  <czech>Viktor Černomyrdin jednoho dne řekne , že je ochoten spolupracovat se svým premiérským nástupcem Sergejem Kirijenkem , druhého dne ovšem ostře napadne jednání s jeho předchůdcem , reformně orientovaným Jegorem Gajdarem .</czech>
+  <sure>1-1 11-10 12-11 13-12 14-14 16-13 17-13 2-2 22-15 23-16 25-20 26-22 3-5 30-23 31-24 32-25 33-28 35-29 36-26 38-30 39-31 4-3 40-32 5-4 6-7 8-8 9-9</sure>
+  <possible>10-10 26-21 27-18 28-18 34-29 37-27 6-6 7-8</possible>
+</s>
+<s id="project_syndicate_ne07-s12">
+  <english>Two days after that , he blubbers that he is thinking of throwing in his lot with Primakov and Luzhkov .</english>
+  <czech>A za dva dny nato pohrozí , že se spojí s Primakovem a Lužkovem .</czech>
+  <sure>1-3 17-11 18-12 19-13 2-4 20-14 21-15 3-5 4-5 7-6 8-8</sure>
+  <possible>13-9 14-10 14-9 15-10 15-9 16-10 16-9 2-2 6-6 8-7</possible>
+</s>
+<s id="project_syndicate_ne07-s13">
+  <english>Licence to Rape has attracted wide attention in Southeast Asia .</english>
+  <czech>Zpráva Koncese ke znásilňování přitáhla širokou pozornost k jihovýchodní Asii .</czech>
+  <sure>1-2 10-10 11-11 2-3 3-4 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>4-5</possible>
+</s>
+<s id="project_syndicate_ne07-s14">
+  <english>Kraisak Choonhavan , Chairman of the Thai Senate 's Foreign Relations Committee and Vice Chairperson of the ASEAN Inter - Parliamentary Myanmar Caucus ( AIPMC ) , called for an investigation by the United Nations .</english>
+  <czech>Kraisak Choonhavan , předseda Výboru pro zahraniční vztahy thajského senátu a místopředseda Meziparlamentního výboru pro Myanmu při ASEAN , vyzval k prošetření situace prostřednictvím Organizace spojených národů .</czech>
+  <sure>1-1 10-7 11-8 12-5 13-11 14-12 15-12 18-18 19-13 2-2 20-13 21-13 22-16 28-20 29-21 31-22 32-24 34-26 35-27 36-28 4-4 7-9 8-10</sure>
+  <possible>16-14 17-14 27-19 3-3 30-22 33-25 5-10 5-5 6-10 6-5 9-10</possible>
+</s>
+<s id="project_syndicate_ne07-s15">
+  <english>So did the UN General Assembly and the UN Human Rights Commission .</english>
+  <czech>Totéž udělalo Valné shromáždění OSN a Komise OSN pro lidská práva .</czech>
+  <sure>1-1 10-10 11-11 12-7 13-12 2-2 4-5 5-3 6-4 7-6 9-8</sure>
+  <possible>3-4 3-5 8-7</possible>
+</s>
+<s id="project_syndicate_ne07-s16">
+  <english>One Bush has practically succeeded another as America 's president , and the son of Singapore 's founder , Lee Kwan Hew , is to become the country 's premier .</english>
+  <czech>Jeden Bush se coby americký prezident prakticky stal nástupcem jiného a syn zakladatele Singapuru Lee Kwan Hew se má stát v zemi premiérem .</czech>
+  <sure>1-1 10-6 12-11 14-12 16-14 18-13 2-2 20-15 21-16 22-17 24-19 25-19 26-20 28-22 30-23 31-24 4-7 5-9 6-10 7-4 8-5 9-5</sure>
+  <possible>11-11 13-12 15-13 17-14 26-18 27-22 29-22 3-8 5-3 5-8</possible>
+</s>
+<s id="project_syndicate_ne07-s17">
+  <english>Indeed , democratic leaders with dynastic dreams have bedeviled India , the Philippines , Indonesia , Sri Lanka , Haiti , and many other countries .</english>
+  <czech>Demokratičtí vůdci s dynastickými tužbami sužují Indii , Filipíny , Indonésii , Srí Lanku , Haiti a mnohé dalsí země .</czech>
+  <sure>10-7 11-8 13-9 14-10 15-11 16-12 17-13 18-14 19-15 20-16 22-17 23-18 24-19 25-20 26-21 3-1 4-2 5-3 6-4 7-5 9-6</sure>
+  <possible>12-9 21-17 8-6</possible>
+</s>
+<s id="project_syndicate_ne07-s18">
+  <english>Until the Aliyev 's came along , only North Korea 's utterly loony Kim Il Sung managed to anoint his son atop a red throne .</english>
+  <czech>Než se objevili Alijevové , pouze naprosto vysinutému severokorejskému Kim Ir - senovi se podařilo na rudém trůně pomazat svého syna .</czech>
+  <sure>1-1 10-9 11-9 12-7 13-8 14-10 15-11 16-13 17-15 19-19 20-20 21-21 24-17 25-18 26-22 3-4 5-3 6-3 8-6 9-9</sure>
+  <possible>16-12 17-14 18-19 2-4 22-16 23-18 4-4 5-2 6-2 7-5</possible>
+</s>
+<s id="project_syndicate_ne07-s19">
+  <english>The Al Jazeera Revolution Turns Ten</english>
+  <czech>Revoluce jménem Al - Džazíra slaví deset let</czech>
+  <sure>2-3 3-5 4-1 6-7</sure>
+  <possible>1-1 3-4 5-6</possible>
+</s>
+<s id="project_syndicate_ne07-s20">
+  <english>Although no one has yet caught up to Al Jazeera 's news and current affairs popularity , the Saudi - owned Middle East Broadcasting Center has introduced a successful 24 - hour station , Al Arrabiyeh , which is challenging Al Jazeera 's lead .</english>
+  <czech>Ačkoliv popularity zpráv a aktualit vysílaných na Al - Džazíře zatím nikdo další nedosáhl , společnost Middle East Broadcasting Center se saúdskými vlastníky spustila úspěšnou stanici Al - Arabíja s nepřetržitým vysíláním , která vedoucí Al - Džazíře šlape na paty .</czech>
+  <sure>1-1 10-10 12-3 13-4 14-5 16-2 19-22 2-12 21-23 22-17 23-18 24-19 25-20 27-24 29-25 3-12 30-31 31-31 32-31 33-26 35-27 36-29 37-33 38-34 41-36 42-38 45-42 6-14 7-14 9-8</sure>
+  <possible>10-9 11-10 15-5 17-15 18-20 20-22 20-23 26-24 28-26 30-30 31-30 32-30 33-30 36-28 39-39 4-14 40-39 40-40 40-41 42-37 43-38 44-39 44-40 44-41 5-11 8-2 8-7</possible>
+</s>
+<s id="project_syndicate_ne07-s21">
+  <english>The Lebanese Broadcasting Corporation and Egypt 's Dream have also won large segments of the general Arab public with entertainment programs .</english>
+  <czech>Rovněž společnosti Lebanese Broadcasting Corporation a egyptská Dream si díky zábavným pořadům získaly velké segmenty arabské veřejnosti .</czech>
+  <sure>10-1 11-13 11-9 12-14 13-15 17-16 18-17 19-10 2-3 20-11 21-12 22-18 3-4 4-5 5-6 6-7 7-7 8-8</sure>
+  <possible>1-2 14-17 15-17 16-17 9-13</possible>
+</s>
+<s id="project_syndicate_ne07-s22">
+  <english>Al Jazeera has made Qatar famous and the Arab world better informed .</english>
+  <czech>Al - Džazíra proslavila Katar a zlepšila informovanost v arabském světě .</czech>
+  <sure>1-1 10-11 11-7 12-8 13-12 2-3 4-4 5-5 6-4 7-6 9-10</sure>
+  <possible>2-2 3-4 8-11</possible>
+</s>
+<s id="project_syndicate_ne07-s23">
+  <english>So other pressure will need to be applied , primarily by the European Union and the United States .</english>
+  <czech>Bude tedy zapotřebí vyvinout jiný tlak , zejména ze strany Evropské unie a Spojených států .</czech>
+  <sure>1-2 10-8 11-9 13-11 14-12 15-13 17-14 18-15 19-16 2-5 3-6 4-1 5-3 8-4</sure>
+  <possible>11-10 12-12 16-15 6-4 7-4 9-7</possible>
+</s>
+<s id="project_syndicate_ne07-s24">
+  <english>In 2004 , both the EU and US were tardy in speaking in defense of Ukraine 's democrats .</english>
+  <czech>V roce 2004 se EU i USA vyjadřovaly na obhajobu ukrajinských demokratů liknavě .</czech>
+  <sure>1-1 10-13 12-8 13-9 14-10 16-11 17-11 18-12 19-14 2-3 6-5 7-6 8-7</sure>
+  <possible>12-4 15-12 2-2 5-5</possible>
+</s>
+<s id="project_syndicate_ne07-s25">
+  <english>Only when the courage of millions of ordinary Ukrainians gathered in central Kyiv galvanized world opinion did the US and EU marshal the courage to stand up for an honest election result .</english>
+  <czech>Teprve když odvaha milionů obyčejných Ukrajinců shromážděných v centru Kyjeva elektrizovala světové veřejné mínění , sebraly USA a EU kuráž a vyslovily se za poctivý volební výsledek .</czech>
+  <sure>1-1 10-7 11-8 12-9 13-10 14-11 15-12 16-13 16-14 19-17 2-2 20-18 21-19 22-16 24-20 28-24 30-25 31-26 32-27 33-28 4-3 6-4 8-5 9-6</sure>
+  <possible>17-16 18-17 23-20 25-22 26-22 26-23 27-22 29-27 3-3 5-4 7-6</possible>
+</s>
+<s id="project_syndicate_ne07-s26">
+  <english>Perhaps its governing responsibilities will push Hamas toward ongoing discussions with the United States and the international community .</english>
+  <czech>Vládní zodpovědnosti možná Hamas donutí k trvalým diskusím se Spojeným státy a mezinárodním společenstvím .</czech>
+  <sure>1-3 10-8 11-9 13-10 14-11 15-12 17-13 18-14 19-15 3-1 4-2 6-5 7-4 8-6 9-7</sure>
+  <possible>12-11 16-14 5-5</possible>
+</s>
+<s id="project_syndicate_ne07-s27">
+  <english>In any case , despite the election results , and even without Fatah in government , Abbas remains in charge of negotiations with Israel .</english>
+  <czech>Buď jak buď , navzdory volebním výsledkům je i bez Fatahu ve vládě vedením jednání s Izraelem pověřen Abbás .</czech>
+  <sure>11-9 12-10 13-11 14-12 15-13 17-19 19-18 20-18 22-15 23-16 24-17 25-20 5-5 7-6 8-7</sure>
+  <possible>1-1 1-2 1-3 18-8 2-1 2-2 2-3 21-15 3-1 3-2 3-3 4-4 6-7</possible>
+</s>
+<s id="project_syndicate_ne07-s28">
+  <english>He has quickly called for a revival of peace talks , although Israel , like the US , has refused to deal with Hamas .</english>
+  <czech>Ten okamžitě vyzval k obnovení mírových rozhovorů , třebaže Izrael , stejně jako USA , odmítl jednat s Hamasem .</czech>
+  <sure>1-1 10-7 11-8 12-9 13-10 14-11 15-12 15-13 17-14 18-15 20-16 22-17 23-18 24-19 25-20 3-2 4-3 5-4 7-5 9-6</sure>
+  <possible>16-14 19-16 2-3 21-17 6-5 8-7</possible>
+</s>
+<s id="project_syndicate_ne07-s29">
+  <english>Russian President Vladimir Putin is poised to visit Pyongyang in July in search of support for his objections to America 's proposed anti - missile shield .</english>
+  <czech>Ruský prezident Vladimir Putin se chystá navštívit Pchjongjang v červenci , aby tam hledal podporu pro své výhrady vůči Američany navrhovanému protiraketovému štítu .</czech>
+  <sure>1-1 10-9 11-10 13-14 15-15 16-16 17-17 18-18 19-19 2-2 20-20 22-21 23-22 24-22 25-22 26-23 27-24 3-3 4-4 6-5 6-6 8-7 9-8</sure>
+  <possible>12-14 14-15 21-20 5-6 7-7</possible>
+</s>
+<s id="project_syndicate_ne07-s30">
+  <english>And just as these two Asian land powers cultivate Kim Jong Il , Washington is seeking talks over missiles with Pyongyang and Tokyo is eager to reestablish diplomatic relations with the North .</english>
+  <czech>A v době , kdy ony dvě největší asijské země okopávají půdu pod Kim Čong - ilem , hledá cestu do Pchjongjangu k jednáním o raketách také Washington a Tokio by rádo se severem Koreje znovu navázalo diplomatické styky .</czech>
+  <sure>1-1 10-14 11-15 12-17 14-28 16-19 17-24 18-25 19-26 21-22 22-29 23-30 25-32 27-37 28-38 29-39 30-33 32-34 33-40 5-7 6-9 7-10 9-11</sure>
+  <possible>12-16 13-18 15-19 2-2 2-3 20-21 24-31 24-32 25-31 26-37 27-36 31-33 31-34 4-5 4-6 8-10 8-8</possible>
+</s>
+<s id="project_syndicate_ne07-s31">
+  <english>America and Japan helped push North Korea to talk with South Korea .</english>
+  <czech>Amerika a Japonsko pomohly Severní Koreu dotlačit k rozhovoru s Jižní Koreou .</czech>
+  <sure>1-1 10-10 11-11 12-12 13-13 2-2 3-3 4-4 5-7 6-5 7-6 8-8 9-9</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_ne07-s32">
+  <english>The government of Romano Prodi , having managed against all the odds to get Italy into Europe 's monetary union , fell three months later .</english>
+  <czech>Vláda Romana Prodiho , jíž se i přes nepřízeň podařilo dostat Itálii do evropské měnové unie , padla tři měsíce nato .</czech>
+  <sure>12-9 14-11 15-12 16-13 17-14 18-14 19-15 2-1 20-16 21-17 22-18 23-19 24-20 25-21 26-22 4-2 5-3 9-8</sure>
+  <possible>1-1 11-9 13-11 3-3 6-4 7-10 8-10 8-6</possible>
+</s>
+<s id="project_syndicate_ne07-s33">
+  <english>The Czech Republic , Poland , and Hungary have each endured a government crisis since EU accession .</english>
+  <czech>Od vstupu do EU vládní krizí prošla Česká republika , Polsko i Maďarsko .</czech>
+  <sure>11-7 13-5 14-6 15-1 16-4 17-2 18-14 2-8 3-9 4-10 5-11 7-12 8-13</sure>
+  <possible>1-9 12-6 16-3 6-12 9-7</possible>
+</s>
+<s id="project_syndicate_ne07-s34">
+  <english>Throughout Central and Eastern Europe , the EU is not as popular as it used to be .</english>
+  <czech>Ve střední a východní Evropě už není EU tak populární , jak bývala .</czech>
+  <sure>1-1 10-7 11-9 12-10 13-12 15-13 16-13 17-13 18-14 2-2 3-3 4-4 5-5 8-8 9-7</sure>
+  <possible>14-13 7-8</possible>
+</s>
+<s id="project_syndicate_ne07-s35">
+  <english>The sometimes - brutal Israeli responses to such terrorism further embittered the Palestinians against Israel .</english>
+  <czech>Občasné brutální reakce Izraele na tento terorismus vyvolaly v Palestincích další rozhořčení proti Izraeli .</czech>
+  <sure>10-11 11-12 11-8 13-10 14-13 15-14 16-15 2-1 4-2 5-4 6-3 7-5 8-6 9-7</sure>
+  <possible>1-3 12-10 13-9</possible>
+</s>
+<s id="project_syndicate_ne07-s36">
+  <english>True , the sidelining of Arafat and the appointment of Abu Mazen as the Palestinian Prime Minister is an important step in the right direction .</english>
+  <czech>Je pravda , že odstavení Arafáta na vedlejší kolej při volbě Abú Mázina za palestinského premiéra je důležitý krok správným směrem .</czech>
+  <sure>1-2 11-12 12-13 13-14 15-15 16-16 17-16 18-17 20-18 21-19 24-20 25-21 26-22 6-6</sure>
+  <possible>1-1 10-13 14-16 19-19 2-3 2-4 22-21 23-21 3-5 4-5 5-6 9-11</possible>
+</s>
+<s id="project_syndicate_ne07-s37">
+  <english>But Abu Mazen 's real power has yet to be tested .</english>
+  <czech>Skutečnou moc Abú Mázina bude ale třeba teprve vyzkoušet .</czech>
+  <sure>1-6 11-9 12-10 2-3 3-4 5-1 6-2 7-5 8-8 9-7</sure>
+  <possible>10-7 4-4 7-7 9-5</possible>
+</s>
+<s id="project_syndicate_ne07-s38">
+  <english>UN forces in Rwanda in 1994 were Annan 's responsibility before and during the crisis .</english>
+  <czech>Jednotky OSN ve Rwandě byly roku 1994 Annanovou zodpovědností , a to jak před krizí , tak během ní .</czech>
+  <sure>1-2 10-9 11-14 13-18 15-15 16-20 2-1 3-3 4-4 6-7 7-5 8-8</sure>
+  <possible>14-15 5-7 6-6 9-8</possible>
+</s>
+<s id="project_syndicate_ne07-s39">
+  <english>Annan was alerted four months before Hutu activists began their mass killings by a fax message from Romeo Dallaire , the Canadian general commanding UN forces in Rwanda .</english>
+  <czech>Annan byl varován faxovou zprávou od Romea Dallaira , kanadského generála , jenž velel silám OSN ve Rwandě , čtyři měsíce před tím , než hutujští radikálové masové vraždění zahájili .</czech>
+  <sure>1-1 11-28 12-29 15-4 16-5 17-6 18-7 19-8 2-2 20-9 22-10 23-11 24-14 25-16 26-15 27-17 28-18 29-31 3-3 4-20 5-21 6-22 7-26 8-27 9-30</sure>
+  <possible>13-5 14-5 21-11 6-23 6-24 6-25</possible>
+</s>
+<s id="project_syndicate_ne07-s40">
+  <english>Dallaire described in detail how the Hutus were planning " anti - Tutsi extermination . "</english>
+  <czech>Dallaire podrobně popisoval , že Hutuové plánují " vyhlazení Tutsiů " .</czech>
+  <sure>1-1 10-8 13-10 14-9 15-12 16-11 2-3 3-2 4-2 7-6 9-7</sure>
+  <possible>11-10 12-10 5-4 5-5 6-6 8-7</possible>
+</s>
+<s id="project_syndicate_ne07-s41">
+  <english>In February , President Bush declared the North a member of the " axis of evil " and in March the Pentagon singled North Korea as a possible target for a preemptive nuclear strike should it invade South Korea .</english>
+  <czech>V únoru americký prezident zařadil Severní Koreu do " osy zla " a v březnu ji Pentagon označil za možný cíl preventivního jaderného útoku , zaútočí - li proti Jižní Koreji .</czech>
+  <sure>1-1 13-9 14-10 16-11 17-12 18-13 19-14 2-2 20-15 22-17 23-18 28-20 29-21 32-22 33-23 34-24 37-26 38-30 39-31 4-4 40-32 6-5 8-6</sure>
+  <possible>10-8 11-10 12-10 15-11 21-17 26-19 27-21 30-24 31-24 35-26 35-28 7-7 9-8</possible>
+</s>
+<s id="project_syndicate_ne07-s42">
+  <english>In April the Bush administration refused to certify that North Korea is abiding by the 1994 agreement to freeze its nuclear weapons program .</english>
+  <czech>V dubnu Bushova administrativa odmítla uznat prohlášení , že Severní Korea dodržuje dohodu z roku 1994 o zmrazení svého jaderného zbrojního programu .</czech>
+  <sure>1-1 10-10 11-11 13-12 16-16 17-13 18-17 19-18 2-2 20-19 21-20 22-21 23-22 24-23 4-3 5-4 6-5 8-6 9-9</sure>
+  <possible>12-12 14-12 14-14 15-13 15-16 16-15 3-4 7-6 9-8</possible>
+</s>
+<s id="project_syndicate_ne07-s43">
+  <english>Now America is asking that North Korea accept International Atomic Energy Agency inspection on its nuclear sites .</english>
+  <czech>Teď Amerika Severní Koreu žádá , aby přistoupila na inspekci Mezinárodní agentury pro jadernou energii na jejích jaderných základnách .</czech>
+  <sure>1-1 10-14 11-15 12-12 13-10 14-16 15-17 16-18 17-19 18-20 2-2 4-5 5-7 6-3 7-4 8-8 9-11</sure>
+  <possible>3-5 5-6 8-9</possible>
+</s>
+<s id="project_syndicate_ne07-s44">
+  <english>One is a group of FSB ( the successor agency to the KGB ) men from St . Petersburg , headed by Security Council Secretary Sergei Ivanov .</english>
+  <czech>První je skupina mužů z Petrohradu , napojená na FSB ( nástupkyni historické KGB ) , v čele s tajemníkem Rady obrany Sergejem Ivanovem .</czech>
+  <sure>1-1 13-14 14-15 15-4 16-5 17-6 18-6 19-6 2-2 20-16 21-17 21-18 22-19 23-22 24-21 25-20 26-23 27-24 28-25 4-3 6-10 7-11 9-12</sure>
+  <possible>11-14 12-14 20-7 3-3 5-4 8-12</possible>
+</s>
+<s id="project_syndicate_ne07-s45">
+  <english>The second consists of liberal economists and lawyers from Putin 's home town of St . Petersburg , with Minister of Finance Alexei Kudrin and Minister of Economy German Gref the leading lights .</english>
+  <czech>Druhou skupinu představují liberální ekonomové a právníci opět z Putinova rodného města Petrohradu , zastoupení ministrem financí Alexejem Kudrinem a ministrem hospodářství Germanem Grefem .</czech>
+  <sure>10-10 12-11 13-12 15-13 16-13 17-13 2-1 20-16 22-17 23-18 24-19 25-20 26-21 28-22 29-23 3-3 30-24 34-25 5-4 7-6 8-7 9-9</sure>
+  <possible>1-1 1-2 11-10 14-13 18-14 21-17 27-22 4-5 6-4 6-5</possible>
+</s>
+<s id="project_syndicate_ne07-s46">
+  <english>The third faction is an " oligarchic " business - oriented group led by Putin 's chief of staff Alexander Voloshin , Prime Minister Mikhail Kasyanov and the secretive oil and aluminum tycoon Roman Abramovich , perhaps Russia 's richest man at age 33 .</english>
+  <czech>Třetí frakci tvoří " oligarchická " , obchodně orientovaná skupina vedená šéfem Putinovy administrativy Alexandrem Vološinem , premiérem Michailem Kasjanovem a tajuplným ropným a hliníkovým magnátem Romanem Abramovičem , snad nejbohatším Rusem ve věku třiatřiceti let .</czech>
+  <sure>11-9 12-10 13-11 15-13 17-12 19-14 2-1 20-15 21-16 22-17 23-18 24-18 25-19 26-20 27-21 29-22 3-2 30-23 31-24 32-25 33-26 34-27 35-28 36-29 37-30 38-32 40-31 42-33 43-34 44-35 45-37 6-4 7-5 8-6</sure>
+  <possible>1-1 1-2 10-8 10-9 14-12 16-13 18-14 28-26 39-32 4-3 41-32 45-36 5-10 9-7 9-8</possible>
+</s>
+<s id="project_syndicate_ne07-s47">
+  <english>Near Tel Aviv , in adjoining Jaffa , a competing militia under Hassan Salameh , took control .</english>
+  <czech>Nedaleko od Tel Avivu , v přilehlém Jafu , převzala kontrolu znesvářená milice vedená Hasanem Salaméhem .</czech>
+  <sure>1-1 10-12 11-13 12-14 13-15 14-16 16-10 17-11 18-17 2-3 3-4 5-6 6-7 7-8 8-9</sure>
+  <possible>1-2 4-5 9-13</possible>
+</s>
+<s id="project_syndicate_ne07-s48">
+  <english>In the north of the country , a Syrian - based militia , under Fawzi al - Kaukji , attacked Jewish villages .</english>
+  <czech>Na židovské vesnice na severu země útočila milice sídlící v Sýrii a vedená Fawzím Kaukdžím .</czech>
+  <sure>1-4 11-9 12-8 14-13 15-14 16-15 17-15 18-15 20-7 21-2 22-3 23-16 3-5 6-6 9-11</sure>
+  <possible>10-9 2-5 20-1 4-6 5-6 8-8</possible>
+</s>
+<s id="project_syndicate_ne07-s49">
+  <english>The more moderate Haifa Arabs tried , not very successfully , to stay out of the fray .</english>
+  <czech>Umírněnější Arabové z Haify se pak snažili – ne velmi úspěšně – zůstat stranou bojů .</czech>
+  <sure>10-11 11-12 13-13 14-14 17-15 18-16 2-1 3-1 4-4 5-2 6-5 6-7 7-8 8-9 9-10</sure>
+  <possible>1-2 12-13 15-15 16-15</possible>
+</s>
+<s id="project_syndicate_ne07-s50">
+  <english>Construction of the separation wall on the West Bank has made it almost impossible for Hamas fighters to reach Israel proper .</english>
+  <czech>Stavba separační zdi na západním břehu Jordánu bojovníkům Hamásu téměř znemožnila pronikat na území samotného Izraele .</czech>
+  <sure>1-1 11-11 13-10 14-11 16-9 17-8 19-12 20-16 21-15 4-2 5-3 6-4 8-5 9-6</sure>
+  <possible>10-11 15-8 18-12 2-3 22-16 22-17 3-3 7-6</possible>
+</s>
+</sentences>

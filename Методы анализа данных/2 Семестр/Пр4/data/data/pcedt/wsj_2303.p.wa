@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2303-s1">
+  <english>A consortium of private investors operating as LJH Funding Co . said it has made a $ 409 million cash bid for most of L . J . Hooker Corp . 's real-estate and shopping-center holdings .</english>
+  <czech>Konsorcium soukromých investorů fungující jako LJH Funding Co . sdělilo , že dalo nabídku za 409 milionů dolarů v hotovosti na většinu holdingů v oblasti realit a nákupních center firmy L . J . Hooker Corp .</czech>
+  <sure>2-1 4-2 5-3 6-4 7-5 8-6 9-7 10-8 11-9 12-10 13-13 14-13 15-13 17-18 18-16 19-17 20-19 20-20 22-21 23-22 25-31 26-32 27-33 28-34 29-35 30-36 33-25 33-26 34-27 35-28 35-29 36-23 37-37</sure>
+  <possible>1-1 3-3 16-14 21-14 24-23 32-36 33-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s2">
+  <english>The $ 409 million bid includes the assumption of an estimated $ 300 million in secured liabilities on those properties , according to those making the bid .</english>
+  <czech>Tato 409 milionová nabídka zahrnuje také odhadovaných 300 milionů dolarů v zaručených závazcích na tyto nemovitosti , jak uvádí nabízející strana .</czech>
+  <sure>3-2 4-3 5-4 6-5 11-7 12-10 13-8 14-9 15-11 16-12 17-13 18-14 19-15 20-16 21-17 28-22</sure>
+  <possible>1-1 10-9</possible>
+  <phrasal>22-18 22-19 23-18 23-19 24-20 24-21 25-20 25-21 26-20 26-21 27-20 27-21</phrasal>
+</s>
+<s id="wsj_2303-s3">
+  <english>The group is led by Jay Shidler , chief executive officer of Shidler Investment Corp . in Honolulu , and A . Boyd Simpson , chief executive of the Atlanta-based Simpson Organization Inc .</english>
+  <czech>Skupinu vede Jay Shidler , výkonný ředitel Shidler Investment Corp . na Honolulu , a A . Boyd Simpson , výkonný ředitel Simpson Organization Inc . v Atlantě .</czech>
+  <sure>2-1 3-2 4-2 5-2 6-3 7-4 8-5 13-8 14-9 15-10 16-11 17-12 18-13 19-14 20-15 21-16 22-17 23-18 24-19 25-20 30-27 30-28 31-23 32-24 33-25 34-29</sure>
+  <possible>1-1 12-10 28-24 29-24</possible>
+  <phrasal>9-6 9-7 10-6 10-7 11-6 11-7 26-21 26-22 27-21 27-22</phrasal>
+</s>
+<s id="wsj_2303-s4">
+  <english>Mr . Shidler 's company specializes in commercial real-estate investment and claims to have $ 1 billion in assets ; Mr . Simpson is a developer and a former senior executive of L . J . Hooker .</english>
+  <czech>Firma pana Shidlera se specializuje na investice do obchodních realit a chlubí se majetkem v hodnotě 1 miliardy dolarů ; pan Simpson je developer a bývalý vedoucí pracovník ve firmě L . J . Hooker .</czech>
+  <sure>1-2 3-3 5-1 6-4 6-5 7-6 8-9 9-10 10-7 11-11 15-19 16-17 17-18 20-20 21-21 23-22 24-23 26-24 27-25 29-26 30-27 31-28 32-29 33-31 34-32 35-33 36-34 37-35 38-36</sure>
+  <possible>4-3 9-8 25-24 28-28</possible>
+  <phrasal>12-12 12-13 12-14 12-15 12-16 13-12 13-13 13-14 13-15 13-16 14-12 14-13 14-14 14-15 14-16</phrasal>
+</s>
+<s id="wsj_2303-s5">
+  <english>`` The assets are good , but they require more money and management '' than can be provided in L . J . Hooker 's current situation , said Mr . Simpson in an interview . ``</english>
+  <czech>" Aktiva jsou dobrá , ale vyžadují více peněz a řízení " než může L . J . Hooker v současné situaci nabídnout , řekl pan Simpson v jednom rozhovoru . ``</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-7 10-8 11-9 12-10 13-11 14-12 15-13 16-14 17-23 18-23 19-20 20-15 21-16 22-17 23-18 24-19 26-21 27-22 28-24 29-25 30-26 32-27 33-28 34-29 35-30 36-31 37-32</sure>
+  <possible>2-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s6">
+  <english>Hooker 's philosophy was to build and sell .</english>
+  <czech>Filozofie firmy Hooker byla postavit a prodat .</czech>
+  <sure>1-3 3-1 4-4 5-5 6-5 7-6 8-7 9-8</sure>
+  <possible>2-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s7">
+  <english>We want to build and hold .</english>
+  <czech>My chceme postavit a ponechat si .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 6-5 6-6 7-7</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s8">
+  <english>L . J . Hooker , based in Atlanta , is operating with protection from its creditors under Chapter 11 of the U . S . Bankruptcy Code .</english>
+  <czech>L . J . Hooker se sídlem v Atlantě funguje s ochranou proti svým věřitelům podle kapitoly 11 amerického zákona o bankrotu .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 7-7 8-6 8-7 9-9 11-10 12-10 13-11 14-12 15-13 16-14 17-15 18-16 19-17 20-18 23-19 25-19 27-22 28-20 29-23</sure>
+  <possible>9-8 21-20 22-20 27-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s9">
+  <english>Its parent company , Hooker Corp . of Sydney , Australia , is currently being managed by a court-appointed provisional liquidator .</english>
+  <czech>Její mateřskou společnost , Hooker Corp . ze Sydney v Austrálii , v současnosti řídí soudem stanovený prozatímní likvidátor .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-12 15-15 16-15 19-16 19-17 20-18 21-19 22-20</sure>
+  <possible>17-19 18-19</possible>
+  <phrasal>13-13 13-14 14-13 14-14</phrasal>
+</s>
+<s id="wsj_2303-s10">
+  <english>Sanford Sigoloff , chief executive of L . J . Hooker , said yesterday in a statement that he has not yet seen the bid but that he would review it and bring it to the attention of the creditors committee .</english>
+  <czech>Sanford Sigoloff , výkonný ředitel firmy L . J . Hooker , řekl ve včerejším prohlášení , že dosud nabídku neviděl , ale že ji prostuduje a předá k posouzení věřitelské komisi .</czech>
+  <sure>1-1 2-2 3-3 7-7 8-8 9-9 10-10 11-11 12-12 13-13 14-15 15-14 17-16 18-18 19-21 20-21 21-21 22-19 23-21 25-20 26-23 27-24 28-26 29-26 30-26 31-25 32-27 33-28 35-29 37-30 40-31 41-32 42-33</sure>
+  <possible>6-11 16-16 18-17 24-20 26-22 36-30 38-32 39-32</possible>
+  <phrasal>4-4 4-5 5-4 5-5</phrasal>
+</s>
+<s id="wsj_2303-s11">
+  <english>The $ 409 million bid is estimated by Mr . Simpson as representing 75 % of the value of all Hooker real-estate holdings in the U . S . .</english>
+  <czech>Podle odhadu pana Simpsona představuje 409 milionová nabídka 75 % hodnoty všech realitních holdingů firmy Hooker ve Spojených státech .</czech>
+  <sure>3-6 4-7 5-8 9-3 11-4 13-5 14-9 15-10 18-11 20-12 21-16 22-13 23-14 24-17 26-18 28-19 30-20</sure>
+  <possible>1-8 8-3 16-11 17-11 19-14 25-19</possible>
+  <phrasal>6-1 6-2 7-1 7-2 12-1 12-2</phrasal>
+</s>
+<s id="wsj_2303-s12">
+  <english>Not included in the bid are Bonwit Teller or B . Altman & Co . , L . J . Hooker 's department-store chains .</english>
+  <czech>Nabídka nezahrnuje Bonwit Teller či B . Altman & Co . , řetězce obchodních domů firmy L . J . Hooker .</czech>
+  <sure>1-2 2-2 5-1 7-3 8-4 9-5 10-6 11-7 12-8 13-9 14-10 15-11 16-12 17-17 18-18 19-19 20-20 21-21 23-14 23-15 24-13 25-22</sure>
+  <possible>3-1 4-1 6-2 22-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s13">
+  <english>The offer covers the massive 1.8 million-square-foot Forest Fair Mall in Cincinnati , the 800,000 square-foot Richland Fashion Mall in Columbia , S . C . , and the 700,000 square-foot Thornton Town Center mall in Thornton , Colo .</english>
+  <czech>Nabídka obsahuje obrovské nákupní centrum Forest Fair Mall v Cincinnati o rozloze 1,8 milionů čtverečních stop , Richland Fashion Mall v Columbii , stát Severní Karolína , o rozloze 800 000 čtverečních stop a Thornton Town Center Mall v Thorntonu ve státě Colorado s rozlohou 700 000 čtverečních stop .</czech>
+  <sure>2-1 3-2 5-3 6-13 7-14 7-15 7-16 8-6 9-7 10-8 11-9 12-10 13-17 15-30 16-32 17-18 18-19 19-20 20-21 21-22 22-23 23-24 23-25 25-26 27-27 15-31 16-33 28-34 32-35 33-36 34-37 35-38 36-39 37-40 39-43 30-47 30-46 31-48 31-49 40-50</sure>
+  <possible>1-1 4-8 14-20 31-38</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s14">
+  <english>The Thornton mall opened Sept . 19 with a Bigg 's hypermarket as its anchor ; the Columbia mall is expected to open Nov . 15 .</english>
+  <czech>Nákupní centrum v Thorntonu bylo otevřeno 19 . září s hypermarketem Bigg jako hlavním obchodem ; nákupní centrum v Columbii má být otevřeno 15 . listopadu .</czech>
+  <sure>2-4 3-1 3-2 4-5 4-6 5-9 7-7 7-8 8-10 10-12 12-11 13-13 15-14 15-15 16-16 18-20 19-17 19-18 23-23 24-26 26-24 26-25 27-27</sure>
+  <possible>1-2 2-3 9-11 11-12 17-18 18-19 22-23</possible>
+  <phrasal>20-21 20-22 21-21 21-22</phrasal>
+</s>
+<s id="wsj_2303-s15">
+  <english>Other Hooker properties included are a 20-story office tower in midtown Atlanta , expected to be completed next February ; vacant land sites in Florida and Ohio ; L . J . Hooker International , the commercial real-estate brokerage company that once did business as Merrill Lynch Commercial Real Estate , plus other shopping centers .</english>
+  <czech>Dalším majetkem firmy Hooker je 20 patrová kancelářská věž v Atlantě , která má být dokončena v únoru příštího roku ; dále prázdné pozemky na Floridě a v Ohiu ; L . J . Hooker International , zprostředkovatelská firma v oblasti obchodních realit , která kdysi operovala jako Merill Lynch Commercial Real Estate , plus další nákupní centra .</czech>
+  <sure>1-1 2-4 3-2 5-5 7-6 7-7 8-8 9-9 10-10 12-11 13-12 14-14 15-15 16-15 17-16 18-19 18-20 19-17 19-18 20-21 21-23 22-24 23-24 24-25 25-26 26-27 27-29 28-30 29-31 30-32 31-33 32-34 33-35 34-36 35-37 37-42 37-43 38-41 38-42 38-43 39-38 40-39 41-45 42-46 45-48 46-49 47-50 48-51 49-52 50-53 51-54 52-55 53-56 54-57 55-58 56-59</sure>
+  <possible>6-9 27-28 36-39 38-40 41-44</possible>
+  <phrasal>43-47 44-47</phrasal>
+</s>
+<s id="wsj_2303-s16">
+  <english>The consortium was put together by Hoare Govett , the London-based investment banking company that is a subsidiary of Security Pacific Corp .</english>
+  <czech>Konsorcium dala dohromady firma Hoare Govett , investiční bankovní společnost se sídlem v Londýně , která je přidruženou společností firmy Security Pacific Corp .</czech>
+  <sure>2-1 3-2 4-2 5-3 6-2 7-5 8-6 9-7 11-11 11-12 11-13 11-14 12-8 13-9 14-10 15-16 16-17 18-18 18-19 20-21 21-22 22-23 23-24</sure>
+  <possible>1-1 10-10 15-15 17-19 19-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s17">
+  <english>`` We do n't anticipate any problems in raising the funding for the bid , '' said Allan Campbell , the head of mergers and acquisitions at Hoare Govett , in an interview .</english>
+  <czech>" Nepředpokládáme žádné problémy s obstaráváním prostředků pro nabídku , " řekl v rozhovoru Allan Campbell , vedoucí fúzí a akvizic firmy Hoare Govett .</czech>
+  <sure>1-1 2-2 3-2 4-2 5-2 6-3 7-4 8-5 9-6 11-7 12-8 14-9 15-10 16-11 17-12 18-15 19-16 20-17 22-18 24-19 25-20 26-21 28-23 29-24 31-13 33-14 34-25</sure>
+  <possible>10-7 13-9 21-18 23-19 27-24 32-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s18">
+  <english>Hoare Govett is acting as the consortium 's investment bankers .</english>
+  <czech>Hoare Govett jedná jako investiční bankéř konsorcia .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 7-7 9-5 10-6 11-8</sure>
+  <possible>6-7 8-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s19">
+  <english>According to people familiar with the consortium , the bid was code-named Project Klute , a reference to the film `` Klute '' in which a prostitute played by actress Jane Fonda is saved from a psychotic businessman by a police officer named John Klute .</english>
+  <czech>Podle lidí dobře obeznámených s konsorciem má nabídka kódové označení Projekt Klute , s narážkou na film " Klute " , ve kterém policista John Klute zachrání před psychopatickým obchodníkem prostitutku představovanou herečkou Jane Fondovou .</czech>
+  <sure>1-1 2-1 3-2 4-3 4-4 5-5 7-6 10-8 11-7 12-9 12-10 13-11 14-12 15-13 17-15 18-16 20-17 21-18 22-19 23-20 24-22 25-23 27-31 28-32 30-33 31-34 32-35 33-27 34-27 35-28 37-29 38-30 39-27 41-24 42-24 44-25 45-26 46-36</sure>
+  <possible>6-6 9-8 16-15 17-14 19-17 25-21 26-31 29-32 36-30 40-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s20">
+  <english>L . J . Hooker was a small home-building company based in Atlanta in 1979 when Mr . Simpson was hired to push it into commercial development .</english>
+  <czech>L . J . Hooker byla malá společnost na výstavbu bytů se sídlem v Atlantě , když byl v roce 1979 přijat pan Simpson , aby firmu dovedl ke komerčním projektům .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 8-7 9-9 9-10 9-11 10-8 13-14 13-15 14-19 14-20 15-21 16-17 17-23 19-24 20-18 21-22 22-26 23-28 25-29 26-30 27-31 28-32</sure>
+  <possible>7-8</possible>
+  <phrasal>11-12 11-13 12-12 12-13</phrasal>
+</s>
+<s id="wsj_2303-s21">
+  <english>The company grew modestly until 1986 , when a majority position in Hooker Corp . was acquired by Australian developer George Herscu , currently Hooker 's chairman .</english>
+  <czech>Firma mírně rostla až do roku 1986 , kdy většinovou pozici v Hooker Corp . získal australský podnikatel George Herscu , nynější předseda firmy Hooker .</czech>
+  <sure>2-1 3-3 4-2 5-4 5-5 6-7 7-6 7-8 8-9 10-10 11-11 12-12 13-13 14-14 15-15 16-16 17-16 19-17 20-18 21-19 22-20 23-21 24-22 25-25 27-23 28-26</sure>
+  <possible>1-1 9-11 18-18 26-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s22">
+  <english>Mr . Herscu proceeded to launch an ambitious , but ill-fated , $ 1 billion acquisition binge that included Bonwit Teller and B . Altman & Co . , as well as majority positions in Merksamer Jewelers , a Sacramento chain ; Sakowitz Inc . , the Houston-based retailer , and Parisian Inc . , the Southeast department-store chain .</english>
+  <czech>Pan Herscu odstartoval ambiciózní , avšak osudnou , akviziční horečku v hodnotě 1 miliardy dolarů , která zahrnovala Bonwit Teller a B . Altman & Co . , dále většinový podíl ve firmách Merksamer Jewelers , řetězci v Sacramentu , dále Sakowitz Inc . , maloobchodu v Houstonu , a pak Parisian Inc . , řetězci obchodních domů na jihovýchodě .</czech>
+  <sure>1-1 3-2 4-3 5-3 6-3 8-4 9-5 10-6 11-7 12-8 13-15 14-13 15-14 16-9 17-10 18-17 19-18 20-19 21-20 22-21 23-22 24-23 25-24 26-25 27-26 28-27 29-28 30-29 31-29 32-29 33-30 34-31 35-32 36-34 37-35 38-36 40-39 41-37 42-40 43-42 44-43 45-44 46-45 48-47 48-48 49-46 50-49 51-50 52-52 53-53 54-54 55-55 57-59 57-60 58-57 58-58 59-56 60-61</sure>
+  <possible>7-10 18-16 39-39 40-38 47-46 56-56</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s23">
+  <english>Eventually Mr . Simpson and Mr . Herscu had a falling out over the direction of the company , and Mr . Simpson said he resigned in 1988 .</english>
+  <czech>Nakonec se pánové Simpson a Herscu pohádali kvůli směřování firmy a pan Simpson řekl , že v roce 1988 odstoupil .</czech>
+  <sure>1-1 2-3 4-4 5-5 8-6 9-7 11-7 12-7 13-8 15-9 18-10 19-15 20-11 21-12 23-13 24-14 25-20 26-20 27-17 27-18 28-19 29-21</sure>
+  <possible>10-7 11-2 14-9 16-10 17-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s24">
+  <english>Since then , Hooker Corp . has sold its interest in the Parisian chain back to Parisian 's management and is currently attempting to sell the B . Altman & Co . chain .</english>
+  <czech>Od té doby prodala firma Hooker Corp . svůj podíl v řetězci Parisian zpátky managementu této firmy a nyní se pokouší prodat řetězec B . Altman & Co .</czech>
+  <sure>4-6 5-7 6-8 7-4 8-4 9-9 10-10 11-11 13-13 14-12 15-14 19-15 20-18 21-20 21-21 22-19 23-20 23-21 24-22 25-22 27-24 28-25 29-26 30-27 31-28 33-23 34-29</sure>
+  <possible>12-12 16-14 26-23</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3</phrasal>
+</s>
+<s id="wsj_2303-s25">
+  <english>In addition , Robert Sakowitz , chief executive of the Sakowitz chain , is seeking funds to buy out the Hooker interest in his company .</english>
+  <czech>Navíc shání Robert Sakowitz , výkonný ředitel řetězce Sakowitz , finance , aby odkoupil zpět podíl firmy Hooker v jeho firmě .</czech>
+  <sure>1-1 2-1 4-3 5-4 6-5 11-9 12-8 14-2 15-2 16-11 17-13 18-14 19-15 21-18 22-16 23-19 24-20 25-21 26-22</sure>
+  <possible>9-8 10-8 20-16</possible>
+  <phrasal>7-6 7-7 8-6 8-7</phrasal>
+</s>
+<s id="wsj_2303-s26">
+  <english>The Merksamer chain is currently being offered for sale by First Boston Corp .</english>
+  <czech>Společnost First Boston Corp . v současné době nabízí k prodeji řetězec Merksamer .</czech>
+  <sure>2-13 3-12 4-9 5-6 5-7 5-8 6-9 7-9 8-10 9-11 11-2 12-3 13-4 13-5 14-14</sure>
+  <possible>1-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s27">
+  <english>Reached in Honolulu , Mr . Shidler said that he believes the various Hooker malls can become profitable with new management .</english>
+  <czech>Když se podařilo dostihnout pana Shidlera v Honolulu , řekl , že věří , že nákupní centra firmy Hooker se mohou pod novým vedením stát ziskovými .</czech>
+  <sure>2-7 3-8 4-9 5-5 7-6 8-10 9-12 10-13 11-13 14-19 15-16 15-17 16-21 17-20 17-25 18-26 19-22 20-23 21-24 22-27</sure>
+  <possible>9-11</possible>
+  <phrasal>1-1 1-2 1-3 1-4</phrasal>
+</s>
+<s id="wsj_2303-s28">
+  <english>`` These are n't mature assets , but they have the potential to be so , '' said Mr . Shidler .</english>
+  <czech>" Nejsou to splatná aktiva , ale mají potenciál se jimi stát , " řekl pan Shidler .</czech>
+  <sure>1-1 2-3 3-2 4-2 5-4 6-5 7-6 8-7 9-8 10-8 12-9 13-10 13-12 14-10 14-12 16-13 17-14 18-15 19-16 21-17 22-18</sure>
+  <possible>11-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2303-s29">
+  <english>`` Managed properly , and with a long-term outlook , these can become investment-grade quality properties .</english>
+  <czech>Pokud bude mít řádné řízení , s dlouhodobou vizí , pak se může tento majetek stát velmi kvalitní investicí .</czech>
+  <sure>2-5 3-4 4-6 6-7 8-8 9-9 10-10 11-14 12-13 13-12 13-16 14-17 14-19 15-18 16-15 17-20</sure>
+  <possible>7-9</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_ban1-s1">
+  <english>Croatia after Tudjman</english>
+  <czech>Chorvatsko po Tudjmanovi</czech>
+  <sure>1-1 2-2 3-3</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s2">
+  <english>Ivo Banac</english>
+  <czech>Ivo Banac</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s3">
+  <english>ZAGREB :</english>
+  <czech>ZÁHŘEB :</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s4">
+  <english>Franjo Tudjman 's death , like his life , was a bizarre parody of Marshal Tito .</english>
+  <czech>Smrt Franji Tudjmana , a vlastně celý jeho život , je tak trochu bizarní parodií na život a smrt maršála Tita .</czech>
+  <sure>1-2 2-3 4-1 5-4 7-8 8-9 9-10 10-11 12-14 13-15 14-16 15-20 16-21 17-22</sure>
+  <possible>3-3 5-5 11-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s5">
+  <english>Comparisons between Tudjman and Tito , however , are undermined by anachronism .</english>
+  <czech>Hlubšímu srovnání mezi Titem a Tudjmanem však brání doba , ve které každý z nich žil .</czech>
+  <sure>1-2 2-3 3-6 4-5 5-4 7-7 10-8 13-17</sure>
+  <possible>6-7 8-7 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s6">
+  <english>In Tito 's day it was still possible to have strongmen in gleaming white uniforms command European states , albeit in the Balkans .</english>
+  <czech>V Titově době – i když šlo o Balkán – ještě bylo možné , aby siláci v bílých uniformách komandovali evropské země .</czech>
+  <sure>1-1 2-2 4-3 6-12 7-11 8-13 9-15 11-16 12-17 14-18 15-19 16-20 17-21 18-22 20-5 20-6 23-9 24-23</sure>
+  <possible>3-2 5-12 9-14 21-9 22-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s7">
+  <english>It was possible to establish authority through collectivist myths , to assert your separate road against global trends , to molest neighbors in the teeth of international censure .</english>
+  <czech>Bylo rovněž možné získat a udržovat si autoritu pomocí kolektivních mýtů , prosazovat svou vlastní cestu proti globálním trendům , obtěžovat sousedy navzdory výtkám mezinárodního společenství .</czech>
+  <sure>2-1 3-3 5-4 6-8 7-9 8-10 9-11 10-12 12-13 13-14 14-15 15-16 16-17 17-18 18-19 19-20 21-21 22-22 27-25 28-24 29-27</sure>
+  <possible>1-1 4-4 5-7 11-13 20-21</possible>
+  <phrasal>23-23 24-23 25-23 26-23</phrasal>
+</s>
+<s id="project_syndicate_ban1-s8">
+  <english>No longer .</english>
+  <czech>Nic z toho už delší dobu nelze .</czech>
+  <sure>3-8</sure>
+  <possible></possible>
+  <phrasal>1-4 1-7 2-4 2-7</phrasal>
+</s>
+<s id="project_syndicate_ban1-s9">
+  <english>Retrograde regional satraps are outdated in a uniting Europe .</english>
+  <czech>Zpátečničtí regionální despotové jsou ve spojující se Evropě anachronismem .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-9 6-5 8-6 8-7 9-8 10-10</sure>
+  <possible>7-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s10">
+  <english>And , unlike in Tito 's time , whenever the West played Tudjman as a proxy for its interests the results were very mixed .</english>
+  <czech>A navíc , kdykoli Západ využil Tudjmana jako prostředníka pro své zájmy , nebýval výsledek příliš chvályhodný – narozdíl od Titovy doby .</czech>
+  <sure>1-1 2-3 3-19 4-20 5-21 7-22 8-13 9-4 11-5 12-6 13-7 14-8 16-9 17-10 18-11 19-12 21-15 23-16 25-23</sure>
+  <possible>1-2 6-21 10-5 15-9 20-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s11">
+  <english>Tudjman probably did not wish to be independent Croatia 's Tito clone , but he could not help himself .</english>
+  <czech>Tudjman si určitě nepřál stát se v nezávislém Chorvatsku Titovou kopií , bylo to ale silnější než on .</czech>
+  <sure>1-1 2-3 4-4 5-4 7-5 7-6 8-8 9-9 11-10 12-11 13-12 14-15 20-19</sure>
+  <possible>3-4 5-2 6-5 9-7 10-9</possible>
+  <phrasal>15-13 15-14 15-16 15-17 15-18 16-13 16-14 16-16 16-17 16-18 17-13 17-14 17-16 17-17 17-18 18-13 18-14 18-16 18-17 18-18 19-13 19-14 19-16 19-17 19-18</phrasal>
+</s>
+<s id="project_syndicate_ban1-s12">
+  <english>Tito provided the only leadership model that resonated with him .</english>
+  <czech>Tito ztělesňoval jediný vůdčí model , kterému Tudjman rozuměl .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 7-7 11-10</sure>
+  <possible>3-3 7-6 8-9 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s13">
+  <english>Under the guise of democratic verbiage and a facade of democratic institutions , Tudjman promoted the monopoly of his nationalist party / movement , the HDZ .</english>
+  <czech>Pod rouškou demokratického slovníku a fasádou demokratických institucí Tudjman propagoval monopol svého nacionalistického hnutí HDZ .</czech>
+  <sure>1-1 3-2 5-3 6-4 7-5 9-6 11-7 12-8 14-9 15-10 17-11 19-12 20-13 23-14 26-15 27-16</sure>
+  <possible>2-2 4-3 8-6 10-8 16-11 18-13 25-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s14">
+  <english>Tudjman 's excuse was that Croatia needed to concentrate power for its struggle with Serbian aggression .</english>
+  <czech>Ospravedlňoval to dříve tím , že Chorvatsko musí zkoncentrovat síly pro boj se Srbskem .</czech>
+  <sure>3-1 5-6 6-7 7-8 9-9 10-10 11-11 13-12 14-13 15-14 17-15</sure>
+  <possible>4-3 5-4 5-5 8-9 12-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s15">
+  <english>The truth is that he used a negotiated hostility with Slobodan Milosevic to solidify personal rule and a Russian - style plunder of state properties by his coterie of loyalists .</english>
+  <czech>Pravda je nicméně taková , že využil nepřátelství sjednaného se Slobodanem Miloševičem k tomu , aby upevnil svou osobní moc v zemi a mohl nerušeně a spolu s klikou jemu oddaných po ruském způsobu drancovat státní majetek .</czech>
+  <sure>2-1 3-2 4-6 6-7 8-9 9-8 10-10 11-11 12-12 13-13 14-17 15-19 16-20 17-23 19-33 21-34 22-35 24-36 25-37 28-29 30-31 31-38</sure>
+  <possible>1-1 4-4 4-5 5-7 7-8 13-14 13-15 13-16 15-18 18-34 21-32 23-37 26-28 27-30 29-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s16">
+  <english>In order to accomplish this with a minimum of fuss he muzzled the press and electronic media .</english>
+  <czech>Aby se tato jeho činnost obešla bez větších komplikací , umlčel přitom většinu masových sdělovacích prostředků a elektronických médií .</czech>
+  <sure>1-1 2-1 3-1 5-3 10-9 12-11 15-17 16-18 17-19 18-20</sure>
+  <possible>9-9 11-11</possible>
+  <phrasal>6-7 6-8 7-7 7-8 8-7 8-8 13-14 13-15 13-16 14-14 14-15 14-16</phrasal>
+</s>
+<s id="project_syndicate_ban1-s17">
+  <english>Despite enmity between Serbia and Croatia , dealing dictator to dictator with Milosevic was simple .</english>
+  <czech>I přes nepřátelství mezi Srbskem a Chorvatskem byly vztahy mezi oběma diktátory jednoduché .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 11-12 14-8 15-13 16-14</sure>
+  <possible>1-1 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s18">
+  <english>Because both Tudjman and Milosevic believed in ethnically homogeneous states , they fomented forced population transfers ( ie , ethnic cleansing ) and a division of territory between each other .</english>
+  <czech>Protože Tudjman i Miloševič věřili v etnicky homogenní státy , podporovali oba nucené přesuny obyvatelstva ( tj . etnické čistky ) a rozdělovali si území mezi sebe .</czech>
+  <sure>1-1 2-12 3-2 4-3 5-4 6-5 7-6 8-7 9-8 10-9 11-10 13-11 14-13 15-15 16-14 17-16 18-17 20-19 21-20 22-21 23-22 25-23 27-25 28-26 29-27 30-27 31-28</sure>
+  <possible>12-11 18-18 24-23 25-24 26-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s19">
+  <english>The chief victim of their land - grab was Bosnia , which they divided and ravaged through various proxies .</english>
+  <czech>Největší obětí jejich územní chamtivosti byla Bosna , kterou si mezi sebe rozdělili a zničili mnoha různými prostředky .</czech>
+  <sure>2-1 3-2 5-3 6-4 8-5 9-6 10-7 11-8 12-9 14-13 15-14 16-15 18-17 19-18 20-19</sure>
+  <possible>1-1 4-3 13-13 14-10 14-11 14-12 17-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s20">
+  <english>The Dayton agreement represented not so much the defeat of their plans as the international legitimation of their division of Bosnia , with Bosnian Muslim enclaves left in a nervous see - saw with Tudjman 's vicious Hercegovinian minions .</english>
+  <czech>Daytonská dohoda znamenala ani ne tolik porážku jejich plánů , jako spíš mezinárodní uznání jejich způsobu rozdělení Bosny s enklávami bosenských muslimů uprostřed neklidného moře nevyzpytatelných hercegovských Tudjmanových přisluhovačů .</czech>
+  <sure>2-1 3-2 4-3 5-5 7-6 9-7 11-8 12-9 13-11 15-13 16-14 18-15 19-17 21-18 23-19 24-21 25-22 26-20 28-23 30-24 31-25 35-28 38-27 39-29 40-30</sure>
+  <possible>1-1 5-4 6-6 8-7 10-9 13-10 13-12 14-13 17-17 20-18 29-25 34-28 36-28 37-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s21">
+  <english>The consequence of Tudjman 's policies – always projected in a harsh , bullying style – led to Croatia 's isolation from Europe and America .</english>
+  <czech>Následkem Tudjmanovy politiky – která byla zásadně prezentována surovým , zastrašujícím stylem – se od Chorvatska izolovala jak Amerika , tak celá Evropa .</czech>
+  <sure>2-1 4-2 6-3 7-4 8-7 9-8 12-9 13-10 14-11 15-12 16-13 19-16 21-17 23-23 24-21 25-19 26-24</sure>
+  <possible>1-1 3-3 5-2 9-6 10-12 11-12 20-16 21-14 22-17 24-18 24-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s22">
+  <english>It is not that Tudjman , on occasion , did not prove useful – the Croatian army 's blitzkreig in 1995 led to Dayton – but ultimately his arrogance galled more than his cooperation helped .</english>
+  <czech>Nemůžeme tvrdit , že by Tudjman byl zcela neužitečný – ostatně " blitzkrieg " chorvatské armády z roku 1995 vedl nakonec k Daytonu ; žluč jeho arogance byla ale silnější než jeho pomoc .</czech>
+  <sure>4-4 5-6 11-9 12-7 13-9 14-10 16-15 17-16 19-13 20-17 21-19 22-20 23-22 24-23 25-24 26-29 27-21 28-26 29-27 30-25 32-31 33-32 35-33 36-34</sure>
+  <possible>4-3 10-7 15-16 18-16 21-18 31-28 31-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s23">
+  <english>The tightrope turns that characterized the last several years of his encounter with the West ( threats of sanctions for non - cooperation with the Hague war crimes tribunal , holding back Western assistance – EU aid programs , Partnership for Peace , etc . ) reflect this bitter antagonism .</english>
+  <czech>Vážné zvraty , které poznamenaly několik posledních let jeho vztahu se Západem ( hrozba sankcí za nespolupracování s haagským válečným tribunálem , zadržování pomoci ze Západu – programy EU , Partnerství pro mír , atd . ) , tento hořký antagonismus jen odrážejí a posilují .</czech>
+  <sure>3-2 4-4 5-5 7-7 8-6 9-8 11-9 12-10 13-11 15-12 16-13 17-14 19-15 20-16 21-17 23-17 24-18 26-19 27-20 29-21 30-22 31-23 32-23 33-26 34-24 35-27 36-29 38-28 39-30 40-31 41-32 42-33 43-34 44-35 45-36 46-37 47-43 48-39 49-40 50-41 51-46</sure>
+  <possible>1-2 2-1 4-3 6-8 10-10 14-12 18-15 22-17 25-21 33-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s24">
+  <english>It would be a mistake to imagine that Tudjman 's style was entirely unrepresentative .</english>
+  <czech>Rozhodně však nelze tvrdit , že Tudjmanův styl byl nereprezentativní .</czech>
+  <sure>8-6 9-7 11-8 12-9 14-10 15-11</sure>
+  <possible>6-4 7-4 8-5 10-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s25">
+  <english>Croatia 's economy and traditional access to Europe could have placed it among the first candidates for European integrations had its political and social elite any notion that this was advantageous .</english>
+  <czech>Chorvatsko se díky úrovni svého hospodářství a zeměpisné poloze mohlo dostat mezi přední kandidáty na členství v Evropské unii ; to by ovšem jeho politická a společenská elita musela usoudit , že je to pro zemi výhodné .</czech>
+  <sure>1-1 3-6 4-7 9-10 11-11 13-12 15-13 16-14 17-15 18-18 19-19 20-22 20-29 21-24 22-25 23-26 24-27 25-28 28-32 29-34 30-33 31-37 32-38</sure>
+  <possible>2-1 10-10 12-10 14-13 19-17 27-30 28-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s26">
+  <english>Instead , lack of opposition to Tudjman points to a broad consensus , in which a wink toward Western values disguises fundamental self - satisfaction with things as they are , or were .</english>
+  <czech>Místo toho vede absence opozice k širokému konsensu , kde přivírání očí nad západním hodnotami maskuje základní sebeuspokojení s věcmi tak , jak jsou nebo jak bývaly .</czech>
+  <sure>1-1 1-2 3-4 5-5 6-6 8-3 11-7 12-8 13-9 14-10 15-10 17-11 17-12 18-13 19-14 20-15 21-16 22-17 23-18 25-18 26-19 27-20 28-23 30-24 32-25 33-27 34-28</sure>
+  <possible>4-4 9-8 10-8 16-11 24-18 28-22 29-24 31-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s27">
+  <english>This was not a case of mere nationalism but of a class monopoly fearing competition from outside .</english>
+  <czech>Nešlo zde jen o nacionalismus , nýbrž i o třídní monopol , který se obával konkurence odjinud .</czech>
+  <sure>1-2 2-1 3-1 6-4 7-3 8-5 9-7 10-9 12-10 13-11 14-14 14-15 15-16 18-18</sure>
+  <possible>4-1 5-1 9-6 9-8 11-11 16-17 17-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s28">
+  <english>Croatia 's opposition was for a long time limited to NGO 's such as the Helsinki Committee , which challenged the government on the slippery terrain of human and minority rights , an area where the parliamentary opposition kept its collective mouths shut .</english>
+  <czech>Chorvatskou opozici po dlouhou dobu představovaly jen nevládní organizace , např . Helsinský výbor , které vznášely námitky vůči vládě v oblastech lidských a menšinových práv , tedy tam , kde parlamentní opozice kolektivně mlčela .</czech>
+  <sure>1-1 3-2 5-3 7-4 8-5 11-8 11-9 13-11 14-11 16-13 17-14 18-15 19-16 20-17 20-18 22-20 23-21 26-22 28-23 29-24 30-25 31-26 32-27 34-29 35-31 37-32 38-33 39-35 41-34 42-35 43-35 44-36</sure>
+  <possible>2-1 6-4 12-9 13-12 14-12 15-14 20-19 21-20 24-22 27-26 33-29 35-30 36-33 40-35</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s29">
+  <english>In recent years , however , as the political battle shifted to the deteriorating economy , the public accepted more direct anti - Tudjman critiques , allowing parliamentary opposition to follow .</english>
+  <czech>Teprve v posledních letech , kdy se politický boj přeorientoval na upadající ekonomiku , přijala veřejnost přímější antitudjmanovskou kritiku a dovolila tak i parlamentní opozici , aby se ke kritickým hlasům připojila .</czech>
+  <sure>1-2 2-3 3-4 4-5 7-6 9-8 10-9 11-10 12-11 14-12 15-13 16-14 18-16 19-15 20-17 21-17 22-18 24-18 25-19 26-20 27-21 28-24 29-25 30-27 31-32 32-33</sure>
+  <possible>8-9 11-7 13-13 17-16 23-18 30-26 31-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s30">
+  <english>Because Tudjman created a highly - centralized political system with vast prerogatives vested in the president , the opposition 's best bet was to stick together in hope of mustering the two - thirds majority needed to change the constitution .</english>
+  <czech>Vzhledem k tomu , že Tudjman vytvořil vysoce centralizovaný politický systém se širokými prezidentskými pravomocemi , opozice nehodlala riskovat a snažila se alespoň držet pospolu ve víře , že získá dvoutřetinovou parlamentní většinu , která by jí umožnila změnit ústavu .</czech>
+  <sure>2-6 3-7 5-8 7-9 8-10 9-11 10-12 11-13 12-15 16-14 17-16 19-17 25-24 26-25 27-26 28-27 29-29 30-30 32-31 34-31 35-33 38-39 40-40 41-41</sure>
+  <possible>1-4 1-5 4-11 14-14 15-14 18-17 20-17 24-24 29-28 31-31 33-31 36-36 36-37 36-38 37-39 39-40</possible>
+  <phrasal>1-1 1-2 1-3</phrasal>
+</s>
+<s id="project_syndicate_ban1-s31">
+  <english>Unfortunately , this course was abandoned in the summer of 1998 when two opposition parties – the Social Democrats ( ex - Communists , SDP ) and the right - of - center Social Liberals ( HSLS ) – developed a special relationship that was formalized as a coalition this summer .</english>
+  <czech>Tento běh věcí byl bohužel narušen v létě roku 1998 , kdy se dvě opoziční strany – sociální demokraté ( bývalí komunisté , SDP ) a pravicoví liberální socialisté ( HSLS ) – dohodly na zvláštním partnerství , které letos v létě dostalo formální podobu koalice .</czech>
+  <sure>1-5 3-1 4-2 5-4 6-6 7-7 9-8 11-10 12-12 13-14 14-15 15-16 16-17 18-18 19-19 20-20 21-21 23-22 24-23 25-24 26-25 27-26 29-27 34-29 35-28 36-30 37-31 38-32 39-33 42-36 43-37 44-39 46-43 46-44 46-45 49-46 50-40 51-42 52-47</sure>
+  <possible>4-3 8-8 10-10 11-9 12-11 17-19 22-21 28-29 30-27 31-27 32-27 33-27 40-13 40-34 41-37 43-35 44-38 45-43 47-46 48-46 51-41</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s32">
+  <english>In response , other opposition parties , the traditional Croat Peasant Party ( HSS ) , the center - left Liberal Party ( LS ) , the populist Croat National Party ( HNS ) , and the regionalist Istrian Democratic Assembly ( IDS ) , formed their own coalition ( the Four ) .</english>
+  <czech>Ostatní opoziční strany , jmenovitě tradiční Chorvatská strana zemědělců ( HSS ) , středolevicová Liberální strana ( LS ) , populistická Chorvatská národní strana ( NHS ) a regionální Istrijské demokratické shromáždění ( IDS ) , v odpovědi na koalici sociálních demokratů a liberálních socialistů vytvořili svou vlastní koalici , tzv . Čtyřku .</czech>
+  <sure>1-37 2-38 4-1 5-2 6-3 7-4 9-6 10-7 11-9 12-8 13-10 14-11 15-12 16-13 18-14 20-14 21-15 22-16 23-17 24-18 25-19 26-20 28-21 29-22 30-23 31-24 32-25 33-26 34-27 36-28 38-29 39-30 40-31 41-32 42-33 43-34 44-35 45-36 46-46 47-47 48-48 49-49 52-53 54-54</sure>
+  <possible>8-8 17-16 19-14 27-24 35-28 37-32 51-53</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s33">
+  <english>Formally , the SDP - HSLS and the Four function as a broad opposition alliance ( the Six ) .</english>
+  <czech>Koalice SDP - HSLS a Čtyřka formálně fungují jako široká koalice , tzv . Šestka .</czech>
+  <sure>1-7 4-2 5-3 6-4 7-5 9-6 10-8 11-9 13-10 15-11 18-15 20-16</sure>
+  <possible>3-2 8-6 12-10 14-11 17-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s34">
+  <english>In fact , they are bitter rivals and will divide opposition vote at the January 3 elections for the lower house of the Parliament ( Sabor ) .</english>
+  <czech>Ve skutečnosti jsou to zarytí rivalové a ve volbách do dolní sněmovny parlamentu ( Saboru ) , plánovaných na 3 . ledna , se obě koalice budou snažit o získání většiny hlasů .</czech>
+  <sure>1-1 2-2 5-3 6-5 7-6 8-7 12-32 13-8 15-22 16-20 17-9 18-10 20-11 21-12 24-13 25-14 26-15 27-16 28-33</sure>
+  <possible>4-3 5-4 14-20 16-21 19-12 22-13 23-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s35">
+  <english>So it is risky to claim that the opposition will soon rout HDZ .</english>
+  <czech>Není proto nijak jisté , že opozice porazí vládnoucí HDZ na hlavu .</czech>
+  <sure>1-2 7-6 9-7 12-8 12-11 12-12 13-10 14-13</sure>
+  <possible>7-5 8-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s36">
+  <english>More likely , there will be ground for various coalition manoeuvres , including between parts of the opposition and HDZ .</english>
+  <czech>Předpokládat se proto spíše dají různé koaliční manévry , ať už mezi samotnými křídly opozice nebo mezi opozicí a HDZ .</czech>
+  <sure>1-4 2-4 9-6 10-7 11-8 12-9 14-12 15-14 18-15 19-19 20-20 21-21</sure>
+  <possible>3-4 13-10 13-11 16-15 17-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s37">
+  <english>Tudjman 's death opens the additional question of presidential elections , which must be held within 60 days after his passing .</english>
+  <czech>S Tudjmanovou smrtí přichází pochopitelně na pořad dne i volba prezidenta , která se musí uskutečnit do šedesáti dnů od jeho úmrtí .</czech>
+  <sure>1-2 3-3 9-11 10-10 11-12 12-13 13-15 15-16 16-17 17-18 18-19 19-20 20-21 21-22 22-23</sure>
+  <possible>2-2 3-1 4-4 8-10 14-16 15-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s38">
+  <english>HDZ has as many candidates as it has factions , and these are numerous .</english>
+  <czech>HDZ má zhruba tolik kandidátů , kolik je ve straně frakcí ; a těch je nemálo .</czech>
+  <sure>1-1 2-2 3-4 4-4 5-5 6-7 8-8 9-11 10-12 11-13 12-14 13-15 14-16 15-17</sure>
+  <possible>6-6 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s39">
+  <english>It is possible that HDZ can win should it nominate Mate Granic , the Western - backed foreign minister .</english>
+  <czech>Pokud HDZ nominuje Mate Graniče , stávajícího ministra zahraničí , za jehož zády stojí i Západ , pravděpodobně vyhraje .</czech>
+  <sure>3-18 5-2 7-19 8-1 10-3 11-4 12-5 13-6 15-16 18-9 19-8 20-20</sure>
+  <possible>1-18 2-18 6-19 9-1 14-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s40">
+  <english>His moderate reputation is more a matter of style than substance , but it goes a long way outside Croatia .</english>
+  <czech>Jeho pověst umírněnce je sice více věcí stylu než obsahu , donesla se však i daleko za hranice Chorvatska .</czech>
+  <sure>1-1 2-3 3-2 4-4 5-6 7-7 9-8 10-9 11-10 12-11 13-14 15-12 17-16 18-16 19-17 20-19 21-20</sure>
+  <possible>6-7 8-8 14-12 15-13 16-16 19-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s41">
+  <english>The question is whether key HDZ leaders prefer losing the presidency ( and that is where real power in Croatia lies ) to Granic 's ascending the throne .</english>
+  <czech>Otázkou zůstává , zda klíčoví vůdcové HDZ raději pro stranu ztratí prezidentský úřad ( kde spočívá skutečná moc v Chorvatsku ) nebo dovolí Graničovi usednout do prezidentského křesla .</czech>
+  <sure>2-1 3-2 4-4 5-5 6-7 7-6 8-8 9-11 11-12 11-13 12-14 16-15 17-17 18-18 19-19 20-20 21-16 22-21 24-24 26-25 28-28 29-29</sure>
+  <possible>1-1 4-3 10-13 25-24 27-28 28-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s42">
+  <english>As for the opposition , various presidential ambitions have been manifested , perhaps most especially those of Drazen Budisa ( HSLS ) , a former dissident and political prisoner , and his Social Democratic partner Ivica Racan , the last head of Croatia 's Communists .</english>
+  <czech>Prezidentské ambice klíčí i v opozičním táboře . Nejviditelnější jsou u Dražena Budišy ( HSLS ) , bývalého disidenta a politického vězně , a u jeho sociálně demokratického partnera Ivicy Račana , posledního šéfa chorvatských komunistů .</czech>
+  <sure>4-6 7-1 8-2 11-3 16-11 17-11 18-12 19-13 20-14 21-15 22-16 23-17 25-18 26-19 27-20 28-21 29-22 30-23 31-24 32-26 33-27 34-28 35-29 36-30 37-31 38-32 40-33 41-34 43-35 45-36 46-37</sure>
+  <possible>3-6 9-3 10-3 14-9 15-9 24-18 35-25 39-33 42-36 44-35</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s43">
+  <english>It is possible that the opposition 's awkward coalition will be tested by their rival presidential dreams .</english>
+  <czech>Je ostatně docela možné , že díky prezidentským snům obou opozičních rivalů projde ona nepraktická opoziční koalice testem odolnosti .</czech>
+  <sure>2-1 3-4 4-6 6-16 8-15 9-17 12-13 12-18 15-12 16-8 17-9 18-20</sure>
+  <possible>1-1 4-5 5-17 7-16 10-18 11-18 13-12 14-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s44">
+  <english>Croatia 's course will be tested by the consequences of Tudjman 's death and the forthcoming electoral rounds .</english>
+  <czech>Díky následkům Tudjmanova úmrtí a předvolebním kampaním projde testem odolnosti také celé Chorvatsko a směr jeho vývoje .</czech>
+  <sure>1-13 3-15 9-2 11-3 13-4 14-5 16-6 17-6 18-7 19-18</sure>
+  <possible>2-13 7-1 8-2 10-4 12-3 15-7</possible>
+  <phrasal>4-8 4-9 5-8 5-9 6-8 6-9</phrasal>
+</s>
+<s id="project_syndicate_ban1-s45">
+  <english>The results might be more complicated than anyone wishes .</english>
+  <czech>Výsledky možná budou složitější , než by si byl kdokoli přál .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-4 7-6 8-10 9-11 10-12</sure>
+  <possible>1-1 7-5 9-7 9-8 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s46">
+  <english>Unless the constitution and the political system is reformed , kleptocracy checked , and relations with the West mended , Tudjman - era themes may continue .</english>
+  <czech>Dokud ovšem nedojde k reformě ústavy a celého politického systému , dokud nebudou přezkoumány aktivity současné kleptokracie , a dokud se neupraví vztahy se Západem , bude Tudjmanova éra pokračovat .</czech>
+  <sure>1-1 3-6 4-7 6-9 7-10 9-5 11-17 12-14 13-18 14-19 15-23 16-24 18-25 19-22 20-26 21-28 23-29 25-27 26-30 27-31</sure>
+  <possible>2-6 5-10 8-5 17-25 19-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s47">
+  <english>That is a luxury that Croatia cannot afford .</english>
+  <czech>A to je luxus , který si Chorvatsko nemůže dovolit .</czech>
+  <sure>1-2 2-3 4-4 5-6 6-8 7-9 8-7 8-10 9-11</sure>
+  <possible>3-4 5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s48">
+  <english>Without fundamental change now , there is a real possibility of mass popular protests , and not just against Tudjman 's direct heirs .</english>
+  <czech>Pokud nyní nedojde k zásadní změně , lze směle předpokládat , že lidé vyrazí do ulic a budou protestovat . Nejen proti přímým Tudjmanovým dědicům .</czech>
+  <sure>2-5 3-6 4-2 5-7 7-8 11-12 13-13 14-19 17-21 18-21 19-22 20-24 22-23 23-25 24-26</sure>
+  <possible>3-4 6-8 8-10 9-9 10-10 11-11 14-18 16-21 21-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s49">
+  <english>Ivo Banac is Director of the Institute of Balkan Studies in Budapest and Professor of History and Co - Chair of the Council of European Studies at Yale University .</english>
+  <czech>Ivo Banac je ředitelem Ústavu balkánských studií v Budapešti a profesor historie a spolupředseda Rady evropských studií na Yaleské univerzitě .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-5 9-6 10-7 11-8 12-9 13-10 14-11 16-12 17-13 18-14 20-14 23-15 25-16 26-17 27-18 28-19 29-20 30-21</sure>
+  <possible>5-5 6-5 8-7 15-12 19-14 21-15 22-15 24-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ban1-s50">
+  <english>He is a regular columnist of Feral Tribune , an opposition weekly , published in Split , Croatia .</english>
+  <czech>Pravidelně přispívá do splitského opozičního týdeníku Feral Tribune .</czech>
+  <sure>4-1 7-7 8-8 11-5 12-6 16-4 19-9</sure>
+  <possible>6-6 10-5 15-4</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>
