@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_ne01-s1">
+  <english>If President Bush wants to be taken seriously in Latin America , he must bridge the divide between appearing concerned and actually being concerned about the fate of America 's southern neighbors .</english>
+  <czech>Pokud si prezident Bush přeje , aby byl brán v Latinské Americe vážně , musí překonat propast mezi zdáním , že se o věci zajímá , a mezi skutečným zájmem o osud jižních sousedů Spojených Států .</czech>
+  <sure>1-1 2-3 3-4 4-5 7-9 8-13 9-10 10-11 11-12 12-14 14-15 15-16 17-17 18-18 19-19 21-27 22-29 24-30 25-23 25-31 27-32 29-35 29-36 31-33 32-34 33-37</sure>
+  <possible>4-2 5-6 5-7 5-8 6-8 13-15 16-17 18-28 20-25 21-26 23-20 23-30 24-21 24-22 24-24 26-32 28-34 30-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s2">
+  <english>The best place to start would be with Mexico , a victim of benign neglect since the terrorist attacks on New York and Washington last autumn .</english>
+  <czech>Nejlepším místem , kde by mohl začít , je Mexiko , které se od teroristických útoků na New York a Washington na podzim minulého roku stalo obětí mírného přezírání .</czech>
+  <sure>2-1 3-2 5-7 7-9 9-10 10-11 12-27 14-28 15-29 16-14 18-15 19-16 20-17 21-18 22-19 23-20 24-21 25-24 26-23 27-30</sure>
+  <possible>1-2 4-3 4-4 4-7 5-5 6-9 7-8 11-27 13-29 17-16 26-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s3">
+  <english>Mexico is a bench - mark for how much the US is willing to do and not just say about a new sort of engagement with Latin America .</english>
+  <czech>Mexiko je ukazatelem toho , nakolik jsou Spojené státy ve věci Latinské Ameriky ochotny konat a nejen mluvit o novém přístupu k ní .</czech>
+  <sure>1-1 2-2 6-3 9-6 11-9 12-7 13-14 15-15 16-16 17-17 18-17 19-18 20-19 22-20 26-22 27-12 28-13 29-24</sure>
+  <possible>3-3 4-3 5-3 7-4 7-5 8-6 10-9 11-8 14-15 21-21 23-20 24-20 25-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s4">
+  <english>Last year , five tons of heroin was smuggled through the lands now overseen by the United Nations and NATO .</english>
+  <czech>Za loňský rok bylo územími pod dohledem OSN a NATO propasováno celkem pět tun heroinu .</czech>
+  <sure>1-2 2-3 4-13 5-14 7-15 9-11 12-5 17-8 18-8 19-9 20-10 21-16</sure>
+  <possible>2-1 3-3 6-15 8-11 9-4 10-5 11-5 14-7 15-8 16-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s5">
+  <english>Interpol says that Albanian gangs now control 70 % of heroin trafficking in Germany , Austria , Switzerland and Scandinavia .</english>
+  <czech>Podle Interpolu mají dnes albánské gangy pod kontrolou celkem 70 procent obchodu s drogami v Německu , Rakousku , Svýcarsku a Skandinávii .</czech>
+  <sure>1-2 4-5 5-6 6-4 7-8 8-10 9-11 12-12 13-15 14-16 15-17 16-18 17-19 18-20 19-21 20-22 21-23</sure>
+  <possible>2-1 3-1 7-3 7-7 10-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s6">
+  <english>Cooperation over the last few years between the UN Interim Administration Mission in Kosovo ( UNMIK ) , the NATO - led multinational Kosova Force ( KFOR ) , and local governments - boosted by the arrival of a democratic government in Serbia - has cut down the number of terrorist attacks in Southern Serbia and Macedonia .</english>
+  <czech>Příchodem demokratické vlády v Srbsku podpořená spolupráce mezi Prozatímní správní misí OSN v Kosovu ( UNMIK ) , mnohonárodnostními Kosovskými ozbrojenými silami ( KFOR ) pod velením NATO a místní státní správou pomohla v několika posledních letech v jižním Srbsku a Makedonii snížit počet teroristických útoků .</czech>
+  <sure>1-7 2-34 4-36 5-35 6-37 7-8 9-12 10-9 11-10 12-11 13-13 14-14 15-15 16-16 17-17 18-18 20-28 22-27 23-19 24-20 25-22 26-23 27-24 28-25 30-29 31-30 32-31 32-32 34-6 37-1 40-2 41-3 42-4 43-5 46-43 47-43 49-44 51-45 52-46 53-38 54-39 55-40 56-41 57-42 58-47</sure>
+  <possible>3-37 8-11 19-22 21-27 29-29 35-1 36-1 38-3 39-3 45-43 48-44 50-46</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s7">
+  <english>Calm will not return to the Balkans so long as the UN and NATO fail to destroy extremism 's base in Kosovo .</english>
+  <czech>Pokoj se na Balkán nevrátí , dokud se Organizaci spojených národů a Severoatlantické alianci nepodaří zničit kosovskou základnu extrémistů .</czech>
+  <sure>1-1 4-5 5-3 7-4 8-7 9-7 12-9 12-10 12-11 13-12 14-13 14-14 15-15 17-16 18-19 20-18 22-17 23-20</sure>
+  <possible>2-5 3-5 4-2 6-4 10-6 11-9 15-8 16-16 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s8">
+  <english>For the criminal / terrorist heart of the supposedly disbanded Kosovo Liberation Army continues to fortify its power and to expand into Macedonia , Southern Serbia and Montenegro .</english>
+  <czech>Zločinecko - teroristické jádro údajně rozpustěné Kosovské osvobozenecké armády ( UCK ) se totiž dále posiluje a síří se do Makedonie , jižního Srbska a Černé Hory .</czech>
+  <sure>3-1 4-2 5-3 6-4 9-5 10-6 11-7 12-8 13-9 16-16 19-17 21-18 22-20 23-21 24-22 25-23 26-24 27-25 28-26 28-27 29-28</sure>
+  <possible>7-9 8-9 14-15 15-16 16-13 17-16 18-16 20-18 21-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s9">
+  <english>" Greater Albania , " has not been forgotten .</english>
+  <czech>Na sen o " Velké Albánii " se nezapomnělo .</czech>
+  <sure>1-4 2-5 3-6 5-7 9-9 10-10</sure>
+  <possible>6-9 7-9 8-9 9-7 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s10">
+  <english>The Commission 's decision on Latvia 's National Allocation Plan ( NAP ) for 2008 - 2012 left only 55 % of the CO2 emissions that Latvia requested .</english>
+  <czech>Rozhodnutí komise o lotyšském Národním alokačním plánu ( NAP ) pro roky 2008 - 2012 ponechalo Lotyšku jen 55 % emisí CO2 , o něž tato země žádala .</czech>
+  <sure>2-2 4-1 5-3 6-4 8-5 9-6 10-7 11-8 12-9 13-10 14-11 15-13 16-14 17-15 18-16 19-18 20-19 21-20 24-22 25-21 26-25 27-17 28-28 29-29</sure>
+  <possible>1-1 3-2 7-4 22-21 23-21 27-26 27-27 28-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s11">
+  <english>Similarly , Estonia and Lithuania received only 52 - 53 % of their requested quotas .</english>
+  <czech>Podobně i Estonsko a Litva obdržely pouze 52 - 53 % požadovaných kvót .</czech>
+  <sure>1-1 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 14-12 15-13 16-14</sure>
+  <possible>2-1 12-13 13-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s12">
+  <english>Serious cuts were also made to other new EU members ' quotas , prompting Poland , the Czech Republic , and Slovakia , as well as Latvia , to launch legal challenges .</english>
+  <czech>Významné škrty postihly rovněž další nové členy EU , což přimělo Polsko , Českou republiku , Slovensko a také Lotyšsko , aby rozhodnutí právně zpochybnily .</czech>
+  <sure>1-1 2-2 4-4 7-5 8-6 9-8 10-7 13-13 14-11 15-12 16-16 18-14 19-15 22-17 27-20 28-21 29-22 30-25 31-24 32-23 33-26</sure>
+  <possible>3-3 5-3 6-7 17-15 20-17 24-18 25-19 26-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s13">
+  <english>To be sure , the arrest of General Ante Gotovina , adored by many Croats as a hero , but responsible for the brutal expulsion of a quarter - million Serbs from Croatia and north - west Bosnia – the biggest ethnic cleansing in Europe since WWII – improves the ICTY 's standing .</english>
+  <czech>Jistě , zatčení generála Anteho Gotoviny , jehož mnozí Chorvaté uctívají jako hrdinu , ale který nese zodpovědnost za brutální vyhnání čtvrtmilionu Srbů z Chorvatska a severozápadní Bosny – což byla největší etnická čistka v Evropě od druhé světové války – , zlepšuje reputaci ICTY .</czech>
+  <sure>4-2 6-3 8-4 9-5 10-6 11-7 12-11 14-9 15-10 16-12 18-13 19-14 20-15 22-19 25-21 28-22 30-22 31-23 32-24 33-25 34-26 35-27 37-27 38-28 39-29 41-32 42-33 43-34 44-35 45-36 46-37 47-38 47-39 47-40 48-41 49-43 51-45 53-44 54-46</sure>
+  <possible>5-3 7-4 13-10 17-13 23-21 24-20 26-22 27-22 29-22 36-27 40-34 50-45 52-45</possible>
+  <phrasal>1-1 2-1 3-1 21-17 21-18</phrasal>
+</s>
+<s id="project_syndicate_ne01-s14">
+  <english>But Milosevic 's Croatian and Bosniak counterparts , Franjo Tudjman and Alija Izetbegovic , respectively , remained unindicted when they died .</english>
+  <czech>Franjo Tudjman a Alija Izetbegovič , Miloševičovy protějšky na chorvatské a bosenské straně , však v době své smrti žádnému obvinění nečelili .</czech>
+  <sure>1-15 2-7 4-10 5-11 6-12 7-8 8-6 9-1 10-2 11-3 12-4 13-5 14-14 20-18 21-19 22-23</sure>
+  <possible>3-7 19-16 19-17</possible>
+  <phrasal>17-20 17-21 17-22 18-20 18-21 18-22</phrasal>
+</s>
+<s id="project_syndicate_ne01-s15">
+  <english>So , too , the main commanders of the Kosovo Liberation Army ( UCK ) .</english>
+  <czech>Totéž platí i o hlavních velitelích Kosovské osvobozenecké armády ( UCK ) .</czech>
+  <sure>3-3 6-5 7-6 10-7 11-8 12-9 13-10 14-11 15-12 16-13</sure>
+  <possible>5-6 8-9 9-9</possible>
+  <phrasal>1-1 1-2 1-4</phrasal>
+</s>
+<s id="project_syndicate_ne01-s16">
+  <english>Ramush Haradinaj , the prime minister of Kosovo , was accused but later released from detention .</english>
+  <czech>Kosovský premiér Ramush Haradinaj byl sice obviněn , ale později ho propustili z vazby .</czech>
+  <sure>1-3 2-4 5-2 6-2 8-1 9-8 11-7 12-9 13-10 14-12 15-13 16-14 17-15</sure>
+  <possible>4-2 7-1 10-7 11-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s17">
+  <english>I have always been convinced that Milosevic should have been put on trial in Belgrade .</english>
+  <czech>Vždy jsem byl přesvědčen , že Miloševič by měl být souzen v Bělehradě .</czech>
+  <sure>3-1 5-4 6-6 7-7 14-12 15-13 16-14</sure>
+  <possible>1-3 2-3 4-2 4-3 6-5 8-11 9-11 10-11 11-8 11-9 11-10</possible>
+  <phrasal>11-11 12-11 13-11</phrasal>
+</s>
+<s id="project_syndicate_ne01-s18">
+  <english>After all , Milosevic 's critics and political rivals such as the journalist Slavko Curuvija and Milosevic 's former mentor , Ivan Stambolic , were assasinated by Serb police agents , who also tried three times to murder the opposition leader Vuk Draskovic .</english>
+  <czech>Miloševičovy kritiky a politické protivníky , jako byli novinář Slavko Čuruvija nebo Miloševičův někdejší rádce Ivan Stambolič , koneckonců zavraždili agenti srbské policie , kteří se rovněž třikrát pokusili o atentát na opozičního vůdce Vuka Draškoviče .</czech>
+  <sure>4-1 6-2 7-3 8-4 9-5 10-7 11-7 13-9 14-10 15-11 17-13 19-14 22-16 23-17 24-18 26-20 28-22 29-23 30-21 31-24 32-25 33-27 34-29 35-28 36-28 38-31 40-33 41-34 42-35 43-36 44-37</sure>
+  <possible>5-1 12-9 16-12 18-13 20-15 25-20 27-21 34-26 37-30 38-32 39-34</possible>
+  <phrasal>1-19 2-19</phrasal>
+</s>
+<s id="project_syndicate_ne01-s19">
+  <english>The release of Alan Greenspan 's ghostwritten memoirs The Age of Turbulence has elicited charges that he was not such a great central banker after all .</english>
+  <czech>Vydání pamětí Alana Greenspana , sepsaných najatým autorem pod názvem The Age of Turbulence ( Věk turbulencí ) , vyvolalo řadu obvinění , že nakonec až tak skvělým centrálním bankéřem nebyl .</czech>
+  <sure>2-1 4-3 5-4 8-2 9-11 10-12 10-16 11-13 12-14 12-17 14-20 15-22 16-24 18-31 22-28 23-29 24-30 27-32</sure>
+  <possible>1-1 3-1 6-4 9-16 11-17 13-20 16-23 17-31 19-31 21-30</possible>
+  <phrasal>7-6 7-7 7-8 20-26 20-27 25-25 26-25</phrasal>
+</s>
+<s id="project_syndicate_ne01-s20">
+  <english>Stan Collender of National Journal sees the fingerprints of the White House on these attacks : Greenspan is harshly critical of George W . Bush 's administration , after all , and to attack the credibility of Republican ex - policymakers who are critical of Bush is standard counterpunching for it .</english>
+  <czech>Stan Collender z týdeníku National Journal za těmito útoky rozeznává otisky prstů Bílého domu : Greenspan je ostatně vůči administrativě George W . Bushe nelítostně kritický a napadání věrohodnosti bývalých politických aktérů z republikánského tábora , již Bushe kritizují , je standardní protiúder .</czech>
+  <sure>1-1 2-2 3-3 4-5 5-6 6-10 8-11 8-12 11-13 12-14 13-7 14-8 15-9 16-15 17-16 18-17 19-25 20-26 21-19 22-21 23-22 24-23 25-24 27-20 32-27 34-28 36-29 38-34 39-30 41-31 41-32 46-38 47-41 48-42 49-43 52-44</sure>
+  <possible>7-11 9-14 10-14 26-24 35-29 37-32 38-33 38-35 40-30 45-38</possible>
+  <phrasal>29-18 30-18 43-39 44-39</phrasal>
+</s>
+<s id="project_syndicate_ne01-s21">
+  <english>But what is one to make of the criticisms of Greenspan 's tenure at the Federal Reserve ?</english>
+  <czech>Jak si ale má člověk přebrat kritiku Greenspanova působení ve Federálním rezervním systému ?</czech>
+  <sure>1-3 4-5 9-7 11-8 13-9 14-10 18-14</sure>
+  <possible>7-7 8-7 10-8 12-8 15-13</possible>
+  <phrasal>2-6 3-6 5-6 6-1 6-2 6-4 6-6 16-11 16-12 16-13 17-11 17-12 17-13</phrasal>
+</s>
+<s id="project_syndicate_ne01-s22">
+  <english>There was little he could do in Kosovo or the Congo .</english>
+  <czech>V Kosovu ani v Kongu nemohl nijak zásadněji pomoci .</czech>
+  <sure>5-6 7-1 7-4 8-2 9-3 11-5 12-10</sure>
+  <possible>4-6 10-5</possible>
+  <phrasal>1-7 1-8 1-9 2-7 2-8 2-9 3-7 3-8 3-9 6-9</phrasal>
+</s>
+<s id="project_syndicate_ne01-s23">
+  <english>The years of John Paul II 's papacy have not actually been a time in which " soft power " could achieve a great deal anywhere , so that Stalin 's famous question , " How many divisions has the Pope ? , " remained topical .</english>
+  <czech>Roky pontifikátu Jana Pavla II . vůbec nebyly dobou , kdy by " měkká moc " kdekoliv na světě dokázala divy , takže aktuální je nadále Stalinova slavná otázka : " Kolik divizí má papež ? "</czech>
+  <sure>2-1 4-3 5-4 6-5 8-2 11-7 12-8 14-9 16-11 17-13 18-14 19-15 20-16 22-20 26-17 27-22 28-23 29-23 30-27 32-28 33-29 34-30 35-31 36-32 37-32 38-33 39-34 41-35 42-36 44-37 46-24</sure>
+  <possible>1-1 3-2 7-3 9-8 10-8 13-9 15-11 21-12 21-20 31-27 40-35 43-36 45-25 45-26</possible>
+  <phrasal>23-21 24-21 25-21</phrasal>
+</s>
+<s id="project_syndicate_ne01-s24">
+  <english>This was all the more relevant to the extent that Pope John Paul II is not enamored with the United States .</english>
+  <czech>To je tím podstatnější , že papež Jan Pavel II . nemá zrovna v lásce Spojené státy .</czech>
+  <sure>1-1 2-2 6-4 10-6 11-7 12-8 13-9 14-10 20-16 21-17 22-18</sure>
+  <possible>19-16</possible>
+  <phrasal>3-3 4-3 5-3 15-12 15-14 15-15 16-12 16-14 16-15 17-12 17-14 17-15 18-12 18-14 18-15</phrasal>
+</s>
+<s id="project_syndicate_ne01-s25">
+  <english>We saw the consequences of that gap in Afghanistan .</english>
+  <czech>Důsledky tohoto rozdílu jsme viděli v Afghánistánu .</czech>
+  <sure>2-5 4-1 6-2 7-3 8-6 9-7 10-8</sure>
+  <possible>1-5 2-4 3-1 5-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s26">
+  <english>Article 5 of the NATO Treaty was invoked as if the Twin Towers attack was an attack on the whole alliance .</english>
+  <czech>Mluvilo se o článku 5 Dohody o Severoatlantické alianci , jako by útok na Dvojčata byl útokem na celou alianci .</czech>
+  <sure>1-4 2-5 5-8 5-9 6-6 8-1 9-11 10-11 12-15 13-15 14-13 15-16 17-17 18-18 20-19 21-20 22-21</sure>
+  <possible>3-6 4-6 5-7 7-1 8-2 8-3 11-13 13-14 15-12 16-17 19-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s27">
+  <english>Many expected that America would call for a collective NATO response .</english>
+  <czech>Mnoho lidí čekalo , že Amerika vyzve NATO ke kolektivní odvetě .</czech>
+  <sure>1-1 2-3 3-5 4-6 6-7 7-7 9-10 10-8 11-11 12-12</sure>
+  <possible>1-2 3-4 5-7 6-9 8-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s28">
+  <english>BRUSSELS : Joschka Fischer , Germany 's foreign minister , set the cat among the pigeons when he laid out his vision of a federalist European Union .</english>
+  <czech>BRUSEL : Německý ministr zahraničních věcí Joschka Fischer píchnul do vosího hnízda , když přednesl svou vizi federálního Evropské unie .</czech>
+  <sure>1-1 2-2 3-7 4-8 6-3 8-5 9-4 17-14 19-15 20-15 21-16 22-17 25-18 26-19 27-20 28-21</sure>
+  <possible>5-4 7-3 8-6 10-4 17-13 18-15 23-20 24-20</possible>
+  <phrasal>11-9 11-10 11-11 11-12 12-9 12-10 12-11 12-12 13-9 13-10 13-11 13-12 14-9 14-10 14-11 14-12 15-9 15-10 15-11 15-12 16-9 16-10 16-11 16-12</phrasal>
+</s>
+<s id="project_syndicate_ne01-s29">
+  <english>In Britain , where the idea of European federalism has never been popular , it was predictable that the Euro - sceptic newspaper The Times would denounce Mr Fischer 's ideas .</english>
+  <czech>V Británii , kde neměla myšlenka evropského federalismu nikdy valnou oporu , se dalo předpokládat , že euroskeptický list The Times Fischerovy názory zpranýřuje .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-6 8-7 9-8 11-9 14-12 17-15 18-17 20-18 22-18 23-19 24-20 25-21 27-24 29-22 31-23 32-24</sure>
+  <possible>5-6 7-8 10-5 11-5 12-5 15-15 16-15 17-13 17-14 18-16 19-19 21-18 26-24 28-22 30-22</possible>
+  <phrasal>13-10 13-11</phrasal>
+</s>
+<s id="project_syndicate_ne01-s30">
+  <english>But even in France , traditionally committed to its partnership with Germany , he raised a small storm , most sensationally when Jean - Pierre Chevčnement , the French Interior Minister , responded with the bizarre claim that the Germans had not fully recovered from their Nazi past .</english>
+  <czech>Avšak i ve Francii , tradičně věrné partnerství s Německem , způsobil šéf německé diplomacie malou bouři , když se francouzský ministr vnitra Jean - Pierra Chevenement nechal slyšet , že Němci se zřejmě dosud zcela nezotavili z jejich nacistické minulosti .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 10-8 11-9 12-10 13-11 15-12 17-16 18-17 19-18 22-19 23-24 24-25 25-26 26-27 29-21 30-23 31-22 38-31 40-32 43-36 44-37 45-38 46-39 47-40 48-41 49-42</sure>
+  <possible>8-8 9-8 14-12 16-17 27-22 28-22 32-27 39-32 41-37 42-37</possible>
+  <phrasal>33-28 33-29</phrasal>
+</s>
+<s id="project_syndicate_ne01-s31">
+  <english>Last year , Romano Prodi , President of the European Commission and a former prime minister of Italy , made it clear that he believed enlargement would require radical constitutional reform of the Union .</english>
+  <czech>V loňském roce dal prezident Evropské komise Romano Prodi jasně najevo svůj názor , že rozšíření Unie si vyžádá její radikální konstituční reformu .</czech>
+  <sure>1-2 2-3 4-8 5-9 7-5 10-6 11-7 20-4 22-11 23-15 26-16 28-19 29-21 30-22 31-23 35-24</sure>
+  <possible>2-1 3-3 8-7 9-7 21-11 22-10 23-14 27-19 28-18</possible>
+  <phrasal>24-12 25-12 25-13</phrasal>
+</s>
+<s id="project_syndicate_ne01-s32">
+  <english>So did a committee of " Three Wise Men " , led by Jean - Luc Dehaene , former Belgian prime minister .</english>
+  <czech>Totéž tvrdí i výbor " tří mudrců " v čele s Jean - Lucem Dehaenem , bývalým belgickým premiérem .</czech>
+  <sure>4-4 6-5 7-6 8-7 9-7 10-8 14-12 15-13 16-14 18-16 19-17 20-18 21-19 22-19 23-20</sure>
+  <possible>1-1 1-3 2-1 2-2 3-4 5-7 11-2 13-15 17-11</possible>
+  <phrasal>12-9 12-10</phrasal>
+</s>
+<s id="project_syndicate_ne01-s33">
+  <english>This year , the case for radical constitutional reform of the EU was argued by Valery Giscard d ' Estaing , the former French President , and Helmut Schmidt , a former German Chancellor ; and also by Jacques Delors , a former President of the Commission .</english>
+  <czech>Letos se pro radikální ústavní změny EU vyslovili Valéry Giscard d ' Estaing , bývalý francouzský prezident , a Helmut Schmidt , bývalý německý kancléř , a navíc také Jacques Delors , bývalý předseda Evropské komise .</czech>
+  <sure>6-3 7-4 8-5 9-6 12-7 16-9 17-10 18-11 19-12 20-13 21-14 23-15 24-16 25-17 26-18 27-19 28-20 29-21 30-22 32-23 33-24 34-25 35-26 36-27 37-29 39-30 40-31 41-32 43-33 44-34 47-36 48-37</sure>
+  <possible>3-1 10-7 11-7 15-13 22-17 31-25 38-31 42-34 45-36 46-36</possible>
+  <phrasal>1-1 2-1 4-8 5-8 13-8 14-2 14-8</phrasal>
+</s>
+<s id="project_syndicate_ne01-s34">
+  <english>Under Angela Merkel 's leadership , for example , Germany 's Christian Democrats are increasingly flirting with xenophobia .</english>
+  <czech>Například němečtí křesťanští demokraté pod vedením Angely Merkelové si čím dál víc zahrávají s xenofobií .</czech>
+  <sure>1-5 2-7 3-8 5-6 10-2 12-3 13-4 15-12 16-13 17-14 18-15 19-16</sure>
+  <possible>4-8 6-6 9-1 11-2 14-13 15-10 15-11 16-9</possible>
+  <phrasal>7-1 8-1</phrasal>
+</s>
+<s id="project_syndicate_ne01-s35">
+  <english>In Italy , Silvio Berlusconi 's government also appears tainted with right - wing populism and xenophobia .</english>
+  <czech>Také na italskou vládu Silvia Berlusconiho padá stín pravicového populismu a xenofobie .</czech>
+  <sure>2-3 4-5 5-6 7-4 8-1 12-9 14-9 15-10 16-11 17-12 18-13</sure>
+  <possible>6-6 11-10 13-9</possible>
+  <phrasal>9-7 9-8 10-7 10-8</phrasal>
+</s>
+<s id="project_syndicate_ne01-s36">
+  <english>He , like William Hague and George W Bush , is promising to slash taxes .</english>
+  <czech>Berlusconi podobně jako Bush mladší a Hague také slibuje daňové škrty .</czech>
+  <sure>3-3 5-7 6-6 9-4 12-9 15-10 16-12</sure>
+  <possible>1-9 2-1 3-2 10-4 11-9 13-11 14-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s37">
+  <english>Across Europe , it is not only British Prime Minister Tony Blair who is accused of " presidentialism " nowadays .</english>
+  <czech>Není to jen britský premiér Tony Blair , kterého dnes v Evropě obviňují z " prezidentialismu " .</czech>
+  <sure>2-12 4-2 5-1 7-3 8-4 9-5 10-5 11-6 12-7 13-9 15-13 16-14 17-15 18-16 19-17 20-10 21-18</sure>
+  <possible>1-11 3-12 6-1 12-8 14-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s38">
+  <english>German Chancellor Gerhard Schröder faces the same charge in the current German election campaign .</english>
+  <czech>V právě probíhající předvolební kampani v Německu obviňují z téhož německého kancléře Gerharda Schrödera .</czech>
+  <sure>1-11 2-12 3-13 4-14 7-9 9-1 11-3 12-7 13-4 14-5 15-15</sure>
+  <possible>10-5 11-2</possible>
+  <phrasal>5-8 6-8 8-8</phrasal>
+</s>
+<s id="project_syndicate_ne01-s39">
+  <english>Prime Minister Silvio Berlusconi of Italy , indeed , does not even like being called Prime Minister .</english>
+  <czech>A italskému premiéru Silviu Berlusconimu se dokonce nelíbí , když mu říkají premiér .</czech>
+  <sure>1-3 2-3 3-4 4-5 6-2 12-7 13-8 15-12 16-13 17-13 18-14</sure>
+  <possible>5-2 7-3 8-1 9-7 10-8 11-8 13-6 14-12 15-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s40">
+  <english>In so far as the European Union is a " single market , " it is represented by the Trade Commissioner , Pascal Lamy .</english>
+  <czech>Pokud bereme Evropskou unii jako " jednotný trh " , představuje ji její komisař pro obchod Pascal Lamy .</czech>
+  <sure>6-3 7-4 10-6 11-7 12-8 13-10 14-9 15-12 17-11 20-16 21-14 23-17 24-18 25-19</sure>
+  <possible>5-4 9-8 16-11 18-14 19-14 20-15 22-18</possible>
+  <phrasal>1-1 1-2 1-5 2-1 2-2 2-5 3-1 3-2 3-5 4-1 4-2 4-5</phrasal>
+</s>
+<s id="project_syndicate_ne01-s41">
+  <english>If the issue is competition , Commissioner Mario Monti represents Europe , stridently so , as Americans have learned to their surprise .</english>
+  <czech>Pokud jde o hospodářskou soutěž , zastupuje Evropu komisař Mario Monti , a to hezky nahlas , jak Američané ke svému nemalému překvapení zjistili .</czech>
+  <sure>1-1 5-5 6-6 7-9 8-10 9-11 10-7 11-8 12-12 13-16 15-17 16-18 17-19 19-24 20-20 21-21 22-23 23-25</sure>
+  <possible>18-24</possible>
+  <phrasal>2-2 2-3 3-2 3-3 4-2 4-3 14-13 14-14</phrasal>
+</s>
+<s id="project_syndicate_ne01-s42">
+  <english>But as soon as we move to wider issues of foreign and defense policy , Xavier Solana , the High Representative of the EU Council of Ministers , may be at the telephone number that Henry Kissinger famously could never find in Brussels when he wanted to " speak to Europe " in his day , but Solana is hardly in a position to speak for " Europe " in important matters today .</english>
+  <czech>Jakmile se ovšem dostaneme k širší problematice zahraniční a bezpečnostní politiky , měl by se na telefonním čísle , které Henry Kissinger , když chtěl za svých časů " mluvit s Evropou " , nikdy nedokázal v Bruselu najít , ohlásit vysoký představitel Rady ministrů EU Xavier Solana , jenže ten je sotva v takovém postavení , že by v důležitých věcech mohl dnes hovořit za " Evropu " .</czech>
+  <sure>1-3 2-1 3-1 4-1 6-4 7-5 8-6 9-7 11-8 12-9 13-10 14-11 15-12 16-47 17-48 20-42 21-43 24-46 25-44 27-45 30-13 31-16 33-17 34-18 35-20 36-21 37-22 39-36 40-35 41-39 42-37 43-38 44-24 46-25 48-29 49-30 50-31 51-32 52-33 53-26 54-27 55-28 56-49 57-50 59-52 60-53 61-54 63-56 65-65 66-66 67-67 68-68 69-69 70-60 71-61 72-62 73-64 74-70</sure>
+  <possible>5-4 6-2 10-11 19-43 22-44 23-46 26-45 29-13 30-14 32-18 34-19 45-25 47-30 62-56 64-58 64-65 65-57 65-59</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s43">
+  <english>The opposition CDU leader , Angela Merkel , has linked its program to the ambitious ideas of an outsider , former Constitutional Court judge Paul Kirchhof , seeking a dramatic simplification of the tax system .</english>
+  <czech>Předačka opoziční CDU Angela Merkelová spojila program partaje s ambiciózními idejemi nestraníka , bývalého soudce Ústavního soudu Paula Kirchhofa , usilujícími o dramatické zjednodušení daňové soustavy .</czech>
+  <sure>2-2 3-3 4-1 6-4 7-5 10-6 12-7 13-9 15-10 16-11 19-12 20-13 21-14 22-16 23-17 24-15 25-18 26-19 27-20 28-21 30-23 31-24 34-25 35-26 36-27</sure>
+  <possible>1-1 5-5 8-5 9-6 14-11 17-12 18-12 29-24 31-22 32-26 33-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s44">
+  <english>In international affairs , Merkel is more skeptical about European enlargement , notably to include Turkey , than Schröder .</english>
+  <czech>V mezinárodních otázkách je Merkelová oproti Schröderovi skeptičtější vůči evropskému rozšiřování , zejména vůči začlenění Turecka .</czech>
+  <sure>1-1 2-2 3-3 5-5 6-4 8-8 9-9 10-10 11-11 12-12 13-13 14-14 15-15 16-16 17-17 18-6 19-7 20-17</sure>
+  <possible>4-3 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s45">
+  <english>Merkel , an East German by background , is also more cautious in her approach to Russia .</english>
+  <czech>Merkelová , původem Východní Němka , je také ostražitější ve svém přístupu k Rusku .</czech>
+  <sure>1-1 2-2 4-4 5-5 7-3 8-6 9-7 10-8 12-9 13-10 14-11 15-12 16-13 17-14 18-15</sure>
+  <possible>3-5 6-3 11-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s46">
+  <english>If Berezovsky 's punishment is more apparent than real , Berezovsky too will say nothing .</english>
+  <czech>Pokud bude Berezovského trest spíše symbolický než skutečný , bude zticha i sám Berezovskij .</czech>
+  <sure>1-1 2-3 4-4 5-2 6-5 7-6 8-7 9-8 10-9 11-14 12-12 14-10 15-11 16-15</sure>
+  <possible>3-3 13-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s47">
+  <english>Removing Berezovsky would also allow Putin to establish direct control over Berezovsky 's media empire – another boost to his personal power .</english>
+  <czech>Odstranění Berezovského by navíc Putinovi umožnilo získat přímou kontrolu nad mediálním impériem Berezovského : další injekce jeho osobní moci .</czech>
+  <sure>1-1 2-2 4-4 5-6 6-5 8-7 9-8 10-9 11-10 12-13 14-11 15-12 16-14 17-15 18-16 20-17 21-18 22-19 23-20</sure>
+  <possible>3-6 5-3 7-7 13-13 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s48">
+  <english>What 's good for Putin may not be good for Russia .</english>
+  <czech>Co je dobré pro Putina , nemusí být ale dobré pro Rusko .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-7 8-8 9-10 10-11 11-12 12-13</sure>
+  <possible>6-6 7-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_ne01-s49">
+  <english>As long as Hamas and Syria are left out of the United States - led peace process , they are condemned to Iran 's orbit .</english>
+  <czech>Dokud budou z mírového procesu vedeného Spojenými státy vyloučeny Hamás a Sýrie , nemají jinou možnost než se přesunout na oběžnou dráhu Íránu .</czech>
+  <sure>1-1 2-1 3-1 4-10 5-11 6-12 7-2 8-9 9-9 10-3 12-7 13-8 15-6 16-4 17-5 18-13 22-20 23-23 25-21 25-22 26-24</sure>
+  <possible>11-5 14-6 19-14 24-23</possible>
+  <phrasal>20-14 20-15 20-16 20-17 21-14 21-15 21-16 21-17</phrasal>
+</s>
+<s id="project_syndicate_ne01-s50">
+  <english>However , Saudi Arabia 's willingness to participate in the conference might come with a price too high for Israel to pay : an endorsement of the Saudi peace initiative .</english>
+  <czech>Ochota Saúdské Arábie zúčastnit se konference by však mohla mít pro Izrael příliš vysokou cenu : souhlas se saúdskoarabskou mírovou iniciativou .</czech>
+  <sure>1-8 3-2 4-3 6-1 8-4 11-6 12-9 13-10 16-15 17-13 18-14 19-11 20-12 23-16 25-17 28-19 29-20 30-21 31-22</sure>
+  <possible>2-8 5-3 7-4 8-5 9-6 10-6 12-7 15-15 24-17 26-21 27-21</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

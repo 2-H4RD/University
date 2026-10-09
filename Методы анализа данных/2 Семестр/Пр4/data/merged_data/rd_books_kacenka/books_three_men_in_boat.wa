@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="books_three_men_in_boat-s1">
+  <english>I tried to examine myself .</english>
+  <czech>Pokusil jsem se sám se prohlédnout .</czech>
+  <sure>2-1 2-3 4-6 5-4 6-7</sure>
+  <possible>1-1 2-2 3-6 4-5 5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s2">
+  <english>I felt my pulse .</english>
+  <czech>Zkoušel jsem si tep .</czech>
+  <sure>4-4 5-5</sure>
+  <possible>1-1 2-1 2-2 3-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s3">
+  <english>I could not at first feel any pulse at all .</english>
+  <czech>Zpočátku jsem ho vůbec nemohl najít .</czech>
+  <sure>10-4 11-7 2-5 3-5 4-1 5-1 9-4</sure>
+  <possible>1-5 2-2 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s4">
+  <english>Then , all of a sudden , it seemed to start off .</english>
+  <czech>Potom znenadání spustil .</czech>
+  <sure>1-1 11-3 12-3 13-4 3-2 4-2 5-2 6-2</sure>
+  <possible>10-3 2-1 7-2 8-3 9-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s5">
+  <english>I pulled out my watch and timed it .</english>
+  <czech>Vytáhl jsem hodinky a počítal .</czech>
+  <sure>2-1 3-1 5-3 6-4 7-5 9-6</sure>
+  <possible>1-1 2-2 8-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s6">
+  <english>I made it a hundred and forty - seven to the minute .</english>
+  <czech>Za minutu jsem napočítal sto čtyřicet sedm .</czech>
+  <sure>10-1 12-2 13-8 5-5 7-6 9-7</sure>
+  <possible>1-3 1-4 11-2 2-3 2-4 3-3 3-4 4-5 6-5 8-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s7">
+  <english>I tried to feel my heart .</english>
+  <czech>Snažil jsem se vyzkoušet srdce .</czech>
+  <sure>2-1 2-3 6-5 7-6</sure>
+  <possible>1-1 2-2 3-4 4-4 5-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s8">
+  <english>I could not feel my heart .</english>
+  <czech>Nemohl jsem je najít .</czech>
+  <sure>2-1 3-1 7-5</sure>
+  <possible>1-1 2-2 4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s9">
+  <english>It had stopped beating .</english>
+  <czech>Přestalo bít .</czech>
+  <sure>3-1 4-2 5-3</sure>
+  <possible>1-1 2-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s10">
+  <english>I have since been induced to come to the opinion that it must have been there all the time , and must have been beating , but I cannot account for it .</english>
+  <czech>Později jsem musel uznat , že tam po celou tu dobu bylo a že tlouklo , ale dokázat bych to nemohl .</czech>
+  <sure>11-6 15-12 16-7 17-9 18-10 19-11 21-13 25-15 26-16 27-17 29-21 3-1 30-18 32-20 33-22</sure>
+  <possible>1-3 10-4 11-5 12-12 13-12 14-12 17-10 17-11 17-8 18-11 18-8 18-9 19-10 19-8 19-9 2-3 20-13 22-15 23-15 24-15 28-21 29-19 30-19 30-20 31-18 4-3 5-2 5-3 6-4 7-4 8-4 9-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s11">
+  <english>I patted myself all over my front , from what I call my waist up to my head , and I went a bit round each side , and a little way up the back .</english>
+  <czech>Ohmatával jsem se po celé přední straně od místa , které nazývám pasem , až k hlavě , kousek po každé straně a kousíček na zádech .</czech>
+  <sure>12-12 14-13 15-15 16-16 18-17 19-18 2-1 24-19 25-20 26-21 27-22 29-23 3-3 31-24 35-26 36-27 4-5 5-4 7-6 9-8</sure>
+  <possible>1-1 10-11 11-12 13-13 17-17 2-2 20-18 23-19 28-23 30-24 32-24 34-26 35-25 7-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s12">
+  <english>But I could not feel or hear anything .</english>
+  <czech>Ale nic jsem ani necítil , ani neslyšel .</czech>
+  <sure>1-1 3-5 4-5 5-5 6-7 7-8 8-2 9-9</sure>
+  <possible>2-5 4-8 5-3 6-4 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s13">
+  <english>I tried to look at my tongue .</english>
+  <czech>Pokusil jsem se podívat se na jazyk .</czech>
+  <sure>2-1 2-3 4-4 4-5 5-6 7-7 8-8</sure>
+  <possible>1-1 2-2 3-4 6-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s14">
+  <english>I stuck it out as far as ever it would go , and I shut one eye , and tried to examine it with the other .</english>
+  <czech>Vyplázl jsem ho tak daleko , jak to jen šlo , zavřel jedno oko a snažil se druhým ho prohlédnout .</czech>
+  <sure>10-10 11-10 12-11 15-12 16-13 17-14 19-15 2-1 20-16 20-17 22-20 23-19 26-18 27-21 3-3 4-1 5-4 6-5 7-7 8-9 9-8</sure>
+  <possible>1-1 13-11 14-12 18-15 2-2 21-20 24-18 25-18 7-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s15">
+  <english>I could only see the tip , and the only thing that I could gain from that was to feel more certain than before that I had scarlet fever .</english>
+  <czech>Viděl jsem jen jeho špičku a všechno , co jsem z toho získal , bylo , že jsem byl ještě vice jist než předtím , že mám spálu .</czech>
+  <sure>11-7 12-9 15-13 16-11 17-12 18-15 21-21 22-22 23-23 24-24 25-26 27-27 28-28 29-28 3-3 30-29 4-1 6-5 8-6</sure>
+  <possible>1-1 10-7 12-8 13-13 14-13 15-10 19-17 2-1 20-19 20-22 21-20 22-18 22-19 25-25 26-27 4-2 5-4 5-5 7-6 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s16">
+  <english>I had walked into that reading - room a happy , healthy man .</english>
+  <czech>Do čítárny jsem vešel jako šťastný zdravý muž .</czech>
+  <sure>10-6 12-7 13-8 14-9 3-4 4-1 6-2 7-2 8-2</sure>
+  <possible>1-4 2-4 3-3 5-2 9-5 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s17">
+  <english>I crawled out a decrepit wreck .</english>
+  <czech>Odtamtud jsem se odplížil jako vetchá ruina .</czech>
+  <sure>2-4 5-6 6-7 7-8</sure>
+  <possible>1-4 2-2 2-3 3-1 3-4 4-5 4-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s18">
+  <english>I went to my medical man .</english>
+  <czech>Šel jsem ke svému lékaři .</czech>
+  <sure>2-1 3-3 4-4 5-5 6-5 7-6</sure>
+  <possible>1-1 2-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s19">
+  <english>He is an old chum of mine , and feels my pulse , and looks at my tongue , and talks about the weather , all for nothing , when I fancy I ' m ill ;</english>
+  <czech>Je to můj starý kamarád , a když mám dojem , že mi něco je , zkusí mi tep , podívá se na jazyk , mluví o počasí - a nic za to nevezme .</czech>
+  <sure>11-18 12-19 13-20 15-21 15-22 16-23 18-24 19-25 2-1 21-26 22-27 24-28 27-32 28-31 30-8 32-10 32-9 4-4 5-5 7-3 8-6 9-7</sure>
+  <possible>1-1 1-2 10-17 14-20 17-24 2-2 20-25 23-28 25-29 25-30 27-33 29-11 3-4 3-5 30-12 31-9 33-13 33-14 33-15 34-13 34-14 34-15 35-13 35-14 35-15 36-13 36-14 36-15 37-35 6-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s20">
+  <english>so I thought I would do him a good turn by going to him now .</english>
+  <czech>Napadlo mě , že by neškodilo , kdybych si teď k němu zašel .</czech>
+  <sure>12-13 13-11 14-12 15-10 16-14 3-1</sure>
+  <possible>12-9 2-1 3-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s21">
+  <english>" What a doctor wants , " I said , " is practice .</english>
+  <czech>" Lékař potřebuje praxi , " řekl jsem si .</czech>
+  <sure>1-1 13-4 14-10 4-2 6-5 7-6 9-7</sure>
+  <possible>12-4 3-2 5-3 8-7 9-8 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s22">
+  <english>He shall have me .</english>
+  <czech>Bude mít mne .</czech>
+  <sure>3-2 4-3 5-4</sure>
+  <possible>1-1 1-2 2-1 2-2 3-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s23">
+  <english>He will get more practice out of me than out of seventeen hundred of your ordinary , commonplace patients , with only one or two diseases each . "</english>
+  <czech>Ze mne nabude větší praxi než ze sedmnácti set obyčejných pacientů , z nichž každý má po jedné nebo po dvou nemocech . "</czech>
+  <sure>10-7 11-7 12-8 13-9 16-10 19-11 23-18 24-19 25-21 26-22 27-15 28-23 29-24 3-3 4-4 5-5 6-1 7-1 8-2 9-6</sure>
+  <possible>1-3 14-11 15-11 17-10 2-3 20-12 21-13 21-14 21-17 23-17 25-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s24">
+  <english>So I went straight up and saw him , and he said : " Well , what 's the matter with you ? "</english>
+  <czech>Šel jsem tedy rovnou k němu a on povídá : " Tak co ti je ? "</czech>
+  <sure>1-3 12-9 13-10 14-11 15-12 23-16 24-17 3-1 4-4</sure>
+  <possible>10-7 11-8 11-9 16-12 17-13 17-14 17-15 18-13 18-14 18-15 19-13 19-14 19-15 2-1 20-13 20-14 20-15 21-13 21-14 21-15 22-13 22-14 22-15 3-2 5-4 6-7 8-5 8-6 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s25">
+  <english>I said : " I will not take up your time , dear boy , with telling you what is the matter with me .</english>
+  <czech>Odpověděl jsem : " Nebudu tě okrádat o čas , drahý chlapče , vypočítáváním toho , co mi je .</czech>
+  <sure>11-9 12-10 13-11 14-12 15-13 17-14 2-1 25-20 3-3 4-4 6-5 7-5 8-7 9-7</sure>
+  <possible>1-1 10-6 10-9 16-14 18-14 19-15 19-16 19-17 19-18 19-19 2-2 20-17 20-18 20-19 21-17 21-18 21-19 22-17 22-18 22-19 23-17 23-18 23-19 24-17 24-18 24-19 5-5 8-6 8-8 9-6 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s26">
+  <english>Life is brief , and you might pass away before I had finished .</english>
+  <czech>Život je krátký a ty bys mohl zemřít , dřív než bych skončil .</czech>
+  <sure>1-1 10-10 13-13 14-14 2-2 3-3 5-4 6-5 7-7 8-8 9-8</sure>
+  <possible>10-11 10-9 11-13 12-13 13-12 4-4 7-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s27">
+  <english>But I will tell you what is NOT the matter with me .</english>
+  <czech>Ale řeknu ti , co mi není .</czech>
+  <sure>1-1 13-8 4-2 5-3 6-5</sure>
+  <possible>10-6 10-7 11-6 11-7 12-6 12-7 2-2 3-2 6-4 7-7 8-6 8-7 9-6 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s28">
+  <english>I have not got housemaid 's knee .</english>
+  <czech>Nemám horečku omladnic .</czech>
+  <sure>2-1 3-1 4-1 8-4</sure>
+  <possible>1-1 5-2 5-3 6-2 6-3 7-2 7-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s29">
+  <english>Why I have not got housemaid 's knee , I cannot tell you ; but the fact remains that I have not got it .</english>
+  <czech>Proč nemám horečku omladnic , to ti nepovím , ale je jisté , že ji nemám .</czech>
+  <sure>1-1 11-8 12-8 13-7 14-9 15-10 19-14 21-16 22-16 23-16 24-15 25-17 3-2 4-2 5-2 9-5</sure>
+  <possible>10-8 12-6 16-11 16-12 17-11 17-12 18-11 18-12 19-13 2-2 20-16 6-3 6-4 7-3 7-4 8-3 8-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s30">
+  <english>Everything else , however , I HAVE got . "</english>
+  <czech>Všechno ostatní však mám . "</czech>
+  <sure>1-1 10-6 2-2 4-3 7-4 8-4 9-5</sure>
+  <possible>3-3 5-3 6-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s31">
+  <english>And I told him how I came to discover it all .</english>
+  <czech>A vypravoval jsem mu , jak jsem na to přišel .</czech>
+  <sure>1-1 10-9 12-11 3-2 4-4 5-6 7-10 8-10 9-10</sure>
+  <possible>10-10 10-8 11-9 2-2 3-3 5-5 6-10 6-7 7-7 7-8 7-9 8-8 8-9 9-8 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s32">
+  <english>Then he opened me and looked down me , and clutched hold of my wrist , and then he hit me over the chest when I was n't expecting it - a cowardly thing to do , I call it - and immediately afterwards butted me with the side of his head .</english>
+  <czech>Otevřel mi ústa , podíval se do mne , popadl mě za zápěstí a potom mě udeřil do prsou , když jsem to vůbec nečekal - tomu říkám zbabělost - a hned nato do mne vrazil jednou stranou hlavy .</czech>
+  <sure>11-10 12-10 13-12 15-13 17-14 18-15 20-17 21-16 22-18 24-19 25-21 27-25 28-25 29-25 3-1 30-23 31-26 33-29 34-29 39-28 4-2 40-27 41-30 42-31 43-32 44-33 45-36 46-35 49-38 5-4 52-39 53-40 6-5 6-6 7-7 8-8 9-9</sure>
+  <possible>10-9 11-11 12-11 14-11 14-13 16-14 19-17 2-1 23-19 25-20 26-25 29-22 32-29 38-28 45-34 47-37 47-38 48-37 48-38 50-39 51-39</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s33">
+  <english>After that , he sat down and wrote out a prescription , and folded it up and gave it me , and I put it in my pocket and went out .</english>
+  <czech>Potom se posadil a napsal recept , složil ho a podal mi ho . Strčil jsem recept do kapsy a odešel jsem .</czech>
+  <sure>1-1 11-6 12-7 14-8 15-9 16-8 17-10 18-11 19-13 2-1 20-12 24-15 26-18 28-19 29-20 30-21 31-21 32-23 5-2 5-3 6-3 7-4 8-5 9-5</sure>
+  <possible>10-6 13-7 21-14 22-14 23-15 24-16 3-1 30-22 4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s34">
+  <english>I did not open it .</english>
+  <czech>Na recept jsem se nepodíval .</czech>
+  <sure>6-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s35">
+  <english>I took it to the nearest chemist 's , and handed it in .</english>
+  <czech>Odnesl jsem ho do nejbližší lékárny a podal lékárníkovi .</czech>
+  <sure>10-7 11-8 13-8 14-10 2-1 3-3 4-4 6-5 7-6 8-6</sure>
+  <possible>1-1 12-8 2-2 5-5 5-6 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s36">
+  <english>The man read it , and then handed it back .</english>
+  <czech>Ten ho přečetl a vrátil mi ho .</czech>
+  <sure>1-1 10-5 11-8 3-3 4-2 6-4 8-5 9-7</sure>
+  <possible>2-1 5-4 7-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s37">
+  <english>He said he did n't keep it .</english>
+  <czech>Řekl , že to nemá .</czech>
+  <sure>2-1 4-5 5-5 6-5 7-4 8-6</sure>
+  <possible>1-1 3-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s38">
+  <english>I said : " You are a chemist ? "</english>
+  <czech>Zeptal jsem se : " Jste snad lékárník ? "</czech>
+  <sure>10-10 2-1 2-3 3-4 4-5 6-6 8-8 9-9</sure>
+  <possible>1-1 2-2 5-6 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s39">
+  <english>He said : " I am a chemist .</english>
+  <czech>Odpověděl : " Jsem lékárník .</czech>
+  <sure>2-1 3-2 4-3 6-4 8-5 9-6</sure>
+  <possible>1-1 5-4 7-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s40">
+  <english>If I was a co - operative stores and family hotel combined , I might be able to oblige you .</english>
+  <czech>Kdybych byl potravinářské družstvo a rodinný hotel v jednom , mohl bych vám posloužit .</czech>
+  <sure>1-1 10-6 11-7 12-8 12-9 13-10 15-11 19-14 20-13 21-15 3-2 5-4 7-4 8-4 9-5</sure>
+  <possible>14-11 14-12 15-12 16-11 16-12 17-11 17-12 18-14 2-1 2-2 4-3 4-4 5-3 6-3 6-4 7-3 8-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s41">
+  <english>Being only a chemist hampers me . "</english>
+  <czech>Poněvadž jsem jen obyčejný lékárník , nemohu vám vyhovět . "</czech>
+  <sure>1-2 2-3 4-5 7-10 8-11</sure>
+  <possible>1-1 3-5 5-7 5-8 5-9 6-7 6-8 6-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s42">
+  <english>I read the prescription .</english>
+  <czech>Přečetl jsem si recept .</czech>
+  <sure>2-1 4-4 5-5</sure>
+  <possible>1-1 2-2 2-3 3-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s43">
+  <english>It ran : " 1 lb . beefsteak , with 1 pt . bitter beer every 6 hours .</english>
+  <czech>Stálo tam : " 1 libra bifteku s 1 pintou piva - každých šest hodin .</czech>
+  <sure>10-8 11-9 12-10 15-11 16-13 17-14 18-15 19-16 3-3 4-4 5-5 6-6 8-7</sure>
+  <possible>1-1 1-2 13-10 14-11 2-1 2-2 7-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s44">
+  <english>1 ten - mile walk every morning .</english>
+  <czech>1 desetimílová procházka každé ráno .</czech>
+  <sure>1-1 2-2 3-2 4-2 5-3 6-4 7-5 8-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s45">
+  <english>1 bed at 11 sharp every night .</english>
+  <czech>1 postel přesně v 11 hodin každou noc .</czech>
+  <sure>1-1 2-2 3-4 4-5 5-3 6-7 7-8 8-9</sure>
+  <possible>4-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s46">
+  <english>And do n't stuff up your head with things you do n't understand . "</english>
+  <czech>A nepřecpávej si hlavu věcmi , kterým nerozumíš . "</czech>
+  <sure>1-1 11-8 12-8 13-8 14-9 15-10 2-2 3-2 4-2 5-2 7-4 9-5</sure>
+  <possible>10-8 4-3 6-3 6-4 8-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s47">
+  <english>I followed the directions , with the happy result - speaking for myself - that my life was preserved , and is still going on .</english>
+  <czech>Řídil jsem se tím předpisem , což mělo ten šťastný následek - mluvím o sobě - že můj život byl zachráněn a pořád ještě neskončil .</czech>
+  <sure>10-12 11-13 12-14 13-15 14-16 15-17 16-18 17-19 18-20 19-21 2-1 2-3 21-22 22-25 23-23 24-25 25-25 26-26 3-4 4-5 5-6 7-9 8-10 9-11</sure>
+  <possible>1-1 2-2 20-22 23-24 24-24 5-7 6-11 6-7 6-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s48">
+  <english>In the present instance , going back to the liver - pill circular , I had the symptoms , beyond all mistake , the chief among them being " a general disinclination to work of any kind . "</english>
+  <czech>A - abych se vrátil k inzerátu jaterních pilulek - teď jsem měl beze vší pochyby příznaky , z nichž hlavní byl " povšechná nechuť k práci jakéhokoliv druhu " .</czech>
+  <sure>10-8 12-9 13-7 14-10 16-13 18-17 20-14 21-15 22-16 25-21 26-19 27-20 28-22 29-23 31-24 32-25 33-26 34-27 36-28 37-29 6-5 7-5 8-6</sure>
+  <possible>1-11 15-13 16-12 17-17 2-11 20-15 20-16 21-14 21-16 22-14 22-15 23-18 24-21 3-11 30-25 35-28 35-29 38-30 38-31 39-30 39-31 4-11 5-2 6-3 6-4 7-3 7-4 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s49">
+  <english>What I suffer in that way no tongue can tell .</english>
+  <czech>Co v tomto ohledu trpím , nedá se vypovědět .</czech>
+  <sure>1-1 11-10 3-5 4-2 5-3 6-4</sure>
+  <possible>10-7 10-8 10-9 2-5 7-7 7-8 7-9 8-7 8-8 8-9 9-7 9-8 9-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="books_three_men_in_boat-s50">
+  <english>From my earliest infancy I have been a martyr to it .</english>
+  <czech>Od nejranějšího dětství jsem byl v tomto ohledu pravý mučedník .</czech>
+  <sure>1-1 12-11 3-2 4-3 7-5 9-10</sure>
+  <possible>10-6 10-7 10-8 11-6 11-7 11-8 2-3 5-5 6-5 7-4 8-10</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

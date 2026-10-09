@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2222-s1">
+  <english>What happened Friday shows that financial markets are not yet sufficiently coordinated to handle another meltdown in prices .</english>
+  <czech>Páteční událost dokazuje , že finanční trhy stále ještě nejsou dostatečně koordinovány na to , aby se mohly vypořádat s dalším poklesem cen .</czech>
+  <sure>10-9 11-11 12-12 13-16 14-19 15-21 16-22 18-23 19-24 2-2 3-1 4-3 5-5 6-6 7-7 8-10 9-10</sure>
+  <possible>1-2 10-8 14-17 14-18 16-20 17-23 5-4</possible>
+</s>
+<s id="wsj_2222-s2">
+  <english>No fiddling with systems and procedures will ever prevent markets from suffering a panic wave of selling .</english>
+  <czech>Žádná manipulace se systémy a postupy nikdy nezabrání tomu , aby na trzích docházelo k vlnám panického prodeje .</czech>
+  <sure>1-1 10-13 11-9 12-14 14-17 15-16 17-18 18-19 2-2 3-3 4-4 5-5 6-6 8-7</sure>
+  <possible>10-12 11-10 11-11 11-14 11-15 11-8 12-10 12-11 12-15 12-8 12-9 13-16 15-15 16-18 7-8 9-10 9-11 9-14 9-15 9-8 9-9</possible>
+</s>
+<s id="wsj_2222-s3">
+  <english>But markets can operate with greater or lesser efficiency .</english>
+  <czech>Trhy však mohou fungovat více či méně efektivně .</czech>
+  <sure>1-2 10-9 2-1 3-3 4-4 6-5 7-6 8-7 9-8</sure>
+  <possible>5-8</possible>
+</s>
+<s id="wsj_2222-s4">
+  <english>After the 1987 plunge , markets agreed that it would be wise to halt trading whenever panic conditions arose .</english>
+  <czech>Po prudkém poklesu v roce 1987 se představitelé trhů shodli , že by bylo rozumné obchodování zastavit , kdykoli nastane panika .</czech>
+  <sure>1-1 10-13 11-14 12-15 14-17 15-16 16-19 17-21 19-20 20-22 3-6 4-3 6-9 7-10 8-12</sure>
+  <possible>13-17 17-20 18-20 18-21 19-21 2-3 2-6 3-4 4-2 8-11 9-14</possible>
+</s>
+<s id="wsj_2222-s5">
+  <english>The New York Stock Exchange adopted two specific circuit breakers : If the Dow Jones index falls 250 points in a day , the exchange will halt trading for one hour ; if the decline hits 400 points , the exchange will close for an additional two hours .</english>
+  <czech>Newyorská burza přijala dvě zvláštní pojistná opatření : pokud v jednom dni klesne Dow Jonesův index o 250 bodů , burza na hodinu pozastaví obchodování , pokud pokles dosáhne 400 bodů , uzavře se burza na další dvě hodiny .</czech>
+  <sure>10-7 11-8 12-9 14-14 15-15 16-16 17-13 18-18 19-19 2-1 20-10 21-11 22-12 23-20 25-21 27-24 28-25 29-22 3-1 31-23 32-26 33-27 35-28 36-29 37-30 38-31 39-32 4-2 41-35 43-33 44-36 46-37 47-38 48-39 49-40 5-2 6-3 7-4 8-5 9-6</sure>
+  <possible>1-2 13-16 19-17 24-21 26-24 30-23 34-28 40-35 42-33 43-34 45-39</possible>
+</s>
+<s id="wsj_2222-s6">
+  <english>The rationale is that an interruption of trading will allow investors to reconsider their strategies , calm sellers and lead buyers to enter the market at indicated new price levels .</english>
+  <czech>Princip tohoto opatření spočívá v tom , že přerušení obchodování umožní investorům přehodnotit své strategie , zklidní prodávající a umožní kupujícím vstoupit na trh s ohlášenými novými cenami .</czech>
+  <sure>10-11 11-12 13-13 14-14 15-15 16-16 17-17 18-18 19-19 2-1 20-20 21-21 23-22 25-24 26-25 27-26 28-27 29-28 3-4 30-28 31-29 4-8 6-9 8-10</sure>
+  <possible>1-1 1-4 1-5 1-6 1-7 1-8 12-13 2-4 2-5 2-6 2-7 2-8 22-22 24-24 25-23 3-1 3-5 3-6 3-7 3-8 4-1 4-4 4-5 4-6 4-7 5-9 7-10 9-11</possible>
+</s>
+<s id="wsj_2222-s7">
+  <english>It is impossible to know whether that theory is realistic .</english>
+  <czech>Nikdo nemůže vědět , zda je tato teorie realistická .</czech>
+  <sure>10-9 11-10 3-2 5-3 6-5 7-7 8-8 9-6</sure>
+  <possible>1-1 1-2 1-3 2-1 2-2 2-3 3-1 3-3 4-1 4-2 4-3 5-1 5-2 6-4</possible>
+</s>
+<s id="wsj_2222-s8">
+  <english>A temporary cessation of trading may indeed discourage a selling panic from feeding on itself .</english>
+  <czech>Dočasné pozastavení obchodování může skutečně zabránit tomu , aby se prodejní panika dále šířila .</czech>
+  <sure>10-11 11-12 13-14 16-15 2-1 3-2 5-3 6-4 7-5 8-6</sure>
+  <possible>1-2 12-6 12-9 13-10 13-13 14-10 14-13 14-14 15-10 15-13 15-14 4-3 9-12</possible>
+</s>
+<s id="wsj_2222-s9">
+  <english>But there is also the possibility that shutting down markets will intensify fears and cause an even more abrupt slide in prices .</english>
+  <czech>Existuje však i možnost , že uzavření trhů obavy prohloubí a způsobí ještě větší pokles cen .</czech>
+  <sure>1-2 10-8 12-10 13-9 14-11 15-12 17-13 2-1 20-15 22-16 23-17 3-1 4-3 6-4 7-6 8-7 9-7</sure>
+  <possible>11-10 16-15 18-13 18-14 19-14 21-16 5-4 7-5</possible>
+</s>
+<s id="wsj_2222-s10">
+  <english>What happened Friday was the worst of all worlds .</english>
+  <czech>Páteční událost byla nejhorší z nejhorších .</czech>
+  <sure>10-7 3-1 4-3 6-4 7-5</sure>
+  <possible>1-1 1-2 2-1 2-2 3-2 5-4 5-5 5-6 6-5 6-6 7-4 7-6 8-4 8-5 8-6 9-4 9-5 9-6</possible>
+</s>
+<s id="wsj_2222-s11">
+  <english>The futures exchanges followed their own pre-set circuit breakers and shut down at about 3 p . m . for 30 minutes , after the Standard & Poor 's 500 stock index had fallen 12 points , or about 100 points on the Dow Jones index .</english>
+  <czech>Termínová burza se řídila vlastními předem určenými pojistnými opatřeními a přibližně v 15 hodin se na 30 minut uzavřela , poté , co index Standard & Poor ' s 500 klesl o 12 bodů , což odpovídá cca 100 bodům v Dow Jonesově indexu .</czech>
+  <sure>10-10 11-19 12-19 13-12 14-11 15-13 2-1 20-16 21-17 22-18 26-25 27-26 28-27 29-28 29-29 3-2 30-30 32-24 34-31 35-33 36-34 37-35 39-38 4-4 40-39 41-40 42-41 44-42 45-43 46-44 47-45 6-5 7-6 7-7 8-8 9-9</sure>
+  <possible>1-2 11-15 16-13 16-14 18-13 18-14 23-20 23-22 24-21 24-23 25-24 31-24 33-31 36-32 38-36 38-37 4-3 43-44 8-9 9-8</possible>
+</s>
+<s id="wsj_2222-s12">
+  <english>Options markets stopped trading in many securities .</english>
+  <czech>Opční trhy přestaly obchodovat s mnoha cennými papíry .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 7-8 8-9</sure>
+  <possible></possible>
+</s>
+<s id="wsj_2222-s13">
+  <english>The New York Stock Exchange , under its own rules , remained open .</english>
+  <czech>Newyorská burza zůstala podle vlastních směrnic otevřena .</czech>
+  <sure>10-6 12-3 13-7 14-8 2-1 3-1 4-2 5-2 7-4 9-5</sure>
+  <possible>1-2 8-5</possible>
+</s>
+<s id="wsj_2222-s14">
+  <english>With nowhere else to go , sellers , and particularly program traders , focused all their selling on the New York Stock Exchange .</english>
+  <czech>Vzhledem k tomu , že se prodejci , zejména elektroničtí obchodníci , neměli kam obrátit , soustředili všechny své prodeje na Newyorskou burzu .</czech>
+  <sure>10-9 11-10 12-11 14-17 15-18 16-19 17-20 18-21 20-22 21-22 22-23 23-23 24-24 7-7 8-8</sure>
+  <possible>1-1 1-13 1-14 1-15 1-2 1-3 1-4 1-5 1-6 11-11 12-10 13-12 13-16 19-23 2-1 2-13 2-14 2-15 2-2 2-3 2-4 2-5 2-6 3-1 3-13 3-14 3-15 3-2 3-3 3-4 3-5 3-6 4-1 4-13 4-14 4-15 4-2 4-3 4-4 4-5 4-6 5-1 5-13 5-14 5-15 5-2 5-3 5-4 5-5 5-6</possible>
+</s>
+<s id="wsj_2222-s15">
+  <english>As liquidity on that market weakened , prices fell sharply .</english>
+  <czech>Když se likvidita snížila , ceny prudce klesly .</czech>
+  <sure>1-1 10-7 11-9 2-3 6-2 6-4 7-5 8-6 9-8</sure>
+  <possible></possible>
+</s>
+<s id="wsj_2222-s16">
+  <english>Had the futures and options markets been open , additional liquidity would have been provided and the decline , most probably , would have been less intense .</english>
+  <czech>Kdyby byly termínové a opční trhy otevřené , byla by k dispozici další likvidita a pokles by byl pravděpodobně méně prudký .</czech>
+  <sure>10-13 11-14 12-10 14-9 15-11 15-12 16-15 18-16 20-19 21-19 23-17 25-18 26-20 27-21 28-22 3-3 4-4 5-5 6-6 8-2 8-7 9-8</sure>
+  <possible>1-1 1-2 1-7 13-9 17-16 2-6 24-18 7-1 7-2 7-7 8-1</possible>
+</s>
+<s id="wsj_2222-s17">
+  <english>At 3 : 30 , after intense telephone negotiations between the trading markets and Washington , the futures exchanges reopened .</english>
+  <czech>Termínová burza se znovu otevřela v 15 : 30 po intenzivním telefonickém jednání mezi obchodujícími trhy a Washingtonem .</czech>
+  <sure>1-6 10-14 12-15 13-16 14-17 15-18 18-1 19-2 2-7 20-3 20-4 20-5 21-19 3-8 4-9 6-10 7-11 8-12 9-13</sure>
+  <possible>11-16 17-2</possible>
+</s>
+<s id="wsj_2222-s18">
+  <english>Futures trading , however , was halted altogether at 3 : 45 , after the futures markets had dropped an additional 30 points , which is the daily limit for price declines .</english>
+  <czech>Avšak termínové obchody byly v 15 : 45 zastaveny úplně , neboť termínové trhy klesly o dalších 30 bodů , což představuje denní limit pro pokles cen .</czech>
+  <sure>1-2 10-6 11-7 12-8 13-11 16-13 17-14 19-15 2-3 21-17 22-18 23-19 24-20 25-21 26-22 28-23 29-24 30-25 31-27 32-26 33-28 4-1 6-4 7-9 8-10 9-5</sure>
+  <possible>14-12 15-14 18-15 20-16 20-19 23-16 27-24</possible>
+</s>
+<s id="wsj_2222-s19">
+  <english>At this point , the options markets also shut down and once more left all sales to be handled by the New York Stock Exchange .</english>
+  <czech>V tomto okamžiku se uzavřely i opční trhy a opět ponechaly všechny prodeje k vyřízení na Newyorské burze .</czech>
+  <sure>1-1 10-5 11-9 12-10 13-10 14-11 15-12 16-13 17-14 19-15 2-2 20-16 22-17 23-17 24-18 25-18 26-19 3-3 6-7 7-8 8-6 9-5</sure>
+  <possible>18-15 21-18 5-8 9-4</possible>
+</s>
+<s id="wsj_2222-s20">
+  <english>It is time to recognize that the New York Stock Exchange , the futures markets and the options markets , though physically separate , have actually become so closely intertwined as to constitute one market effectively .</english>
+  <czech>Je načase si přiznat , že i když jsou Newyorská burza a termínové a opční trhy fyzicky oddělené , jsou ve skutečnosti tak těsně provázané , že vlastně tvoří jeden trh .</czech>
+  <sure>10-11 11-11 14-13 16-14 18-15 19-16 2-1 21-7 21-8 22-17 23-18 24-19 25-20 26-21 26-22 27-20 28-23 29-24 3-2 30-25 31-27 33-29 34-30 35-31 36-28 37-32 5-3 5-4 6-6 8-10 9-10</sure>
+  <possible>1-1 1-2 12-12 13-16 15-16 17-16 2-2 23-9 3-1 32-27 32-29 4-2 4-4 6-5 7-11</possible>
+</s>
+<s id="wsj_2222-s21">
+  <english>Traders can vary their strategies and execute their orders in any one of them .</english>
+  <czech>Obchodníci mohou měnit strategie a vykonávat příkazy na kterémkoli z nich .</czech>
+  <sure>1-1 10-8 11-9 12-9 13-10 14-11 15-12 2-2 3-3 5-4 6-5 7-6 9-7</sure>
+  <possible></possible>
+</s>
+<s id="wsj_2222-s22">
+  <english>It therefore makes no sense for each market to adopt different circuit breakers .</english>
+  <czech>Nemá tedy smysl , aby každý trh přijímal jiná pojistná opatření .</czech>
+  <sure>10-8 11-9 12-10 13-11 14-12 2-2 3-1 4-1 5-3 6-5 7-6 8-7</sure>
+  <possible>1-1 1-3 12-11 13-10 3-3 4-3 5-1 9-8</possible>
+</s>
+<s id="wsj_2222-s23">
+  <english>To achieve maximum liquidity and minimize price volatility , either all markets should be open to trading or none .</english>
+  <czech>Pro dosažení maximální likvidity a minimální nestálosti cen by měly být pro obchodování otevřeny buď všechny trhy , nebo žádný .</czech>
+  <sure>1-1 10-15 11-16 12-17 13-10 13-9 14-11 15-14 17-13 18-19 19-20 2-2 20-21 3-3 4-4 5-5 6-6 7-8 8-7</sure>
+  <possible>16-12 16-13 17-12</possible>
+</s>
+<s id="wsj_2222-s24">
+  <english>Synchronized circuit breakers would not have halted the slide in prices on Friday , but they probably would have made for smoother , less volatile executions .</english>
+  <czech>Synchronizovaná pojistná opatření by páteční propad cen nezastavila , ale vedla by pravděpodobně ke klidnějším , vyrovnanějším operacím .</czech>
+  <sure>1-1 11-7 13-5 14-9 15-10 17-13 18-12 2-2 20-11 21-14 22-15 23-16 24-17 25-17 26-18 27-19 3-3 4-4 5-8 7-8 9-6</sure>
+  <possible>10-7 12-5 16-11 19-11 2-3 3-2 6-8 8-6</possible>
+</s>
+<s id="wsj_2222-s25">
+  <english>It 's time for the exchanges and the Securities and Exchange Commission to agree on joint conditions for halting trading or staying open .</english>
+  <czech>Je načase , aby se burzy a Komise pro cenné papíry dohodly na společných podmínkách pro uzavření nebo pokračování v obchodování .</czech>
+  <sure>12-8 14-12 14-5 15-13 16-14 17-15 18-16 19-17 2-1 20-21 21-18 22-19 23-19 24-22 3-2 4-4 6-6 7-7 9-10 9-11</sure>
+  <possible>1-1 1-2 10-10 10-11 10-8 10-9 11-10 11-11 11-8 11-9 12-10 12-11 12-9 13-12 2-2 20-20 3-1 5-6 8-8 9-8 9-9</possible>
+</s>
+<s id="wsj_2222-s26">
+  <english>Let 's not have one market shut down for 30 minutes when the Dow declines 100 points and another shut down for an hour after a 250-point decline .</english>
+  <czech>Aby nebyl jeden trh uzavřen na 30 minut při poklesu Dow Jonesova indexu o 100 bodů a druhý na hodinu po poklesu o 250 bodů .</czech>
+  <sure>1-1 10-7 11-8 12-9 14-11 15-10 16-15 17-16 18-17 19-18 2-1 22-19 24-20 25-21 27-24 27-25 28-22 29-26 3-2 4-2 5-3 6-4 7-5 8-5 9-6</sure>
+  <possible>1-2 13-11 13-13 17-14 2-2 20-5 21-5 23-20 26-22 27-23 3-1 4-1</possible>
+</s>
+<s id="wsj_2222-s27">
+  <english>The need for hurried last-minute telephone negotiations among market officials will disappear once rules are in place that synchronize circuit breakers in all markets .</english>
+  <czech>Jakmile budou k dispozici pravidla pro sladění pojistných opatření pro všechny trhy , nebude potřeba , aby správci trhů spěšně a na poslední chvíli telefonicky vyjednávali .</czech>
+  <sure>10-18 12-14 13-1 14-5 15-2 16-3 17-4 18-6 19-7 2-15 20-8 21-9 22-10 23-11 24-12 25-27 4-20 5-22 5-23 5-24 6-25 7-26 9-19</sure>
+  <possible>1-14 1-15 11-14 11-15 12-15 2-14 20-9 21-8 3-26 8-18</possible>
+</s>
+<s id="wsj_2222-s28">
+  <english>The new circuit breakers , if they are to be applied at all , will require that futures and options trading continue as long as the New York Stock Exchange remains open .</english>
+  <czech>Mají - li se nová pojistná opatření vůbec uplatňovat , bude nutné , aby termínové a opční obchodování pokračovalo , dokud bude otevřená Newyorská burza .</czech>
+  <sure>11-9 12-8 13-8 15-11 16-12 17-14 18-15 19-16 2-5 20-17 21-18 22-19 23-21 24-21 25-21 27-24 28-24 29-25 3-6 30-25 31-22 32-23 33-26 4-7 6-3 8-1</sure>
+  <possible>1-7 10-1 10-2 10-3 10-4 10-9 11-4 14-10 17-13 26-25 3-7 4-6 6-1 6-2 6-4 7-1 7-2 7-3 7-4 8-2 8-3 8-4 9-1 9-2 9-3 9-4 9-9</possible>
+</s>
+<s id="wsj_2222-s29">
+  <english>The rules should be established by agreement of the officials of all affected exchanges acting under the oversight and with the approval of the government regulatory agencies .</english>
+  <czech>Pravidla by měla být stanovena po dohodě mezi všemi příslušnými burzovními správci pod dohledem a se souhlasem vládních regulačních úřadů .</czech>
+  <sure>10-12 12-9 13-10 14-11 16-13 18-14 19-15 2-1 20-16 22-17 25-18 26-19 27-20 28-21 3-2 3-3 4-4 5-5 6-6 7-7 8-8</sure>
+  <possible>1-1 11-11 17-14 21-17 23-20 24-20 9-12</possible>
+</s>
+<s id="wsj_2222-s30">
+  <english>Should the SEC and the Commodities Futures Trading Commission ( which , with the SEC , regulates the Chicago stock-index markets ) be unable to agree , the issue may have to be resolved by decision of the Treasury secretary .</english>
+  <czech>Pokud se Komise pro cenné papíry a Komise pro komoditní a termínové obchody ( která spolu s Komisí pro cenné papíry řídí chicagské burzovní trhy ) nedohodnou , problém bude možná muset vyřešit rozhodnutí ministra financí .</czech>
+  <sure>1-1 10-14 11-15 13-17 15-18 15-19 15-20 15-21 17-22 19-23 20-24 21-25 22-26 24-27 25-27 26-27 27-28 29-29 3-3 3-4 3-5 3-6 30-31 31-32 34-33 36-34 39-36 4-7 40-35 41-37 6-10 7-12 8-13 9-8</sure>
+  <possible>1-2 1-27 14-18 18-25 2-3 23-1 23-2 23-27 24-1 24-2 25-1 25-2 26-1 26-2 28-29 32-30 32-32 33-30 33-33 35-34 37-35 38-35 39-35 40-36 5-8 6-11 6-12 6-13 6-8 6-9 7-10 7-11 7-13 7-8 7-9 8-10 8-11 8-12 8-8 8-9 9-10 9-11 9-12 9-13 9-9</possible>
+</s>
+<s id="wsj_2222-s31">
+  <english>In many ways , our financial markets are better prepared today to handle a decline than they were two years ago .</english>
+  <czech>Naše finanční trhy jsou dnes v mnoha směrech připraveny zvládat pokles lépe než před dvěma lety .</czech>
+  <sure>1-6 10-9 11-5 13-10 15-11 16-13 19-15 2-7 20-16 21-14 22-17 3-8 5-1 6-2 7-3 8-4 9-12</sure>
+  <possible>12-10 14-11</possible>
+</s>
+<s id="wsj_2222-s32">
+  <english>The New York Stock Exchange now has the capacity to handle a volume of nearly a billion shares a day .</english>
+  <czech>Na Newyorské burze se v současné době může obchodovat téměř smiliardou akcií denně .</czech>
+  <sure>11-9 15-10 17-11 18-12 19-13 2-2 20-13 21-14 3-2 4-3 5-3 6-5 6-6 6-7 7-8 9-8</sure>
+  <possible>1-1 1-3 1-4 1-8 1-9 10-1 10-3 10-4 10-8 10-9 11-1 11-3 11-4 11-8 14-11 16-11 4-1 4-4 4-8 4-9 5-1 5-4 5-8 5-9 7-1 7-3 7-4 7-9 8-1 8-3 8-4 8-8 8-9 9-1 9-3 9-4 9-9</possible>
+</s>
+<s id="wsj_2222-s33">
+  <english>Telephone service has been improved for customers trying to reach their brokers , and specialists -- who I believe should stay , despite the urgings of some post-crash critics -- have larger capital positions .</english>
+  <czech>Zlepšila se telefonní služba pro zákazníky , kteří kontaktují své makléře , a specializovaní makléři - ti by podle mého názoru měli zůstat , a to i přes naléhání některých kritiků , která se objevila po posledním krachu - mají lepší kapitálové pozice .</czech>
+  <sure>1-3 10-9 11-10 12-11 13-12 14-13 15-14 15-15 16-16 2-4 20-18 20-22 21-23 22-24 23-28 25-29 27-30 28-36 28-37 28-38 29-31 30-39 31-40 32-41 33-42 34-43 35-44 5-1 6-5 7-6</sure>
+  <possible>17-17 18-19 18-20 18-21 19-19 19-20 19-21 24-29 26-31 3-1 4-1 5-2 9-9</possible>
+</s>
+<s id="wsj_2222-s34">
+  <english>( Of course , specialists ' actions alone can never prevent a major crack in stock prices .</english>
+  <czech>( Samotné zásahy specializovaných makléřů samozřejmě nemohou zabránit většímu propadu cen na burze .</czech>
+  <sure>1-1 10-7 11-8 13-9 14-10 16-13 17-11 18-14 2-6 3-6 5-4 5-5 7-3 8-2 9-7</sure>
+  <possible>12-10 15-11 15-12 16-12</possible>
+</s>
+<s id="wsj_2222-s35">
+  <english>Witness the fact that trading in some stocks closed early Friday and opened late Monday because of an excess of sell orders . )</english>
+  <czech>Svědčí o tom skutečnost , že obchodování na některých burzách bylo kvůli přílišnému množství příkazů k prodeji uzavřeno v pátek ráno a otevřeno později v pondělí . )</czech>
+  <sure>1-1 10-21 11-20 12-22 13-23 14-24 15-26 16-12 19-13 19-14 21-17 22-15 23-27 24-28 3-4 4-6 5-7 6-8 7-9 8-10 9-18</sure>
+  <possible>1-2 1-3 1-4 11-19 15-25 17-12 17-14 18-14 2-1 2-2 2-3 2-4 20-15 21-16 3-1 3-2 3-3 4-5 9-11</possible>
+</s>
+<s id="wsj_2222-s36">
+  <english>But the task of improving market performance remains unfinished .</english>
+  <czech>Úkol zlepšit fungování trhu však zůstává nedokončen .</czech>
+  <sure>1-5 10-8 3-1 5-2 6-4 7-3 8-6 9-7</sure>
+  <possible>2-1 4-2</possible>
+</s>
+<s id="wsj_2222-s37">
+  <english>Mr . Freund , former chief economist of the New York Stock Exchange , is a professor of economics at Pace University 's business school in New York .</english>
+  <czech>William Freund , bývalý vedoucí ekonom na Newyorské burze , je profesorem ekonomie na obchodní fakultě Paceovy univerzity v New Yorku .</czech>
+  <sure>10-8 11-8 12-9 13-9 14-10 15-11 17-12 19-13 20-14 21-17 22-18 24-15 25-16 26-19 27-20 28-21 29-22 3-2 4-3 5-4 6-5 7-6 8-7</sure>
+  <possible>16-12 18-13 23-18 24-16 25-15 9-9</possible>
+</s>
+</sentences>

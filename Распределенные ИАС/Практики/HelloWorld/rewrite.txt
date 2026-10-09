@@ -1,0 +1,6 @@
+﻿# удаление концевого слеша
+RewriteRule (.*)/$ $1 [R=301]
+# переадресация  home/index на /
+RewriteRule "Home/Index$" "/" [NC,R=301]
+# подмена адреса типа Home/Products/2/phones на Home/Products?id=2&name=phones
+RewriteRule Home/Products/([0-9]+)/([0-9a-z-]+) Home/Products?id=$1&name=$2 [NC]

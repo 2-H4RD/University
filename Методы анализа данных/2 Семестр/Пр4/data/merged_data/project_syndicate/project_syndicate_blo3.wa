@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_blo3-s1">
+  <english>Japan Is n't Doomed</english>
+  <czech>Japonsko ještě není odsouzeno k zániku</czech>
+  <sure>1-1 2-3 3-3 4-4 4-5 4-6</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_blo3-s2">
+  <english>Magnus Blomstrom</english>
+  <czech>Magnus Blomstrom</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_blo3-s3">
+  <english>TOKYO / STOCKHOLM : Pessimism about Japan is easy and pervasive nowadays .</english>
+  <czech>TOKIO / STOCKHOLM : Pesimismus ohledně japonských hospodářských vyhlídek je snadno pochopitelný a dnes již zasahuje všechny možné stránky problému .</czech>
+  <sure>1-1 10-13 12-14 13-21 2-2 3-3 4-4 5-5 6-6 7-7 8-10 9-11</sure>
+  <possible>11-16 11-17 11-18 11-19</possible>
+</s>
+<s id="project_syndicate_blo3-s4">
+  <english>Its financial crisis drags on , growth is nil , unemployment rises , and , recently , deflation appeared .</english>
+  <czech>Japonské finanční potíže se protahují , hospodářský růst je nulový , nezaměstnanost stoupá a jen nedávno se ještě přidala deflace .</czech>
+  <sure>10-11 11-12 12-13 14-14 16-16 18-20 19-19 2-2 20-21 3-3 4-4 4-5 5-5 6-6 7-8 8-9 9-10</sure>
+  <possible>13-14 15-14 15-16 17-16 19-17</possible>
+</s>
+<s id="project_syndicate_blo3-s5">
+  <english>Is there any way out ?</english>
+  <czech>Je z toho všeho nějaká cesta ven ?</czech>
+  <sure>1-1 3-5 4-6 5-7 6-8</sure>
+  <possible>2-1 2-2 2-3</possible>
+</s>
+<s id="project_syndicate_blo3-s6">
+  <english>For a Swede , Japan 's economic problems are a form of déja vu .</english>
+  <czech>Pro Švédy jsou japonské hospodářské problémy jakýmsi déja vu .</czech>
+  <sure>1-1 10-7 13-8 14-9 15-10 3-2 5-4 7-5 8-6 9-3</sure>
+  <possible>11-7 12-7 2-2 6-4</possible>
+</s>
+<s id="project_syndicate_blo3-s7">
+  <english>In 1992 , Swedes accepted that their " Swedish Model " did n't work .</english>
+  <czech>V roce 1992 si konečně přiznali , že jejich " švédský model " prostě nefunguje .</czech>
+  <sure>1-1 10-12 11-13 12-15 13-15 14-15 15-16 2-3 5-6 6-8 7-9 8-10 9-11</sure>
+  <possible>2-2 5-4 6-7</possible>
+</s>
+<s id="project_syndicate_blo3-s8">
+  <english>This was hard to understand , because everything had gone so well in Sweden for so long .</english>
+  <czech>Přijmout tento fakt a porozumět bylo velice obtížné , protože ve Švédsku vše fungovalo tak dobře a tak dlouhou dobu .</czech>
+  <sure>10-14 11-15 12-16 13-11 14-12 16-18 17-19 18-21 2-6 3-8 5-5 6-9 7-10 8-13</sure>
+  <possible>1-2 15-18 15-19 15-20 16-19 16-20 17-18 17-20 4-5 9-14</possible>
+</s>
+<s id="project_syndicate_blo3-s9">
+  <english>With an economy falling apart and a bankrupt financial sector , radical reforms were needed .</english>
+  <czech>Ovšem když se začalo hospodářství rozpadat a finanční sektor bankrotovat , bylo zapotřebí radikálních reforem .</czech>
+  <sure>10-9 11-11 12-14 13-15 14-12 15-13 16-16 3-5 4-6 5-6 6-7 8-10 9-8</sure>
+  <possible>1-2 2-5 4-3 7-9</possible>
+</s>
+<s id="project_syndicate_blo3-s10">
+  <english>Change began in banking .</english>
+  <czech>Změny byly zahájeny v bankovnictví .</czech>
+  <sure>1-1 2-3 3-4 4-5 5-6</sure>
+  <possible>2-2</possible>
+</s>
+<s id="project_syndicate_blo3-s11">
+  <english>Sweden 's experience suggests that Japan 's most urgent problem is its financial crisis .</english>
+  <czech>Švédská zkušenost Japonsku připomíná , že jeho nejnaléhavějším problémem je právě domácí finanční krize .</czech>
+  <sure>1-1 10-9 11-10 13-13 14-14 15-15 3-2 4-4 5-6 6-3 8-8 9-8</sure>
+  <possible>12-7 2-1 5-5 7-3</possible>
+</s>
+<s id="project_syndicate_blo3-s12">
+  <english>As in Sweden 8 years ago , there is too much bad debt and too many banks .</english>
+  <czech>Tak jako ve Švédsku před 8 lety , i zde existuje příliš mnoho špatných úvěrů a příliš mnoho bank .</czech>
+  <sure>1-2 10-12 11-13 12-14 13-15 14-16 15-17 16-18 17-19 18-20 2-3 3-4 4-6 5-7 6-5 7-8 8-10 9-11</sure>
+  <possible>1-1</possible>
+</s>
+<s id="project_syndicate_blo3-s13">
+  <english>Insolvency in the financial sector spills into other sectors in the form of a credit crunch , because Japanese banks are unwilling to lend money .</english>
+  <czech>Insolventnost ve finančním sektoru se postupně přelévá do dalších , a to ve formě úvěrových tlaků , protože japonské bankovní domy nejsou ochotny půjčovat další peníze .</czech>
+  <sure>1-1 10-13 12-14 15-15 16-16 17-17 18-18 19-19 2-2 20-20 20-21 24-24 25-26 26-27 4-3 5-4 6-7 7-8 8-9</sure>
+  <possible>11-14 13-16 14-16 21-22 21-23 22-22 22-23 23-24 3-4 6-5</possible>
+</s>
+<s id="project_syndicate_blo3-s14">
+  <english>This type of financial crisis is not unique to Japan .</english>
+  <czech>Tato forma finanční krize není žádným japonským unikem .</czech>
+  <sure>1-1 10-7 11-9 2-2 4-3 5-4 6-5 7-5 8-8</sure>
+  <possible>3-4 9-7</possible>
+</s>
+<s id="project_syndicate_blo3-s15">
+  <english>Countries where land and stock prices rose and fell dramatically also experienced similar crisis .</english>
+  <czech>Země , kde se ceny půdy a akcií dramaticky rozhýbaly nahoru a dolu , si prožily podobnou kritickou zkušenost .</czech>
+  <sure>1-1 10-9 12-16 13-17 15-20 2-3 3-6 4-7 5-8 6-5 7-11 8-12</sure>
+  <possible>11-14 12-15 14-18 14-19 2-2 7-10 7-4 9-13</possible>
+</s>
+<s id="project_syndicate_blo3-s16">
+  <english>America in the 1930 's and 1980 's had banking crisis of this sort which had real economic effects .</english>
+  <czech>Amerika třicátých a osmdesátých let prošla bankovními krizemi podobného druhu , jež měly přímé ekonomické dopady .</czech>
+  <sure>1-1 10-7 11-8 14-10 15-12 16-13 17-14 18-15 19-16 20-17 4-2 6-3 7-4 7-5 9-6</sure>
+  <possible>12-9 13-9 15-11 2-2 2-5 3-2 3-5 4-5 5-2 8-4 8-5</possible>
+</s>
+<s id="project_syndicate_blo3-s17">
+  <english>So , also , Sweden in the early 1990s .</english>
+  <czech>To samé se přihodilo ve Švédsku počátkem let devadesátých .</czech>
+  <sure>10-10 5-6 8-7 9-8 9-9</sure>
+  <possible>3-1 3-2 5-5 6-7 6-8 6-9 7-7 7-8 7-9 8-8 8-9 9-7</possible>
+</s>
+<s id="project_syndicate_blo3-s18">
+  <english>Sweden 's crisis is a case for Japan to study , not only because it was similar , but also because Sweden solved it .</english>
+  <czech>Švédská krize je ukázkovým případem , který by mělo Japonsko pečlivě studovat , ne jen pro její podobnost , ale rovněž proto , že ji Švédsko nakonec vyřešilo .</czech>
+  <sure>1-1 10-12 11-13 12-14 13-15 14-16 17-18 18-19 19-20 20-21 21-22 21-24 22-26 23-28 24-25 25-29 3-2 4-3 6-5 8-10</sure>
+  <possible>15-18 16-18 17-17 2-1 21-23 5-5 6-4 7-10 9-12</possible>
+</s>
+<s id="project_syndicate_blo3-s19">
+  <english>Just as Japan has done , Sweden 's government took over most bad loans from private banks so that they could begin operating more normally .</english>
+  <czech>Stejně jako učinilo nedávno Japonsko , švédská vláda převzala většinu špatných úvěrů soukromých bank , tak , aby tyto finanční domy mohly začít fungovat za relativně normálních podmínek .</czech>
+  <sure>1-1 10-9 11-9 12-10 13-11 14-12 16-13 17-14 18-16 19-18 2-2 21-22 22-23 23-24 25-27 26-29 3-5 5-3 6-6 7-7 9-8</sure>
+  <possible>15-14 18-15 19-17 20-22 25-25 25-28 4-3 5-4 8-7</possible>
+</s>
+<s id="project_syndicate_blo3-s20">
+  <english>In contrast to Japan , however , Sweden simultaneously restructured the entire banking sector by closing down inefficient banks .</english>
+  <czech>Na rozdíl od Japonska ale Švédsko současně restrukturalizovalo celý bankovní sektor a nemilosrdně uzavřelo banky , které nebyly schopné přežít .</czech>
+  <sure>1-1 10-8 12-9 13-10 14-11 16-14 17-14 19-15 2-2 20-21 3-3 4-4 6-5 8-6 9-7</sure>
+  <possible>11-11 11-9 18-16 18-17 18-18 18-19 5-5 7-5</possible>
+</s>
+<s id="project_syndicate_blo3-s21">
+  <english>Restructuring was crucial to revitalizing Sweden 's financial sector , and is necessary in Japan .</english>
+  <czech>Restrukturalizace byla klíčovým momentem revitalizace švédského bankovního sektoru a je nezbytné ji provést i v Japonsku .</czech>
+  <sure>1-1 11-9 12-10 13-11 14-15 15-16 16-17 2-2 3-3 3-4 5-5 6-6 8-7 9-8</sure>
+  <possible>10-9 4-5 7-6</possible>
+</s>
+<s id="project_syndicate_blo3-s22">
+  <english>Quick , forceful restructuring will help end the credit crunch and lay the base for renewed growth .</english>
+  <czech>Rychlá a účinná restrukturalizace pomůže ukončit úvěrovou tíseň a položit základy nového ekonomického růstu .</czech>
+  <sure>1-1 10-8 11-9 12-10 14-11 16-12 17-14 18-15 2-2 3-3 4-4 6-5 7-6 9-7</sure>
+  <possible>13-11 15-11 15-14 17-13 5-5 8-8</possible>
+</s>
+<s id="project_syndicate_blo3-s23">
+  <english>Longer term , a closer look at Japanese demographic trends is crucial .</english>
+  <czech>Při bližším pohledu vypadají dlouhodobé japonské demografické trendy hrozivě .</czech>
+  <sure>1-5 10-8 13-10 2-5 5-2 6-3 8-6 9-7</sure>
+  <possible>12-9 4-3 6-1 7-8</possible>
+</s>
+<s id="project_syndicate_blo3-s24">
+  <english>Japan recently achieved the longest life expectancy of all countries .</english>
+  <czech>Japonsko jen nedávno dosáhlo nejdelší průměrné délky života ze všech sledovaných zemí .</czech>
+  <sure>1-1 10-12 11-13 2-3 3-4 5-5 8-9 9-10</sure>
+  <possible>4-5 6-6 6-7 6-8 7-6 7-7 7-8</possible>
+</s>
+<s id="project_syndicate_blo3-s25">
+  <english>One - third of Japanese will be over 65 years of age in 2040 , double 1995 's level .</english>
+  <czech>V roce 2040 bude celá jedna třetina Japonců starší 65 - ti let , což bude dvojnásobek úrovně roku 1995 .</czech>
+  <sure>1-6 10-13 13-1 14-3 15-14 16-17 17-20 19-18 20-21 3-7 5-8 6-4 7-4 8-9 9-10</sure>
+  <possible>11-13 12-13 14-2 17-19 18-20 4-8 9-11 9-12</possible>
+</s>
+<s id="project_syndicate_blo3-s26">
+  <english>Simultaneously , fertility rates dropped to 1.4 per woman .</english>
+  <czech>Současně také míra porodnosti poklesne na hodnotu 1,4 na jednu ženu .</czech>
+  <sure>1-1 10-12 3-4 4-3 5-5 6-6 7-8 8-9 9-11</sure>
+  <possible>1-2 9-10</possible>
+</s>
+<s id="project_syndicate_blo3-s27">
+  <english>These demographic influences will incite severe labor shortages early in the 21st century , just when an aging population places severe pressure on health and welfare facilities .</english>
+  <czech>Tyto demografické faktory nakonec vyvolají na počátku 21 . století vážný nedostatek pracovní síly , tedy právě v okamžiku , kdy bude stárnoucí generace kriticky zvyšovat tlak na zdravotní a sociální požadavky .</czech>
+  <sure>1-1 12-8 12-9 13-10 14-15 15-17 16-18 16-19 16-21 18-23 19-24 2-2 21-25 22-27 23-28 24-29 25-30 26-31 28-33 3-3 5-5 6-11 7-13 7-14 8-12 9-7</sure>
+  <possible>10-6 10-7 11-10 11-8 16-20 17-23 17-24 20-22 20-26 27-32 4-5 9-6</possible>
+</s>
+<s id="project_syndicate_blo3-s28">
+  <english>Japan will likely experience a slowing in its traditionally high savings rate as its population ages .</english>
+  <czech>Japonsko pravděpodobně s tím , jak bude jeho obyvatelstvo stárnout , také zakusí dopady zpomalení své tradičně velmi vysoké míry úspor .</czech>
+  <sure>1-1 10-19 11-21 12-20 13-6 14-8 15-9 16-10 17-22 3-2 4-13 6-15 8-16 9-17</sure>
+  <possible>10-18 13-3 13-4 13-5 16-7 2-13 5-15 7-20</possible>
+</s>
+<s id="project_syndicate_blo3-s29">
+  <english>This implies a dramatic slowdown in investment and long - term growth rates unless offsetting increases in productivity emerge .</english>
+  <czech>To přivodí dramatické snížení investic a dlouhodobé míry růstu , dokud nebude tento proces vykompensován vzrůstem produktivity .</czech>
+  <sure>1-1 11-7 12-9 13-8 14-11 14-12 15-15 16-16 18-17 2-2 20-18 4-3 5-4 7-5 8-6 9-7</sure>
+  <possible>10-7 14-10 17-16 17-17 3-4 3-5 6-4 6-5</possible>
+</s>
+<s id="project_syndicate_blo3-s30">
+  <english>Throughout history , however , Japan confronted big challenges by restructuring its culture and economy .</english>
+  <czech>Z historického hlediska se ale bude muset Japonsko vyrovnat s velikými změnami , které restrukturalizace jeho hospodářství i kultury přinese .</czech>
+  <sure>11-15 12-16 13-19 14-18 15-17 16-21 2-2 4-5 6-8 7-9 8-11</sure>
+  <possible>1-1 1-2 1-3 10-15 2-1 2-3 3-5 5-5 7-4 9-10 9-12</possible>
+</s>
+<s id="project_syndicate_blo3-s31">
+  <english>To revitalize Japan 's economy in the long run , three big adjustments are necessary .</english>
+  <czech>Aby bylo možné japonské hospodářství oživit , bude z dlouhodobého hlediska nutné provést následující tři velké úpravy :</czech>
+  <sure>1-1 11-15 12-16 13-17 15-12 16-18 2-6 3-4 5-5 6-9 8-10 9-10</sure>
+  <possible>1-2 1-3 10-7 14-8 4-4 6-10 6-11 7-10 7-11 7-9 8-11 8-9 9-11 9-9</possible>
+</s>
+<s id="project_syndicate_blo3-s32">
+  <english>Liberalization of labor markets and greater inclusion of women in the workforce must occur .</english>
+  <czech>Musí dojít k liberalizaci na trhu práce a k většímu zapojení žen coby pracovních sil .</czech>
+  <sure>1-4 12-14 12-15 13-1 14-2 15-16 3-7 4-6 5-8 6-10 7-11 9-12</sure>
+  <possible>1-3 10-15 11-15 14-3 2-5 7-9 8-12</possible>
+</s>
+<s id="project_syndicate_blo3-s33">
+  <english>Conventional wisdom says that low unemployment and job turnover rates , attributable to a system of ‘ life - time employment ' and worker devotion to their firms , contributed to Japan 's rapid postwar growth .</english>
+  <czech>Všeobecně je přijímán názor , že to byla nízká nezaměstnanost a nízká míra změn pracovního místa , tolik vlastní systému " celoživotního zaměstnání " a oddanosti zaměstnance jeho firmě , jež tak výrazně přispěly k rychlému poválečného hospodářskému růstu Japonska .</czech>
+  <sure>1-1 10-13 11-17 12-19 15-20 17-21 18-22 20-22 21-23 22-24 23-25 24-27 25-26 27-28 28-29 29-30 30-34 31-35 32-40 34-36 35-37 36-39 37-41 4-6 5-9 6-10 7-11 8-15 8-16 9-14</sure>
+  <possible>1-2 1-3 1-4 12-18 13-20 14-20 16-23 19-22 2-1 2-2 2-3 2-4 26-29 3-1 3-2 3-3 3-4 33-40 4-5</possible>
+</s>
+<s id="project_syndicate_blo3-s34">
+  <english>Firms invested heavily in worker education , which focused on providing broad exposure to manufacturing activities , increasing productivity , and firm - specific innovations .</english>
+  <czech>Firmy investovaly do vzdělání zaměstnanců velké částky , zaměřené především na zajištění velkého nasazení během výrobních aktivit , zvýšení produktivity a firemních inovací .</czech>
+  <sure>1-1 10-11 11-12 12-13 15-16 16-17 17-18 18-19 19-20 2-2 21-21 22-22 25-23 26-24 4-3 5-5 6-4 7-8 9-9</sure>
+  <possible>13-14 14-15 2-6 2-7 20-21 23-22 24-22 3-2 3-6 3-7</possible>
+</s>
+<s id="project_syndicate_blo3-s35">
+  <english>The need for narrowly specialized firm - specific workers is disappearing as service sectors like telecommunications , computers , software , and finance expand .</english>
+  <czech>Potřeba po velice úzce specializovaných firemních zaměstnancích pomalu mizí , což souvisí s tím , jak expanduje sektor služeb , především v oblasti telekomunikací , počítačů a jejich softwarového vybavení a finančních služeb .</czech>
+  <sure>11-9 12-16 13-19 14-18 16-24 17-25 18-26 2-1 20-29 22-31 23-32 23-33 24-17 25-34 3-2 4-4 5-5 6-6 9-7</sure>
+  <possible>1-1 10-9 19-27 20-30 21-31 7-6 8-6</possible>
+</s>
+<s id="project_syndicate_blo3-s36">
+  <english>So the need for broad - based , firm - specific worker training in manufacturing will shrink .</english>
+  <czech>A tak potřeba firemních zaměstnanců , školených na výrobu , se bude i nadále snižovat .</czech>
+  <sure>1-2 12-5 13-7 15-9 17-11 17-15 18-16 3-3 9-4</sure>
+  <possible>1-1 10-4 11-4 13-8 14-7 14-8 16-12 16-15 17-12 2-3 8-6</possible>
+</s>
+<s id="project_syndicate_blo3-s37">
+  <english>In response to increasing labor shortages , the 21st century will bring new roles for Japanese women .</english>
+  <czech>Při řešení problému rostoucího nedostatku pracovní síly přinese jednadvacáté století novou roli japonským ženám .</czech>
+  <sure>10-10 12-8 13-11 14-12 16-13 17-14 18-15 4-4 5-6 5-7 6-5 9-9</sure>
+  <possible>1-1 11-8 15-14 2-2 2-3 3-4 8-10 8-9</possible>
+</s>
+<s id="project_syndicate_blo3-s38">
+  <english>Women have traditionally been underutilized given their education levels .</english>
+  <czech>Ženy byly tradičně , vhledem k úrovni vzdělání , které mohly dosáhnout , nedostatečně využívány v pracovním procesu .</czech>
+  <sure>1-1 10-19 2-2 3-3 4-2 5-14 5-15 6-5 6-6 8-8 9-7</sure>
+  <possible>6-4</possible>
+</s>
+<s id="project_syndicate_blo3-s39">
+  <english>While the increase in women in the labor force has recently been rapid , female employment is only 50 % in Japan ( relative to almost 80 % amongst men ) .</english>
+  <czech>Přestože se v poslední době výrazně zvýšil počet žen v celkovém počtu pracovních sil , pořád dosahuje v Japonsku zaměstnanost mezi ženami pouhých 50 % ( ve srovnání s téměř 80 - ti procenty mezi muži ) .</czech>
+  <sure>1-1 11-3 11-4 11-5 13-6 14-15 15-21 15-22 16-20 17-17 18-23 19-24 20-25 21-18 22-19 23-26 24-27 24-28 25-29 26-30 27-31 28-34 29-35 3-7 30-36 31-37 32-38 5-9 6-10 8-13 9-14</sure>
+  <possible>10-6 10-7 12-6 12-7 2-7 27-32 27-33 3-2 3-8 7-14</possible>
+</s>
+<s id="project_syndicate_blo3-s40">
+  <english>A second structural adjustment concerns regulatory reform .</english>
+  <czech>Druhá strukturální změna se týká reformy řízení ekonomiky .</czech>
+  <sure>2-1 3-2 4-3 5-4 5-5 6-7 7-6 8-9</sure>
+  <possible>1-1 1-3 6-8</possible>
+</s>
+<s id="project_syndicate_blo3-s41">
+  <english>Japan 's economy has been marked by high government involvement and regulation in most industries .</english>
+  <czech>Japonské hospodářství bylo poznamenáno výraznými vládními zásahy a regulací téměř všech oborů průmyslu .</czech>
+  <sure>1-1 10-7 11-8 12-9 14-10 14-11 15-13 16-14 3-2 4-3 5-3 6-4 8-5 9-6</sure>
+  <possible>13-11 13-9 15-12 2-1 7-7</possible>
+</s>
+<s id="project_syndicate_blo3-s42">
+  <english>Japan 's postwar development strategy relied on a public - private partnership .</english>
+  <czech>Japonská poválečná strategie rozvoje spoléhala na spojenectví státního a soukromého sektoru .</czech>
+  <sure>1-1 11-10 12-7 13-12 3-2 4-4 5-3 6-5 7-6 9-8</sure>
+  <possible>10-9 2-1 8-7</possible>
+</s>
+<s id="project_syndicate_blo3-s43">
+  <english>The government sought to modernize the economic base by selecting and nurturing promising industries - limiting competition , supporting research and development and technology transfers , and encouraging the extension of credit .</english>
+  <czech>Japonská vláda se snažila o modernizaci hospodářské základny pomocí cíleného výběru slibných odvětví a jejich následného pěstění – proto v těchto oborech omezovala možnosti konkurence , podporovala výzkum a rozvoj , usnadňovala přenos technologií a podporovala nadměrné úvěrování .</czech>
+  <sure>10-11 11-14 12-17 13-12 14-13 15-18 16-23 17-25 19-27 2-2 20-28 21-29 22-30 24-34 25-33 27-35 28-36 3-3 3-4 30-37 32-38 33-39 4-5 5-6 7-7 8-8 9-9</sure>
+  <possible>1-2 10-10 16-24 18-26 23-31 26-35 29-37 31-38 6-8</possible>
+</s>
+<s id="project_syndicate_blo3-s44">
+  <english>Industries with potential to achieve economies of scale and scope were most favored and permitted to form horizontal and vertical cartels that cooperated on pricing , R &amp; D , production , etc .</english>
+  <czech>Průmyslové obory , které měly šanci splnit kritéria těchto ekonomických politik , co do obsahu i rozsahu , byly všemožně favorizovány a bylo jim umožněno zformovat horizontální i vertikální kartely , jež pak úzce spolupracovaly v oblasti cen , výzkumu , výroby , atd .</czech>
+  <sure>1-1 1-2 10-17 11-19 13-21 14-22 15-25 17-26 18-27 19-28 20-29 21-30 22-32 23-35 24-36 25-38 3-6 30-41 31-42 32-43 33-44 34-45 5-7 6-10 8-15 9-16</sure>
+  <possible>12-20 15-23 15-24 16-26 2-3 2-4 2-5 2-6 22-31 23-34 25-37 26-39 27-40 3-3 3-4 3-5 4-7 6-11 7-12 7-13 7-14</possible>
+</s>
+<s id="project_syndicate_blo3-s45">
+  <english>The government also protected special interests , such as rice farmers and small retailers , against competition through a complex system of licensing , regulation , and quality controls .</english>
+  <czech>Vláda rovněž chránila určité hospodářské oblasti , kde měla své zvláštní zájmy , jako byli producenti rýže a malí obchodníci , před vnější konkurencí pomocí uceleného systému licencí , regulací a kontrol kvality .</czech>
+  <sure>10-17 11-16 12-18 13-19 14-20 15-21 16-22 17-24 18-25 2-1 20-26 21-27 23-28 24-29 25-30 27-31 28-33 29-32 3-2 30-34 4-3 6-12 7-13 8-14 9-14</sure>
+  <possible>1-1 19-27 22-28 26-31 5-11 5-4 8-15 9-15</possible>
+</s>
+<s id="project_syndicate_blo3-s46">
+  <english>Close partnership between business and government is in direct contrast to the western , particularly the American , model grounded in strong antitrust policy , competition , and private ownership .</english>
+  <czech>Úzká spolupráce mezi podnikateli a vládou je v přímém rozporu se západní tradicí , zejména s praxí v Americe , kde je zaveden hospodářský model založený na mocné protitrustové politice , konkurenci a soukromém vlastnictví .</czech>
+  <sure>1-1 10-10 11-11 13-12 14-14 15-15 17-19 18-20 2-2 20-26 21-27 22-28 23-29 24-30 25-31 26-32 28-33 29-34 3-3 30-35 31-36 4-4 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>12-12 12-13 16-19 17-18 19-13 19-25 27-33</possible>
+</s>
+<s id="project_syndicate_blo3-s47">
+  <english>Japan viewed this approach as wasteful , with firms using real resources to drive others out of business or duplicate R &amp; D costs .</english>
+  <czech>Japonsko ale hodnotí tento model jako velmi rozhazovačný , neboť v něm firmy využívají vzácné zdroje na to , aby vytlačily jiné z podnikatelského oboru a často v něm dochází k duplikaci nákladů na výzkum a rozvoj .</czech>
+  <sure>1-1 10-14 12-16 14-21 15-22 18-24 18-25 2-3 20-32 24-33 25-38 3-4 4-5 5-6 6-8 7-9 9-13</sure>
+  <possible>11-15 13-19 13-20 16-21 16-23 17-23 17-25 21-34 21-35 21-36 21-37 22-35 22-36 22-37 23-35 23-36 23-37 8-10</possible>
+</s>
+<s id="project_syndicate_blo3-s48">
+  <english>In the face of a stagnant economy and an integrated global economy , Japan is under increasing pressure to modify its regulatory framework and promote competition .</english>
+  <czech>Tváří v tvář stagnujícímu hospodářství a integrující se globální ekonomice se Japonsko dostává pod stále větší tlak , aby konečně upravilo své řídící struktury a mechanismy a podpořilo konkurenční prostředí .</czech>
+  <sure>10-7 10-8 11-9 12-10 14-12 15-11 15-13 16-14 17-15 17-16 18-17 19-19 20-21 21-22 22-23 23-24 24-27 25-28 26-29 27-31 6-4 7-5 8-6</sure>
+  <possible>1-1 1-2 1-3 19-18 2-1 2-2 2-3 23-25 23-26 26-30 3-1 3-2 3-3 4-1 4-2 4-3 5-4 5-5 9-10</possible>
+</s>
+<s id="project_syndicate_blo3-s49">
+  <english>Japan 's regulatory environment must converge toward the industrial policies of other advanced nations .</english>
+  <czech>Japonské řídící mechanismy se musejí přiblížit těm v jiných rozvinutých státech , stejně jako jeho průmyslové politiky .</czech>
+  <sure>1-1 10-17 11-8 12-9 13-10 14-11 15-18 3-2 4-3 5-5 6-4 6-6 9-16</sure>
+  <possible>2-1 7-6 7-7 8-17</possible>
+</s>
+<s id="project_syndicate_blo3-s50">
+  <english>This has been the case across Europe during the 1980s and 1990s .</english>
+  <czech>Ke stejnému procesu došlo po celé Evropě během osmdesátých a devadesátých let .</czech>
+  <sure>10-9 11-10 12-11 13-13 6-5 7-7 8-8</sure>
+  <possible>10-12 12-12 2-4 3-4 4-2 5-3 6-6 9-12 9-9</possible>
+</s>
+<s id="project_syndicate_blo3-s51">
+  <english>These reforms will create new markets , stimulate competition , attract foreign investment and technology transfers , and improve consumer interests .</english>
+  <czech>Tyto reformy pak zrodí nové trhy , podpoří konkurenci , přilákají zahraniční investice , usnadní transfer technologií a posílí zájmy spotřebitelů .</czech>
+  <sure>1-1 10-10 11-11 12-12 13-13 14-14 15-17 16-16 18-18 19-19 2-2 20-21 21-20 22-22 4-4 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>17-18 3-4</possible>
+</s>
+</sentences>

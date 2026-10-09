@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_blanchard8-s1">
+  <english>The Crisis of the Left</english>
+  <czech>Krize levice</czech>
+  <sure>2-1 5-2</sure>
+  <possible>1-1 3-2 4-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s2">
+  <english>Olivier Blanchard</english>
+  <czech>Olivier Blanchard</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s3">
+  <english>After a series of electoral losses around the world , the left is in crisis .</english>
+  <czech>Po sérii volebních porážek po celém světě je levice v krizi .</czech>
+  <sure>1-1 3-2 5-3 6-4 7-5 9-7 12-9 13-8 14-10 15-11 16-12</sure>
+  <possible>2-2 4-4 7-6 8-7 11-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s4">
+  <english>To restore it to health , some on the left argue for a return to their parties ' historical roots .</english>
+  <czech>Někteří levicoví politici obhajují přesvědčení , že bývalou sílu lze získat návratem k historickým kořenům stran .</czech>
+  <sure>7-1 10-2 11-4 14-12 15-13 17-16 19-14 20-15 21-17</sure>
+  <possible>8-2 9-2 12-6 12-7 13-12 18-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s5">
+  <english>Others argue that the old myths should be abandoned in favor of a bold move forward .</english>
+  <czech>Jiní tvrdí , že je třeba se zbavit starých mýtů a vykročit odvážně vpřed .</czech>
+  <sure>1-1 2-2 3-4 5-9 6-10 9-8 14-13 16-14 17-15</sure>
+  <possible>3-3 4-10 7-8 8-8 9-5 9-6 9-7 15-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s6">
+  <english>This debate is occurring not only in France after the defeat of the Socialists last April .</english>
+  <czech>Tato debata se neobjevuje jen ve Francii po loňské dubnové porážce socialistů .</czech>
+  <sure>1-1 2-2 4-4 5-4 6-5 7-6 8-7 9-8 11-11 14-12 15-9 16-10 17-13</sure>
+  <possible>3-4 4-3 10-11 12-12 13-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s7">
+  <english>It also characterizes the political situation in the US after the defeat of the Democrats in last November 's mid - term elections .</english>
+  <czech>Je charakteristickou i pro politickou situaci v USA po prohře demokratů v listopadových volbách uprostřed prezidentského období .</czech>
+  <sure>5-5 6-6 7-7 9-8 10-9 12-10 15-11 16-12 18-13 20-15 22-17 23-14 24-18</sure>
+  <possible>3-2 4-6 8-8 11-10 13-11 14-11 19-13 21-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s8">
+  <english>Both parties face the same dilemma , and this is precisely my point : that the crisis confronting the left is a deep , fundamental , one .</english>
+  <czech>Obě strany čelí stejnému dilematu a právě o to mi jde : krize , v níž se levice ocitá , je hluboká a zásadní .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 8-6 14-12 17-13 20-18 21-21 23-22 25-24 28-25</sure>
+  <possible>4-5 7-6 16-13 19-18 24-23</possible>
+  <phrasal>9-7 9-8 9-9 9-10 9-11 10-7 10-8 10-9 10-10 10-11 11-7 11-8 11-9 11-10 11-11 12-7 12-8 12-9 12-10 12-11 13-7 13-8 13-9 13-10 13-11</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s9">
+  <english>In the past , the left was equipped with its own ideology , its own economic theory .</english>
+  <czech>V minulosti byla levice vyzbrojena svou vlastní ideologií , tedy svou ekonomickou teorií .</czech>
+  <sure>1-1 3-2 6-4 7-3 8-5 10-6 11-7 12-8 13-9 14-11 16-12 17-13 18-14</sure>
+  <possible>2-2 5-4 9-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s10">
+  <english>The fundamental economic mechanism that determined how the world worked was the struggle for rents between workers and capitalists .</english>
+  <czech>Za základní hospodářský mechanismus , který určuje fungování světa , se považoval boj o rozdělení rent mezi dělníky a kapitalisty .</czech>
+  <sure>2-2 3-3 4-4 5-6 6-7 9-9 13-13 14-14 15-16 16-17 17-18 18-19 19-20 20-21</sure>
+  <possible>1-4 5-5 8-9 10-8 12-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s11">
+  <english>With this " us versus them " view of the world , it was not hard to rally voters , from the most disenfranchised all the way up to the salaried middle class - - more than enough for the left to secure electoral majorities .</english>
+  <czech>S tímto pohledem na svět - " my versus oni " - nebylo těžké sešikovat voliče , od těch s nejmenšími volebními právy až po příslušníky střední třídy se stálým platem . To bylo víc než dost na to , aby si levice zajistila volební většinu .</czech>
+  <sure>1-1 2-2 3-7 4-8 5-9 6-10 7-11 8-3 9-4 11-5 14-13 15-13 16-14 18-15 19-16 20-17 21-18 22-19 31-29 31-30 31-31 32-27 33-28 36-35 37-36 38-37 39-38 41-43 43-44 44-45 45-46 46-47</sure>
+  <possible>10-5 13-13 17-15 30-28 39-39 39-40 39-41 40-43 42-44 43-42</possible>
+  <phrasal>23-20 23-21 23-22 23-23 24-20 24-21 24-22 24-23 25-24 25-25 26-24 26-25 27-24 27-25 28-24 28-25 29-24 29-25</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s12">
+  <english>But the world has changed , and the left 's old view simply no longer applies .</english>
+  <czech>Svět se ale změnil a starý levicový pohled prostě už neplatí .</czech>
+  <sure>1-3 3-1 5-4 7-5 9-7 11-6 12-8 13-9 17-12</sure>
+  <possible>2-1 4-4 5-2 6-5 8-8 10-7</possible>
+  <phrasal>14-10 14-11 15-10 15-11 16-10 16-11</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s13">
+  <english>More intense competition , within and across countries , has decreased the available rents .</english>
+  <czech>Rostoucí konkurence na mezinárodním i na domácím poli snížila dosažitelné renty .</czech>
+  <sure>3-2 11-9 13-10 14-11 15-12</sure>
+  <possible>1-1 2-1 10-9 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s14">
+  <english>Financial capital can cross borders far more easily , and physical capital can relocate almost as quickly .</english>
+  <czech>Finanční kapitál může snadněji překračovat hranice a hmotný kapitál se dokáže přemisťovat téměř se stejnou rychlostí .</czech>
+  <sure>1-1 2-2 3-3 4-5 5-6 7-4 8-4 10-7 11-8 12-9 14-12 15-13 18-17</sure>
+  <possible>9-7 13-12 14-10 14-11</possible>
+  <phrasal>16-14 16-15 16-16 17-14 17-15 17-16</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s15">
+  <english>The limits on redistribution through the market are much tighter : trying to appropriate the rents may lead firms to move to emerging countries , or else to go bankrupt .</english>
+  <czech>Meze přerozdělování jsou na trhu mnohem těsnější : snaha přivlastnit si renty může firmy nutit stěhovat se do rozvíjejících se zemí nebo je přivést k bankrotu .</czech>
+  <sure>2-1 4-2 7-5 8-3 9-6 10-7 11-8 14-10 16-12 17-13 18-15 19-14 21-16 22-18 23-19 24-21 26-22 31-27</sure>
+  <possible>1-1 3-1 5-4 6-5 12-9 13-9 14-11 15-12 20-16 21-17 23-20 25-22</possible>
+  <phrasal>28-24 28-25 28-26 29-24 29-25 29-26 30-24 30-25 30-26</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s16">
+  <english>This reality has taken a while to sink in , and a number of parties on the left still cannot bring themselves to acknowledge the constraints imposed by market forces .</english>
+  <czech>Jistou chvíli trvalo , než jsme si tuto skutečnost připustili , a mnohé levicové strany se stále nedokáží přinutit , aby si přiznaly tlaky , které tržní síly vytvářejí .</czech>
+  <sure>1-8 2-9 4-3 5-3 6-3 10-11 11-12 13-13 15-15 18-14 19-17 20-18 21-19 22-16 23-21 24-23 26-24 29-27 30-28 31-30</sure>
+  <possible>3-3 6-2 12-13 14-13 16-14 17-14 23-20 24-22 25-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s17">
+  <english>Some do , of course , none more explicitly than the UK 's Labor Party , led by Tony Blair .</english>
+  <czech>Některé to samozřejmě dokázaly a nejotevřeněji z nich britská Labour Party vedená Tonym Blairem .</czech>
+  <sure>1-1 2-4 4-3 5-3 12-9 14-10 15-11 17-12 19-13 20-14 21-15</sure>
+  <possible>2-2 3-3 6-3 11-9 13-9 18-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s18">
+  <english>Others , typically old - line communist parties , have retained much of their traditional rhetoric , but this is largely for electoral consumption .</english>
+  <czech>Jiné strany , typicky komunistické strany starého ražení , si mnohé ze své tradiční rétoriky ponechaly , ovšem hlavně ke konzumaci během voleb .</czech>
+  <sure>1-1 3-4 7-5 8-6 11-16 12-11 13-12 14-13 15-14 16-15 17-17 18-18 21-19 22-20 23-23 24-21 25-24</sure>
+  <possible>10-16 11-10 23-22</possible>
+  <phrasal>4-7 4-8 5-7 5-8 6-7 6-8</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s19">
+  <english>They know all too well that the old nemesis , " capital , " has become difficult or impossible to expropriate , yet they remain unready or unwilling to deliver the news to their constituency .</english>
+  <czech>Vědí až příliš dobře , že tenhle starý boží trest " , kapitál , " bude dnes těžké , ba nemožné vyvlastnit , a přesto stále nejsou schopny či ochotny tuto novinku sdělit svým voličům .</czech>
+  <sure>2-1 4-3 5-4 6-6 7-7 8-8 10-12 11-11 12-13 13-14 14-15 17-18 18-20 19-21 21-22 22-23 23-25 27-29 30-33 31-31 32-32 34-34 35-35 36-36</sure>
+  <possible>1-1 3-2 6-5 9-9 9-10 18-19 20-22 23-24 29-33 33-35</possible>
+  <phrasal>24-26 24-27 24-28 25-26 25-27 25-28 26-26 26-27 26-28</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s20">
+  <english>The same tension exists within parties themselves .</english>
+  <czech>Stejné napětí existuje i uvnitř samotných stran .</czech>
+  <sure>2-1 3-2 4-3 5-5 6-7 7-6 8-8</sure>
+  <possible>1-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s21">
+  <english>Witness the muddled debate within the French Socialist party in the aftermath of its defeat , with the " left of the left " and the " right of the left " in a fight for control both of the party and the route by which it should eventually return to power .</english>
+  <czech>Jen zvažme popletenou debatu ve francouzské Socialistické straně , jež následovala po její porážce : " levicová levice " a " pravicová levice " svedly boj o vliv nad stranou a o způsob , jímž by se konečně měla vrátit k moci .</czech>
+  <sure>3-3 4-4 5-5 7-6 8-7 9-8 14-13 15-14 19-16 20-17 23-18 24-19 25-20 27-21 28-22 31-23 32-24 35-26 36-27 37-28 41-30 42-31 44-33 46-35 48-36 48-39 49-38 50-40 51-41 52-42 53-43</sure>
+  <possible>1-1 1-2 2-4 6-8 18-18 22-18 26-23 30-23 34-26 37-29 40-30 43-33 45-35 46-34 47-39 50-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s22">
+  <english>And yet both available strategies - - doing nothing or attempting to modernize - - have obvious pitfalls .</english>
+  <czech>A přesto obě možné strategie - nicnedělání i snaha se modernizovat - skrývají bezesporu nástrahy .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 8-7 9-7 13-11 14-12 17-14 18-15 19-16</sure>
+  <possible>10-8 11-9 12-9 13-10 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s23">
+  <english>The old rhetoric , after all , still resonates powerfully with the most destitute parts of the electorate : minimum wage workers , the long - term unemployed , and all those who feel that anything would be better than what they have now .</english>
+  <czech>Stará rétorika přece jen stále mocně souzní s nejnuznější částí voličstva : s dělníky s nízkými platy , dlouhodobě nezaměstnanými a všemi , kdo mají pocit , že cokoli by bylo lepší než to , co mají teď .</czech>
+  <sure>2-1 3-2 8-5 9-7 10-6 11-8 13-9 14-9 15-10 18-11 19-12 21-17 22-14 23-18 25-19 27-19 28-20 30-21 31-22 33-24 34-25 34-26 35-28 36-29 37-30 38-31 39-32 40-33 41-36 43-37 44-38 45-39</sure>
+  <possible>1-2 12-10 16-11 17-11 20-16 24-20 26-19 29-21 32-22 33-23 35-27 41-34 41-35 42-37</possible>
+  <phrasal>5-3 5-4 6-3 6-4</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s24">
+  <english>It also allows easier contact with fringe groups , such as anti - globalization protesters and the most zealous greens .</english>
+  <czech>Umožňuje také snazší kontakt s okrajovými skupinami , jako jsou odpůrci globalizace a nejhorlivější zelení .</czech>
+  <sure>2-2 3-1 4-3 5-4 6-5 7-6 8-7 9-8 10-9 11-9 14-12 16-13 18-14 19-14 20-15 21-16</sure>
+  <possible>1-1 17-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s25">
+  <english>But while the old religion still mobilizes the left , it makes it difficult to hold the center .</english>
+  <czech>Ačkoli ale stará víra stále mobilizuje levici , je pro ni těžké udržet střed .</czech>
+  <sure>1-2 2-1 4-3 5-4 6-5 7-6 9-7 10-8 14-12 16-13 18-14 19-15</sure>
+  <possible>3-4 8-7 11-12 12-12 13-12 14-9 14-10 14-11 15-13 17-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s26">
+  <english>The middle class has lost its faith in the old rhetoric , and wherever the left , by some chance , comes to power , reality quickly sinks in .</english>
+  <czech>Střední třída ztratila důvěru ve staré floskule a kdykoli se dostane nějakou náhodnou k moci levice , realita rychle prosákne na povrch .</czech>
+  <sure>2-1 3-2 5-3 7-4 8-5 10-6 11-7 13-8 16-16 19-12 20-13 22-11 23-14 24-15 25-17 26-18 27-19 28-20 29-20 30-23</sure>
+  <possible>1-2 4-3 6-4 9-7 12-8 14-9 15-16 18-13 22-10 28-21 28-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s27">
+  <english>Modernization runs into the opposite problems .</english>
+  <czech>Modernizace naráží na opačné problémy .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 7-6</sure>
+  <possible>4-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s28">
+  <english>Public discussion of new ways to finance retirement pension plans , or of introducing a negative income tax , sounds sweet to economists of all stripes , but it does not exactly mobilize public opinion .</english>
+  <czech>Veřejné diskuse o nových způsobech financování penzijních programů nebo o zavedení záporné daně z příjmu zní jako rajská hudba ekonomům všech vyznání , ale veřejné mínění tak docela nemobilizují .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 9-7 10-8 12-9 13-10 14-11 16-12 17-15 18-13 20-16 23-20 25-21 27-23 28-24 34-25 35-26 36-30</sure>
+  <possible>6-6 8-7 11-9 15-13 17-14 21-17 21-18 21-19 22-20 24-22 26-22 29-29 30-29 31-29 32-27 32-28 33-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s29">
+  <english>The poor do n't care .</english>
+  <czech>Chudé to nezajímá .</czech>
+  <sure>2-1 6-4</sure>
+  <possible>1-1</possible>
+  <phrasal>3-2 3-3 4-2 4-3 5-2 5-3</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s30">
+  <english>The extreme left becomes disenfranchised .</english>
+  <czech>Extrémní levice ztrácí volební zájem .</czech>
+  <sure>2-1 3-2 6-6</sure>
+  <possible>1-2</possible>
+  <phrasal>4-3 4-4 4-5 5-3 5-4 5-5</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s31">
+  <english>The middle class likes the tone , but wonders how different the program is from what they hear from the neo - liberal right .</english>
+  <czech>Středním třídám se tón sice zamlouvá , ale podivují se , v čem se program liší od toho , co je slyšet od neoliberální pravice .</czech>
+  <sure>2-1 3-2 4-6 6-4 7-7 8-8 9-9 9-10 13-15 15-17 16-20 18-22 19-23 21-24 23-24 24-25 25-26</sure>
+  <possible>1-2 4-3 5-4 11-16 12-15 16-18 16-19 20-25 22-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s32">
+  <english>As the events of the French elections last spring demonstrated , when this dynamic prevails , the left loses the elections .</english>
+  <czech>Jak ukázaly události francouzských voleb loni na jaře , když tato dynamika převládne , levice volby prohraje .</czech>
+  <sure>1-1 3-3 6-4 7-5 10-2 11-9 12-10 13-11 14-12 15-13 16-14 18-15 19-17 21-16 22-18</sure>
+  <possible>2-3 4-5 5-5 17-15 20-16</possible>
+  <phrasal>8-6 8-7 8-8 9-6 9-7 9-8</phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s33">
+  <english>Shift everything I just said regarding this strategic dilemma to the right a bit and you arrive at the problems of America 's Democrats .</english>
+  <czech>Posuňte mírně doprava vše , co jsem dosud řekl o tomto strategickém dilematu , a dostanete se k problémům amerických demokratů .</czech>
+  <sure>1-1 2-4 5-9 6-10 7-11 8-12 9-13 10-3 12-3 13-2 14-2 15-15 17-16 18-16 20-19 22-20 24-21 25-22</sure>
+  <possible>3-9 4-8 5-7 11-3 15-14 16-16 17-17 17-18 19-19 21-21 23-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s34">
+  <english>The choice of a candidate for the next elections is about this strategic choice , not personalities .</english>
+  <czech>Výběr kandidáta pro příští volby závisí na této strategické volbě , nikoli na osobnostech .</czech>
+  <sure>2-1 5-2 6-3 8-4 9-5 12-8 13-9 14-10 15-11 16-12 17-14 18-15</sure>
+  <possible>1-1 3-2 4-2 7-5 10-6 10-7 11-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s35">
+  <english>Shift everything a bit to the left , and you arrive at the problems facing President Lula Ignacio da Silva in Brazil .</english>
+  <czech>Posuňte vše mírně doleva a dostanete se k problémům brazilského prezidenta Luize Inácia Luly da Silvy .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 7-4 9-5 11-6 12-6 14-9 16-11 17-14 18-13 19-15 20-16 21-10 22-10 23-17</sure>
+  <possible>6-4 8-5 10-6 11-7 11-8 13-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s36">
+  <english>Should he return to the old Lula rhetoric and watch capital flee the country , or try " modernity " and disappoint many of those who voted for him ?</english>
+  <czech>Měl by se vrátit ke staré " lulovské " rétorice a sledovat , jak kapitál prchá ze země , nebo se pokusit být " moderní " a zklamat mnohé své voliče ?</czech>
+  <sure>1-1 1-2 3-4 4-5 6-6 7-8 8-10 9-11 10-12 11-15 12-16 14-18 15-19 16-20 17-22 18-24 20-26 21-27 22-28 23-29 30-32</sure>
+  <possible>2-1 3-3 5-10 12-17 13-18 17-21 19-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s37">
+  <english>With minor adjustments , the left in Germany , Italy , Spain , Portugal , and so on faces the same Hobson 's choice .</english>
+  <czech>S drobnými proměnami stojí tváří v tvář této volbě nevolbě levice v Německu , Itálii , Spanělsku , Portugalsku a dalších zemích .</czech>
+  <sure>1-1 2-2 3-3 6-11 7-12 8-13 9-14 10-15 11-16 12-17 13-18 14-19 16-20 17-21 18-21 19-4 19-5 19-6 19-7 20-8 24-9 25-23</sure>
+  <possible>5-11 15-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s38">
+  <english>So : Damned if you do ; damned if you do n't ?</english>
+  <czech>Tedy zatracení , ať zůstanu stát , nebo vykročím dál ?</czech>
+  <sure>1-1</sure>
+  <possible>13-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s39">
+  <english>No , or at least not quite .</english>
+  <czech>Ne , tedy aspoň ne tak docela .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-4 6-5 7-6 7-7 8-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s40">
+  <english>The fundamental feature that must distinguish the left and the right is not their respective views on the economy , but rather their stances regarding redistribution .</english>
+  <czech>Zásadním rozdílem , který musí odlišovat levici a pravici , nejsou jejich názory na ekonomii , ale jejich postoje týkající se přerozdělování .</czech>
+  <sure>2-1 4-4 5-5 6-6 8-7 9-8 11-9 12-11 13-11 14-12 16-13 17-14 19-15 20-16 21-17 23-18 24-19 25-20 26-22 27-23</sure>
+  <possible>1-2 3-2 4-3 7-7 10-9 18-15 22-17 25-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s41">
+  <english>One of the first lessons of economics is that there is a trade - off between efficiency and redistribution .</english>
+  <czech>Jedna z prvních přednášek o ekonomii říká , že existuje jistý kompromis mezi efektivitou a přerozdělováním .</czech>
+  <sure>1-1 4-3 5-4 6-5 7-6 9-9 11-10 13-12 15-12 16-13 17-14 18-15 19-16 20-17</sure>
+  <possible>2-3 3-3 4-2 8-7 9-8 10-10 14-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s42">
+  <english>The right focuses on efficiency .</english>
+  <czech>Pravice se zaměřuje na efektivitu .</czech>
+  <sure>2-1 3-3 4-4 5-5 6-6</sure>
+  <possible>1-1 3-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s43">
+  <english>The left emphasizes redistribution .</english>
+  <czech>Levice zdůrazňuje přerozdělování .</czech>
+  <sure>2-1 3-2 4-3 5-4</sure>
+  <possible>1-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s44">
+  <english>A clear commitment to the poor , the sick , and the unfortunate must be the message of the left .</english>
+  <czech>Poselstvím levice musí být jasná oddanost chudým , nemocným a lidem v těžkých situacích .</czech>
+  <sure>2-5 3-6 6-7 7-8 9-9 11-10 13-11 13-12 13-13 13-14 14-3 15-4 17-1 20-2 21-15</sure>
+  <possible>4-7 5-7 8-9 10-10 12-11 16-1 18-2 19-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s45">
+  <english>And the means , however " boring . " must be appropriate to realizing this commitment : a combination of sustainable retirement systems , better designed unemployment benefit systems , negative income taxes , training programs , and the like .</english>
+  <czech>Prostředky , ať už jsou jakkoli " nudné , " musí odpovídat uskutečňování tohoto závazku : musí jít o kombinaci udržitelných penzijních systémů , lépe navržených systémů podpory v nezaměstnanosti , negativních daní z příjmu , programů dalšího vzdělávání a podobně .</czech>
+  <sure>3-1 4-2 6-7 7-8 9-10 10-11 14-13 15-14 16-15 17-16 19-20 21-21 22-22 23-23 24-24 25-25 26-26 27-29 27-30 28-28 29-27 30-31 31-32 32-35 33-33 34-36 35-39 36-37 38-40 40-41 41-42</sure>
+  <possible>2-1 5-3 5-4 5-6 11-12 12-12 13-12 18-20 20-23 32-34 39-41</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s46">
+  <english>Only by employing the rhetoric of commitment to mobilize the troops while devoting careful attention to the center 's concern with methods can the left hope to return to power .</english>
+  <czech>Levice může doufat , že se vrátí k moci , jedině uplatní - li rétoriku závazku , aby mobilizovala své vojsko , a zároveň věnuje důkladnou pozornost obavám středu o zvolení správných metod .</czech>
+  <sure>3-12 5-15 7-16 8-18 9-19 11-21 12-24 13-25 14-26 15-27 18-29 22-33 23-2 25-1 26-3 27-5 28-7 29-8 30-9 31-34</sure>
+  <possible>4-15 6-16 8-17 10-21 12-22 12-23 16-28 17-28 19-29 20-30 21-30 24-1 27-4 28-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_blanchard8-s47">
+  <english>Olivier Blanchard is Chairman of the department of economics at MIT .</english>
+  <czech>Olivier Blanchard je vedoucí katedry ekonomie na americké univerzitě Massachusetts Institute of Technology .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-5 9-6 10-7 11-10 11-11 11-12 11-13 12-14</sure>
+  <possible>5-5 6-5 8-6</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

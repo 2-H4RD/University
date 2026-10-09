@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "ofEY9Emdaag3G4afzsgsbaDEu01fEN9usNUHGHG5m3U=",
+  "Source": "CORS_Test",
+  "BasePath": "_content/CORS_Test",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CORS_Test\\wwwroot",
+      "Source": "CORS_Test",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\",
+      "BasePath": "_content/CORS_Test",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\index.html",
+      "SourceId": "CORS_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\",
+      "BasePath": "_content/CORS_Test",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "251cfykbdo",
+      "Integrity": "xscJAo+ttro4CpoUeZuD9EhTQCe+uHo+AhZFMt03LRY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.251cfykbdo.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xscJAo+ttro4CpoUeZuD9EhTQCe+uHo+AhZFMt03LRY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:15:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "251cfykbdo"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xscJAo+ttro4CpoUeZuD9EhTQCe+uHo+AhZFMt03LRY="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\University\\Распределенные ИАС\\Практики\\CORS_Test\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xscJAo+ttro4CpoUeZuD9EhTQCe+uHo+AhZFMt03LRY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 11:15:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xscJAo+ttro4CpoUeZuD9EhTQCe+uHo+AhZFMt03LRY="
+        }
+      ]
+    }
+  ]
+}

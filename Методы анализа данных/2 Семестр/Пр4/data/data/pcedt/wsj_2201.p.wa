@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2201-s1">
+  <english>We 're about to see if advertising works .</english>
+  <czech>Uvidíme , zda reklama funguje .</czech>
+  <sure>6-3 7-4 8-5 9-6</sure>
+  <possible>1-1</possible>
+  <phrasal>2-1 3-1 4-1 5-1</phrasal>
+</s>
+<s id="wsj_2201-s2">
+  <english>Hard on the heels of Friday 's 190-point stock-market plunge and the uncertainty that 's followed , a few big brokerage firms are rolling out new ads trumpeting a familiar message : Keep on investing , the market 's just fine .</english>
+  <czech>Okamžitě po pátečním 190 bodovém propadu akciového trhu a následné nejistotě vypouští několik velkých brokerských firem nové inzeráty vytrubující obvyklé poselství : Pokračujte v investování , trh je v pořádku .</czech>
+  <sure>5-2 6-3 8-4 8-5 9-7 9-8 10-6 11-9 13-11 16-10 18-13 19-13 20-14 21-15 22-16 24-12 25-12 26-17 27-18 28-19 30-20 31-21 32-22 33-23 34-24 35-25 36-26 38-27 39-28 41-29 41-30 42-31</sure>
+  <possible>7-3 12-11 14-10 15-10 23-12 29-21 37-27</possible>
+  <phrasal>1-1 2-1 3-1 4-1</phrasal>
+</s>
+<s id="wsj_2201-s3">
+  <english>Their mission is to keep clients from fleeing the market , as individual investors did in droves after the crash in October .</english>
+  <czech>Jejich úkolem je odradit klienty od útěku z trhu , což jednotliví investoři hromadně činili po propadu v říjnu .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-4 6-5 7-6 8-7 10-9 11-10 12-11 13-12 14-13 15-15 16-14 17-14 18-16 20-17 21-18 22-19 23-20</sure>
+  <possible>9-9 10-8 19-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s4">
+  <english>Just days after the 1987 crash , major brokerage firms rushed out ads to calm investors .</english>
+  <czech>Jen pár dní po propadu v roce 1987 velké brokerské firmy rychle vydaly inzeráty k uklidnění investorů .</czech>
+  <sure>1-1 2-3 3-4 5-8 6-5 8-9 9-10 10-11 11-13 12-13 13-14 15-16 16-17 17-18</sure>
+  <possible>4-5 5-6 5-7 14-16 15-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s5">
+  <english>This time around , they 're moving even faster .</english>
+  <czech>Nyní zareagovaly dokonce ještě rychleji .</czech>
+  <sure>6-2 7-2 8-3 9-5 10-6</sure>
+  <possible>5-2</possible>
+  <phrasal>1-1 2-1 3-1</phrasal>
+</s>
+<s id="wsj_2201-s6">
+  <english>PaineWebber Inc . filmed a new television commercial at 4 p . m . EDT yesterday and had it on the air by last night .</english>
+  <czech>PaineWeber Inc . natočila novou televizní reklamu včera ve 4 hodiny odpoledne východního denního času a včera večer ji odvysílala .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-6 8-7 9-9 10-10 11-12 13-12 15-13 15-14 15-15 16-8 17-16 19-19 24-17 25-18 26-21</sure>
+  <possible>5-5 23-18</possible>
+  <phrasal>18-20 20-20 21-20 22-20</phrasal>
+</s>
+<s id="wsj_2201-s7">
+  <english>Fidelity Investments placed new ads in newspapers yesterday , and wrote another new ad appearing today .</english>
+  <czech>Fidelity Investments umístila nové inzeráty do novin včera a vytvořila další nový inzerát , který se objevil dnes .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 10-9 11-10 12-11 13-12 14-13 15-17 16-18 17-19</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s8">
+  <english>Shearson Lehman Hutton Inc . by yesterday afternoon had already written new TV ads .</english>
+  <czech>Shearson Lehman Hutton Inc . vyrobila nové televizní inzeráty již včera odpoledne .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-11 8-12 9-6 10-10 11-6 12-7 13-8 14-9 15-13</sure>
+  <possible>6-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s9">
+  <english>It considered running them during tomorrow night 's World Series broadcast but decided not to when the market recovered yesterday .</english>
+  <czech>Zamýšlela je odvysílat během zítřejšího večerního přenosu Světové série , ale rozhodla se to neudělat poté , co se trh včera zotavil .</czech>
+  <sure>2-1 3-3 4-2 5-4 6-5 7-6 9-8 10-9 11-7 12-11 13-12 14-15 15-15 16-16 16-18 18-20 19-22 20-21 21-23</sure>
+  <possible>1-1 8-6 12-10 16-17 17-20 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s10">
+  <english>Other brokerage firms , including Merrill Lynch & Co . , were plotting out potential new ad strategies .</english>
+  <czech>Další brokerské firmy , včetně Merrill Lynch & Co . , vymýšlely potenciální nové reklamní strategie .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-12 13-12 14-12 15-13 16-14 17-15 18-16 19-17</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s11">
+  <english>The brokerage firms learned a lesson the last time around , when frightened investors flooded the phone lines and fled the market in a panic .</english>
+  <czech>Brokerské fimy se poučily z minulosti , kdy vyděšení investoři zahltili telefoní linky a v panice utíkali z trhu .</czech>
+  <sure>2-1 3-2 8-6 9-6 11-7 12-8 13-9 14-10 15-11 17-12 18-13 19-14 20-17 22-19 23-15 25-16 26-20</sure>
+  <possible>1-1 4-3 7-6 16-12 21-19 22-18 24-16</possible>
+  <phrasal>4-4 5-4 6-4</phrasal>
+</s>
+<s id="wsj_2201-s12">
+  <english>This time , the firms were ready .</english>
+  <czech>Tentokrát byly firmy připraveny .</czech>
+  <sure>1-1 2-1 5-3 6-2 7-4 8-5</sure>
+  <possible>4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s13">
+  <english>Fidelity , for example , prepared ads several months ago in case of a market plunge .</english>
+  <czech>Například Fidelity připravila pro případ propadu trhu inzeráty několik měsíců dopředu .</czech>
+  <sure>1-2 3-1 4-1 6-3 7-8 8-9 9-10 10-11 11-4 12-5 15-7 16-6 17-12</sure>
+  <possible>13-6 14-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s14">
+  <english>When the market went into its free fall Friday afternoon , the investment firm ordered full pages in the Monday editions of half a dozen newspapers .</english>
+  <czech>Když v pátek odpoledne došlo k propadu trhu , tato investiční společnost objednala celé stránky v pondělních vydáních půl tuctu novin .</czech>
+  <sure>1-1 3-8 4-5 5-6 8-7 9-3 10-4 11-9 12-10 13-11 14-12 15-13 16-14 17-15 18-16 20-17 21-18 23-19 25-20 26-21 27-22</sure>
+  <possible>2-8 7-7 9-2 19-17 22-19 24-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s15">
+  <english>The ads touted Fidelity 's automated 800-number beneath the huge headline , `` Fidelity Is Ready For Your Call . ''</english>
+  <czech>Pod velkým titulkem : " Fidelity je připravena na Vaše zavolání " inzeráty omílaly osmistovková telefonní čísla Fidelity .</czech>
+  <sure>2-13 3-14 4-18 7-15 8-1 10-2 11-3 13-5 14-6 15-7 16-8 17-9 18-10 19-11 21-12 20-19</sure>
+  <possible>1-13 5-18 7-16 7-17 9-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s16">
+  <english>A Fidelity spokesman says the 800-line , which already was operating but which many clients did n't know about , received about double the usual volume of calls over the weekend .</english>
+  <czech>Mluvčí společnosti Fidelity prohlašuje , že osmistovkové linky , které byly již v provozu , ale o kterých mnozí klienti nevěděli , přijaly přes víkend zhruba dvojnásobek obvyklého množství hovorů .</czech>
+  <sure>2-3 3-1 4-4 6-7 6-8 7-9 8-10 9-12 10-11 11-13 11-14 12-16 13-18 14-19 15-20 16-21 17-21 18-21 19-17 20-22 21-23 22-26 23-27 25-28 26-29 28-30 29-24 31-25 32-31</sure>
+  <possible>1-1 5-8 24-29 27-30 30-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s17">
+  <english>`` A lot of investor confidence comes from the fact that they can speak to us , '' he says .</english>
+  <czech>" Velká část investorské důvěry pochází ze skutečnosti , že s námi mohou mluvit , " řekl .</czech>
+  <sure>1-1 5-4 6-5 7-6 8-7 10-8 11-10 13-13 14-14 15-11 16-12 17-15 18-16 20-17 21-18</sure>
+  <possible>4-3 9-8 11-9 12-13 19-17</possible>
+  <phrasal>2-2 2-3 3-2 3-3</phrasal>
+</s>
+<s id="wsj_2201-s18">
+  <english>`` To maintain that dialogue is absolutely crucial .</english>
+  <czech>" Udržet tento dialog je naprosto zásadní .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8</sure>
+  <possible>2-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s19">
+  <english>It would have been too late to think about on Friday .</english>
+  <czech>Bylo by příliš pozdě myslet na to v pátek .</czech>
+  <sure>2-2 3-1 4-1 5-3 6-4 8-5 9-6 10-8 11-9 12-10</sure>
+  <possible>1-1 7-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s20">
+  <english>We had to think about it ahead of time . ''</english>
+  <czech>Museli jsme na to myslet dopředu . "</czech>
+  <sure>2-1 3-1 4-5 5-3 6-4 7-6 11-8 10-7</sure>
+  <possible>1-1 2-2 8-6 9-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s21">
+  <english>Today 's Fidelity ad goes a step further , encouraging investors to stay in the market or even to plunge in with Fidelity .</english>
+  <czech>Dnešní inzerát vydaný Fidelity jde o krok dále , povzbuzuje investory zůstat na trhu či dokonce vrhnout se na něj spolu s Fidelity .</czech>
+  <sure>1-1 3-4 4-2 5-5 7-7 8-8 9-9 10-10 11-11 13-12 14-13 16-14 17-15 18-16 20-17 21-19 22-22 23-23 24-24</sure>
+  <possible>2-1 6-7 7-6 12-12 15-14 19-17 20-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s22">
+  <english>Underneath the headline `` Diversification , '' it counsels , `` Based on the events of the past week , all investors need to know their portfolios are balanced to help protect them against the market 's volatility . ''</english>
+  <czech>Pod titulkem " Diverzifikace " radí : " Na základě událostí posledního týdne potřebují všichni investoři vědět , že jejich portfolia jsou vyvážena tak , aby je pomáhala chránit před nestálostí trhu . "</czech>
+  <sure>1-1 3-2 4-3 5-4 7-5 9-6 11-8 12-10 13-9 15-11 18-12 19-13 21-15 22-16 23-14 24-17 25-17 26-20 27-21 28-22 29-23 30-26 31-28 32-29 33-27 34-30 36-32 38-31 40-34 39-33</sure>
+  <possible>2-2 8-6 14-11 16-13 17-13 35-31 37-32</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s23">
+  <english>It goes on to plug a few diversified Fidelity funds by name .</english>
+  <czech>Pokračuje jmenovitým vychvalováním několika rozličných fondů Fidelity .</czech>
+  <sure>2-1 3-1 4-3 5-3 6-4 7-4 8-5 9-7 10-6 12-2 13-8</sure>
+  <possible>1-1 11-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s24">
+  <english>PaineWebber also was able to gear up quickly thanks to the 1987 crash .</english>
+  <czech>Společnost PaineWeber byla rovněž schopna rychle zareagovat díky propadu v roce 1987 .</czech>
+  <sure>1-2 2-4 3-3 4-5 5-7 6-7 7-7 8-6 9-8 12-12 13-9 14-13</sure>
+  <possible>10-9 11-9 12-10 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s25">
+  <english>In the aftermath of the 1987 debacle , the brokerage firm began taping commercials in-house , ultimately getting its timing down fast enough to tape a commercial after the market closed and rush it on the air that night .</english>
+  <czech>Jako následek debaklu z roku 1987 začala brokerská firma nahrávat reklamu přímo v budově burzy a nakonec urychluje její načasování tak , aby nahrála reklamu po uzavření trhu a odvysílala jí téhož večera .</czech>
+  <sure>1-1 3-2 4-4 6-6 7-3 10-8 11-9 12-7 13-10 14-11 15-13 15-14 17-17 18-18 19-19 20-20 21-18 22-18 24-23 25-24 27-25 28-26 30-28 31-27 32-29 34-31 38-32 39-33 40-34</sure>
+  <possible>2-2 5-3 6-5 9-9 26-25 29-27</possible>
+  <phrasal>33-30 35-30 36-30 37-30</phrasal>
+</s>
+<s id="wsj_2201-s26">
+  <english>It also negotiated an arrangement with Cable News Network under which CNN would agree to air its last-minute creations .</english>
+  <czech>Sjednala rovněž dohodu s Cable News Network , v níž CNN souhlasila vysílat její nejnovější výtvory .</czech>
+  <sure>2-2 3-1 5-3 6-4 7-5 8-6 9-7 10-9 11-10 12-11 14-12 15-13 16-13 17-14 18-15 19-16 20-17</sure>
+  <possible>1-1 4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s27">
+  <english>The new PaineWebber commercial , created with ad agency Saatchi & Saatchi Co . , features Mary Farrell , one of the firm 's most visible investment strategists , sounding particularly bullish .</english>
+  <czech>Nová reklama společnosti PaineWebber vytvořená reklamní agenturou Saatchi & Saatchi Co . , uvádí Marry Farrellovou , jednu z nejviditelnějších investičních stratégů firmy , a zní obzvlášť podbízivě .</czech>
+  <sure>2-1 3-4 4-2 6-5 8-6 9-7 10-8 11-9 12-10 13-11 14-12 15-13 16-14 17-15 18-16 19-17 20-18 21-19 23-23 25-20 26-20 27-21 28-22 29-24 30-26 31-27 32-28 33-29</sure>
+  <possible>1-2 7-7 22-22 24-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s28">
+  <english>Taped just as the market closed yesterday , it offers Ms . Farrell advising , `` We view the market here as going through a relatively normal cycle ...</english>
+  <czech>Byla nahrána hned po včerejším uzavření trhu a nabízí radu pí . Farrellové : " Vidíme , jak trh prochází poměrně normálním cyklem ...</czech>
+  <sure>1-2 2-3 3-4 5-7 6-6 7-5 10-9 11-11 12-12 13-13 14-10 16-15 18-16 20-19 22-18 23-20 24-20 26-21 27-22 28-23 29-24</sure>
+  <possible>1-1 4-6 9-9 17-16 19-19 25-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s29">
+  <english>We continue to feel that the stock market is still the place to be for long-term appreciation . ''</english>
+  <czech>Nadále se domníváme , že akciový trh je stále místem slibujícím dlouhodobé zhodnocení . "</czech>
+  <sure>2-1 4-3 5-5 7-6 8-7 9-8 10-9 12-10 16-12 17-13 19-15 18-14</sure>
+  <possible>1-3 3-3 4-2 5-4 6-7 11-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s30">
+  <english>The spot was scheduled to appear three times on CNN last night .</english>
+  <czech>Spot se včera večer třikrát objevil v programu vysílání CNN .</czech>
+  <sure>2-1 6-2 6-6 7-5 8-5 9-7 10-10 11-3 12-4 13-11</sure>
+  <possible>1-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s31">
+  <english>PaineWebber considered an even harder sell , recommending specific stocks .</english>
+  <czech>Společnost PaineWebber zvažovala dokonce razantnější prodejní kampaň s doporučením určitých akcií .</czech>
+  <sure>1-2 2-3 4-4 5-5 6-6 6-7 8-9 9-10 10-11 11-12</sure>
+  <possible>3-7 8-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s32">
+  <english>Instead , it settled on just urging the clients who are its lifeline to keep that money in the market .</english>
+  <czech>Místo toho se zaměřila jen na přesvědčování klientů , že kdo má její záchranné lano podrží peníze na trhu .</czech>
+  <sure>1-1 4-4 5-6 6-5 7-7 9-8 10-11 11-12 12-13 13-14 13-15 14-16 15-16 17-17 18-18 20-19 21-20</sure>
+  <possible>3-4 4-3 8-8 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s33">
+  <english>`` We 're saying the worst thing that anyone can do is to see the market go down and dump everything , which just drives the prices down further , '' says John Lampe , PaineWebber 's director of advertising .</english>
+  <czech>" Říkáme , že nejhorší věc , kterou kdokoli může udělat , je vidět , jak trh klesá a všechno prodat , což jen dožene ceny k dalšímu poklesu , " říká John Lampe , ředitel pro inzerci společnosti PaineWebber .</czech>
+  <sure>1-1 3-2 4-2 5-5 6-5 7-6 8-8 9-9 10-10 11-11 12-13 13-14 14-14 16-17 17-18 18-18 19-19 20-20 21-21 22-22 23-23 24-24 25-25 27-26 28-29 29-28 30-30 31-31 32-32 33-33 34-34 35-35 36-40 38-36 39-37 40-38 41-41</sure>
+  <possible>2-2 8-7 15-17 26-26 37-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s34">
+  <english>`` If you owned it and liked it Friday , the true value has n't changed . ''</english>
+  <czech>" Jestliže jste to vlastnili a byli s tím spokojeni v pátek , tak skutečná hodnota se nezměnila . "</czech>
+  <sure>1-1 2-2 4-5 5-4 6-6 7-7 7-10 8-9 9-12 10-13 12-15 13-16 14-18 15-18 16-18 18-20 17-19</sure>
+  <possible>3-5 4-3 8-8 9-11 11-16 16-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s35">
+  <english>He adds , `` This is n't 1987 revisited . ''</english>
+  <czech>A dodává : " Toto není návrat do roku 1987 . "</czech>
+  <sure>2-2 4-4 5-5 6-6 7-6 8-10 9-7 11-12 10-11</sure>
+  <possible>1-2 8-8 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s36">
+  <english>With the market fluctuating and then closing up more than 88 points yesterday , investment firms had to constantly revise their approach .</english>
+  <czech>V důsledku kolísání trhu , který včera uzavřel zpevněním o více než 88 bodů , musely investiční firmy neustále revidovat svůj přístup .</czech>
+  <sure>3-4 4-3 7-8 8-8 9-11 10-12 11-13 12-14 13-7 14-15 15-17 16-18 17-16 18-16 19-19 20-20 21-21 22-22 23-23</sure>
+  <possible>2-4 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s37">
+  <english>At Shearson Lehman , executives created potential new commercials Friday night and throughout the weekend , then had to regroup yesterday afternoon .</english>
+  <czech>U společnosti Shearson Lehman vytvořili řídící pracovníci potenciální nové reklamní spoty v pátek večer a o víkendu a pak včera odpoledne museli zaujmout nové pozice .</czech>
+  <sure>1-1 2-3 3-4 5-6 5-7 6-5 7-8 8-9 9-10 9-11 10-13 11-14 12-15 13-16 15-17 17-19 18-22 19-22 20-23 20-24 20-25 21-20 22-21 23-26</sure>
+  <possible>10-12 14-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s38">
+  <english>The plan had been to make one of Shearson 's easy-to-film , black-and-white `` Where We Stand '' commercials , which have been running occasionally in response to news events since 1985 .</english>
+  <czech>Původní plán měl být tvořen jedním z Shearsonových krátkých filmů , černobílou reklamkou " Kde stojíme , " která byla příležitostně vysílána jako reakce na publikované události od roku 1985 .</czech>
+  <sure>2-2 3-3 4-4 5-5 6-5 7-6 8-7 9-8 11-9 11-10 12-11 13-12 14-14 15-15 17-16 18-18 19-13 21-19 22-20 23-20 24-22 25-21 26-23 27-24 28-25 29-26 30-27 31-28 32-30 33-31</sure>
+  <possible>1-2 10-8 16-16 32-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s39">
+  <english>The ad would have run during the World Series tomorrow , replacing the debut commercial of Shearson 's new ad campaign , `` Leadership by Example '' .</english>
+  <czech>Inzerát by byl vysílán zítra během Světové série , namísto debutu reklamy nové Shearsonovské kampaně " Vedeme příkladem " .</czech>
+  <sure>2-1 3-2 4-3 4-4 5-3 5-4 6-6 8-7 9-8 10-5 11-9 12-10 14-11 15-12 17-14 19-13 21-15 23-16 24-17 26-18 27-19 28-20</sure>
+  <possible>1-1 7-8 13-11 16-15 18-14 25-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s40">
+  <english>But in a meeting after the market closed yesterday , Shearson executives decided not to go ahead with the stock-market ad .</english>
+  <czech>Ale na poradě po včerejším uzavření trhu se řídící pracovníci firmy Shearson rozhodli nepokračovat s touto reklamou akciového trhu .</czech>
+  <sure>1-1 2-2 4-3 5-4 7-7 8-6 9-5 11-12 12-9 12-10 13-13 14-14 15-14 16-14 17-14 18-15 19-16 20-18 20-19 21-17 22-20</sure>
+  <possible>3-3 6-6 13-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s41">
+  <english>`` We do n't think at this point anything needs to be said .</english>
+  <czech>" Nemyslíme , že v tomto bodě je třeba cokoliv říkat .</czech>
+  <sure>1-1 3-2 4-2 5-2 6-5 7-6 8-7 9-10 10-9 11-11 12-11 13-11 14-12</sure>
+  <possible>2-2 10-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s42">
+  <english>The market seems to be straightening out ; we 're taking a wait-and-see attitude , '' says Cathleen B . Stewart , executive vice president of marketing .</english>
+  <czech>Zdá se , že se trh vyrovnává ; zaujímáme proto vyčkávací postoj , " říká výkonná vicepresidentka pro marketing Cathleen B . Stewartová .</czech>
+  <sure>2-6 6-7 7-7 8-8 9-9 10-9 11-9 13-11 14-12 15-13 16-14 17-15 18-20 19-21 20-22 21-23 23-16 24-17 25-17 26-18 27-19 28-24</sure>
+  <possible>1-6 6-5 12-12</possible>
+  <phrasal>3-1 3-2 4-1 4-2 5-1 5-2</phrasal>
+</s>
+<s id="wsj_2201-s43">
+  <english>In any case , the brokerage firms are clearly moving faster to create new ads than they did in the fall of 1987 .</english>
+  <czech>V každém případě brokerské firmy zareagovaly ve výrobě nových inzerátů zřetelně rychleji než na podzim roku 1987 .</czech>
+  <sure>1-1 2-2 3-3 6-4 7-5 8-6 9-11 10-6 11-12 12-7 13-8 14-9 15-10 16-13 19-14 21-15 23-17 24-18</sure>
+  <possible>5-5 20-15 22-17 23-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s44">
+  <english>But it remains to be seen whether their ads will be any more effective .</english>
+  <czech>Teprve se uvidí , zda jejich inzeráty budou o něco efektivnější .</czech>
+  <sure>4-3 5-3 6-3 7-5 8-6 9-7 10-8 11-8 12-10 13-10 14-11 15-12</sure>
+  <possible>6-2 13-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s45">
+  <english>In 1987 , despite a barrage of ads from most of the major investment firms , individuals ran from the market en masse .</english>
+  <czech>V roce 1987 , navzdory palebné cloně inzerátů většiny velkých investičních firem , jednotlivci z trhu masově utíkali .</czech>
+  <sure>1-1 2-3 3-4 4-5 6-6 6-7 8-8 10-9 13-10 14-11 15-12 16-13 17-14 18-18 19-15 21-16 22-17 23-17 24-19</sure>
+  <possible>2-2 5-7 7-8 9-9 11-12 12-12 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s46">
+  <english>Now the firms must try their hardest to prove that advertising can work this time around .</english>
+  <czech>Nyní musí firmy vynaložit maximální úsilí , aby prokázaly , že inzerce tentokrát může zabrat .</czech>
+  <sure>1-1 3-3 4-2 8-8 9-9 10-11 11-12 12-14 13-15 14-13 15-13 17-16</sure>
+  <possible>2-3 10-10</possible>
+  <phrasal>5-4 5-5 5-6 6-4 6-5 6-6 7-4 7-5 7-6</phrasal>
+</s>
+<s id="wsj_2201-s47">
+  <english>Ad Notes ...</english>
+  <czech>Poznámky ...</czech>
+  <sure>2-1 3-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s48">
+  <english>ARNOLD ADVERTISING :</english>
+  <czech>ARNOLD ADVERTISING :</czech>
+  <sure>1-1 2-2 3-3</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s49">
+  <english>Edward Eskandarian , former chairman of Della Femina , McNamee WCRS/Boston , reached an agreement in principle to acquire a majority stake in Arnold Advertising , a small Boston shop .</english>
+  <czech>Edward Eskandarian , bývalý předseda správní rady Della Femina , McNamee WCRS / Boston , dosáhl v zásadě dohody získat většinový podíl v malé bostonské firmě Arnold Advertising .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-8 8-9 9-10 10-11 11-12 11-13 11-14 12-15 13-16 15-19 16-17 17-18 19-20 21-21 22-22 23-23 24-27 25-28 28-24 29-25 30-26 31-29</sure>
+  <possible>6-9 14-19 18-20 20-22 27-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s50">
+  <english>Terms were n't disclosed .</english>
+  <czech>Podmínky nebyly zveřejněny .</czech>
+  <sure>1-1 2-2 3-2 4-3 5-4</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s51">
+  <english>Mr . Eskandarian , who resigned his Della Femina post in September , becomes chairman and chief executive of Arnold .</english>
+  <czech>Pan Eskandarian , který rezignoval na svou funkci v Della Femina v září , se stane předsedou správní rady a výkoným ředitelem Arnold Advertising .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-7 8-10 9-11 10-8 11-12 12-13 13-14 14-16 15-17 16-20 17-22 18-21 20-23 21-25</sure>
+  <possible>9-9 10-6 14-15 19-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s52">
+  <english>John Verret , the agency 's president and chief executive , will retain the title of president .</english>
+  <czech>John Verret , president a výkoný ředitel agentury , si podrží titul presidenta .</czech>
+  <sure>1-1 2-2 3-3 5-8 7-4 8-5 9-7 10-6 11-9 13-11 15-12 17-13 18-14</sure>
+  <possible>4-7 6-8 12-11 13-10 14-12 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s53">
+  <english>Separately , McDonald 's Corp . , Oak Brook , Ill . , named Arnold to handle its estimated $ 4 million cooperative ad account for the Hartford , Conn . , area .</english>
+  <czech>McDonald ' s Corp . a Oak Brook , Ill . nezávisle na sobě nabídly Arnoldu , aby vedl jejich společný reklamní účet pro oblast Hartfordu a Connecticutu , v odhadu asi za 4 miliony dolarů .</czech>
+  <sure>1-12 3-1 4-2 4-3 5-4 6-5 8-7 9-8 10-9 11-10 12-11 14-15 15-16 17-19 18-20 19-31 20-36 21-34 22-35 23-21 24-22 25-23 26-24 28-26 30-28 33-25 34-37</sure>
+  <possible>1-13 1-14 16-16 19-30 22-33 27-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s54">
+  <english>That account had been handled by Della Femina , McNamee WCRS .</english>
+  <czech>Tento účet původně vedla Della Femina , McNamee WCRS .</czech>
+  <sure>1-1 2-2 3-4 4-4 5-4 7-5 8-6 9-7 10-8 11-9 12-10</sure>
+  <possible>6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s55">
+  <english>EDUCATION ADS :</english>
+  <czech>VZDĚLÁVACÍ INZERÁTY :</czech>
+  <sure>1-1 2-2 3-3</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s56">
+  <english>A 142-page ad supplement to Business Week 's special `` Corporate Elite '' issue calls on business leaders to use their clout to help solve the nation 's education crisis .</english>
+  <czech>142 stránková inzertní příloha zvláštního " Corporate Elite " vydání Business Week vyzývá vedoucí pracovníky obchodního světa , aby využili svého vlivu na pomoc řešení celostátní vzdělávací krize .</czech>
+  <sure>2-1 2-2 3-3 4-4 6-11 7-12 9-5 10-6 11-7 12-8 13-9 14-10 15-13 17-16 18-14 18-15 19-19 20-20 21-21 22-22 23-23 24-24 25-25 27-26 29-27 30-28 31-29</sure>
+  <possible>1-4 5-12 8-12 26-28 28-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s57">
+  <english>The supplement , the largest ever for the magazine , includes ads from 52 corporate advertisers and kicks off a two-year Business Week initiative on education .</english>
+  <czech>Tato příloha , největší jakou kdy časopis vydal , obsahuje inzeráty od 52 korporativních inzerentů a uzavírá dvouletou iniciativu časopisu Business Week na poli vzdělávání .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-4 9-7 10-9 11-10 12-11 13-12 14-13 15-14 16-15 17-16 18-17 19-17 21-18 22-21 23-22 24-19 25-23 26-25 27-26</sure>
+  <possible>8-7 20-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2201-s58">
+  <english>The magazine will distribute 10 % of the gross revenues from the supplement as grants to innovative teachers .</english>
+  <czech>Časopis rozdělí 10 % hrubých příjmů z přílohy jako granty inovátorským učitelům .</czech>
+  <sure>2-1 4-2 5-3 6-4 9-5 10-6 11-7 13-8 14-9 15-10 17-11 18-12 19-13</sure>
+  <possible>1-1 3-2 7-6 8-6 12-8 16-11</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

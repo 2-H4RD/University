@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="celex_31975L0033-s1">
+  <english>COUNCIL DIRECTIVE of 17 December 1974 on the approximation of the laws of the Member States relating to cold - water meters ( 75 / 33 / EEC )</english>
+  <czech>Směrnice Rady ze dne 17 . prosince 1974 o sbližování právních předpisů členských států týkajících se vodoměrů na studenou vodu ( 75 / 33 / EHS )</czech>
+  <sure>1-2 12-11 12-12 15-13 16-14 17-15 17-16 19-19 2-1 21-20 22-17 23-21 24-22 25-23 26-24 27-25 28-26 29-27 3-3 4-5 5-7 6-8 7-9 9-10</sure>
+  <possible>10-12 11-12 13-14 14-14 18-15 18-17 21-17 21-18 3-4 4-4 4-6 8-10</possible>
+</s>
+<s id="celex_31975L0033-s2">
+  <english>THE COUNCIL OF THE EUROPEAN COMMUNITIES ,</english>
+  <czech>RADA EVROPSKÝCH SPOLEČENSTVÍ ,</czech>
+  <sure>2-1 5-2 6-3 7-4</sure>
+  <possible>1-1 3-3 4-3</possible>
+</s>
+<s id="celex_31975L0033-s3">
+  <english>Having regard to the Treaty establishing the European Economic Community , and in particular Article 100 thereof ;</english>
+  <czech>s ohledem na Smlouvu o založení Evropského hospodářského společenství , a zejména na článek 100 této smlouvy ,</czech>
+  <sure>1-1 10-9 11-10 12-11 13-12 14-12 15-14 16-15 18-18 2-2 3-3 5-4 6-6 8-7 9-8</sure>
+  <possible>1-2 1-3 15-13 17-16 2-1 2-3 3-1 3-2 4-4 6-5 7-9</possible>
+</s>
+<s id="celex_31975L0033-s4">
+  <english>Having regard to the proposal from the Commission ;</english>
+  <czech>s ohledem na návrh Komise ,</czech>
+  <sure>1-1 2-2 3-3 5-4 8-5 9-6</sure>
+  <possible>1-2 1-3 2-1 2-3 3-1 3-2 4-4 6-5 7-5</possible>
+</s>
+<s id="celex_31975L0033-s5">
+  <english>Having regard to the Opinion of the European Parliament ( 1 ) ;</english>
+  <czech>s ohledem na stanovisko Evropského parlamentu [ 1 ] ,</czech>
+  <sure>1-1 10-7 11-8 12-9 13-10 2-2 3-3 5-4 8-5 9-6</sure>
+  <possible>1-2 1-3 2-1 2-3 3-1 3-2 4-4 6-6 7-6</possible>
+</s>
+<s id="celex_31975L0033-s6">
+  <english>Having regard to the Opinion of the Economic and Social Committee ( 2 ) ;</english>
+  <czech>s ohledem na stanovisko Hospodářského a sociálního výboru [ 2 ] ,</czech>
+  <sure>1-1 10-7 11-8 12-9 13-10 14-11 15-12 2-2 3-3 5-4 8-5 9-6</sure>
+  <possible>1-2 1-3 2-1 2-3 3-1 3-2 4-4 6-8 7-8</possible>
+</s>
+<s id="celex_31975L0033-s7">
+  <english>Whereas in the Member States the construction and the methods of control of cold - water meters are subject to mandatory provisions which differ from one Member State to another and consequently hinder trade in such instruments ; whereas it is therefore necessary to approximate these provisions ;</english>
+  <czech>vzhledem k tomu , že v členských státech jsou konstrukce a metody kontroly vodoměrů předmětem závazných předpisů , které se v jednotlivých členských státech liší a v důsledku toho brání obchodu s těmito přístroji ; že je tedy nutné tyto předpisy sblížit ;</czech>
+  <sure>1-1 1-2 1-3 1-4 1-5 10-12 12-13 16-14 17-14 18-9 19-15 2-6 21-16 22-17 23-19 24-20 24-25 27-23 28-24 31-26 32-27 32-28 32-29 33-30 34-31 35-32 36-33 37-34 38-35 4-7 41-37 42-38 43-39 45-42 46-40 47-41 48-43 5-8 7-10 8-11</sure>
+  <possible>11-13 13-14 14-14 15-14 20-15 20-17 23-18 25-22 26-22 28-21 29-22 3-8 30-22 39-36 40-37 44-42 6-10 9-12</possible>
+</s>
+<s id="celex_31975L0033-s8">
+  <english>Whereas Council Directive No 71 / 316 / EEC ( 3 ) of 26 July 1971 on the approximation of the laws of the Member States relating to common provisions for both measuring instruments and methods of metrological control , as amended by the Act of Accession ( 4 ) , laid down the EEC pattern approval and EEC initial verification procedures ; whereas , in accordance with that Directive , the technical requirements for the design and functioning of cold - water meters should be laid down ; whereas such requirements must be met , and the controls must be carried out , and the appropriate signs and marks affixed , before these instruments can be freely imported , marketed and used ,</english>
+  <czech>vzhledem k tomu , že směrnice Rady 71 / 316 / EHS [ 3 ] ze dne 26 . července 1971 o sbližování právních předpisů členských států týkajících se společných ustanovení pro měřicí přístroje a pro metody metrologické kontroly ve znění aktu o přistoupení [ 4 ] , stanovila postupy pro EHS schválení typu a EHS prvotní ověření ; že v souladu s uvedenou směrnicí je nezbytné stanovit technické požadavky na konstrukci a funkci vodoměrů na studenou vodu ; které musí být splněny , kontroly , které musí být provedeny , a značky a znaky , které musí být připojeny , než je bude možné volně dovážet , uvádět na trh a používat ,</czech>
+  <sure>1-1 1-2 1-3 1-4 1-5 10-13 100-88 101-89 102-90 103-90 104-91 105-92 108-93 109-94 11-14 110-95 111-100 112-101 113-102 116-105 117-104 118-106 119-107 12-15 120-108 121-109 121-110 121-111 122-112 123-113 124-114 13-16 14-18 15-20 16-21 17-22 19-23 2-7 22-24 22-25 25-26 26-27 27-28 27-29 29-30 3-6 30-31 31-32 33-33 34-34 35-35 36-37 38-38 39-39 45-42 46-43 47-44 48-45 49-46 5-8 50-47 51-48 52-49 53-49 55-52 57-53 6-9 66-61 67-62 68-63 69-64 7-10 70-65 73-69 74-70 75-71 77-72 78-73 79-74 8-11 81-77 83-78 84-75 9-12 93-81 94-82 95-83 96-84 99-85</sure>
+  <possible>106-93 111-99 114-103 116-104 13-17 14-17 14-19 18-23 20-25 21-25 23-27 24-27 28-28 28-31 32-35 36-36 37-39 4-8 43-42 44-42 54-52 56-50 58-55 59-56 60-57 61-58 63-59 72-70 76-72 80-75 83-75 85-66 85-67 86-66 87-68 88-68 89-79 97-84 98-85</possible>
+</s>
+<s id="celex_31975L0033-s9">
+  <english>HAS ADOPTED THIS DIRECTIVE :</english>
+  <czech>PŘIJALA TUTO SMĚRNICI :</czech>
+  <sure>2-1 3-2 4-3 5-4</sure>
+  <possible>1-1</possible>
+</s>
+<s id="celex_31975L0033-s10">
+  <english>This Directive shall apply to cold - water meters , which are integrating measuring instruments for continuously determining the volume of water ( and no other liquid ) passing through them , and which comprise a measuring device linked to an indicating device .</english>
+  <czech>Tato směrnice se vztahuje na vodoměry na studenou vodu , což jsou integrální měřicí přístroje pro spojité měření objemu vody ( a žádné jiné kapaliny ) přes ně protékající , které se skládají z měřicího přístroje spojeného s indikačním zařízením .</czech>
+  <sure>1-1 10-10 11-11 12-12 13-13 14-14 15-15 16-16 17-17 18-18 2-2 20-19 22-20 23-21 24-22 25-23 26-24 27-25 28-26 29-29 30-27 31-28 32-30 34-31 35-32 35-33 37-35 38-36 39-37 4-3 4-4 40-38 42-39 43-40 44-41 5-5 6-8 8-9 9-6</sure>
+  <possible>19-19 21-20 3-4 35-34 36-36 38-34 41-39 41-40 8-6</possible>
+</s>
+<s id="celex_31975L0033-s11">
+  <english>Water shall be considered to be " cold " when its temperature is in the range 0 º to 30 º C .</english>
+  <czech>Voda se považuje za " studenou " , je - li její teplota v rozmezí od 0 ° C do 30 ° C .</czech>
+  <sure>1-1 10-11 11-12 12-13 13-9 14-14 16-15 17-17 18-18 19-20 20-21 21-22 22-23 23-24 4-3 7-5 8-6 9-7</sure>
+  <possible>10-10 15-15 17-16 2-3 3-3 4-2 5-4 6-4</possible>
+</s>
+<s id="celex_31975L0033-s12">
+  <english>Cold - water meters which may bear the EEC marks and signs are described in the Annex to this Directive .</english>
+  <czech>Vodoměry na studenou vodu , které mohou být opatřeny značkami a znaky EHS , jsou popsány v příloze této směrnice .</czech>
+  <sure>1-3 10-10 11-11 12-12 13-15 14-16 15-17 17-18 19-19 20-20 21-21 3-4 4-1 5-6 6-7 7-8 7-9 9-13</sure>
+  <possible>16-18 18-18 18-20 3-1 3-2 5-5 8-10</possible>
+</s>
+<s id="celex_31975L0033-s13">
+  <english>They shall be subject to EEC pattern approval and submitted to EEC initial verification .</english>
+  <czech>Tyto vodoměry podléhají EHS schválení typu a EHS prvotnímu ověření .</czech>
+  <sure>12-8 13-9 14-10 15-11 6-4 7-6 8-5 9-7</sure>
+  <possible>1-1 10-3 11-8 2-3 3-3 4-3 5-3 5-4</possible>
+</s>
+<s id="celex_31975L0033-s14">
+  <english>No Member State may refuse , prohibit or restrict the placing on the market or entry into service of cold - water meters bearing the EEC pattern approval symbol and the EEC initial verification mark , on the grounds of their metrological properties .</english>
+  <czech>Žádný členský stát nesmí odmítat , zakazovat nebo omezovat uvedení na trh nebo do provozu vodoměrů na studenou vodu , které jsou na základě svých metrologických vlastností opatřeny značkou EHS schválení typu a značkou EHS prvotního ověření .</czech>
+  <sure>1-1 11-10 12-11 14-12 15-13 17-14 18-15 2-2 20-18 22-19 23-16 24-28 26-30 27-32 28-31 29-29 3-3 30-33 32-35 33-36 34-37 35-34 37-23 39-24 4-4 41-25 42-26 43-27 44-38 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>1-4 10-10 13-12 19-16 22-16 22-17 24-22 25-29 31-34 38-24 40-27</possible>
+</s>
+<s id="celex_31975L0033-s15">
+  <english>Member States shall put into force the laws , regulations and administrative provisions needed in order to comply with this Directive within 18 months of its notification and shall forthwith inform the Commission thereof .</english>
+  <czech>Členské státy uvedou v účinnost právní a správní předpisy nezbytné pro dosažení souladu s touto směrnicí do osmnácti měsíců od jejího zveřejnění a neprodleně o nich uvědomí Komisi .</czech>
+  <sure>1-1 11-7 12-8 14-10 15-11 16-11 17-11 18-13 19-14 2-2 20-15 21-16 22-17 23-18 24-19 25-20 26-21 27-22 28-23 30-24 31-27 33-28 34-25 34-26 35-29 4-3 5-4 6-5 8-6</sure>
+  <possible>10-9 13-9 16-12 18-12 29-27 3-3 32-28 7-9 8-9</possible>
+</s>
+<s id="celex_31975L0033-s16">
+  <english>Member States shall ensure that the texts of the main provisions of national law which they adopt in the field covered by this Directive are communicated to the Commission .</english>
+  <czech>Členské státy zajistí , aby bylo Komisi sděleno znění ustanovení vnitrostátních právních předpisů , které přijmou v oblasti působnosti této směrnice .</czech>
+  <sure>1-1 11-10 13-11 14-12 14-13 15-15 17-16 18-17 2-2 20-18 20-19 23-20 24-21 25-6 26-8 29-7 30-22 4-3 5-5 7-9</sure>
+  <possible>12-13 15-14 16-16 19-18 21-18 22-18 22-21 27-7 28-7 3-3 5-4 6-9 8-10 9-10</possible>
+</s>
+<s id="celex_31975L0033-s17">
+  <english>This Directive is addressed to the Member States .</english>
+  <czech>Tato směrnice je určena členským státům .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-5 8-6 9-7</sure>
+  <possible>5-6 6-6</possible>
+</s>
+<s id="celex_31975L0033-s18">
+  <english>Done at Brussels , 17 December 1974 .</english>
+  <czech>V Bruselu dne 17 . prosince 1974 .</czech>
+  <sure>2-1 3-2 5-4 6-6 7-7 8-8</sure>
+  <possible>5-3 5-5</possible>
+</s>
+<s id="celex_31975L0033-s19">
+  <english>ANNEX</english>
+  <czech>PŘÍLOHA</czech>
+  <sure>1-1</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s20">
+  <english>TERMINOLOGY AND DEFINITIONS</english>
+  <czech>TERMINOLOGIE A DEFINICE</czech>
+  <sure>1-1 2-2 3-3</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s21">
+  <english>This Annex applies only to cold - water meters based on a direct mechanical process involving the use of volumetric chambers with mobile walls or the action of the velocity of the water on the rotation rate of a moving part ( turbine , impeller etc . . . ) .</english>
+  <czech>Tato příloha se vztahuje pouze na vodoměry na studenou vodu , které využívají přímý mechanický proces založený na využití objemových komor s pohyblivými stěnami nebo na vlivu rychlosti vody na rychlost otáčení pohyblivé části ( radiální nebo axiální turbína ) .</czech>
+  <sure>1-1 13-14 14-15 15-16 18-19 2-2 20-20 21-21 22-22 23-23 24-24 25-25 27-27 3-4 30-28 33-29 34-30 36-32 37-31 4-5 40-33 41-34 42-35 43-39 5-6 50-40 51-41 6-9 8-10 9-7</sure>
+  <possible>12-16 16-17 16-18 17-19 19-21 26-27 27-26 28-28 29-28 3-3 31-29 32-29 35-31 38-34 39-34 8-7 8-8</possible>
+</s>
+<s id="celex_31975L0033-s22">
+  <english>The flowrate is the volume of water passing through the meter per unit of time , the volume being expressed in cubic metres or litres and the time in hours , minutes or seconds .</english>
+  <czech>Průtok je objem vody protékající vodoměrem za jednotku času , přičemž tento objem je vyjádřen v metrech krychlových nebo litrech a čas v hodinách , minutách nebo sekundách .</czech>
+  <sure>11-6 12-7 13-8 15-9 16-10 17-12 18-13 19-14 2-1 20-15 21-16 22-18 23-17 24-19 25-20 26-21 28-22 29-23 3-2 30-24 31-25 32-26 33-27 34-28 35-29 5-3 7-4 8-5</sure>
+  <possible>1-1 10-6 14-9 19-11 27-22 4-3 6-4 9-5 9-6</possible>
+</s>
+<s id="celex_31975L0033-s23">
+  <english>The volume delivered is the total volume of water which has passed through the meter in a given time .</english>
+  <czech>Proteklý objem je celkový objem vody , který protekl vodoměrem za danou dobu .</czech>
+  <sure>10-8 12-9 15-10 16-11 18-12 19-13 2-2 20-14 3-1 4-3 6-4 7-5 9-6</sure>
+  <possible>1-2 10-7 11-9 13-10 13-9 14-10 17-13 5-5 8-6</possible>
+</s>
+<s id="celex_31975L0033-s24">
+  <english>The maximum flowrate , Qmax , is the highest flowrate at which the meter can function over limited periods without damage , and without exceeding the maximum permissible errors and the maximum permissible value for loss of pressure .</english>
+  <czech>Maximální průtok Qmax je největší průtok , při němž vodoměr může pracovat po omezené časové intervaly bez poškození a bez překročení maximální dovolené chyby a maximální dovolené hodnoty tlakové ztráty .</czech>
+  <sure>10-6 11-8 12-9 14-10 15-11 16-12 17-13 18-14 19-15 19-16 2-1 20-17 21-18 23-19 24-20 25-21 27-22 28-23 29-24 3-2 30-25 32-26 33-27 34-28 36-30 38-29 39-31 5-3 7-4 9-5</sure>
+  <possible>1-2 12-7 13-10 22-19 26-24 31-28 35-30 37-29 8-5 8-6</possible>
+</s>
+<s id="celex_31975L0033-s25">
+  <english>The nominal flowrate , Qn , is equal to half the maximum flowrate , Qmax .</english>
+  <czech>Jmenovitý průtok Qn se rovná polovině maximálního průtoku Qmax .</czech>
+  <sure>10-6 12-7 13-8 15-9 16-10 2-1 3-2 5-3 8-5</sure>
+  <possible>1-2 11-7 11-8 7-5 8-4 9-5 9-6</possible>
+</s>
+<s id="celex_31975L0033-s26">
+  <english>It is expressed in cubic metres per hour and is used to designate the meter .</english>
+  <czech>Tento průtok je vyjádřen v metrech krychlových za hodinu a používá se pro označení vodoměru .</czech>
+  <sure>11-11 12-13 13-14 15-15 16-16 2-3 3-4 4-5 5-7 6-6 7-8 8-9 9-10</sure>
+  <possible>1-3 10-11 11-12 14-15</possible>
+</s>
+<s id="celex_31975L0033-s27">
+  <english>At the nominal flowrate , Qn , the meter should be able to function in normal use , i . e . , in continuous and intermittent operating conditions , without exceeding the maximum permissible errors .</english>
+  <czech>Při jmenovitém průtoku Qn musí být vodoměr schopen pracovat při běžném použití , tj . za souvislých i přerušovaných provozních podmínek , aniž by došlo k překročení maximálních dovolených chyb .</czech>
+  <sure>1-1 10-5 11-6 12-8 14-9 15-10 16-11 17-12 18-13 19-14 20-14 21-14 22-15 24-16 25-17 26-18 27-19 28-20 29-21 3-2 30-22 31-23 32-27 34-28 35-29 36-30 37-31 4-3 6-4 9-7</sure>
+  <possible>13-9 2-3 32-24 32-25 32-26 33-30 8-7</possible>
+</s>
+<s id="celex_31975L0033-s28">
+  <english>The minimum flowrate , ( Qmin ) , is the flowrate above which the meter must not exceed the maximum permissible errors , and is fixed as a function of Qn .</english>
+  <czech>Minimální průtok Qmin je průtok , nad jehož hodnotu nesmí vodoměr překročit maximální dovolené chyby a který je pevně stanoven jako funkce Qn .</czech>
+  <sure>11-5 12-7 13-8 15-11 16-10 17-10 18-12 2-1 20-13 21-14 22-15 24-16 25-18 26-19 26-20 27-21 29-22 3-2 31-23 32-24 6-3 9-4</sure>
+  <possible>1-2 10-5 13-6 14-11 19-15 23-16 28-22 30-23</possible>
+</s>
+<s id="celex_31975L0033-s29">
+  <english>The flowrate range of a water meter is bounded by the maximum and minimum flowrates , Qmax and Qmin .</english>
+  <czech>Rozsah průtoku vodoměru je ohraničen maximálním a minimálním průtokem Qmax a Qmin .</czech>
+  <sure>12-6 13-7 14-8 15-9 17-10 18-11 19-12 2-2 20-13 3-1 6-3 7-3 8-4 9-5</sure>
+  <possible>1-1 10-9 11-9 4-3 5-3</possible>
+</s>
+<s id="celex_31975L0033-s30">
+  <english>It is divided into two regions , termed upper and lower , with different maximum permissible errors .</english>
+  <czech>Tento rozsah je rozdělen do dvou oblastí nazývaných horní a dolní s odlišnými maximálními dovolenými chybami .</czech>
+  <sure>10-10 11-11 13-12 14-13 15-14 16-15 17-16 18-17 2-3 3-4 4-5 5-6 6-7 8-8 9-9</sure>
+  <possible>1-3</possible>
+</s>
+<s id="celex_31975L0033-s31">
+  <english>The transitional flowrate , Qt , is the flowrate which divides the upper and lower regions of the flow range and the rate at which the maximum permissible errors become discontinuous .</english>
+  <czech>Přechodový průtok Qt je průtok , který odděluje horní a dolní oblast průtoku a v němž se nespojitě mění maximální dovolená chyba .</czech>
+  <sure>10-7 11-8 13-9 14-10 15-11 16-12 19-13 2-1 21-14 24-15 25-16 27-20 28-21 29-22 3-2 31-18 32-23 5-3 7-4 9-5</sure>
+  <possible>1-2 10-6 12-12 12-9 17-13 18-13 20-13 26-22 30-17 30-19 8-5</possible>
+</s>
+<s id="celex_31975L0033-s32">
+  <english>The maximum permissible error is the limit of the error permitted by this Directive for EEC pattern approval and EEC initial verification of a water meter .</english>
+  <czech>Maximální dovolená chyba je největší možná chyba vodoměru povolená pro EHS schválení typu a pro EHS prvotní ověření podle této směrnice .</czech>
+  <sure>10-7 11-9 12-19 13-20 14-21 15-10 16-11 17-13 18-12 19-14 2-1 20-16 21-17 22-18 25-8 26-8 27-22 3-2 4-3 5-4</sure>
+  <possible>1-3 23-8 24-8 6-5 7-5 7-6 8-7 9-7</possible>
+</s>
+<s id="celex_31975L0033-s33">
+  <english>Loss of pressure means the loss which is caused by the presence of the water meter in the conduit .</english>
+  <czech>Tlaková ztráta znamená ztrátu , která je způsobena přítomností vodoměru v potrubí .</czech>
+  <sure>1-2 12-9 15-10 16-10 17-11 19-12 20-13 3-1 4-3 6-4 7-6 8-7 9-8</sure>
+  <possible>10-9 11-9 13-10 14-10 18-12 2-1 5-4 7-5</possible>
+</s>
+<s id="celex_31975L0033-s34">
+  <english>METROLOGICAL CHARACTERISTICS</english>
+  <czech>METROLOGICKÉ VLASTNOSTI</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s35">
+  <english>The maximum error permitted in the lower region , from Qmin inclusive to Qt non - inclusive , is ± 5 % .</english>
+  <czech>Maximální dovolená chyba v dolním rozsahu od Qmin ( včetně ) do Qt ( vyjma ) je ± 5 % .</czech>
+  <sure>10-7 11-8 12-10 13-12 14-13 15-15 16-15 17-15 19-17 2-1 20-18 21-19 22-20 23-21 3-3 4-2 5-4 7-5 8-6</sure>
+  <possible>1-3 12-11 12-9 17-14 17-16 6-5 6-6</possible>
+</s>
+<s id="celex_31975L0033-s36">
+  <english>The maximum error permitted in the upper region , from Qt inclusive to Qmax inclusive , is ± 2 % .</english>
+  <czech>Maximální dovolená chyba v horním rozsahu od Qt ( včetně ) do Qmax ( včetně ) je ± 2 % .</czech>
+  <sure>10-7 11-8 12-10 13-12 14-13 15-15 17-17 18-18 19-19 2-1 20-20 21-21 3-3 4-2 5-4 7-5 8-6</sure>
+  <possible>1-3 12-11 12-9 15-14 15-16 6-5 6-6</possible>
+</s>
+<s id="celex_31975L0033-s37">
+  <english>Metrological classes</english>
+  <czech>Metrologické třídy</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s38">
+  <english>Water meters are divided , according to the values of Qmin and Qt defined above , into the three metrological classes in the following table : % gt % PIC FILE = % quot % T0006670 % quot % % gt %</english>
+  <czech>Vodoměry jsou rozděleny podle výše definovaných hodnot Qmin a Qt do tří metrologických tříd uvedených v následující tabulce :</czech>
+  <sure>1-1 11-8 12-9 13-10 14-6 15-5 17-11 19-12 2-1 20-13 21-14 22-16 24-17 25-18 26-19 3-2 4-3 6-4 7-4 9-7</sure>
+  <possible>10-8 18-14 23-17 23-18 5-4 8-7</possible>
+</s>
+<s id="celex_31975L0033-s39">
+  <english>TECHNOLOGICAL CHARACTERISTICS</english>
+  <czech>TECHNOLOGICKÉ VLASTNOSTI</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s40">
+  <english>Construction - General provisions</english>
+  <czech>Konstrukce – obecná ustanovení</czech>
+  <sure>1-1 2-2 3-3 4-4</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s41">
+  <english>The meters must be constructed in such a way as to :</english>
+  <czech>Vodoměr musí být konstruován takovým způsobem , aby :</czech>
+  <sure>10-8 11-8 12-9 2-1 3-2 4-3 5-4 7-5 9-6</sure>
+  <possible>1-1 10-7 11-7 6-5 6-6 8-6</possible>
+</s>
+<s id="celex_31975L0033-s42">
+  <english>( 1 ) give long service and guarantee proof against fraud ,</english>
+  <czech>1 . dlouhodobě poskytoval služby a zaručoval odolnost vůči podvodné manipulaci ,</czech>
+  <sure>10-9 11-10 11-11 12-12 2-1 4-4 5-3 6-5 7-6 8-7 9-8</sure>
+  <possible>1-1 2-2 3-1 3-2</possible>
+</s>
+<s id="celex_31975L0033-s43">
+  <english>( 2 ) conform with the provisions of this Directive , under normal conditions of use .</english>
+  <czech>2 . za běžných podmínek použití odpovídal ustanovením této směrnice .</czech>
+  <sure>10-10 12-3 13-4 14-5 16-6 17-11 2-1 4-7 7-8 9-9</sure>
+  <possible>1-1 15-6 2-2 3-1 3-2 5-7 5-8 6-8 8-10</possible>
+</s>
+<s id="celex_31975L0033-s44">
+  <english>Where meters may be subjected to an accidental reversal of flows they must be capable of withstanding it without any deterioration or change in their metrological properties , and at the same time should record such a reversal .</english>
+  <czech>Tam , kde mohou být vodoměry vystaveny nahodilé změně směru proudění , musí být schopny tuto změnu bez poškození a beze změny svých metrologických vlastností vydržet a současně musí tento zpětný průtok zaznamenat .</czech>
+  <sure>1-1 1-3 11-10 11-11 13-13 14-14 15-15 17-26 19-18 2-6 21-19 23-22 25-23 26-24 27-25 29-27 3-4 30-28 31-28 32-28 33-28 34-29 35-33 36-30 38-31 38-32 39-34 4-5 5-7 8-8 9-9</sure>
+  <possible>1-2 10-10 10-11 12-13 16-15 18-16 20-18 20-19 22-20 24-22 24-25 28-27 37-32 6-9 7-8 7-9</possible>
+</s>
+<s id="celex_31975L0033-s45">
+  <english>The water meter must be made of materials of adequate strength and stability for the purpose for which the water meter is to be used .</english>
+  <czech>Vodoměr musí být vyroben z materiálů o pevnosti a stálosti , která odpovídá účelu , pro nějž se bude používat .</czech>
+  <sure>10-13 11-8 12-9 13-10 16-14 17-16 18-17 2-1 22-19 23-19 24-19 25-20 26-21 3-1 4-2 5-3 6-4 7-5 8-6 9-7</sure>
+  <possible>1-1 14-14 15-14 18-15 24-18 25-18</possible>
+</s>
+<s id="celex_31975L0033-s46">
+  <english>It must be constructed throughout of materials which are resistant to internal and normal external corrosion and if necessary be protected by some suitable surface treatment .</english>
+  <czech>Vodoměr musí být celý vyroben z materiálů , které jsou odolné vůči vnitřní a běžné vnější korozi , a pokud je třeba , musí být opatřen vhodnou povrchovou úpravou .</czech>
+  <sure>10-11 11-12 12-13 13-14 14-15 15-16 16-17 17-19 18-20 19-21 19-22 2-2 20-25 21-26 24-27 25-28 26-29 27-30 3-3 4-5 5-4 6-6 7-7 8-9 9-10</sure>
+  <possible>1-2 17-18 18-18 20-24 22-29 23-29 8-8</possible>
+</s>
+<s id="celex_31975L0033-s47">
+  <english>Water temperature variations within the working temperature range must not adversely affect the materials used in the construction of the water meter .</english>
+  <czech>Změny teploty vody v rozsahu pracovních teplot nesmějí nepříznivě ovlivňovat materiály použité pro výrobu vodoměru .</czech>
+  <sure>1-3 10-8 11-9 12-10 14-11 15-12 16-13 18-14 2-2 21-15 22-15 23-16 3-1 4-4 6-6 7-7 8-5 9-8</sure>
+  <possible>13-11 17-14 19-15 20-15 5-5</possible>
+</s>
+<s id="celex_31975L0033-s48">
+  <english>Soundness - pressure tightness</english>
+  <czech>Těsnost – tlaková nepropustnost</czech>
+  <sure>1-1 2-2 3-3 4-4</sure>
+  <possible></possible>
+</s>
+<s id="celex_31975L0033-s49">
+  <english>A meter must be able to withstand constantly - without defects in its functioning , leakage , seepage through the walls or permanent deformation - the continuous water pressure for which it is designed , termed the maximum operating pressure .</english>
+  <czech>Vodoměr musí být schopen vydržet po neomezenou dobu – bez vad v provozu , propouštění vody , bez prosakování stěnami a bez trvalé deformace – stálý tlak vody , pro který byl zkonstruován a který se nazývá maximální provozní tlak .</czech>
+  <sure>10-10 11-11 12-12 14-13 15-14 16-15 17-17 18-19 2-1 21-20 23-23 24-24 25-25 27-26 28-28 29-27 3-2 30-30 31-31 33-32 34-33 36-37 38-38 39-39 4-3 40-40 41-41 5-4 7-5 8-6 8-7 8-8 9-9</sure>
+  <possible>1-1 13-13 16-16 19-20 20-20 22-21 26-27 31-29 32-32 35-34 36-34 36-35 36-36 37-40 6-5</possible>
+</s>
+<s id="celex_31975L0033-s50">
+  <english>The minimum value for this pressure is 10 bars .</english>
+  <czech>Minimální hodnota tohoto tlaku je 10 barů .</czech>
+  <sure>10-8 2-1 3-2 5-3 6-4 7-5 8-6 9-7</sure>
+  <possible>1-2 4-2 4-4</possible>
+</s>
+</sentences>

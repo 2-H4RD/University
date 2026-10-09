@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2202-s1">
+  <english>You know what the law of averages is , do n't you ?</english>
+  <czech>Víte , co je to zákon průměru , že ?</czech>
+  <sure>2-1 3-3 5-6 7-7 8-4 9-8 13-10</sure>
+  <possible>1-1 3-2 4-6 6-7</possible>
+  <phrasal>10-9 11-9 12-9</phrasal>
+</s>
+<s id="wsj_2202-s2">
+  <english>It 's what 1 ) explains why we are like , well , ourselves rather than Bo Jackson ; 2 ) cautions that it 's possible to drown in a lake that averages two feet deep ; and 3 ) predicts that 10,000 monkeys placed before 10,000 pianos would produce 1,118 publishable rock 'n' roll tunes .</english>
+  <czech>Je to to , co 1 ) vysvětluje , proč jsme opravdu sami sebou spíše než Bo Jacksonem ; 2 ) způsobuje , že je možné se utopit v jezeře v průměru 2 stopy hlubokém ; a 3 ) předpovídá , že 10.000 opic posazených před 10.000 pian by vyprodukovalo 1.118 uveřejnitelných rock 'n' rollových melodií .</czech>
+  <sure>1-2 2-1 3-5 4-6 5-7 6-8 7-10 9-11 12-12 15-15 16-16 17-17 18-18 19-19 20-20 21-21 22-22 23-24 25-25 26-26 28-28 29-29 31-30 33-32 34-33 35-34 36-35 37-36 38-37 39-38 40-39 41-40 42-42 43-43 44-44 45-45 46-46 47-47 48-48 49-49 50-50 51-51 52-52 53-53 54-54 55-55 56-56 57-57</sure>
+  <possible>3-4 7-9 8-11 23-23 24-25 27-28 28-27 30-30 33-31 42-41</possible>
+  <phrasal>10-13 10-14 14-13 14-14</phrasal>
+</s>
+<s id="wsj_2202-s3">
+  <english>Baseball , that game of the long haul , is the quintessential sport of the mean , and the mean ol' law caught up with the San Francisco Giants in the World Series last weekend .</english>
+  <czech>Baseball , tato hra dlouhého zápřahu , je nejtypičtějším sportem průměru a zákon průměru dohonil San Francisco Giants o minulém víkendu ve Světové sérii .</czech>
+  <sure>1-1 2-2 3-3 4-4 7-5 8-6 9-7 10-8 12-9 13-10 16-11 18-12 20-14 22-13 23-15 24-15 26-18 27-16 28-17 29-18 30-22 31-24 31-25 32-23 33-24 34-20 34-24 34-25 35-21 36-25</sure>
+  <possible>5-6 6-6 11-9 11-10 14-11 14-14 15-11 15-14 17-12 19-14 25-18 35-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s4">
+  <english>The team that dumped runs by the bushel on the Chicago Cubs in the National League playoffs was held to just one in two games by the home-team Oakland A 's , the gang that had been done unto similarly by the Los Angeles Dodgers and Orel Hershiser in last year 's tournament .</english>
+  <czech>Tým , který doslova vyběhl s Chicago Cubs v play - off Národní ligy , udržel pouze jeden ze dvou zápasů proti domácímu týmu Oakland A , partě , která dopadla podobně s Los Angeles Dodgers a Orel Hershiser v loňském turnaji .</czech>
+  <sure>2-1 3-3 11-7 12-8 13-9 15-13 16-14 17-10 17-11 17-12 18-16 19-16 21-17 22-18 23-19 24-20 25-21 26-22 28-23 28-24 29-25 30-26 32-27 34-28 35-30 36-31 37-31 38-31 40-32 41-33 43-34 44-35 45-36 46-37 47-38 48-39 49-40 50-41 51-41 53-42 54-43</sure>
+  <possible>1-1 9-8 10-8 14-12 27-24 31-26 33-29 42-36 52-41</possible>
+  <phrasal>4-4 4-5 4-6 5-4 5-5 5-6 6-4 6-5 6-6 7-4 7-5 7-6 8-4 8-5 8-6</phrasal>
+</s>
+<s id="wsj_2202-s5">
+  <english>Morever , much of the damage was accomplished by A 's who had some catching up to do .</english>
+  <czech>Mnoho škody bylo navíc dovršeno hráči týmu A , kteří měli co dohánět .</czech>
+  <sure>1-4 3-1 6-2 7-3 8-5 10-8 12-10 13-11 15-13 16-13 19-14</sure>
+  <possible>4-2 5-2 9-8 12-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s6">
+  <english>In game two , on a cool Sunday evening in this land of perpetual autumn , a lot of the catching up was done by the A 's catcher , Terry Steinbach .</english>
+  <czech>Ve druhém zápasu , za chladného nedělního večera v této zemi věčného podzimu , udělal mnoho doběhů chytač mužstva A Terry Steinbach .</czech>
+  <sure>1-1 2-3 3-2 4-4 5-5 7-6 8-7 9-8 10-9 11-10 12-11 14-12 15-13 16-14 17-16 18-16 21-17 22-17 23-15 24-15 27-20 29-18 31-21 32-22 33-23</sure>
+  <possible>6-8 13-13 19-16 20-17 25-20 26-20 28-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s7">
+  <english>He hit a 2 - 0 pitch from Rick Reuschel into the left-field stands in inning four to stretch his team 's lead from 2 - 1 to a decisive 5 - 1 , where it stayed .</english>
+  <czech>Ve čtvrté směně odpálil nadhoz 2 - 0 Ricka Reuschela do tribuny za levým polem a zvýšil vedení svého týmu z 2 - 1 na rozhodujících 5 - 1 , což se už nezměnilo .</czech>
+  <sure>2-4 4-6 5-7 7-5 9-9 10-10 11-11 13-14 13-15 14-12 15-1 16-3 17-2 19-17 20-19 21-20 23-18 24-21 28-25 30-26 34-30 35-31 6-8 27-24 26-23 25-22 31-27 32-28 33-29 38-35 37-34</sure>
+  <possible>1-4 3-5 8-10 12-12 13-13 18-17 22-20 36-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s8">
+  <english>So what if Steinbach had struck just seven home runs in 130 regular-season games , and batted in the seventh position of the A 's lineup .</english>
+  <czech>Pak už nezáleželo na tom , že Steinbach odpálil pouze sedm homerunů ve 130 pravidelných sezónních zápasech a dostal se na sedmé místo žebříčku týmu A v odpalech .</czech>
+  <sure>4-8 6-9 7-10 8-11 9-12 10-12 11-13 12-14 13-15 13-16 14-17 16-18 17-19 18-21 20-22 21-23 24-26 26-24 27-29</sure>
+  <possible>5-9 17-20 19-23 22-26 23-26 25-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s9">
+  <english>`` If you get your pitch , and take a good swing , anything can happen , '' he later remarked .</english>
+  <czech>" Pokud dostanete svůj nadhoz a pořádně švihnete , může se stát cokoliv , " poznamenal později .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 8-6 9-8 11-7 12-8 13-9 14-13 15-10 16-12 17-14 18-15 20-17 21-16 22-18</sure>
+  <possible>3-3 10-8 16-11 19-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s10">
+  <english>On Saturday night , quite a few of the boys in green and gold salted away successes to salve the pain of past and , no doubt , future droughts .</english>
+  <czech>V sobotu v noci několik hochů v zelené a zlaté prožilo úspěch , který zahojil rány z minulosti a bezpochyby i žízeň budoucnosti .</czech>
+  <sure>1-1 2-2 3-4 5-5 6-5 7-5 10-6 11-7 12-8 13-9 14-10 15-11 16-11 17-12 19-15 21-16 22-17 23-18 24-19 26-20 27-20 29-23 30-22 31-24</sure>
+  <possible>3-3 8-6 9-6 18-15 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s11">
+  <english>Mark McGwire , the big , red-haired Oakland first baseman , had three hits in four at bats , two more than he 'd had in the five-game Dodger series in which he 'd gone 1-for-17 .</english>
+  <czech>Kapitán Oaklandu , velký rudovlasý Mark McGwire , udělal tři odpaly ze čtyř otoček na pálce , o dva více než v sérii pěti zápasů s Dodgers , ve které odpálil 1 ze 17 .</czech>
+  <sure>1-6 2-7 5-4 7-5 8-2 9-1 10-1 11-8 12-9 13-10 14-11 15-12 16-13 17-15 18-16 19-17 20-19 21-20 22-21 26-22 28-24 28-25 29-27 30-23 31-29 32-30 35-31 36-32 36-33 36-34 37-35</sure>
+  <possible>4-1 27-23 29-26 32-28 33-31 34-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s12">
+  <english>The A-men batting Nos . 6 through 9 , a.k.a . the `` bottom of the order , '' got seven of their team 's 11 hits and scored four of its runs in a 5 - 0 decision .</english>
+  <czech>Áčkaři pálící pod čísly 6 - 9 , známí také jako " spodek pořadí , " , udělali 7 z 11 odpalů svého týmu a z toho čtyřikrát skórovali na rozhodujících 5 - 0 .</czech>
+  <sure>2-1 3-2 4-4 6-5 7-6 8-7 9-8 13-12 14-13 17-14 18-15 19-16 20-18 21-19 22-20 23-23 24-24 26-21 27-22 28-25 29-29 30-28 31-26 34-30 36-32 37-33 39-31 38-34 40-35</sure>
+  <possible>1-1 4-3 12-13 15-14 16-14 25-24</possible>
+  <phrasal>10-9 10-10 10-11</phrasal>
+</s>
+<s id="wsj_2202-s13">
+  <english>Right-hander Dave Stewart held the Giants to five hits to account for the zero on the other side of the Saturday ledger .</english>
+  <czech>Pravoruký Dave Stewart chytil Obrům pět odpalů a zasloužil se tak o nulu na druhé straně sobotního účtu .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 8-6 9-7 11-9 12-12 14-13 15-14 17-15 18-16 21-17 22-18 23-19</sure>
+  <possible>5-5 7-7 10-9 11-10 13-13 16-16 19-18 20-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s14">
+  <english>That he was the A 's winningest pitcher during its American League campaign with a 21 - 9 mark , plus two wins over Toronto in the playoffs , indicates he may have some evening up coming , but with the way his split-fingered fastball is behaving , that might not be this week .</english>
+  <czech>To , že byl se známkou 21 - 9 a dvěma vítězstvími nad Torontem v playoff nejúspěšnějším nadhazovačem Áček během jejich působení v American League , ukazuje , že mu může nějaký večer vyjít , ale s ohledem na to , jak se chová jeho rychlík s roztaženými prsty , to nemuselo být tento týden .</czech>
+  <sure>1-3 3-4 5-19 7-17 8-18 9-20 10-21 11-24 12-25 13-22 14-5 16-7 17-8 18-9 19-6 21-10 22-11 23-12 24-13 25-14 26-15 28-16 29-26 30-27 31-30 32-31 34-32 35-33 36-34 37-34 38-35 39-36 40-37 42-42 43-45 44-48 44-49 45-46 47-44 48-50 49-51 50-52 51-52 52-53 53-54 54-55 55-56</sure>
+  <possible>2-4 4-19 6-19 13-23 15-6 27-16 33-34 41-42 44-47 46-44 47-43</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s15">
+  <english>The same goes for Mike Moore , another veteran who overcame early struggles to permit the Giants but a run and four hits in seven innings in Sunday 's contest .</english>
+  <czech>Totéž platí pro dalšího veterána , Mike Moorea , který překonal dřívější boje , aby povolil Obrům jen čtyři odpaly v sedmi směnách nedělního zápasu .</czech>
+  <sure>2-1 3-2 4-3 5-7 6-8 7-9 8-4 9-5 10-10 11-11 12-12 13-13 14-15 15-16 17-17 18-18 22-19 23-20 24-21 25-22 26-23 28-24 30-25 31-26</sure>
+  <possible>1-1 14-14 16-17 27-25 29-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s16">
+  <english>`` Every guy they put out there had a better split-finger than the guy before , '' marveled Giant manager Roger Craig .</english>
+  <czech>Každý chlap , kterého tam postavili , měl lepší nadhoz než ten předchozí , " žasl manažer Obrů Roger Craig .</czech>
+  <sure>2-1 3-2 5-6 7-5 8-8 10-9 11-10 12-11 13-12 15-13 16-14 17-15 18-16 19-18 20-17 21-19 22-20 23-21</sure>
+  <possible>4-6 6-6 9-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s17">
+  <english>He 's an ex-hurler who 's one of the leading gurus of the fashionable delivery , which looks like a fastball until it dives beneath the lunging bat .</english>
+  <czech>Je to bývalý nadhazovač , který je jedním z hlavních guru moderního nadhozu , který vypadá jako rychlík , dokud neklesne pod máchající pálku .</czech>
+  <sure>1-2 2-1 4-3 4-4 5-6 6-7 7-8 8-9 10-10 11-11 14-12 15-13 16-14 17-15 18-16 19-17 21-18 22-20 24-21 25-22 27-23 28-24 29-25</sure>
+  <possible>3-4 5-5 9-10 12-13 13-13 20-18 22-19 23-21 26-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s18">
+  <english>The upshot of the downshoot is that the A 's go into San Francisco 's Candlestick Park tonight up two games to none in the best-of-seven fest .</english>
+  <czech>Výsledkem tohoto nedostatku odpalů je to , že Áčka jedou dnes večer do sanfranciského Candlestik Parku se vedením 2 - 0 na zápasy v sérii na sedm zápasů .</czech>
+  <sure>2-1 4-2 5-3 5-4 6-5 7-8 9-9 11-10 12-13 13-14 14-14 16-15 17-16 18-11 18-12 20-19 21-23 22-20 23-21 24-24 28-29</sure>
+  <possible>1-1 3-3 7-7 8-9 10-9 15-14 21-22 25-25</possible>
+  <phrasal>19-17 19-18 26-25 26-26 26-27 26-28 27-25 27-26 27-27 27-28</phrasal>
+</s>
+<s id="wsj_2202-s19">
+  <english>The stat to reckon with here says that about three of four clubs ( 29 of 39 ) that took 2 - 0 Series leads went on to win it all .</english>
+  <czech>Statistika , s níž se musí počítat , říká , že asi tři ze čtyř klubů ( 29 z 39 ) , které vedly sérii 2 - 0 , ji nakonec úplně vyhrály .</czech>
+  <sure>2-1 4-7 5-3 7-9 8-11 9-12 10-13 11-14 12-15 13-16 14-17 15-18 16-19 17-20 18-21 19-23 20-24 21-26 22-27 24-25 25-24 29-33 30-30 31-32 23-28 32-34</sure>
+  <possible>1-1 3-7 8-10 19-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s20">
+  <english>That 's not an average to soothe Giant rooters .</english>
+  <czech>To není průměr , který by Obry uklidňoval .</czech>
+  <sure>1-1 2-2 3-2 5-3 7-8 8-7 10-9</sure>
+  <possible>4-3 6-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s21">
+  <english>One might think that the home fans in this Series of the Subway Called BART ( that 's a better name for a public conveyance than `` Desire , '' do n't you think ? ) would have been ecstatic over the proceedings , but they observe them in relative calm .</english>
+  <czech>Člověk by si mohl myslet , že domácí fanoušci v této sérii podzemních drah nazývaných BART ( to je lepší jméno pro veřejnou přepravu než " Touha , " nemyslíte ? ) budou u vytržení nad postupem , ale pozorovali jej poměrně v klidu .</czech>
+  <sure>1-1 2-2 2-4 3-5 4-7 6-8 7-9 8-10 9-11 10-12 13-13 13-14 14-15 15-16 16-17 17-18 18-19 20-20 21-21 22-22 24-23 25-24 26-25 27-26 28-27 29-28 30-29 31-30 32-30 33-30 34-30 35-31 36-32 37-33 38-33 39-33 40-35 41-36 43-37 44-38 45-39 47-40 48-41 49-43 50-42 51-44 52-45</sure>
+  <possible>3-3 4-6 5-9 11-14 12-14 19-21 23-24 40-34 42-37 46-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s22">
+  <english>Partisans of the two combatants sat side by side in the 49,000-plus seats of Oakland Coliseum , and while they cheered their favorites and booed the opposition , hostilities advanced no further , at least as far as I could see .</english>
+  <czech>Přívrženci obou soupeřících stran seděli vedle sebe na více než 49.000 sedadlech Oakland Colisea , a zatímco povzbuzovali své favority a bučeli na odpůrce , nepřátelství nepokročilo dále , přinejmenším pokud jsem mohl vidět .</czech>
+  <sure>1-1 4-2 5-3 5-4 6-5 10-8 12-9 12-10 12-11 13-12 15-13 16-14 17-15 18-16 19-17 21-18 22-19 23-20 24-21 25-22 27-24 28-25 29-26 30-27 31-27 32-28 33-29 34-30 35-30 36-31 37-31 38-31 40-32 40-33 41-34 42-35</sure>
+  <possible>2-4 3-4 11-12 14-14 20-18 26-24 27-23 39-33</possible>
+  <phrasal>7-6 7-7 8-6 8-7 9-6 9-7</phrasal>
+</s>
+<s id="wsj_2202-s23">
+  <english>A few folks even showed up wearing caps bearing the colors and emblems of both teams .</english>
+  <czech>Několik lidí se dokonce objevilo v čepičkách s barvami a emblémy obou týmů .</czech>
+  <sure>1-1 2-1 3-2 4-4 5-5 6-5 8-7 11-9 12-10 13-11 15-12 16-13 17-14</sure>
+  <possible>5-3 7-6 9-8 10-9 14-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s24">
+  <english>`` I 'm for the Giants today , but only because they lost yesterday .</english>
+  <czech>" Fandím dnes Obrům , ale jenom proto , že prohráli včera .</czech>
+  <sure>1-1 3-2 4-2 6-4 7-3 8-5 9-6 10-7 11-8 13-11 14-12 15-13</sure>
+  <possible>2-2 5-4 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s25">
+  <english>I love 'em both .</english>
+  <czech>Miluji je všechny .</czech>
+  <sure>2-1 3-2 4-3 5-4</sure>
+  <possible>1-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s26">
+  <english>The only thing I 'm rooting for is for the Series to go seven games , '' said David Williams , a Sacramento septuagenarian , at the Coliseum before Sunday 's go .</english>
+  <czech>Jediná věc , kterou chci je , aby měla série sedm zápasů , " řekl před nedělním začátkem v Coliseu sedmdesátiletý David Williams ze Sacramenta .</czech>
+  <sure>2-1 3-2 5-5 6-5 7-5 8-6 11-10 14-11 15-12 16-13 17-14 18-15 19-22 20-23 23-25 24-21 26-19 28-20 29-16 30-17 32-18 33-26</sure>
+  <possible>1-2 4-5 10-10 22-21 23-24 27-20 31-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s27">
+  <english>The above represents a triumph of either apathy or civility .</english>
+  <czech>Výše uvedené postoje reprezentují triumf lhostejnosti nebo zdvořilosti .</czech>
+  <sure>2-1 2-2 3-4 5-5 8-6 9-7 10-8 11-9</sure>
+  <possible>1-2 4-5 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s28">
+  <english>I choose to believe it 's the latter , although it probably springs from the fact that just about everyone out here , including the A 's and Giants , is originally from somewhere else .</english>
+  <czech>Volím víru , že jde o to druhé , ačkoliv to pravděpodobně vyvěrá ze skutečnosti , že asi každý odsud , včetně Áček a Obrů , je původně odjinud .</czech>
+  <sure>2-1 4-2 5-5 6-5 7-7 8-8 9-9 10-10 11-11 12-12 13-13 14-14 16-15 17-17 19-18 20-19 21-20 22-20 23-21 24-22 26-23 28-24 29-25 30-26 31-27 32-28 33-29 34-29 35-29 36-30</sure>
+  <possible>1-1 3-2 6-6 15-15 17-16 25-23 27-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s29">
+  <english>Suffice it to say that if this were a New York Yankees-Mets series , or one between the Chicago Cubs and White Sox ( hey , it 's possible ) , you 'd need uniformed police in every other seat to separate opposing fans , and only the suicidal would bifurcate their bonnets .</english>
+  <czech>Stačí říci , že kdyby to byly série New York Yankees vs . Mets nebo mezi Chicago Cubs a White Sox ( ano , je to možné ) , potřebovali byste uniformovanou policii u každého druhého sedadla , abyste oddělili soupeřící fanoušky , a pouze sebevrazi by zdvojili své čepičky .</czech>
+  <sure>1-1 4-2 5-4 6-5 7-6 8-7 10-9 11-10 12-11 12-12 12-13 12-14 13-8 15-15 17-16 19-17 20-18 21-19 22-20 23-21 24-22 25-23 26-24 27-26 28-25 29-27 30-28 31-29 33-31 34-30 35-32 36-33 37-34 38-35 39-36 40-37 42-40 43-41 44-42 45-43 46-44 47-45 49-46 50-47 51-48 52-49 53-50 54-51</sure>
+  <possible>2-1 3-2 5-3 9-8 14-15 18-18 32-30 41-40 48-46</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s30">
+  <english>Anyway , the A 's gave you a lot of heroes to root for .</english>
+  <czech>V každém případě Áčka vám skýtala množství hrdinů k fandění .</czech>
+  <sure>1-1 1-2 1-3 4-4 7-5 8-7 9-7 11-8 12-9 13-10 14-10 15-11</sure>
+  <possible>3-4 5-4 10-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s31">
+  <english>In the opening game , besides Steinbach and Stewart , there was Walt Weiss , a twiggy-looking , second-year shortstop who had lost a couple months of the season to knee surgery .</english>
+  <czech>V úvodním zápasu , vedle Steinbacha a Stewarta , tam byl jako proutek štíhlý Walt Weis , který hraje už druhý rok spojku a ztratil mnoho měsíců sezóny kvůli operaci kolena .</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5 7-6 8-7 9-8 10-9 11-10 12-11 13-15 14-16 15-17 17-12 17-13 17-14 19-21 19-22 20-23 22-25 23-25 24-26 25-26 26-27 29-28 30-29 31-31 32-30 33-32</sure>
+  <possible>2-3 27-28 28-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s32">
+  <english>He was flawless afield ( ditto in game two ) , moved a runner along in the A 's three-run second inning , and homered for his team 's final tally .</english>
+  <czech>Byl bezchybný v poli ( stejně v druhém zápase ) , posunul běžce dopředu při třetím oběhu Áček ve druhé směně a doběhl pro rozhodující bod svého týmu .</czech>
+  <sure>2-1 3-2 4-3 4-4 5-5 6-6 7-7 8-9 9-8 10-10 11-11 12-12 14-13 15-14 16-15 18-18 20-16 20-17 21-20 22-21 24-22 25-23 26-24 27-27 28-28 30-25 31-26 32-29</sure>
+  <possible>1-1 13-13 17-18 19-18 22-19 29-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s33">
+  <english>Such is his reputation among the East Bay Bashers that when he hit his first career home run last season , the fan who caught it agreed to turn the ball over to him in return for an autograph .</english>
+  <czech>Taková je jeho pověst mezi East Bay Bashers , že když v minulé sezóně odpálil svůj první homerun v kariéře , fanoušek , který ho chytil , se uvolil vrátit mu míč za autogram .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 9-8 10-10 11-11 13-15 14-16 15-17 16-20 17-18 18-18 19-13 20-14 21-21 23-22 24-24 25-26 26-25 27-29 29-30 31-32 32-30 34-31 37-33 39-34 40-35</sure>
+  <possible>6-6 10-9 12-15 16-19 20-12 22-22 24-23 27-28 28-30 30-32 33-31 38-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s34">
+  <english>Not his autograph ; power-hitter McGwire 's .</english>
+  <czech>Ne jeho autogram ; silného pálkaře McGwireho .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 5-6 6-7 8-8</sure>
+  <possible>7-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s35">
+  <english>An A 's co-hero of the second game was Rickey Henderson , who exemplifies the hot side of the hot - cold equation .</english>
+  <czech>Hrdinou Áček byl ve druhém zápase Rickey Henderson , který je příkladem horké strany horko - chladné rovnováhy .</czech>
+  <sure>2-2 4-1 5-4 7-5 8-6 9-3 10-7 11-8 12-9 13-10 14-11 14-12 16-13 17-14 20-15 21-16 22-17 23-18 24-19</sure>
+  <possible>1-2 3-2 6-6 15-14 18-18 19-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s36">
+  <english>He smoked Toronto in the playoffs with six hits , seven walks and eight stolen bases in 22 at bats , and continued that by going 3-for-3 at the plate Sunday , along with walking , stealing a base and scoring a run .</english>
+  <czech>V playoff se vysmál Torontu svými šesti odpaly , sedmi posuny a osmi ukradenými metami z 22 kol na pálce a pokračoval v tom se skóre 3 ze 3 v neděli na ploše v posunech , kradení met a skórování .</czech>
+  <sure>2-4 3-5 4-1 6-2 8-7 9-8 10-9 11-10 12-11 13-12 14-13 15-14 16-15 17-16 18-17 19-19 20-20 22-21 23-22 24-24 27-27 27-28 27-29 28-32 30-33 31-31 35-35 36-36 37-37 39-38 40-39 41-40 44-41</sure>
+  <possible>1-4 2-3 5-2 7-8 24-23 29-33 31-30 35-34 38-38</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s37">
+  <english>`` When you 're in the groove , you see every ball tremendously , '' he lectured .</english>
+  <czech>" Když jste ve formě , vidíte každý míč senzačně , " poučoval .</czech>
+  <sure>1-1 2-2 4-3 5-4 7-5 8-6 10-7 11-8 12-9 13-10 14-11 15-12 17-13 18-14</sure>
+  <possible>3-3 6-5 9-7 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s38">
+  <english>The cold guys in the set were Will Clark , Kevin Mitchell and Matt Williams , the Giants ' 3-4-5 hitters .</english>
+  <czech>Studenými strašáky v sadě byli Will Clark , Kevin Mitchell a Matt Williams , 3 . , 4 . a 5 . pálkař Obrů .</czech>
+  <sure>2-1 3-2 4-3 6-4 7-5 8-6 9-7 10-8 11-9 12-10 13-11 14-12 15-13 16-14 18-24 20-15 20-16 20-17 20-18 20-19 20-20 20-21 20-22 21-23 22-25</sure>
+  <possible>1-2 5-4 17-24 19-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s39">
+  <english>They combined for 25 hits , six home runs and 24 runs batted in in the five games against the Cubs .</english>
+  <czech>V pěti zápasech proti Cubs nasbírali 25 odpalů , 6 homerunů a 24 výběhů z pálky .</czech>
+  <sure>2-6 4-7 5-8 6-9 7-10 8-11 9-11 10-12 11-13 12-14 13-16 15-1 17-2 18-3 19-4 21-5 22-17</sure>
+  <possible>1-6 13-15 16-3 20-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s40">
+  <english>They went a collective 5-for-24 here , with zero homers and ribbies .</english>
+  <czech>Celkem měli skóre 5 ze 24 bez homerunů a bodů na pálce .</czech>
+  <sure>2-2 4-1 5-4 5-5 5-6 8-7 9-7 10-8 11-9 12-10 12-11 12-12 13-13</sure>
+  <possible>1-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s41">
+  <english>It 's that last set of numbers , as much as anything else , that gives the Giants hope in the Series games to come .</english>
+  <czech>Je to tato poslední sada z mnoha , více než cokoli jiného , co dává Giants Obrům naději na pokračování zápasů série .</czech>
+  <sure>1-2 2-1 3-3 4-4 5-5 6-6 7-7 8-8 12-11 13-12 14-13 15-14 16-15 18-17 19-18 20-19 22-22 23-21 24-20 25-20 26-23</sure>
+  <possible>17-17 21-22</possible>
+  <phrasal>9-9 9-10 10-9 10-10 11-9 11-10</phrasal>
+</s>
+<s id="wsj_2202-s42">
+  <english>`` I believe in the law of averages , '' declared San Francisco batting coach Dusty Baker after game two .</english>
+  <czech>" Věřím v zákon průměrů , " řekl po druhém zápasu trenér pálkařů San Franciska Dusty Baker .</czech>
+  <sure>1-1 3-2 4-3 6-4 8-5 9-6 10-7 11-8 12-14 13-15 14-13 15-12 16-16 17-17 18-9 19-11 20-10 21-18</sure>
+  <possible>2-2 5-4 7-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s43">
+  <english>`` I 'd rather see a so-so hitter who 's hot come up for the other side than a good hitter who 's cold . ''</english>
+  <czech>" Raději bych viděl slabého pálkaře , který se kvůli protivníkovi rozohní , než dobrého , který je chladný . "</czech>
+  <sure>1-1 3-3 4-2 5-4 7-5 8-6 9-8 10-12 11-12 14-10 16-11 17-11 18-14 20-15 22-17 23-18 24-19 25-20 26-21</sure>
+  <possible>2-4 6-6 9-7 15-11 19-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s44">
+  <english>But the old Dodger slugger wisely offered no prediction about when good times would return to his side .</english>
+  <czech>Ale starý pálkař Dodgers moudře nenabídl žádné předpovědi ohledně toho , kdy se k němu opět vrátí dobré časy .</czech>
+  <sure>1-1 3-2 4-4 5-3 6-5 7-6 8-7 9-8 10-9 11-12 12-18 13-19 15-17 16-14 17-15 18-15 19-20</sure>
+  <possible>2-3 11-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s45">
+  <english>`` When it goes , you never know when you 'll get it back , '' he said .</english>
+  <czech>" Když to odejde , nikdy nevíte , kdy se vám to vrátí , " říká .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 9-9 10-11 12-13 13-12 14-13 15-14 16-15 18-16 19-17</sure>
+  <possible>6-7 9-8 11-13 17-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2202-s46">
+  <english>`` That 's baseball . "</english>
+  <czech>" To je baseball . "</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

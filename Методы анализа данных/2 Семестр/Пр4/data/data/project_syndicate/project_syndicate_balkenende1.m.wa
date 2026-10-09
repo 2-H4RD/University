@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_balkenende1-s1">
+  <english>Alongside the debate about the European Union constitution , a debate about European values has also developed .</english>
+  <czech>Vedle debaty o ústavě Evropské unie se rozvinula také debata o evropských hodnotách .</czech>
+  <sure>1-1 3-2 4-3 6-5 7-6 8-4 11-10 12-11 13-12 14-13 16-9 17-7 17-8 18-14</sure>
+  <possible>2-2 5-4 10-10 15-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s2">
+  <english>This debate is important not only for implanting meaning in the constitution , but will also determine the vitality and energy of the EU itself .</english>
+  <czech>Tato debata je důležitá nejen proto , aby vdechla ústavě smysl , ale také tím , že definuje vitalitu a energii samotné EU .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-5 7-6 7-7 7-8 9-11 12-10 13-12 14-13 16-14 17-18 19-19 20-20 21-21 24-23 25-22 26-24</sure>
+  <possible>8-9 10-10 11-10 15-18 18-19 22-23 23-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s3">
+  <english>The EU , being the product of several great religious and philosophical traditions , is a community of values .</english>
+  <czech>EU jakožto produkt několika velkolepých náboženských a filozofických tradic je společenstvím hodnot .</czech>
+  <sure>2-1 4-2 6-3 8-4 9-5 10-6 11-7 12-8 13-9 15-10 17-11 19-12 20-13</sure>
+  <possible>1-1 3-2 5-3 7-9 16-11 18-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s4">
+  <english>The ideas of the Greeks and Romans , Christianity , Judaism , humanism , and the Enlightenment have made us who we are .</english>
+  <czech>Ideje starých Řeků a Římanů , křesťanství , judaismu , humanismu a osvícenství nás učinily takovými , jací jsme .</czech>
+  <sure>2-1 5-3 6-4 7-5 8-6 9-7 10-8 11-9 12-10 13-11 15-12 17-13 19-15 20-14 23-19 24-20</sure>
+  <possible>1-1 3-3 4-3 14-12 16-13 18-15 21-16 21-17 21-18 22-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s5">
+  <english>Dialogue with Islamic and Arabic cultures also helped form our identity .</english>
+  <czech>Rovněž dialog s islámskou a arabskou kulturou pomohl zformovat naši identitu .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 7-1 8-8 9-9 10-10 11-11 12-12</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s6">
+  <english>The pattern of our values has been woven over hundreds of years .</english>
+  <czech>Předivo našich hodnot se utvářelo po stovky let .</czech>
+  <sure>2-1 4-2 5-3 8-5 9-6 10-7 12-8 13-9</sure>
+  <possible>1-1 3-3 6-5 7-5 8-4 11-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s7">
+  <english>Europe is the continent of Michelangelo and Montesquieu , but also of the guillotine and the gas chamber .</english>
+  <czech>Evropa je světadílem Michelangela a Montesquieua , ale také gilotiny a plynové komory .</czech>
+  <sure>1-1 2-2 4-3 6-4 7-5 8-6 9-7 10-8 11-9 14-10 15-11 17-12 18-13 19-14</sure>
+  <possible>3-3 5-4 12-10 13-10 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s8">
+  <english>Indeed , the bitter experience WWII taught Europeans how fundamental is the importance of shared values .</english>
+  <czech>Trpká zkušenost druhé světové války naučila Evropany , jak zásadní je význam sdílených hodnot .</czech>
+  <sure>4-1 5-2 6-3 6-4 6-5 7-6 8-7 9-9 10-10 11-11 13-12 15-13 16-14 17-15</sure>
+  <possible>3-2 9-8 12-12 14-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s9">
+  <english>In an impoverished , war - ravaged Europe , people yearned for peace , freedom , stability , and a new chance to prosper .</english>
+  <czech>Ve zbídačelé Evropě zpustošené válkou toužili lidé po míru , svobodě , stabilitě a nové naději na prosperitu .</czech>
+  <sure>1-1 3-2 5-5 7-4 8-3 10-7 11-6 12-8 13-9 14-10 15-11 16-12 17-13 19-14 21-15 22-16 23-17 24-18 25-19</sure>
+  <possible>2-3 6-4 18-14 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s10">
+  <english>The architects of European integration - Monnet , Schuman , Adenauer , De Gasperi , and others - understood that these ideals could be achieved only by combining and interweaving the practical interests of Europe 's countries .</english>
+  <czech>Architekti evropské integrace - Monnet , Schuman , Adenauer , De Gasperi a další - pochopili , že těchto ideálů lze dosáhnout pouze kombinací a vzájemným provázáním praktických zájmů evropských zemí .</czech>
+  <sure>2-1 4-2 5-3 6-4 7-5 8-6 9-7 10-8 11-9 12-10 13-11 14-12 16-13 17-14 18-15 19-16 20-18 21-19 22-20 25-22 26-23 28-24 29-25 30-27 32-28 33-29 35-30 37-31 38-32</sure>
+  <possible>1-1 3-3 15-13 20-17 23-22 24-22 25-21 27-24 30-26 31-29 34-31 36-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s11">
+  <english>They built their fragile house of peace on a foundation of coal and steel .</english>
+  <czech>Svůj křehký mírový dům vybudovali na základech z uhlí a oceli .</czech>
+  <sure>2-5 3-1 4-2 5-4 6-3 7-3 8-6 10-7 11-8 12-9 13-10 14-11 15-12</sure>
+  <possible>1-5 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s12">
+  <english>The founders passed the torch on to the generation of Jacques Delors , Helmut Kohl , François Mitterrand , Václav Havel , Valéry Giscard d ' Estaing , and others .</english>
+  <czech>Zakladatelé pak předali pochodeň generaci Jacquese Delorse , Helmuta Kohla , Françoise Mitterranda , Václava Havla , Valéryho Giscarda d ' Estaing a dalších .</czech>
+  <sure>2-1 3-3 5-4 6-3 9-5 11-6 12-7 13-8 14-9 15-10 16-11 17-12 18-13 19-14 20-15 21-16 22-17 23-18 24-19 25-20 26-21 27-22 29-23 30-24 31-25</sure>
+  <possible>1-1 4-4 7-5 8-5 10-6 28-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s13">
+  <english>They broadened and deepened European cooperation .</english>
+  <czech>Ti evropskou spolupráci rozšířili a prohloubili .</czech>
+  <sure>1-1 2-4 3-5 4-6 5-2 6-3 7-7</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s14">
+  <english>Their leadership made it possible for Europe to make great strides towards its post - war ideals - peace , stability , and prosperity .</english>
+  <czech>Jejich vedení umožnilo Evropě učinit obrovské kroky směrem ke svým poválečným ideálům - míru , stabilitě a prosperitě .</czech>
+  <sure>1-1 2-2 3-3 5-3 7-4 9-5 10-6 11-7 12-8 12-9 13-10 14-11 16-11 17-12 18-13 19-14 20-15 21-16 23-17 24-18 25-19</sure>
+  <possible>4-3 6-4 8-5 15-11 22-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s15">
+  <english>We now stand at the threshold of a new phase of European cooperation .</english>
+  <czech>Dnes stojíme na prahu nové fáze evropské spolupráce .</czech>
+  <sure>3-2 4-3 6-4 9-5 10-6 12-7 13-8 14-9</sure>
+  <possible>1-2 2-1 5-4 7-6 8-6 11-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s16">
+  <english>In late October , the EU 's Constitutional Treaty will be signed .</english>
+  <czech>Koncem října bude podepsána ústavní smlouva EU .</czech>
+  <sure>3-2 6-7 8-5 9-6 12-4 13-8</sure>
+  <possible>1-1 2-1 5-6 7-7 10-4 11-4 12-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s17">
+  <english>A new generation of politicians is ready to carry the torch onwards .</english>
+  <czech>Nová generace politiků je připravena převzít pochodeň .</czech>
+  <sure>2-1 3-2 5-3 6-4 7-5 9-6 11-7 13-8</sure>
+  <possible>1-2 4-3 8-6 10-7 12-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s18">
+  <english>But is the torch still burning bright ?</english>
+  <czech>Hoří však tato pochodeň stále jasným plamenem ?</czech>
+  <sure>1-2 2-1 3-3 4-4 5-5 6-1 7-6 8-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s19">
+  <english>In the early 1950s , Jean Monnet wrote : " We are not forming a coalition of states .</english>
+  <czech>Počátkem padesátých let Jean Monnet napsal : " My nevytváříme koalici států .</czech>
+  <sure>6-4 7-5 8-6 9-7 10-8 11-9 13-10 14-10 16-11 18-12 19-13</sure>
+  <possible>12-10 15-11 17-12</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3 3-1 3-2 3-3 4-1 4-2 4-3</phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s20">
+  <english>We are uniting people . "</english>
+  <czech>My sjednocujeme lid . "</czech>
+  <sure>1-1 3-2 4-3 5-4 6-5</sure>
+  <possible>2-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s21">
+  <english>Apparently not .</english>
+  <czech>Tak tomu ovšem zjevně není .</czech>
+  <sure>1-4 3-6</sure>
+  <possible>2-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s22">
+  <english>As the Union races ahead , it seems that it has lost Europe 's citizens along the way .</english>
+  <czech>Zdá se , že zatímco unie pádí kupředu , jako by cestou poztrácela evropské občany .</czech>
+  <sure>1-5 3-6 4-7 5-8 6-9 8-1 8-2 9-4 12-13 13-14 15-15 16-12 17-12 18-12 19-16</sure>
+  <possible>2-6 7-1 9-3 10-13 11-13 14-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s23">
+  <english>Many are turning their backs on the whole project .</english>
+  <czech>Mnozí z nich se k celému projektu stavějí zády .</czech>
+  <sure>1-1 8-6 9-7 10-10</sure>
+  <possible>1-2 1-3 7-7</possible>
+  <phrasal>2-4 2-5 2-8 2-9 3-4 3-5 3-8 3-9 4-4 4-5 4-8 4-9 5-4 5-5 5-8 5-9 6-4 6-5 6-8 6-9</phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s24">
+  <english>They have trouble seeing what is common to Europe .</english>
+  <czech>Dělá jim potíže vidět , co je na Evropě společného .</czech>
+  <sure>4-4 5-6 6-7 7-10 9-9 10-11</sure>
+  <possible>5-5 8-8</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3 3-1 3-2 3-3</phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s25">
+  <english>They do not feel part of the great whole .</english>
+  <czech>Necítí se součástí tohoto velkého celku .</czech>
+  <sure>3-1 4-1 5-3 7-4 8-5 9-6 10-7</sure>
+  <possible>1-1 2-1 4-2 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s26">
+  <english>Even in the new member states , enthusiasm for the European family of democracies is cooling .</english>
+  <czech>Dokonce i v nových členských státech nadšení pro rodinu evropských demokracií uvadá .</czech>
+  <sure>1-1 2-3 4-4 5-5 6-6 8-7 9-8 11-10 12-9 14-11 15-12 16-12 17-13</sure>
+  <possible>1-2 3-6 10-9 13-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s27">
+  <english>We have achieved a united Europe without uniting Europeans .</english>
+  <czech>Dosáhli jsme sjednocené Evropy , aniž jsme sjednotili Evropany .</czech>
+  <sure>3-1 5-3 6-4 7-6 8-8 9-9 10-10</sure>
+  <possible>1-1 2-1 3-2 4-4 8-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s28">
+  <english>Today 's post - war generations , lacking direct memory of WWII , view Europe 's great achievements - liberty , peace , and prosperity - as a given .</english>
+  <czech>Dnešní poválečné generace , jimž chybí přímá vzpomínka na druhou světovou válku , pokládají obrovské úspěchy Evropy - svobodu , mír a prosperitu - za cosi daného .</czech>
+  <sure>1-1 3-2 5-2 6-3 7-4 8-6 9-7 10-8 11-9 12-10 12-11 12-12 13-13 14-14 15-17 17-15 18-16 19-18 20-19 21-20 22-21 24-22 25-23 26-24 27-25 28-26 29-27 30-28</sure>
+  <possible>2-1 4-2 16-17 23-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s29">
+  <english>The idea of Europe as a heritage and a mission does not mean much .</english>
+  <czech>Představa Evropy jako dědictví a poslání pro ně mnoho neznamená .</czech>
+  <sure>2-1 4-2 5-3 7-4 8-5 10-6 13-10 14-9 15-11</sure>
+  <possible>1-1 3-2 6-4 9-6 11-10 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s30">
+  <english>But , without ideals , Europe 's foundations will erode .</english>
+  <czech>Bez ideálů se však evropské základy rozdrolí .</czech>
+  <sure>1-4 3-1 4-2 6-5 8-6 10-3 10-7 11-8</sure>
+  <possible>7-5 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s31">
+  <english>The emphasis on pure self - interest increases this threat .</english>
+  <czech>Tuto hrozbu dále zvyšuje důraz výlučně na vlastní zájmy .</czech>
+  <sure>2-5 3-7 4-6 5-8 7-9 8-4 9-1 10-2 11-10</sure>
+  <possible>1-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s32">
+  <english>My generation grew up with the image of Europe as an economic form of cooperation .</english>
+  <czech>Moje generace vyrostla v představě Evropy jakožto hospodářské formy spolupráce .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 7-5 9-6 10-7 12-8 13-9 15-10 16-11</sure>
+  <possible>6-5 8-6 11-9 14-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s33">
+  <english>Political motives behind European integration were overshadowed by the economic project .</english>
+  <czech>Politické motivy za evropskou integrací zastínil ekonomický projekt .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 10-7 11-8 12-9</sure>
+  <possible>6-6 8-6 9-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s34">
+  <english>The result is an impression of Europe as a marketplace .</english>
+  <czech>Výsledkem je dojem , že Evropa je pouhým trhem .</czech>
+  <sure>2-1 3-2 5-3 7-6 10-9 11-10</sure>
+  <possible>1-1 4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s35">
+  <english>A Europe of markets and money , not of man and morals , dominated the project .</english>
+  <czech>Celému projektu začala vévodit Evropa trhů a peněz , nikoliv člověka a morálky .</czech>
+  <sure>2-5 4-6 5-7 6-8 7-9 8-10 10-11 11-12 12-13 14-4 16-2 17-14</sure>
+  <possible>1-5 3-6 9-11 14-3 15-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s36">
+  <english>But without a moral foundation , there can be no free - market economy .</english>
+  <czech>Bez morálních základů však svobodná tržní ekonomika nemůže existovat .</czech>
+  <sure>1-4 2-1 4-2 5-3 9-9 11-5 13-6 14-7 15-10</sure>
+  <possible>3-3 7-9 8-9 9-8 10-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s37">
+  <english>Today , we are paying the price for not attending to Europe 's shared values and common mission .</english>
+  <czech>Dnes platíme daň za to , že jsme nedbali na evropské sdílené hodnoty a společné poslání .</czech>
+  <sure>1-1 5-2 7-3 8-4 9-9 10-9 11-10 12-11 14-12 15-13 16-14 17-15 18-16 19-17</sure>
+  <possible>3-2 4-2 6-3 8-5 8-6 8-7 10-8 13-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s38">
+  <english>Until Europeans know precisely what Europe stands for , what inspires and motivates us , the Union will not be able to take joint action in the world .</english>
+  <czech>Dokud Evropané nebudou přesně vědět , co Evropa znamená , co nás inspiruje a motivuje , nedokáže unie vystupovat ve světě společně .</czech>
+  <sure>1-1 2-2 3-5 4-4 5-7 6-8 7-9 8-9 9-10 10-11 11-13 12-14 13-15 14-12 15-16 17-18 19-17 20-17 21-17 26-20 28-21 29-23</sure>
+  <possible>1-3 5-6 16-18 18-17 22-19 23-19 24-22 25-19 27-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s39">
+  <english>The EU Constitution will make Europe more democratic and more transparent .</english>
+  <czech>Ústava EU učiní Evropu demokratičtější a průhlednější .</czech>
+  <sure>3-1 5-3 6-4 7-5 8-5 9-6 10-7 11-7 12-8</sure>
+  <possible>1-1 2-2 4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s40">
+  <english>It provides further guarantees that decisions will be taken by those closest to citizens , and it acknowledges the significance the values on which the Union rests : respect for human rights and dignity , liberty , democracy , equality , and the rule of law .</english>
+  <czech>Poskytuje další záruky , že rozhodovat budou orgány stojící nejblíže k občanům , a uznává důležitost hodnot , o něž se unie opírá : úcty k lidským právům a důstojnosti , svobody , demokracie , rovnosti a vlády zákona .</czech>
+  <sure>2-1 3-2 4-3 5-5 6-6 9-6 12-10 13-11 14-12 15-13 16-14 18-15 20-16 22-17 24-20 26-22 28-24 29-25 30-26 31-27 32-28 33-29 34-30 35-31 36-32 37-33 38-34 39-35 40-36 42-37 44-38 46-39</sure>
+  <possible>1-1 5-4 6-7 7-6 8-6 10-6 17-15 19-16 21-17 24-18 25-22 27-19 27-21 27-23 41-37 43-38 45-39 47-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s41">
+  <english>These shared values are the glue that binds governments together in the recognition that clinging to pure self - interest is no longer reasonable when common concerns call for a common strategy .</english>
+  <czech>Tyto sdílené hodnoty jsou pojivem , které stmeluje vlády v pochopení , že lpět na vlastních zájmech není nadále rozumné , když společné zájmy volají po společné strategii .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-7 8-8 9-9 11-10 13-11 14-13 15-14 16-15 18-16 20-17 21-18 22-18 23-19 24-20 25-22 26-23 27-24 28-25 29-26 31-27 32-28 33-29</sure>
+  <possible>5-5 7-6 10-8 12-11 14-12 17-16 25-21 30-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s42">
+  <english>For what is the point of doing away with Europe 's physical borders if borders between its citizens remain ?</english>
+  <czech>Protože jaký smysl má odstraňování fyzických hranic v Evropě , pokud hranice mezi jejími občany přetrvávají ?</czech>
+  <sure>1-1 7-5 8-5 10-9 12-6 13-7 14-11 15-12 16-13 17-14 18-15 19-16 20-17</sure>
+  <possible>9-5 10-8 11-9 14-10</possible>
+  <phrasal>2-2 2-3 2-4 3-2 3-3 3-4 4-2 4-3 4-4 5-2 5-3 5-4 6-2 6-3 6-4</phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s43">
+  <english>How can Europeans be happy that the Iron Curtain is gone if individuals and groups across the Union barricade themselves behind private iron curtains ?</english>
+  <czech>Jak mohou být Evropané spokojeni , že zmizela železná opona , pokud se jednotliví občané a skupiny napříč unií zabarikádovávají za svými soukromými železnými oponami ?</czech>
+  <sure>1-1 2-2 3-4 4-3 5-5 6-7 8-9 9-10 10-8 11-8 12-12 13-14 13-15 14-16 15-17 16-18 18-19 19-20 20-13 21-21 22-23 23-24 24-25 25-26</sure>
+  <possible>6-6 7-10 12-11 17-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s44">
+  <english>Indeed , fear , insecurity , and nationalism are again raising their heads .</english>
+  <czech>Jistě , strach , nejistota a nacionalismus již opět zvedají hlavy .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 10-9 11-10 13-11 14-12</sure>
+  <possible>6-6 9-10 10-8 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s45">
+  <english>It is important for Europeans to reflect on that as they prepare for further rounds of enlargement and consider starting accession negotiations with Turkey .</english>
+  <czech>Je důležité , aby se nad tím Evropané zamysleli , když se nyní připravují na další vlny rozšíření a zvažují zahájení přístupových jednání s Tureckem .</czech>
+  <sure>2-1 3-2 5-8 7-5 7-9 8-6 9-7 10-11 12-14 13-15 14-16 15-17 17-18 18-19 19-20 20-21 21-22 22-23 23-24 24-25 25-26</sure>
+  <possible>1-1 10-10 11-14 12-12 16-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s46">
+  <english>The preamble of the Constitution states that Europe is " united in its diversity . "</english>
+  <czech>V preambuli ústavy se konstatuje , že Evropa je " jednotná ve své rozmanitosti " .</czech>
+  <sure>2-2 5-3 6-5 7-7 8-8 9-9 10-10 11-11 12-12 13-13 14-14 15-16 16-15</sure>
+  <possible>1-2 3-3 4-3 6-1 6-4 7-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s47">
+  <english>This may be the most concise statement of what makes Europe Europe .</english>
+  <czech>Právě tato formulace může být nejvýstižnější definicí toho , co činí Evropu Evropou .</czech>
+  <sure>1-2 2-4 3-5 4-6 5-6 6-6 7-3 8-8 9-8 10-11 11-12 12-13 13-14</sure>
+  <possible>9-9 9-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s48">
+  <english>But the words " united in diversity " raise the question of where this unity lies .</english>
+  <czech>Slova " jednotná ve své rozmanitosti " však vyvolávají otázku , v čem tato jednotnost spočívá .</czech>
+  <sure>1-8 3-1 4-2 5-3 6-4 7-6 8-7 9-9 11-10 14-14 15-15 16-16 17-17</sure>
+  <possible>2-1 10-10 12-10 13-12 13-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s49">
+  <english>The answer lies in the values on which the Union is based .</english>
+  <czech>Odpověď se skrývá v hodnotách , na nichž je unie založena .</czech>
+  <sure>2-1 4-4 6-5 7-7 8-8 10-10 11-9 12-11 13-12</sure>
+  <possible>1-1 3-2 3-3 5-5 8-6 9-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balkenende1-s50">
+  <english>They are contained in three concepts : freedom , solidarity , and mutual respect .</english>
+  <czech>Ty jsou obsaženy ve třech konceptech : konceptu svobody , solidarity a vzájemné úcty .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-9 9-10 10-11 12-12 13-13 14-14 15-15</sure>
+  <possible>11-12</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

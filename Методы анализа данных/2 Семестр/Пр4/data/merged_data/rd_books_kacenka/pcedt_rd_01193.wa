@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="pcedt_rd_01193-s1">
+  <english>Eight - year - old William awoke early that Christmas morning , eager to see what was under our tree .</english>
+  <czech>Osmiletý William se toho vánočního rána probudil brzy a třásl se touhou uvidět , co dostal .</czech>
+  <sure>1-1 10-5 11-6 12-9 15-13 16-15 21-17 3-1 5-1 6-2 7-7 8-8 9-4</sure>
+  <possible>13-10 13-11 13-12 14-13 16-14 17-16 18-16 19-16 2-1 20-16 4-1 7-3</possible>
+</s>
+<s id="pcedt_rd_01193-s2">
+  <english>When he found the skis , he looked faintly disappointed .</english>
+  <czech>Když našel lyže , byl poněkud zklamaný .</czech>
+  <sure>1-1 10-7 11-8 3-2 5-3 6-4 8-5 9-6</sure>
+  <possible>2-2 4-3 7-5</possible>
+</s>
+<s id="pcedt_rd_01193-s3">
+  <english>Skis had not been high on his wish list , but I knew my son would need them for an upcoming family trip .</english>
+  <czech>Moc si je zrovna nepřál , ale protože jsme se chystali na hory , věděl jsem , že je bude brzy potřebovat .</czech>
+  <sure>10-6 11-7 13-15 16-20 17-22 18-19 24-23</sure>
+  <possible>12-15 13-16 13-17 13-18 21-11 5-1 8-5</possible>
+</s>
+<s id="pcedt_rd_01193-s4">
+  <english>" Thanks , " he said softly .</english>
+  <czech>" Tak dík , " špitl .</czech>
+  <sure>1-1 2-3 3-4 4-5 6-6 7-6 8-7</sure>
+  <possible>2-2 5-6</possible>
+</s>
+<s id="pcedt_rd_01193-s5">
+  <english>As it turned out , the skis were the best gift he ever received .</english>
+  <czech>Brzy se ukázalo , že to byl ten nejlepší dárek .</czech>
+  <sure>10-9 11-10 15-11 3-3 4-3 5-4 8-7 9-8</sure>
+  <possible>1-1 1-3 2-3 3-2 5-5</possible>
+</s>
+<s id="pcedt_rd_01193-s6">
+  <english>William took to the sport his first day on the slopes .</english>
+  <czech>William lyžování propadl , hned jak sjel první kopec .</czech>
+  <sure>1-1 11-9 12-10 2-3 3-3 7-8</sure>
+  <possible>10-9 9-9</possible>
+</s>
+<s id="pcedt_rd_01193-s7">
+  <english>Soon an instructor persuaded him to join the resort 's junior race program .</english>
+  <czech>Lyžařský instruktor ho brzy přemluvil , aby začal jezdit závodně za juniory .</czech>
+  <sure>1-4 11-12 12-10 14-13 3-2 4-5 5-3 6-7</sure>
+  <possible>11-11 2-2 6-6 7-8</possible>
+</s>
+<s id="pcedt_rd_01193-s8">
+  <english>For the next ten years , William skied every winter weekend .</english>
+  <czech>Dalších deset let pak trávil na lyžích každý zimní víkend .</czech>
+  <sure>10-9 11-10 12-11 3-1 4-2 5-3 9-8</sure>
+  <possible>1-1 2-1 6-4 8-5 8-6 8-7</possible>
+</s>
+<s id="pcedt_rd_01193-s9">
+  <english>Those first skis were soon replaced , but they had already bestowed benefits far more lasting than the model train , bicycle and record player that succeeded them .</english>
+  <czech>Po prvních lyžích brzy přišly další , ale z těch prvních měl daleko trvalejší užitek než z vláčku , kola a gramofonu , které dostával později .</czech>
+  <sure>13-15 14-13 15-14 16-14 17-16 2-2 20-18 21-19 22-20 23-21 24-22 25-22 26-24 29-27 3-3 5-4 7-7 8-8</sure>
+  <possible>13-12 18-18 19-18 20-17 26-23 27-26 28-26 3-1 9-10 9-9</possible>
+</s>
+<s id="pcedt_rd_01193-s10">
+  <english>The skis taught William self - discipline and persistence .</english>
+  <czech>William se díky nim naučil sebeovládání a vytrvalosti .</czech>
+  <sure>10-9 3-5 4-1 5-6 6-6 7-6 8-7 9-8</sure>
+  <possible>3-2</possible>
+</s>
+<s id="pcedt_rd_01193-s11">
+  <english>Each winter weekend morning , sometimes in subzero cold , the budding racer had to pull himself from bed to be on the mountain by 8 a . m .</english>
+  <czech>Jako talentovaný závodník se musel o víkendu ráno i v mrazu donutit vylézt z postele , aby byl už v osm na svahu .</czech>
+  <sure>12-2 13-3 14-5 18-14 19-15 20-17 21-18 22-22 24-23 25-20 26-21 3-7 30-24 4-8 7-10 8-11 9-11</sure>
+  <possible>11-3 15-5 16-13 17-4 20-16 23-23 25-19 27-21 28-21 29-21 3-6 5-9 6-9</possible>
+</s>
+<s id="pcedt_rd_01193-s12">
+  <english>When he fell , he got up and tried again .</english>
+  <czech>Když upadl , vstal a zkoušel to znovu .</czech>
+  <sure>1-1 10-8 11-9 3-2 4-3 6-4 7-4 8-5 9-6</sure>
+  <possible>2-2 5-4 9-7</possible>
+</s>
+<s id="pcedt_rd_01193-s13">
+  <english>At home , he learned to budget his time to allow for homework and workouts .</english>
+  <czech>Doma se naučil hospodařit s časem , aby stihl domácí úkoly i trénink .</czech>
+  <sure>10-8 13-10 13-11 14-12 15-13 16-14 2-1 5-3 7-4 9-6</sure>
+  <possible>1-1 10-7 11-9 12-9 4-3 5-2 6-4 7-5 8-6 9-5</possible>
+</s>
+<s id="pcedt_rd_01193-s14">
+  <english>As a racer , William never rose to Olympic caliber .</english>
+  <czech>Nikdy se nestal olympijským vítězem .</czech>
+  <sure>10-5 11-6 6-1 7-2 7-3 9-4</sure>
+  <possible>6-3 8-4</possible>
+</s>
+<s id="pcedt_rd_01193-s15">
+  <english>But today he is a hard - working , focused 23 - year - old , willing to dare because he is not afraid to fail .</english>
+  <czech>Dnes je to však pilný dvaadvacetiletý mladík , který ví , co chce , a má odvahu se o to pokoušet , protože se nebojí neúspěchu .</czech>
+  <sure>1-4 19-21 2-1 20-23 22-25 23-25 24-25 26-26 27-27 4-2 6-5 7-5 8-5</sure>
+  <possible>10-10 10-11 10-12 10-13 10-9 11-6 12-6 13-6 14-6 15-6 16-14 16-15 16-8 17-13 17-16 17-17 18-21 19-16 19-17 19-18 19-19 19-20 20-22 21-25 22-24 24-24 25-26 3-2 4-3 5-7 9-8</possible>
+</s>
+<s id="pcedt_rd_01193-s16">
+  <english>I sometimes wonder how different he might be if he ' d received some other gift that Christmas .</english>
+  <czech>Někdy si říkám , co by z něj asi vyrostlo , kdyby tehdy k vánocům dostal něco jiného .</czech>
+  <sure>13-16 14-17 15-18 17-13 18-15 19-19 2-1 3-3 4-5 6-8 9-12</sure>
+  <possible>1-3 10-16 11-16 12-16 18-14 3-2 4-4 6-7 7-6 7-9 8-10 9-11</possible>
+</s>
+<s id="pcedt_rd_01193-s17">
+  <english>This holiday season , we We all hope to give gifts whose value will outlive the gifts themselves .</english>
+  <czech>Dnes chceme všichni dávat dárky , jejichž hodnota přetrvá .</czech>
+  <sure>10-4 11-5 12-7 13-8 15-9 19-10 7-3 8-2</sure>
+  <possible>12-6 14-9 5-2 6-2 9-2 9-4</possible>
+</s>
+<s id="pcedt_rd_01193-s18">
+  <english>Sometimes we anticipate their lasting value . Sometimes the " value added " is an unplanned extra .</english>
+  <czech>Někdy ji dokážeme předvídat , jindy se v nich tato " přidaná hodnota " objeví nečekaně .</czech>
+  <sure>1-1 10-11 11-13 12-12 13-14 16-16 18-17 3-4 8-6 9-10</sure>
+  <possible>14-15 2-3 3-2 3-3</possible>
+</s>
+<s id="pcedt_rd_01193-s19">
+  <english>When parents pick gifts for their children , of course , the challenge - - and the rewards - - are the greatest of all .</english>
+  <czech>Vybírat dárky pro děti je samozřejmě nesmírně těžké , ale naše snaha dojde odměny .</czech>
+  <sure>10-6 13-8 18-14 26-15 3-1 4-2 5-3 7-4 9-6</sure>
+  <possible>11-6 12-8 13-7 15-9 16-10 17-14 6-4 8-6</possible>
+</s>
+<s id="pcedt_rd_01193-s20">
+  <english>We want to give gifts that will broaden and brighten a child 's world and be remembered for years to come .</english>
+  <czech>Chceme dávat dárky , které dětem rozšíří obzory a na které budou ještě dlouho vzpomínat .</czech>
+  <sure>12-6 14-8 15-9 17-15 19-14 2-1 22-16 4-2 5-3 6-5 8-7</sure>
+  <possible>1-1 11-6 13-6 16-15 17-12 18-13 18-14 19-13 20-13 20-14 21-13 21-14 3-2 6-4 7-7</possible>
+</s>
+<s id="pcedt_rd_01193-s21">
+  <english>" A gift is not merely something material , " declares child development expert Barbara Nordhaus of the Yale Child Study Center .</english>
+  <czech>" Dárek není jen cosi hmotného , " prohlašuje Barbara Nordhausová ze Střediska pro výzkum dětské psychiky při Yaleově univerzitě .</czech>
+  <sure>1-1 10-8 11-9 15-10 16-11 17-12 19-19 20-16 21-15 22-13 23-21 3-2 4-3 5-3 6-4 7-5 8-6 9-7</sure>
+  <possible>18-13 19-18 19-20 2-2</possible>
+</s>
+<s id="pcedt_rd_01193-s22">
+  <english>" It 's an expression of love and caring .</english>
+  <czech>" Je to výraz lásky a péče .</czech>
+  <sure>1-1 10-8 2-3 3-2 5-4 7-5 8-6 9-7</sure>
+  <possible>2-2 4-4 6-5</possible>
+</s>
+<s id="pcedt_rd_01193-s23">
+  <english>Giving your children specially chosen gifts is part of the parents ' role of nurturing and stimulating . "</english>
+  <czech>Dávat dětem dárky vybírané s určitým záměrem je součástí úlohy rodičů při výchově dětí a podněcování jejich zájmů . "</czech>
+  <sure>1-1 11-11 13-10 14-12 15-13 16-15 17-16 18-19 19-20 3-2 4-7 5-4 6-3 7-8 8-9</sure>
+  <possible>10-10 12-11 15-14 17-18 2-2 4-5 4-6 9-10</possible>
+</s>
+<s id="pcedt_rd_01193-s24">
+  <english>How can you choose gifts that will benefit your child over the years ?</english>
+  <czech>Jak tedy vybrat dárky , které budou vašim dětem prospívat léta ?</czech>
+  <sure>1-1 10-9 13-11 14-12 4-3 5-4 6-6 7-7 8-10 9-8</sure>
+  <possible>1-2 11-11 12-11 2-3 3-3 6-5</possible>
+</s>
+<s id="pcedt_rd_01193-s25">
+  <english>Keep these guidelines in mind :</english>
+  <czech>Mějte na paměti tyto rady :</czech>
+  <sure>1-1 2-4 3-5 4-2 5-3 6-6</sure>
+  <possible>1-2 1-3 4-1 4-3 5-1 5-2</possible>
+</s>
+<s id="pcedt_rd_01193-s26">
+  <english>Start out simple .</english>
+  <czech>Začněte něčím jednoduchým .</czech>
+  <sure>1-1 2-1 3-3 4-4</sure>
+  <possible>3-2</possible>
+</s>
+<s id="pcedt_rd_01193-s27">
+  <english>Gifts do n't have to be expensive or elaborate to have enduring value .</english>
+  <czech>Dárky nemusejí být nákladné či důmyslné , aby měly trvalou hodnotu .</czech>
+  <sure>1-1 10-8 11-9 12-10 13-11 14-12 2-2 3-2 4-2 5-2 6-3 7-4 8-5 9-6</sure>
+  <possible>10-7</possible>
+</s>
+<s id="pcedt_rd_01193-s28">
+  <english>When I was eight , I found a pocket flashlight in my Christmas stocking .</english>
+  <czech>Když mi bylo osm , našel jsem ve vánoční punčoše kapesní baterku .</czech>
+  <sure>1-1 10-12 11-8 13-9 14-10 15-13 2-2 3-3 4-4 5-5 7-6 9-11</sure>
+  <possible>2-3 2-4 3-2 3-4 4-2 4-3 6-6 7-7 8-12</possible>
+</s>
+<s id="pcedt_rd_01193-s29">
+  <english>It was the simplest of gifts - - a " stocking stuffer . "</english>
+  <czech>Byl to ten nejobyčejnější dárek - jen taková " vycpávka do balíčku " .</czech>
+  <sure>1-2 10-9 12-10 13-14 14-13 2-1 3-3 4-4 6-5 7-6</sure>
+  <possible>1-1 11-11 11-12 5-5 9-10</possible>
+</s>
+<s id="pcedt_rd_01193-s30">
+  <english>But I was delighted .</english>
+  <czech>Mě ale nadchla .</czech>
+  <sure>1-2 4-3 5-4</sure>
+  <possible>2-1 2-3 3-1 3-3 4-1</possible>
+</s>
+<s id="pcedt_rd_01193-s31">
+  <english>The flashlight allowed me to read under the blankets at night without my parents knowing .</english>
+  <czech>Díky ní jsem si mohl večer číst pod dekou , aniž by o tom rodiče věděli .</czech>
+  <sure>11-6 12-11 14-15 15-16 16-17 6-7 7-8 9-9</sure>
+  <possible>10-6 12-10 12-12 13-15 15-12 15-13 15-14 3-3 3-5 4-5 5-7 6-4 8-9</possible>
+</s>
+<s id="pcedt_rd_01193-s32">
+  <english>That started a habit of nighttime reading that continues .</english>
+  <czech>Zvykl jsem si na to a čtu si před spaním dodnes .</czech>
+  <sure>10-12 4-1</sure>
+  <possible>3-1 4-2 4-3 5-7 6-10 6-9 7-7 7-8 9-11</possible>
+</s>
+<s id="pcedt_rd_01193-s33">
+  <english>For novelist Joyce Carol Oates , her most memorable gifts were the most humble ones .</english>
+  <czech>Pro spisovatelku Joyce Carol Oatesovou jsou nejnezapomenutelnější dárky ty nejskromnější .</czech>
+  <sure>1-1 10-8 11-6 12-9 13-10 14-10 15-9 16-11 2-2 3-3 4-4 5-5 8-7 9-7</sure>
+  <possible>7-8</possible>
+</s>
+<s id="pcedt_rd_01193-s34">
+  <english>Growing up near Buffalo , N . Y . , in an area where winters can be bitter , Oates received " hand - sewn and knitted things - - dresses , mitten - and - cap sets , sweaters of the softest angora wool .</english>
+  <czech>Vyrůstala poblíž Buffala ve státě New York , kde mohou být velmi tuhé zimy , a tak dostávala " doma šité a pletené věci - šaty , soupravy čepic a rukavic , svetry z nejjemnější angory .</czech>
+  <sure>1-1 10-8 14-9 15-14 16-10 17-11 18-13 19-15 2-1 21-18 22-19 26-22 27-23 28-24 3-2 31-26 32-27 33-31 35-30 37-29 38-28 39-32 4-3 40-33 41-34 43-35 44-36 45-36 46-37</sure>
+  <possible>18-12 23-20 23-21 24-20 24-21 25-20 25-21 29-25 30-25 42-35 42-36 6-6 6-7 7-6 7-7 8-6 8-7 9-6 9-7</possible>
+</s>
+<s id="pcedt_rd_01193-s35">
+  <english>What effort must have gone into these gifts ! "</english>
+  <czech>Tyto dárky vyžadovaly tak fantastickou píli ! "</czech>
+  <sure>10-8 2-6 7-1 8-2 9-7</sure>
+  <possible>1-4 2-5 3-3 4-3 5-3 6-2</possible>
+</s>
+<s id="pcedt_rd_01193-s36">
+  <english>Equally memorable - - and simple - - was her first book , Alice 's Adventures in Wonderland and Through the Looking Glass ,</english>
+  <czech>Stejně nezapomenutelná - - a prostá - - byla první kniha , kterou dostala - - Alenka v říši divů a za zrcadlem .</czech>
+  <sure>1-1 11-10 12-11 13-12 14-17 17-18 18-19 18-20 19-21 2-2 20-22 22-23 23-23 24-24 3-3 4-4 5-5 6-6 7-7 8-8 9-9</sure>
+  <possible>15-17 21-23</possible>
+</s>
+<s id="pcedt_rd_01193-s37">
+  <english>" a gift from my grandmother , which I prize to this day , " she says .</english>
+  <czech>" Byl to dárek od babičky , kterého si vážím dodnes . "</czech>
+  <sure>1-1 10-10 11-11 12-11 13-11 15-13 18-12 3-4 4-5 6-6 7-7 8-8</sure>
+  <possible>10-9 2-4 5-6 9-10</possible>
+</s>
+<s id="pcedt_rd_01193-s38">
+  <english>Match the child 's interests .</english>
+  <czech>Sledujte zájmy dítěte .</czech>
+  <sure>3-3 5-2 6-4</sure>
+  <possible>1-1 2-2 2-3 4-3</possible>
+</s>
+<s id="pcedt_rd_01193-s39">
+  <english>Fathers give their sons footballs , mothers give their daughters dolls , because that 's what they enjoyed as children .</english>
+  <czech>Otcové dávají synům kopací míče , matky dcerám panenky , protože je měli rádi , když byli malí .</czech>
+  <sure>1-1 10-8 11-9 12-10 13-11 18-13 18-14 19-16 2-2 20-18 21-19 4-3 5-4 5-5 6-6 7-7</sure>
+  <possible>14-12 15-12 16-12 17-13 19-15 19-17 20-17 3-3 9-8</possible>
+</s>
+<s id="pcedt_rd_01193-s40">
+  <english>But Johnny is n't Dad , and Mary is n't Mom .</english>
+  <czech>Jenže Johnny není tatínek a Mary není maminka .</czech>
+  <sure>1-1 10-7 11-8 12-9 2-2 3-3 4-3 5-4 7-5 8-6 9-7</sure>
+  <possible>6-5</possible>
+</s>
+<s id="pcedt_rd_01193-s41">
+  <english>" Gifts should n't be given to carry out a parent 's agenda , " Nordhaus says .</english>
+  <czech>" Rodiče by neměli dávat dárky , které by si sami přáli , " říká Barbara Nordhausová .</czech>
+  <sure>1-1 11-2 14-13 15-14 16-17 17-15 18-18 2-6 3-4 4-4 6-5</sure>
+  <possible>12-2 13-12 3-3 5-5 7-12 8-10 8-12 8-9 9-12</possible>
+</s>
+<s id="pcedt_rd_01193-s42">
+  <english>" They should be picked for the child , not the parent .</english>
+  <czech>" Měli by je vybírat pro dítě a ne pro sebe .</czech>
+  <sure>1-1 10-9 13-12 3-2 3-3 5-5 6-6 8-7</sure>
+  <possible>2-2 4-5 5-4 7-7 9-8</possible>
+</s>
+<s id="pcedt_rd_01193-s43">
+  <english>Kids tell you who they are , verbally and nonverbally . "</english>
+  <czech>Děti vám řeknou , jaké jsou , slovně i tím , jak se chovají .</czech>
+  <sure>1-1 11-15 2-3 3-2 4-5 6-6 7-7 8-8 9-9</sure>
+  <possible>10-10 10-11 10-12 10-13 10-14 4-4 5-6</possible>
+</s>
+<s id="pcedt_rd_01193-s44">
+  <english>An attentive parent can gauge what a child likes and choose a gift accordingly .</english>
+  <czech>" Pozorný rodič může zájmy dítěte odhadnout a podle toho pak vybírat dárek .</czech>
+  <sure>10-8 11-12 13-13 14-10 14-9 15-14 2-2 3-3 4-4 5-7 8-6</sure>
+  <possible>1-2 1-3 12-13 7-6 9-5</possible>
+</s>
+<s id="pcedt_rd_01193-s45">
+  <english>If your child asks for something specific , consider it carefully .</english>
+  <czech>Pokud si vaše dítě přeje něco zvláštního , pečlivě to zvažte .</czech>
+  <sure>1-1 10-10 12-12 2-3 3-4 4-5 6-6 7-7 8-8</sure>
+  <possible>11-11 11-9 4-2 5-5 5-6 9-11 9-9</possible>
+</s>
+<s id="pcedt_rd_01193-s46">
+  <english>When five - year - old Mark Huggins insisted he wanted a violin for Christmas , his mother dismissed his request as a youngster 's whim .</english>
+  <czech>Pětiletý Mark Huggins trval na tom , že chce k vánocům housle , a jeho matka toto přání odmítala jako dětský rozmar .</czech>
+  <sure>11-9 13-12 14-10 15-11 16-13 17-15 18-16 19-19 2-1 21-18 22-20 24-21 26-22 27-23 3-1 4-1 6-1 7-2 8-3 9-4</sure>
+  <possible>10-9 12-12 16-14 20-17 23-21 23-22 25-21 5-1 9-5 9-6</possible>
+</s>
+<s id="pcedt_rd_01193-s47">
+  <english>Mark persisted , and Ellie Huggins finally gave in .</english>
+  <czech>Mark vytrval , a tak nakonec povolila .</czech>
+  <sure>1-1 10-8 2-2 3-3 4-4 7-6 8-7 9-7</sure>
+  <possible>4-5</possible>
+</s>
+<s id="pcedt_rd_01193-s48">
+  <english>Today , 30 years later , Mark is associate concertmaster of the Pittsburgh Symphony a symphony orchestra .</english>
+  <czech>Dnes , o třicet let později , je koncertním mistrem Pittsburského symfonického orchestru .</czech>
+  <sure>1-1 10-10 10-9 13-11 16-12 17-13 18-14 2-2 3-4 4-5 5-6 6-7 8-8</sure>
+  <possible>11-13 12-13 15-13 3-3 5-3 9-10 9-9</possible>
+</s>
+<s id="pcedt_rd_01193-s49">
+  <english>Challenge your child .</english>
+  <czech>Podněcujte své dítě .</czech>
+  <sure>1-1 2-2 3-3 4-4</sure>
+  <possible></possible>
+</s>
+<s id="pcedt_rd_01193-s50">
+  <english>Often the best gifts are those that children grow into , not out of .</english>
+  <czech>Nejlepší dárky jsou často ty , ke kterým děti dorostou , a ne ty , z nichž vyrostou .</czech>
+  <sure>1-4 11-11 12-13 13-16 15-19 3-1 4-2 5-3 6-5 7-8 8-9 9-10</sure>
+  <possible>10-10 10-7 12-12 14-16 14-17 2-1 7-6 7-7</possible>
+</s>
+</sentences>

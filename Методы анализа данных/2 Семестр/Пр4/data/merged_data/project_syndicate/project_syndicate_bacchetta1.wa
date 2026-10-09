@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_bacchetta1-s1">
+  <english>Are the Dollar 's Days Numbered ?</english>
+  <czech>Jsou dny dolaru sečteny ?</czech>
+  <sure>1-1 3-3 5-2 6-4 7-5</sure>
+  <possible>2-2 4-3</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s2">
+  <english>Philippe Bacchetta and Eric van Wincoop</english>
+  <czech>Philippe Bacchetta and Eric van Wincoop</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_bacchetta1-s3">
+  <english>A year ago , the dollar bestrode the world like a colossus .</english>
+  <czech>Ještě před rokem dolar dominoval světu jako imperátor .</czech>
+  <sure>10-7 12-8 13-9 2-3 3-2 6-4 7-5 9-6</sure>
+  <possible>1-3 11-8 3-1 5-4 8-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s4">
+  <english>Now it is humbled and the euro looks triumphant .</english>
+  <czech>Teď je pokořen a triumfuje euro .</czech>
+  <sure>1-1 10-7 3-2 4-3 5-4 7-6 8-5 9-5</sure>
+  <possible>2-2 6-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s5">
+  <english>Is the dollar on the way out as the world 's unchallenged reserve and trade currency ?</english>
+  <czech>Přestává dolar být nezpochybnitelnou rezervní a obchodní měnou ?</czech>
+  <sure>1-1 12-4 13-5 14-6 15-7 16-8 17-9 3-2 4-1 5-1 6-1 7-1</sure>
+  <possible>1-3 2-2 4-3 5-3 6-3 7-3</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s6">
+  <english>Or is " euro triumphalism " premature ?</english>
+  <czech>Anebo je předčasné hovořit o " euro triumphans " ?</czech>
+  <sure>1-1 2-2 3-6 4-7 5-8 6-9 7-3 8-10</sure>
+  <possible></possible>
+</s>
+<s id="project_syndicate_bacchetta1-s7">
+  <english>That question preoccupies not only speculators tracking the dollar 's decline , but ordinary businessmen who wonder what currency to use when invoicing imports or exports .</english>
+  <czech>Tato otázka zneklidňuje nejen spekulanty , kteří sledují propad dolaru , ale i řadové podnikatele , kteří najednou nevědí , v jaké měně mají fakturovat dovoz a vývoz .</czech>
+  <sure>1-1 11-9 12-11 13-12 14-14 15-15 16-17 17-19 18-22 19-23 2-2 23-25 24-26 25-27 26-28 27-29 3-3 4-4 5-4 6-5 7-8 9-10</sure>
+  <possible>10-10 13-13 16-16 18-20 18-21 19-21 7-6 7-7 8-10 8-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s8">
+  <english>Indeed , the part that currencies play in world trade through their role in invoicing receives too little attention .</english>
+  <czech>Role , jakou v obchodním světě hrají měny jakožto fakturační činitel , by si vůbec zasloužila větší pozornost .</czech>
+  <sure>15-10 19-18 20-19 4-1 5-3 6-8 7-7 8-4</sure>
+  <possible>1-15 10-5 10-6 11-9 12-11 13-11 14-10 2-15 2-2 3-1 5-2 9-5 9-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s9">
+  <english>Currently , the US dollar remains dominant .</english>
+  <czech>V současnosti stále převládá dolar .</czech>
+  <sure>1-1 1-2 5-5 6-3 7-4 8-6</sure>
+  <possible>2-2 3-5 4-5 6-4</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s10">
+  <english>Most US exports and imports are denominated in dollars , and the dollar is extensively used in trade that does not involve America .</english>
+  <czech>V dolarech probíhá větší část amerického dovozu a vývozu a dolar se ve značné míře používá i v obchodech mimo USA .</czech>
+  <sure>1-4 1-5 11-10 13-11 15-13 15-14 15-15 16-12 16-16 17-18 18-19 2-6 23-21 24-22 4-8 7-3 8-1 9-2</sure>
+  <possible>10-10 12-11 14-16 19-20 20-20 21-20 22-20 3-7 3-9 5-7 5-9 6-3</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s11">
+  <english>Since 1980 , however , the dollar has lost ground .</english>
+  <czech>Od roku 1980 však dolar ztrácí půdu pod nohama .</czech>
+  <sure>1-1 10-7 11-10 2-3 4-4 7-5 9-6</sure>
+  <possible>10-6 10-8 10-9 2-2 3-4 5-4 6-5 8-6 8-7 8-8 8-9 9-7 9-8 9-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s12">
+  <english>Estimates from the European Commission indicate that the dollar 's share in world trade fell from 56 % in 1980 to 52 % in 1995 ( the latest year for which statistics are available ) .</english>
+  <czech>Evropská komise odhaduje , že podíl dolaru ve světovém obchodu klesl z 56 procent v roce 1980 na 52 procent v roce 1995 ( poslední rok , pro který existují statistiky ) .</czech>
+  <sure>1-3 11-6 12-8 13-9 14-10 15-11 16-12 17-13 18-14 19-15 20-17 21-18 22-19 23-20 24-21 25-23 26-24 27-25 28-25 29-26 30-28 31-29 32-31 34-30 35-32 36-33 4-1 5-2 7-5 9-7</sure>
+  <possible>10-7 2-2 20-16 25-22 3-2 31-27 33-30 7-4 8-6 8-7</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s13">
+  <english>The Deutsche Mark 's share remained relatively unchanged between 1980 and 1995 .</english>
+  <czech>Podíl německé marky zůstával v téže době relativně stálý .</czech>
+  <sure>13-10 2-2 3-3 5-1 6-4 7-8 8-9</sure>
+  <possible>1-1 1-3 4-3</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s14">
+  <english>The yen lags behind , but had the highest relative growth , with its share of world trade more than doubling from 2 % in 1980 to almost 5 % in 1995 .</english>
+  <czech>Japonský jen sice pokulhává , ale zato vykázal nejvyšší relativní růst , když se jeho podíl na celkovém světovém obchodu od roku 1980 do roku 1995 zvýšil ze dvou na téměř pět procent .</czech>
+  <sure>10-10 11-11 12-12 14-15 15-16 16-17 17-19 18-20 2-2 22-28 23-29 26-23 27-30 28-31 29-32 3-4 30-33 32-26 33-34 4-4 5-5 6-6 7-8 8-9 9-9</sure>
+  <possible>1-2 13-13 2-1 21-27 25-21 25-23 26-22 31-24 32-25</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s15">
+  <english>Among the reasons for the dollar 's longtime dominance as the premier international currency are lower transactions costs in foreign exchange markets , the historical role of the dollar in world trade since 1945 , and the sheer size of America 's economy .</english>
+  <czech>K důvodům , proč si dolar tak dlouho uchovává své postavení jako první mezinárodní měna , patří nízké transakční náklady na devizových trzích , historická role dolaru ve světovém obchodu od roku 1945 a velikost americké ekonomiky .</czech>
+  <sure>10-12 12-13 13-14 14-15 15-17 16-18 17-19 18-20 19-21 20-22 22-23 23-24 25-25 26-26 29-27 3-2 30-28 31-29 32-30 33-31 34-33 36-34 39-35 41-36 43-37 44-38 6-6 8-8</sure>
+  <possible>1-1 11-13 11-15 2-2 21-22 21-23 24-25 24-26 27-27 28-27 34-32 35-34 37-35 4-3 4-4 40-36 42-36 5-6 7-10 8-7 9-11</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s16">
+  <english>But the role of size is more complex than it seems .</english>
+  <czech>Jenomže velikost je mnohem komplexnější činitel , než jak se na první pohled zdá .</czech>
+  <sure>1-1 11-10 11-14 12-15 5-2 6-3 7-4 8-5 9-8</sure>
+  <possible>10-14 2-6 3-6 4-2 7-5 9-7 9-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s17">
+  <english>The second biggest economy in the world is Japan 's , but the fraction of its trade denominated in yen remains low , even when compared to the smallest European countries .</english>
+  <czech>Druhou největší ekonomikou na světě je Japonsko , ale podíl obchodu v jenech zůstává na nízké úrovni , a to i ve srovnání s těmi nejmenšími státy Evropy .</czech>
+  <sure>11-8 12-9 14-10 17-11 19-12 2-1 20-13 21-14 22-16 23-18 24-19 24-20 24-21 26-23 27-24 28-25 29-26 3-2 30-28 31-27 32-29 4-3 5-4 7-5 8-6 9-7</sure>
+  <possible>1-1 1-3 10-7 13-10 15-11 17-12 17-13 18-11 18-12 18-13 19-11 19-13 20-11 20-12 22-15 22-17 25-22 26-22 6-5</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s18">
+  <english>One factor that explains this is the large share of US firms in markets where Americans sell their goods .</english>
+  <czech>Jedním z faktorů , kterým to lze vysvětlit , je velký podíl amerických firem na trzích , kde Spojené státy prodávají své zboží .</czech>
+  <sure>1-1 11-13 12-14 13-15 14-16 15-18 16-19 16-20 17-21 18-22 19-23 2-3 20-24 3-5 4-8 5-6 6-10 8-11 9-12</sure>
+  <possible>10-13 10-14 15-17 2-2 3-4 7-12</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s19">
+  <english>To understand the reasons behind all this , consider what factors are in play when a firm chooses the currency it uses to invoice for goods .</english>
+  <czech>Abychom pochopili všechny příčiny tohoto stavu , musíme si uvědomit , jaké faktory působí v okamžiku , kdy se firma rozhoduje , v jaké měně bude fakturovat své zboží .</czech>
+  <sure>1-1 10-12 11-13 12-14 13-14 14-14 15-18 17-20 18-19 18-21 2-2 20-25 24-27 26-29 27-30 4-4 7-5 8-7 9-10</sure>
+  <possible>1-2 10-11 15-15 15-16 15-17 16-20 19-25 2-1 21-27 22-27 23-27 24-26 25-27 25-29 26-28 3-4 4-5 4-6 5-4 5-5 5-6 6-3 6-4 6-5 6-6 7-4 7-6 9-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s20">
+  <english>Here an exporter faces two types of risk : price risk and competitiveness risk .</english>
+  <czech>Před vývozcem jsou zde dvě rizika : cena a konkurence .</czech>
+  <sure>1-4 10-8 12-9 13-10 15-11 3-2 5-5 8-6 9-7</sure>
+  <possible>2-2 6-6 7-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s21">
+  <english>Consider a Japanese firm seeking to make the highest yen profits on goods sold in Switzerland .</english>
+  <czech>Například japonská firma , jíž jde o co nejvyšší zisk v jenech ze zboží prodávaného ve Švýcarsku .</czech>
+  <sure>10-12 11-10 12-13 13-14 14-15 15-16 16-17 17-18 3-2 4-3 5-6 8-9 9-9</sure>
+  <possible>1-1 10-11 2-3 5-4 5-5 5-7 6-6 7-10 7-6 9-8</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s22">
+  <english>If the Japanese firm sets the price in Swiss francs , it is exposed to price risk as the yen price will fluctuate with the yen - Swiss franc exchange rate .</english>
+  <czech>Pokud japonská firma určí cenu ve švýcarských francích , vystavuje se cenovému riziku , neboť cena v jenech bude kolísat podle kurzu mezi japonským jenem a švýcarským frankem .</czech>
+  <sure>1-1 10-8 11-9 14-10 16-12 17-13 18-15 20-18 21-16 22-19 23-20 26-25 27-26 28-27 29-28 3-2 30-22 31-22 32-29 4-3 5-4 7-5 8-6 9-7</sure>
+  <possible>12-10 13-10 14-11 15-13 18-14 19-16 2-3 20-17 23-21 24-20 24-21 25-22 25-25 26-23 26-24 6-5</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s23">
+  <english>This tends to make Japanese exporters prefer to price in yen .</english>
+  <czech>Japonský exportér se tak bude spíš přiklánět k ceně v jenech .</czech>
+  <sure>10-10 11-11 12-12 5-1 6-2 8-8 9-9</sure>
+  <possible>1-4 2-3 2-5 2-6 2-7 3-6 7-6 7-7</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s24">
+  <english>But firms also care about what their competitors do .</english>
+  <czech>Firmy si ale dávají pozor i na to , co dělá jejich konkurence .</czech>
+  <sure>1-3 10-14 2-1 3-6 4-4 4-5 6-10 7-12 8-13 9-11</sure>
+  <possible>4-2 4-7 5-4 5-7 6-8 6-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s25">
+  <english>If the Japanese firm sells its goods to a particular Swiss market dominated by Swiss firms ( which invoice in Swiss francs ) , it would prefer to price in Swiss francs too .</english>
+  <czech>Pokud japonská firma prodá své zboží na konkrétní švýcarský trh , kterému dominují švýcarské firmy ( které fakturují ve švýcarských francích ) , bude i ona preferovat cenu ve švýcarských francích .</czech>
+  <sure>1-1 10-8 11-9 12-10 13-13 15-14 16-15 17-16 18-17 19-18 20-19 21-20 22-21 23-22 24-23 27-27 29-28 3-2 30-29 31-30 32-31 33-25 34-32 4-3 5-4 6-5 7-6 8-7</sure>
+  <possible>13-11 13-12 14-13 14-15 2-2 2-3 25-24 25-27 26-24 26-27 27-24 27-26 28-27 9-10</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s26">
+  <english>If it priced in yen , it would risk losing its market share if the yen appreciated .</english>
+  <czech>Pokud by nabízela ceny v jenech , riskovala by ztrátu trhu , pokud by jen posílil .</czech>
+  <sure>1-1 10-10 12-11 14-13 16-15 17-16 18-17 3-3 3-4 4-5 5-6 6-7 9-8</sure>
+  <possible>11-11 13-11 14-12 15-15 17-14 2-3 3-2 7-8 8-8 9-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s27">
+  <english>If Japanese firms are dominant in a particular Swiss market , they prefer to price in yen : a Japanese firm then would not have to worry about losing market share when the yen appreciated , because its competitors would face the same pressures .</english>
+  <czech>Pokud jsou na některém konkrétním švýcarském trhu dominantní japonské firmy , budou označovat hodnotu zboží v jenech : japonská firma se totiž v tomto případě nemusí bát , že po posílení jenu ztratí trh , neboť její konkurence bude muset řešit stejný problém .</czech>
+  <sure>1-1 10-7 11-11 16-16 17-17 18-18 2-9 20-19 21-20 27-21 27-27 29-33 3-10 30-34 34-32 35-31 36-35 37-36 38-37 39-38 4-2 41-41 43-42 44-43 45-44 5-8 6-3 7-4 8-5 9-6</sure>
+  <possible>14-13 15-13 15-14 19-19 19-20 22-22 22-23 22-24 22-25 23-26 23-27 24-26 24-27 25-26 25-27 26-26 26-27 27-26 28-27 28-28 28-29 31-34 32-30 33-32 40-39 40-41 41-39 41-40 42-42 42-43</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s28">
+  <english>These arguments explain the big role played by the dollar in trade .</english>
+  <czech>Tyto argumenty vysvětlují onu významnou roli dolaru v mezinárodním obchodě .</czech>
+  <sure>1-1 10-7 11-8 12-10 13-11 2-2 3-3 4-4 5-5 6-6</sure>
+  <possible>8-7 9-7</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s29">
+  <english>The fact that the US is large makes it more likely that US firms are dominant in a particular market , either as an exporter or as import - competitors when foreign goods are sold in America .</english>
+  <czech>Fakt , že Spojené státy jsou velké , vysvětluje , proč jsou americké firmy na určitých trzích dominantní , ať už jako vývozce nebo jako konkurence dovozu v případě dovozu zahraničního zboží do USA .</czech>
+  <sure>13-13 14-14 15-12 16-18 17-15 19-16 2-1 20-17 21-19 22-20 22-21 23-22 25-23 26-24 27-25 28-27 3-3 30-26 31-28 31-29 32-31 33-32 37-34 38-35 5-4 5-5 6-6 7-7</sure>
+  <possible>1-1 10-9 11-9 12-10 12-11 18-16 18-17 24-23 3-2 36-33 4-4 4-5 8-9 9-9</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s30">
+  <english>This implies that US firms price in dollars , whether they sell at home or abroad , and foreign firms for competitive reasons will also price in dollars when they export to the US .</english>
+  <czech>Z toho plyne , že americké firmy budou své zboží cenit v dolarech nehledě na to , zda prodávají v tuzemsku nebo v cizině , a zahraniční firmy budou z konkurenčních důvodů své zboží vyvážené do USA rovněž označovat cenou v dolarech .</czech>
+  <sure>1-2 10-18 12-19 13-20 14-21 15-22 16-24 17-25 18-26 19-27 2-3 20-28 21-30 22-31 23-32 25-38 26-39 26-40 27-41 28-42 3-5 31-35 32-36 34-37 35-43 4-6 5-7 6-11 7-12 8-13</sure>
+  <possible>1-1 1-3 10-14 10-15 10-16 10-17 11-19 16-23 2-1 2-2 24-29 24-40 26-29 3-4 30-33 31-34 33-37 6-10 6-8 9-17</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s31">
+  <english>Because Japan has the second largest economy in the world , the yen should be a more important currency .</english>
+  <czech>Japonsko je druhá největší světová ekonomika . Jen by tedy měl mít mnohem větší váhu .</czech>
+  <sure>10-5 11-7 13-8 2-1 20-16 5-3 6-4 7-6</sure>
+  <possible>1-10 12-8 14-11 14-9 15-12 16-15 17-13 17-14 18-14 19-15 3-2 4-3 8-5 9-5</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s32">
+  <english>Competitiveness is a key reason for why it is not .</english>
+  <czech>Klíčovým důvodem , proč tomu tak není , je konkurenceschopnost .</czech>
+  <sure>1-10 10-7 11-11 2-9 4-1 5-2 7-4 8-5 9-7</sure>
+  <possible>3-2 6-2 6-3 6-4 7-3</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s33">
+  <english>First , the US is Japan 's largest trading partner : more than half of Japanese trade with industrialized countries is with the US .</english>
+  <czech>Za prvé , Spojené státy jsou největším obchodním partnerem Japonska : více než polovinu japonského obchodu s industrializovanými zeměmi tvoří obchod s USA .</czech>
+  <sure>1-1 1-2 10-9 11-11 12-12 13-13 14-14 16-15 17-16 18-17 19-18 2-3 20-19 21-20 22-22 24-23 25-24 4-4 4-5 5-6 6-10 8-7 9-8</sure>
+  <possible>15-16 23-23 3-4 3-5 7-10</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s34">
+  <english>Over 80 % of Japanese exports to the US are priced in dollars , in markets where US firms tend to dominate .</english>
+  <czech>Na amerických trzích , kde mají domácí firmy tendenci dominovat , se 80 procent japonského exportu udává v amerických dolarech .</czech>
+  <sure>11-12 11-17 12-18 13-20 15-1 16-3 17-5 19-8 2-13 20-6 20-9 22-10 23-21 3-14 5-15 6-16</sure>
+  <possible>10-17 13-19 14-11 17-4 18-2 21-10 4-16</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s35">
+  <english>Second , even when selling to countries other than the US , Japanese exporters often face stiff American competition .</english>
+  <czech>Za druhé , přestože Japonsko vyváží i do jiných zemí vedle USA , i na těchto trzích musí čelit silné americké konkurenci .</czech>
+  <sure>1-1 1-2 11-12 12-13 16-19 17-20 18-21 19-22 2-3 20-23 3-4 4-4 5-6 6-8 7-10 8-9 9-11</sure>
+  <possible>10-12 13-5</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s36">
+  <english>Take Japanese exports to South East Asia , which are almost 50 % denominated in dollars due to competition from US exporters .</english>
+  <czech>Tak například japonský export do jihovýchodní Asie , který téměř z padesáti procent probíhá v dolarech , a to kvůli konkurenci amerických exportérů .</czech>
+  <sure>1-2 11-10 12-12 13-13 14-14 15-15 16-16 17-20 19-21 2-3 21-22 22-23 23-24 3-4 4-5 5-6 6-6 7-7 8-8 9-9</sure>
+  <possible>1-1 10-14 12-11 17-17 17-18 17-19 18-20 20-21 20-23</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s37">
+  <english>These factors are unlikely to change soon and lead us to predict that the yen will keep a low profile in world trade .</english>
+  <czech>Tyto okolnosti se v dohledné době zřejmě nezmění , na základě čehož lze usuzovat , že jen se bude ve světovém obchodu i nadále držet stranou .</czech>
+  <sure>1-1 12-14 13-16 15-17 2-2 21-20 22-21 23-22 24-27 6-8 7-4 7-5 7-6 8-9</sure>
+  <possible>10-10 10-11 10-12 10-13 10-14 11-10 11-11 11-12 11-13 11-14 12-10 12-11 12-12 12-13 13-15 14-17 16-19 16-25 17-18 17-19 17-23 17-24 17-25 17-26 18-18 18-23 18-24 18-25 18-26 19-18 19-23 19-24 19-25 19-26 20-18 20-23 20-24 20-25 20-26 3-3 3-7 3-8 4-3 4-7 4-8 5-3 5-7 5-8 6-3 6-7 9-10 9-11 9-12 9-13 9-14</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s38">
+  <english>They also explain why , over time , the euro should gain weight in international trade .</english>
+  <czech>Z těchto okolností lze ale vyvodit i to , že na mezinárodní obchodní scéně posílí euro .</czech>
+  <sure>10-16 12-15 13-15 14-11 15-12 16-13 16-14 17-17</sure>
+  <possible>11-15 2-5 2-7 3-4 3-6 4-10 8-9 9-16</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s39">
+  <english>Euro - zone countries can be considered a single country when dealing with the currency denomination of trade .</english>
+  <czech>Země eurozóny můžeme z hlediska měnové denominace obchodu považovat za jednu zemi .</czech>
+  <sure>1-2 10-12 15-6 16-7 18-8 19-13 2-2 3-2 4-1 7-9 9-11</sure>
+  <possible>11-4 11-5 12-4 12-5 13-4 13-5 13-7 14-7 17-8 5-3 5-9 6-9 7-10 7-3 8-10 8-12</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s40">
+  <english>This " country " has more market power than the individual countries that form the European Monetary Union .</english>
+  <czech>Tato " země " má dohromady mnohem větší tržní sílu než jednotlivé země , které tvoří Evropskou měnovou unii , samostatně .</czech>
+  <sure>1-1 11-12 12-13 13-15 14-16 16-17 17-18 18-19 19-22 2-2 3-3 4-4 5-5 6-8 7-9 8-10 9-11</sure>
+  <possible>10-13 13-14 15-19 6-7</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s41">
+  <english>So the euro should play a larger role in international trade in the future than the sum of the currencies it replaced .</english>
+  <czech>Euro by tedy mělo do budoucna v mezinárodním obchodu sehrát mnohem větší roli než součet všech jednotlivých měn , které nahradilo .</czech>
+  <sure>1-3 10-8 11-9 12-5 14-6 15-14 17-15 20-18 22-21 23-22 3-1 5-10 7-12 8-13 9-7</sure>
+  <possible>13-6 16-15 18-18 19-16 19-18 2-1 21-21 4-10 4-2 4-4 5-2 5-4 6-13 7-11</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s42">
+  <english>Yet these changes will only occur gradually .</english>
+  <czech>K těmto změnám ovšem dojde postupně .</czech>
+  <sure>1-4 2-2 3-3 6-5 7-6 8-7</sure>
+  <possible>3-1 4-5 6-1</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s43">
+  <english>So the " euro triumphalism " that has greeted the dollar 's decline is , indeed , premature .</english>
+  <czech>Fenomén " euro triumphans " , který přivítal propad dolaru , je tudíž opravdu předčasný .</czech>
+  <sure>11-10 13-9 14-12 18-15 19-16 3-2 4-3 5-4 6-5 7-7 9-8</sure>
+  <possible>1-13 10-9 12-10 15-11 15-13 16-13 16-14 17-13 17-14 2-4 7-6 8-8</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s44">
+  <english>Despite its current distress , the dollar should retain its predominance for some time to come .</english>
+  <czech>Navzdory nesnázím by si dolar měl ještě na nějakou tu dobu udržet svou dosavadní převahu .</czech>
+  <sure>1-1 10-13 11-15 12-8 13-9 14-11 17-16 4-2 7-5 9-12</sure>
+  <possible>15-7 16-7 6-5 8-12 8-3 8-6 9-3 9-4 9-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s45">
+  <english>Philippe Bacchetta is director of the Study Center Gerzensee ( a foundation of the Swiss National Bank ) and professor of economics at the University of Lausanne ;</english>
+  <czech>Philippe Bacchetta je ředitelem Studijního střediska Gerzensee ( nadace Švýcarské národní banky ) a profesorem ekonomie na Lausannské univerzitě .</czech>
+  <sure>1-1 10-8 12-9 15-10 16-11 17-12 18-13 19-14 2-2 20-15 22-16 23-17 25-19 27-18 28-20 3-3 4-4 7-5 8-6 9-7</sure>
+  <possible>11-9 13-12 14-12 21-16 24-19 26-18 5-6 6-6</possible>
+</s>
+<s id="project_syndicate_bacchetta1-s46">
+  <english>Eric van Wincoop is professor of economics at the University of Virginia .</english>
+  <czech>Eric van Wincoop je profesorem ekonomie na University of Virginia .</czech>
+  <sure>1-1 10-8 11-9 12-10 13-11 2-2 3-3 4-4 5-5 7-6 8-7</sure>
+  <possible>6-6 9-8</possible>
+</s>
+</sentences>

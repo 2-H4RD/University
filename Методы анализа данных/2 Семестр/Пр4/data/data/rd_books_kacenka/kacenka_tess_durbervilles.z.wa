@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="kacenka_tess_durbervilles-s1">
+  <english>The haggling business , which had mainly depended on the horse , became disorganized forthwith .</english>
+  <czech>S překupničením , jež záviselo především na koni , byl od toho dne konec .</czech>
+  <sure>2-2 3-2 4-3 5-4 7-6 8-5 9-7 11-8 12-9 13-10 14-14 15-11 15-12 15-13 16-15</sure>
+  <possible>1-2 3-1 6-5 10-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s2">
+  <english>Distress , if not penury , loomed in the distance .</english>
+  <czech>Na obzoru vyvstávala nouze , ne - li přímo hlad .</czech>
+  <sure>1-4 2-5 3-8 4-6 5-10 7-3 8-1 10-2 11-11</sure>
+  <possible>3-7 9-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s3">
+  <english>Durbeyfield was what was locally called a slack - twisted fellow ;</english>
+  <czech>Durbeyfieldovi , jak se tu v kraji říkalo , šly obě ruce dozadu .</czech>
+  <sure>1-1 3-3 5-5 6-8 12-14</sure>
+  <possible>2-10 4-8 5-6 5-7 6-4</possible>
+  <phrasal>7-10 7-11 7-12 7-13 8-10 8-11 8-12 8-13 9-10 9-11 9-12 9-13 10-10 10-11 10-12 10-13 11-10 11-11 11-12 11-13</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s4">
+  <english>he had good strength to work at times ; but the times could not be relied on to coincide with the hours of requirement ; and , having been unaccustomed to the regular toil of the day labourer , he was not particularly persistent when they did so coincide .</english>
+  <czech>V některých chvílích měl na práci síly dost - - - nedalo se ovšem spoléhat , že se tyto chvíle dostaví v okamžiku poptávky ; a i když se třeba dostavily , nevynikal Durbeyfield zvláštní vytrvalostí , protože nebyl zvyklý na pravidelné , každodenní pracovní vypětí .</czech>
+  <sure>2-4 3-8 4-7 5-5 6-6 7-1 8-3 9-9 10-14 11-19 12-20 13-12 14-12 16-15 18-17 19-18 19-21 22-23 24-24 25-25 26-26 30-39 30-40 31-41 33-42 34-45 34-46 39-32 41-33 42-33 43-35 44-36 45-28 49-29 49-31 50-47</sure>
+  <possible>1-4 8-2 15-15 16-13 17-15 18-16 20-21 21-23 22-22 23-24 28-40 29-40 32-46 35-44 36-44 37-44 40-33 45-27 46-31 47-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s5">
+  <english>Tess , meanwhile , as the one who had dragged her parents into this quagmire , was silently wondering what she could do to help them out of it ; and then her mother broached her scheme .</english>
+  <czech>Tess zatím jako hříšnice , která rodičům způsobila tyto nesnáze , mlčky rozvažovala , jak by jim mohla pomoci ; a pak se matka vytasila se svým plánem .</czech>
+  <sure>1-1 3-2 5-3 8-6 10-8 12-7 14-9 15-10 16-11 18-12 19-13 20-15 22-18 25-19 26-17 30-20 31-21 32-22 34-24 35-25 36-27 37-28 38-29</sure>
+  <possible>8-5 9-8 11-7 13-8 17-13 20-14 21-18 22-16 23-19 24-19 27-19 28-19 29-19 33-24 35-23 37-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s6">
+  <english>" We must take the ups with the downs , Tess , " said she ; " and never could your high blood have been found out at a more called for moment .</english>
+  <czech>" Musíme brát život , jaký je , " řekla , " a na tvou vznešenou krev se ani nemohlo přijít v příhodnější chvíli .</czech>
+  <sure>1-1 3-2 10-8 12-11 13-12 14-10 18-13 19-20 20-20 21-15 22-16 23-17 26-21 27-21 28-22 30-23 31-23 32-23 33-24 34-25</sure>
+  <possible>2-2 15-10 20-18 20-19 23-14 24-21 25-21 29-23</possible>
+  <phrasal>4-3 4-4 4-5 4-6 4-7 5-3 5-4 5-5 5-6 5-7 6-3 6-4 6-5 6-6 6-7 7-3 7-4 7-5 7-6 7-7 8-3 8-4 8-5 8-6 8-7 9-3 9-4 9-5 9-6 9-7</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s7">
+  <english>You must try your friends .</english>
+  <czech>Teď musíš vyzkoušet svoje přátele .</czech>
+  <sure>2-2 3-3 4-4 5-5 6-6</sure>
+  <possible>1-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s8">
+  <english>Do ye know that there is a very rich Mrs d ' Urberville living on the outskirts o ' The Chase , who must be our relation ?</english>
+  <czech>Víš , že u Obory žije moc bohatá paní d ' Urbervillová , která je bezpochyby z naší rodiny ?</czech>
+  <sure>3-1 4-3 8-7 9-8 10-9 11-10 12-11 13-12 14-6 15-4 21-5 22-13 23-14 24-15 26-18 27-19 28-20</sure>
+  <possible>1-1 2-1 4-2 6-6 7-9 20-5 24-16 25-15 27-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s9">
+  <english>You must go to her and claim kin , and ask for some help in our trouble . "</english>
+  <czech>Musíš za ní jít , hlásit se jako příbuzná a poprosit ji o pomoc v našem trápení . "</czech>
+  <sure>2-1 3-4 4-2 5-3 6-5 7-6 8-9 10-10 11-11 12-13 14-14 15-15 16-16 17-17 18-18 19-19</sure>
+  <possible>1-1 7-7 7-8 9-10 13-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s10">
+  <english>" I should n't care to do that , " says Tess .</english>
+  <czech>" To se mi moc nechce , " odpověděla Tess .</czech>
+  <sure>1-1 9-7 10-8 11-9 12-10 13-11</sure>
+  <possible></possible>
+  <phrasal>2-2 2-3 2-4 2-5 2-6 3-2 3-3 3-4 3-5 3-6 4-2 4-3 4-4 4-5 4-6 5-2 5-3 5-4 5-5 5-6 6-2 6-3 6-4 6-5 6-6 7-2 7-3 7-4 7-5 7-6 8-2 8-3 8-4 8-5 8-6</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s11">
+  <english>" If there is such a lady , ' would be enough for us if she were friendly - not to expect her to give us help . "</english>
+  <czech>" I kdyby byla nějaká taková paní , muselo by nám stačit , kdyby se k nám chovala přátelsky - - - a ne čekat , že nám pomůže . "</czech>
+  <sure>1-1 2-3 4-4 5-6 7-7 8-8 10-10 12-12 14-11 15-14 17-15 17-18 18-19 19-22 20-24 22-25 26-28 27-29 28-30 29-31</sure>
+  <possible>2-2 3-4 5-5 6-7 10-9 11-9 13-11 15-13 16-18 20-23 21-25 24-29 25-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s12">
+  <english>" You could win her round to do anything , my dear .</english>
+  <czech>" Však ty si ji získáš , že ti udělá pomyšlení , dítě .</czech>
+  <sure>1-1 2-3 4-6 5-5 8-10 10-12 12-13 13-14</sure>
+  <possible>3-6 4-4 6-6 7-10 9-11 11-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s13">
+  <english>Besides , perhaps there 's more in it than you know of .</english>
+  <czech>Ostatně možná je na tom víc , než si myslíš .</czech>
+  <sure>1-1 3-2 4-3 5-3 6-6 7-4 8-5 9-8 11-10 13-11</sure>
+  <possible>2-1 10-10 11-9 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s14">
+  <english>I ' ve heard what I ' ve heard , good now . "</english>
+  <czech>Já totiž vím svoje . "</czech>
+  <sure>13-5 14-6</sure>
+  <possible></possible>
+  <phrasal>1-1 1-2 1-3 1-4 2-1 2-2 2-3 2-4 3-1 3-2 3-3 3-4 4-1 4-2 4-3 4-4 5-1 5-2 5-3 5-4 6-1 6-2 6-3 6-4 7-1 7-2 7-3 7-4 8-1 8-2 8-3 8-4 9-1 9-2 9-3 9-4</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s15">
+  <english>The oppressive sense of the harm she had done led Tess to be more deferential than she might otherwise have been to the maternal wish ; but she could not understand why her mother should find such satisfaction in contemplating an enterprise of , to her , such doubtful profit .</english>
+  <czech>Tess tísnilo vědomí , že způsobila škodu , a proto byla matčinu přání povolnější , než by byla jindy ; nechápala ovšem , proč matce působí takové potěšení promýšlet podnik , který měl podle Tessina názoru tak pochybnou naději na úspěch .</czech>
+  <sure>2-2 3-3 6-7 9-6 11-1 13-11 14-14 15-14 16-16 19-19 21-18 24-12 25-13 26-20 27-22 30-21 31-21 32-24 34-25 36-26 37-27 38-28 40-29 42-30 44-31 48-37 49-38 50-41 51-42</sure>
+  <possible>1-3 4-7 5-7 7-6 8-6 10-10 12-11 16-15 17-18 18-18 20-18 21-17 22-13 23-13 28-21 29-21 32-23 33-25 35-26 39-29 41-30 43-41 50-40</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s16">
+  <english>Her mother might have made inquiries , and have discovered that this Mrs d ' Urberville was a lady of unequalled virtues and charity .</english>
+  <czech>Třeba se matka vyptávala a zjistila , že ta paní d ' Urbervillová je nadmíru ušlechtilá a dobročinná dáma .</czech>
+  <sure>2-3 3-1 6-4 8-5 10-6 11-8 12-9 13-10 14-11 15-12 16-13 17-14 19-19 21-15 22-16 23-17 24-18 25-20</sure>
+  <possible>1-3 4-1 5-4 6-2 7-5 9-6 11-7 18-19 20-16 20-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s17">
+  <english>But Tess 's pride made the part of poor relation one of particular distaste to her .</english>
+  <czech>Tess však při její hrdosti připadala úloha chudé příbuzné nesmírně nechutná .</czech>
+  <sure>1-2 2-1 4-5 7-7 9-8 10-9 13-10 14-11 17-12</sure>
+  <possible>3-1 4-3 4-4 5-6 6-7 8-9 11-11 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s18">
+  <english>" I ' d rather try to get work , " she murmured .</english>
+  <czech>" Radši bych se pokusila najít si práci , " zašeptala .</czech>
+  <sure>1-1 5-2 6-5 8-6 9-8 10-9 11-10 13-11 14-12</sure>
+  <possible>2-5 3-5 4-5 6-3 6-4 7-6 8-7 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s19">
+  <english>" Durbeyfield , you can settle it , " said his wife , turning to where he sat in the background .</english>
+  <czech>" Durbeyfielde , je to na tobě , " řekla žena a otočila se k muži , který seděl v koutě .</czech>
+  <sure>1-1 2-2 3-3 8-8 9-9 10-10 12-11 13-12 14-13 15-15 18-19 19-20 21-21 22-22</sure>
+  <possible>11-11 14-14 16-17 16-18 17-19 20-21</possible>
+  <phrasal>4-4 4-5 4-6 4-7 5-4 5-5 5-6 5-7 6-4 6-5 6-6 6-7 7-4 7-5 7-6 7-7</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s20">
+  <english>" If you say she ought to go , she will go . "</english>
+  <czech>" Když jí řekneš , aby šla , tak půjde . "</czech>
+  <sure>1-1 2-2 4-4 8-7 9-8 12-10 13-11 14-12</sure>
+  <possible>3-4 4-3 5-7 6-7 7-7 8-6 10-10 11-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s21">
+  <english>" I do n't like my children going and making themselves beholden to strange kin , " murmured he .</english>
+  <czech>" Nelíbí se mi , aby moje děti chodily a tvářily se poníženě před nějakým příbuzenstvem , " zabručel .</czech>
+  <sure>1-1 3-2 4-2 5-2 6-7 7-8 8-9 9-10 10-11 11-12 12-13 13-14 15-16 16-17 17-18 18-19 20-20</sure>
+  <possible>2-2 5-3 5-4 14-15 19-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s22">
+  <english>" I ' m the head of the noblest branch o ' the family , and I ought to live up to it . "</english>
+  <czech>" Já jsem hlava nejvznešenější větve rodu a podle toho bych se měl chovat . "</czech>
+  <sure>1-1 4-3 6-4 9-5 10-6 14-7 16-8 18-11 18-13 20-12 20-14 21-14 22-9 23-10 24-15 25-16</sure>
+  <possible>2-3 3-3 4-2 5-4 7-6 8-5 11-7 12-7 13-7 15-8 17-13 19-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s23">
+  <english>His reasons for staying away were worse to Tess than her own objection to going .</english>
+  <czech>Otcovy důvody k zdrženlivosti byly pro Tess ještě méně přijatelné než důvody , pro které měla proti cestě námitky .</czech>
+  <sure>2-2 3-3 4-4 5-4 6-5 7-9 7-10 8-6 9-7 10-11 13-19 14-17 15-18 16-20</sure>
+  <possible>7-8 11-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s24">
+  <english>" Well , as I killed the horse , mother , " she said mournfully , " I suppose I ought to do something .</english>
+  <czech>" No , když jsem zabila koně , maminko , " řekla zkormouceně , " asi bych měla něco udělat .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-6 8-7 9-8 10-9 11-10 12-11 14-12 15-13 16-14 17-15 21-17 21-18 23-20 24-19 25-21</sure>
+  <possible>5-6 6-5 7-7 13-12 18-16 19-16 20-18 22-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s25">
+  <english>I do n't mind going and seeing her , but you must leave it to me about asking for help .</english>
+  <czech>Nesejde mi na tom , zajít ji navštívit , ale jestli ji poprosím o pomoc , to už musíte nechat na mně .</czech>
+  <sure>2-1 4-1 5-6 7-8 8-7 9-9 10-10 12-19 13-20 14-17 15-21 16-22 18-13 19-14 20-15 21-23</sure>
+  <possible>1-1 3-1 4-2 4-3 4-4 11-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s26">
+  <english>And do n't go thinking about her making a match for me - it is silly . "</english>
+  <czech>A neuvažujte o tom , že mi sežene ženicha - - - to je nesmysl . "</czech>
+  <sure>1-1 2-2 5-2 6-3 10-9 12-7 13-12 14-13 15-14 16-15 17-16 18-17</sure>
+  <possible>3-2 4-2 6-4 7-8 8-8 9-9 11-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s27">
+  <english>" Very well said , Tess ! " observed her father sententiously .</english>
+  <czech>" Tos řekla správně , Tess , " poznamenal otec s velkým uspokojením .</czech>
+  <sure>1-1 3-4 4-3 5-5 6-6 8-8 9-9 11-10 12-13 13-14</sure>
+  <possible>2-4 7-7 10-10 12-11 12-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s28">
+  <english>" Who said I had such a thought ? " asked Joan .</english>
+  <czech>" A kdo ti říká , že o tom uvažuju ? " zeptala se Joan .</czech>
+  <sure>1-1 2-3 3-5 6-9 8-10 9-11 10-12 11-13 11-14 12-15 13-16</sure>
+  <possible>3-4 4-10 5-10 6-8 7-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s29">
+  <english>" I fancy it is in your mind , mother .</english>
+  <czech>" Mám dojem , že na to myslíte , maminko .</czech>
+  <sure>1-1 3-3 4-7 5-8 6-8 8-8 9-9 10-10 11-11</sure>
+  <possible>2-3 3-2 4-6 7-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s30">
+  <english>But I 'll go . "</english>
+  <czech>Ale půjdu . "</czech>
+  <sure>1-1 4-2 5-3 6-4</sure>
+  <possible>2-2 3-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s31">
+  <english>Rising early next day she walked to the hill - town called Shaston , and there took advantage of a van which twice in the week ran from Shaston eastward to Chaseborough , passing near Trantridge , the parish in which the vague and mysterious Mrs d ' Urberville had her residence .</english>
+  <czech>Druhý den ráno časně vstala , šla pěšky do náhorního městečka zvaného Shaston a odtud se svezla dostavníkem , který jezdil dvakrát denně ze Shastonu na východ do Chaseboroughu a projížděl nedaleko Trantridge , osady , kde měla své sídlo záhadná a tajuplná paní d ' Urbervillová .</czech>
+  <sure>1-5 2-4 3-1 4-2 6-7 7-9 9-10 11-11 12-12 13-13 15-14 16-15 17-17 21-18 22-20 23-22 27-21 28-24 29-25 30-26 30-27 31-28 32-29 33-30 34-31 35-32 36-33 37-34 39-35 41-37 43-41 44-42 45-43 46-44 47-45 48-46 49-47 50-38 51-39 52-40 53-48</sure>
+  <possible>5-7 6-8 8-11 14-14 17-16 19-18 20-18 22-19 38-35 40-37 41-36 42-44</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s32">
+  <english>Tess Durbeyfield 's route on this memorable morning lay amid the northeastern undulations of the Vale in which she had been born , and in which her life had unfolded .</english>
+  <czech>Toho pamětihodného rána vedla Tessina cesta mezi severovýchodními pahorky úvalu , kde se narodila a kde se rozvíjel její život .</czech>
+  <sure>1-5 4-6 6-1 7-2 8-3 9-4 10-7 12-8 13-9 16-10 18-12 22-13 22-14 24-15 26-16 27-19 28-20 30-18 31-21</sure>
+  <possible>3-5 5-3 11-8 14-10 15-10 17-12 18-11 19-14 20-14 21-14 23-15 25-16 29-18 30-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s33">
+  <english>The Vale of Blackmoor was to her the world , and its inhabitants the races thereof .</english>
+  <czech>Blackmoorský úval byl pro ni svět a jeho obyvatelé lidskými plemeny tohoto světa .</czech>
+  <sure>2-2 4-1 5-3 6-4 7-5 9-6 11-7 12-8 13-9 15-11 17-14</sure>
+  <possible>1-2 3-1 8-6 10-7 14-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s34">
+  <english>From the gates and stiles of Marlott she had looked down its length in the wondering days of infancy , and what had been mystery to her then was not much less than mystery to her now .</english>
+  <czech>V období užaslého dětství se od marlottských branek a plůtků zahlížela do dáli dlouhého údolí , a co pro ni bylo tajemné tehdy , bylo pro ni jen o málo méně tajemné nyní .</czech>
+  <sure>1-6 3-8 4-9 5-10 7-7 10-5 10-11 11-11 13-14 14-1 16-3 17-2 19-4 20-16 21-17 22-18 24-21 25-22 26-19 27-20 28-23 29-25 30-30 31-30 32-31 34-32 35-26 36-27 37-33 38-34</sure>
+  <possible>2-8 6-7 8-11 9-11 10-12 12-14 15-2 18-4 23-21 31-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s35">
+  <english>She has seen daily from her chamber - window towers , villages , faint white mansions ; above all the town of Shaston standing majestically on its height ; its windows shining like lamps in the evening sun .</english>
+  <czech>Denně vídala z okna pokoje věže , vesnice , matně bílé panské domy a vysoko nade vším se majestátně vypínalo městečko Shaston ; jeho okna svítila v zapadajícím slunci jako lampy .</czech>
+  <sure>3-2 4-1 5-3 7-5 9-4 10-6 11-7 12-8 13-9 14-10 15-11 16-12 16-13 18-16 19-17 21-21 23-22 24-18 24-20 25-19 29-23 30-24 31-25 32-26 33-30 34-31 35-27 38-29 39-32</sure>
+  <possible>1-2 2-2 6-4 17-14 20-21 22-21 26-20 27-20 28-20 36-29 37-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s36">
+  <english>She had hardly ever visited the place , only a small tract even of the Vale and its environs being known to her by close inspection .</english>
+  <czech>Ještě nikdy v tomto městě nebyla , z vlastní zkušenosti poznala jen malou část Úvalu a nebližšího okolí .</czech>
+  <sure>3-2 4-2 5-6 6-4 7-5 8-7 9-12 11-13 12-14 16-15 17-16 19-18 24-8 27-19</sure>
+  <possible>1-6 2-6 3-6 4-6 7-3 10-14 14-15 15-15 18-18 19-17 20-11 21-11 22-11 23-11 26-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s37">
+  <english>Much less had she been far outside the valley .</english>
+  <czech>Tím méně se kdy dostala dál , mimo údolí .</czech>
+  <sure>1-1 2-2 5-3 5-5 6-6 7-8 9-9 10-10</sure>
+  <possible>3-5 4-5 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s38">
+  <english>Every contour of the surrounding hills was as personal to her as that of her relatives ' faces ; but for what lay beyond her judgment was dependent on the teaching of the village school , where she had held a leading place at the time of her leaving , a year or two before this date .</english>
+  <czech>Každý obrys okolních vrchů jí byl blízký jako tahy v tvářích členů její rodiny , ale její představa o tom , co je za kopci , závisela jen na vědomostech z vesnické školy , kterou před rokem dvěma vychodila jako jedna z nejlepších žákyní .</czech>
+  <sure>1-1 2-2 5-3 6-4 7-6 9-7 11-5 12-8 15-13 16-12 16-14 18-11 19-15 20-16 22-22 24-24 25-17 26-18 28-27 29-29 31-30 32-31 34-32 35-33 36-34 37-35 42-43 52-37 54-38 55-36 58-45</sure>
+  <possible>3-4 4-4 10-5 14-12 17-12 23-23 27-27 30-30 33-33 42-42 49-39 51-37</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s39">
+  <english>In those early days she had been much loved by others of her own sex and age , and had used to be seen about the village as one of three - all nearly of the same year - walking home from school side by side ;</english>
+  <czech>V těch dětských letech ji dívky jejího věku mívaly hodně rády , a často ji bylo ve vesnici vidět jako jednu z trojice přibližně stejně starých děvčat , která se bok po boku vracela domů ze školy .</czech>
+  <sure>1-1 2-2 5-5 7-9 8-10 9-11 13-7 17-8 18-12 19-13 24-19 25-17 27-18 28-20 29-21 30-22 31-23 34-24 37-25 40-34 41-35 42-36 43-37 44-31 45-32 46-33</sure>
+  <possible>3-3 4-4 6-9 14-7 20-19 21-19 22-19 23-19 24-15 24-16 26-18 36-25 40-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s40">
+  <english>Tess the middle one - in a pink print pinafore , of a finely reticulated pattern , worn over a stuff frock that had lost its original colour for a nondescript tertiary - marching on upon long stalky legs , in tight stockings which had little ladder - like holes at the knees , torn by kneeling in the roads and banks in search of vegetable and mineral treasures ; her then earth - coloured hair hanging like pot - hooks ;</english>
+  <czech>Tess chodila uprostřed - - - přes vlněnou sukni , jejíž původní barva už několikanásobně vybledla v nepopsatelný odstín , růžovou kartounovou zástěrku s jemným mřížkovaným vzorkem - - - a vykračovala si důstojně na dlouhých nožkách v těsných punčochách , na nichž od kolenou utíkala očka , jak si je prodřela , když poklekala na cestách i travnatých příkopech a sbírala si rostliné i nerostné poklady ; splývavé , zemitě zbarvené vlasy se jí tehdy stáčely do prstenců .</czech>
+  <sure>1-1 3-3 5-4 8-21 9-22 10-23 12-24 14-25 15-26 16-27 19-7 21-8 22-9 26-11 27-12 28-13 29-17 31-18 34-32 36-35 37-36 39-37 41-38 42-39 43-40 44-43 50-47 51-44 53-45 54-48 55-52 57-55 58-56 60-57 61-58 62-60 66-64 67-65 68-66 69-67 70-68 72-76 73-71 75-72 76-73 77-69 82-80</sure>
+  <possible>2-3 4-3 13-27 20-9 24-16 25-16 28-16 34-33 35-32 44-41 44-42 45-46 52-45 55-50 56-54 59-57 63-62 64-62 64-63 65-67</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s41">
+  <english>the arms of the two outside girls resting round the waist of Tess ; her arms on the shoulders of the two supporters .</english>
+  <czech>Obě dívky po stranách držely Tess kolem pasu a ona měla ruce položené na jejich ramenou .</czech>
+  <sure>5-1 6-4 7-2 9-7 11-8 13-6 16-12 17-14 18-15 19-16 24-17</sure>
+  <possible>4-1 6-3 8-5 10-8 12-6 14-9 15-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s42">
+  <english>As Tess grew older , and began to see how matters stood , she felt quite a Malthusian towards her mother for thoughtlessly giving her so many little sisters and brothers , when it was such a trouble to nurse and provide for them .</english>
+  <czech>Když pak Tess dorůstala a začala chápat , jak to v životě chodí , zaujímala k matce stanovisko téměř malthusovské , že ji bezmyšlenkovitě obdaruje tolika sestřičkami a bratříčky , když je tak obtížné je odchovat a uživit .</czech>
+  <sure>1-1 2-3 3-4 6-5 7-6 9-7 13-14 16-19 18-20 19-16 21-17 22-22 23-24 24-25 25-23 27-26 29-27 30-28 31-29 32-30 33-31 35-32 36-33 38-34 40-36 41-37 42-38 43-38 44-35 45-39</sure>
+  <possible>1-2 4-4 5-5 8-7 10-8 14-15 15-15 15-18 17-20 20-17 22-21 26-26 28-27 34-32 37-34 39-36</possible>
+  <phrasal>10-9 10-10 10-11 10-12 10-13 11-9 11-10 11-11 11-12 11-13 12-9 12-10 12-11 12-12 12-13</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s43">
+  <english>Her mother 's intelligence was that of a happy child : Joan Durbeyfield was simply an additional one , and that not the eldest , to her own long family of waiters on Providence .</english>
+  <czech>Její matka měla duši šťastného dítěte : Joan Durbeyfieldová ve své vlastní početné rodině prostě byla také jedno z mláďátek , a to nikoli nestarší , spoléhajících na milost Prozřetelnosti .</czech>
+  <sure>1-1 2-2 9-5 10-6 11-7 12-8 13-9 14-16 15-15 18-18 19-21 20-22 21-23 22-24 24-25 25-26 26-10 27-11 28-12 29-13 30-14 33-28 34-30 35-31</sure>
+  <possible>3-3 4-4 7-6 8-6 23-25 31-27 32-27 34-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s44">
+  <english>However , Tess became humanely beneficent towards the small ones , and to help them as much as possible she used , as soon as she left school , to lend a hand at hay making or harvesting on neighbouring farms ; or , by preference , at milking or butter - making processes , which she had learnt when her father had owned cows ; and being deft - fingered it was a kind of work in which she excelled .</english>
+  <czech>Přesto však měla Tess ke svým malým sourozencům láskyplně starostlivý vztah , a aby jim byla co nejvíce platna , vypomáhala , jen vychodila školu , na sousedních statcích o senách nebo při žních ; nebo ještě raději při dojení a při stloukání másla ; naučila se tomu v době , kdy její otec míval krávy , a protože měla obratné prsty , zvládala tuto práci výborně .</czech>
+  <sure>1-1 3-4 5-9 6-10 7-5 9-7 11-12 12-13 13-14 14-16 14-19 15-15 22-22 23-23 24-23 25-23 27-24 28-25 29-26 31-21 33-21 34-30 35-31 36-31 37-32 38-34 39-27 40-28 41-29 42-35 43-36 45-38 46-38 48-39 49-40 50-41 55-45 56-48 59-46 60-52 61-53 62-54 63-55 64-55 65-56 66-57 67-58 69-61 77-66 81-64 81-67 82-68</sure>
+  <possible>1-2 2-1 4-3 8-7 10-7 20-21 21-21 26-24 30-21 32-21 57-46 58-46 59-47 60-49 60-50 60-51 68-60 71-62 74-65 75-65 76-66 80-64</possible>
+  <phrasal>16-17 16-18 17-17 17-18 18-17 18-18 19-17 19-18 51-43 51-44 52-43 52-44 53-43 53-44</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s45">
+  <english>Every day seemed to throw upon her young shoulders more of the family burdens , and that Tess should be the representative of the Durbeyfields at the d ' Urberville mansion came as a thing of course .</english>
+  <czech>Každý den jako by zatěžoval její mladá ramena dalším břemenem starostí o rodinu , a tak bylo úplně samozřejmé , že na d ' urbervillském sídle měla Durbeyfieldovy zastupovat Tess .</czech>
+  <sure>1-1 2-2 3-3 3-4 7-6 8-7 9-8 10-9 13-13 14-10 15-14 16-15 17-21 18-30 19-27 22-29 25-28 26-22 28-23 29-24 30-25 31-26 32-17 37-19 38-31</sure>
+  <possible>4-5 5-5 6-5 11-11 12-11 13-12 14-11 20-27 21-29 23-28 24-28 27-26 33-17 34-19 35-19 36-19 37-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s46">
+  <english>In this instance it must be admitted that the Durbeyfields were putting their fairest side outward .</english>
+  <czech>V tomto případě je nutno uznat , že se Durbeyfieldovi ukazovali ze své nejlepší stránky .</czech>
+  <sure>1-1 2-2 3-3 5-5 7-6 8-8 10-10 13-13 14-14 15-15 17-16</sure>
+  <possible>4-5 5-4 6-5 8-7 9-10 11-11 12-11 15-12 16-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s47">
+  <english>She alighted from the van at Trantridge Cross , and ascended on foot a hill in the direction of the district known as The Chase , on the borders of which , as she had been informed , Mrs d ' Urberville 's seat , The Slopes , would be found .</english>
+  <czech>Vystoupila z dostavníku na trantridgeské křižovatce a pěšky se vydala přes návrší směrem k oblasti zvané Obora , na jejímž okraji , jak jí bylo řečeno , najde Slopes , sídlo paní d ' Urbervillové .</czech>
+  <sure>2-1 3-2 5-3 6-4 7-5 8-6 10-7 12-8 13-8 15-12 16-13 18-13 19-14 21-15 22-16 23-16 25-17 26-18 27-19 29-21 31-20 32-22 33-23 34-24 36-25 37-26 38-27 39-32 40-33 41-34 42-35 44-31 47-29 51-28 52-36</sure>
+  <possible>1-1 4-3 9-7 11-9 11-10 14-12 17-13 20-15 24-17 28-21 30-20 35-25 35-26 36-26 43-35 46-29 49-28 50-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s48">
+  <english>It was not a manorial home in the ordinary sense , with fields , and pastures , and a grumbling farmer , out of whom the owner had to squeeze an income for himself and his family by hook or by crook .</english>
+  <czech>Nebylo to panství v běžném slova smyslu , s poli a pastvinami a s nabručeným nájemcem , z něhož musí majitel po dobrém či po zlém ždímat příjem pro sebe i svou rodinu .</czech>
+  <sure>2-1 3-1 5-3 6-3 7-4 9-5 10-6 10-7 11-8 12-9 13-10 15-11 16-12 18-13 20-15 22-17 23-18 25-19 27-21 28-20 29-20 30-27 32-28 33-29 34-30 35-31 36-32 37-33 43-34</sure>
+  <possible>1-1 3-2 4-3 8-6 14-11 17-13 19-16 21-14 21-16 24-19 26-21 31-28</possible>
+  <phrasal>38-22 38-23 38-24 38-25 38-26 39-22 39-23 39-24 39-25 39-26 40-22 40-23 40-24 40-25 40-26 41-22 41-23 41-24 41-25 41-26 42-22 42-23 42-24 42-25 42-26</phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s49">
+  <english>It was more , far more ; a country house built for enjoyment pure and simple , with not an acre of troublesome land attached to it beyond what was required for residential purposes , and for a little fancy farm kept in hand by the owner , and tended by a bailiff .</english>
+  <czech>Bylo to více , mnohem více ; venkovský dům , zbudovaný jen a jen pro hezký život , k němuž nepříslušelo ani o kousek protivné půdy víc , než bylo nezbytné pro potřeby sídla a pro roztomilý malý statek , který patřil majiteli a o který se staral šafář .</czech>
+  <sure>2-1 3-3 4-4 5-5 6-6 7-7 9-8 10-9 11-11 12-15 14-12 15-13 19-21 21-24 23-25 24-26 25-21 26-19 27-20 28-27 29-29 30-30 31-31 32-32 33-34 34-33 36-35 37-36 39-38 40-37 41-39 42-42 47-43 49-44 50-47 50-48 53-49 54-50</sure>
+  <possible>1-1 2-2 8-8 13-16 13-17 16-14 20-24 21-23 22-26 29-28 35-35 38-39 43-42 44-42 45-43 46-43 48-44 51-49 52-49</possible>
+  <phrasal></phrasal>
+</s>
+<s id="kacenka_tess_durbervilles-s50">
+  <english>The crimson brick lodge came first in sight , up to its eaves in dense evergreens .</english>
+  <czech>Nejprve se vynořilo temně červené cihlové stavení , porostlé až po okraj střechy hustým břečťanem .</czech>
+  <sure>2-5 3-6 4-7 5-2 5-3 6-1 7-3 8-3 9-8 10-10 11-11 13-12 15-14 16-15 17-16</sure>
+  <possible>1-7 2-4 12-12 13-13 14-15</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

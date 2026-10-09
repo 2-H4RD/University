@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="celex_31995L0070-s1">
+  <english>This Directive establishes minimum Community measures for the control of the diseases affecting bivalve molluscs referred to in this Directive .</english>
+  <czech>Tato směrnice stanoví minimální opatření Společenství ke zdolávání nákaz mlžů uvedených v této směrnici .</czech>
+  <sure>1-1 12-9 14-10 15-10 16-11 18-12 19-13 2-2 20-14 21-15 3-3 4-4 5-6 6-5 7-7 9-8</sure>
+  <possible>10-9 11-9 17-11 8-8</possible>
+</s>
+<s id="celex_31995L0070-s2">
+  <english>For the purposes of this Directive , the definitions laid down in Article 2 of Directive 91 / 67 / EEC and Article 2 of Directive 91 / 492 / EEC ( 4 ) shall apply as necessary .</english>
+  <czech>Pro účely této směrnice se použijí v potřebném rozsahu definice podle článku 2 směrnice 91 / 67 / EHS a článku 2 směrnice 91 / 492 / EHS [ 4 ] .</czech>
+  <sure>1-1 12-11 13-12 14-13 16-14 17-15 18-16 19-17 20-18 21-19 22-20 23-21 24-22 26-23 27-24 28-25 29-26 3-2 30-27 31-28 32-29 33-30 34-31 36-6 38-8 39-32 5-3 6-4 9-10</sure>
+  <possible>10-11 11-11 15-14 2-2 25-23 35-6 36-5 37-8 38-7 38-9 4-4 8-10</possible>
+</s>
+<s id="celex_31995L0070-s3">
+  <english>In addition , " observed abnormal mortality " shall mean sudden mortality affecting approximately 15 % of stocks and occurring over a short period between two inspections ( confirmed within 15 days ) .</english>
+  <czech>Kromě toho se " abnormálním zjištěným úhynem " rozumí náhlý úhyn , který postihne přibližně 15 % chované populace a k němuž dojde v krátkém období mezi dvěma inspekcemi ( a jenž je potvrzen do 15 dnů ) .</czech>
+  <sure>10-9 11-10 12-11 13-14 14-15 15-16 16-17 18-18 18-19 19-20 20-23 21-24 23-25 24-26 25-27 26-28 27-29 28-30 29-34 30-35 31-36 32-37 33-38 34-39 4-4 5-6 6-5 7-7 8-8</sure>
+  <possible>1-1 1-2 10-3 13-12 13-13 17-19 2-1 2-2 20-21 20-22 22-26 29-33 3-1 3-2 9-9</possible>
+</s>
+<s id="celex_31995L0070-s4">
+  <english>In hatchery a mortality shall be considered abnormal when the farmer cannot obtain larvae during a period which included successive spawns from different broodstocks .</english>
+  <czech>V umělé líhni je úhyn považován za abnormální , nedojde - li k vývoji larev v průběhu období , během kterého došlo k několikerému po sobě následujícímu tření různých generačních ryb .</czech>
+  <sure>1-1 14-15 15-16 15-17 17-18 18-21 2-2 2-3 20-25 20-26 20-27 21-28 23-29 25-32 4-5 6-4 7-6 8-8 9-12</sure>
+  <possible>12-10 16-18 18-19 19-22 19-23 20-24 22-29 24-30 24-31 3-5 5-4 7-7 9-11 9-9</possible>
+</s>
+<s id="celex_31995L0070-s5">
+  <english>In nursery a mortality shall be considered abnormal when a sudden sizeable mortality occurs in a short time on a number of tubes .</english>
+  <czech>V sádce se úhyn považuje za abnormální , dojde - li najednou v několika potrubích k náhlému hromadnému úhynu .</czech>
+  <sure>1-1 11-17 12-18 13-19 14-9 15-12 16-12 17-12 18-12 19-13 2-2 21-14 23-15 24-20 4-4 7-5 8-7 9-11</sure>
+  <possible>10-19 13-16 14-16 20-14 22-15 3-4 5-5 6-5 7-3 7-6 9-10 9-8</possible>
+</s>
+<s id="celex_31995L0070-s6">
+  <english>Member States shall ensure that all farms rearing bivalve molluscs :</english>
+  <czech>Členské státy zajistí , aby všechna hospodářství s chovem mlžů :</czech>
+  <sure>1-1 10-10 11-11 2-2 4-3 5-5 6-6 7-7 8-9 9-10</sure>
+  <possible>3-3 5-4 8-8</possible>
+</s>
+<s id="celex_31995L0070-s7">
+  <english>1 . are registered by the official service ; this registration must be kept constantly up to date ;</english>
+  <czech>1 . byla zaevidována úředním útvarem , přičemž je nezbytné tuto evidenci průběžně aktualizovat ;</czech>
+  <sure>1-1 10-11 11-12 12-10 14-14 15-13 16-14 17-14 18-14 19-15 2-2 3-3 4-4 7-5 8-6 9-7</sure>
+  <possible>12-9 13-14 13-9 5-6 6-6 9-8</possible>
+</s>
+<s id="celex_31995L0070-s8">
+  <english>2 . keep a record of :</english>
+  <czech>2 . vedla záznamy o :</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 7-6</sure>
+  <possible>4-4</possible>
+</s>
+<s id="celex_31995L0070-s9">
+  <english>( a ) live bivalve molluscs entering the farm , containing all information relating to their delivery , their number or weight , their size and their origin ;</english>
+  <czech>a ) živých mlžích umístěných do hospodářství , včetně údajů o dané dodávce , počtu , hmotnosti , velikosti a původu těchto mlžů ;</czech>
+  <sure>10-8 11-9 13-10 14-11 17-13 18-14 2-1 20-15 22-17 23-18 25-19 26-20 28-21 29-24 3-2 4-3 5-4 6-4 7-5 9-7</sure>
+  <possible>12-10 15-11 16-12 21-16 24-22 27-21 7-6 8-6 8-7</possible>
+</s>
+<s id="celex_31995L0070-s10">
+  <english>( b ) bivalve molluscs leaving the farm for reimmersion , containing all information relating to their dispatch , their number or weight , their size and destination ;</english>
+  <czech>b ) mlžích opouštějících hospodářství za účelem opětovného vysazení do vody , včetně údajů o odeslání , počtu nebo hmotnosti , velikosti a určení těchto mlžů ;</czech>
+  <sure>10-8 10-9 12-13 14-14 15-15 18-16 19-17 2-1 21-18 22-19 23-20 24-21 26-22 27-23 28-24 29-27 3-2 4-3 5-3 6-4 8-5 9-6 9-7</sure>
+  <possible>10-10 10-11 11-12 13-14 16-15 25-25 7-5</possible>
+</s>
+<s id="celex_31995L0070-s11">
+  <english>( c ) observed abnormal mortality .</english>
+  <czech>c ) abnormálním zjištěném úhynu .</czech>
+  <sure>2-1 3-2 4-4 5-3 6-5 7-6</sure>
+  <possible></possible>
+</s>
+<s id="celex_31995L0070-s12">
+  <english>This record , which shall be open to scrutiny by the official service at all times , on demand , shall be updated regularly and kept for four years .</english>
+  <czech>Tyto záznamy , do kterých může úřední útvar na vyžádání kdykoliv nahlédnout , musejí být pravidelně aktualizovány a uchovávány po dobu čtyř let .</czech>
+  <sure>1-1 12-7 13-8 14-11 15-11 16-11 18-9 19-10 2-2 20-13 21-14 22-15 23-17 24-16 25-18 26-19 27-20 28-22 29-23 3-3 30-24 4-5</sure>
+  <possible>10-8 11-8 27-21 8-12 9-12</possible>
+</s>
+<s id="celex_31995L0070-s13">
+  <english>Member States shall ensure that a monitoring and sampling programme is applied in bivalve mollusc farms , farming areas and harvested natural beds in order to observe whether there is an abnormal mortality and keep track of the health situation of stocks .</english>
+  <czech>Členské státy dbají o to , aby byl v hospodářstvích , v chovných oblastech a v obhospodařovaných místech přirozeného výskytu mlžů zaveden program sledování a program pro odběr vzorků s cílem zjišťovat abnormální úhyn a sledovat veterinární situaci populace mlžů .</czech>
+  <sure>1-1 12-22 13-9 14-21 15-21 16-10 17-11 18-13 19-14 2-2 20-15 21-17 22-19 23-18 23-20 25-31 27-32 32-33 33-34 34-35 35-36 36-36 39-37 4-3 40-38 42-39 43-41 5-7 7-24 8-25 9-28 9-29</sure>
+  <possible>10-23 10-26 11-22 11-8 12-8 23-16 24-30 24-31 25-30 26-30 26-31 26-32 3-3 31-33 31-34 37-36 37-38 38-38 4-4 4-5 41-39 42-40 5-4 5-5 5-6 6-23 6-26 9-27</possible>
+</s>
+<s id="celex_31995L0070-s14">
+  <english>In addition , the official service may apply the above programme to purification centres and storage tanks which discharge water into the sea .</english>
+  <czech>Úřední útvar může rovněž zavést tento program i ve střediscích pro čištění a skladovacích nádržích , z nichž odtéká voda do moře .</czech>
+  <sure>1-4 11-7 13-12 14-10 15-13 16-14 17-15 18-18 19-19 2-4 20-20 21-21 23-22 24-23 5-1 6-2 7-3 8-5 9-6</sure>
+  <possible>10-6 12-9 13-11 18-16 18-17 19-17 22-22 3-4 4-2</possible>
+</s>
+<s id="celex_31995L0070-s15">
+  <english>If , during application of this programme , any abnormal mortality is observed , or if the official service has information giving it reason to suspect the presence of diseases , the following measures shall be taken :</english>
+  <czech>Pokud je při provádění výše uvedeného programu zjištěn abnormální úhyn nebo pokud má úřední útvar informace , které ukazují na výskyt choroby , je žádoucí :</czech>
+  <sure>1-1 10-9 11-10 12-2 13-8 15-11 16-12 18-14 19-15 20-13 21-16 28-21 3-3 30-22 31-23 38-26 4-4 7-7</sure>
+  <possible>14-11 17-15 22-17 22-18 22-19 25-20 27-21 29-22 35-24 36-24 5-7 6-5 6-6 9-10</possible>
+</s>
+<s id="celex_31995L0070-s16">
+  <english>- a list shall be drawn up of the sites where the diseases referred to in Annex A , list II to Directive 91 / 67 / EEC are present , provided that such diseases are not the subject of a programme approved pursuant to the aforementioned Directive ,</english>
+  <czech>- vypracovat seznam míst , kde došlo k výskytu chorob uvedených v příloze A seznamu II směrnice 91 / 67 / EHS , pokud se ovšem na tyto choroby nevztahuje program schválený na základě uvedené směrnice ,</czech>
+  <sure>1-1 10-4 11-6 13-10 14-11 16-12 17-13 18-14 20-15 21-16 23-17 24-18 25-19 26-20 27-21 28-22 3-3 30-9 31-23 32-24 34-28 35-29 37-30 39-30 42-31 43-32 44-33 44-34 47-35 48-36 49-37 6-2 7-2</sure>
+  <possible>11-5 12-10 15-11 2-3 22-17 29-7 29-8 29-9 30-7 30-8 32-26 33-24 35-27 36-25 36-30 38-30 39-25 4-2 40-30 40-31 41-31 45-34 45-36 46-36 5-2 8-4 9-4</possible>
+</s>
+<s id="celex_31995L0070-s17">
+  <english>- a list shall be drawn up of the sites at which abnormal mortality has been observed as a result of the presence of the diseases referred to in Annex D , or on which the official service has information giving it reason to suspect the presence of diseases ,</english>
+  <czech>- vypracovat seznam míst , kde byl zjištěn abnormální úhyn mlžů v souvislosti s výskytem chorob uvedených v příloze D , nebo míst , o kterých má úřední útvar informace ukazující na výskyt těchto chorob ,</czech>
+  <sure>1-1 10-4 11-6 12-6 13-9 14-10 16-7 17-8 23-15 26-16 27-17 29-18 3-3 30-19 31-20 33-22 35-26 37-28 38-29 39-27 40-30 41-31 47-33 49-35 50-36 6-2 7-2</sure>
+  <possible>12-5 15-7 2-3 21-14 22-15 24-16 25-16 28-17 32-21 32-24 33-21 34-25 35-24 36-29 4-2 41-32 42-31 43-31 44-31 45-31 46-33 47-32 48-35 5-2 8-4 9-4</possible>
+</s>
+<s id="celex_31995L0070-s18">
+  <english>- monitoring of the evolution and geographical spread of the diseases referred to in the first and second indents .</english>
+  <czech>- kontrolovat vývoj a zeměpisné rozšíření nákaz uvedených v první a druhé odrážce .</czech>
+  <sure>1-1 11-7 12-8 14-9 16-10 17-11 18-12 19-13 2-2 20-14 5-3 6-4 7-5 8-6</sure>
+  <possible>10-7 13-8 15-10 15-13 3-2 3-3 4-3 9-7</possible>
+</s>
+<s id="celex_31995L0070-s19">
+  <english>The detailed rules for implementing this Article , and inter alia the rules to be applied for establishing the programme referred to in paragraph 1 , particularly as regards the frequency and timetable of monitoring , procedures for taking samples ( statistically representative volume ) and methods of diagnosis , shall be adopted in accordance with the procedure provided for in Article 10 .</english>
+  <czech>Prováděcí pravidla k tomuto článku , zejména pravidla pro vypracování programu uvedeného v odstavci 1 , především ohledně frekvence a rozvrhu sledování , způsobů odběru vzorků ( statisticky reprezentativní objem ) a diagnostických metod , se stanoví postupem podle článku 10 .</czech>
+  <sure>10-7 11-7 13-8 17-9 18-10 20-11 21-12 23-13 24-14 25-15 26-16 27-17 28-18 29-18 3-2 31-19 32-20 33-21 35-22 36-23 37-24 39-25 4-3 40-26 41-27 42-28 43-29 44-30 45-31 46-32 47-34 49-33 50-35 53-37 58-38 6-4 62-40 63-41 64-42 7-5 8-6</sure>
+  <possible>1-2 12-8 14-9 15-9 16-9 19-11 2-1 22-12 30-19 34-22 38-24 38-25 48-33 5-1 51-37 52-37 53-36 54-39 55-39 56-38 56-39 57-38 59-39 60-39 61-39 9-6</possible>
+</s>
+<s id="celex_31995L0070-s20">
+  <english>Member States shall ensure that the suspected presence of any diseases referred to in Article 4 and any abnormal mortality rate observed in bivalve molluscs in farms , in farming areas or in harvested natural beds or in purification centres or storage tanks which discharge water into the sea is notified as soon as possible to the official service by the shellfish - farmers or any other person who has made such observations .</english>
+  <czech>Členské státy zajistí , aby každé podezření na výskyt chorob uvedených v článku 4 a každý abnormální úhyn mlžů v hospodářstvích , v chovných oblastech a v obhospodařovaných místech přirozeného výskytu mlžů , jakož i ve střediscích pro čištění a skladovacích nádržích , z nichž odtéká voda do moře , bylo co nejrychleji sděleno úřednímu útvaru buď samotnými chovateli mlžů , nebo jakoukoli jinou osobou , která dospěla k těmto zjištěním .</czech>
+  <sure>1-1 11-10 12-11 14-12 15-13 16-14 17-15 18-16 19-17 2-2 20-18 26-20 27-21 28-22 29-23 30-24 31-25 32-26 33-27 34-28 35-30 36-29 36-31 37-34 37-35 38-36 39-39 4-3 40-37 41-40 42-41 43-42 44-45 45-46 46-47 47-48 49-49 5-5 50-51 51-54 58-55 59-56 62-60 64-59 65-62 66-63 67-64 68-65 69-67 7-7 71-68 72-70 73-71 74-72 8-9</sure>
+  <possible>10-10 13-11 21-18 23-19 24-19 24-32 25-19 25-32 3-3 37-33 39-38 44-43 44-44 45-44 48-49 5-4 52-52 52-53 53-52 53-53 54-52 54-53 55-52 55-53 56-56 57-56 6-7 6-9 60-59 61-59 63-60 65-61 69-66 7-8 70-68 71-69 73-69 9-10</possible>
+</s>
+<s id="celex_31995L0070-s21">
+  <english>In the case referred to in paragraph 1 , the official service in the Member States shall ensure that :</english>
+  <czech>Nastane - li situace uvedená v odstavci 1 , úřední útvar zajistí , aby :</czech>
+  <sure>11-10 12-11 18-12 19-14 20-15 4-5 6-6 7-7 8-8 9-9</sure>
+  <possible>10-11 17-12 19-13 2-4 3-4 5-5</possible>
+</s>
+<s id="celex_31995L0070-s22">
+  <english>( a ) samples are taken for examination in an approved laboratory ;</english>
+  <czech>a ) byl proveden odběr vzorků k vyšetření ve schválené laboratoři ;</czech>
+  <sure>11-10 12-11 13-12 2-1 3-2 4-6 5-3 6-4 7-7 8-8 9-9</sure>
+  <possible>10-11 4-5</possible>
+</s>
+<s id="celex_31995L0070-s23">
+  <english>( b ) pending the result of the examination referred to in ( a ) , no molluscs leave the affected farm , farming area or harvested natural beds or purification centres or storage tanks which discharge water into the sea for relaying or reimmersion in another farm or in the aquatic environment , unless authorized by the official service .</english>
+  <czech>b ) před obdržením výsledků vyšetření uvedeného pod písmenem a ) neopustili žádní mlži zamořené hospodářství , chovnou oblast , obhospodařovaná místa přirozeného výskytu mlžů , jakož i střediska pro čištění nebo skladovací nádrže , z nichž odtéká voda do moře , za účelem sádkování nebo nasazení do vody v jiném hospodářství nebo ve vodním prostředí , pokud to úřední útvar nepovolí .</czech>
+  <sure>10-7 14-10 15-11 17-13 18-14 19-12 2-1 21-15 22-16 23-17 24-18 25-19 27-21 28-23 29-22 29-24 3-2 30-27 30-28 31-31 32-29 33-32 34-33 35-34 36-37 37-38 38-39 39-40 4-3 41-41 42-43 42-44 43-45 44-46 45-47 46-50 47-51 48-52 49-53 50-54 52-55 53-56 54-57 55-58 59-60 6-5 60-61 61-63 9-6</sure>
+  <possible>11-7 12-8 17-12 20-16 26-20 30-26 31-30 36-35 36-36 37-36 4-4 40-41 45-48 45-49 5-5 51-56 55-62 56-59 56-62 57-61 58-61 7-6 8-6</possible>
+</s>
+<s id="celex_31995L0070-s24">
+  <english>If the examination referred to in paragraph 2 ( a ) fails to demonstrate the presence of a pathogen , the restrictions referred to in paragraph 2 ( b ) shall be lifted .</english>
+  <czech>Neprokáže - li vyšetření podle odst . 2 písm . a ) přítomnost patogenního původce , ruší se omezení uvedená v odst . 2 písm . b ) .</czech>
+  <sure>1-3 10-11 11-12 12-1 13-1 14-1 16-13 19-14 19-15 20-16 22-19 23-20 25-21 26-22 27-24 29-27 3-4 33-17 34-29 4-5 7-6 8-8</sure>
+  <possible>1-2 15-13 17-15 18-15 2-4 21-19 24-20 26-23 30-28 31-17 32-17 33-18 5-5 6-5 6-6 7-7</possible>
+</s>
+<s id="celex_31995L0070-s25">
+  <english>If the examination referred to in paragraph 2 shows the presence of a pathogen causing the observed abnormal mortality capable of being the cause of that mortality , or of a pathogen of one of the diseases referred to in Article 4 , an epizootic investigation must be carried out by the official service in order to determine the possible means of contamination and to investigate whether molluscs have left the farm , the farming area or the harvested natural beds for relaying or reimmersion elsewhere during the period preceding observation of the abnormal mortality .</english>
+  <czech>Prokáže - li vyšetření podle odstavce 2 přítomnost patogenního původce , který je nebo by mohl být příčinou zjištěného abnormálního úhynu , nebo patogenního původce některé z chorob uvedených v článku 4 , provede úřední útvar epizootické šetření , aby zjistil možné zdroje nákazy a ověřil , zda mlži v období , jež předcházelo zjištění abnormálního úhynu , neopustili za účelem sádkování nebo nasazení do vody na jiném místě hospodářství , chovnou oblast ani obhospodařovaná místa přirozeného výskytu mlžů .</czech>
+  <sure>1-3 11-8 14-10 14-9 17-19 18-20 19-21 20-16 22-17 28-22 29-23 3-4 32-24 32-25 34-26 35-27 37-28 38-29 4-5 40-30 41-31 42-32 43-33 45-37 46-38 49-34 50-34 53-35 54-36 55-40 56-40 57-40 58-41 60-42 61-43 63-44 64-45 66-46 67-48 68-49 7-6 70-59 72-70 73-71 75-72 76-73 77-74 79-75 8-7 80-77 81-76 81-78 82-60 82-61 83-62 84-63 85-64 86-68 86-69 87-50 89-51 9-1 90-54 91-55 94-56 95-57 96-80</sure>
+  <possible>1-2 10-8 12-10 12-9 13-10 13-9 15-18 16-21 2-4 20-15 21-15 21-16 23-18 24-18 30-25 31-25 33-26 36-28 39-29 44-38 47-34 48-34 5-5 51-36 52-36 56-39 59-42 59-43 6-5 6-6 62-44 65-46 67-47 67-59 69-59 71-70 74-73 78-76 85-65 85-66 86-67 88-51 90-52 90-53 92-57 93-57</possible>
+</s>
+<s id="celex_31995L0070-s26">
+  <english>If the epizootic investigation shows that the disease has been introduced into one or more farms , farming areas or harvested natural beds as a result inter alia of molluscs being moved , the provisions of paragraph 2 shall apply .</english>
+  <czech>Prokáže - li epizootické šetření , že nákaza byla především v důsledku přesunu mlžů zavlečena do jednoho nebo do více hospodářství , chovných oblastí nebo obhospodařovaných míst přirozeného výskytu mlžů , použije se odstavec 2 .</czech>
+  <sure>1-3 10-9 11-15 12-16 13-17 14-18 15-20 16-21 17-22 18-23 19-24 20-25 21-26 22-28 23-27 23-29 26-12 27-10 28-10 3-4 32-13 33-31 37-34 38-35 4-5 40-32 41-36 5-1 6-7 8-8</sure>
+  <possible>1-2 16-19 2-5 24-11 24-12 25-12 26-11 29-14 29-30 30-14 30-30 31-13 36-34 39-32 40-33 6-6 7-8 9-9</possible>
+</s>
+<s id="celex_31995L0070-s27">
+  <english>However , by way of derogation from Article 3 ( 1 ) ( c ) of Directive 91 / 67 / EEC , the official service may , within its territory , authorize the movement of live bivalve molluscs to other farms , farming areas or harvested natural beds which are infected with the same disease .</english>
+  <czech>Odchylně od čl . 3 bod 1 písm . c ) směrnice 91 / 67 / EHS může úřední útvar v rámci jím kontrolovaného území povolit přesun živých mlžů do jiných hospodářství , chovných oblastí nebo obhospodařovaných míst přirozeného výskytu mlžů , které jsou zamořeny stejnou nákazou .</czech>
+  <sure>11-7 14-10 15-11 17-12 18-13 19-14 20-15 21-16 22-17 25-19 26-20 27-18 29-21 33-26 35-27 37-28 38-29 39-29 4-1 40-30 41-31 42-32 43-33 44-34 45-35 46-36 47-37 48-39 49-38 49-40 50-43 51-44 52-45 55-46 56-47 57-48 6-1 7-2 8-3 9-5</sure>
+  <possible>16-12 24-20 29-22 3-1 30-23 31-22 31-25 34-27 36-29 5-1 50-42 53-46 53-47 54-46 54-47 8-4</possible>
+</s>
+<s id="celex_31995L0070-s28">
+  <english>If necessary , further appropriate measures may be decided on in accordance with the procedure in Article 10 .</english>
+  <czech>V případě potřeby mohou být přijata postupem podle článku 10 vhodná dodatečná opatření .</czech>
+  <sure>10-6 11-8 12-8 15-7 17-9 18-10 19-14 4-12 5-11 6-13 7-4 8-5 9-6</sure>
+  <possible>1-1 1-2 1-3 13-7 13-8 14-7 2-1 2-2 2-3 3-1 3-2 3-3</possible>
+</s>
+<s id="celex_31995L0070-s29">
+  <english>The official service shall ensure that the Commission and the other Member States are immediately informed , in accordance with the current Community procedures , of any cases of abnormal mortality rates observed involving a pathogen , of any measures taken to analyse and control the situation and of the cause of the mortality .</english>
+  <czech>Úřední útvar zajistí , aby byly Komise a ostatní členské státy neprodleně podle platných postupů Společenství informovány o případech zjištěného abnormálního úhynu v důsledku jednoho patogenního původce , o opatřeních přijatých za účelem posouzení a nápravy situace , jakož i o příčině úhynu .</czech>
+  <sure>11-9 12-10 13-11 14-6 15-12 16-17 18-13 19-13 2-1 20-13 22-14 23-16 24-15 26-18 28-19 3-2 30-21 31-22 32-22 33-20 35-25 36-26 36-27 37-28 38-29 40-30 41-31 42-32 42-33 43-34 44-35 45-36 47-37 48-39 48-40 49-41 5-3 51-42 54-43 55-44 6-5 8-7 9-8</sure>
+  <possible>1-2 10-11 21-15 27-19 29-22 34-23 34-24 39-30 4-3 46-37 48-38 50-42 52-43 53-43 6-4 7-7</possible>
+</s>
+<s id="celex_31995L0070-s30">
+  <english>Sampling and laboratory testing for the determination of the cause of abnormal mortality of bivalve molluscs shall be carried out using the methods established in accordance with the procedure laid down in Article 10 .</english>
+  <czech>Odběry a laboratorní šetření k určení příčiny abnormálního úhynu mlžů se provádějí pomocí metod stanovených postupem podle článku 10 .</czech>
+  <sure>1-1 10-7 12-8 13-9 15-10 16-10 19-12 2-2 20-12 21-13 23-14 24-15 29-16 3-3 33-18 34-19 35-20 4-4 5-5 7-6</sure>
+  <possible>11-9 14-10 17-12 18-12 19-11 22-14 25-17 26-17 27-17 28-16 30-17 31-17 32-17 32-18 6-6 8-7 9-7</possible>
+</s>
+<s id="celex_31995L0070-s31">
+  <english>Member States shall ensure that in each Member State a national reference laboratory is designated , with facilities and expert personnel enabling it to carry out the testing referred to in paragraph 1 .</english>
+  <czech>Členské státy zajistí , aby byla v každém členském státě určena národní referenční laboratoř , která bude technicky i personálně vybavena tak , aby mohla provádět rozbory uvedené v odstavci 1 .</czech>
+  <sure>1-1 11-12 12-13 13-14 14-6 15-11 16-15 19-19 2-2 21-20 22-25 25-26 26-26 28-27 29-28 31-29 32-30 33-31 34-32 4-3 5-5 6-7 7-8 8-9 9-10</sure>
+  <possible>10-14 18-18 20-20 22-22 22-23 22-24 23-25 24-26 27-27 3-3 30-28 5-4</possible>
+</s>
+<s id="celex_31995L0070-s32">
+  <english>By way of derogation from paragraph 2 , Member States which do not have a national laboratory competent in the matter may use the services of a national laboratory with competence in the matter in another Member State .</english>
+  <czech>Odchylně od odstavce 2 mohou členské státy , které nemají příslušnou specializovanou národní laboratoř , využít služeb specializované národní laboratoře jiného členského státu .</czech>
+  <sure>10-7 11-9 13-10 14-10 16-13 17-14 2-1 22-5 23-16 25-17 28-19 29-20 36-21 37-22 38-23 39-24 4-1 5-2 6-3 7-4 9-6</sure>
+  <possible>1-1 11-8 12-10 15-14 18-11 18-12 19-11 20-11 21-11 24-17 26-20 27-20 3-1 30-18 31-18 35-23</possible>
+</s>
+<s id="celex_31995L0070-s33">
+  <english>The list of national reference laboratories for diseases of bivalve molluscs is set out in Annex C .</english>
+  <czech>Seznam národních referenčních laboratoří pro choroby mlžů je uveden v příloze C .</czech>
+  <sure>10-7 11-7 12-8 13-9 14-9 15-10 16-11 17-12 18-13 2-1 4-2 5-3 6-4 7-5 8-6</sure>
+  <possible>1-1 3-4 9-7</possible>
+</s>
+<s id="celex_31995L0070-s34">
+  <english>National reference laboratories shall cooperate with the Community reference laboratory referred to in Article 7 .</english>
+  <czech>Národní referenční laboratoře spolupracují s referenční laboratoří Společenství uvedenou v článku 7 .</czech>
+  <sure>1-1 10-7 11-9 13-10 14-11 15-12 16-13 2-2 3-3 5-4 6-5 8-8 9-6</sure>
+  <possible>12-9 4-4 7-7</possible>
+</s>
+<s id="celex_31995L0070-s35">
+  <english>The Community reference laboratory for diseases of bivalve molluscs is indicated in Annex A .</english>
+  <czech>Referenční laboratoř Společenství pro choroby mlžů je uvedena v příloze A .</czech>
+  <sure>10-7 11-8 12-9 13-10 14-11 15-12 2-3 3-1 4-2 5-4 6-5 8-6 9-6</sure>
+  <possible>1-2 7-6</possible>
+</s>
+<s id="celex_31995L0070-s36">
+  <english>Without prejudice to Decision 90 / 424 / EEC of 26 June 1990 ( 1 ) on expenditure in the veterinary field and in particular Article 28 thereof , the functions and duties of the laboratory referred to in paragraph 1 shall be those laid down in Annex B .</english>
+  <czech>Aniž je dotčeno rozhodnutí Rady 90 / 424 / EHS ze dne 26 . června 1990 o některých výdajích ve veterinární oblasti [ 5 ] , a zejména článek 28 uvedeného rozhodnutí , jsou pravomoci a povinnosti laboratoře uvedené v odstavci 1 stanoveny v příloze B .</czech>
+  <sure>1-1 10-11 11-13 12-15 13-16 17-17 18-19 19-20 2-3 21-21 22-22 23-27 24-28 25-28 26-29 27-30 28-31 29-33 31-35 32-36 33-37 36-38 37-39 39-40 4-4 40-41 41-42 45-43 46-43 47-44 48-45 49-46 5-6 50-47 6-7 7-8 8-9 9-10</sure>
+  <possible>1-2 1-3 10-12 11-12 11-14 14-23 16-25 2-1 2-2 20-22 3-1 3-2 3-3 3-4 30-35 34-38 35-38 38-39 42-34 43-34 45-34</possible>
+</s>
+<s id="celex_31995L0070-s37">
+  <english>Commission experts may , to the extent necessary to ensure uniform application of this Directive , carry out on - the - spot checks .</english>
+  <czech>Znalci Komise mohou , je - li to nezbytné z hlediska jednotného provádění této směrnice , provádět kontroly na místě .</czech>
+  <sure>1-2 11-12 12-13 14-14 15-15 16-16 17-17 18-17 19-19 2-1 23-20 24-18 25-21 3-3 4-4 8-9</sure>
+  <possible>13-15 20-20 21-20 22-20</possible>
+</s>
+<s id="celex_31995L0070-s38">
+  <english>In so doing , they may carry out random , non - discriminatory checks to ensure that the competent authority is monitoring compliance with the requirements of this Directive .</english>
+  <czech>Za tímto účelem se mohou náhodným a nediskriminujícím způsobem ujistit , že příslušný úřad kontroluje dodržování této směrnice .</czech>
+  <sure>11-8 13-8 16-10 17-12 19-13 20-14 22-15 23-16 28-17 29-18 30-19 6-5 9-6</sure>
+  <possible>1-1 10-7 12-8 13-9 15-10 16-4 17-11 18-14 2-2 21-15 24-16 27-18 3-3 5-5</possible>
+</s>
+<s id="celex_31995L0070-s39">
+  <english>The Commission shall inform the Member States of the results of these checks .</english>
+  <czech>Komise uvědomí členské státy o výsledku provedených kontrol .</czech>
+  <sure>10-6 13-8 14-9 2-1 4-2 6-3 7-4 8-5</sure>
+  <possible>1-1 11-8 3-2 5-4 9-6</possible>
+</s>
+<s id="celex_31995L0070-s40">
+  <english>The checks referred to in paragraph 1 shall be carried out in collaboration with the competent authority .</english>
+  <czech>Kontroly uvedené v odstavci 1 se provádějí ve spolupráci s příslušným orgánem .</czech>
+  <sure>10-7 11-7 12-8 13-9 14-10 16-11 17-12 18-13 2-1 3-2 5-3 6-4 7-5</sure>
+  <possible>1-1 10-6 15-12 4-2 8-7 9-7</possible>
+</s>
+<s id="celex_31995L0070-s41">
+  <english>The Member State in whose territory the inspections are carried out shall provide the experts with any assistance they require to accomplish their task .</english>
+  <czech>Členský stát , na jehož území se kontrola provádí , poskytne znalcům při plnění jejich úkolu veškerou nezbytnou pomoc .</czech>
+  <sure>10-9 11-9 13-11 15-12 17-17 18-19 2-1 22-14 23-15 24-16 25-20 3-2 4-4 5-5 6-6 8-8</sure>
+  <possible>1-2 10-7 12-11 14-12 16-11 19-18 20-18 21-13 21-14 5-3 7-8 9-9</possible>
+</s>
+<s id="celex_31995L0070-s42">
+  <english>Detailed rules for the application of this Article shall be adopted in accordance with the procedure laid down in Article 10 .</english>
+  <czech>Prováděcí pravidla k tomuto článku se stanoví postupem podle článku 10 .</czech>
+  <sure>11-7 16-8 17-9 18-9 2-2 20-10 21-11 22-12 3-3 8-5</sure>
+  <possible>1-1 10-7 11-6 14-8 15-8 19-9 4-4 5-4 6-5 7-4 7-5 9-7</possible>
+</s>
+<s id="celex_31995L0070-s43">
+  <english>Annex A shall be amended as necessary by the Council , acting by a qualified majority on a proposal from the Commission .</english>
+  <czech>V případě potřeby změní Rada kvalifikovanou většinou na návrh Komise přílohu A .</czech>
+  <sure>1-11 10-5 15-6 16-7 17-8 19-9 2-12 22-10 23-13 5-4 7-3</sure>
+  <possible>13-7 14-7 18-9 20-10 20-9 21-10 3-4 4-4 6-1 6-2 6-3 7-1 7-2 8-5 9-5</possible>
+</s>
+<s id="celex_31995L0070-s44">
+  <english>Annexes B , C and D may be amended as necessary in accordance with the procedure laid down in Article 10 .</english>
+  <czech>Přílohy B , C a D mohou být podle potřeby pozměněny postupem podle článku 10 .</czech>
+  <sure>1-1 11-10 16-12 17-13 18-13 2-2 20-14 21-15 22-16 3-3 4-4 5-5 6-6 7-7 8-8 9-11</sure>
+  <possible>10-10 10-9 11-9 14-12 15-12 19-13</possible>
+</s>
+<s id="celex_31995L0070-s45">
+  <english>Where the procedure laid down in this Article is to be followed , matters shall be referred without delay to the Standing Veterinary Committee , ( hereinafter referred to as ' the Committee ' ) , set up by decision 68 / 361 / EEC ( 2 ) , by its Chairman , either on his own initiative or at the request of a Member State .</english>
+  <czech>Má - li být zahájen postup podle tohoto článku , přednese věc Stálému veterinárnímu výboru zřízenému rozhodnutím 68 / 361 / EHS [ 6 ] ( dále jen " výbor " ) jeho předseda , a to buď z vlastního podnětu , nebo na žádost zástupce některého členského státu .</czech>
+  <sure>1-3 11-4 12-5 13-10 14-12 17-11 22-13 23-14 24-15 26-26 27-27 3-6 31-29 33-30 34-31 35-32 37-16 38-16 4-7 40-17 41-18 42-19 43-20 44-21 45-22 5-7 51-33 52-34 54-38 55-39 57-40 58-41 59-43 60-44 62-45 65-48 66-49 67-50 7-8 8-9</sure>
+  <possible>1-2 10-1 10-4 11-1 15-11 16-11 2-6 20-15 21-15 27-28 28-27 28-28 29-27 29-28 30-27 30-28 32-30 36-35 39-17 46-23 48-25 50-34 53-35 53-38 54-36 54-37 56-40 59-42 6-7 61-45 63-49 64-47 64-49 9-1 9-4</possible>
+</s>
+<s id="celex_31995L0070-s46">
+  <english>The representative of the Commission shall submit to the Committee a draft of the measures to be taken .</english>
+  <czech>Zástupce Komise předloží výboru návrh opatření , která mají být přijata .</czech>
+  <sure>10-4 12-5 15-6 17-10 18-11 19-12 2-1 5-2 7-3</sure>
+  <possible>1-1 11-5 13-6 14-6 16-10 16-9 17-7 17-8 17-9 3-2 4-2 6-3 8-4 9-4</possible>
+</s>
+<s id="celex_31995L0070-s47">
+  <english>The Committee shall deliver its opinion on the draft within the time limit which the Chairman may lay down according to the urgency of the matter .</english>
+  <czech>Výbor zaujme stanovisko k návrhu ve lhůtě , kterou může předseda stanovit podle naléhavosti věci .</czech>
+  <sure>10-6 12-7 13-7 14-9 16-11 17-10 18-12 19-12 2-1 20-13 21-13 23-14 26-15 27-16 4-2 6-3 7-4 9-5</sure>
+  <possible>1-1 11-7 14-8 15-11 22-14 24-15 25-15 3-2 5-3 8-5</possible>
+</s>
+<s id="celex_31995L0070-s48">
+  <english>The opinion shall be delivered by the majority laid down in Article 148 ( 2 ) of the Treaty in the case of decisions which the Council is required to adopt on a proposal from the Commission .</english>
+  <czech>Stanovisko se přijímá většinou podle čl . 148 odst . 2 Smlouvy pro přijímání rozhodnutí , která má Rada přijímat na návrh Komise .</czech>
+  <sure>10-5 12-6 13-8 15-11 19-12 2-1 24-15 25-17 27-19 29-18 31-20 32-21 34-22 37-23 38-24 5-3 8-4 9-5</sure>
+  <possible>1-1 11-5 12-7 17-12 18-12 20-13 21-13 22-13 23-13 23-15 24-14 25-16 26-19 28-18 3-3 30-20 33-22 35-22 35-23 36-23 4-3 5-2 6-4 7-4</possible>
+</s>
+<s id="celex_31995L0070-s49">
+  <english>The votes of the representatives of the Member States within the Committee shall be weighted in the manner set out in that Article .</english>
+  <czech>Hlasům zástupců členských států ve výboru je přidělena váha stanovená v uvedeném článku .</czech>
+  <sure>10-5 12-6 14-7 15-8 15-9 19-10 2-1 20-10 21-11 22-12 23-13 24-14 5-2 8-3 9-4</sure>
+  <possible>1-1 11-6 13-7 3-2 4-2 6-4 7-4</possible>
+</s>
+<s id="celex_31995L0070-s50">
+  <english>The Chairman shall not vote .</english>
+  <czech>Předseda nehlasuje .</czech>
+  <sure>2-1 4-2 5-2 6-3</sure>
+  <possible>1-1 3-2</possible>
+</s>
+</sentences>

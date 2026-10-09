@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="project_syndicate_balcerowicz1-s1">
+  <english>Why Wait for the Euro ?</english>
+  <czech>Proč čekat na euro ?</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5</sure>
+  <possible>4-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s2">
+  <english>Leszek Balcerowicz</english>
+  <czech>Leszek Balcerowicz</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s3">
+  <english>Although the EU 's eastward enlargement has not yet happened , the debate is already shifting to ask what will follow : when should the new , predominantly postcommunist , members adopt the euro ?</english>
+  <czech>Přestože k rozšíření EU na východ zatím nedošlo , začíná se už diskutovat o tom , co bude potom : kdy by měly noví , převážně postkomunističtí členové přijmout euro .</czech>
+  <sure>1-1 3-4 5-5 5-6 6-3 9-7 10-8 15-12 19-17 21-18 22-20 23-21 26-24 27-25 28-26 29-27 31-28 32-29 34-30</sure>
+  <possible>4-4 7-8 8-8 10-2 13-13 19-16 20-18 21-19 24-29 25-28 32-22 32-23 33-30 35-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s4">
+  <english>Assuming that they comply with the Maastricht Treaty 's provisions concerning the EMU - and are not unfairly held to more stringent criteria - the core issue is whether new members would benefit more by waiting or whether they should seek early entry .</english>
+  <czech>Pokud vyhoví ustanovením Maastrichtské smlouvy o Evropské měnové unii ( EMU ) - a nebudou - li vůči nim uplatněna přísnější kritéria - , bude hlavní otázkou to , zda by nové země s ohledem na možné výhody a přínosy měly na členství v ní spěchat nebo raději počkat .</czech>
+  <sure>1-1 4-2 7-4 8-5 11-6 13-11 14-13 15-14 16-15 17-15 19-20 21-21 22-21 23-22 24-23 26-26 27-27 28-25 29-30 30-32 36-49 37-47 44-50</sure>
+  <possible>1-16 1-17 2-1 3-2 5-2 6-5 12-11 25-27 29-28 29-29 33-38</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s5">
+  <english>At the outset , it must be stressed that , in seeking earlier entry into the EMU a country assumes a more ambitious fiscal and structural program than would be needed if EMU membership is delayed .</english>
+  <czech>Hned zkraje je třeba říci , že pokud se země bude snažit o okamžitý vstup do EMU , předpokládá tím ambicióznější fiskální a strukturální program než v případě , kdy by vstup o chvíli odložila .</czech>
+  <sure>9-7 14-15 15-16 17-17 19-10 20-19 22-21 23-21 24-22 25-23 26-24 27-25 28-26 36-35 37-36</sure>
+  <possible>9-6 13-14 16-17 18-10 21-25 32-30 32-31 34-32</possible>
+  <phrasal>1-1 1-2 2-1 2-2 3-1 3-2 4-1 4-2 5-3 5-4 5-5 6-3 6-4 6-5 7-3 7-4 7-5 8-3 8-4 8-5</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s6">
+  <english>Early entry , otherwise , would be an empty gesture .</english>
+  <czech>Okamžitý vstup do EMU by jinak byl prázdným gestem .</czech>
+  <sure>2-2 4-6 7-7 9-8 10-9 11-10</sure>
+  <possible>1-1 3-6 5-6 6-7 7-5 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s7">
+  <english>I believe that early adoption of the euro is not only possible , but preferable to delay .</english>
+  <czech>Troufám si tvrdit , že okamžité přistoupení k euru je nejen možné , ale i vhodné oddálit .</czech>
+  <sure>3-5 5-7 8-9 9-10 10-11 11-11 12-12 13-13 14-14 15-16 17-17 18-18</sure>
+  <possible>1-3 2-1 2-2 2-3 3-4 4-6 5-8 6-7 7-9 14-15 16-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s8">
+  <english>By early adoption I mean the shortest permissible period of time - two years - following a new member subordinating its monetary policy to the fiscal and monetary constraints of the exchange rate mechanism ( ERM II ) .</english>
+  <czech>Okamžitým přistoupením zde rozumím nejkratší přípustnou dobu - tj . dva roky poté , co nový člen podřídí svou měnovou politiku daňovým a měnovým omezením kurzovního mechanismu ( ERM II ) .</czech>
+  <sure>3-2 5-4 7-5 8-6 9-7 12-8 13-11 14-12 16-13 18-16 19-17 20-18 21-19 22-20 23-21 26-22 27-23 28-24 29-25 32-26 33-26 34-27 35-28 36-29 37-30 38-31 39-32</sure>
+  <possible>1-1 2-1 4-4 5-3 6-7 10-7 11-7 12-9 12-10 16-14 16-15 17-17 24-25 25-25 30-27 31-27</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s9">
+  <english>Assuming entry into both the EU and ERM II in 2004 , new members should aim to enter the eurozone around 2006 .</english>
+  <czech>Předpokládáme - li přistoupení jak k EU , tak k ERM II v roce 2004 , mohli by noví členové vstoupit do eurozóny někdy kolem roku 2006 .</czech>
+  <sure>1-1 1-2 1-3 2-4 6-7 8-11 9-12 10-13 11-15 12-16 13-19 14-20 18-21 20-23 21-25 22-27 23-28</sure>
+  <possible>3-6 3-10 5-7 11-14 15-21 16-21 17-21 18-17 18-18 18-22 19-23 21-24 22-26</possible>
+  <phrasal>4-5 4-8 4-9 7-5 7-8 7-9</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s10">
+  <english>Is this realistic ?</english>
+  <czech>Je to reálné ?</czech>
+  <sure>1-1 2-2 3-3 4-4</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s11">
+  <english>Well , most candidate countries have already achieved a high degree of structural convergence with the EU .</english>
+  <czech>Většina kandidátských zemí už teď dosáhla vysokého stupně strukturálního přiblížení k EU .</czech>
+  <sure>3-1 4-2 5-3 7-4 8-6 10-7 11-8 13-9 14-10 17-12 18-13</sure>
+  <possible>6-6 8-5 9-8 12-9 14-11 15-10 16-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s12">
+  <english>Exports to the Union have soared since 1991 , when the collapse of the Soviet - era COMECON trading system forced a radical reorientation of trade - helped by massive foreign investment from the EU - towards Western markets .</english>
+  <czech>Nárůst exportu do zemí Evropské unie se datuje od roku 1991 , kdy si rozpad RVHP vynutil radikální reorientaci obchodu na Západ , pochopitelně s podporou obrovských zahraničních investic z EU .</czech>
+  <sure>1-2 2-3 4-6 7-9 8-11 9-12 10-13 12-15 18-16 21-17 23-18 24-19 26-20 28-26 30-27 31-28 32-29 33-30 35-31 37-21 38-22 40-32</sure>
+  <possible>3-6 4-5 5-8 6-7 6-8 8-10 11-15 13-16 14-16 15-16 16-16 17-16 19-16 20-16 22-19 25-20 28-25 29-26 34-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s13">
+  <english>Most accession candidates now send more exports to the EU than Greece , Portugal , and Spain did when they entered the EU and EMU .</english>
+  <czech>Většina kandidátských zemí tak dnes do EU vyváží více zboží a služeb než například Řecko , Portugalsko a Španělsko v době jejich vstupu do EU a EMU .</czech>
+  <sure>1-1 4-5 5-8 6-9 7-8 8-6 10-7 11-13 12-15 13-16 14-17 16-18 17-19 23-25 24-26 25-27 26-28</sure>
+  <possible>3-2 9-7 15-18 19-20 19-21 20-23 21-22 21-23 21-24 22-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s14">
+  <english>Progress on disinflation is similarly impressive .</english>
+  <czech>Také průběh dezinflace je pozoruhodný .</czech>
+  <sure>1-2 3-3 4-4 6-5 7-6</sure>
+  <possible>2-2 2-3 5-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s15">
+  <english>Annual inflation in most candidate countries has fallen to 4 - 5 % - not much higher than in many EU countries , and lower than in The Netherlands last year .</english>
+  <czech>Roční inflace ve většině kandidátských zemí klesla na 4 až 5 % , což není o mnoho více než v mnoha zemích EU a dokonce méně než loni v Nizozemsku .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 8-7 9-8 10-9 11-10 12-11 13-12 15-15 16-17 17-18 18-19 19-20 20-21 21-23 22-22 24-24 25-26 26-27 27-29 29-30 30-28 31-28 32-31</sure>
+  <possible>7-7 14-13 15-14 23-24 28-30</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s16">
+  <english>As with structural convergence , EU candidates already outperform Spain , Portugal , and Greece at a comparable time before their EMU debut .</english>
+  <czech>Pokud jde o strukturální konvergenci , kandidáti ke vstupu do EU jsou už dnes lepší než Španělsko , Portugalsko a Řecko ve srovnatelné době před jejich vstupem do EMU .</czech>
+  <sure>3-4 4-5 5-6 6-11 7-7 8-13 9-12 9-15 9-16 10-17 11-18 12-19 14-20 15-21 16-22 18-23 19-24 20-25 21-26 22-29 24-30</sure>
+  <possible>8-14 13-20 17-24 23-27 23-28</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s17">
+  <english>Nor is there much risk of large , future corrective price swings because all but a few prices are completely liberalized .</english>
+  <czech>Není zde navíc ani riziko velkých korektivních cenových výkyvů v budoucnosti , neboť téměř všechny ceny jsou dnes zcela liberalizované .</czech>
+  <sure>3-2 5-5 7-6 9-11 10-7 11-8 12-9 13-13 18-16 19-17 20-19 21-20 22-21</sure>
+  <possible>6-9 9-10 13-12</possible>
+  <phrasal>1-1 1-4 2-1 2-4 14-14 14-15 15-14 15-15 16-14 16-15 17-14 17-15</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s18">
+  <english>Theoretical studies suggest that inflation in the accession countries will remain stubbornly higher than the Maastricht Treaty allows .</english>
+  <czech>Z teoretických studií plyne , že inflace v kandidátských zemí zůstane i nadále vyšší , než jak dovoluje Maastrichtská smlouva .</czech>
+  <sure>1-2 2-3 3-4 4-6 5-7 6-8 8-9 9-10 11-11 13-14 14-16 16-19 17-20 18-18 19-21</sure>
+  <possible>3-1 4-5 7-10 10-11 12-12 12-13 14-15 14-17 15-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s19">
+  <english>The culprit in this pessimistic view is the so - called " Balassa - Samuelson " effect : rapid productivity growth in the accession candidates ' tradable sectors - export manufacturing , for example - is pushing up real wages throughout their economies , including in non - tradable sectors like services .</english>
+  <czech>Tento pesimistický pohled na věc má na svědomí tzv . " Balassův - Samuelsonův " efekt : rychlý růst produktivity v obchodních sektorech kandidátských zemí - např . v exportní výrobě - zvedá reálné mzdy , a to i v neobchodních sektorech , jako jsou služby .</czech>
+  <sure>4-1 5-2 6-3 9-9 11-9 12-11 13-12 14-13 15-14 16-15 17-16 18-17 19-18 20-20 21-19 22-21 27-22 28-23 30-30 31-31 33-27 34-27 35-32 37-33 38-33 39-34 40-35 46-40 47-41 49-41 50-42 51-44 52-46 53-47</sure>
+  <possible>6-4 6-5 10-9 11-10 25-24 34-28 36-33 45-37 45-38 45-39 48-41 51-45</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s20">
+  <english>This overall rise in real wages in the face of lower productivity growth for the service sector boosts relative prices and keeps inflation above the eurozone average .</english>
+  <czech>Toto celkové zvýšení reálných mezd však s ohledem na nižší růst produktivity v sektoru služeb zvedá relativní ceny a udržuje inflaci nad průměrem eurozóny .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 11-10 12-12 13-11 16-15 17-14 18-16 19-17 20-18 21-19 22-20 23-21 24-22 26-24 27-23 28-25</sure>
+  <possible>4-3 14-13 15-14 25-23</possible>
+  <phrasal>7-7 7-8 7-9 8-7 8-8 8-9 9-7 9-8 9-9 10-7 10-8 10-9</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s21">
+  <english>The Balassa - Samuelson effect is still evident in Greece , Spain and Portugal .</english>
+  <czech>Balassův - Samuelsonův efekt je dosud vidět v Řecku , Španělsku i Portugalsku .</czech>
+  <sure>2-1 3-2 4-3 5-4 7-6 8-7 9-8 10-9 11-10 12-11 14-13 15-14</sure>
+  <possible>1-1 6-7 8-5 13-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s22">
+  <english>But as empirical research prepared by the CEC5 National Banks estimates , its contribution to total price growth in the candidate countries is 1 - 2 % .</english>
+  <czech>Jak ale předpokládá empirický výzkum připravený národními bankami pěti nejrozvinutějších zemí střední Evropy ( tzv . CEC5 ) , jeho podíl na celkovém růstu cen v kandidátských zemích činí pouhé jedno až dvě procenta .</czech>
+  <sure>1-2 2-1 3-4 4-5 5-6 8-17 9-7 10-8 11-3 13-20 14-21 16-23 17-25 18-24 19-26 21-27 22-28 23-29 24-31 25-32 26-33 27-34 28-35</sure>
+  <possible>6-8 7-8 14-22 15-21 20-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s23">
+  <english>With the Balassa - Samuelson effect so subdued and limited scope for future corrective inflation , the EMU criterion regarding price stability - of annual inflation within 1.5 % of the average rate for the three best - performing economies in the EU - is within reach .</english>
+  <czech>Je - li Balassův - Samuelsonův efekt opravdu takto malý a bude - li mít korektivní inflace v budoucnosti omezený prostor , je kritérium EMU týkající se cenové stability - roční inflace do 1,5 procenta průměrné hodnoty tří nejvýkonnějších ekonomik EU - na dosah .</czech>
+  <sure>3-4 4-5 5-6 6-7 7-9 8-10 9-11 10-20 11-21 13-19 14-16 15-17 16-22 18-25 19-24 20-26 20-27 21-28 22-29 23-30 25-31 26-32 27-33 28-34 29-35 32-36 33-37 36-38 37-39 39-39 40-40 43-41 44-42 47-44 48-45</sure>
+  <possible>1-1 1-2 1-3 2-7 12-19 17-24 24-32 30-36 31-36 34-38 35-38 38-39 41-41 42-41 45-44 46-44 47-23 47-43</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s24">
+  <english>But is early admission to EMU preferable to postponing membership ?</english>
+  <czech>Je ale okamžitý vstup do EMU lepší než odložení členství na pozdější dobu ?</czech>
+  <sure>1-2 2-1 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-14</sure>
+  <possible>3-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s25">
+  <english>From the standpoint of current member states , would admitting Hungary , Latvia , Poland , or Slovakia , sooner rather than later , drag down the euro as many fear ?</english>
+  <czech>Stáhl by vstup Maďarska , Lotyšska , Polska nebo Slovenska spíše dříve než později euro dolů , jak se mnozí lidé v dnešních členských zemích ze svého pohledu domnívají ?</czech>
+  <sure>1-26 3-28 5-23 6-24 7-25 11-4 12-5 13-6 14-7 15-8 17-9 18-10 20-12 21-11 22-13 23-14 25-1 26-1 26-16 28-15 29-18 30-20 32-30</sure>
+  <possible>2-28 9-1 16-9 25-2 27-15 29-17 30-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s26">
+  <english>Fears that extending EMU to new states " too soon " would undermine the euro 's external exchange rate are irrational .</english>
+  <czech>Obava , že pokud k rozšíření EMU o nové členské státy dojde " příliš brzy " , bude ohrožen vnější směnný kurz , je naprosto neracionální .</czech>
+  <sure>1-1 2-3 3-6 4-7 6-9 7-11 8-13 9-14 10-15 11-16 13-19 17-20 18-21 19-22 20-24 21-26 22-27</sure>
+  <possible>2-2 3-8 5-6 12-19 13-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s27">
+  <english>If all candidate countries join the EU at around the same time , they will together account for a mere 6 % of its total GDP .</english>
+  <czech>Pokud se všechny kandidátské země stanou členem EU zhruba ve stejné době , budou se dohromady podílet na pouhých 6 procentech jejího celkového HDP .</czech>
+  <sure>1-1 2-3 3-4 4-5 5-2 5-6 5-7 7-8 8-10 9-9 11-11 12-12 13-13 16-16 17-17 20-19 21-20 22-21 24-22 25-23 26-24 27-25</sure>
+  <possible>6-8 10-12 14-17 15-17 17-14 17-15 17-18 18-17 19-21 23-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s28">
+  <english>So any negative impact on the euro from rapid accession to EMU would at worst amount to little more than a rounding error .</english>
+  <czech>Jakýkoli negativní dopad na euro by byl v nejhorším případě jen o málo vyšší než chyba při zaokrouhlení .</czech>
+  <sure>2-1 3-2 4-3 5-4 7-5 16-7 18-13 19-14 20-15 22-18 23-16 24-19</sure>
+  <possible>6-5 13-7 16-6 17-7 21-16 22-17</possible>
+  <phrasal>14-8 14-9 14-10 15-8 15-9 15-10</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s29">
+  <english>Delaying entry into EMU could make sense if a longer wait produced more information .</english>
+  <czech>Odklad vstupu do EMU by měl smysl , kdyby delší čekání přineslo více informací .</czech>
+  <sure>1-1 2-2 3-3 4-4 8-9 10-10 11-11 12-12 13-13 14-14 15-15</sure>
+  <possible>8-8 9-11</possible>
+  <phrasal>5-5 5-6 5-7 6-5 6-6 6-7 7-5 7-6 7-7</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s30">
+  <english>But a wait of greater length might produce nothing but added noise .</english>
+  <czech>Delší čekání však také nemusí přinést nic jiného než další potíže .</czech>
+  <sure>1-3 3-2 5-1 6-1 10-9 11-10 12-11 13-12</sure>
+  <possible>2-2 4-1 10-8</possible>
+  <phrasal>7-5 7-6 7-7 8-5 8-6 8-7 9-5 9-6 9-7</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s31">
+  <english>Equally , the transition period is already turbulent , with convergence - driven capital flows driving up exchange rates and complicating monetary policy in several candidate countries , including Poland , the Czech Republic , and Hungary .</english>
+  <czech>Období transformace je už beztak neklidné : kapitálové toky vedené konvergencí ženou směnný kurz nahoru a komplikují měnovou politiku v nejedné zemi , například v Polsku , Česku a Maďarsku .</czech>
+  <sure>1-5 4-2 5-1 6-3 7-4 8-6 11-11 13-10 14-8 15-9 16-12 17-15 18-13 19-14 20-16 21-17 22-18 23-19 24-20 25-21 30-26 31-27 33-28 34-28 36-29 37-30 38-31</sure>
+  <possible>2-5 9-7 12-11 25-22 27-21 27-22 32-28 35-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s32">
+  <english>Indeed , capital - flow volatility could make short work of the flexible exchange rate on offer under ERM II - a 15 % fluctuation band either side of a central parity .</english>
+  <czech>Nestálost kapitálových toků by ostatně mohla zatočit i se směnným kurzem nabízeným v rámci ERM II - 15procentní výkyvy na obě strany od centrální parity .</czech>
+  <sure>1-5 3-2 5-3 6-1 11-9 14-10 15-11 17-12 18-13 18-14 19-15 20-16 21-17 23-18 24-18 25-19 28-22 31-24 32-25 33-26</sure>
+  <possible>2-5 4-2 12-11 16-12 22-19 27-21 29-23 30-25</possible>
+  <phrasal>7-4 7-6 7-7 8-4 8-6 8-7 9-4 9-6 9-7 10-4 10-6 10-7</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s33">
+  <english>Some argue that ERM II membership should be viewed as a longer - term proposition - possibly lasting until 2010 - for the benefit of candidates themselves .</english>
+  <czech>Někteří tvrdí , že členství v ERM II je třeba vnímat jako dlouhodobější návrh - možná až do roku 2010 - pro dobro kandidátských zemí samotných .</czech>
+  <sure>1-1 2-2 3-4 4-7 5-8 6-5 9-11 10-12 12-13 14-13 15-14 16-15 17-16 19-17 19-18 20-20 21-21 22-22 24-23 26-24 27-26 28-27</sure>
+  <possible>3-3 6-6 7-11 8-11 9-9 9-10 11-14 13-13 20-19 23-23 25-25 26-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s34">
+  <english>The benefit is simple :</english>
+  <czech>Výhoda je nasnadě :</czech>
+  <sure>2-1 3-2 4-3 5-4</sure>
+  <possible>1-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s35">
+  <english>ERM II permits some exchange rate flexibility , as opposed to the fixed rates implied by adopting the euro .</english>
+  <czech>ERM II umožňuje jistou pružnost směnného kurzu , na rozdíl od pevného kurzu , což je požadavek pro přistoupení k euru .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-6 6-7 7-5 8-8 13-12 14-13 17-19 19-21 20-22</sure>
+  <possible>12-13 15-14 15-15 15-16 15-17 15-18 16-17 17-20 18-21</possible>
+  <phrasal>9-9 9-10 9-11 10-9 10-10 10-11 11-9 11-10 11-11</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s36">
+  <english>This would help keep the candidates ' economic output high and thus sustain real convergence with average EU income levels .</english>
+  <czech>To by kandidátským zemím pomohlo udržet hospodářský výkon a tím pádem se přibližovat k průměrným příjmovým úrovním v EU .</czech>
+  <sure>1-1 3-5 4-6 8-7 9-8 11-9 12-10 12-11 15-13 17-15 18-19 19-16 20-17 21-20</sure>
+  <possible>2-6 3-6 4-2 4-5 5-3 6-3 10-6 15-14 16-13 18-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s37">
+  <english>This is an exceptionally weak argument , and a politically suspect one , too .</english>
+  <czech>Je to výjimečně slabý a navíc politicky podezřelý argument .</czech>
+  <sure>1-2 2-1 4-3 5-4 6-9 8-5 10-7 11-8 14-6 15-10</sure>
+  <possible>3-9 7-5 13-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s38">
+  <english>As European Central Bank data shows , average per capita GDP in the accession candidates is 44 % of the eurozone level .</english>
+  <czech>Jak je vidět z údajů Evropské centrální banky , průměrný hrubý domácí produkt na osobu činí v kandidátských zemích 44 procent úrovně uvnitř eurozóny .</czech>
+  <sure>2-6 3-7 4-8 5-5 7-9 8-10 9-14 10-15 11-11 11-12 11-13 12-17 16-16 17-20 18-21 21-24 22-22 23-25</sure>
+  <possible>1-3 6-1 6-2 6-3 6-4 15-18 19-22 20-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s39">
+  <english>The size of the income gap combines with the small growth differentials to imply that the process of real convergence will extend far beyond even the most cautious dates for EU and EMU entry , probably lasting several decades .</english>
+  <czech>Velikost příjmového rozdílu spolu s malými rozdíly v růstu pak znamená , že proces skutečného přibližování se prodlouží na dobu o hodně , možná i o desítky let delší , než tu , s níž se dnes počítá pro vstup do EU a EMU .</czech>
+  <sure>2-1 5-2 6-3 8-5 10-6 11-9 12-7 14-11 15-13 17-14 19-15 20-16 22-18 30-39 31-42 32-43 33-44 34-40 36-24 39-27 39-28 40-45</sure>
+  <possible>1-1 3-3 4-3 9-7 11-8 15-12 16-14 18-16 21-18 22-17 23-21 23-22 29-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s40">
+  <english>More important , long - lasting economic growth does not depend on the type of exchange rate - whether flexible or fixed ( EMU ) - while early accession will speed up crucial reforms .</english>
+  <czech>Trvalý hospodářský růst navíc nezávisí na typu směnného kurzu - flexibilním nebo fixním ( EMU ) - , zatímco rychlý vstup urychlí zásadní reformy .</czech>
+  <sure>7-2 8-3 10-5 11-5 12-6 14-7 16-8 17-9 18-10 20-11 21-12 22-13 23-14 24-15 25-16 26-17 27-19 28-20 29-21 31-22 32-22 33-23 34-24 35-25</sure>
+  <possible>1-4 2-4 3-4 4-1 5-1 6-1 9-5 13-7 15-9 19-12 27-18 30-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s41">
+  <english>A few years of limited exchange rate flexibility is a poor substitute for rapid completion of structural reforms .</english>
+  <czech>Několik let omezené pružnosti směnného kurzu je jen chabou náhradou rychlého dokončení strukturálních reforem .</czech>
+  <sure>2-1 3-2 5-3 6-5 7-6 8-4 9-7 11-9 12-10 14-11 15-12 17-13 18-14 19-15</sure>
+  <possible>1-1 4-4 10-10 13-12 16-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s42">
+  <english>In almost all candidates , further disinflation and long - term economic growth require fiscal consolidation , more flexible labor markets , and completion of privatization .</english>
+  <czech>Téměř ve všech kandidátských zemích si další dezinflace a dlouhodobý ekonomický růst vyžádají konsolidaci daňového systému , vybudování pružnějších trhů práce a doprivatizaci .</czech>
+  <sure>1-2 2-1 3-3 6-7 7-8 8-9 9-10 11-10 12-11 13-12 14-13 15-15 16-14 17-17 18-19 19-19 20-21 21-20 23-22 24-23 25-23 26-23 27-24</sure>
+  <possible>4-4 10-10 14-6 15-16 22-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s43">
+  <english>Delaying EMU entry risks weakening the incentive to complete these politically costly but necessary reforms .</english>
+  <czech>S pozdějším vstupem do EMU hrozí oslabení pobídek na dokončení těchto politicky nákladných , leč nezbytných reforem .</czech>
+  <sure>2-5 3-3 5-7 7-8 8-9 9-10 10-11 11-12 12-13 13-15 14-16 15-17 16-18</sure>
+  <possible>1-1 1-2 3-4 4-6 6-8 13-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s44">
+  <english>Any delay in completing reforms will ultimately slow the process of real convergence that EU officials rightly hold dear .</english>
+  <czech>Jakékoli zpoždění reforem v konečném důsledku zpomalí proces reálného přibližování , které je pro úředníky EU po právu to hlavní .</czech>
+  <sure>1-1 2-2 5-3 7-4 7-5 7-6 8-7 10-8 12-9 13-10 14-12 15-16 16-15 17-17 17-18 20-21</sure>
+  <possible>6-7 9-8 11-10 14-11</possible>
+  <phrasal>18-13 18-14 18-19 18-20 19-13 19-14 19-19 19-20</phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s45">
+  <english>Early adoption , by contrast , would be more conducive to these reforms , and thus to real convergence .</english>
+  <czech>Dřívější přijetí by ale naopak těmto reformám , a tedy reálnému přiblížení , nemálo pomohlo .</czech>
+  <sure>1-1 2-2 5-5 9-14 10-15 12-6 13-7 14-8 15-9 16-10 18-11 19-12 20-16</sure>
+  <possible>3-5 4-5 5-4 6-5 7-15 8-15 10-3 11-7 17-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s46">
+  <english>Success here would allow candidate countries to start reaping the benefits of greater price transparency , reduced transaction costs , and a solid macroeconomic framework .</english>
+  <czech>Úspěch v této oblasti by kandidátským zemím dovolil těšit se z větší cenové transparentnosti , nižších transakčních nákladů a solidního makroekonomického rámce .</czech>
+  <sure>1-1 4-8 5-6 6-7 9-9 9-10 11-9 13-12 14-13 15-14 16-15 17-16 18-17 19-18 21-19 23-20 24-21 25-22 26-23</sure>
+  <possible>2-2 2-3 2-4 3-8 4-5 9-11 10-9 12-9 20-19 22-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s47">
+  <english>This strategy , not one of deferred entry , promises the most for both the EU 's current and its future members .</english>
+  <czech>Tato strategie , a nikoli oddalovaný vstup , je největším příslibem jak pro stávající , tak budoucí členské země Evropské unie .</czech>
+  <sure>1-1 2-2 3-3 7-6 8-7 9-8 10-9 10-11 11-10 12-10 13-13 16-20 16-21 18-14 21-17 23-22</sure>
+  <possible>14-12 14-15 14-16 15-21 17-21 19-15 22-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="project_syndicate_balcerowicz1-s48">
+  <english>Leszek Balcerowicz , the architect of Poland 's post - communist economic reforms , is President of the National Bank of Poland .</english>
+  <czech>Leszek Balcerowicz , architekt postkomunistických ekonomických reforem v Polsku , je guvernérem Polské národní banky .</czech>
+  <sure>1-1 2-2 3-3 5-4 7-9 9-5 11-5 12-6 13-7 14-10 15-11 16-12 23-16</sure>
+  <possible>4-4 10-5 17-15 18-15</possible>
+  <phrasal>19-13 19-14 19-15 20-13 20-14 20-15 21-13 21-14 21-15 22-13 22-14 22-15</phrasal>
+</s>
+</sentences>

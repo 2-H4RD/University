@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="pcedt_rd_00393-s1">
+  <english>" I began to cry every day , and felt anxious , " she recalls .</english>
+  <czech>" Každý den jsem plakala a cítila se zoufalá , " vzpomíná .</czech>
+  <sure>1-1 5-5 6-2 7-3 9-6 10-7 11-9 12-10 13-11 15-12 16-13</sure>
+  <possible>2-5 3-5 4-5 5-4 8-6 10-8 14-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s2">
+  <english>" It was hard to stay awake .</english>
+  <czech>" Byla jsem věčně ospalá .</czech>
+  <sure>1-1 8-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s3">
+  <english>I wanted to withdraw into my own closed world . "</english>
+  <czech>Toužila jsem se svinout do klubíčka , do vlastního uzavřeného světa . "</czech>
+  <sure>2-1 4-4 5-8 7-9 8-10 9-11 10-12 11-13</sure>
+  <possible>1-1 2-2 3-4 4-3 6-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s4">
+  <english>For many years Barry rode an annual roller coaster of lows and highs .</english>
+  <czech>Po mnoho let prožívala každý rok prudký pád a stejně prudký vzestup .</czech>
+  <sure>1-1 2-2 3-3 7-5 7-6 12-9 14-13</sure>
+  <possible>10-8 11-8 13-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s5">
+  <english>Autumn and winter brought depression , lethargy - plus a craving for sweets that caused her to gain as much as 30 pounds .</english>
+  <czech>Podzim a zima jí navozovaly depresi , letargii - a navíc touhu po sladkostech , takže přibývala na váze až patnáct kilogramů .</czech>
+  <sure>1-1 2-2 3-3 4-5 5-6 6-7 7-8 8-9 9-11 10-10 11-12 12-13 13-14 14-16 18-17 18-18 18-19 19-20 20-20 21-20 24-23</sure>
+  <possible>14-15 16-17 17-17</possible>
+  <phrasal>22-21 22-22 23-21 23-22</phrasal>
+</s>
+<s id="pcedt_rd_00393-s6">
+  <english>Each spring and summer brought almost manic highs .</english>
+  <czech>Každé jaro a léto jí zase přineslo radikální zlepšení nálady :</czech>
+  <sure>1-1 2-2 3-3 4-4 5-7 9-11</sure>
+  <possible>7-8 8-9 8-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s7">
+  <english>She had boundless energy that enabled her to go with little sleep for days and effortlessly shed the excess weight she ' d gained .</english>
+  <czech>měla obrovskou energii , po celé dny jí stačilo minimum spánku a bez námahy shodila veškerou nadbytečnou váhu získanou v zimě .</czech>
+  <sure>2-1 3-2 4-3 7-8 11-10 12-11 13-5 14-7 15-12 16-13 16-14 17-15 18-16 19-17 20-18 24-19 25-22</sure>
+  <possible>1-1 5-4 10-11 21-19 22-19 23-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s8">
+  <english>By her mid - 40s , these seasonal ups and downs began impairing her work as a writer .</english>
+  <czech>Okolo pětačtyřiceti let se toto kolísání nálad podle ročního období začalo záporně projevovat v její spisovatelské práci .</czech>
+  <sure>1-1 7-5 8-9 8-10 12-11 13-12 13-13 14-15 15-17 18-16 19-18</sure>
+  <possible>2-2 5-3 6-5 8-8 12-4 15-14 16-16 17-16</possible>
+  <phrasal>3-2 4-2 5-2 9-6 9-7 10-6 10-7 11-6 11-7</phrasal>
+</s>
+<s id="pcedt_rd_00393-s9">
+  <english>Finally , urged on by her husband , Barry sought professional help .</english>
+  <czech>Na manželovo naléhání nakonec vyhledala lékařskou pomoc .</czech>
+  <sure>1-4 3-3 4-1 7-2 10-5 11-6 12-7 13-8</sure>
+  <possible>2-4 5-2 6-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s10">
+  <english>In 1987 she joined an experimental program at the U . S . National Institute of Mental Health ( NIMH ) in Bethesda , Md .</english>
+  <czech>V roce 1987 se stala pacientkou experimentálního programu Národního ústavu pro duševní zdraví ( NIMH ) v Bethesdě , ve státě Maryland .</czech>
+  <sure>1-1 2-3 6-7 7-8 14-9 15-10 16-11 17-12 18-13 19-14 20-15 21-16 22-17 23-18 24-19 25-22 26-23</sure>
+  <possible>2-2 5-7 8-10 9-10 25-20 25-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s11">
+  <english>Research psychiatrist Norman Rosenthal , the program 's director , knew just what Barry was going through .</english>
+  <czech>Ředitel programu , psychiatr Norman Rosenthal , velice dobře věděl , co se s paní Barryovou děje .</czech>
+  <sure>2-4 3-5 4-6 5-3 7-2 9-1 10-7 11-10 13-12 14-16 16-17 17-17 18-18</sure>
+  <possible>6-2 8-2 12-8 12-9 13-11 14-14 14-15 15-17 16-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s12">
+  <english>The gloom of winter had clouded his own moods after he moved from sunny South Africa in 1976 .</english>
+  <czech>I jeho náladu zkalily zimní chmury , když se v roce 1976 přistěhoval ze slunečné jižní Afriky .</czech>
+  <sure>2-6 4-5 6-4 7-2 9-3 10-8 12-13 13-14 14-15 15-16 16-17 17-10 18-12 19-18</sure>
+  <possible>1-6 3-5 5-4 8-2 10-7 11-13 12-9 18-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s13">
+  <english>He also knew he was n't unique .</english>
+  <czech>Věděl také , že to není nic výjimečného .</czech>
+  <sure>2-2 3-1 5-6 7-8 8-9</sure>
+  <possible>1-1 4-6 5-5 5-7 6-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s14">
+  <english>" Greek and Roman physicians in ancient times recognized a link between dark moods , lethargy and the change of seasons , " says Rosenthal .</english>
+  <czech>" Už v antických dobách věděli řečtí a římští lékaři o souvislosti mezi změnami ročních období a špatnou náladou nebo letargií , " říká .</czech>
+  <sure>1-1 2-7 3-8 4-9 5-10 6-3 7-4 8-5 9-6 11-12 12-13 13-18 14-19 16-21 19-14 21-15 21-16 22-22 23-23 24-24 26-25</sure>
+  <possible>10-12 11-11 15-20 17-17 18-14 20-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s15">
+  <english>By 1981 , Rosenthal and his NIMH colleagues had identified a medical condition they named Seasonal Affective Disorder , or SAD .</english>
+  <czech>V roce 1981 popsal Rosenthal se svými kolegy z NIMH chorobu , kterou označili jako " sezónní afektivní dysbalanci " ( SAD ) .</czech>
+  <sure>1-1 2-3 4-5 5-6 6-7 7-10 8-8 10-4 12-11 13-11 15-14 16-17 17-18 18-19 21-22 22-24</sure>
+  <possible>2-2 3-3 7-9 9-4 11-11 14-14 15-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s16">
+  <english>Early research into SAD , now recognized as a distinct kind of clinical depression , was widely discussed in the press .</english>
+  <czech>O prvních výzkumech SAD , která se dnes považuje za zvláštní druh klinické deprese , se svého času hodně psalo v tisku .</czech>
+  <sure>1-2 2-3 4-4 5-5 6-8 7-9 8-10 10-11 11-12 13-13 14-14 15-15 17-19 18-20 19-21 21-22 22-23</sure>
+  <possible>3-3 5-6 7-7 9-12 12-14 16-20 18-16 20-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s17">
+  <english>But since then scientists have made numerous discoveries that have advanced the search for remedies .</english>
+  <czech>Od té doby však vědci dospěli k řadě objevů , které přinesly pokrok v hledání léčby .</czech>
+  <sure>1-4 2-1 3-2 3-3 4-5 6-6 7-8 8-9 9-11 11-12 11-13 13-15 15-16 16-17</sure>
+  <possible>5-6 7-7 9-10 10-12 12-15 13-14 14-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s18">
+  <english>Rosenthal 's colleague at the time , Dr . Alfred Lewy , found that increased exposure to bright light in humans could suppress their production of a darkness - related hormone called melatonin .</english>
+  <czech>Rosenthalův tehdejší kolega dr . Alfred Lewy zjistil , že zvýšená expozice jasnému světlu může u lidí potlačit produkci melatoninu - hormonu , který se vylučuje ve tmě .</czech>
+  <sure>1-1 3-3 4-2 5-2 6-2 8-4 9-5 10-6 11-7 12-9 13-8 14-10 15-11 16-12 18-13 19-14 20-16 21-17 22-15 23-18 25-19 28-28 29-21 31-22 33-20 34-29</sure>
+  <possible>2-1 17-14 26-20 27-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s19">
+  <english>The light needed to induce this change , Lewy established , was about 2000 lux - about four times brighter than ordinary household lighting .</english>
+  <czech>K navození této změny je podle Lewyho potřeba asi 2000 luxů , tedy asi čtyřikrát více , než odpovídá běžnému osvětlení v domácnosti .</czech>
+  <sure>3-8 4-1 5-2 6-3 7-4 9-7 12-5 13-9 14-10 15-11 16-12 17-14 18-15 19-15 21-18 22-20 23-23 24-21 25-24</sure>
+  <possible>10-6 16-13 21-17 23-22</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s20">
+  <english>Rosenthal and his colleagues theorized that if bright light could suppress melatonin secretion , then it might have other effects on the brain , including the reversal of symptoms of depression .</english>
+  <czech>Rosenthal a jeho kolegové usoudili , že když může jasné světlo potlačit sekreci melatoninu , mohlo by mít na mozek i jiné účinky , včetně odstranění depresivních příznaků .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-7 7-8 8-10 9-11 10-9 11-12 12-14 13-13 14-15 17-16 18-18 19-22 20-23 21-19 23-20 24-24 25-25 27-26 29-28 31-27 32-29</sure>
+  <possible>6-6 16-16 17-17 19-21 22-20 26-26 28-28 30-27</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s21">
+  <english>While the precise role of melatonin in SAD has not been pinned down , the theory led to an effective treatment .</english>
+  <czech>Ačkoli role melatoninu v SAD nebyla přesně objasněna , vedla tato teorie k účinné léčbě .</czech>
+  <sure>1-1 3-7 4-2 6-3 7-4 8-5 10-6 11-6 14-9 15-11 16-12 17-10 18-13 20-14 21-15 22-16</sure>
+  <possible>2-2 5-3 9-6 19-14</possible>
+  <phrasal>12-7 12-8 13-7 13-8</phrasal>
+</s>
+<s id="pcedt_rd_00393-s22">
+  <english>By the time Dalene Barry entered the program , this treatment had been established .</english>
+  <czech>V době , kdy se do programu přihlásila Dalene Barryová , už tato léčba existovala .</czech>
+  <sure>1-1 3-2 4-9 5-10 6-8 8-7 9-11 10-13 11-14 14-15 15-16</sure>
+  <possible>2-2 3-3 3-4 6-5 7-7 8-6 12-12 12-15 13-12 13-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s23">
+  <english>She sat for two hours each morning in front of a glowing box of fluorescent bulbs that bathed her with 2500 lux .</english>
+  <czech>Každý den ráno seděla dvě hodiny před soustavou zářivek , které ji zalévaly světlem o 2500 luxech .</czech>
+  <sure>2-4 4-5 5-6 6-1 7-3 8-7 9-7 10-7 15-9 16-9 17-11 18-13 19-12 20-15 21-16 22-17 23-18</sure>
+  <possible>1-4 3-6 11-8 13-8 14-9 17-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s24">
+  <english>" During my fourth day in front of the light box , " she says , " my dark moods started to melt away .</english>
+  <czech>" Když jsem před světelnou skříní seděla čtvrtý den , " vzpomíná , " začala moje deprese roztávat .</czech>
+  <sure>1-1 2-2 4-8 5-9 6-4 7-4 8-4 10-5 11-6 12-10 13-11 14-12 15-12 16-13 17-14 18-16 19-17 20-17 21-15 23-18 25-19</sure>
+  <possible>9-6 22-18 24-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s25">
+  <english>I began to tingle with the kind of joy and energy I felt in summertime . "</english>
+  <czech>Objevil se ten radostný a energický pocit , který mívám v létě . "</czech>
+  <sure>6-3 9-4 10-5 11-6 13-7 14-11 15-12 16-13 17-14</sure>
+  <possible>12-10 13-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s26">
+  <english>" Přibližně u tří ze čtyř lidí , kteří trpí SAD , se stav při této léčbě zlepší - obvykle do tří až sedmi dnů , " říká dr . Rosenthal .</english>
+  <czech>" About three out of four SAD sufferers improve when given such treatment , and improvement usually comes within three to seven days , " says Rosenthal .</czech>
+  <sure>1-1 2-2 4-3 5-4 5-5 6-6 11-7 16-12 17-13 18-9 19-14 20-17 21-19 22-20 23-21 24-22 25-23 26-24 27-25 28-26 31-27 32-28</sure>
+  <possible>3-3 12-10 13-9 15-13 17-11 19-15</possible>
+  <phrasal>7-8 8-8 9-8 10-8</phrasal>
+</s>
+<s id="pcedt_rd_00393-s27">
+  <english>He estimates that more than 11 million adult Americans develop full - blown SAD during winter and another 26 million suffer the milder condition he calls subsyndromal SAD .</english>
+  <czech>Odhaduje , že plně vyvinutá SAD postihuje v zimě jedenáct miliónů dospělých Američanů a mírnější stav , který označuje jako subsyndromální SAD , dalších dvacet šest milionů .</czech>
+  <sure>2-1 3-3 6-10 7-11 8-12 9-13 10-5 11-4 14-6 15-8 16-9 17-14 18-24 19-25 19-26 20-27 23-15 24-16 26-19 27-21 28-22 29-28</sure>
+  <possible>1-1 3-2 12-4 13-4 22-15 22-16 25-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s28">
+  <english>Not surprisingly , SAD affects more people where winter nights are longer and days shorter .</english>
+  <czech>Není žádným překvapením , že tam , kde jsou zimní noci delší a dny kratší , postihuje SAD více osob .</czech>
+  <sure>3-4 4-18 5-17 6-19 7-20 8-8 9-10 10-11 11-9 12-12 13-13 14-14 15-15 16-21</sure>
+  <possible>8-6 8-7</possible>
+  <phrasal>1-1 1-2 1-3 2-1 2-2 2-3</phrasal>
+</s>
+<s id="pcedt_rd_00393-s29">
+  <english>At the latitude of Maine or Minnesota , more than 30 percent of the population experiences one of the two kinds of SAD . In Florida it 's less than ten percent .</english>
+  <czech>V zeměpisných šířkách států Maine a Minnesota je jedním ze dvou druhů SAD postiženo více než třicet procent populace , zatímco na Floridě méně než deset procent .</czech>
+  <sure>1-1 3-2 3-3 5-5 6-6 7-7 9-15 10-16 11-17 12-18 15-19 16-14 17-9 18-10 20-11 21-12 23-13 25-22 26-23 29-24 30-25 31-26 32-27 33-28</sure>
+  <possible>2-3 4-5 5-4 13-19 14-19 16-8 19-11 19-12 22-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s30">
+  <english>Carbohydrate Craving .</english>
+  <czech>Chuť na cukr .</czech>
+  <sure>1-3 2-1 3-4</sure>
+  <possible>1-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s31">
+  <english>Scientists are still unsure why winter depression happens .</english>
+  <czech>Vědci dosud s určitostí nevědí , proč k zimní depresi dochází .</czech>
+  <sure>1-1 3-2 5-7 6-9 7-10 8-11 9-12</sure>
+  <possible>5-6 7-8</possible>
+  <phrasal>2-3 2-4 2-5 4-3 4-4 4-5</phrasal>
+</s>
+<s id="pcedt_rd_00393-s32">
+  <english>But a decade of research has turned up some surprising findings :</english>
+  <czech>Deset let výzkumu však přineslo několik překvapivých zjištění :</czech>
+  <sure>1-4 3-1 3-2 5-3 7-5 8-5 9-6 10-7 11-8 12-9</sure>
+  <possible>2-1 2-2 4-3 6-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s33">
+  <english>Nearly 80 percent of SAD victims are women .</english>
+  <czech>Téměř osmdesát procent těch , kdo jsou postiženi SAD , tvoří ženy .</czech>
+  <sure>1-1 2-2 3-3 5-9 6-8 7-11 8-12 9-13</sure>
+  <possible>4-4</possible>
+  <phrasal>6-4 6-5 6-6 6-7</phrasal>
+</s>
+<s id="pcedt_rd_00393-s34">
+  <english>Researchers at NIMH are unsure why .</english>
+  <czech>Výzkumníci z NIMH zatím důvod tohoto jevu neznají .</czech>
+  <sure>1-1 2-2 3-3 6-5 7-9</sure>
+  <possible>4-8 5-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s35">
+  <english>SAD can affect people at any age , but typically it begins around the age of 20 and becomes less common between 40 and 50 .</english>
+  <czech>SAD může postihnout osoby jakéhokoli věku , ale typicky začíná okolo dvaceti let a její výskyt klesá mezi čtyřicátým a padesátým rokem života .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-5 7-6 8-7 9-8 10-9 12-10 13-11 15-13 17-12 18-14 22-18 23-19 24-20 25-21 26-24</sure>
+  <possible>5-6 11-10 14-13 16-13</possible>
+  <phrasal>19-16 19-17 20-16 20-17 21-16 21-17</phrasal>
+</s>
+<s id="pcedt_rd_00393-s36">
+  <english>SAD is comparatively rare in children and adolescents .</english>
+  <czech>U dětí a dospívajících se objevuje poměrně vzácně .</czech>
+  <sure>3-7 4-8 5-1 6-2 7-3 8-4 9-9</sure>
+  <possible></possible>
+  <phrasal>2-5 2-6</phrasal>
+</s>
+<s id="pcedt_rd_00393-s37">
+  <english>Children who are affected often have parents with SAD , suggesting the depression has a genetic component .</english>
+  <czech>Děti , u nichž se SAD přece jen projeví , mívají často podobně postižené rodiče , což ukazuje na možný podíl genetických faktorů u této deprese .</czech>
+  <sure>1-1 2-4 4-14 5-12 6-11 7-15 9-6 10-16 11-18 12-25 13-26 16-22 17-21 18-27</sure>
+  <possible>2-2 2-3 3-14 8-6 11-17 14-21 15-21</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s38">
+  <english>Some SAD patients experience shifts in their body clocks when they 're depressed in winter .</english>
+  <czech>Některým pacientům se v průběhu zimních depresí mění biorytmy .</czech>
+  <sure>1-1 3-2 5-8 8-9 9-9 13-7 15-6 16-10</sure>
+  <possible>5-3 6-9 7-9 10-4 10-5 11-7 12-7 14-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s39">
+  <english>They are " morning people " at one time of the year and become " evening people " at another .</english>
+  <czech>Jednu část roku jsou lidmi " ranními " a druhou část roku " večerními " .</czech>
+  <sure>2-4 3-6 4-7 5-5 6-8 8-1 9-2 12-3 13-9 15-13 16-14 18-15 20-10 21-16</sure>
+  <possible>1-4 7-1 10-3 11-3 14-14 17-14 19-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s40">
+  <english>What is the underlying difference between people with SAD and others ?</english>
+  <czech>V čem spočívá rozdíl mezi osobami se SAD a těmi ostatními ?</czech>
+  <sure>1-2 4-3 5-4 6-5 7-6 8-7 9-8 10-9 11-11 12-12</sure>
+  <possible>1-1 2-3 3-4 11-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s41">
+  <english>A clue to the answer can be found in carbohydrate craving , a common SAD symptom .</english>
+  <czech>Klíčem k odpovědi může být chuť na sladké , která patří k běžným příznakům SAD .</czech>
+  <sure>2-1 3-2 5-3 6-4 7-5 10-8 11-6 12-9 14-13 15-15 16-14 17-16</sure>
+  <possible>1-1 4-3 8-5 9-5 10-7 13-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s42">
+  <english>Carbohydrates alter brain chemistry by increasing the level of a soothing chemical called serotonin , a neurotransmitter that carries signals between brain cells .</english>
+  <czech>Cukry zasahují do chemie mozku tím , že zvyšují hladinu uklidňující chemické látky zvané serotonin , která funguje jako neurotransmiter ( tj . látka přenášející signály mezi nervovými buňkami ) .</czech>
+  <sure>1-1 2-2 3-5 4-4 5-6 5-8 6-9 8-10 11-11 12-12 12-13 13-14 14-15 15-16 17-20 18-17 19-25 20-26 21-27 22-28 23-29 24-31</sure>
+  <possible>4-3 5-7 7-10 9-13 10-13 16-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s43">
+  <english>SAD sufferers crave carbohydrates , say Dr . Richard and Judith Wurtman , researchers at the Massachusetts Institute of Technology , because they may need serotonin to lift their mood .</english>
+  <czech>Podle dr . Richarda a Judith Wurtmanových z Massachusettského technologického institutu mají osoby postižené SAD chuť na cukr , protože zřejmě potřebují ke zlepšení nálady serotonin .</czech>
+  <sure>1-15 2-13 2-14 3-16 4-18 6-1 7-2 8-3 9-4 10-5 11-6 12-7 15-8 17-9 18-11 20-10 21-19 22-20 24-21 25-22 26-26 27-23 28-24 30-25 31-27</sure>
+  <possible>3-12 4-17 16-11 19-10 23-22 29-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s44">
+  <english>This craving , typically at its strongest from late afternoon through evening , can be intense .</english>
+  <czech>Tato touha po sladkostech , která je obvykle nejsilnější pozdě odpoledne a večer , dosahuje někdy značné intenzity .</czech>
+  <sure>1-1 2-2 3-5 4-8 7-9 9-10 10-11 12-13 13-14 17-19</sure>
+  <possible>5-9 6-9 8-11 13-12</possible>
+  <phrasal>14-15 14-17 14-18 15-15 15-17 15-18 16-15 16-17 16-18</phrasal>
+</s>
+<s id="pcedt_rd_00393-s45">
+  <english>" Some of our patients , " says Rosenthal , " call their desire for candy or cookies an addiction . "</english>
+  <czech>" Někteří z našich pacientů , " říká Rosenthal , " svou touhu po čokoládě nebo cukroví označují jako závislost . "</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-18 13-12 14-13 15-14 16-17 17-16 18-15 20-20 21-21 22-22</sure>
+  <possible>12-19 19-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s46">
+  <english>It may be that the serotonin system of the brain has problems regulating itself in SAD sufferers during winter .</english>
+  <czech>Je možné , že u osob postižených SAD dochází v zimě k poruchám regulace serotoninového systému .</czech>
+  <sure>2-2 4-4 6-15 7-16 12-13 13-14 15-5 16-8 17-6 17-7 18-10 19-11 20-17</sure>
+  <possible>1-2 2-1 3-2 4-3 5-16 11-13 12-12</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s47">
+  <english>Some SAD sufferers respond well to the drug Prozac , thought to influence the brain 's serotonin - using system .</english>
+  <czech>Některé z těchto osob dobře reagují na preparát Prozac , o němž se předpokládá , že ovlivňuje buňky závislé na serotoninu .</czech>
+  <sure>1-1 4-6 5-5 6-7 8-8 9-9 10-10 12-16 13-17 17-21 21-22</sure>
+  <possible>7-8 12-15</possible>
+  <phrasal>11-11 11-12 11-13 11-14</phrasal>
+</s>
+<s id="pcedt_rd_00393-s48">
+  <english>Other brain chemicals and hormones probably play a role in winter depression .</english>
+  <czech>Při vzniku zimní deprese se zřejmě uplatňují i jiné chemické látky a hormony .</czech>
+  <sure>1-9 3-10 3-11 4-12 5-13 6-6 11-3 12-4 13-14</sure>
+  <possible>10-3</possible>
+  <phrasal>7-5 7-7 8-5 8-7 9-5 9-7</phrasal>
+</s>
+<s id="pcedt_rd_00393-s49">
+  <english>Another neurotransmitter , dopamine , for example , may be inadequate in certain premenopausal women who suffer SAD symptoms .</english>
+  <czech>U některých premenopauzálních žen , které trpí příznaky SAD , se například uvažuje o nedostatku jiného neurotransmiteru - dopaminu .</czech>
+  <sure>1-16 2-17 3-18 4-19 5-10 7-12 11-15 12-1 13-2 14-3 15-4 16-6 17-7 18-9 19-8 20-20</sure>
+  <possible>6-12 10-15 16-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="pcedt_rd_00393-s50">
+  <english>Ice - Age Survival .</english>
+  <czech>Přežití v době ledové .</czech>
+  <sure>4-1 5-5</sure>
+  <possible></possible>
+  <phrasal>1-3 1-4 2-3 2-4 3-3 3-4</phrasal>
+</s>
+</sentences>

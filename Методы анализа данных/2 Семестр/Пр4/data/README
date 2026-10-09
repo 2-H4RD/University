@@ -1,0 +1,53 @@
+====================================================
+CzEnAli - Czech-English Manual Word Alignment corpus
+====================================================
+
+Author: David Mareček
+
+License: Creative Commons - Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+This corpus of manually aligned Czech-English parallel sentences have been created in 2008.
+Its purpose was to test alignment quality of automatic word-alignment tools.
+The data were revised and uploaded to LINDAT in 2016.
+The corpus comprises 2500 parallel sentences from 7 different sources.
+
+dirname           source                  #chunks #sentences #ENtokens #CStokens #alltokens
+-------------------------------------------------------------------------------------------
+celex             Acquis Communautaire         10        501    13,512    10,752     24,264
+rd                Reader’s Digest               7        350     6,294     5,792     12,086
+project_syndicate Project Syndicate            10        484    10,714     9,990     20,704
+kacenka           Kačenka                       2        100     3,006     2,553      5,559
+books             E-Books                       1         50       797       633      1,430
+named_entities    Project Syndicate with NE   168        500    12,799    11,052     23,851
+pcedt             PCEDT                        22        515    12,697    12,174     24,871
+-------------------------------------------------------------------------------------------
+                  Total                       190       2500    59,819    52,946    112,765
+
+The description and links to the individual data sources, annotation guidelines and the description of the annotation procedure
+is in Chapter 4 of David Mareček's diploma thesis, which is included in the package.
+
+Manually aligned data are in directory 'data'.
+Automatically merged alignments by two different annotators are in directory 'merged_data'.
+You can browse the manual alignments using program ALPACO.
+
+Usage:	perl tools/alpaco.pl <path to .wa file>
+
+Annotators (file extensions in brackets):
+-----------------------------------------
+Ondřej Bojar		(.o.wa)
+Magdalena Prokopová	(.p.wa)
+Martin Popel		(.m.wa)
+Zuzana Škardová		(.z.wa)
+Markus Giger		(.g.wa)
+Jiří Januška		(.j.wa)
+-----------------------------------------
+
+If you make use of the CzEnAli corpus, please cite David Marecek's master thesis:
+
+@mastersthesis{marecek:2008,
+  title = {Automatic Alignment of Tectogrammatical Trees from Czech-English Parallel Corpus},
+  author = {David Mare{\v{c}}ek},
+  year = {2008},
+  school = {Charles University},
+  address = {Prague, Czech Republic},
+}

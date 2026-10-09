@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2399-s1">
+  <english>The following were among Friday 's offerings and pricings in the U . S . and non-U.S . capital markets , with terms and syndicate manager , as compiled by Dow Jones Capital Markets Report :</english>
+  <czech>To , co následuje , bylo mezi pátečními nabídkami a cenami na kapitálových trzích ve Spojených Státech a mimo ně s podmínkami a hlavním upisovatelem , jak je to shrnuto ve zprávě Dow Jones Capital Markets .</czech>
+  <sure>2-4 3-6 4-7 5-8 7-9 8-10 9-11 10-15 12-16 14-17 16-18 17-19 19-13 20-14 22-21 23-22 24-23 27-26 28-27 29-28 29-30 31-33 32-34 33-35 34-36 35-31 35-32</sure>
+  <possible>1-4 6-8 11-17 17-20 20-12</possible>
+  <phrasal>25-24 25-25 26-24 26-25</phrasal>
+</s>
+<s id="wsj_2399-s2">
+  <english>Dow Chemical Co . --</english>
+  <czech>Společnost Dow Chemical Co . -</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s3">
+  <english>$ 150 million of 8.55 % senior notes due Oct . 15 , 2009 , priced at par .</english>
+  <czech>150 milionů dolarů prioritních směnek s výnosem 8.55 % , splatných v nominální hodnotě 15 . října 2009 .</czech>
+  <sure>1-3 2-1 3-2 5-8 6-9 9-11 10-17 12-15 14-18 16-7 19-19</sure>
+  <possible>12-16 16-6</possible>
+  <phrasal>7-4 7-5 8-4 8-5 17-12 17-13 17-14 18-12 18-13 18-14</phrasal>
+</s>
+<s id="wsj_2399-s4">
+  <english>The issue , which is puttable back to the company at par on Oct . 15 , 1999 , was priced at a spread of 50 basis points above the Treasury 's 10-year note .</english>
+  <czech>Tato emise , kterou lze zpět investovat do společnosti v nominální hodnotě 15 . října 1999 , byla oceněna na 50 setin procenta nad úrovní státních desetiletých směnek .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-7 7-6 8-8 10-9 14-15 16-13 18-16 19-17 20-18 21-19 22-20 26-21 29-24 33-27 35-29</sure>
+  <possible>9-9 13-15 16-14 30-28</possible>
+  <phrasal>11-10 11-11 11-12 12-10 12-11 12-12 27-22 27-23 28-22 28-23 31-25 31-26 31-28 32-25 32-26 32-28 34-25 34-26 34-28</phrasal>
+</s>
+<s id="wsj_2399-s5">
+  <english>Rated single-A-1 by Moody 's Investors Service Inc . and single-A by Standard & Poor 's Corp . , the non-callable issue will be sold through underwriters led by Merrill Lynch Capital Markets .</english>
+  <czech>Ohodnocena na single - A - 1 společností Moody ' s Investors Service Inc . a na single - A společností Standard & Poor ' s Corp . , tato nevypověditelná emise bude prodána prostřednictvím upisovatelů vedených společností Merrill Lynch Capital Markets .</czech>
+  <sure>1-1 2-3 2-4 2-5 2-6 2-7 4-9 5-10 5-11 6-12 7-13 8-14 9-15 10-16 11-18 11-19 11-20 13-22 14-23 15-24 16-25 16-26 17-27 18-28 19-29 20-30 21-31 22-32 23-33 24-34 25-34 26-35 27-36 28-37 30-39 31-40 32-41 33-42 34-43</sure>
+  <possible>2-2 3-9 11-17 12-24 29-42</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s6">
+  <english>Centel Capital Corp . --</english>
+  <czech>Společnost Centel Capital Corp . -</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s7">
+  <english>$ 150 million of 9 % debentures due Oct . 15 , 2019 , priced at 99.943 to yield 9.008 % .</english>
+  <czech>150 milionů dolarů v 9 procentních dluhopisech splatných 15 . října 2019 , oceněných na 99,943 s výnosem 9.008 % .</czech>
+  <sure>1-3 2-1 3-2 4-4 5-5 6-6 7-7 8-8 9-11 11-9 13-12 14-13 15-14 16-15 17-16 18-17 19-18 20-19 21-20 22-21</sure>
+  <possible>11-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s8">
+  <english>The non-callable issue , which can be put back to the company in 1999 , was priced at 99 basis points above the Treasury 's 10-year note .</english>
+  <czech>Nevypověditelná emise , která může být opět vložena do této společnosti v roce 1999 , byla oceněna na 99 setin procenta nad úrovní státních desetiletých směnek .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 7-6 10-9 11-10 12-11 13-12 14-14 15-15 16-16 17-17 18-18 19-19 22-22 26-25 28-27</sure>
+  <possible>1-2 14-13 23-26</possible>
+  <phrasal>8-7 8-8 9-7 9-8 20-20 20-21 21-20 21-21 24-23 24-24 24-26 25-23 25-24 25-26 27-23 27-24 27-26</phrasal>
+</s>
+<s id="wsj_2399-s9">
+  <english>Rated Baa-1 by Moody 's and triple-B-plus by S&P , the issue will be sold through underwriters led by Morgan Stanley & Co .</english>
+  <czech>Ohodnocena na Baa - 1 společností Moody ' s a triple - B - plus společností S & P , emise bude prodána prostřednictvím upisovatelů vedených společností Morgan Stanley & Co .</czech>
+  <sure>1-1 2-3 2-4 2-5 4-7 5-8 5-9 6-10 7-11 7-12 7-13 7-14 7-15 9-17 9-18 9-19 10-20 12-21 13-22 14-23 15-23 16-24 17-25 18-26 20-28 21-29 22-30 23-31 24-32</sure>
+  <possible>2-2 3-7 8-19 11-21 19-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s10">
+  <english>Federal Home Loan Mortgage Corp . --</english>
+  <czech>Společnost Federal Home Loan Mortgage Corp . -</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 7-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s11">
+  <english>$ 500 million of Remic mortgage securities offered in 13 classes by Prudential-Bache Securities Inc .</english>
+  <czech>500 milionů dolarů v hypotéčních cenných papírech společnosti Remic nabízených ve 13 kategoriích prostřednictvím společnosti Prudential - Bache Securities Inc .</czech>
+  <sure>1-3 2-1 3-2 4-4 5-9 6-5 7-6 7-7 8-10 9-11 10-12 11-13 12-14 13-16 13-17 13-18 14-19 15-20 16-21</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s12">
+  <english>The offering , Series 102 , backed by Freddie Mac 8 1/2 % securities with a weighted average remaining term to maturity of 28.4 years , was priced before the market 's afternoon surge .</english>
+  <czech>Tato nabídka , série 102 , která je krytá osm a půl procentními cennými papíry společnosti Freddie Mac se zbývající váženou průměrnou dobou splatnosti 28,4 let , byla oceněna předtím , než došlo na trhu k mírnému pohybu .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-9 9-17 10-18 11-10 12-12 13-13 14-14 14-15 15-19 17-21 18-22 19-20 20-23 22-24 24-25 25-26 26-27 27-28 28-29 29-30 31-35 34-37 34-38 35-39</sure>
+  <possible>7-8 8-18 12-11 16-23 21-24 23-26 30-35 32-35 34-36</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s13">
+  <english>Among classes for which details were available , yields ranged from 8.78 % , or 75 basis points over two-year Treasury securities , to 10.05 % , or 200 basis points over 10-year Treasurys .</english>
+  <czech>Mezi kategoriemi , pro které byly k dispozici detaily , se výnosy pohybovaly od 8.78 % , což znamená 75 setin procenta nad úrovní dvouletých státních dluhopisů , až po 10.05 % , což znamená 200 setin procenta nad úrovní desetiletých státních dluhopisů .</czech>
+  <sure>1-1 2-2 3-4 4-5 5-9 6-6 7-8 8-10 9-12 10-13 11-14 12-15 13-16 14-17 15-18 15-19 16-20 19-23 20-25 22-27 23-28 24-29 24-30 25-31 26-32 27-33 29-36 32-39 33-41 35-44</sure>
+  <possible>4-3 7-7 10-11</possible>
+  <phrasal>17-21 17-22 18-21 18-22 21-24 21-26 30-37 30-38 31-37 31-38 34-40 34-42 34-43</phrasal>
+</s>
+<s id="wsj_2399-s14">
+  <english>Federal Home Loan Mortgage Corp .</english>
+  <czech>Společnost Federal Home Loan Mortgage Corp .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s15">
+  <english>$ 300 million of Remic mortgage securities offered by Citicorp Securities Markets Inc .</english>
+  <czech>300 milionů dolarů v hypotéčních cenných papírech společnosti Remic nabízených společností Citicorp Securities Markets Inc .</czech>
+  <sure>1-3 2-1 3-2 4-4 5-9 6-5 7-6 7-7 8-10 10-12 11-13 12-14 13-15 14-16</sure>
+  <possible>9-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s16">
+  <english>The offering , Series 101 , is backed by Freddie Mac 9 1/2 % securities .</english>
+  <czech>Tato nabídka , série 101 , je krytá devíti a půl procentními cennými papíry společnosti Freddie Mac .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 10-16 11-17 12-9 13-11 14-12 15-13 15-14 16-18</sure>
+  <possible>9-17 13-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s17">
+  <english>Pricing details were n't immediately available .</english>
+  <czech>Cenové detaily nebyly bezprostředně k dispozici .</czech>
+  <sure>1-1 2-2 3-3 4-3 5-4 6-6 7-7</sure>
+  <possible>6-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s18">
+  <english>Federal Home Loan Mortgage Corp . --</english>
+  <czech>Společnost Federal Home Loan Mortgage Corp . -</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 7-8</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s19">
+  <english>$ 200 million of stripped mortgage securities underwritten by BT Securities Corp .</english>
+  <czech>200 milionů dolarů v trojité opci hypotečních cenných papírů upisovaných společností BT Securities Corp .</czech>
+  <sure>1-3 2-1 3-2 4-4 5-5 5-6 6-7 7-8 7-9 8-10 10-12 11-13 12-14 13-15</sure>
+  <possible>9-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s20">
+  <english>The agency 's first strips issue , collateralized by Freddie Mac 8 % securities pooled into a single security called a Giant , will be divided into interest-only and principal-only securities .</english>
+  <czech>První emise s trojitou opcí vydaná touto agenturou , zajištěná 8 procentními cennými papíry společnosti Freddie Mac a sloučená do jediných cenných papírů pod názvem Giant , bude rozdělena na úrokové cenné papíry a jistinové cenné papíry .</czech>
+  <sure>1-7 2-8 4-1 5-4 5-5 6-2 7-9 8-10 10-16 11-17 12-11 13-12 14-13 14-14 15-19 16-20 18-21 19-22 19-23 20-25 22-26 23-27 24-28 25-28 26-29 27-30 28-31 29-34 30-35 31-36 31-37 32-38</sure>
+  <possible>3-8 5-3 9-14 17-23 20-24 21-26</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s21">
+  <english>The collateral is being sold by a thrift institution .</english>
+  <czech>Záruka bude prodána šetrnou institucí .</czech>
+  <sure>2-1 3-2 4-2 5-3 8-4 9-5 10-6</sure>
+  <possible>1-1 6-5 7-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s22">
+  <english>The principal-only securities will be repackaged by BT Securities into a Freddie Mac Remic , Series 103 , that will have six classes .</english>
+  <czech>Jistinové cenné papíry budou přetransformovány společností BT Securities na cenné papíry Freddie Mac Remic , série 103 , která bude mít šest kategorií .</czech>
+  <sure>2-1 3-2 3-3 4-4 5-4 6-5 8-7 9-8 10-9 12-12 13-13 14-14 15-15 16-16 17-17 18-18 19-19 20-20 21-21 22-22 23-23 24-24</sure>
+  <possible>1-3 7-8 11-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s23">
+  <english>The interest-only securities will be sold separately by BT Securities .</english>
+  <czech>Úrokové cenné papíry budou prodány zvlášť společností BT Securities .</czech>
+  <sure>2-1 3-2 3-3 4-4 5-4 6-5 7-6 9-8 10-9 11-10</sure>
+  <possible>1-3 8-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s24">
+  <english>The principal-only securities pay the principal from the underlying Freddie Mac 8 % securities , while the interest-only securities pay only interest .</english>
+  <czech>Na jistinové cenné papíry se vyplácejí jistiny ze základních osmiprocentních cenných papírů s opčním právem společnosti Freddie Mac , zatímco na úrokové cenné papíry se vyplácejí jen úroky .</czech>
+  <sure>2-2 3-3 3-4 4-6 6-7 7-8 9-9 10-17 11-18 12-10 13-10 14-11 14-12 15-19 16-20 18-22 19-23 19-24 20-26 21-27 22-28 23-29</sure>
+  <possible>1-4 4-5 5-7 8-12 17-24 19-21 20-25</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s25">
+  <english>Freddie Mac said the principal-only securities were priced at 58 1/4 to yield 8.45 % , assuming an average life of eight years and a prepayment of 160 % of the PSA model .</english>
+  <czech>Společnost Freddie Mac uvedla , že jistinové cenné papíry byly oceněny na 58 1/4 $ s výnosem 8.45 % s předpokládanou průměrnou existencí osm let a platbou předem ve výši 160 % podle modelu PSA .</czech>
+  <sure>1-2 2-3 3-4 5-7 6-8 6-9 7-10 8-11 9-12 10-13 11-14 13-17 15-19 14-18 17-21 19-22 20-23 22-24 24-26 23-25 26-27 26-28 27-29 28-31 29-32 30-33 33-34 32-35 34-36</sure>
+  <possible>4-9 12-17 13-16 17-20 18-23 21-25 25-27 27-30 31-34</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s26">
+  <english>The interest-only securities were priced at 35 1/2 to yield 10.72 % .</english>
+  <czech>Úrokové cenné papíry byly oceněny na 35 1/2 $ s výnosem 10.72 % .</czech>
+  <sure>2-1 3-2 3-3 4-4 5-5 6-6 7-7 8-8 10-11 11-12 12-13 13-14</sure>
+  <possible>1-3 9-11 10-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2399-s27">
+  <english>There were no major Eurobond or foreign bond offerings in Europe Friday .</english>
+  <czech>V pátek v Evropě nebyly nabízeny žádné významné euro dluhopisy , ani zahraniční dluhopisy .</czech>
+  <sure>2-5 3-5 4-8 5-9 5-10 6-12 7-13 8-14 9-6 10-3 11-4 12-2 13-15</sure>
+  <possible>3-7 6-11 12-1</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

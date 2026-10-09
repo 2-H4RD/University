@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="celex_31965R0079-s1">
+  <english>A contract shall be concluded annually on the authority of the Member State between the competent authority designated by the latter and each accountancy office chosen as provided in Article 8 .</english>
+  <czech>Členský stát odpovídá za každoroční uzavírání smlouvy mezi příslušným orgánem jmenovaným tímto členským státem a mezi účetními středisky vybranými podle článku 8 .</czech>
+  <sure>2-7 5-6 6-5 10-4 12-1 13-2 14-8 16-9 17-10 18-11 19-12 20-12 22-15 23-16 24-17 25-18 26-19 27-20 28-20 30-21 31-22 32-23</sure>
+  <possible>1-7 11-2 15-10 21-12 29-20</possible>
+  <phrasal>3-3 4-3 7-3 8-3 9-3</phrasal>
+</s>
+<s id="celex_31965R0079-s2">
+  <english>Under this contract the accountancy office will undertake , in consideration of a standard fee , to complete farm returns in a manner consistent with the provisions of Article 7 .</english>
+  <czech>Touto smlouvou se účetní střediska zavazují vyhotovovat za paušální poplatek podnikové výkazy podle článku 7 .</czech>
+  <sure>2-1 3-2 5-4 6-5 8-3 8-6 12-8 14-9 15-10 18-7 19-11 20-12 24-13 25-13 29-14 30-15 31-16</sure>
+  <possible>1-1 4-5 7-6 13-10 17-7 21-13 22-13 23-13 28-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s3">
+  <english>The terms of this contract , which must be uniform in all Member States , shall be determined in accordance with the procedure laid down in Article 19 .</english>
+  <czech>Smluvní podmínky , které musí být jednotné ve všech členských státech , se stanoví postupem podle článku 19 .</czech>
+  <sure>2-1 2-2 6-3 7-4 8-5 9-6 10-7 11-8 12-9 13-10 14-11 15-12 18-14 23-15 24-16 25-16 27-17 28-18 29-19</sure>
+  <possible>1-2 16-14 17-14 18-13 19-15 20-15 21-15 22-15 26-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s4">
+  <english>The supplementary terms which may be included in this contract by Member States shall be determined in accordance with the same procedure .</english>
+  <czech>Doplňující podmínky , které členský stát může do smlouvy zahrnout , se stanoví stejným postupem .</czech>
+  <sure>2-1 3-2 4-4 5-7 6-7 7-10 8-8 10-9 12-5 13-6 16-13 21-14 22-15 23-16</sure>
+  <possible>1-2 4-3 9-9 11-6 14-13 15-13 16-12 20-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s5">
+  <english>Where the duties of an accountancy office are carried out by an administrative department , the latter shall be notified as to its duties through the normal administrative channels .</english>
+  <czech>Plní - li povinnosti účetního střediska správní orgán , musí být tomuto orgánu jeho povinnosti oznámeny běžnou úřední cestou .</czech>
+  <sure>3-4 6-5 7-6 9-1 10-1 13-7 14-8 15-9 16-12 18-10 19-11 20-16 23-14 24-15 27-17 28-18 29-19 30-20</sure>
+  <possible>1-2 1-3 2-4 4-6 5-5 8-1 11-8 12-7 25-19 26-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s6">
+  <english>Collection of accountancy data for the purpose of a business analysis of agricultural holdings</english>
+  <czech>Sběr účetních údajů pro účely analýzy hospodářské činnosti zemědělských podniků</czech>
+  <sure>1-1 3-2 4-3 5-4 7-5 10-8 11-6 13-9 14-10</sure>
+  <possible>2-3 6-5 8-8 9-8 12-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s7">
+  <english>The provisions of this Chapter concern the collection of accountancy data for the purpose of a business analysis of agricultural holdings .</english>
+  <czech>Ustanovení této kapitoly se týkají sběru účetních údajů pro účely analýzy hospodářské činnosti zemědělských podniků .</czech>
+  <sure>2-1 4-2 5-3 6-4 6-5 8-6 10-7 11-8 12-9 14-10 17-13 18-11 20-14 21-15 22-16</sure>
+  <possible>1-1 3-3 7-6 9-8 13-10 15-11 16-12 17-12 19-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s8">
+  <english>There shall be determined in accordance with the procedure laid down in Article 19 :</english>
+  <czech>Postupem podle článku 19 se stanovují :</czech>
+  <sure>4-6 5-2 6-2 7-2 9-1 13-3 14-4 15-7</sure>
+  <possible>1-6 2-6 3-6 4-5 8-1 12-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s9">
+  <english>- the subjects of the analyses mentioned in Article 1 ( 2 ) ( b ) ;</english>
+  <czech>- předměty analýz uvedených v čl . 1 odst . 2 písm . b ) a</czech>
+  <sure>1-1 3-2 6-3 7-4 8-5 9-6 10-8 12-11 15-14 16-15</sure>
+  <possible>2-2 4-3 5-3 9-7</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s10">
+  <english>- detailed rules concerning the selection and number of returning holdings , these being established according to the objectives of each particular analysis .</english>
+  <czech>- prováděcí pravidla týkající se výběru a počtu vykazujících podniků , stanovená podle cílů každé analýzy .</czech>
+  <sure>1-1 2-2 3-3 4-4 4-5 6-6 7-7 8-8 10-9 11-10 12-11 15-12 16-13 19-14 21-15 23-16 24-17</sure>
+  <possible>5-6 9-10 13-12 14-12 17-13 18-14 20-16 22-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s11">
+  <english>Each returning holding selected in accordance with the second indent of Article 11 shall be subject of a special farm return , which shall be individual to that holding and anonymous .</english>
+  <czech>Každý vykazující podnik , vybraný postupem podle čl . 11 druhé odrážky , vyplní speciální podnikový výkaz , který bude individuální a anonymní .</czech>
+  <sure>1-1 2-2 3-3 4-5 5-7 6-7 9-11 10-12 12-8 13-10 19-15 20-16 21-17 22-18 23-19 24-20 25-20 26-21 30-22 31-23 32-24</sure>
+  <possible>7-7 8-11 11-8 12-9 18-17</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s12">
+  <english>This farm return shall include the accountancy data required under Article 7 ( 2 ) and all such further accountancy items and details as each particular analysis may require .</english>
+  <czech>Tento výkaz obsahuje účetní údaje požadované v čl . 7 odst . 2 a všechny další položky a individuální údaje účetního charakteru , které mohou jednotlivé analýzy vyžadovat .</czech>
+  <sure>1-1 3-2 5-3 7-4 8-5 9-6 10-7 11-8 12-10 14-13 16-14 17-15 19-16 20-21 21-17 22-18 23-20 24-24 25-26 26-26 27-27 28-25 29-28 30-29</sure>
+  <possible>2-2 4-3 6-5 11-9 20-22 24-23</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s13">
+  <english>The type of accountancy data to be given in a special farm return , the form in which such data are to be presented and the definitions and instructions relating thereto shall be determined in accordance with the procedure laid down in Article 19 .</english>
+  <czech>Druh účetních údajů uváděných v tomto speciálním podnikovém výkazu , forma jejich předkládání , definice a pokyny týkající se těchto údajů se určí postupem podle článku 19 .</czech>
+  <sure>2-1 4-2 5-3 8-4 9-5 11-7 12-8 13-9 14-10 16-11 19-20 20-21 24-13 25-14 27-15 28-16 29-17 30-18 34-23 35-25 36-25 37-25 39-24 43-26 44-27 45-28</sure>
+  <possible>1-1 3-3 6-4 7-4 10-6 15-11 21-13 22-13 23-13 26-15 30-19 32-23 33-23 34-22 38-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s14">
+  <english>Special farm returns shall be completed by the various accountancy offices chosen as provided in Article 13 .</english>
+  <czech>Účetní střediska vybraná postupem podle článku 13 vypracovávají speciální podnikové výkazy .</czech>
+  <sure>1-9 2-10 3-11 6-8 10-1 11-2 12-3 13-5 14-5 16-6 17-7 18-12</sure>
+  <possible>4-8 5-8 15-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s15">
+  <english>A farmer whose holding is selected in accordance with the second indent of Article 11 shall choose from a list compiled for the purpose by the liaison agency an accountancy office willing to complete the special return for his holding in accordance with the terms of the contract provided for in Article 14 .</english>
+  <czech>Vedoucí zemědělského podniku , jehož podnik je vybrán podle čl . 11 druhé odrážky , si zvolí ze seznamu , vypracovaného pro tento účel kontaktním orgánem , účetní středisko ochotné vyhotovovat speciální podnikový výkaz za jeho podnik podle smluvních podmínek stanovených v článku 14 .</czech>
+  <sure>3-5 4-6 5-7 6-8 7-9 8-9 9-9 11-13 12-14 14-10 15-12 17-17 18-18 20-19 21-21 22-22 23-23 24-24 27-25 28-26 30-28 31-29 32-30 34-31 36-32 37-34 38-35 39-36 40-37 41-38 42-38 43-38 45-39 45-40 49-41 50-41 51-42 52-43 53-44 54-45</sure>
+  <possible>1-1 3-4 10-13 13-10 14-11 16-17 17-16 19-19 25-26 26-26 29-28 33-31 35-34 37-33 44-40</possible>
+  <phrasal>2-1 2-2 2-3</phrasal>
+</s>
+<s id="celex_31965R0079-s16">
+  <english>A contract shall be concluded on the authority of the Member State between the competent authority designated by the latter and each accountancy office chosen as provided in Article 13 .</english>
+  <czech>Členský stát odpovídá za každoroční uzavírání smlouvy mezi příslušnými orgány jmenovanými tímto členským státem a účetním střediskem vybraným podle článku 13 .</czech>
+  <sure>2-7 5-6 11-1 12-2 13-8 15-9 16-10 17-11 21-15 23-16 24-17 25-18 26-19 27-19 29-20 30-21 31-22</sure>
+  <possible>1-7 3-6 4-6 6-3 7-3 8-3 8-4 9-2 10-2 14-9 18-12 19-12 20-12 28-19</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s17">
+  <english>Under this contract the accountancy office will undertake , in consideration of a standard fee , to complete special farm returns in a manner consistent with the provisions of Article 12 .</english>
+  <czech>Touto smlouvou se účetní středisko zavazuje vyhotovovat za paušální poplatek speciální podnikové výkazy postupem podle článku 12 .</czech>
+  <sure>2-1 3-2 5-4 6-5 8-3 8-6 14-9 15-10 18-7 19-11 20-12 21-13 24-14 25-15 26-15 30-16 31-17 32-18</sure>
+  <possible>1-1 4-5 7-6 12-8 13-10 17-7 22-14 23-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s18">
+  <english>The terms of this contract , which must be uniform in all Member States , shall be determined in accordance with the procedure laid down in Article 19 .</english>
+  <czech>Smluvní podmínky , které musí být jednotné ve všech členských státech , se stanoví postupem podle článku 19 .</czech>
+  <sure>2-1 2-2 6-3 7-4 8-5 9-6 10-7 11-8 12-9 13-10 14-11 15-12 18-13 18-14 19-16 20-16 21-16 23-15 27-17 28-18 29-19</sure>
+  <possible>1-2 16-14 17-14 22-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s19">
+  <english>The supplementary terms which may be included in this contract by Member States shall be determined in accordance with the same procedure .</english>
+  <czech>Doplňující podmínky , které mohou být členským státem do smlouvy zahrnuty , se stanoví stejným postupem .</czech>
+  <sure>2-1 3-2 4-4 5-5 6-6 7-11 8-9 10-10 12-7 13-8 16-13 16-14 21-15 22-16 23-17</sure>
+  <possible>1-2 4-3 9-10 11-8 14-14 15-14 20-15</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s20">
+  <english>Where the duties of a accountancy office are carried out by an administrative department , the latter shall be notified as to its duties through the normal administrative channels .</english>
+  <czech>Plní - li povinnosti účetního střediska správní orgán , musí být tento orgán o svých povinnostech informován běžnou úřední cestou .</czech>
+  <sure>3-4 6-5 7-6 9-1 10-1 13-7 14-8 15-9 18-10 19-11 20-17 21-14 22-14 23-15 24-16 27-18 28-19 29-20 30-21</sure>
+  <possible>1-2 1-3 2-4 4-6 5-6 8-1 11-7 12-7 16-12 17-12 25-20 26-20</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s21">
+  <english>General provisions</english>
+  <czech>Obecná ustanovení</czech>
+  <sure>1-1 2-2</sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s22">
+  <english>It shall be prohibited to use for taxation purposes any individual accountancy data or other individual details obtained in implementation of this Regulation .</english>
+  <czech>Zakazuje se používání individuálních účetních údajů nebo jiných podrobných informací , získaných při provádění tohoto nařízení , pro daňové účely .</czech>
+  <sure>4-1 6-3 7-18 8-19 9-20 11-4 12-5 13-6 14-7 15-8 16-9 17-10 18-12 19-13 20-14 22-15 23-16 24-21</sure>
+  <possible>1-1 2-1 3-1 4-2 5-3 10-5 21-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s23">
+  <english>It shall be prohibited for any person participating or having participated in the data network to divulge any individual accountancy data or any other individual details of which knowledge was acquired in the exercise of his duties or otherwise incidentally to such exercise .</english>
+  <czech>Zveřejňování individuálních účetních údajů nebo jiných podrobných informací osobou , která vykonává nebo vykonávala činnost v rámci datové sítě a která získala znalost takových údajů při plnění svých povinností nebo jinak náhodně při výkonu svých povinností , je zakázáno .</czech>
+  <sure>2-38 4-39 7-9 8-12 9-13 11-14 11-15 12-16 14-18 15-19 17-1 19-2 20-3 21-4 22-5 24-6 25-7 26-8 28-21 29-23 31-22 32-26 34-27 36-28 37-29 38-30 39-31 40-32 43-34 43-36 44-40</sure>
+  <possible>1-38 3-39 5-9 6-9 10-14 12-17 13-19 16-1 18-4 23-6 27-21 30-22 33-27 35-29</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s24">
+  <english>Member States shall take all appropriate measures to penalise infringement of the provisions of paragraph 2 .</english>
+  <czech>Členské státy přijmou veškerá vhodná opatření k uložení sankcí za porušení ustanovení odstavce 2 .</czech>
+  <sure>1-1 2-2 4-3 5-4 6-5 7-6 8-7 9-8 9-9 10-11 11-10 13-12 15-13 16-14 17-15</sure>
+  <possible>3-3 12-12 14-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s25">
+  <english>The Regional Committees and accountancy offices shall be bound , within their respective areas of responsibility , to furnish the Commission with all information which the latter may request of them regarding the discharge of their duties in implementation of this Regulation .</english>
+  <czech>Regionální výbory a účetní střediska poskytnou Komisi veškeré informace v rámci své působnosti , které souvisejí s plněním jejich povinností při provádění tohoto nařízení a na které se Komise dotáže .</czech>
+  <sure>2-1 3-2 4-3 5-4 6-5 11-10 12-12 14-11 16-13 19-6 21-7 23-8 24-9 25-15 29-28 29-30 30-26 31-27 32-16 33-17 34-18 36-19 37-20 38-21 39-22 41-23 42-24 43-31</sure>
+  <possible>1-2 15-13 18-6 20-7 22-6 25-14 28-30 35-20 40-24</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s26">
+  <english>Such requests for information and the relevant answers shall be forwarded in writing through the liaison agency .</english>
+  <czech>Dotazy a příslušné odpovědi se sdělují písemně prostřednictvím kontaktního orgánu .</czech>
+  <sure>2-1 5-2 7-3 8-4 11-6 12-7 13-7 14-8 16-9 17-10 18-11</sure>
+  <possible>3-1 4-1 6-4 9-6 10-6 11-5 15-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s27">
+  <english>If the information supplied is inadequate or if such information fails to arrive in good time , the Commission may , with the collaboration of the liaison agency , send experts to work on the spot .</english>
+  <czech>Budou - li dodané informace nedostačující nebo nebudou - li sděleny v řádném časovém termínu , může Komise ve spolupráci s kontaktním orgánem vyslat odborníky , aby provedli nápravu na místě .</czech>
+  <sure>1-3 3-5 4-4 5-1 6-6 7-7 8-10 11-8 14-12 15-13 16-14 16-15 17-16 19-18 20-17 22-19 24-20 25-21 27-22 28-23 30-24 31-25 32-27 34-30 36-31 37-32</sure>
+  <possible>1-2 2-5 8-9 12-11 13-11 18-18 23-20 26-23 32-26 33-28 33-29 35-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s28">
+  <english>There is hereby set up a Community Committee for the Farm Accountancy Data Network , hereinafter called the " Community Committee " .</english>
+  <czech>Zřizuje se výbor Společenství pro zemědělskou účetní datovou síť , dále jen " výbor Společenství " .</czech>
+  <sure>4-1 5-1 7-4 8-3 9-5 11-6 12-7 13-8 14-9 15-10 16-11 19-13 20-15 21-14 22-16 23-17</sure>
+  <possible>2-1 4-2 6-3 10-9 17-12 18-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s29">
+  <english>The Community Committee shall consist of representatives of the Member States and of the Commission .</english>
+  <czech>Výbor Společenství se skládá ze zástupců členských států a Komise .</czech>
+  <sure>2-2 3-1 5-4 6-5 7-6 10-7 11-8 12-9 15-10 16-11</sure>
+  <possible>1-1 4-4 5-3 8-8 9-8 13-10 14-10</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s30">
+  <english>Each Member State shall be represented on the Community Committee by not more than five officials .</english>
+  <czech>Každý členský stát je zastoupen ve výboru Společenství nanejvýše pěti členy .</czech>
+  <sure>1-1 2-2 3-3 5-4 6-5 7-6 9-8 10-7 12-9 13-9 15-10 17-12</sure>
+  <possible>4-4 8-7 11-10 14-9 16-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s31">
+  <english>The Chairman of the Community Committee shall be a representative of the Commission .</english>
+  <czech>Výboru Společenství předsedá zástupce Komise .</czech>
+  <sure>2-3 5-2 6-1 10-4 13-5 14-6</sure>
+  <possible>1-3 3-1 4-1 7-3 8-3 9-4 11-5 12-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s32">
+  <english>Where the procedure laid down in Article 19 is applied , the votes of Member States shall be weighted as provided in Article 148 ( 2 ) of the Treaty .</english>
+  <czech>Použije - li se postup podle článku 19 , je hlasům členských států přidělena váha podle čl . 148 odst . 2 Smlouvy .</czech>
+  <sure></sure>
+  <possible></possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s33">
+  <english>The Chairman shall not vote .</english>
+  <czech>Předseda nehlasuje .</czech>
+  <sure>2-1 4-2 5-2 6-3</sure>
+  <possible>1-1 3-2</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s34">
+  <english>Where the procedure laid down in this Article is to be followed , matters shall be referred to the Community Committee by the Chairman , either on his own initiative or at the request of the representative of a Member State .</english>
+  <czech>Má - li být zahájen postup podle tohoto článku , přednese věc výboru Společenství jeho předseda , a to buď z vlastního podnětu , nebo na žádost zástupce některého členského státu .</czech>
+  <sure>3-6 7-8 8-9 9-1 10-1 11-4 12-5 13-10 14-12 17-11 20-14 21-13 23-15 24-16 26-20 27-21 29-22 30-23 31-25 32-26 34-27 37-28 39-29 40-30 41-31 42-32</sure>
+  <possible>1-2 1-3 2-6 4-7 5-7 6-9 15-11 16-11 18-13 19-13 22-16 25-20 28-22 31-24 33-27 35-28 36-28 38-31</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s35">
+  <english>The representative of the Commission shall submit a draft of the measures to be adopted .</english>
+  <czech>Zástupce Komise předloží návrh opatření , která mají být přijata .</czech>
+  <sure>2-1 5-2 7-3 9-4 12-5 15-10 16-11</sure>
+  <possible>1-1 3-2 4-2 6-3 8-4 10-5 11-5</possible>
+  <phrasal>13-8 13-9 14-8 14-9</phrasal>
+</s>
+<s id="celex_31965R0079-s36">
+  <english>The Community Committee shall deliver its opinion on such measures within a time limit set by the Chairman having regard to the urgency of the matter .</english>
+  <czech>Výbor Společenství zaujme stanovisko k opatřením ve lhůtě , kterou může předseda stanovit podle naléhavosti věci .</czech>
+  <sure>2-2 3-1 5-3 7-4 8-5 10-6 11-7 13-8 14-8 15-13 18-12 20-14 23-15 26-16 27-17</sure>
+  <possible>1-1 4-3 6-4 9-6 12-8 16-12 17-12 19-14 21-14 22-15 24-16 25-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s37">
+  <english>Opinions shall be delivered by a majority of twelve votes .</english>
+  <czech>Stanovisko se přijímá většinou dvanácti hlasů .</czech>
+  <sure>1-1 4-3 7-4 9-5 10-6 11-7</sure>
+  <possible>2-3 3-3 4-2 5-4 6-4 8-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s38">
+  <english>The Commission shall adopt measures which shall apply immediately .</english>
+  <czech>Komise přijme opatření , která jsou okamžitě použitelná .</czech>
+  <sure>2-1 4-2 5-3 6-5 7-6 8-8 9-7 10-9</sure>
+  <possible>1-1 3-2 6-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s39">
+  <english>However , if these measures are not in accordance with the opinion of the Community Committee , they shall forthwith be communicated by the Commission to the Council .</english>
+  <czech>Pokud však tato opatření nejsou v souladu se stanoviskem výboru , sdělí je Komise neprodleně Radě .</czech>
+  <sure>1-2 3-1 4-3 5-4 6-5 7-5 8-6 9-7 10-8 12-9 16-10 17-11 18-13 20-15 22-12 25-14 28-16 29-17</sure>
+  <possible>2-2 11-9 13-10 14-10 19-12 21-12 23-14 24-14 26-16 27-16</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s40">
+  <english>In that event the Commission may defer application of the measures which it has adopted for not more than one month from the date of such communication .</english>
+  <czech>V tomto případě může Komise nejvýše o jeden měsíc ode dne tohoto sdělení odložit použitelnost opatření , o kterých rozhodla .</czech>
+  <sure>1-1 2-2 3-3 5-5 6-4 7-14 8-15 11-16 12-19 15-20 17-6 18-6 19-7 20-8 21-9 22-10 24-11 26-12 27-13 28-21</sure>
+  <possible>4-5 9-16 10-16 12-17 12-18 13-20 14-20 16-9 23-11 25-13</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s41">
+  <english>The Council , acting by a qualified majority , may take a different decision within one month .</english>
+  <czech>Rada může kvalifikovanou většinou ve lhůtě jednoho měsíce přijmout jiné rozhodnutí .</czech>
+  <sure>2-1 7-3 8-4 10-2 11-9 13-10 14-11 15-5 16-7 17-8 18-12</sure>
+  <possible>1-1 5-4 6-4 12-11</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s42">
+  <english>The Community Committee shall be consulted :</english>
+  <czech>Výbor Společenství bude konzultován :</czech>
+  <sure>2-2 3-1 5-3 6-4 7-5</sure>
+  <possible>1-1 4-3</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s43">
+  <english>( a ) for the purpose of verifying that the selection of returning holdings under Article 5 has been carried out in conformity with the provisions of Article 4 ;</english>
+  <czech>a ) za účelem prověření , zda byl výběr vykazujících podniků podle článku 5 proveden v souladu s článkem 4 ;</czech>
+  <sure>2-1 3-2 4-3 6-4 8-5 9-7 11-9 13-10 14-11 15-12 16-13 17-14 19-8 20-15 21-15 22-16 23-17 24-18 28-19 29-20 30-21</sure>
+  <possible>5-4 7-5 9-6 10-9 12-11 18-8</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s44">
+  <english>( b ) for the purpose of analysing and evaluating the accountancy data furnished by the data network , while having regard in particular to data deriving inter alia from farm accounts and statistics generally and from national accounts .</english>
+  <czech>b ) za účelem analýzy a hodnocení účetních údajů poskytovaných datovými sítěmi , zejména s ohledem na údaje pocházející mimo jiné z účetnictví zemědělských podniků , ze statistiky obecně a z účetnictví členských států .</czech>
+  <sure>2-1 3-2 4-3 6-4 8-5 9-6 10-7 12-8 13-9 14-10 17-11 18-12 19-13 22-16 23-14 24-14 25-17 26-18 27-19 30-22 31-24 31-25 32-23 34-28 35-29 36-30 37-31 39-32 40-35</sure>
+  <possible>5-4 7-5 11-9 15-12 16-12 21-16 22-15 33-26 34-27 38-34</possible>
+  <phrasal>28-20 28-21 29-20 29-21</phrasal>
+</s>
+<s id="celex_31965R0079-s45">
+  <english>The Community Committee may examine any other question raised by its Chairman , either on his own initiative or at the request of a representative of a Member State .</english>
+  <czech>Výbor Společenství se může zabývat jakoukoli jinou otázkou , kterou mu k posouzení předloží jeho předseda buď z vlastního podnětu , nebo na žádost zástupce některého členského státu .</czech>
+  <sure>2-2 3-1 4-4 5-5 6-6 7-7 8-8 9-14 11-15 12-16 14-17 15-18 17-19 18-20 19-22 20-23 22-24 25-25 27-26 28-27 29-28 30-29</sure>
+  <possible>1-1 5-3 10-16 13-17 16-19 19-21 21-24 23-25 24-25 26-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s46">
+  <english>It shall be kept regularly informed of the working of the data network .</english>
+  <czech>Výbor Společenství je pravidelně informován o provozu datové sítě .</czech>
+  <sure>4-3 5-4 6-5 7-6 9-7 12-8 13-9 14-10</sure>
+  <possible>1-3 2-3 3-3 8-7 10-9 11-9</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s47">
+  <english>The Chairman shall convene the meetings of the Community Committee .</english>
+  <czech>Předseda svolává zasedání výboru Společenství .</czech>
+  <sure>2-1 4-2 6-3 9-5 10-4 11-6</sure>
+  <possible>1-1 3-2 5-3 7-4 8-4</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s48">
+  <english>Secretarial services for the Community Committee shall be provided by the Commission .</english>
+  <czech>Komise poskytuje sekretářské služby pro výbor Společenství .</czech>
+  <sure>1-3 2-4 3-5 5-7 6-6 9-2 12-1 13-8</sure>
+  <possible>4-6 7-2 8-2 10-1 11-1</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s49">
+  <english>The Community Committee shall draw up its own rules of procedure .</english>
+  <czech>Výbor Společenství vypracuje svůj jednací řád .</czech>
+  <sure>2-2 3-1 5-3 6-3 7-4 8-4 9-6 11-5 12-7</sure>
+  <possible>1-1 4-3 10-5</possible>
+  <phrasal></phrasal>
+</s>
+<s id="celex_31965R0079-s50">
+  <english>Appropriations to cover those costs of the data network attributable specifically to payment of fees to accountancy offices in consideration of their performance of the duties referred to in Articles 9 and 14 shall be included in the Community budget , in the Commission section .</english>
+  <czech>Finanční prostředky na krytí nákladů na datovou síť , připadající přímo na platby paušálních poplatků účetním střediskům jako úhrada za výkon povinností uvedených v článcích 9 a 14 , se zahrnují do rozpočtu Společenství do oddílu Komise .</czech>
+  <sure>1-1 1-2 2-3 3-4 5-5 6-6 8-7 9-8 10-10 11-11 12-12 13-13 15-14 15-15 17-16 18-17 20-19 21-20 23-21 26-22 27-23 29-24 30-25 31-26 32-27 33-28 36-31 37-32 39-34 40-33 42-35 44-37 45-36 46-38</sure>
+  <possible>4-5 7-8 14-15 16-17 19-18 22-21 24-22 25-22 28-23 34-31 35-31 36-30 38-33 43-37</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

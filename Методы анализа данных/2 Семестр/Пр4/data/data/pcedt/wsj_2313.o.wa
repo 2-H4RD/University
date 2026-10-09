@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sentences>
+<s id="wsj_2313-s1">
+  <english>Kaufman & Broad Home Corp . said it formed a $ 53.4 million limited partnership subsidiary to buy land in California suitable for residential development .</english>
+  <czech>Firma Kaufman & Broad Home Corp . oznámila , že vytvořila svou dceřinou komanditní společnost s kapitálem 53,4 milionů dolarů za účelem zakoupení pozemku v Kalifornii vhodného pro rezidenční výstavbu .</czech>
+  <sure>1-2 2-3 3-4 4-5 5-6 6-7 7-8 9-11 11-20 12-18 13-19 17-21 17-22 18-23 19-24 20-25 21-26 22-27 23-28 24-29 25-30 26-31</sure>
+  <possible>10-15</possible>
+  <phrasal>14-13 14-14 14-15 15-13 15-14 15-15 16-13 16-14 16-15</phrasal>
+</s>
+<s id="wsj_2313-s2">
+  <english>The partnership , Kaufman & Broad Land Development Venture Limited Partnership , is a 50 - 50 joint venture with a trust created by institutional clients of Heitman Advisory Corp . , a unit of Heitman Financial Corp . , a real estate advisory , management and development company with offices in Chicago and Beverly Hills , Calif .</english>
+  <czech>Tato firma , Kaufman & Broad Land Development Venture Limited Partnership , je společným podnikem 50 - 50 s trustem vytvořeným institucionálními klienty firmy Heitman Advisory Corp . , patřící pod Heitman Financial Corp . , firmy zabývající se poradenstvím , managementem a rozvojovým plánováním v oblasti realit , která má kanceláře v Chicagu a v Beverly Hills v Kalifornii .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-12 13-13 16-17 17-16 17-18 18-14 19-15 20-19 22-20 23-21 25-22 26-23 28-25 29-26 30-27 31-28 32-29 36-32 37-33 38-34 39-35 40-36 44-40 45-41 46-42 47-43 48-44 48-45 49-37 51-52 52-53 52-56 53-54 54-55 55-57 56-58 58-60 59-61</sure>
+  <possible>14-15 21-20 24-23 27-24 41-37</possible>
+  <phrasal>33-30 33-31 34-30 34-31 35-30 35-31 42-46 42-47 42-48 43-46 43-47 43-48</phrasal>
+</s>
+<s id="wsj_2313-s3">
+  <english>Kaufman & Broad , a home building company , declined to identify the institutional investors .</english>
+  <czech>Kaufman & Broad , firma specializující se na bytovou výstavbu , odmítla institucionální investory jmenovat .</czech>
+  <sure>1-1 2-2 3-3 4-4 6-9 7-10 8-5 9-11 10-12 12-15 14-13 15-14 16-16</sure>
+  <possible>5-5 11-15 13-14</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2313-s4">
+  <english>The land to be purchased by the joint venture has n't yet received zoning and other approvals required for development , and part of Kaufman & Broad 's job will be to obtain such approvals .</english>
+  <czech>Pozemek , který má tento společný podnik koupit , zatím nedostal územní ani jiná povolení nutná pro výstavbu , a tak jeden z úkolů firmy Kaufman & Broad bude tato povolení získat .</czech>
+  <sure>2-1 7-5 8-6 9-7 11-11 12-10 13-11 14-12 15-13 16-14 17-15 18-16 19-17 20-18 21-19 22-20 25-26 26-27 27-28 30-29 31-29 33-32 34-30 35-31 36-33</sure>
+  <possible>1-1 6-7 10-11 28-25 32-32</possible>
+  <phrasal>3-4 3-8 4-4 4-8 5-4 5-8 23-22 23-23 23-24 24-22 24-23 24-24 29-22 29-23 29-24</phrasal>
+</s>
+<s id="wsj_2313-s5">
+  <english>The partnership runs the risk that it may not get the approvals for development , but in return , it can buy land at wholesale rather than retail prices , which can result in sizable savings , said Bruce Karatz , president and chief executive officer of Kaufman & Broad .</english>
+  <czech>Společnost podstupuje riziko , že třeba nesežene povolení k výstavbě , ale na druhé straně zase může koupit pozemek za velkoobchodní , nikoliv za maloobchodní ceny , což může znamenat slušné úspory , řekl Bruce Karatz , prezident a výkonný ředitel Kaufman & Broad .</czech>
+  <sure>2-1 3-2 5-3 6-5 8-6 9-7 10-7 12-8 13-9 14-10 15-11 16-12 17-13 18-14 18-15 21-17 22-18 23-19 24-20 25-21 28-25 29-26 30-27 31-28 32-29 33-30 35-31 36-32 37-33 38-34 39-35 40-36 41-37 42-38 43-39 48-42 49-43 50-44 51-45</sure>
+  <possible>1-1 4-3 11-8 26-23 27-23 34-30</possible>
+  <phrasal>44-40 44-41 45-40 45-41 46-40 46-41</phrasal>
+</s>
+<s id="wsj_2313-s6">
+  <english>`` There are really very few companies that have adequate capital to buy properties in a raw state for cash .</english>
+  <czech>" Je opravdu velmi málo firem , které mají dostatečný kapitál , aby koupily pozemky v syrovém stavu za hotové .</czech>
+  <sure>1-1 2-2 3-2 4-3 5-4 6-5 7-6 8-8 9-9 10-10 11-11 12-13 13-14 14-15 15-16 17-17 18-18 19-19 20-20 21-21</sure>
+  <possible>16-18</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2313-s7">
+  <english>Typically , developers option property , and then once they get the administrative approvals , they buy it , '' said Mr . Karatz , adding that he believes the joint venture is the first of its kind .</english>
+  <czech>Normálně stavební podnikatelé získávají opci na pozemky a pak , když dostanou administrativní povolení , je kupují , " řekl pan Karatz a dodal , že je přesvědčen , že tento společný podnik je první svého druhu .</czech>
+  <sure>3-2 3-3 4-4 4-5 5-7 7-8 8-9 9-11 11-12 13-13 14-14 15-15 17-17 18-16 19-18 20-19 21-20 22-21 24-22 27-26 29-27 29-28 30-31 31-32 32-33 33-34 35-35 37-36 38-37 39-38</sure>
+  <possible>1-1 5-6 12-14 34-35 36-36</possible>
+  <phrasal>25-23 25-24 26-23 26-24</phrasal>
+</s>
+<s id="wsj_2313-s8">
+  <english>`` We usually operate in that conservative manner . ''</english>
+  <czech>" Obvykle postupujeme tímto konzervativním způsobem . "</czech>
+  <sure>1-1 3-2 4-3 6-4 7-5 8-6 9-7 10-8</sure>
+  <possible>5-6</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2313-s9">
+  <english>By setting up the joint venture , Kaufman & Broad can take the more aggressive approach of buying raw land , while avoiding the negative impacts to its own balance sheet , Mr . Karatz said .</english>
+  <czech>Vytvořením společného podniku může Kaufman & Broad využít agresivnějšího postupu a kupovat " hrubé " pozemky a přitom se vyhnout negativním dopadům na vlastní bilanci , řekl Karatz .</czech>
+  <sure>2-1 3-1 5-2 6-3 8-5 9-6 10-7 11-4 12-8 14-9 15-9 16-10 18-12 19-14 20-16 22-18 23-20 25-21 26-22 27-23 28-24 29-24 30-25 31-25 32-26 35-28 36-27 37-29</sure>
+  <possible>1-1 4-3 13-9 23-19 24-22 33-28</possible>
+  <phrasal></phrasal>
+</s>
+<s id="wsj_2313-s10">
+  <english>The company is putting up only 10 % of the capital , although it is responsible for providing management , planning and processing services to the joint venture .</english>
+  <czech>Firma vkládá pouze 10 % kapitálu , má ovšem zodpovědnost vůči společnému podniku za poskytování služeb v oblasti řízení , plánování a zpracování .</czech>
+  <sure>2-1 3-2 4-2 5-2 6-3 7-4 8-5 11-6 12-7 13-9 17-14 18-15 19-19 20-20 21-21 22-22 23-23 24-16 25-11 27-12 28-13 29-24</sure>
+  <possible>1-1 9-6 10-6 26-13</possible>
+  <phrasal>15-8 15-10 16-8 16-10</phrasal>
+</s>
+<s id="wsj_2313-s11">
+  <english>`` This is one of the best ways to assure a pipeline of land to fuel our growth at a minimum risk to our company , '' Mr . Karatz said .</english>
+  <czech>" Toto je jedna z nejlepších cest , jak zajistit , aby tato spojnice pozemku zásobovala náš růst při minimálním riziku pro naši firmu , " řekl Karatz .</czech>
+  <sure>1-1 2-2 3-3 4-4 5-5 7-6 8-7 9-9 10-10 12-14 14-15 16-16 17-17 18-18 19-19 21-20 22-21 23-22 24-23 25-24 26-25 27-26 30-28 31-27 32-29</sure>
+  <possible>6-6 11-14 13-15 15-16 20-21 28-28</possible>
+  <phrasal></phrasal>
+</s>
+</sentences>

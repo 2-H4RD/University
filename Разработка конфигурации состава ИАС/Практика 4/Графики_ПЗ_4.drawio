@@ -1,0 +1,630 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" compressed="false" version="29.6.1" pages="6">
+  <diagram id="irOSEJ9ky7us" name="1. Описание фирмы">
+    <mxGraphModel dx="1480" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Описание виртуальной фирмы" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Критерий описания&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="250" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;Характеристика&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="620" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Наименование фирмы" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="165" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="ООО «СкладСервис»" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="165" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Направление деятельности" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="225" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Складская логистика и учет товарных запасов" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="225" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Продукт/услуга" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="285" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Приемка, хранение, комплектация, отгрузка и списание товаров" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="285" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Потребитель" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="345" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Торговые компании, интернет-магазины, поставщики и владельцы товарных запасов" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="345" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="География" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="405" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Локальная компания, работающая в пределах региона" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="405" width="620" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HECP0BxDPgMq" name="2. Перспективы">
+    <mxGraphModel dx="1213" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Перспективы стратегической карты" vertex="1">
+          <mxGeometry height="42" width="280" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Финансы" vertex="1">
+          <mxGeometry height="45" width="260" x="350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Клиенты" vertex="1">
+          <mxGeometry height="45" width="260" x="350" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="253" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Внутренние бизнес-процессы" vertex="1">
+          <mxGeometry height="45" width="260" x="350" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="333" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Обучение и развитие" vertex="1">
+          <mxGeometry height="45" width="260" x="350" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="82" />
+              <mxPoint x="310" y="403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="C4VbOYfEojSe" name="3. Цели">
+    <mxGraphModel dx="2022" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Цели ССП" vertex="1">
+          <mxGeometry height="40" width="180" x="1000" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Финансы" vertex="1">
+          <mxGeometry height="40" width="270" x="90" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Сократить потери от списаний" vertex="1">
+          <mxGeometry height="50" width="270" x="300" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Снизить затраты на хранение проблемного товара" vertex="1">
+          <mxGeometry height="50" width="270" x="300" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Повысить точность стоимости списаний" vertex="1">
+          <mxGeometry height="50" width="270" x="300" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Клиенты" vertex="1">
+          <mxGeometry height="40" width="270" x="710" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Повысить доверие клиентов к учету запасов" vertex="1">
+          <mxGeometry height="50" width="270" x="890" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="845" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Сократить претензии по качеству хранения" vertex="1">
+          <mxGeometry height="50" width="270" x="890" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="845" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Обеспечить прозрачность статусов товара" vertex="1">
+          <mxGeometry height="50" width="270" x="890" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="845" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Внутренние бизнес-процессы" vertex="1">
+          <mxGeometry height="40" width="270" x="1190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Своевременно выявлять товар к списанию" vertex="1">
+          <mxGeometry height="50" width="270" x="1420" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Стандартизировать процедуру списания" vertex="1">
+          <mxGeometry height="50" width="270" x="1420" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Повысить точность инвентаризации" vertex="1">
+          <mxGeometry height="50" width="270" x="1420" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Ускорить оформление актов списания" vertex="1">
+          <mxGeometry height="50" width="270" x="1420" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Обеспечить корректное отражение операций в WMS/1C" vertex="1">
+          <mxGeometry height="50" width="270" x="1420" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1325" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Обучение и развитие" vertex="1">
+          <mxGeometry height="40" width="270" x="1700" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Повысить квалификацию сотрудников склада" vertex="1">
+          <mxGeometry height="50" width="270" x="1890" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1835" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Сформировать культуру контроля качества" vertex="1">
+          <mxGeometry height="50" width="270" x="1890" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1835" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Развить навыки работы с WMS/1C и ТСД" vertex="1">
+          <mxGeometry height="50" width="270" x="1890" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" target="37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1835" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="gbDjESgVRg3D" name="4. Показатели">
+    <mxGraphModel dx="1213" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;fontSize=16;" value="Показатели и целевые значения" vertex="1">
+          <mxGeometry height="40" width="360" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Показатель&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="360" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Связанная цель&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="510" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Целевое значение&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="190" x="930" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Доля списаний от оборота, %" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Сократить потери от списаний" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≤ 1,5%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Стоимость списаний за период, руб." vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Сократить потери от списаний" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="снижение на 15%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Среднее время оформления списания, дни" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Ускорить оформление актов списания" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≤ 2 дня" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Доля операций без расхождений, %" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Повысить точность инвентаризации" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≥ 98%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Количество претензий клиентов, шт." vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Сократить претензии по качеству хранения" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≤ 3 в месяц" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Доля сотрудников, прошедших обучение, %" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Повысить квалификацию сотрудников склада" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="100%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Доля документов, оформленных без ошибок, %" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Стандартизировать процедуру списания" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≥ 97%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Доля операций, отраженных в WMS/1C в день списания, %" vertex="1">
+          <mxGeometry height="55" width="360" x="60" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Обеспечить корректное отражение операций в WMS/1C" vertex="1">
+          <mxGeometry height="55" width="510" x="420" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="≥ 95%" vertex="1">
+          <mxGeometry height="55" width="190" x="930" y="540" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="i8kc8nAR0oKn" name="5. Проекты">
+    <mxGraphModel dx="1213" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;fontSize=16;" value="Проекты ССП" vertex="1">
+          <mxGeometry height="40" width="250" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Проект/мероприятие&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="350" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Связанная цель&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="410" x="410" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Ответственный&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="230" x="820" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="&lt;b&gt;Срок&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="1050" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Внедрение чек-листа выявления проблемного товара" vertex="1">
+          <mxGeometry height="60" width="350" x="60" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Своевременно выявлять товар к списанию" vertex="1">
+          <mxGeometry height="60" width="410" x="410" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Заведующий складом" vertex="1">
+          <mxGeometry height="60" width="230" x="820" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="1 квартал" vertex="1">
+          <mxGeometry height="60" width="130" x="1050" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Настройка статусов списания в WMS/1C" vertex="1">
+          <mxGeometry height="60" width="350" x="60" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Обеспечить корректное отражение операций в WMS/1C" vertex="1">
+          <mxGeometry height="60" width="410" x="410" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Администратор WMS/1C" vertex="1">
+          <mxGeometry height="60" width="230" x="820" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="1-2 квартал" vertex="1">
+          <mxGeometry height="60" width="130" x="1050" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Обучение кладовщиков процедуре списания" vertex="1">
+          <mxGeometry height="60" width="350" x="60" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Повысить квалификацию сотрудников склада" vertex="1">
+          <mxGeometry height="60" width="410" x="410" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Начальник склада" vertex="1">
+          <mxGeometry height="60" width="230" x="820" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="2 квартал" vertex="1">
+          <mxGeometry height="60" width="130" x="1050" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Регламент работы комиссии по списанию" vertex="1">
+          <mxGeometry height="60" width="350" x="60" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Стандартизировать процедуру списания" vertex="1">
+          <mxGeometry height="60" width="410" x="410" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Комиссия по списанию" vertex="1">
+          <mxGeometry height="60" width="230" x="820" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="2-3 квартал" vertex="1">
+          <mxGeometry height="60" width="130" x="1050" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Ежемесячный анализ причин списаний" vertex="1">
+          <mxGeometry height="60" width="350" x="60" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;align=left;spacingLeft=6;" value="Сократить потери от списаний" vertex="1">
+          <mxGeometry height="60" width="410" x="410" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="Бухгалтерия и склад" vertex="1">
+          <mxGeometry height="60" width="230" x="820" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;" value="ежемесячно" vertex="1">
+          <mxGeometry height="60" width="130" x="1050" y="395" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7k1JnaD8WpZD" name="6. Стратегическая карта">
+    <mxGraphModel dx="1617" dy="1008" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;fontSize=16;" value="Стратегическая карта ООО «СкладСервис»: управление списанием товара" vertex="1">
+          <mxGeometry height="40" width="900" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Финансы" vertex="1">
+          <mxGeometry height="120" width="130" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Клиенты" vertex="1">
+          <mxGeometry height="120" width="130" x="30" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Внутренние бизнес-процессы" vertex="1">
+          <mxGeometry height="120" width="130" x="20" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontFamily=Times New Roman;fontStyle=1;" value="Обучение и развитие" vertex="1">
+          <mxGeometry height="120" width="130" x="30" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Сократить потери от списаний" vertex="1">
+          <mxGeometry height="60" width="190" x="280" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Снизить затраты на хранение проблемного товара" vertex="1">
+          <mxGeometry height="60" width="230" x="605" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Повысить точность стоимости списаний" vertex="1">
+          <mxGeometry height="60" width="230" x="1015" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Повысить доверие клиентов к учету запасов" vertex="1">
+          <mxGeometry height="60" width="240" x="255" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Сократить претензии по качеству хранения" vertex="1">
+          <mxGeometry height="60" width="240" x="600" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Обеспечить прозрачность статусов товара" vertex="1">
+          <mxGeometry height="60" width="240" x="1010" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Своевременно выявлять товар к списанию" vertex="1">
+          <mxGeometry height="60" width="240" x="230" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Повысить точность инвентаризации" vertex="1">
+          <mxGeometry height="60" width="240" x="810" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Ускорить оформление актов списания" vertex="1">
+          <mxGeometry height="60" width="240" x="430" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Корректно отражать операции в WMS/1C" vertex="1">
+          <mxGeometry height="60" width="260" x="1000" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Повысить квалификацию сотрудников склада" vertex="1">
+          <mxGeometry height="60" width="250" x="225" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Сформировать культуру контроля качества" vertex="1">
+          <mxGeometry height="60" width="250" x="595" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Развить навыки работы с WMS/1C и ТСД" vertex="1">
+          <mxGeometry height="60" width="250" x="1005" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="750" />
+              <mxPoint x="350" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="780" />
+              <mxPoint x="720" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="780" />
+              <mxPoint x="350" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="630" />
+              <mxPoint x="930" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="780" />
+              <mxPoint x="550" y="780" />
+            </Array>
+            <mxPoint x="540" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="630" />
+              <mxPoint x="550" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="530" />
+              <mxPoint x="1130" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="630" />
+              <mxPoint x="930" y="630" />
+              <mxPoint x="930" y="530" />
+              <mxPoint x="1130" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="170" />
+              <mxPoint x="720" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="175" />
+              <mxPoint x="810" y="175" />
+            </Array>
+            <mxPoint x="470" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jlnQbOwYJT3RbHlUFQxX-39" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;fontFamily=Times New Roman;" target="14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="530" as="sourcePoint" />
+            <mxPoint x="720" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;fontFamily=Times New Roman;" value="Стандартизировать процедуру списания" vertex="1">
+          <mxGeometry height="60" width="240" x="600" y="490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
