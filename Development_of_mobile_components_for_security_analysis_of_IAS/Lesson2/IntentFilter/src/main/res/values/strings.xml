@@ -1,0 +1,21 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="app_name">IntentFilter</string>
+    <string name="screen_title">Неявные намерения</string>
+    <string name="description">Android сам выбирает приложение, которое откроет ссылку или примет текст.</string>
+    <string name="open_button">Открыть сайт МИРЭА</string>
+    <string name="share_button">Поделиться ФИО</string>
+    <string name="chooser_title">МОИ ФИО</string>
+    <string name="share_subject">MIREA</string>
+    <string name="share_text">Зубарев Василий Сергеевич
+РТУ МИРЭА · БИСО-02-22</string>
+    <string name="no_app">Нет приложения для выполнения этого действия</string>
+</resources>

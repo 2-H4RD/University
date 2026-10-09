@@ -1,0 +1,307 @@
+[
+  {
+    "check": "ActivityLifecycle APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ActivityLifecycle install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "IntentFilter APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "IntentFilter install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ToastApp APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ToastApp install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "NotificationApp APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "NotificationApp install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog APK exists",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog install",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Lifecycle Home text retained",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Lifecycle Home no second onCreate",
+    "passed": true,
+    "detail": "--------- beginning of main\n10-09 17:07:01.317  6596  6596 I LifecycleMain: onCreate()\n10-09 17:07:01.323  6596  6596 I LifecycleMain: onStart()\n10-09 17:07:01.326  6596  6596 I LifecycleMain: onResume()\n10-09 17:07:07.609  6596  6596 I LifecycleMain: onPause()\n10-09 17:07:08.161  6596  6596 I LifecycleMain: onStop()\n10-09 17:07:08.167  6596  6596 I LifecycleMain: onSaveInstanceState()\n10-09 17:07:08.207  6596  6596 I LifecycleMain: onRestart()\n10-09 17:07:08.208  6596  6596 I LifecycleMain: onStart()\n10-09 17:07:08.210  6596  6596 I LifecycleMain: onResume()\n"
+  },
+  {
+    "check": "Lifecycle Back behavior recorded",
+    "passed": true,
+    "detail": "text retained"
+  },
+  {
+    "check": "Lifecycle rotation text retained",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity full FIO transferred",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity arbitrary text transferred",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity Back restores first screen",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Toast empty count 0",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Toast MIREA count 5",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Toast spaces count 3",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Toast result retained on rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog action Иду дальше",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog action На паузе",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog action Нет",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog time selected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog date selected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog date result retained",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ProgressDialog opens",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ProgressDialog closes",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog dismiss with Back",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog dark mode usable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Notification denial handled",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Notification allowed and sent",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Notification repeated ID leaves one record",
+    "passed": true,
+    "detail": "    NotificationRecord(0x00e4c4e1: pkg=ru.mirea.ZubarevVS.lesson2.notificationapp user=UserHandle{0} id=1 tag=null importance=3 key=0|ru.mirea.ZubarevVS.lesson2.notificationapp|1|null|10209: Notification(channel=lesson2_student shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=AUTO_CANCEL color=0x00000000 vis=PRIVATE))"
+  },
+  {
+    "check": "Notification visible in shade",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Intent share chooser opens",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Intent browser opens",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ActivityLifecycle launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.activitylifecycle/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.activitylifecycle/.MainActivity\nTotalTime: 839\nWaitTime: 850\nComplete\n"
+  },
+  {
+    "check": "ActivityLifecycle student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ActivityLifecycle landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.multiactivity/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.multiactivity/.MainActivity\nTotalTime: 875\nWaitTime: 876\nComplete\n"
+  },
+  {
+    "check": "MultiActivity student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "MultiActivity landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "IntentFilter launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.intentfilter/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.intentfilter/.MainActivity\nTotalTime: 840\nWaitTime: 841\nComplete\n"
+  },
+  {
+    "check": "IntentFilter student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "IntentFilter landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ToastApp launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.toastapp/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.toastapp/.MainActivity\nTotalTime: 910\nWaitTime: 913\nComplete\n"
+  },
+  {
+    "check": "ToastApp student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ToastApp landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "NotificationApp launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.notificationapp/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.notificationapp/.MainActivity\nTotalTime: 840\nWaitTime: 851\nComplete\n"
+  },
+  {
+    "check": "NotificationApp student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "NotificationApp landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog launch",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson2.dialog/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson2.dialog/.MainActivity\nTotalTime: 920\nWaitTime: 922\nComplete\n"
+  },
+  {
+    "check": "Dialog student info",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Dialog landscape title",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Android Studio Debugger text and count",
+    "passed": true,
+    "detail": "Debug ToastApp: breakpoint MainActivity:48; text=MIREA, count=5; screenshots/Debugger-count.jpg"
+  },
+  {
+    "check": "Android Studio Step Over message",
+    "passed": true,
+    "detail": "F8 -> MainActivity:49; message contains student 5, BISO-02-22 and count 5; screenshots/Debugger-message.jpg"
+  },
+  {
+    "check": "Debugger resumes to actual output",
+    "passed": true,
+    "detail": ""
+  }
+]

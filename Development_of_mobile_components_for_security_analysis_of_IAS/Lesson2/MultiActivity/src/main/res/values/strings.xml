@@ -1,0 +1,21 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="student_fio">Зубарев Василий Сергеевич</string>
+    <string name="empty_text">Текст не передан</string>
+    <string name="app_name">MultiActivity</string>
+    <string name="screen_title">Передача текста</string>
+    <string name="description">Отправьте текст на второй экран. Кнопка Back вернёт вас к полю ввода.</string>
+    <string name="input_hint">Текст для второго экрана</string>
+    <string name="send_button">Отправить</string>
+    <string name="second_title">Второй экран</string>
+    <string name="second_description">Текст получен из явного Intent:</string>
+    <string name="back_button">Вернуться</string>
+</resources>

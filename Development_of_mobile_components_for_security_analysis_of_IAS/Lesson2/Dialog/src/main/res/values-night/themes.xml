@@ -1,0 +1,16 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА themes.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- В тёмной теме светлые значки статусной панели сохраняют контраст. -->
+    <style name="Theme.Lesson2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#AFC6FF</item>
+        <item name="colorPrimaryVariant">#7D9DDC</item>
+        <item name="colorSecondary">#AFC6FF</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

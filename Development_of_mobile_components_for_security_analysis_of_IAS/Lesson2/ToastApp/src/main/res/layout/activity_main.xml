@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: ScrollView @+id/main.
+  Элементы: TextView @+id/title.
+  Элементы: TextView @+id/student.
+  Элементы: TextView @+id/description.
+  Элементы: EditText @+id/input.
+  Элементы: Button @+id/count.
+  Элементы: TextView @+id/result.
+-->
+
+<!-- Прокрутка обеспечивает доступ к кнопкам в landscape и при открытой клавиатуре. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fillViewport="true"
+    android:clipToPadding="true" android:padding="24dp">
+    <!-- clipToPadding не даёт прокручиваемому тексту заходить под системные панели. -->
+    <!-- Вертикальный контейнер располагает элементы в порядке задания. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+<!-- Текстовый блок: screen_title; id позволяет обращаться к нему из Java. -->
+<TextView android:id="@+id/title" style="@style/ScreenTitle" android:text="@string/screen_title" />
+<!-- Текстовый блок: student_info; id позволяет обращаться к нему из Java. -->
+<TextView android:id="@+id/student" style="@style/BodyText" android:text="@string/student_info" />
+<!-- Текстовый блок: description; id позволяет обращаться к нему из Java. -->
+<TextView android:id="@+id/description" style="@style/BodyText" android:text="@string/description" /><!-- Уникальный id нужен для поиска поля и автоматического восстановления его состояния. -->
+<EditText android:id="@+id/input" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:minHeight="56dp"
+    android:layout_marginBottom="16dp" android:hint="@string/input_hint"
+    android:inputType="textMultiLine|textCapSentences" android:gravity="top|start"
+    android:minLines="2" android:maxLines="4" android:importantForAutofill="no"  /><!-- android:onClick связывает нажатие с public-методом onClickCount(View). -->
+<Button android:id="@+id/count" style="@style/ActionButton" android:text="@string/count_button" android:onClick="onClickCount" /><!-- Текстовый блок: initial_result; id позволяет обращаться к нему из Java. -->
+<TextView android:id="@+id/result" style="@style/BodyText" android:text="@string/initial_result" />
+    </LinearLayout>
+</ScrollView>

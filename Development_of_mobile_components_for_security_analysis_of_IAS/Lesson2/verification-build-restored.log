@@ -1,0 +1,354 @@
+Starting a Gradle Daemon, 1 busy and 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+Calculating task graph as no cached configuration is available for tasks: assembleDebug lintDebug
+> Task :ActivityLifecycle:preBuild UP-TO-DATE
+> Task :Dialog:preBuild UP-TO-DATE
+> Task :Dialog:generateDebugAssets UP-TO-DATE
+> Task :ActivityLifecycle:generateDebugAssets UP-TO-DATE
+> Task :Dialog:preDebugBuild UP-TO-DATE
+> Task :ActivityLifecycle:preDebugBuild UP-TO-DATE
+> Task :IntentFilter:preBuild UP-TO-DATE
+> Task :IntentFilter:generateDebugAssets UP-TO-DATE
+> Task :ActivityLifecycle:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :ActivityLifecycle:processDebugNavigationResources
+> Task :ActivityLifecycle:javaPreCompileDebug
+> Task :ActivityLifecycle:generateDebugResources
+> Task :ActivityLifecycle:mergeDebugAssets
+> Task :ActivityLifecycle:checkDebugDuplicateClasses
+> Task :ActivityLifecycle:compressDebugAssets
+> Task :ActivityLifecycle:generateDebugGlobalSynthetics
+> Task :ActivityLifecycle:desugarDebugFileDependencies
+> Task :ActivityLifecycle:checkDebugAarMetadata
+> Task :ActivityLifecycle:mergeExtDexDebug
+> Task :ActivityLifecycle:mapDebugSourceSetPaths
+> Task :ActivityLifecycle:compileDebugNavigationResources
+> Task :ActivityLifecycle:mergeLibDexDebug
+> Task :ActivityLifecycle:createDebugCompatibleScreenManifests
+> Task :ActivityLifecycle:extractDeepLinksDebug
+> Task :ActivityLifecycle:mergeDebugJniLibFolders
+> Task :ActivityLifecycle:mergeDebugNativeLibs NO-SOURCE
+> Task :ActivityLifecycle:stripDebugDebugSymbols NO-SOURCE
+> Task :ActivityLifecycle:packageDebugResources
+> Task :ActivityLifecycle:validateSigningDebug
+> Task :ActivityLifecycle:processDebugMainManifest
+> Task :ActivityLifecycle:writeDebugAppMetadata
+> Task :ActivityLifecycle:writeDebugSigningConfigVersions
+> Task :ActivityLifecycle:parseDebugLocalResources
+> Task :Dialog:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :ActivityLifecycle:processDebugManifest
+> Task :ActivityLifecycle:processDebugManifestForPackage
+> Task :Dialog:generateDebugResources
+> Task :Dialog:processDebugNavigationResources
+> Task :ActivityLifecycle:generateDebugRFile
+> Task :Dialog:javaPreCompileDebug
+> Task :Dialog:mergeDebugAssets
+> Task :Dialog:compressDebugAssets
+> Task :ActivityLifecycle:compileDebugKotlin NO-SOURCE
+> Task :Dialog:generateDebugGlobalSynthetics
+> Task :ActivityLifecycle:processDebugJavaRes NO-SOURCE
+> Task :Dialog:packageDebugResources
+> Task :Dialog:parseDebugLocalResources
+> Task :Dialog:generateDebugRFile
+> Task :ActivityLifecycle:compileDebugJavaWithJavac
+> Task :Dialog:compileDebugKotlin NO-SOURCE
+> Task :ActivityLifecycle:mergeDebugResources
+> Task :Dialog:checkDebugDuplicateClasses
+> Task :Dialog:processDebugJavaRes NO-SOURCE
+> Task :Dialog:compileDebugJavaWithJavac
+> Task :Dialog:desugarDebugFileDependencies
+> Task :ActivityLifecycle:mergeDebugJavaResource
+> Task :Dialog:mergeExtDexDebug
+> Task :Dialog:checkDebugAarMetadata
+> Task :Dialog:mergeLibDexDebug
+> Task :Dialog:mapDebugSourceSetPaths
+> Task :Dialog:compileDebugNavigationResources
+> Task :Dialog:createDebugCompatibleScreenManifests
+> Task :Dialog:extractDeepLinksDebug
+> Task :Dialog:mergeDebugJavaResource
+> Task :Dialog:processDebugMainManifest
+> Task :Dialog:mergeDebugJniLibFolders
+> Task :Dialog:mergeDebugNativeLibs NO-SOURCE
+> Task :Dialog:stripDebugDebugSymbols NO-SOURCE
+> Task :Dialog:validateSigningDebug
+> Task :Dialog:processDebugManifest
+> Task :Dialog:writeDebugAppMetadata
+> Task :Dialog:processDebugManifestForPackage
+> Task :IntentFilter:preDebugBuild UP-TO-DATE
+> Task :IntentFilter:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :Dialog:writeDebugSigningConfigVersions
+> Task :IntentFilter:processDebugNavigationResources
+> Task :IntentFilter:javaPreCompileDebug
+> Task :IntentFilter:generateDebugResources
+> Task :IntentFilter:mergeDebugAssets
+> Task :IntentFilter:compressDebugAssets
+> Task :IntentFilter:generateDebugGlobalSynthetics
+> Task :IntentFilter:checkDebugDuplicateClasses
+> Task :IntentFilter:desugarDebugFileDependencies
+> Task :Dialog:mergeDebugResources
+> Task :IntentFilter:packageDebugResources
+> Task :IntentFilter:mergeExtDexDebug
+> Task :IntentFilter:parseDebugLocalResources
+> Task :IntentFilter:mergeLibDexDebug
+> Task :IntentFilter:generateDebugRFile
+> Task :IntentFilter:checkDebugAarMetadata
+> Task :IntentFilter:mapDebugSourceSetPaths
+> Task :IntentFilter:compileDebugKotlin NO-SOURCE
+> Task :IntentFilter:compileDebugNavigationResources
+> Task :IntentFilter:processDebugJavaRes NO-SOURCE
+> Task :IntentFilter:compileDebugJavaWithJavac
+> Task :IntentFilter:mergeDebugJavaResource
+> Task :IntentFilter:createDebugCompatibleScreenManifests
+> Task :IntentFilter:extractDeepLinksDebug
+> Task :IntentFilter:processDebugMainManifest
+> Task :IntentFilter:processDebugManifest
+> Task :IntentFilter:processDebugManifestForPackage
+> Task :IntentFilter:mergeDebugJniLibFolders
+> Task :IntentFilter:mergeDebugNativeLibs NO-SOURCE
+> Task :IntentFilter:stripDebugDebugSymbols NO-SOURCE
+> Task :IntentFilter:validateSigningDebug
+> Task :IntentFilter:writeDebugAppMetadata
+> Task :IntentFilter:mergeDebugResources
+> Task :IntentFilter:writeDebugSigningConfigVersions
+> Task :MultiActivity:preBuild UP-TO-DATE
+> Task :MultiActivity:preDebugBuild UP-TO-DATE
+> Task :MultiActivity:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :MultiActivity:generateDebugResources
+> Task :MultiActivity:packageDebugResources
+> Task :MultiActivity:processDebugNavigationResources
+> Task :MultiActivity:parseDebugLocalResources
+> Task :MultiActivity:generateDebugRFile
+> Task :MultiActivity:compileDebugKotlin NO-SOURCE
+> Task :MultiActivity:javaPreCompileDebug
+> Task :ActivityLifecycle:processDebugResources
+> Task :MultiActivity:compileDebugJavaWithJavac
+> Task :MultiActivity:generateDebugAssets UP-TO-DATE
+> Task :MultiActivity:mergeDebugAssets
+> Task :MultiActivity:compressDebugAssets
+> Task :MultiActivity:generateDebugGlobalSynthetics
+> Task :MultiActivity:processDebugJavaRes NO-SOURCE
+> Task :ActivityLifecycle:dexBuilderDebug
+> Task :MultiActivity:mergeDebugJavaResource
+> Task :Dialog:processDebugResources
+> Task :MultiActivity:checkDebugDuplicateClasses
+> Task :MultiActivity:desugarDebugFileDependencies
+> Task :MultiActivity:mergeExtDexDebug
+> Task :ActivityLifecycle:mergeProjectDexDebug
+> Task :MultiActivity:mergeLibDexDebug
+> Task :MultiActivity:checkDebugAarMetadata
+> Task :MultiActivity:mapDebugSourceSetPaths
+> Task :MultiActivity:compileDebugNavigationResources
+> Task :ActivityLifecycle:packageDebug
+> Task :ActivityLifecycle:createDebugApkListingFileRedirect
+> Task :ActivityLifecycle:assembleDebug
+> Task :MultiActivity:createDebugCompatibleScreenManifests
+> Task :MultiActivity:extractDeepLinksDebug
+> Task :MultiActivity:processDebugMainManifest
+> Task :MultiActivity:processDebugManifest
+> Task :MultiActivity:mergeDebugResources
+> Task :Dialog:dexBuilderDebug
+> Task :MultiActivity:processDebugManifestForPackage
+> Task :IntentFilter:processDebugResources
+> Task :MultiActivity:mergeDebugJniLibFolders
+> Task :MultiActivity:mergeDebugNativeLibs NO-SOURCE
+> Task :MultiActivity:stripDebugDebugSymbols NO-SOURCE
+> Task :MultiActivity:validateSigningDebug
+> Task :MultiActivity:writeDebugAppMetadata
+> Task :MultiActivity:writeDebugSigningConfigVersions
+> Task :NotificationApp:preBuild UP-TO-DATE
+> Task :NotificationApp:preDebugBuild UP-TO-DATE
+> Task :NotificationApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :NotificationApp:generateDebugResources
+> Task :Dialog:mergeProjectDexDebug
+> Task :Dialog:packageDebug
+> Task :Dialog:createDebugApkListingFileRedirect
+> Task :Dialog:assembleDebug
+> Task :NotificationApp:packageDebugResources
+> Task :NotificationApp:processDebugNavigationResources
+> Task :NotificationApp:javaPreCompileDebug
+> Task :NotificationApp:generateDebugAssets UP-TO-DATE
+> Task :NotificationApp:parseDebugLocalResources
+> Task :NotificationApp:mergeDebugAssets
+> Task :NotificationApp:compressDebugAssets
+> Task :NotificationApp:generateDebugGlobalSynthetics
+> Task :NotificationApp:generateDebugRFile
+> Task :NotificationApp:compileDebugKotlin NO-SOURCE
+> Task :NotificationApp:checkDebugDuplicateClasses
+> Task :NotificationApp:processDebugJavaRes NO-SOURCE
+> Task :IntentFilter:dexBuilderDebug
+> Task :NotificationApp:compileDebugJavaWithJavac
+> Task :NotificationApp:desugarDebugFileDependencies
+> Task :NotificationApp:mergeExtDexDebug
+> Task :IntentFilter:mergeProjectDexDebug
+> Task :NotificationApp:mergeLibDexDebug
+> Task :IntentFilter:packageDebug
+> Task :IntentFilter:createDebugApkListingFileRedirect
+> Task :IntentFilter:assembleDebug
+> Task :NotificationApp:checkDebugAarMetadata
+> Task :NotificationApp:mapDebugSourceSetPaths
+> Task :NotificationApp:mergeDebugJavaResource
+> Task :NotificationApp:compileDebugNavigationResources
+> Task :NotificationApp:createDebugCompatibleScreenManifests
+> Task :NotificationApp:extractDeepLinksDebug
+> Task :NotificationApp:mergeDebugJniLibFolders
+> Task :NotificationApp:mergeDebugNativeLibs NO-SOURCE
+> Task :NotificationApp:stripDebugDebugSymbols NO-SOURCE
+> Task :NotificationApp:validateSigningDebug
+> Task :NotificationApp:writeDebugAppMetadata
+> Task :NotificationApp:writeDebugSigningConfigVersions
+> Task :ToastApp:preBuild UP-TO-DATE
+> Task :ToastApp:preDebugBuild UP-TO-DATE
+> Task :ToastApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :NotificationApp:processDebugMainManifest
+> Task :NotificationApp:processDebugManifest
+> Task :ToastApp:generateDebugResources
+> Task :NotificationApp:processDebugManifestForPackage
+> Task :ToastApp:processDebugNavigationResources
+> Task :ToastApp:javaPreCompileDebug
+> Task :ToastApp:generateDebugAssets UP-TO-DATE
+> Task :ToastApp:mergeDebugAssets
+> Task :ToastApp:compressDebugAssets
+> Task :NotificationApp:mergeDebugResources
+> Task :ToastApp:generateDebugGlobalSynthetics
+> Task :ToastApp:checkDebugDuplicateClasses
+> Task :ToastApp:desugarDebugFileDependencies
+> Task :ToastApp:packageDebugResources
+> Task :ToastApp:mergeExtDexDebug
+> Task :ToastApp:parseDebugLocalResources
+> Task :ToastApp:mergeLibDexDebug
+> Task :ToastApp:checkDebugAarMetadata
+> Task :ToastApp:generateDebugRFile
+> Task :ToastApp:mapDebugSourceSetPaths
+> Task :ToastApp:compileDebugNavigationResources
+> Task :ToastApp:compileDebugKotlin NO-SOURCE
+> Task :MultiActivity:processDebugResources
+> Task :ToastApp:compileDebugJavaWithJavac
+> Task :ToastApp:processDebugJavaRes NO-SOURCE
+> Task :ToastApp:mergeDebugResources
+> Task :ToastApp:mergeDebugJavaResource
+> Task :ToastApp:createDebugCompatibleScreenManifests
+> Task :ToastApp:extractDeepLinksDebug
+> Task :ToastApp:processDebugMainManifest
+> Task :MultiActivity:dexBuilderDebug
+> Task :ToastApp:processDebugManifest
+> Task :ToastApp:processDebugManifestForPackage
+> Task :ToastApp:mergeDebugJniLibFolders
+> Task :ToastApp:mergeDebugNativeLibs NO-SOURCE
+> Task :ToastApp:stripDebugDebugSymbols NO-SOURCE
+> Task :MultiActivity:mergeProjectDexDebug
+> Task :ToastApp:validateSigningDebug
+> Task :ToastApp:writeDebugAppMetadata
+> Task :ToastApp:writeDebugSigningConfigVersions
+> Task :ActivityLifecycle:bundleDebugClassesToCompileJar
+> Task :ActivityLifecycle:preDebugAndroidTestBuild SKIPPED
+> Task :MultiActivity:packageDebug
+> Task :MultiActivity:createDebugApkListingFileRedirect
+> Task :MultiActivity:assembleDebug
+> Task :ActivityLifecycle:extractProguardFiles
+> Task :ActivityLifecycle:generateDebugAndroidTestLintModel
+> Task :ActivityLifecycle:preDebugUnitTestBuild UP-TO-DATE
+> Task :ActivityLifecycle:generateDebugLintReportModel
+> Task :ActivityLifecycle:generateDebugUnitTestLintModel
+> Task :NotificationApp:processDebugResources
+> Task :ActivityLifecycle:lintAnalyzeDebug
+> Task :ActivityLifecycle:lintAnalyzeDebugAndroidTest
+> Task :NotificationApp:dexBuilderDebug
+> Task :NotificationApp:mergeProjectDexDebug
+> Task :ToastApp:processDebugResources
+> Task :Dialog:bundleDebugClassesToCompileJar
+> Task :Dialog:preDebugAndroidTestBuild SKIPPED
+> Task :Dialog:generateDebugAndroidTestLintModel
+> Task :NotificationApp:packageDebug
+> Task :NotificationApp:createDebugApkListingFileRedirect
+> Task :NotificationApp:assembleDebug
+> Task :Dialog:preDebugUnitTestBuild UP-TO-DATE
+> Task :Dialog:extractProguardFiles
+> Task :Dialog:generateDebugUnitTestLintModel
+> Task :Dialog:generateDebugLintReportModel
+> Task :ActivityLifecycle:lintAnalyzeDebugUnitTest
+> Task :ToastApp:dexBuilderDebug
+> Task :Dialog:lintAnalyzeDebug
+> Task :Dialog:lintAnalyzeDebugAndroidTest
+> Task :ToastApp:mergeProjectDexDebug
+
+> Task :ActivityLifecycle:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/ActivityLifecycle/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/ActivityLifecycle/build/reports/lint-results-debug.sarif
+
+> Task :ActivityLifecycle:lintDebug
+> Task :IntentFilter:bundleDebugClassesToCompileJar
+> Task :IntentFilter:preDebugAndroidTestBuild SKIPPED
+> Task :ToastApp:packageDebug
+> Task :IntentFilter:generateDebugAndroidTestLintModel
+> Task :ToastApp:assembleDebug
+> Task :ToastApp:createDebugApkListingFileRedirect
+> Task :IntentFilter:preDebugUnitTestBuild UP-TO-DATE
+> Task :IntentFilter:extractProguardFiles
+> Task :IntentFilter:generateDebugUnitTestLintModel
+> Task :IntentFilter:generateDebugLintReportModel
+> Task :Dialog:lintAnalyzeDebugUnitTest
+> Task :IntentFilter:lintAnalyzeDebug
+> Task :MultiActivity:bundleDebugClassesToCompileJar
+> Task :MultiActivity:preDebugAndroidTestBuild SKIPPED
+> Task :MultiActivity:generateDebugAndroidTestLintModel
+> Task :MultiActivity:extractProguardFiles
+> Task :MultiActivity:generateDebugLintReportModel
+> Task :MultiActivity:preDebugUnitTestBuild UP-TO-DATE
+> Task :MultiActivity:generateDebugUnitTestLintModel
+> Task :IntentFilter:lintAnalyzeDebugAndroidTest
+
+> Task :Dialog:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/Dialog/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/Dialog/build/reports/lint-results-debug.sarif
+
+> Task :Dialog:lintDebug
+> Task :MultiActivity:lintAnalyzeDebug
+> Task :IntentFilter:lintAnalyzeDebugUnitTest
+> Task :NotificationApp:bundleDebugClassesToCompileJar
+> Task :NotificationApp:preDebugAndroidTestBuild SKIPPED
+> Task :NotificationApp:generateDebugAndroidTestLintModel
+> Task :NotificationApp:extractProguardFiles
+> Task :NotificationApp:generateDebugLintReportModel
+> Task :NotificationApp:preDebugUnitTestBuild UP-TO-DATE
+
+> Task :IntentFilter:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/IntentFilter/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/IntentFilter/build/reports/lint-results-debug.sarif
+
+> Task :IntentFilter:lintDebug
+> Task :NotificationApp:generateDebugUnitTestLintModel
+> Task :MultiActivity:lintAnalyzeDebugAndroidTest
+> Task :MultiActivity:lintAnalyzeDebugUnitTest
+> Task :NotificationApp:lintAnalyzeDebugAndroidTest
+> Task :ToastApp:bundleDebugClassesToCompileJar
+> Task :ToastApp:preDebugAndroidTestBuild SKIPPED
+> Task :NotificationApp:lintAnalyzeDebug
+
+> Task :MultiActivity:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/MultiActivity/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/MultiActivity/build/reports/lint-results-debug.sarif
+
+> Task :ToastApp:extractProguardFiles
+> Task :ToastApp:generateDebugAndroidTestLintModel
+> Task :ToastApp:preDebugUnitTestBuild UP-TO-DATE
+> Task :MultiActivity:lintDebug
+> Task :ToastApp:generateDebugLintReportModel
+> Task :ToastApp:generateDebugUnitTestLintModel
+> Task :NotificationApp:lintAnalyzeDebugUnitTest
+
+> Task :NotificationApp:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/NotificationApp/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/NotificationApp/build/reports/lint-results-debug.sarif
+
+> Task :NotificationApp:lintDebug
+> Task :ToastApp:lintAnalyzeDebug
+> Task :ToastApp:lintAnalyzeDebugUnitTest
+> Task :ToastApp:lintAnalyzeDebugAndroidTest
+
+> Task :ToastApp:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/ToastApp/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson2/ToastApp/build/reports/lint-results-debug.sarif
+
+> Task :ToastApp:lintDebug
+
+BUILD SUCCESSFUL in 13m 43s
+258 actionable tasks: 258 executed
+Configuration cache entry stored.

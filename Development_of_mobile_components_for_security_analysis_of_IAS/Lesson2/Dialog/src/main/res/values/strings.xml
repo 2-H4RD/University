@@ -1,0 +1,32 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="app_name">Dialog</string>
+    <string name="screen_title">Диалоговые окна</string>
+    <string name="description">Откройте окно и выберите действие. Дата и время появятся на экране и в Snackbar.</string>
+    <string name="alert_button">Show dialog</string>
+    <string name="time_button">Выбрать время</string>
+    <string name="date_button">Выбрать дату</string>
+    <string name="progress_button">Показать ProgressDialog</string>
+    <string name="initial_result">Результат выбора появится здесь</string>
+    <string name="alert_title">Здравствуй МИРЭА!</string>
+    <string name="alert_message">Успех близок?</string>
+    <string name="positive">Иду дальше</string>
+    <string name="neutral">На паузе</string>
+    <string name="negative">Нет</string>
+    <string name="ok_result">Вы выбрали кнопку «Иду дальше»!</string>
+    <string name="neutral_result">Вы выбрали кнопку «На паузе»!</string>
+    <string name="cancel_result">Вы выбрали кнопку «Нет»!</string>
+    <string name="time_result">Выбрано время: %1$02d:%2$02d</string>
+    <string name="date_result">Выбрана дата: %1$02d.%2$02d.%3$d</string>
+    <string name="progress_title">Учебный ProgressDialog</string>
+    <string name="progress_message">Пример индикатора ожидания. Нажмите «Закрыть» для завершения.</string>
+    <string name="close">Закрыть</string>
+</resources>

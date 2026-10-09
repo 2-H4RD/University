@@ -1,0 +1,24 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="app_name">NotificationApp</string>
+    <string name="screen_title">Системное уведомление</string>
+    <string name="description">Нажмите кнопку и откройте шторку уведомлений. Повторное нажатие обновляет то же уведомление.</string>
+    <string name="notify_button">Показать уведомление</string>
+    <string name="initial_status">Уведомление ещё не отправлено</string>
+    <string name="channel_name">Зубарев Василий Сергеевич</string>
+    <string name="channel_description">Учебные уведомления РТУ МИРЭА</string>
+    <string name="notification_title">Mirea</string>
+    <string name="notification_text">Congratulation!</string>
+    <string name="notification_long">Зубарев Василий Сергеевич · БИСО-02-22 · №5. Практика №2: уведомление успешно создано.</string>
+    <string name="sent_status">Уведомление отправлено. Откройте шторку.</string>
+    <string name="denied_status">Разрешение не выдано. Уведомление не отправлено.</string>
+    <string name="disabled_status">Уведомления приложения или канала отключены в настройках устройства.</string>
+</resources>

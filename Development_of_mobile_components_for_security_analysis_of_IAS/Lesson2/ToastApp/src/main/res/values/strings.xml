@@ -1,0 +1,18 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="app_name">ToastApp</string>
+    <string name="screen_title">Подсчёт символов</string>
+    <string name="description">Введите текст и нажмите кнопку. Пробелы тоже учитываются.</string>
+    <string name="input_hint">Введите текст</string>
+    <string name="count_button">Подсчитать символы</string>
+    <string name="count_result">СТУДЕНТ № 5 ГРУППА БИСО-02-22 Количество символов - %1$d</string>
+    <string name="initial_result">Количество символов появится здесь</string>
+</resources>

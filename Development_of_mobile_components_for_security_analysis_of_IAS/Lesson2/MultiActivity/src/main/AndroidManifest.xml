@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА AndroidManifest.xml.
+  Manifest объявляет компоненты, разрешения и тему. MAIN/LAUNCHER - точка входа.
+  exported=true нужен launcher и внешним получателям; внутренние Activity используют false.
+  intent-filter: action описывает действие, category - категорию, data - MIME/URI.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Только NotificationApp запрашивает разрешение на показ уведомлений. -->
+    
+    <application android:allowBackup="false" android:icon="@drawable/ic_school"
+        android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/Theme.Lesson2">
+        <!-- Внутренний второй экран нельзя запускать из других приложений. -->
+        <activity android:name=".SecondActivity" android:exported="false" />
+        <!-- Launcher Activity экспортирована, чтобы системный launcher мог открыть приложение. -->
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

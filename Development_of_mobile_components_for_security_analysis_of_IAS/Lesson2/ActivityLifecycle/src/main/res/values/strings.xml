@@ -1,0 +1,16 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Надписи отделены от кода; подтверждённые данные студента заданы здесь. -->
+    <string name="student_info">Зубарев Василий Сергеевич · БИСО-02-22 · №5</string>
+    <string name="app_name">ActivityLifecycle</string>
+    <string name="screen_title">Жизненный цикл Activity</string>
+    <string name="description">Введите текст. Нажмите Home или Back и вернитесь в приложение. Сравните поле и события в Logcat.</string>
+    <string name="input_hint">Текст для проверки сохранения</string>
+    <string name="initial_status">Ожидание событий</string>
+</resources>
