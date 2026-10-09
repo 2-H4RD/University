@@ -1,0 +1,20 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">Практика 3 • SystemIntentsApp</string>
+    <string name="title">Системные приложения</string>
+    <string name="explanation">Намерение описывает действие и данные. Android выбирает подходящее установленное приложение.</string>
+    <string name="call">Позвонить</string>
+    <string name="browser">Открыть браузер</string>
+    <string name="maps">Открыть карту</string>
+    <string name="status_initial">Выберите действие.</string>
+    <string name="status">Отправлено действие %1$s
+URI: %2$s</string>
+    <string name="no_app">Нет установленного приложения для %1$s.</string>
+    <string name="dial_explanation">Кнопка «Позвонить» открывает набор номера 89811112233. Номер и координаты взяты из методички.</string>
+</resources>

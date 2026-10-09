@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА fragment_second.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: TextView @+id/fragment_title.
+  Элементы: TextView @+id/info.
+  Элементы: EditText @+id/note.
+-->
+
+<!-- Семантический цвет обеспечивает контраст в светлой и тёмной темах. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="?attr/colorSecondaryContainer">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+<TextView android:id="@+id/fragment_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/second_text" android:textSize="22sp" android:layout_marginBottom="16dp" android:textColor="?attr/colorOnSecondaryContainer"/>
+<TextView android:id="@+id/info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/second_info" android:textSize="16sp" android:layout_marginBottom="16dp" android:textColor="?attr/colorOnSecondaryContainer"/>
+<!-- Уникальный id позволяет Android восстановить введённый текст при повороте. -->
+<EditText android:id="@+id/note" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:hint="@string/hint" android:inputType="textCapSentences|textMultiLine" android:gravity="top" android:importantForAutofill="no" android:layout_marginBottom="16dp" />
+</LinearLayout></ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: LinearLayout @+id/main.
+  Элементы: TextView @+id/title.
+  Элементы: FragmentContainerView @+id/fragmentContainerView.
+  Элементы: MaterialButton @+id/btnFirstFragment.
+  Элементы: MaterialButton @+id/btnSecondFragment.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="?attr/colorSurface">
+<TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title" android:textSize="24sp" android:layout_marginBottom="16dp" />
+<!-- Один контейнер для динамической замены Fragment в портретной ориентации. -->
+<androidx.fragment.app.FragmentContainerView android:id="@+id/fragmentContainerView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+<!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/btnFirstFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/first" android:layout_marginBottom="12dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/btnSecondFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/second" android:layout_marginBottom="12dp" /></LinearLayout>

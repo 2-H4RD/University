@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА fragment_data.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: NestedScrollView @+id/main.
+  Элементы: TextView @+id/data_title.
+  Элементы: TextView @+id/subtitle.
+  Элементы: TextView @+id/intro.
+  Элементы: TextView @+id/card1_title.
+  Элементы: TextView @+id/card1.
+  Элементы: TextView @+id/card2_title.
+  Элементы: TextView @+id/card2.
+  Элементы: TextView @+id/card3_title.
+  Элементы: TextView @+id/card3.
+  Элементы: TextView @+id/workflow_title.
+  Элементы: TextView @+id/workflow.
+-->
+
+<!-- Прокрутка сохраняет доступ к кнопкам в landscape и при открытой клавиатуре. -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="?attr/colorSurface">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<TextView android:id="@+id/data_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/data_title" android:textSize="28sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/subtitle" android:textSize="18sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/intro" android:textSize="17sp" android:layout_marginBottom="16dp" /><!-- Карточка: крупный заголовок, внутренние отступы и семантические цвета темы. -->
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="24dp" app:cardBackgroundColor="?attr/colorSurfaceContainer" app:strokeWidth="0dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:id="@+id/card1_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card1_title" android:textSize="20sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/card1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card1" android:textSize="17sp" android:layout_marginBottom="16dp" />
+</LinearLayout></com.google.android.material.card.MaterialCardView><!-- Карточка: крупный заголовок, внутренние отступы и семантические цвета темы. -->
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="24dp" app:cardBackgroundColor="?attr/colorSurfaceContainer" app:strokeWidth="0dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:id="@+id/card2_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card2_title" android:textSize="20sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/card2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card2" android:textSize="17sp" android:layout_marginBottom="16dp" />
+</LinearLayout></com.google.android.material.card.MaterialCardView><!-- Карточка: крупный заголовок, внутренние отступы и семантические цвета темы. -->
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="24dp" app:cardBackgroundColor="?attr/colorSurfaceContainer" app:strokeWidth="0dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:id="@+id/card3_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card3_title" android:textSize="20sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/card3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/card3" android:textSize="17sp" android:layout_marginBottom="16dp" />
+</LinearLayout></com.google.android.material.card.MaterialCardView><TextView android:id="@+id/workflow_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/workflow_title" android:textSize="22sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/workflow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/workflow" android:textSize="17sp" android:layout_marginBottom="16dp" />
+</LinearLayout></androidx.core.widget.NestedScrollView>

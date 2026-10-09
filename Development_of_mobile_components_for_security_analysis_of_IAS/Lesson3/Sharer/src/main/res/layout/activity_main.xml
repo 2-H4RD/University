@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: ScrollView @+id/main.
+  Элементы: TextView @+id/title.
+  Элементы: EditText @+id/message.
+  Элементы: MaterialButton @+id/share.
+  Элементы: MaterialButton @+id/pick.
+  Элементы: TextView @+id/picked.
+  Элементы: MaterialButton @+id/camera.
+  Элементы: TextView @+id/camera_status.
+  Элементы: ImageView @+id/preview.
+-->
+
+<!-- Прокрутка сохраняет доступ к кнопкам в landscape и при открытой клавиатуре. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="?attr/colorSurface">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title" android:textSize="26sp" android:layout_marginBottom="16dp" /><!-- Уникальный id позволяет Android восстановить введённый текст при повороте. -->
+<EditText android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:hint="@string/hint" android:inputType="textCapSentences|textMultiLine" android:gravity="top" android:importantForAutofill="no" android:layout_marginBottom="16dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/share" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/share" android:layout_marginBottom="12dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/pick" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/pick" android:layout_marginBottom="12dp" /><TextView android:id="@+id/picked" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/picked_initial" android:textSize="16sp" android:layout_marginBottom="16dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/camera" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/camera" android:layout_marginBottom="12dp" /><TextView android:id="@+id/camera_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/camera_initial" android:textSize="16sp" android:layout_marginBottom="16dp" /><ImageView android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="fitCenter" android:contentDescription="@string/camera_initial" />
+</LinearLayout></ScrollView>

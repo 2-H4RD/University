@@ -1,0 +1,85 @@
+[
+  {
+    "module": "IntentApp",
+    "errors": 0,
+    "warnings": 11,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "MissingApplicationIcon",
+      "OldTargetApi",
+      "Overdraw",
+      "UseTomlInstead"
+    ]
+  },
+  {
+    "module": "Sharer",
+    "errors": 0,
+    "warnings": 8,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "MissingApplicationIcon",
+      "OldTargetApi",
+      "Overdraw",
+      "UseTomlInstead"
+    ]
+  },
+  {
+    "module": "FavoriteBook",
+    "errors": 0,
+    "warnings": 8,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "MissingApplicationIcon",
+      "OldTargetApi",
+      "Overdraw",
+      "UseTomlInstead"
+    ]
+  },
+  {
+    "module": "SystemIntentsApp",
+    "errors": 0,
+    "warnings": 7,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "MissingApplicationIcon",
+      "OldTargetApi",
+      "Overdraw",
+      "UseTomlInstead"
+    ]
+  },
+  {
+    "module": "SimpleFragmentApp",
+    "errors": 0,
+    "warnings": 15,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "InconsistentLayout",
+      "MissingApplicationIcon",
+      "NestedWeights",
+      "OldTargetApi",
+      "Overdraw",
+      "TypographyFractions",
+      "UseTomlInstead"
+    ]
+  },
+  {
+    "module": "MireaProject/app",
+    "errors": 0,
+    "warnings": 19,
+    "warning_ids": [
+      "DataExtractionRules",
+      "GradleDependency",
+      "MissingApplicationIcon",
+      "OldTargetApi",
+      "Overdraw",
+      "SetJavaScriptEnabled",
+      "UnusedResources",
+      "UseTomlInstead"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">Практика 3 • IntentApp</string>
+    <string name="title">Время между экранами</string>
+    <string name="explanation">Первый экран получает системное время и передаёт его второму экрану через явный Intent.</string>
+    <string name="send">Передать время</string>
+    <string name="time_initial">Нажмите кнопку, чтобы получить время.</string>
+    <string name="time_value">Время отправки: %1$s</string>
+    <string name="result">КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУППЕ СОСТАВЛЯЕТ %1$d, а текущее время %2$s</string>
+    <string name="missing">Время не передано</string>
+    <string name="back">Вернуться</string>
+    <string name="second_title">Второй экран • №5² = 25</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА mobile_navigation.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: navigation @+id/mobile_navigation.
+  Элементы: fragment @+id/nav_data.
+  Элементы: fragment @+id/nav_web.
+-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mobile_navigation" app:startDestination="@id/nav_data">
+    <fragment android:id="@+id/nav_data" android:name="ru.mirea.ZubarevVS.mireaproject.DataFragment" android:label="@string/data_title" tools:layout="@layout/fragment_data" />
+    <fragment android:id="@+id/nav_web" android:name="ru.mirea.ZubarevVS.mireaproject.WebViewFragment" android:label="@string/web_title" tools:layout="@layout/fragment_web_view" />
+</navigation>

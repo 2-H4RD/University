@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА AndroidManifest.xml.
+  Manifest объявляет компоненты, разрешения и тему. MAIN/LAUNCHER - точка входа.
+  exported=true нужен launcher и внешним получателям; внутренние Activity используют false.
+  intent-filter: action описывает действие, category - категорию, data - MIME/URI.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:name=".MireaApplication" android:allowBackup="false" android:label="@string/app_name" android:theme="@style/Theme.Lesson3" android:supportsRtl="true">
+        <!-- Launcher доступен системе; внутренние экраны закрыты для других приложений. -->
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SystemIntentsApp" type="AndroidRunConfigurationType" factoryName="Android App">
+    <module name="Lesson3.SystemIntentsApp" />
+    <option name="MODE" value="default_activity" />
+    <method v="2"><option name="Android.Gradle.BeforeRunTask" enabled="true" /></method>
+  </configuration>
+</component>

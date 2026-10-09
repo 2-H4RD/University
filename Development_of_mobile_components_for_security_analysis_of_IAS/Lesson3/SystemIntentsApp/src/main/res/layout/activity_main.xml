@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: ScrollView @+id/main.
+  Элементы: TextView @+id/title.
+  Элементы: TextView @+id/description.
+  Элементы: MaterialButton @+id/call.
+  Элементы: MaterialButton @+id/browser.
+  Элементы: MaterialButton @+id/maps.
+  Элементы: TextView @+id/hint.
+  Элементы: TextView @+id/status.
+-->
+
+<!-- Прокрутка сохраняет доступ к кнопкам в landscape и при открытой клавиатуре. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="?attr/colorSurface">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title" android:textSize="26sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/explanation" android:textSize="18sp" android:layout_marginBottom="16dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/call" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/call" android:layout_marginBottom="12dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/browser" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/browser" android:layout_marginBottom="12dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/maps" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/maps" android:layout_marginBottom="12dp" /><TextView android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dial_explanation" android:textSize="16sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/status_initial" android:textSize="16sp" android:layout_marginBottom="16dp" />
+</LinearLayout></ScrollView>

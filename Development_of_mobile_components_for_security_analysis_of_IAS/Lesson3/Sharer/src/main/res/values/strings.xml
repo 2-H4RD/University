@@ -1,0 +1,27 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">Практика 3 • Sharer</string>
+    <string name="title">Обмен данными</string>
+    <string name="hint">Введите текст для передачи</string>
+    <string name="share">Поделиться текстом</string>
+    <string name="chooser">Выбор за вами!</string>
+    <string name="default_text">Mirea</string>
+    <string name="receive_title">Полученный текст</string>
+    <string name="receive_empty">Текст не передан</string>
+    <string name="pick">Выбрать изображение</string>
+    <string name="picked_initial">Изображение пока не выбрано.</string>
+    <string name="picked">Получен URI: %1$s</string>
+    <string name="cancelled">Выбор изображения отменён.</string>
+    <string name="no_app">На устройстве нет приложения для этого действия.</string>
+    <string name="back">Вернуться</string>
+    <string name="camera">Открыть камеру</string>
+    <string name="camera_initial">Учебный снимок появится здесь.</string>
+    <string name="camera_ok">Получена миниатюра снимка.</string>
+    <string name="camera_cancel">Съёмка отменена.</string>
+</resources>

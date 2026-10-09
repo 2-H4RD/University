@@ -1,0 +1,522 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 90,
+    "sha256": "e478c4fa39563aeae56681dbdcb8c3e28eaca5c26077db8d8a169346b26d1d91"
+  },
+  {
+    "path": ".run/FavoriteBook.run.xml",
+    "bytes": 388,
+    "sha256": "7144e7e58a085ff2070620f46a830596e34724206f1037e01a29bd98923255fc"
+  },
+  {
+    "path": ".run/IntentApp.run.xml",
+    "bytes": 382,
+    "sha256": "599a46a9573d088b04d7a506c6d764e6d2cf7d7a144787f9f48669dfbed711a3"
+  },
+  {
+    "path": ".run/Sharer.run.xml",
+    "bytes": 376,
+    "sha256": "4ee1d38655f9540d5b53906c998ff0c012b9ce6b8fcf7a4dcb70061eace308cd"
+  },
+  {
+    "path": ".run/SimpleFragmentApp.run.xml",
+    "bytes": 398,
+    "sha256": "6985495a7e6d493c572a0cfec9b42cf8c8fee1e31e6729cee424e2c4d3d140bd"
+  },
+  {
+    "path": ".run/SystemIntentsApp.run.xml",
+    "bytes": 396,
+    "sha256": "d128aaf9b9775c2c7ec74764bf8eb33e682fdaa9ffd7f5a61ecb79f2ce6378b4"
+  },
+  {
+    "path": "assignment/Практика № 3.pdf",
+    "bytes": 3311928,
+    "sha256": "ad45ff2b0f8de93237208dd3e33f1e98e0a388e4a4eca88cfa59b53783db9662"
+  },
+  {
+    "path": "build.gradle.kts",
+    "bytes": 140,
+    "sha256": "9bd98fe37f2fd02238fc1cf2de7990fbc560f6bdf643f30ef9b0b0b00e8e941e"
+  },
+  {
+    "path": "FavoriteBook/build.gradle.kts",
+    "bytes": 1268,
+    "sha256": "7eb1b68bf09a847788e48d35c58e93f6a0cd685e93cba05583baf75b7f79007a"
+  },
+  {
+    "path": "FavoriteBook/src/main/AndroidManifest.xml",
+    "bytes": 859,
+    "sha256": "dfbf1e8be8f123270dda0a66d613685a6181118317f84c5feca5247a42541a63"
+  },
+  {
+    "path": "FavoriteBook/src/main/java/ru/mirea/ZubarevVS/lesson3/favoritebook/MainActivity.java",
+    "bytes": 3118,
+    "sha256": "55284bef5d3f972d13c261867f7173273bd6da0ebe8898d9cf06855c7ef06e15"
+  },
+  {
+    "path": "FavoriteBook/src/main/java/ru/mirea/ZubarevVS/lesson3/favoritebook/ScreenInsets.java",
+    "bytes": 1350,
+    "sha256": "ea3167006f60cc466f72c2c7825baba5e543fbfb70826a1be6c835062ed72913"
+  },
+  {
+    "path": "FavoriteBook/src/main/java/ru/mirea/ZubarevVS/lesson3/favoritebook/ShareActivity.java",
+    "bytes": 2463,
+    "sha256": "fa92639ebc78a8f674d16ec5e045383faac903c794e31ff9229f08fbb25416f5"
+  },
+  {
+    "path": "FavoriteBook/src/main/res/layout/activity_main.xml",
+    "bytes": 1391,
+    "sha256": "55b3c1380c16a541bd1f3c58c215c82757f47fd18fd1f33d9a99cea8ee397abc"
+  },
+  {
+    "path": "FavoriteBook/src/main/res/layout/activity_share.xml",
+    "bytes": 3105,
+    "sha256": "7a4a42980e983cc42b07710bcd25053cb57bfc1daa70929339e9c6714a40e73e"
+  },
+  {
+    "path": "FavoriteBook/src/main/res/values/strings.xml",
+    "bytes": 1281,
+    "sha256": "2222bd05ba5fcb43e337b456960c991f4fffd67b2facea9384f3146aabfe3aca"
+  },
+  {
+    "path": "FavoriteBook/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "FavoriteBook/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "gradle/libs.versions.toml",
+    "bytes": 1070,
+    "sha256": "d2792858af3e32a470a887771e7281e4127173e4617b7da4a3a9b147e00db767"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.jar",
+    "bytes": 45457,
+    "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.properties",
+    "bytes": 378,
+    "sha256": "15fc9724c242019ad7c36389c9a20769c4e9d6fe0aefb2564d771d21d763dbe3"
+  },
+  {
+    "path": "gradle.properties",
+    "bytes": 198,
+    "sha256": "ea010adc1d1f9ebc3dd3d7b687bfffc51b2badfde8f904f08c5be7ca864f042c"
+  },
+  {
+    "path": "gradlew",
+    "bytes": 8728,
+    "sha256": "3238afb2aed5cb16eb7d6718077e7138059108f007b54179e9cc157c5a6e0e89"
+  },
+  {
+    "path": "gradlew.bat",
+    "bytes": 2937,
+    "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+  },
+  {
+    "path": "IntentApp/build.gradle.kts",
+    "bytes": 1262,
+    "sha256": "8ba2f783e167822ae28a84434ce4bdfb866558642c9e16fe830495c11bfe7e8c"
+  },
+  {
+    "path": "IntentApp/src/main/AndroidManifest.xml",
+    "bytes": 817,
+    "sha256": "2bf5945d5ca421dec87ca39f7df8e3ec26ae8307ecc309ff538952a01703fa76"
+  },
+  {
+    "path": "IntentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/intentapp/MainActivity.java",
+    "bytes": 2597,
+    "sha256": "9fdcbfae81d822321a6a65b845c628f189ab51cd3d6f32a2a035cb575bed3363"
+  },
+  {
+    "path": "IntentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/intentapp/ScreenInsets.java",
+    "bytes": 1347,
+    "sha256": "95484c249512077ac60f6ed697c67c93616253351798e55172247ea83fd5dd12"
+  },
+  {
+    "path": "IntentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/intentapp/SecondActivity.java",
+    "bytes": 1240,
+    "sha256": "f368ed202b4b3e45b0404c4046aec93d475376a3cf993fdae8beea450bee4483"
+  },
+  {
+    "path": "IntentApp/src/main/res/layout/activity_main.xml",
+    "bytes": 1597,
+    "sha256": "970aff1f6829e53d6ab88c423a9cd34be408a4f73f292b0e8e9b37ea1bd7ff01"
+  },
+  {
+    "path": "IntentApp/src/main/res/layout/activity_second.xml",
+    "bytes": 1392,
+    "sha256": "5d792032f4c7695e8bd6a109e593a0685e86c6dcb15b5b59afe9bf70121e0535"
+  },
+  {
+    "path": "IntentApp/src/main/res/values/strings.xml",
+    "bytes": 1006,
+    "sha256": "29e62b38b9aa93e4548046658790833ee285e2633483d2517a1e8992675f2e81"
+  },
+  {
+    "path": "IntentApp/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "IntentApp/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "MireaProject/.gitignore",
+    "bytes": 90,
+    "sha256": "e478c4fa39563aeae56681dbdcb8c3e28eaca5c26077db8d8a169346b26d1d91"
+  },
+  {
+    "path": "MireaProject/.run/app.run.xml",
+    "bytes": 375,
+    "sha256": "212011256ec30a108f94dcffd5e680ed5845f59c6497c887bb2755ce262da9d8"
+  },
+  {
+    "path": "MireaProject/app/build.gradle.kts",
+    "bytes": 1595,
+    "sha256": "c449ce022d29de64750de27b5ea6cc40d48293774acb9956f58c5670460f9aad"
+  },
+  {
+    "path": "MireaProject/app/src/main/AndroidManifest.xml",
+    "bytes": 844,
+    "sha256": "4ca7818496aed1acd1e0bfb6c31e3080597cbd2301f6282666348cbf14437eb0"
+  },
+  {
+    "path": "MireaProject/app/src/main/java/ru/mirea/ZubarevVS/mireaproject/DataFragment.java",
+    "bytes": 1146,
+    "sha256": "b41bfbbee858a1cff0659ca5e7b91be45dc7f4230016fb8dc6fc06988bd0817c"
+  },
+  {
+    "path": "MireaProject/app/src/main/java/ru/mirea/ZubarevVS/mireaproject/MainActivity.java",
+    "bytes": 3856,
+    "sha256": "b3fbf8c0c3aa0acd3fecdf5d5f6a333373ffec6d31da0f8a855bff429392fb7e"
+  },
+  {
+    "path": "MireaProject/app/src/main/java/ru/mirea/ZubarevVS/mireaproject/MireaApplication.java",
+    "bytes": 506,
+    "sha256": "949ed882d281b7628d28a6c2760f2d49a196092b4da70985634b27c4e1792ff1"
+  },
+  {
+    "path": "MireaProject/app/src/main/java/ru/mirea/ZubarevVS/mireaproject/ScreenInsets.java",
+    "bytes": 1342,
+    "sha256": "1860c855d662908c6652a1d25f8f1837146c1665a5eb33a74375a0f38925ff82"
+  },
+  {
+    "path": "MireaProject/app/src/main/java/ru/mirea/ZubarevVS/mireaproject/WebViewFragment.java",
+    "bytes": 8029,
+    "sha256": "bbbda9df11987202d3bc97121cb2913b4c2173beb510f8eff29f258d04d16eff"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/drawable/ic_security.xml",
+    "bytes": 319,
+    "sha256": "13ec5c65122efefb8b191fd5ca508fce5e9047ba50e2372725b45f2edbce0ec2"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/drawable/ic_web.xml",
+    "bytes": 272,
+    "sha256": "55dffbfbd9aad1802ded5233ca202f82194cdeeab89cbd6080a92ccb16de500d"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/activity_main.xml",
+    "bytes": 909,
+    "sha256": "29fc38f45bec0a1993e3b47c4b175261589a6a2e2692e9e817ce344f0098e4cf"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/app_bar_main.xml",
+    "bytes": 844,
+    "sha256": "ca639833a5744138606a5c8e63a5e598aa97d3cd3b4725d1a4b375343ee23d61"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/content_main.xml",
+    "bytes": 453,
+    "sha256": "bfe583702c4c0d03a09cd28dd5609335f432570d20bd86542e99bb464dcf821d"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/fragment_data.xml",
+    "bytes": 4823,
+    "sha256": "699b50bd862cbee174fcf0fbedd87d88c29bd9b957fe54c74ef1803de51e9fcb"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/fragment_web_view.xml",
+    "bytes": 2496,
+    "sha256": "1338c57e79abf0c602036969542293c2f8cb9e5cfce3382b210de5f228162630"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/layout/nav_header_main.xml",
+    "bytes": 847,
+    "sha256": "bfb5f2ab0f3c461dcdd2f0662021aec94e8640672b780b8f5331f32ab0db18a0"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/menu/activity_main_drawer.xml",
+    "bytes": 513,
+    "sha256": "162583b00ae8e1c9a391bb84942d433acb075b2a04c3f9b479f435a344218ba2"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/navigation/mobile_navigation.xml",
+    "bytes": 658,
+    "sha256": "330943ef08bbc97537dd8977bf4b5da49352566b3f2d5d03c85045dfa7c16d0d"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/values/strings.xml",
+    "bytes": 3223,
+    "sha256": "7e2946da5b2cfc02590c78c8344181c6c98a7ec0052658de66cbbe7b2ddb60d7"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "MireaProject/app/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "MireaProject/build.gradle.kts",
+    "bytes": 140,
+    "sha256": "9bd98fe37f2fd02238fc1cf2de7990fbc560f6bdf643f30ef9b0b0b00e8e941e"
+  },
+  {
+    "path": "MireaProject/gradle/libs.versions.toml",
+    "bytes": 1070,
+    "sha256": "d2792858af3e32a470a887771e7281e4127173e4617b7da4a3a9b147e00db767"
+  },
+  {
+    "path": "MireaProject/gradle/wrapper/gradle-wrapper.jar",
+    "bytes": 45457,
+    "sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3"
+  },
+  {
+    "path": "MireaProject/gradle/wrapper/gradle-wrapper.properties",
+    "bytes": 378,
+    "sha256": "15fc9724c242019ad7c36389c9a20769c4e9d6fe0aefb2564d771d21d763dbe3"
+  },
+  {
+    "path": "MireaProject/gradle.properties",
+    "bytes": 198,
+    "sha256": "ea010adc1d1f9ebc3dd3d7b687bfffc51b2badfde8f904f08c5be7ca864f042c"
+  },
+  {
+    "path": "MireaProject/gradlew",
+    "bytes": 8728,
+    "sha256": "3238afb2aed5cb16eb7d6718077e7138059108f007b54179e9cc157c5a6e0e89"
+  },
+  {
+    "path": "MireaProject/gradlew.bat",
+    "bytes": 2937,
+    "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+  },
+  {
+    "path": "MireaProject/README.md",
+    "bytes": 1596,
+    "sha256": "66fe2a335a1f81aa3f18bf5b266a3af24edcc21bab31a21dbd1aa8ebf5b760c7"
+  },
+  {
+    "path": "MireaProject/settings.gradle.kts",
+    "bytes": 395,
+    "sha256": "b47006ee3d08b8275cb605f80fa729c7ac90086aeee2800d29b20f4437a4ffcf"
+  },
+  {
+    "path": "README.md",
+    "bytes": 4097,
+    "sha256": "7a56a17c5c19119e13c3ee2771344b67a7d657b144e9c8c72c2ae99a937e0212"
+  },
+  {
+    "path": "scripts/build-all.ps1",
+    "bytes": 787,
+    "sha256": "ffb70731e2486dc23bfca9dc91f7a05af31edaf2e7aca033ae5a89ee9ecef44a"
+  },
+  {
+    "path": "scripts/run-emulator.ps1",
+    "bytes": 784,
+    "sha256": "b24bfb2415c0fa4dd436a629c03b194b296bfe23b8791cbffbd4db8d1d148738"
+  },
+  {
+    "path": "settings.gradle.kts",
+    "bytes": 467,
+    "sha256": "8557be07abecc7fc855ddc326c4594b9151d23d6fcd5a3a534f7e285987b3bd8"
+  },
+  {
+    "path": "Sharer/build.gradle.kts",
+    "bytes": 1256,
+    "sha256": "eafec7ce0f6951cf16f9f00b04f0d165fe2c3c190758531fb651713efca572b2"
+  },
+  {
+    "path": "Sharer/src/main/AndroidManifest.xml",
+    "bytes": 1127,
+    "sha256": "281eb8c2efc430042dc71c0ffda676659e31777b3eaecfde56fe8f8379b5b2bf"
+  },
+  {
+    "path": "Sharer/src/main/java/ru/mirea/ZubarevVS/lesson3/sharer/MainActivity.java",
+    "bytes": 5473,
+    "sha256": "744a8417b193980154904e136200d1814d8176e9c036f07f02f20debf278c759"
+  },
+  {
+    "path": "Sharer/src/main/java/ru/mirea/ZubarevVS/lesson3/sharer/ScreenInsets.java",
+    "bytes": 1344,
+    "sha256": "895d625f0e0e86648b8f75847e17f01d804607acefe370d7f386d255cf87a0ab"
+  },
+  {
+    "path": "Sharer/src/main/java/ru/mirea/ZubarevVS/lesson3/sharer/ShareActivity.java",
+    "bytes": 1235,
+    "sha256": "0c61c5be7e6b1a58d84275e14a1fd595e91c5c8707cfccf568fc6ced1b2622c5"
+  },
+  {
+    "path": "Sharer/src/main/res/layout/activity_main.xml",
+    "bytes": 2932,
+    "sha256": "e9152ed565bdeecb2e25ade225ba726a623e67abb30623a1ec0ce0f552611682"
+  },
+  {
+    "path": "Sharer/src/main/res/layout/activity_share.xml",
+    "bytes": 1432,
+    "sha256": "6733b8dca3200d6f309932e27513bd4fde0dd051d919074cd3de914f633dbbb4"
+  },
+  {
+    "path": "Sharer/src/main/res/values/strings.xml",
+    "bytes": 1397,
+    "sha256": "5377fed4fb27be91757031b9c64653674f16f65ddf3f361816c65479efb653c1"
+  },
+  {
+    "path": "Sharer/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "Sharer/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "SimpleFragmentApp/build.gradle.kts",
+    "bytes": 1278,
+    "sha256": "fccbca5246ce88d36c686d9c0123a61a85fe80ad8176169b1f3043d85aab36fc"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/AndroidManifest.xml",
+    "bytes": 749,
+    "sha256": "04d3df5a48be24a611e8ea3c8c31cdf4ba5fada575700efa57ef1eef41288e58"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/simplefragmentapp/FirstFragment.java",
+    "bytes": 795,
+    "sha256": "ccc70f9a0dfce6afdc0a753fd56b9bbf06fb29bdae28a0686b0dc43a61bcb31e"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/simplefragmentapp/MainActivity.java",
+    "bytes": 4249,
+    "sha256": "a946bba213fc594f78c3adc7f2fa4b1e1ca037facf174fee74b8f208a539d6b7"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/simplefragmentapp/ScreenInsets.java",
+    "bytes": 1355,
+    "sha256": "bfb380dc1729b11fa1c7293187bad0218801c2cbadde36067b7791e4813d4805"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/java/ru/mirea/ZubarevVS/lesson3/simplefragmentapp/SecondFragment.java",
+    "bytes": 797,
+    "sha256": "7d86b0f7505402adab8a5c013425a4589b0856b3913f669e4f086ee5e415c469"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/layout/activity_main.xml",
+    "bytes": 1552,
+    "sha256": "1ab6592c5c58a085792d498fcb8cb3338930bbc9128734077483a9b207296c14"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/layout/fragment_first.xml",
+    "bytes": 1530,
+    "sha256": "dee7880486db09817b5aa2f303267c4a6e8e23feb05a5801fc43dd524fce2600"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/layout/fragment_second.xml",
+    "bytes": 1538,
+    "sha256": "4d4dc81869ef9f118c44fb1977e8a998a316beaf626438ca77408712a02e910e"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/layout-land/activity_main.xml",
+    "bytes": 1348,
+    "sha256": "3a90e302ca775f6d39c178514d588ad13e04360da1bf2aed2b5cc024f15cde63"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/values/strings.xml",
+    "bytes": 954,
+    "sha256": "6d3f1b2cc1c7255c3f9263d943d85ae0ee3ad115840b5603e95df231522ded2a"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "SimpleFragmentApp/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "SystemIntentsApp/build.gradle.kts",
+    "bytes": 1276,
+    "sha256": "8d8a8bd67833fc1b990f24b977ba74380d1b34331b31021c08f55e7d5808d60d"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/AndroidManifest.xml",
+    "bytes": 749,
+    "sha256": "04d3df5a48be24a611e8ea3c8c31cdf4ba5fada575700efa57ef1eef41288e58"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/java/ru/mirea/ZubarevVS/lesson3/systemintentsapp/MainActivity.java",
+    "bytes": 2797,
+    "sha256": "fe5eb656f01397e56be45b89626336b6fbf8a2d4fce29838c75f51bd1010b6c7"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/java/ru/mirea/ZubarevVS/lesson3/systemintentsapp/ScreenInsets.java",
+    "bytes": 1354,
+    "sha256": "abb77879e4f4e7245af94ffa87c8e049f037c05945bfd059ba9460d936a01fcf"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/res/layout/activity_main.xml",
+    "bytes": 2500,
+    "sha256": "e476d7ee197692d6e35871ad0941cc9561292cd66b1f168be05efd8ed74434c1"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/res/values/strings.xml",
+    "bytes": 1052,
+    "sha256": "585e59b8a2ac172cff36e398b659a6abad2271fc2cb445bbad931a0a49c02acf"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/res/values/themes.xml",
+    "bytes": 705,
+    "sha256": "382e3fa894ab57cd814b77420fda40c679ca0059ad1c0b8a165bcd2441b21335"
+  },
+  {
+    "path": "SystemIntentsApp/src/main/res/values-night/themes.xml",
+    "bytes": 675,
+    "sha256": "58dfed67637910ca2ba1dfae2bb786ab6f2f79b0acff9d03ff988ac3f6e44a0a"
+  },
+  {
+    "path": "verification/check_extra.py",
+    "bytes": 3694,
+    "sha256": "dddb8fb9233f33fcf3bb5de00639b3814c634d536b626b9245ebed075d86b6a8"
+  },
+  {
+    "path": "verification/check_lesson3.py",
+    "bytes": 11218,
+    "sha256": "e46cc75fee2d76e8517482d2fe7853066f62bb8ba4eabd8c7076a9be975b00f9"
+  },
+  {
+    "path": "verification/checks.json",
+    "bytes": 6889,
+    "sha256": "265399fbefafe6ebff1910b73fdd850e36255f75081cb5c49e63ca520e1d025f"
+  },
+  {
+    "path": "Инструкция по реализации и защите практики № 3.md",
+    "bytes": 40847,
+    "sha256": "0fe249258775d4e13de990b1358eaa0b0d168c12ded0a9de261f41149e746ff4"
+  }
+]

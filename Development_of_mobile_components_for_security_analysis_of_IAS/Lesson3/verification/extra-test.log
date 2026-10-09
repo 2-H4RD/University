@@ -1,0 +1,11 @@
+PASS Sharer camera status survives rotation
+PASS Google Maps opens geo URI
+PASS Final drawer opens after inset fix
+FAIL Final WebView MIREA renders
+Traceback (most recent call last):
+  File "C:\Users\H4RD\.codex\visualizations\2026\10\08\01a11c19-3c26-77b1-909e-7b24c44eb0b4\verify_final.py", line 26, in <module>
+    m.check('Final WebView MIREA renders',m.text_id('status')=='�������� ���������.' and 'mirea.ru' in m.text_id('url'))
+  File "F:\University\Development_of_mobile_components_for_security_analysis_of_IAS\Lesson3\verification\check_lesson3.py", line 61, in check
+    if not condition: raise AssertionError(name+' '+detail)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Final WebView MIREA renders 

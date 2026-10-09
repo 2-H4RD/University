@@ -1,0 +1,19 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">Практика 3 • SimpleFragmentApp</string>
+    <string name="title">Два фрагмента</string>
+    <string name="first">First screen</string>
+    <string name="second">Second screen</string>
+    <string name="first_text">Первый фрагмент</string>
+    <string name="second_text">Второй фрагмент</string>
+    <string name="first_info">В портретной ориентации кнопки заменяют фрагмент в одном контейнере.</string>
+    <string name="second_info">В горизонтальной ориентации оба фрагмента видны одновременно: слева 1/3, справа 2/3.</string>
+    <string name="hint">Введите текст фрагмента</string>
+    <string name="land_title">Оба фрагмента • горизонтальный экран</string>
+</resources>

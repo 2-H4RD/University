@@ -1,0 +1,23 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">Практика 3 • FavoriteBook</string>
+    <string name="title">Любимая книга</string>
+    <string name="initial">Тут появится название вашей любимой книги и любимая цитата из нее!</string>
+    <string name="open">Открыть экран ввода данных</string>
+    <string name="developer_title">Любимая книга разработчика</string>
+    <string name="quote_title">Цитата из книги</string>
+    <string name="developer_book">ТРЕБУЕТСЯ ЗАПОЛНИТЬ</string>
+    <string name="developer_quote">ТРЕБУЕТСЯ ЗАПОЛНИТЬ</string>
+    <string name="book_hint">Введите название Вашей любимой книги</string>
+    <string name="quote_hint">Введите цитату из Вашей любимой книги</string>
+    <string name="send_back">Отправить на первый экран</string>
+    <string name="result">Название Вашей любимой книги: %1$s. Цитата: %2$s</string>
+    <string name="required">Заполните это поле</string>
+    <string name="cancel">Отмена</string>
+</resources>

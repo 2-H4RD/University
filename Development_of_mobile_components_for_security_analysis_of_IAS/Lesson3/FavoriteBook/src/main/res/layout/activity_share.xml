@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_share.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: ScrollView @+id/main.
+  Элементы: TextView @+id/developer_title.
+  Элементы: TextView @+id/developer_book.
+  Элементы: TextView @+id/quote_title.
+  Элементы: TextView @+id/developer_quote.
+  Элементы: EditText @+id/book_name.
+  Элементы: EditText @+id/quote.
+  Элементы: MaterialButton @+id/send.
+  Элементы: MaterialButton @+id/cancel.
+-->
+
+<!-- Прокрутка сохраняет доступ к кнопкам в landscape и при открытой клавиатуре. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="?attr/colorSurface">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+<TextView android:id="@+id/developer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/developer_title" android:textSize="22sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/developer_book" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/developer_book" android:textSize="20sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/quote_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/quote_title" android:textSize="22sp" android:layout_marginBottom="16dp" /><TextView android:id="@+id/developer_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/developer_quote" android:textSize="18sp" android:layout_marginBottom="16dp" /><!-- Уникальный id позволяет Android восстановить введённый текст при повороте. -->
+<EditText android:id="@+id/book_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:hint="@string/book_hint" android:inputType="textCapSentences|textMultiLine" android:gravity="top" android:importantForAutofill="no" android:layout_marginBottom="16dp" /><!-- Уникальный id позволяет Android восстановить введённый текст при повороте. -->
+<EditText android:id="@+id/quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:hint="@string/quote_hint" android:inputType="textCapSentences|textMultiLine" android:gravity="top" android:importantForAutofill="no" android:layout_marginBottom="16dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/send" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/send_back" android:layout_marginBottom="12dp" /><!-- Обработчик кнопки назначается в Java через setOnClickListener. -->
+<com.google.android.material.button.MaterialButton android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/cancel" android:layout_marginBottom="12dp" />
+</LinearLayout></ScrollView>

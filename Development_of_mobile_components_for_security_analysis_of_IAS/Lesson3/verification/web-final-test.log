@@ -1,0 +1,15 @@
+PASS Final WebView MIREA renders
+PASS WebView rejects cleartext URL
+PASS Final WebView renders example.com
+PASS Drawer Back precedes WebView history
+FAIL Final WebView history back
+Traceback (most recent call last):
+  File "C:\Users\H4RD\.codex\visualizations\2026\10\08\01a11c19-3c26-77b1-909e-7b24c44eb0b4\verify_web.py", line 29, in <module>
+    m.check('Final WebView history back','mirea.ru' in m.text_id('url'))
+  File "F:\University\Development_of_mobile_components_for_security_analysis_of_IAS\Lesson3\verification\check_lesson3.py", line 61, in check
+    if not condition: raise AssertionError(name+' '+detail)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Final WebView history back 
+PASS Final WebView history back
+PASS Final no fatal exception
+Final count 52

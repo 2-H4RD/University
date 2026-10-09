@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА nav_header_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: TextView @+id/header_title.
+  Элементы: TextView @+id/header_student.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:paddingTop="48dp" android:background="?attr/colorPrimaryContainer">
+<TextView android:id="@+id/header_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textSize="26sp" android:layout_marginBottom="16dp" android:textColor="?attr/colorOnPrimaryContainer"/><TextView android:id="@+id/header_student" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/student" android:textSize="16sp" android:layout_marginBottom="16dp" android:textColor="?attr/colorOnPrimaryContainer"/></LinearLayout>

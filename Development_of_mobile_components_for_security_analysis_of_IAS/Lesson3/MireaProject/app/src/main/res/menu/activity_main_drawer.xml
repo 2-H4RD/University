@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main_drawer.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: item @+id/nav_data.
+  Элементы: item @+id/nav_web.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ID каждого пункта точно совпадает с ID destination в графе. -->
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_data" android:icon="@drawable/ic_security" android:title="@string/data_title" />
+        <item android:id="@+id/nav_web" android:icon="@drawable/ic_web" android:title="@string/web_title" />
+    </group>
+</menu>

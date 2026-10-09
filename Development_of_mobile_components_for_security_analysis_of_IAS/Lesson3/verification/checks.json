@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Install IntentApp",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Install Sharer",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Install FavoriteBook",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Install SystemIntentsApp",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Install SimpleFragmentApp",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Install MireaProject",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "IntentApp initial",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "IntentApp square 25 and timestamp",
+    "passed": true,
+    "detail": "КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУППЕ СОСТАВЛЯЕТ 25, а текущее время 2026-10-08 15:41:54"
+  },
+  {
+    "name": "IntentApp result survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "IntentApp displays exact sent time",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "FavoriteBook initial",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "FavoriteBook developer fields",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "FavoriteBook rejects empty fields",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "FavoriteBook returns entered data",
+    "passed": true,
+    "detail": "Название Вашей любимой книги: Practice Book. Цитата: Test quote"
+  },
+  {
+    "name": "FavoriteBook result survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "FavoriteBook cancellation preserves result",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Sharer chooser opens",
+    "passed": true,
+    "detail": "\n\n\n\n\n\n\n\nSharing text\n\n\n\n\n\nMirea\n\n\n\n\n\n\n\n\n\n\n\nNo recommended people to share with\n\n\n\nQuick Share\n\n\nПрактика 3 • Sharer\n\n\nChrome\n\n\nDrive\nCopy to clipboard\n\n\nDrive\n\n\n\n\n"
+  },
+  {
+    "name": "Sharer receives shared text",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Sharer opens image picker",
+    "passed": true,
+    "detail": "\n\n\n\n\n\n\n\nSelect a photo\n\n\n"
+  },
+  {
+    "name": "Sharer picker cancellation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "ACTION_DIAL opens number",
+    "passed": true,
+    "detail": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n89811112233\n\n\n\n\n\n\n\n1\n\n\n\n\n\n2\n\nABC\n\n\n3\n\nDEF\n\n\n\n4\n\nGHI\n\n\n5\n\nJKL\n\n\n6\n\nMNO\n\n\n\n7\n\nPQRS\n\n\n8\n\nTUV\n\n\n9\n\nWXYZ\n\n\n\n*\n\n\n0\n\n+\n\n\n#\n\nCall\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "name": "ACTION_VIEW browser launches",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Geo handler or explicit missing-app message",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragment first portrait",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragment replace second",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragments both landscape",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragment active text survives portrait to landscape",
+    "passed": true,
+    "detail": "\n\n\n\n\n\nОба фрагмента • горизонтальный экран\n\n\n\n\nПервый фрагмент\nВ портретной ориентации кнопки заменяют фрагмент в одном контейнере.\nВведите текст фрагмента\n\n\n\nВторой фрагмент\nВ горизонтальной ориентации оба фрагмента видны одновременно: слева 1/3, справа 2/3.\nRotation note"
+  },
+  {
+    "name": "Selected second restored after landscape",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragment text survives landscape to portrait",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Fragment night theme no crash",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "MireaProject data screen",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "MireaProject data scrolls",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Drawer includes both destinations",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Back closes drawer",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "WebView destination",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "WebView default URL is MIREA",
+    "passed": true,
+    "detail": "https://www.mirea.ru/"
+  },
+  {
+    "name": "WebView loads example.com",
+    "passed": true,
+    "detail": "\n\n\n\n\n\n\n\n\nБраузер\n\n\n\nhttps://example.com/\n\nОткрыть\nМИРЭА\n\nНазад\nОбновить\nСтраница загружена.\n\nExample Domain\nThis domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.\nهذا النطاق مُخصص للاستخدام في أمثلة"
+  },
+  {
+    "name": "WebView URL survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "WebView back history",
+    "passed": true,
+    "detail": "https://www.mirea.ru/"
+  },
+  {
+    "name": "MireaProject dark theme",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No app fatal exception",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Sharer image picker returns content URI",
+    "passed": true,
+    "detail": "Получен URI: content://com.google.android.apps.photos.contentprovider/-1/1/content%3A%2F%2Fmedia%2Fexternal%2Fimages%2Fmedia%2F1000000019/ORIGINAL/NONE/image%2Fpng/1222537308"
+  },
+  {
+    "name": "Sharer camera returns thumbnail",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Sharer camera status survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Google Maps opens geo URI",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Final drawer opens after inset fix",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Final WebView MIREA renders",
+    "passed": true,
+    "detail": "Страница загружена."
+  },
+  {
+    "name": "WebView rejects cleartext URL",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Final WebView renders example.com",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Drawer Back precedes WebView history",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Final WebView history back",
+    "passed": true,
+    "detail": "https://www.mirea.ru/"
+  },
+  {
+    "name": "Final no fatal exception",
+    "passed": true,
+    "detail": ""
+  }
+]

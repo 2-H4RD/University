@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА fragment_web_view.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: EditText @+id/url.
+  Элементы: MaterialButton @+id/go.
+  Элементы: MaterialButton @+id/home.
+  Элементы: MaterialButton @+id/backPage.
+  Элементы: MaterialButton @+id/reload.
+  Элементы: ProgressBar @+id/progress.
+  Элементы: TextView @+id/status.
+  Элементы: WebView @+id/webView.
+-->
+
+<!-- В landscape панель занимает одну строку: странице остаётся достаточная высота.
+     ID и типы совпадают с portrait, поэтому FragmentWebViewBinding и Java код общие. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="12dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <EditText android:id="@+id/url" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:minHeight="48dp" android:hint="@string/url_hint" android:inputType="textUri" android:singleLine="true"
+            android:imeOptions="actionGo" android:importantForAutofill="no" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/go" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:minHeight="48dp" android:text="@string/go" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/home" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:minHeight="48dp" android:text="@string/home" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/backPage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:minHeight="48dp" android:text="@string/back_page" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/reload" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp" android:minHeight="48dp" android:text="@string/reload" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="4dp" android:max="100" android:visibility="gone" />
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/web_explanation" android:paddingTop="4dp" android:paddingBottom="4dp" />
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+PASS Install IntentApp
+PASS Install Sharer
+PASS Install FavoriteBook
+PASS Install SystemIntentsApp
+PASS Install SimpleFragmentApp
+PASS Install MireaProject
+PASS IntentApp initial
+PASS IntentApp square 25 and timestamp
+PASS IntentApp result survives rotation
+PASS IntentApp displays exact sent time
+PASS FavoriteBook initial
+PASS FavoriteBook developer fields
+PASS FavoriteBook rejects empty fields
+PASS FavoriteBook returns entered data
+PASS FavoriteBook result survives rotation
+PASS FavoriteBook cancellation preserves result
+PASS Sharer chooser opens
+PASS Sharer receives shared text
+PASS Sharer opens image picker
+PASS Sharer picker cancellation
+PASS ACTION_DIAL opens number
+PASS ACTION_VIEW browser launches
+PASS Geo handler or explicit missing-app message
+PASS Fragment first portrait
+PASS Fragment replace second
+PASS Fragments both landscape
+PASS Fragment active text survives portrait to landscape
+PASS Selected second restored after landscape
+PASS Fragment text survives landscape to portrait
+PASS Fragment night theme no crash
+PASS MireaProject data screen
+PASS MireaProject data scrolls
+PASS Drawer includes both destinations
+PASS Back closes drawer
+PASS WebView destination
+PASS WebView default URL is MIREA
+PASS WebView loads example.com
+PASS WebView URL survives rotation
+PASS WebView back history
+PASS MireaProject dark theme
+PASS No app fatal exception
+Completed 41 checks

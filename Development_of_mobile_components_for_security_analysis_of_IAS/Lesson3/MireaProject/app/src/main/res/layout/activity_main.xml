@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: DrawerLayout @+id/drawerLayout.
+  Элементы: include @+id/appBarMain.
+  Элементы: NavigationView @+id/navView.
+-->
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawerLayout" android:layout_width="match_parent" android:layout_height="match_parent" tools:openDrawer="start">
+    <!-- Основной экран находится перед NavigationView, как в шаблоне Navigation Drawer Activity. -->
+    <include android:id="@+id/appBarMain" layout="@layout/app_bar_main" />
+    <com.google.android.material.navigation.NavigationView android:id="@+id/navView" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="start" app:headerLayout="@layout/nav_header_main" app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

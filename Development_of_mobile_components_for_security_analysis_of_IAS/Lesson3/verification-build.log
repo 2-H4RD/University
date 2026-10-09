@@ -1,0 +1,303 @@
+> Task :FavoriteBook:preBuild UP-TO-DATE
+> Task :FavoriteBook:preDebugBuild UP-TO-DATE
+> Task :FavoriteBook:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :FavoriteBook:generateDebugResources
+> Task :FavoriteBook:packageDebugResources
+> Task :FavoriteBook:processDebugNavigationResources
+> Task :FavoriteBook:generateDebugAssets UP-TO-DATE
+> Task :FavoriteBook:javaPreCompileDebug
+> Task :FavoriteBook:parseDebugLocalResources
+> Task :FavoriteBook:mergeDebugAssets
+> Task :FavoriteBook:compressDebugAssets
+> Task :FavoriteBook:generateDebugRFile
+> Task :FavoriteBook:generateDebugGlobalSynthetics
+> Task :FavoriteBook:compileDebugKotlin NO-SOURCE
+> Task :FavoriteBook:compileDebugJavaWithJavac
+> Task :FavoriteBook:processDebugJavaRes NO-SOURCE
+> Task :FavoriteBook:checkDebugDuplicateClasses
+> Task :FavoriteBook:desugarDebugFileDependencies
+> Task :FavoriteBook:checkDebugAarMetadata
+> Task :FavoriteBook:mergeExtDexDebug
+> Task :FavoriteBook:mapDebugSourceSetPaths
+> Task :FavoriteBook:mergeLibDexDebug
+> Task :FavoriteBook:compileDebugNavigationResources
+> Task :FavoriteBook:mergeDebugJavaResource
+> Task :FavoriteBook:createDebugCompatibleScreenManifests
+> Task :FavoriteBook:extractDeepLinksDebug
+> Task :FavoriteBook:processDebugMainManifest
+> Task :FavoriteBook:mergeDebugResources
+> Task :FavoriteBook:processDebugManifest
+> Task :FavoriteBook:mergeDebugJniLibFolders
+> Task :FavoriteBook:mergeDebugNativeLibs NO-SOURCE
+> Task :FavoriteBook:stripDebugDebugSymbols NO-SOURCE
+> Task :FavoriteBook:validateSigningDebug
+> Task :FavoriteBook:writeDebugAppMetadata
+> Task :FavoriteBook:writeDebugSigningConfigVersions
+> Task :IntentApp:preBuild UP-TO-DATE
+> Task :IntentApp:preDebugBuild UP-TO-DATE
+> Task :IntentApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :IntentApp:generateDebugResources
+> Task :IntentApp:packageDebugResources
+> Task :IntentApp:processDebugNavigationResources
+> Task :FavoriteBook:processDebugManifestForPackage
+> Task :IntentApp:parseDebugLocalResources
+> Task :IntentApp:javaPreCompileDebug
+> Task :IntentApp:generateDebugAssets UP-TO-DATE
+> Task :IntentApp:mergeDebugAssets
+> Task :IntentApp:generateDebugRFile
+> Task :IntentApp:compressDebugAssets
+> Task :IntentApp:compileDebugKotlin NO-SOURCE
+> Task :IntentApp:compileDebugJavaWithJavac
+> Task :IntentApp:generateDebugGlobalSynthetics
+> Task :IntentApp:processDebugJavaRes NO-SOURCE
+> Task :IntentApp:checkDebugDuplicateClasses
+> Task :IntentApp:desugarDebugFileDependencies
+> Task :IntentApp:mergeExtDexDebug
+> Task :IntentApp:mergeLibDexDebug
+> Task :IntentApp:checkDebugAarMetadata
+> Task :IntentApp:mapDebugSourceSetPaths
+> Task :IntentApp:compileDebugNavigationResources
+> Task :IntentApp:mergeDebugJavaResource
+> Task :FavoriteBook:processDebugResources
+> Task :IntentApp:mergeDebugResources
+> Task :FavoriteBook:dexBuilderDebug
+> Task :IntentApp:createDebugCompatibleScreenManifests
+> Task :IntentApp:extractDeepLinksDebug
+> Task :FavoriteBook:mergeProjectDexDebug
+> Task :IntentApp:processDebugMainManifest
+> Task :IntentApp:processDebugManifest
+> Task :IntentApp:mergeDebugJniLibFolders
+> Task :IntentApp:mergeDebugNativeLibs NO-SOURCE
+> Task :IntentApp:stripDebugDebugSymbols NO-SOURCE
+> Task :IntentApp:validateSigningDebug
+> Task :IntentApp:writeDebugAppMetadata
+> Task :IntentApp:writeDebugSigningConfigVersions
+> Task :Sharer:preBuild UP-TO-DATE
+> Task :Sharer:preDebugBuild UP-TO-DATE
+> Task :Sharer:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :Sharer:generateDebugResources
+> Task :Sharer:packageDebugResources
+> Task :Sharer:processDebugNavigationResources
+> Task :IntentApp:processDebugManifestForPackage
+> Task :Sharer:parseDebugLocalResources
+> Task :Sharer:javaPreCompileDebug
+> Task :Sharer:generateDebugAssets UP-TO-DATE
+> Task :Sharer:generateDebugRFile
+> Task :Sharer:mergeDebugAssets
+> Task :Sharer:compileDebugKotlin NO-SOURCE
+
+> Task :Sharer:compileDebugJavaWithJavac
+Note: F:\University\Development_of_mobile_components_for_security_analysis_of_IAS\Lesson3\Sharer\src\main\java\ru\mirea\ZubarevVS\lesson3\sharer\MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :Sharer:compressDebugAssets
+> Task :Sharer:generateDebugGlobalSynthetics
+> Task :Sharer:processDebugJavaRes NO-SOURCE
+> Task :Sharer:checkDebugDuplicateClasses
+> Task :FavoriteBook:packageDebug
+> Task :FavoriteBook:createDebugApkListingFileRedirect
+> Task :FavoriteBook:assembleDebug
+> Task :IntentApp:processDebugResources
+> Task :Sharer:desugarDebugFileDependencies
+> Task :Sharer:mergeDebugJavaResource
+> Task :IntentApp:dexBuilderDebug
+> Task :Sharer:mergeExtDexDebug
+> Task :Sharer:checkDebugAarMetadata
+> Task :IntentApp:mergeProjectDexDebug
+> Task :Sharer:mapDebugSourceSetPaths
+> Task :Sharer:mergeLibDexDebug
+> Task :Sharer:compileDebugNavigationResources
+> Task :Sharer:createDebugCompatibleScreenManifests
+> Task :Sharer:extractDeepLinksDebug
+> Task :Sharer:processDebugMainManifest
+> Task :IntentApp:packageDebug
+> Task :Sharer:processDebugManifest
+> Task :Sharer:mergeDebugResources
+> Task :Sharer:mergeDebugJniLibFolders
+> Task :Sharer:mergeDebugNativeLibs NO-SOURCE
+> Task :Sharer:stripDebugDebugSymbols NO-SOURCE
+> Task :Sharer:validateSigningDebug
+> Task :Sharer:writeDebugAppMetadata
+> Task :Sharer:writeDebugSigningConfigVersions
+> Task :SimpleFragmentApp:preBuild UP-TO-DATE
+> Task :SimpleFragmentApp:preDebugBuild UP-TO-DATE
+> Task :SimpleFragmentApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :SimpleFragmentApp:generateDebugResources
+> Task :SimpleFragmentApp:packageDebugResources
+> Task :SimpleFragmentApp:processDebugNavigationResources
+> Task :SimpleFragmentApp:parseDebugLocalResources
+> Task :IntentApp:createDebugApkListingFileRedirect
+> Task :IntentApp:assembleDebug
+> Task :SimpleFragmentApp:javaPreCompileDebug
+> Task :Sharer:processDebugManifestForPackage
+> Task :SimpleFragmentApp:generateDebugAssets UP-TO-DATE
+> Task :SimpleFragmentApp:generateDebugRFile
+> Task :SimpleFragmentApp:mergeDebugAssets
+> Task :SimpleFragmentApp:compileDebugKotlin NO-SOURCE
+> Task :SimpleFragmentApp:compileDebugJavaWithJavac
+> Task :SimpleFragmentApp:compressDebugAssets
+> Task :SimpleFragmentApp:generateDebugGlobalSynthetics
+> Task :SimpleFragmentApp:processDebugJavaRes NO-SOURCE
+> Task :SimpleFragmentApp:checkDebugDuplicateClasses
+> Task :SimpleFragmentApp:desugarDebugFileDependencies
+> Task :SimpleFragmentApp:mergeExtDexDebug
+> Task :SimpleFragmentApp:mergeLibDexDebug
+> Task :SimpleFragmentApp:checkDebugAarMetadata
+> Task :SimpleFragmentApp:mapDebugSourceSetPaths
+> Task :SimpleFragmentApp:compileDebugNavigationResources
+> Task :Sharer:processDebugResources
+> Task :SimpleFragmentApp:mergeDebugJavaResource
+> Task :SimpleFragmentApp:mergeDebugResources
+> Task :Sharer:dexBuilderDebug
+> Task :SimpleFragmentApp:createDebugCompatibleScreenManifests
+> Task :SimpleFragmentApp:extractDeepLinksDebug
+> Task :Sharer:mergeProjectDexDebug
+> Task :SimpleFragmentApp:processDebugMainManifest
+> Task :SimpleFragmentApp:processDebugManifest
+> Task :SimpleFragmentApp:mergeDebugJniLibFolders
+> Task :SimpleFragmentApp:mergeDebugNativeLibs NO-SOURCE
+> Task :SimpleFragmentApp:stripDebugDebugSymbols NO-SOURCE
+> Task :SimpleFragmentApp:validateSigningDebug
+> Task :SimpleFragmentApp:writeDebugAppMetadata
+> Task :SimpleFragmentApp:writeDebugSigningConfigVersions
+> Task :SystemIntentsApp:preBuild UP-TO-DATE
+> Task :SystemIntentsApp:preDebugBuild UP-TO-DATE
+> Task :SystemIntentsApp:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :SystemIntentsApp:generateDebugResources
+> Task :SystemIntentsApp:packageDebugResources
+> Task :SystemIntentsApp:processDebugNavigationResources
+> Task :SystemIntentsApp:parseDebugLocalResources
+> Task :Sharer:packageDebug
+> Task :Sharer:createDebugApkListingFileRedirect
+> Task :Sharer:assembleDebug
+> Task :SystemIntentsApp:javaPreCompileDebug
+> Task :SimpleFragmentApp:processDebugManifestForPackage
+> Task :SystemIntentsApp:generateDebugAssets UP-TO-DATE
+> Task :SystemIntentsApp:generateDebugRFile
+> Task :SystemIntentsApp:mergeDebugAssets
+> Task :SystemIntentsApp:compileDebugKotlin NO-SOURCE
+> Task :SystemIntentsApp:compileDebugJavaWithJavac
+> Task :SystemIntentsApp:compressDebugAssets
+> Task :SystemIntentsApp:generateDebugGlobalSynthetics
+> Task :SystemIntentsApp:processDebugJavaRes NO-SOURCE
+> Task :SystemIntentsApp:checkDebugDuplicateClasses
+> Task :SystemIntentsApp:desugarDebugFileDependencies
+> Task :SystemIntentsApp:mergeExtDexDebug
+> Task :SystemIntentsApp:checkDebugAarMetadata
+> Task :SystemIntentsApp:mergeLibDexDebug
+> Task :SystemIntentsApp:mapDebugSourceSetPaths
+> Task :SystemIntentsApp:compileDebugNavigationResources
+> Task :SimpleFragmentApp:processDebugResources
+> Task :SystemIntentsApp:mergeDebugJavaResource
+> Task :SimpleFragmentApp:dexBuilderDebug
+> Task :SystemIntentsApp:createDebugCompatibleScreenManifests
+> Task :SystemIntentsApp:extractDeepLinksDebug
+> Task :SystemIntentsApp:mergeDebugResources
+> Task :SimpleFragmentApp:mergeProjectDexDebug
+> Task :SystemIntentsApp:processDebugMainManifest
+> Task :SystemIntentsApp:processDebugManifest
+> Task :SystemIntentsApp:mergeDebugJniLibFolders
+> Task :SystemIntentsApp:mergeDebugNativeLibs NO-SOURCE
+> Task :SystemIntentsApp:stripDebugDebugSymbols NO-SOURCE
+> Task :SystemIntentsApp:validateSigningDebug
+> Task :SystemIntentsApp:writeDebugAppMetadata
+> Task :SystemIntentsApp:writeDebugSigningConfigVersions
+> Task :SystemIntentsApp:processDebugManifestForPackage
+> Task :FavoriteBook:preDebugAndroidTestBuild SKIPPED
+> Task :FavoriteBook:bundleDebugClassesToCompileJar
+> Task :FavoriteBook:extractProguardFiles
+> Task :FavoriteBook:generateDebugAndroidTestLintModel
+> Task :FavoriteBook:generateDebugLintReportModel
+> Task :FavoriteBook:preDebugUnitTestBuild UP-TO-DATE
+> Task :FavoriteBook:generateDebugUnitTestLintModel
+> Task :SimpleFragmentApp:packageDebug
+> Task :SimpleFragmentApp:createDebugApkListingFileRedirect
+> Task :SimpleFragmentApp:assembleDebug
+> Task :FavoriteBook:lintAnalyzeDebugAndroidTest
+> Task :FavoriteBook:lintAnalyzeDebugUnitTest
+> Task :IntentApp:preDebugAndroidTestBuild SKIPPED
+> Task :IntentApp:bundleDebugClassesToCompileJar
+> Task :IntentApp:extractProguardFiles
+> Task :SystemIntentsApp:processDebugResources
+> Task :IntentApp:generateDebugAndroidTestLintModel
+> Task :FavoriteBook:lintAnalyzeDebug
+> Task :SystemIntentsApp:dexBuilderDebug
+> Task :SystemIntentsApp:mergeProjectDexDebug
+> Task :IntentApp:generateDebugLintReportModel
+
+> Task :FavoriteBook:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/FavoriteBook/build/reports/lint-results-debug.html
+
+> Task :IntentApp:preDebugUnitTestBuild UP-TO-DATE
+
+> Task :FavoriteBook:lintReportDebug
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/FavoriteBook/build/reports/lint-results-debug.sarif
+
+> Task :IntentApp:generateDebugUnitTestLintModel
+> Task :FavoriteBook:lintDebug
+> Task :SystemIntentsApp:packageDebug
+> Task :SystemIntentsApp:createDebugApkListingFileRedirect
+> Task :SystemIntentsApp:assembleDebug
+> Task :Sharer:bundleDebugClassesToCompileJar
+> Task :Sharer:preDebugAndroidTestBuild SKIPPED
+> Task :Sharer:generateDebugAndroidTestLintModel
+> Task :Sharer:extractProguardFiles
+> Task :Sharer:generateDebugLintReportModel
+> Task :Sharer:preDebugUnitTestBuild UP-TO-DATE
+> Task :IntentApp:lintAnalyzeDebugUnitTest
+> Task :IntentApp:lintAnalyzeDebugAndroidTest
+> Task :Sharer:generateDebugUnitTestLintModel
+> Task :Sharer:lintAnalyzeDebugAndroidTest
+> Task :Sharer:lintAnalyzeDebugUnitTest
+> Task :SimpleFragmentApp:preDebugAndroidTestBuild SKIPPED
+> Task :SimpleFragmentApp:bundleDebugClassesToCompileJar
+> Task :SimpleFragmentApp:extractProguardFiles
+> Task :SimpleFragmentApp:generateDebugAndroidTestLintModel
+> Task :SimpleFragmentApp:generateDebugLintReportModel
+> Task :SimpleFragmentApp:preDebugUnitTestBuild UP-TO-DATE
+> Task :SimpleFragmentApp:generateDebugUnitTestLintModel
+> Task :Sharer:lintAnalyzeDebug
+
+> Task :Sharer:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/Sharer/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/Sharer/build/reports/lint-results-debug.sarif
+
+> Task :Sharer:lintDebug
+> Task :SimpleFragmentApp:lintAnalyzeDebugAndroidTest
+> Task :SystemIntentsApp:bundleDebugClassesToCompileJar
+> Task :SystemIntentsApp:preDebugAndroidTestBuild SKIPPED
+> Task :SystemIntentsApp:generateDebugAndroidTestLintModel
+> Task :SystemIntentsApp:extractProguardFiles
+> Task :SimpleFragmentApp:lintAnalyzeDebugUnitTest
+> Task :SystemIntentsApp:generateDebugLintReportModel
+> Task :SystemIntentsApp:preDebugUnitTestBuild UP-TO-DATE
+> Task :SystemIntentsApp:generateDebugUnitTestLintModel
+> Task :IntentApp:lintAnalyzeDebug
+> Task :SimpleFragmentApp:lintAnalyzeDebug
+
+> Task :IntentApp:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/IntentApp/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/IntentApp/build/reports/lint-results-debug.sarif
+
+> Task :IntentApp:lintDebug
+
+> Task :SimpleFragmentApp:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/SimpleFragmentApp/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/SimpleFragmentApp/build/reports/lint-results-debug.sarif
+
+> Task :SimpleFragmentApp:lintDebug
+> Task :SystemIntentsApp:lintAnalyzeDebugAndroidTest
+> Task :SystemIntentsApp:lintAnalyzeDebugUnitTest
+> Task :SystemIntentsApp:lintAnalyzeDebug
+
+> Task :SystemIntentsApp:lintReportDebug
+Wrote HTML report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/SystemIntentsApp/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/SystemIntentsApp/build/reports/lint-results-debug.sarif
+
+> Task :SystemIntentsApp:lintDebug
+
+[Incubating] Problems report is available at: file:///F:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 6m 50s
+215 actionable tasks: 215 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

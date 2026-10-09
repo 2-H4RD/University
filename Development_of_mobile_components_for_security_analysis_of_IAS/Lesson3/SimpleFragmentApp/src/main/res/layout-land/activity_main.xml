@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_main.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: LinearLayout @+id/main.
+  Элементы: TextView @+id/title.
+  Элементы: FragmentContainerView @+id/fragmentContainerView.
+  Элементы: FragmentContainerView @+id/secondContainer.
+-->
+
+<!-- Android сам выбирает layout-land; код проверяет наличие второго контейнера. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="?attr/colorSurface">
+<TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/land_title" android:textSize="22sp" android:layout_marginBottom="16dp" />
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+    <!-- Одинаковый id основного контейнера упрощает восстановление FragmentManager. -->
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/fragmentContainerView" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" />
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/secondContainer" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:layout_marginStart="12dp" />
+</LinearLayout></LinearLayout>
