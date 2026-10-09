@@ -1,0 +1,142 @@
+[
+  {
+    "check": "app installs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "layouttype installs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "control_lesson1 installs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "buttonclicker installs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "app launches",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.lesson1/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.lesson1/.MainActivity\nTotalTime: 1154\nWaitTime: 1158\nComplete\n"
+  },
+  {
+    "check": "Hello World screen",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Six buttons and EditText portrait",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Six buttons and EditText landscape",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "LinearLayout six buttons",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "TableLayout controls",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Selected table survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ConstraintLayout controls",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Modified TextView",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "control_lesson1 launches",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.control_lesson1/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.control_lesson1/.MainActivity\nTotalTime: 1475\nWaitTime: 1477\nComplete\n"
+  },
+  {
+    "check": "Six required control types portrait",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Six control types landscape",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Control input and checkbox survive rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "buttonclicker launches",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.buttonclicker/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.buttonclicker/.MainActivity\nTotalTime: 1139\nWaitTime: 1140\nComplete\n"
+  },
+  {
+    "check": "ButtonClicker initial unchecked",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Java listener student number and toggle",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "XML handler text and toggle",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ButtonClicker output survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Checked state survives rotation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "ButtonClicker dark theme retains output",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "No fatal exception",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Final resource menu APK installs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "layouttype launches",
+    "passed": true,
+    "detail": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ru.mirea.ZubarevVS.layouttype/.MainActivity }\nStatus: ok\nLaunchState: COLD\nActivity: ru.mirea.ZubarevVS.layouttype/.MainActivity\nTotalTime: 2205\nWaitTime: 2207\nComplete\n"
+  },
+  {
+    "check": "Final resource menu selects TableLayout",
+    "passed": true,
+    "detail": ""
+  }
+]

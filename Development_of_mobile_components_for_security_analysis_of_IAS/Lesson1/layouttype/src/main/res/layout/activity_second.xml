@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА activity_second.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: LinearLayout @+id/main.
+  Элементы: EditText @+id/editTextNewLife.
+-->
+
+<!-- Основной портретный вариант: поле ввода и шесть кнопок расположены вертикально. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNewLife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:hint="@string/new_life"
+        android:inputType="text"
+        android:text="@string/new_life" />
+
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_one" />
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_two" />
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_three" />
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_four" />
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_five" />
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="@string/button_six" />
+</LinearLayout>

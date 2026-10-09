@@ -1,0 +1,17 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Все видимые надписи вынесены из XML: так их проще изменять и переводить. -->
+    <string name="app_name">Control Lesson 1</string>
+    <string name="screen_title">Контактная информация</string>
+    <string name="name_hint">Введите имя</string>
+    <string name="save_button">Сохранить</string>
+    <string name="favorite_contact">Добавить в избранное</string>
+    <string name="avatar_description">Изображение контакта</string>
+    <string name="call_description">Позвонить контакту</string>
+</resources>

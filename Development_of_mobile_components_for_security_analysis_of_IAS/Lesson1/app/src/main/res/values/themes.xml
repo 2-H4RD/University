@@ -1,0 +1,8 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА themes.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources><style name="Theme.Lesson1" parent="Theme.Material3.DayNight.NoActionBar" /></resources>

@@ -1,0 +1,27 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Название модуля отображается под его значком и в списке приложений. -->
+    <string name="app_name">Layout Type</string>
+    <!-- Подписи меню; числовые itemId 1..5 в Java выбирают соответствующие R.layout. -->
+    <string name="menu_six">Макет: шесть кнопок</string>
+    <string name="menu_linear">Макет: LinearLayout</string>
+    <string name="menu_table">Макет: TableLayout</string>
+    <string name="menu_constraint">Макет: ConstraintLayout</string>
+    <string name="menu_text">Макет: TextView</string>
+    <string name="new_life">New life for mirea activity!</string>
+    <string name="button_one">Кнопка 1</string>
+    <string name="button_two">Кнопка 2</string>
+    <string name="button_three">Кнопка 3</string>
+    <string name="button_four">Кнопка 4</string>
+    <string name="button_five">Кнопка 5</string>
+    <string name="button_six">Кнопка 6</string>
+    <string name="table_text">Текст</string>
+    <string name="table_check">Флажок</string>
+    <string name="image_button_description">Кнопка с изображением</string>
+</resources>

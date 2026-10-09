@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА table_layout.xml.
+  XML описывает иерархию View. setContentView/inflate создаёт из неё реальные объекты.
+  layout-land выбирается системой в альбомной ориентации; имя файла остаётся тем же.
+  android - свойства runtime, app - AndroidX/Material, tools - только preview IDE.
+  id связывает XML с Java/Binding; @string хранит текст, ?attr берёт значение из темы.
+  padding - внутренний, margin - внешний отступ; dp - размеры, sp - размер текста.
+  Элементы: TableLayout @+id/main.
+-->
+
+<!-- TableLayout автоматически выравнивает элементы трёх строк по столбцам. -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <Button android:text="@string/button_one" />
+        <TextView
+            android:gravity="center"
+            android:text="@string/table_text"
+            android:textSize="18sp" />
+        <Button android:text="@string/button_two" />
+    </TableRow>
+
+    <TableRow>
+        <Button android:text="@string/button_three" />
+        <CheckBox android:text="@string/table_check" />
+    </TableRow>
+
+    <TableRow>
+        <ImageButton
+            android:contentDescription="@string/image_button_description"
+            android:src="@android:drawable/ic_lock_power_off" />
+        <Button android:text="@string/button_four" />
+        <Button android:text="@string/button_five" />
+    </TableRow>
+</TableLayout>

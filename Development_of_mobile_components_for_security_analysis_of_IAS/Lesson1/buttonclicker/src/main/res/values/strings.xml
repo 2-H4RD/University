@@ -1,0 +1,17 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">ButtonClicker</string>
+    <string name="initial_text">Нажмите одну из кнопок</string>
+    <string name="who_am_i">Кто Я?</string>
+    <string name="it_is_not_me">Это не я</string>
+    <!-- Номер из остальных практических работ студента: БИСО-02-22, №5. -->
+    <string name="who_am_i_result">Мой номер по списку №5</string>
+    <string name="not_me_result">Это не я сделал</string>
+    <string name="state_checkbox">Состояние изменяется кнопками</string>
+</resources>
