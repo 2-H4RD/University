@@ -1,0 +1,21 @@
+*** Begin Patch
+*** Update File: verification/audit-2026-10-09/ОТЧЁТ.md
+@@
+ <ijLog><event type='reportLocation' testReport='D:\University\Development_of_mobile_components_for_security_analysis_of_IAS\Lesson3\MireaProject\app\build\reports\tests\testDebugUnitTest\index.html' /></ijLog>
+ BUILD SUCCESSFUL in 5s
+ 
++D:/University/Development_of_mobile_components_for_security_analysis_of_IAS/Lesson3/MireaProject
++BUILD SUCCESSFUL in 3s
++
+ ```
+ 
+ ## Скриншоты и журналы
+@@
+ - [29-https-validation.png](screenshots/29-https-validation.png)
+ - [30-camera-landscape.png](screenshots/30-camera-landscape.png)
+ - [31-web-history-after-final-rotation.png](screenshots/31-web-history-after-final-rotation.png)
++- [Android-Studio-final-Run.jpg](screenshots/Android-Studio-final-Run.jpg)
+ - [extra-picker-current.png](screenshots/extra-picker-current.png)
+ 
+ [checks.json](checks.json) содержит машинный результат; XML рядом со скриншотами фиксирует реальные ID, тексты и bounds интерфейса. Журналы lifecycle/crash в этом каталоге относятся к текущему прогону. Скриншоты `failure`/начальная ошибка селектора — историческая диагностика; финальный статус берётся из checks.json.
+*** End Patch
