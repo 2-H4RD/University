@@ -1,0 +1,87 @@
+<!-- Стабильные ID связывают XML с ActivityMainBinding и сохраняют поля при повороте. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Среднее число пар · Thread"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зубарев Василий Сергеевич · БИСО-02-22 · №5"
+            android:paddingBottom="12dp" />
+
+        <EditText
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_text"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/days_text"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_text"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rename_text" />
+
+        <TextView
+            android:id="@+id/threadInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/threadInfo_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_text" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+    </LinearLayout>
+</ScrollView>

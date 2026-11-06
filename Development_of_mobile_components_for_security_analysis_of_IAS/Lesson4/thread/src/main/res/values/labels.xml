@@ -1,0 +1,9 @@
+<resources>
+    <string name="total_text">Всего пар за месяц</string>
+    <string name="days_text">Учебных дней</string>
+    <string name="movie_text">Любимый фильм или сериал</string>
+    <string name="rename_text">Переименовать главный поток</string>
+    <string name="threadInfo_text">Имя текущего потока:</string>
+    <string name="calculate_text">Посчитать в фоновом потоке</string>
+    <string name="result_text">Результат появится здесь</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="9" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-23T20:20:03" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" tests="9" failures="0" errors="0" skipped="0" time="70.908" timestamp="2026-10-23T20:20:03" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="uiRunnableOrder" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="9.234" />
+    <testcase name="looperMessage" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="5.245" />
+    <testcase name="threadValidationAndAverage" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="6.495" />
+    <testcase name="workerDigest" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="4.271" />
+    <testcase name="serviceSurvivesHomeAndStops" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="9.689" />
+    <testcase name="mireaBackgroundDigest" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="6.100" />
+    <testcase name="playerPortraitLandscape" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="16.167" />
+    <testcase name="loaderRoundTrip" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="5.780" />
+    <testcase name="workerChargingConstraintAndCancel" classname="ru.mirea.ZubarevVS.lesson4.uitests.LabSuite" time="7.927" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="phrase_text">Введите фразу</string>
+    <string name="encrypt_text">Зашифровать → Loader → расшифровать</string>
+    <string name="cipher_text">Здесь появится шифротекст</string>
+    <string name="result_text">Ожидание</string>
+</resources>

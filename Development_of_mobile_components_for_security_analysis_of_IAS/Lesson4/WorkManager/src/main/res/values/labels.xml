@@ -1,0 +1,7 @@
+<resources>
+    <string name="text_text">Текст для SHA-256</string>
+    <string name="charging_text">Требовать зарядку</string>
+    <string name="start_text">Поставить задачу (нужен интернет)</string>
+    <string name="cancel_text">Отменить задачу</string>
+    <string name="result_text">Задача ещё не поставлена</string>
+</resources>

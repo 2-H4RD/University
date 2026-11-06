@@ -1,0 +1,133 @@
+[
+  {
+    "module": "app",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.main",
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 8757594,
+    "sha256": "a8ae9d73b4e643601d0970a37f60563cbfda87fd1b3ca8605492161feb3cd39f",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~aVabbP9Cp2MncNc4fm3x0w==/ru.mirea.ZubarevVS.lesson4.main-lbKLVfzC37pIEvg4BmovHA==/base.apk",
+      "installedSha256": "a8ae9d73b4e643601d0970a37f60563cbfda87fd1b3ca8605492161feb3cd39f",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "thread",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.thread",
+    "path": "thread/build/outputs/apk/debug/thread-debug.apk",
+    "bytes": 6776521,
+    "sha256": "8f7f54e5a6d500561faf3d5e66456f15045ecbfa6610f25e816089857ea4a854",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~Otvm5n3CoI4MPxksZw-qNQ==/ru.mirea.ZubarevVS.lesson4.thread-jtdWJ9LT5E6uAHwdTaCoLg==/base.apk",
+      "installedSha256": "8f7f54e5a6d500561faf3d5e66456f15045ecbfa6610f25e816089857ea4a854",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "data_thread",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.data_thread",
+    "path": "data_thread/build/outputs/apk/debug/data_thread-debug.apk",
+    "bytes": 6773150,
+    "sha256": "a67165b03660937805f8fa7d85457bfcfd84e0bbf0cffc97646100525581876c",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~lBGEYJDjqOVGgnGhIs8gIA==/ru.mirea.ZubarevVS.lesson4.data_thread-ENjeCL-SrRx4I2pN95WVeA==/base.apk",
+      "installedSha256": "a67165b03660937805f8fa7d85457bfcfd84e0bbf0cffc97646100525581876c",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "looper",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.looper",
+    "path": "looper/build/outputs/apk/debug/looper-debug.apk",
+    "bytes": 6775444,
+    "sha256": "d975775fac408e3000b761c1445fbfa1a607cb28154d26bb8163a6e48f8aa10a",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~-AM_AgAVZRk39k2jB2E2ug==/ru.mirea.ZubarevVS.lesson4.looper-WsRmx3AcUSj16Uf7kRsCnQ==/base.apk",
+      "installedSha256": "d975775fac408e3000b761c1445fbfa1a607cb28154d26bb8163a6e48f8aa10a",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "CryptoLoader",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.cryptoloader",
+    "path": "CryptoLoader/build/outputs/apk/debug/CryptoLoader-debug.apk",
+    "bytes": 6769079,
+    "sha256": "fd08e30a74cd218bedfac05509c3cfb7ac45bb2a170e3bec971c5f04b44e2fe4",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~b6mrE90hyTVCrq420gg8rQ==/ru.mirea.ZubarevVS.lesson4.cryptoloader-ApLdMqjABZbmz61chHjNzw==/base.apk",
+      "installedSha256": "fd08e30a74cd218bedfac05509c3cfb7ac45bb2a170e3bec971c5f04b44e2fe4",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "ServiceApp",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.serviceapp",
+    "path": "ServiceApp/build/outputs/apk/debug/ServiceApp-debug.apk",
+    "bytes": 8760023,
+    "sha256": "e68585e3879e323b87dc1ac29b1d9e886b648629c93aa9cd626b69b87306489f",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~cLiJfSw-mNp2T1C35NzeWQ==/ru.mirea.ZubarevVS.lesson4.serviceapp-0DLN2LnF-NrvH3VX5maxXw==/base.apk",
+      "installedSha256": "e68585e3879e323b87dc1ac29b1d9e886b648629c93aa9cd626b69b87306489f",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "WorkManager",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.workmanager",
+    "path": "WorkManager/build/outputs/apk/debug/WorkManager-debug.apk",
+    "bytes": 7185144,
+    "sha256": "801d63ac5b3258c02976e53365dc7d706fb93117bf910b850ec6761d53b19fc8",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~uauXHrHtYotyRt50lR9-SQ==/ru.mirea.ZubarevVS.lesson4.workmanager-FTQrpgHJdhkAYt659IZ3Lw==/base.apk",
+      "installedSha256": "801d63ac5b3258c02976e53365dc7d706fb93117bf910b850ec6761d53b19fc8",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "MireaProject",
+    "applicationId": "ru.mirea.ZubarevVS.mireaproject.lesson4",
+    "path": "MireaProject/app/build/outputs/apk/debug/MireaProject-debug.apk",
+    "bytes": 7695385,
+    "sha256": "1d6b78d852e0131119ccc7021ecd8f76557828f7eddcc340a59fd5b17618af98",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 4,
+      "packagePath": "/data/app/~~cfrAxdEfu54iU6bUKjfnEw==/ru.mirea.ZubarevVS.mireaproject.lesson4-xhpTUu2jQrd3wpTZ7M2HmQ==/base.apk",
+      "installedSha256": "1d6b78d852e0131119ccc7021ecd8f76557828f7eddcc340a59fd5b17618af98",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "UITests",
+    "applicationId": "ru.mirea.ZubarevVS.lesson4.uitests",
+    "path": "UITests/build/outputs/apk/debug/UITests-debug.apk",
+    "bytes": 464556,
+    "sha256": "35daa40d980e23a203a330c1dec44795e79f1e596ff6c922fc064c0e864a3db9",
+    "finalInstallation": {
+      "installed": false,
+      "reason": "UITests APK удалён штатным cleanup Android Gradle Plugin; это отдельная проверочная инфраструктура."
+    }
+  }
+]

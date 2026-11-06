@@ -1,0 +1,6 @@
+<resources>
+    <string name="track_text">Сигнал безопасного канала · авторская учебная мелодия</string>
+    <string name="play_text">Воспроизвести / пауза</string>
+    <string name="stop_text">Остановить</string>
+    <string name="status_text">Остановлено</string>
+</resources>

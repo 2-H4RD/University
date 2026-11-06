@@ -1,0 +1,6 @@
+<resources>
+    <string name="age_text">Возраст (секунды задержки)</string>
+    <string name="job_text">Кем вы работаете</string>
+    <string name="send_text">Передать сообщение</string>
+    <string name="result_text">Ожидание готовности Looper</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="explanation_text">runOnUiThread передаёт работу в UI (или выполняет сразу из UI). post добавляет Runnable в очередь View. postDelayed добавляет с минимальной задержкой; точное время не гарантируется. В данном сценарии: runn1 → runn2 → runn3.</string>
+    <string name="start_text">Запустить последовательность</string>
+    <string name="result_text">Журнал выполнения</string>
+</resources>
