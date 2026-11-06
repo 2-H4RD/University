@@ -1,0 +1,6 @@
+<!-- Полная сборка, lint и существующие JVM tests. UI-сценарии выполняются отдельно. -->
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Verify Lesson5" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings><option name="externalProjectPath" value="$PROJECT_DIR$" /><option name="externalSystemIdString" value="GRADLE" />
+    <option name="taskNames"><list><option value="assembleDebug" /><option value="lintDebug" /><option value="testDebugUnitTest" /></list></option></ExternalSystemSettings><method v="2" />
+  </configuration></component>

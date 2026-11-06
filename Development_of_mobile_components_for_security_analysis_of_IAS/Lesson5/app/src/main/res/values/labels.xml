@@ -1,0 +1,4 @@
+<resources>
+    <string name="summary_text">Список датчиков</string>
+    <string name="sensorList_text"></string>
+</resources>

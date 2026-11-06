@@ -1,0 +1,88 @@
+[
+  {
+    "module": "app",
+    "applicationId": "ru.mirea.ZubarevVS.lesson5.main",
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 6771137,
+    "sha256": "0e95ec0a22bb103816a7fb45848d2212b2be99c611e7d0f8786edae8e0f82fc6",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 5,
+      "packagePath": "/data/app/~~wNaOR1xh-T9f8Kl8ukPKXw==/ru.mirea.ZubarevVS.lesson5.main-6yvHt8E4s5oOrgqRHR3ZCA==/base.apk",
+      "installedSha256": "0e95ec0a22bb103816a7fb45848d2212b2be99c611e7d0f8786edae8e0f82fc6",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "Accelerometer",
+    "applicationId": "ru.mirea.ZubarevVS.lesson5.accelerometer",
+    "path": "Accelerometer/build/outputs/apk/debug/Accelerometer-debug.apk",
+    "bytes": 6771807,
+    "sha256": "b6ab1e1363ec9bcba05e26356c936dd8f7cbb7df797d8f4d26a96aafcfdee53b",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 5,
+      "packagePath": "/data/app/~~7jKZ3CX7NnTp8-r7rEZRIg==/ru.mirea.ZubarevVS.lesson5.accelerometer-l9VZqpfE-dtPHXDJZPjVpw==/base.apk",
+      "installedSha256": "b6ab1e1363ec9bcba05e26356c936dd8f7cbb7df797d8f4d26a96aafcfdee53b",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "Camera",
+    "applicationId": "ru.mirea.ZubarevVS.lesson5.camera",
+    "path": "Camera/build/outputs/apk/debug/Camera-debug.apk",
+    "bytes": 6776064,
+    "sha256": "2e1761cdf58054798e002e8bd523a5cb89c4f4d1932f57040934022270597e97",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 5,
+      "packagePath": "/data/app/~~K16dT-XrcVfU5qNFtIEyRg==/ru.mirea.ZubarevVS.lesson5.camera-uMNDtvL4M48mcOhZzLhB2g==/base.apk",
+      "installedSha256": "2e1761cdf58054798e002e8bd523a5cb89c4f4d1932f57040934022270597e97",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "AudioRecord",
+    "applicationId": "ru.mirea.ZubarevVS.lesson5.audiorecord",
+    "path": "AudioRecord/build/outputs/apk/debug/AudioRecord-debug.apk",
+    "bytes": 6775860,
+    "sha256": "0b3fe81893763efd7808bfe22b4920d06f674e5262db97411d6e75d04b127cf9",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 5,
+      "packagePath": "/data/app/~~bEYhHuoGSx0tI07hgHOcwA==/ru.mirea.ZubarevVS.lesson5.audiorecord-_IzUX3OELliZ6XR7Sbqc5w==/base.apk",
+      "installedSha256": "0b3fe81893763efd7808bfe22b4920d06f674e5262db97411d6e75d04b127cf9",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "MireaProject",
+    "applicationId": "ru.mirea.ZubarevVS.mireaproject.lesson5",
+    "path": "MireaProject/app/build/outputs/apk/debug/MireaProject-debug.apk",
+    "bytes": 7720252,
+    "sha256": "99e162a1af9a5b952af2b87ebb6e6d7450fb4e416baeeca368beffb337b0f555",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 5,
+      "packagePath": "/data/app/~~NT7SvqFi1Kq5Q9CIsy2QPA==/ru.mirea.ZubarevVS.mireaproject.lesson5-NMNHXWdKCX1Yl81N46w0aQ==/base.apk",
+      "installedSha256": "99e162a1af9a5b952af2b87ebb6e6d7450fb4e416baeeca368beffb337b0f555",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "UITests",
+    "applicationId": "ru.mirea.ZubarevVS.lesson5.uitests",
+    "path": "UITests/build/outputs/apk/debug/UITests-debug.apk",
+    "bytes": 462701,
+    "sha256": "3be925bd62646c95b777264cbcb48c3205e7a28c3883d30e1a06d6480b822c92",
+    "finalInstallation": {
+      "installed": false,
+      "reason": "UITests APK удалён штатным cleanup Android Gradle Plugin; это отдельная проверочная инфраструктура."
+    }
+  }
+]

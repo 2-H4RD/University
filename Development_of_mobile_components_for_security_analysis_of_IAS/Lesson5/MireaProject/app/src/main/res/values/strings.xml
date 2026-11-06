@@ -1,0 +1,37 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА strings.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <string name="app_name">MireaProject</string>
+    <string name="data_title">Кибербезопасность</string>
+    <string name="web_title">Браузер</string>
+    <string name="student">Зубарев Василий Сергеевич
+БИСО-02-22 • №5</string>
+    <string name="subtitle">Защита информационных систем</string>
+    <string name="intro">Кибербезопасность объединяет разработку безопасного ПО, настройку инфраструктуры и анализ событий. Здесь собраны три практические задачи отрасли.</string>
+    <string name="card1_title">01 • Безопасный код</string>
+    <string name="card1">Проверять входные данные, использовать параметризованные запросы и хранить секреты вне исходного кода. Результат: меньше возможностей для инъекций и утечек.</string>
+    <string name="card2_title">02 • Контроль доступа</string>
+    <string name="card2">Выдавать минимально необходимые права, разделять роли пользователей и проверять полномочия на стороне сервера. Результат: ограничение последствий компрометации учётной записи.</string>
+    <string name="card3_title">03 • Анализ событий</string>
+    <string name="card3">Собирать журналы, сопоставлять действия и проверять необычные попытки входа. Результат: обнаружение инцидента и восстановление хода событий.</string>
+    <string name="workflow_title">Пример рабочего процесса</string>
+    <string name="workflow">Активы → угрозы → меры защиты → проверка → наблюдение. Проверку повторяют после изменений системы.</string>
+    <string name="url_hint">https://www.mirea.ru/</string>
+    <string name="default_url">https://www.mirea.ru/</string>
+    <string name="go">Открыть</string>
+    <string name="home">МИРЭА</string>
+    <string name="back_page">Назад</string>
+    <string name="reload">Обновить</string>
+    <string name="invalid_url">Введите адрес HTTPS с именем сайта.</string>
+    <string name="loading">Загрузка страницы…</string>
+    <string name="page_error">Страница недоступна. Проверьте подключение к сети и нажмите «Обновить».</string>
+    <string name="ready">Страница загружена.</string>
+    <string name="drawer_description">Практика №3
+Информация и WebView</string>
+    <string name="web_explanation">Адрес и ссылки открываются внутри приложения.</string>
+</resources>

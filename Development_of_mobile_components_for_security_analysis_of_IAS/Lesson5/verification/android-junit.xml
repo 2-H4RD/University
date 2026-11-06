@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="4" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-23T19:06:29" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson5.uitests.LabSuite" tests="4" failures="0" errors="0" skipped="0" time="76.198" timestamp="2026-10-23T19:06:29" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="audioRecordAndPlayback" classname="ru.mirea.ZubarevVS.lesson5.uitests.LabSuite" time="8.170" />
+    <testcase name="sensorListAndAccelerometer" classname="ru.mirea.ZubarevVS.lesson5.uitests.LabSuite" time="20.046" />
+    <testcase name="cameraFullImageAndCancel" classname="ru.mirea.ZubarevVS.lesson5.uitests.LabSuite" time="19.742" />
+    <testcase name="mireaIncidentVoiceAndPhoto" classname="ru.mirea.ZubarevVS.lesson5.uitests.LabSuite" time="28.240" />
+  </testsuite>
+</testsuites>

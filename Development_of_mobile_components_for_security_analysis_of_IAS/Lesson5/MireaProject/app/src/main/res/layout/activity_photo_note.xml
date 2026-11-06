@@ -1,0 +1,65 @@
+<!-- Стабильные ID связывают XML с ActivityMainBinding и сохраняют поля при повороте. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Камера · полная фотография"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зубарев Василий Сергеевич · БИСО-02-22 · №5"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/take"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_take_text" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Фото"
+            android:adjustViewBounds="true"
+            android:minHeight="180dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_status_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+
+        <EditText
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Описание инцидента"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/saveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить описание" />
+    </LinearLayout>
+</ScrollView>
