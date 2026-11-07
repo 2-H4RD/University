@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="4" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-06T19:00:44" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson7.uitests.LabSuite" tests="4" failures="0" errors="0" skipped="0" time="13.826" timestamp="2026-11-06T19:00:44" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="invalidEmailValidationOrConfigurationNotice" classname="ru.mirea.ZubarevVS.lesson7.uitests.LabSuite" time="2.332" />
+    <testcase name="realSocketUtcOrRecordedNetworkRestriction" classname="ru.mirea.ZubarevVS.lesson7.uitests.LabSuite" time="3.815" />
+    <testcase name="mireaNetworkFragmentWithoutCloudLoginFixture" classname="ru.mirea.ZubarevVS.lesson7.uitests.LabSuite" time="2.987" />
+    <testcase name="realIpAndWeatherOrRecordedNetworkRestriction" classname="ru.mirea.ZubarevVS.lesson7.uitests.LabSuite" time="4.692" />
+  </testsuite>
+</testsuites>

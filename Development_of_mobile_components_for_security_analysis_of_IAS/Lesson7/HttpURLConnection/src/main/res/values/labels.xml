@@ -1,0 +1,10 @@
+<resources>
+    <string name="load_text">Определить IP и погоду</string>
+    <string name="ip_text">IP:</string>
+    <string name="city_text">Город:</string>
+    <string name="region_text">Регион:</string>
+    <string name="country_text">Страна:</string>
+    <string name="coordinates_text">Координаты:</string>
+    <string name="weather_text">Погода:</string>
+    <string name="status_text"></string>
+</resources>

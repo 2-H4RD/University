@@ -1,0 +1,73 @@
+[
+  {
+    "module": "TimeService",
+    "applicationId": "ru.mirea.ZubarevVS.lesson7.timeservice",
+    "path": "TimeService/build/outputs/apk/debug/TimeService-debug.apk",
+    "bytes": 6775654,
+    "sha256": "7fdc84a53b3ef3379987046bae8260cd7d980626a6f94a326f09e33b75f9619a",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 7,
+      "packagePath": "/data/app/~~6nwvGMG2I0TTBu9Vdev-Fw==/ru.mirea.ZubarevVS.lesson7.timeservice-T329MwGOpifgzGyjItZ8wA==/base.apk",
+      "installedSha256": "7fdc84a53b3ef3379987046bae8260cd7d980626a6f94a326f09e33b75f9619a",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "HttpURLConnection",
+    "applicationId": "ru.mirea.ZubarevVS.lesson7.httpurlconnection",
+    "path": "HttpURLConnection/build/outputs/apk/debug/HttpURLConnection-debug.apk",
+    "bytes": 6780587,
+    "sha256": "d07d8faa27cfab7d7aeef9467a98373a6dd3bed46b421693660e3f539cd3dbc0",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 7,
+      "packagePath": "/data/app/~~DLi6bSyYtMO1SFOUmG-ecw==/ru.mirea.ZubarevVS.lesson7.httpurlconnection-qFz5sIpSQZT6KX6L5xxJGQ==/base.apk",
+      "installedSha256": "d07d8faa27cfab7d7aeef9467a98373a6dd3bed46b421693660e3f539cd3dbc0",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "FirebaseAuth",
+    "applicationId": "ru.mirea.ZubarevVS.lesson7.firebaseauth",
+    "path": "FirebaseAuth/build/outputs/apk/debug/FirebaseAuth-debug.apk",
+    "bytes": 8436889,
+    "sha256": "7ad7fe4cde3deb5f3ec9410215393de005611da655753e4ffd952bf985f6ddde",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 7,
+      "packagePath": "/data/app/~~ItBvCx-ttngyQtM0VDkdKg==/ru.mirea.ZubarevVS.lesson7.firebaseauth-QHuvOqqk5oNoLqkQPO40sw==/base.apk",
+      "installedSha256": "7ad7fe4cde3deb5f3ec9410215393de005611da655753e4ffd952bf985f6ddde",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "MireaProject",
+    "applicationId": "ru.mirea.ZubarevVS.mireaproject",
+    "path": "MireaProject/app/build/outputs/apk/debug/MireaProject-debug.apk",
+    "bytes": 9365994,
+    "sha256": "3d41db6f5aa36eba9e6efc5fc632ed1b61ecc33bde3500067e7ba6a89358f7c6",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 8,
+      "packagePath": "/data/app/~~veh8xoqByw5SAKvMleISSQ==/ru.mirea.ZubarevVS.mireaproject-Hn-vMWhDH1k14o5nlXAVSA==/base.apk",
+      "installedSha256": "ce88cf82d4754f282b1fd3ed478fe7ad2e1ae3b1a50e0f2c30f8977feae40281",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "UITests",
+    "applicationId": "ru.mirea.ZubarevVS.lesson7.uitests",
+    "path": "UITests/build/outputs/apk/debug/UITests-debug.apk",
+    "bytes": 462837,
+    "sha256": "835d745c304e9b97aaff172cded71fdcfe90cb31ad643358a3d0ba9b9063f21a",
+    "finalInstallation": {
+      "installed": false,
+      "reason": "UITests APK удалён штатным cleanup Android Gradle Plugin; это отдельная проверочная инфраструктура."
+    }
+  }
+]

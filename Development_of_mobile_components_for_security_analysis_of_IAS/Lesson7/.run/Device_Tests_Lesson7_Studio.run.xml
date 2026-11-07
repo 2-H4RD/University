@@ -1,0 +1,4 @@
+<component name="ProjectRunConfigurationManager">
+  <!-- Реальный AndroidJUnitRunner на подключённом AVD. -->
+  <configuration default="false" name="Device Tests Lesson7" type="GradleRunConfiguration" factoryName="Gradle"><ExternalSystemSettings><option name="externalProjectPath" value="$PROJECT_DIR$"/><option name="externalSystemIdString" value="GRADLE"/><option name="taskNames"><list><option value="installDebug"/><option value=":UITests:connectedDebugAndroidTest"/></list></option></ExternalSystemSettings><method v="2"/></configuration>
+</component>

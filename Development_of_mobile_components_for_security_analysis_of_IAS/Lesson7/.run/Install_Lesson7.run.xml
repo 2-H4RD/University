@@ -1,0 +1,4 @@
+<component name="ProjectRunConfigurationManager">
+  <!-- Установка готовых приложений без удаления target APK после connected-тестов. -->
+  <configuration default="false" name="Install Lesson7" type="GradleRunConfiguration" factoryName="Gradle"><ExternalSystemSettings><option name="externalProjectPath" value="$PROJECT_DIR$"/><option name="externalSystemIdString" value="GRADLE"/><option name="taskNames"><list><option value=":TimeService:installDebug"/><option value=":HttpURLConnection:installDebug"/><option value=":FirebaseAuth:installDebug"/><option value=":MireaProject:installDebug"/></list></option></ExternalSystemSettings><method v="2"/></configuration>
+</component>

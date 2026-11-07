@@ -1,0 +1,7 @@
+<resources>
+    <string name="load_text">Получить время по Socket :13</string>
+    <string name="date_text">Дата UTC:</string>
+    <string name="time_text">Время UTC:</string>
+    <string name="raw_text">Исходная строка:</string>
+    <string name="status_text"></string>
+</resources>

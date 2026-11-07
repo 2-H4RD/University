@@ -1,0 +1,12 @@
+<resources>
+    <string name="mode_text">Firebase Email/Password</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Пароль (не менее 6 символов)</string>
+    <string name="signIn_text">Войти</string>
+    <string name="register_text">Создать пользователя</string>
+    <string name="verify_text">Отправить письмо проверки</string>
+    <string name="reload_text">Обновить статус почты</string>
+    <string name="continueButton_text">Продолжить</string>
+    <string name="signOut_text">Выйти</string>
+    <string name="status_text"></string>
+</resources>

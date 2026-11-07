@@ -1,0 +1,74 @@
+<!-- Стабильные ID связывают XML с ActivityMainBinding и сохраняют поля при повороте. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Socket · время NIST UTC"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зубарев Василий Сергеевич · БИСО-02-22 · №5"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/load_text" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+
+        <TextView
+            android:id="@+id/raw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/raw_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+    </LinearLayout>
+</ScrollView>
