@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="6" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-23T20:25:49" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" tests="6" failures="0" errors="0" skipped="0" time="78.333" timestamp="2026-10-23T20:25:49" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="securePreferencesFixtureRoundTrip" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="17.314" />
+    <testcase name="internalFileRoundTrip" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="5.931" />
+    <testcase name="preferencesPersistAcrossProcess" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="8.968" />
+    <testcase name="roomCrud" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="11.860" />
+    <testcase name="mireaProfileAndFileDialog" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="11.503" />
+    <testcase name="notebookDocumentsOverwriteAndTwoFiles" classname="ru.mirea.ZubarevVS.lesson6.uitests.LabSuite" time="22.757" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="group_text">Номер группы</string>
+    <string name="number_text">Номер по списку</string>
+    <string name="movie_text">Любимый фильм/сериал</string>
+    <string name="save_text">Сохранить настройки</string>
+    <string name="status_text"></string>
+</resources>

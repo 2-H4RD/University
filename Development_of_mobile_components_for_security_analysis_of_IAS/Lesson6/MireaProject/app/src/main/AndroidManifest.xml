@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА AndroidManifest.xml.
+  Manifest объявляет компоненты, разрешения и тему. MAIN/LAUNCHER - точка входа.
+  exported=true нужен launcher и внешним получателям; внутренние Activity используют false.
+  intent-filter: action описывает действие, category - категорию, data - MIME/URI.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Камера используется по запросу; её отсутствие не запрещает установку приложения. -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".MireaApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Lesson3"
+        android:supportsRtl="true">
+        <!-- Launcher доступен системе; внутренние экраны закрыты для других приложений. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PhotoNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VoiceNoteActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+</manifest>

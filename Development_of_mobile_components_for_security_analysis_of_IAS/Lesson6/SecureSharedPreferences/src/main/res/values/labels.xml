@@ -1,0 +1,8 @@
+<resources>
+    <string name="poet_text">Ваш любимый поэт</string>
+    <string name="actor_text">Любимый актёр (дополнительное поле примера)</string>
+    <string name="photo_text"></string>
+    <string name="pick_text">Выбрать портрет поэта</string>
+    <string name="save_text">Сохранить зашифрованно</string>
+    <string name="status_text">Инициализация AndroidKeyStore…</string>
+</resources>

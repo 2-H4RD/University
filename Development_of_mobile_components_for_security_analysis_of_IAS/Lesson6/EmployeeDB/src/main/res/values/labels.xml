@@ -1,0 +1,22 @@
+<resources>
+    <string name="heroId_text">ID героя — введите положительное целое число</string>
+    <string name="heroName_text">Имя супергероя</string>
+    <string name="power_text">Суперспособность</string>
+    <string name="add_text">Добавить героя</string>
+    <string name="find_text">Найти по ID</string>
+    <string name="update_text">Изменить по ID</string>
+    <string name="delete_text">Удалить по ID</string>
+    <string name="refresh_text">Показать всех</string>
+    <string name="result_text"></string>
+    <string name="error_id_required">Введите ID героя</string>
+    <string name="error_id_integer">ID должен быть целым числом в диапазоне long</string>
+    <string name="error_id_positive">ID должен быть больше нуля</string>
+    <string name="error_id_taken">Герой с ID %1$d уже существует. Выберите другой ID.</string>
+    <string name="error_id_missing">Герой с ID %1$d не найден.</string>
+    <string name="error_hero_fields">Введите имя и способность</string>
+    <string name="hero_added">Герой с ID %1$d добавлен.</string>
+    <string name="hero_found">Герой с ID %1$d найден.</string>
+    <string name="hero_updated">Герой с ID %1$d изменён.</string>
+    <string name="hero_deleted">Герой с ID %1$d удалён.</string>
+    <string name="heroes_total">Всего героев: %1$d</string>
+</resources>

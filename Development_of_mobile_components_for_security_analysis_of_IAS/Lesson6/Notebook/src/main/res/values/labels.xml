@@ -1,0 +1,8 @@
+<resources>
+    <string name="directory_text">Разрешить доступ к папке Documents</string>
+    <string name="filename_text">Название файла.txt</string>
+    <string name="quote_text">Цитата и автор</string>
+    <string name="save_text">Сохранить с перезаписью</string>
+    <string name="load_text">Загрузить цитату</string>
+    <string name="status_text">Выберите публичную папку Documents</string>
+</resources>

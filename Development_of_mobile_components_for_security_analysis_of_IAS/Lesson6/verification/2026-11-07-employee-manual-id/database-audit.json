@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-07T08:38:50.557475+00:00",
+  "avd": "Pixel_9",
+  "applicationId": "ru.mirea.ZubarevVS.lesson6.employeedb",
+  "schemaVersion": 2,
+  "rowCount": 0,
+  "schema": "CREATE TABLE `heroes` (`id` INTEGER NOT NULL, `name` TEXT, `power` TEXT, PRIMARY KEY(`id`))",
+  "apkSha256": "d47757c1cd950502aefbbfd51fb5cd67574701a731f282245be96f6c2cd8abb1",
+  "installedApkMatchesBuild": true
+}

@@ -1,0 +1,96 @@
+<!-- Стабильные ID связывают XML с ActivityMainBinding и сохраняют поля при повороте. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room · вымышленные супергерои"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зубарев Василий Сергеевич · БИСО-02-22 · №5"
+            android:paddingBottom="12dp" />
+
+        <EditText
+            android:id="@+id/heroId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/heroId_text"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/heroName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/heroName_text"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/power_text"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_text" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_text" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update_text" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_text" />
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh_text" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:freezesText="true" />
+    </LinearLayout>
+</ScrollView>

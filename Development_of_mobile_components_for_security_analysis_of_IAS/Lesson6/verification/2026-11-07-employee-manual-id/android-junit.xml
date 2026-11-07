@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="2" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-07T08:32:40" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson6.employeedb.EmployeeDbTest" tests="2" failures="0" errors="0" skipped="0" time="5.118" timestamp="2026-11-07T08:32:40" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="validatesManualIdAndPerformsCrudWithoutReplacingDuplicates" classname="ru.mirea.ZubarevVS.lesson6.employeedb.EmployeeDbTest" time="4.989" />
+    <testcase name="resetsVersionOneOnceAndPreservesManualIdsAfterReopen" classname="ru.mirea.ZubarevVS.lesson6.employeedb.EmployeeDbTest" time="0.129" />
+  </testsuite>
+</testsuites>
