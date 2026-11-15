@@ -1,0 +1,26 @@
+{
+  "source": "PyPI semgrep 1.185.0 Windows wheel",
+  "engine_version": "1.185.0",
+  "sha256": "7e53a40b4888ceee0f769a2a98dd356e9fdfbf50fe5923750f56310c637b66cf",
+  "license_file": "LICENSE",
+  "python_wrapper_installed": false,
+  "files": {
+    "semgrep-core.exe": "7e53a40b4888ceee0f769a2a98dd356e9fdfbf50fe5923750f56310c637b66cf",
+    "iconv.dll": "d46b3b3a367df4099794fa14f9cba27d84ddc9cf83efaa55678bee2d73943fef",
+    "libcrypto-3.dll": "cd25a97c618df8331169a62b0383537e43422944b1ebc789fff48ca3ab583481",
+    "libcurl-4.dll": "ce77400e47461678bf5aecbd0a7dbcacd3d91b48c9e8b9766dec3e552d359495",
+    "libgcc_s_seh-1.dll": "1bdc38d482c7cbfa803110032b0fad88e6ecd3b1679a957f703fdbc26c371d39",
+    "libgmp-10.dll": "c188e570157c109181e6788c2837fcead79747a7b10209cd82ebf5365787f508",
+    "libidn2-0.dll": "ed5cdfc8fc176b79016d28e16d9cac22dca193673d08fbd48d9793effe863e6c",
+    "libintl-8.dll": "e1aae1773d95347fa185b138b8793b076cbb4438193914e0ab8dbdfcc5e10232",
+    "libnghttp2-14.dll": "1d813f209a3185c7ab9edc22c85559245029f46decdeac17662642bbf4455067",
+    "libpcre2-8-0.dll": "563cb7436d6eba69b18080557bacaa5f620789a3b7a528a6eb2f8fad485e3dea",
+    "libssh2-1.dll": "240b1644c8ffbc4cd7e95847dfdc7271c3e781e68c423e20a572f8a9fd036c39",
+    "libssl-3.dll": "d9936dd4b3b69569dd3fd4338ebbaf47189d6beef7662a33c14f33de6066239f",
+    "libstdc++-6.dll": "2907e11bf542040e53192cbf09e7b3bc4557f2ea779989c02afd0aaa170a8945",
+    "libtree-sitter.dll": "3ab90ca0e2b48538267456437ea34414b85e2c7eb708ca9cf938015379711347",
+    "libwinpthread-1.dll": "fe0259c7c8bf875cce79dc63f7af2c350138e77e60c51cb44d35aaee4d45e3ee",
+    "libzstd-1.dll": "bbf5c934a2a80cf28b944e2e493aef3b4886fa6f9b4b026f42531f3f53c62907",
+    "zlib1.dll": "1b998ab51f16a8e3549c00c69d9ebad34d5dcf41d198e1d665df0ac2c8d737fd"
+  }
+}

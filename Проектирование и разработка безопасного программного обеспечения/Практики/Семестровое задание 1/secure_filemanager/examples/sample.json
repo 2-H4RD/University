@@ -1,0 +1,7 @@
+{
+  "title": "Пример безопасного JSON",
+  "items": [
+    {"name": "alpha", "value": 1},
+    {"name": "beta", "value": 2}
+  ]
+}

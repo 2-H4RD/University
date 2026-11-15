@@ -1,0 +1,36 @@
+rules:
+  - id: no-python-eval
+    languages: [python]
+    severity: ERROR
+    message: Dynamic code evaluation is forbidden.
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: exec(...)
+  - id: no-shell-execution
+    languages: [python]
+    severity: ERROR
+    message: Use argument lists and shell=False.
+    pattern-either:
+      - pattern: os.system(...)
+      - pattern: subprocess.$F(..., shell=True, ...)
+  - id: no-pickle-deserialization
+    languages: [python]
+    severity: ERROR
+    message: Untrusted pickle loading is forbidden.
+    pattern-either:
+      - pattern: pickle.load(...)
+      - pattern: pickle.loads(...)
+  - id: no-unchecked-extractall
+    languages: [python]
+    severity: ERROR
+    message: Extract ZIP members through bounded validated streaming.
+    pattern: $ARCHIVE.extractall(...)
+  - id: no-sql-fstrings
+    languages: [python]
+    severity: ERROR
+    message: Bind SQL values separately.
+    pattern-either:
+      - pattern: $DB.execute(f"...", ...)
+      - pattern: $DB.exec_driver_sql(f"...", ...)
+      - pattern: execute($CONN, f"...", ...)
+

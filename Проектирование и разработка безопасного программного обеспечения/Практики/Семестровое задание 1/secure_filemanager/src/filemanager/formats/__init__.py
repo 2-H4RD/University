@@ -1,0 +1,2 @@
+"""Bounded, isolated document parsing."""
+

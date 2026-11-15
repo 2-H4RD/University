@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "university-secure-filemanager"
+version = "1.0.0"
+description = "Console file manager with PostgreSQL, bounded parsers and signed audit"
+requires-python = ">=3.12"
+dependencies = [
+  "SQLAlchemy>=2.0,<3", "psycopg[binary]>=3.2,<4", "alembic>=1.14,<2",
+  "argon2-cffi>=23.1", "defusedxml>=0.7.1", "psutil>=6",
+  "python-dotenv>=1", "pywin32>=308; sys_platform == 'win32'", "pyzipper>=0.3.6",
+  "cryptography>=46",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=6", "bandit>=1.8", "pip-audit>=2.8", "ruff>=0.9"]
+
+[project.scripts]
+secure-fm = "filemanager.controllers.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["integration: requires the dedicated PostgreSQL test database"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv"]
+

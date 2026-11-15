@@ -1,0 +1,25 @@
+.venv/
+.env
+.env.test
+var/
+test-var/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+reports/*.json
+reports/*.txt
+reports/*.xml
+
+
+# Local secrets and report preparation
+.env.*
+!.env.example
+*.dpapi
+*.key
+audit.checkpoint
+/work/
+/tools/*.docx
+~$*

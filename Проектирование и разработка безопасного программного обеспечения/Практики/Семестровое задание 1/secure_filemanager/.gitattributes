@@ -1,0 +1,1 @@
+tools/semgrep/semgrep-core.exe filter=lfs diff=lfs merge=lfs -text

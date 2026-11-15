@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document>
+  <title>Пример безопасного XML</title>
+  <item name="alpha">1</item>
+  <item name="beta">2</item>
+</document>

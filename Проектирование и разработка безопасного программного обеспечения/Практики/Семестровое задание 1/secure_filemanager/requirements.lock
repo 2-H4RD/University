@@ -1,0 +1,22 @@
+# Windows / Python 3.12+, exact tested package versions.
+alembic==1.20.1
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.2.0
+cffi==2.1.1
+cryptography==50.0.2
+defusedxml==0.7.1
+Mako==1.4.3
+MarkupSafe==3.0.4
+pip==26.3
+psutil==7.2.2
+psycopg==3.3.9
+psycopg-binary==3.3.9
+pycparser==3.12
+pycryptodomex==3.24.2
+python-dotenv==1.2.4
+pywin32==311
+pyzipper==0.4.0
+setuptools==84.2.1
+SQLAlchemy==2.1.8
+typing_extensions==4.16.0
+tzdata==2026.6
