@@ -1,0 +1,127 @@
+[
+  {
+    "number": 1,
+    "title": "Проверка запуска и подключения",
+    "output": "{\n  \"status\": \"OK\",\n  \"postgresql\": \"16.16\",\n  \"db_role\": \"fm_test_app\",\n  \"audit_events\": 1\n}\n"
+  },
+  {
+    "number": 2,
+    "title": "Справка по всем командам",
+    "output": "fm> help\nregister                       Регистрация (логин и пароль запрашиваются)\nlogin                          Вход\nlogout                         Выход из учётной записи\npasswd                         Смена пароля с отзывом всех сессий\nwhoami                         Текущий пользователь\ndisks                          Диски и свободное место\nlocations                      Ваши каталоги импорта и экспорта\nlist                           Ваши файлы, ID и версии\nnew \"имя\" text|json|xml         Создать файл, содержимое запрашивается одной строкой\nread ID                        Показать содержимое (до 64 КиБ)\nwrite ID ВЕРСИЯ                Заменить содержимое с проверкой версии\ndelete ID ВЕРСИЯ               Удалить файл с проверкой версии\nimport \"имя_в_inbox\" ФОРМАТ     Импорт из вашего inbox\nexport ID \"имя_в_outbox\"        Экспорт без перезаписи существующего файла\nzip \"архив.zip\" ID [ID...]      Создать ZIP\nzip-aes \"архив.zip\" ID [ID...]  Создать AES-256 ZIP; пароль вводится скрыто\nunzip ID \"префикс\"             Безопасно извлечь в логический каталог\nunzip-aes ID \"префикс\"         Извлечь AES ZIP; пароль вводится скрыто\naudit [КОЛИЧЕСТВО]             Просмотр аудита (администратор)\nverify-audit                   Проверка HMAC-цепочки (администратор)\nrecover                        Очистка незавершённых объектов (администратор)\ndisable-user ЛОГИН             Отключить пользователя (администратор)\nhelp                           Справка\nexit                           Завершить программу\n"
+  },
+  {
+    "number": 3,
+    "title": "Регистрация и вход",
+    "output": "fm> register\nЛогин: demo_alice\nПароль (15–128 символов): [скрытый ввод]\n{\n  \"registered\": \"demo_alice\"\n}\nfm> register\nЛогин: demo_bob\nПароль (15–128 символов): [скрытый ввод]\n{\n  \"registered\": \"demo_bob\"\n}\nfm> login\nЛогин: demo_alice\nПароль: [скрытый ввод]\n{\n  \"id\": \"67c6bcdd-df46-434d-a630-ece7e5d77cc1\",\n  \"username\": \"demo_alice\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\nfm> whoami\n{\n  \"id\": \"67c6bcdd-df46-434d-a630-ece7e5d77cc1\",\n  \"username\": \"demo_alice\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\n"
+  },
+  {
+    "number": 4,
+    "title": "Диски и свободное место",
+    "output": "fm> disks\n[\n  {\n    \"device\": \"C:\\\\\",\n    \"filesystem\": \"NTFS\",\n    \"total\": 1023035830272,\n    \"free\": 548784418816,\n    \"used\": 474251411456\n  },\n  {\n    \"device\": \"D:\\\\\",\n    \"filesystem\": \"exFAT\",\n    \"total\": 1000186839040,\n    \"free\": 691148947456,\n    \"used\": 309037891584\n  }\n]\n"
+  },
+  {
+    "number": 5,
+    "title": "Создание и чтение текстового файла",
+    "output": "fm> new note.txt text\nСодержимое: Semester report demo\n{\n  \"id\": \"ac735281-bd45-4f39-9c52-07a9cf329929\",\n  \"name\": \"note.txt\",\n  \"size\": 20,\n  \"format\": \"text\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:51.568061+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:51.568061+03:00\"\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nSemester report demo\n"
+  },
+  {
+    "number": 6,
+    "title": "Изменение и конфликт версии",
+    "output": "fm> write ac735281-bd45-4f39-9c52-07a9cf329929 1\nНовое содержимое: Updated content\n{\n  \"id\": \"ac735281-bd45-4f39-9c52-07a9cf329929\",\n  \"name\": \"note.txt\",\n  \"size\": 15,\n  \"format\": \"text\",\n  \"version\": 2,\n  \"created_at\": \"2026-11-14 17:03:51.568061+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:52.580905+03:00\"\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nUpdated content\nfm> write ac735281-bd45-4f39-9c52-07a9cf329929 1\nНовое содержимое: Stale update\nОшибка: VERSION_CONFLICT\n"
+  },
+  {
+    "number": 7,
+    "title": "Создание и чтение JSON",
+    "output": "fm> new settings.json json\nСодержимое: {\"course\":\"secure software\",\"semester\":1}\n{\n  \"id\": \"6353bbf3-7dea-4476-b5a4-84b653af6a05\",\n  \"name\": \"settings.json\",\n  \"size\": 50,\n  \"format\": \"json\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:54.772325+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:54.772325+03:00\"\n}\nfm> read 6353bbf3-7dea-4476-b5a4-84b653af6a05\n{\\u000a  \"course\": \"secure software\",\\u000a  \"semester\": 1\\u000a}\n"
+  },
+  {
+    "number": 8,
+    "title": "Создание и чтение XML",
+    "output": "fm> new data.xml xml\nСодержимое: <report><status>ready</status></report>\n{\n  \"id\": \"f87f9943-c85e-45f5-b678-24a363303332\",\n  \"name\": \"data.xml\",\n  \"size\": 78,\n  \"format\": \"xml\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:57.749143+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:57.749143+03:00\"\n}\nfm> read f87f9943-c85e-45f5-b678-24a363303332\n<?xml version='1.0' encoding='utf-8'?>\\u000a<report><status>ready</status></report>\n"
+  },
+  {
+    "number": 9,
+    "title": "Создание ZIP",
+    "output": "fm> zip backup.zip ac735281-bd45-4f39-9c52-07a9cf329929\n{\n  \"id\": \"1ed4d206-aac5-40d9-b5aa-283fe94ddc6f\",\n  \"name\": \"backup.zip\",\n  \"size\": 131,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:59.847566+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:59.847566+03:00\"\n}\n"
+  },
+  {
+    "number": 10,
+    "title": "Безопасное извлечение ZIP",
+    "output": "fm> unzip 1ed4d206-aac5-40d9-b5aa-283fe94ddc6f copy\n[\n  {\n    \"id\": \"0199da2d-ce0f-4097-b77d-5b2f9534e5da\",\n    \"name\": \"copy/note.txt\",\n    \"size\": 15,\n    \"format\": \"binary\",\n    \"version\": 1,\n    \"created_at\": \"2026-11-14 17:04:01.786924+03:00\",\n    \"updated_at\": \"2026-11-14 17:04:01.786925+03:00\"\n  }\n]\n"
+  },
+  {
+    "number": 11,
+    "title": "Архив с AES 256",
+    "output": "fm> zip-aes secret.zip ac735281-bd45-4f39-9c52-07a9cf329929\nПароль ZIP: [скрытый ввод]\n{\n  \"id\": \"c16c884e-0abe-4b65-ab77-0af5b6337a9f\",\n  \"name\": \"secret.zip\",\n  \"size\": 181,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:04.555766+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:04.555766+03:00\"\n}\n"
+  },
+  {
+    "number": 12,
+    "title": "Извлечение архива AES",
+    "output": "fm> unzip-aes c16c884e-0abe-4b65-ab77-0af5b6337a9f private\nПароль ZIP: [скрытый ввод]\n[\n  {\n    \"id\": \"32e83e83-0079-46b5-acad-4598e2b952b5\",\n    \"name\": \"private/note.txt\",\n    \"size\": 15,\n    \"format\": \"binary\",\n    \"version\": 1,\n    \"created_at\": \"2026-11-14 17:04:06.559409+03:00\",\n    \"updated_at\": \"2026-11-14 17:04:06.559410+03:00\"\n  }\n]\n"
+  },
+  {
+    "number": 13,
+    "title": "Импорт из персонального inbox",
+    "output": "fm> import input.txt text\n{\n  \"id\": \"221ba547-2522-4845-9fc9-9d3122e46ea8\",\n  \"name\": \"input.txt\",\n  \"size\": 29,\n  \"format\": \"text\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:07.977668+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:07.977668+03:00\"\n}\n"
+  },
+  {
+    "number": 14,
+    "title": "Экспорт и запрет перезаписи",
+    "output": "fm> export 221ba547-2522-4845-9fc9-9d3122e46ea8 output.txt\n\"D:\\\\University\\\\\\u041f\\u0440\\u043e\\u0435\\u043a\\u0442\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0438 \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0430 \\u0431\\u0435\\u0437\\u043e\\u043f\\u0430\\u0441\\u043d\\u043e\\u0433\\u043e \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u043d\\u043e\\u0433\\u043e \\u043e\\u0431\\u0435\\u0441\\u043f\\u0435\\u0447\\u0435\\u043d\\u0438\\u044f\\\\\\u041f\\u0440\\u0430\\u043a\\u0442\\u0438\\u043a\\u0438\\\\\\u0421\\u0435\\u043c\\u0435\\u0441\\u0442\\u0440\\u043e\\u0432\\u043e\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\outbox\\\\67c6bcdddf46434da630ece7e5d77cc1\\\\output.txt\"\nПроверка байтов: вход == выход: True\nSHA-256: 2071e3f48dc78236af6a9dd103914978d690426b9bfc26cc0794b58e45563b9d\nfm> export 221ba547-2522-4845-9fc9-9d3122e46ea8 output.txt\nОшибка: OPERATION_FAILED\n"
+  },
+  {
+    "number": 15,
+    "title": "Удаление с проверкой версии",
+    "output": "fm> delete 221ba547-2522-4845-9fc9-9d3122e46ea8 1\nФайл удалён.\nfm> read 221ba547-2522-4845-9fc9-9d3122e46ea8\nОшибка: FILE_NOT_FOUND_OR_DENIED\n"
+  },
+  {
+    "number": 16,
+    "title": "Отказ для опасного имени JSON и XML",
+    "output": "fm> new ../outside.txt text\nСодержимое: unsafe\nОшибка: UNSAFE_NAME\nfm> new duplicate.json json\nСодержимое: {\"a\":1,\"a\":2}\nОшибка: JSON_DUPLICATE_KEY\nfm> new xxe.xml xml\nСодержимое: <!DOCTYPE a [<!ENTITY x SYSTEM \"file:///C:/Windows/win.ini\">]><a>&x;</a>\nОшибка: INVALID_XML\n"
+  },
+  {
+    "number": 17,
+    "title": "Отклонение ZipSlip",
+    "output": "fm> import zipslip.zip zip\n{\n  \"id\": \"d558b4d2-3edc-42b6-9931-e8527229bcfe\",\n  \"name\": \"zipslip.zip\",\n  \"size\": 130,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:14.290078+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:14.290078+03:00\"\n}\nfm> unzip d558b4d2-3edc-42b6-9931-e8527229bcfe attack\nОшибка: UNSAFE_NAME\n"
+  },
+  {
+    "number": 18,
+    "title": "Права другого пользователя",
+    "output": "fm> logout\nСессия завершена.\nfm> login\nЛогин: demo_bob\nПароль: [скрытый ввод]\n{\n  \"id\": \"97593d3b-0c22-4e63-bad3-fa581b885bc8\",\n  \"username\": \"demo_bob\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nОшибка: FILE_NOT_FOUND_OR_DENIED\nfm> write ac735281-bd45-4f39-9c52-07a9cf329929 2\nНовое содержимое: forbidden\nОшибка: FILE_NOT_FOUND_OR_DENIED\nfm> audit 1\nОшибка: ACCESS_DENIED\n"
+  },
+  {
+    "number": 19,
+    "title": "Смена пароля и отзыв сессии",
+    "output": "fm> passwd\nТекущий пароль: [скрытый ввод]\nНовый пароль: [скрытый ввод]\nПовтор нового пароля: [скрытый ввод]\nПароль изменён. Войдите снова.\nfm> whoami\nОшибка: LOGIN_REQUIRED\nПроверка сессии, открытой до смены пароля: SESSION_REVOKED\nfm> login\nЛогин: demo_bob\nПароль: [скрытый ввод]\n{\n  \"id\": \"97593d3b-0c22-4e63-bad3-fa581b885bc8\",\n  \"username\": \"demo_bob\",\n  \"role\": \"user\",\n  \"auth_version\": 2\n}\n"
+  },
+  {
+    "number": 20,
+    "title": "Отключение пользователя администратором",
+    "output": "fm> logout\nСессия завершена.\nfm> login\nЛогин: demo_admin\nПароль: [скрытый ввод]\n{\n  \"id\": \"68338285-11fb-46f4-a38d-e0a96d259aec\",\n  \"username\": \"demo_admin\",\n  \"role\": \"admin\",\n  \"auth_version\": 1\n}\nfm> disable-user demo_bob\nПользователь отключён.\n"
+  },
+  {
+    "number": 21,
+    "title": "Проверка отключённой сессии",
+    "output": "Проверка ранее открытой сессии: ACCOUNT_DISABLED\n"
+  },
+  {
+    "number": 22,
+    "title": "Проверка целостности аудита",
+    "output": "fm> verify-audit\n{\n  \"verified_events\": 74\n}\n"
+  },
+  {
+    "number": 23,
+    "title": "Последняя операция в аудите",
+    "output": "fm> audit 1\n[\n  {\n    \"seq\": 75,\n    \"time\": \"2026-11-14T14:14:35.030699+00:00\",\n    \"action\": \"AUDIT_VERIFY\",\n    \"reason\": \"OK\",\n    \"file_id\": null,\n    \"outcome\": \"success\",\n    \"user_id\": \"68338285-11fb-46f4-a38d-e0a96d259aec\",\n    \"snapshot\": null,\n    \"request_id\": \"88b0c006-7a53-4eef-9287-2a80aecb3f0c\",\n    \"previous_hmac\": \"247a00802a15ddfc06e054212d7108b3a4bcec7553780039f5556fc2a1ac4777\"\n  }\n]\n"
+  },
+  {
+    "number": 24,
+    "title": "Восстановление после незавершённой записи",
+    "output": "fm> recover\n{\n  \"removed_objects\": 1\n}\n"
+  },
+  {
+    "number": 25,
+    "title": "Персональные каталоги и список файлов",
+    "output": "fm> locations\n{\n  \"inbox\": \"D:\\\\University\\\\\\u041f\\u0440\\u043e\\u0435\\u043a\\u0442\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0438 \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0430 \\u0431\\u0435\\u0437\\u043e\\u043f\\u0430\\u0441\\u043d\\u043e\\u0433\\u043e \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u043d\\u043e\\u0433\\u043e \\u043e\\u0431\\u0435\\u0441\\u043f\\u0435\\u0447\\u0435\\u043d\\u0438\\u044f\\\\\\u041f\\u0440\\u0430\\u043a\\u0442\\u0438\\u043a\\u0438\\\\\\u0421\\u0435\\u043c\\u0435\\u0441\\u0442\\u0440\\u043e\\u0432\\u043e\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\inbox\\\\67c6bcdddf46434da630ece7e5d77cc1\",\n  \"outbox\": \"D:\\\\University\\\\\\u041f\\u0440\\u043e\\u0435\\u043a\\u0442\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0438 \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u043a\\u0430 \\u0431\\u0435\\u0437\\u043e\\u043f\\u0430\\u0441\\u043d\\u043e\\u0433\\u043e \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u043d\\u043e\\u0433\\u043e \\u043e\\u0431\\u0435\\u0441\\u043f\\u0435\\u0447\\u0435\\u043d\\u0438\\u044f\\\\\\u041f\\u0440\\u0430\\u043a\\u0442\\u0438\\u043a\\u0438\\\\\\u0421\\u0435\\u043c\\u0435\\u0441\\u0442\\u0440\\u043e\\u0432\\u043e\\u0435 \\u0437\\u0430\\u0434\\u0430\\u043d\\u0438\\u0435 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\outbox\\\\67c6bcdddf46434da630ece7e5d77cc1\"\n}\n"
+  }
+]

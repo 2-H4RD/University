@@ -1,0 +1,42 @@
+{
+  "version": "1.185.0",
+  "engine": "official semgrep-core",
+  "results": [],
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "src\\filemanager\\__init__.py",
+      "src\\filemanager\\__main__.py",
+      "src\\filemanager\\archives\\__init__.py",
+      "src\\filemanager\\archives\\zipops.py",
+      "src\\filemanager\\audit\\__init__.py",
+      "src\\filemanager\\audit\\journal.py",
+      "src\\filemanager\\config.py",
+      "src\\filemanager\\controllers\\__init__.py",
+      "src\\filemanager\\controllers\\cli.py",
+      "src\\filemanager\\errors.py",
+      "src\\filemanager\\formats\\__init__.py",
+      "src\\filemanager\\formats\\worker.py",
+      "src\\filemanager\\models\\__init__.py",
+      "src\\filemanager\\repositories\\__init__.py",
+      "src\\filemanager\\repositories\\db.py",
+      "src\\filemanager\\security\\__init__.py",
+      "src\\filemanager\\security\\names.py",
+      "src\\filemanager\\security\\passwords.py",
+      "src\\filemanager\\security\\permissions.py",
+      "src\\filemanager\\security\\secrets.py",
+      "src\\filemanager\\services\\__init__.py",
+      "src\\filemanager\\services\\application.py",
+      "src\\filemanager\\services\\auth.py",
+      "src\\filemanager\\storage\\__init__.py",
+      "src\\filemanager\\storage\\objects.py",
+      "src\\filemanager\\storage\\safeio.py",
+      "scripts\\bootstrap.py",
+      "scripts\\scan_semgrep.py",
+      "migrations\\env.py",
+      "migrations\\versions\\0001_initial.py",
+      "migrations\\versions\\0002_sessions.py"
+    ]
+  },
+  "self_test": true
+}

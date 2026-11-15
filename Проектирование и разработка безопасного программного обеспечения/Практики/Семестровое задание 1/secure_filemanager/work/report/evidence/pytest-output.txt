@@ -1,0 +1,6 @@
+........................................................s............... [ 75%]
+........................                                                 [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_integration.py:396: Native NTFS hardlinks/junctions unavailable on this exFAT project volume; handle validation is tested independently
+95 passed, 1 skipped in 410.05s (0:06:50)
+exit_code=0

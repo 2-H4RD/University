@@ -1,0 +1,152 @@
+[
+  {
+    "key": "startup",
+    "title": "Проверка запуска и подключения",
+    "source": "scenarios03.json · 1",
+    "output": "{\n  \"status\": \"OK\",\n  \"postgresql\": \"16.16\",\n  \"db_role\": \"fm_test_app\",\n  \"audit_events\": 1\n}\n"
+  },
+  {
+    "key": "help",
+    "title": "Справка консольного приложения",
+    "source": "scenarios03.json · 2",
+    "output": "fm> help\nregister                       Регистрация (логин и пароль запрашиваются)\nlogin                          Вход\nlogout                         Выход из учётной записи\npasswd                         Смена пароля с отзывом всех сессий\nwhoami                         Текущий пользователь\ndisks                          Диски и свободное место\nlocations                      Ваши каталоги импорта и экспорта\nlist                           Ваши файлы, ID и версии\nnew \"имя\" text|json|xml         Создать файл, содержимое запрашивается одной строкой\nread ID                        Показать содержимое (до 64 КиБ)\nwrite ID ВЕРСИЯ                Заменить содержимое с проверкой версии\ndelete ID ВЕРСИЯ               Удалить файл с проверкой версии\nimport \"имя_в_inbox\" ФОРМАТ     Импорт из вашего inbox\nexport ID \"имя_в_outbox\"        Экспорт без перезаписи существующего файла\nzip \"архив.zip\" ID [ID...]      Создать ZIP\nzip-aes \"архив.zip\" ID [ID...]  Создать AES-256 ZIP; пароль вводится скрыто\nunzip ID \"префикс\"             Безопасно извлечь в логический каталог\nunzip-aes ID \"префикс\"         Извлечь AES ZIP; пароль вводится скрыто\naudit [КОЛИЧЕСТВО]             Просмотр аудита (администратор)\nverify-audit                   Проверка HMAC-цепочки (администратор)\nrecover                        Очистка незавершённых объектов (администратор)\ndisable-user ЛОГИН             Отключить пользователя (администратор)\nhelp                           Справка\nexit                           Завершить программу\n"
+  },
+  {
+    "key": "auth",
+    "title": "Регистрация и вход пользователя",
+    "source": "scenarios03.json · 3",
+    "output": "fm> register\nЛогин: demo_alice\nПароль (15–128 символов): [скрытый ввод]\n{\n  \"registered\": \"demo_alice\"\n}\nfm> register\nЛогин: demo_bob\nПароль (15–128 символов): [скрытый ввод]\n{\n  \"registered\": \"demo_bob\"\n}\nfm> login\nЛогин: demo_alice\nПароль: [скрытый ввод]\n{\n  \"id\": \"67c6bcdd-df46-434d-a630-ece7e5d77cc1\",\n  \"username\": \"demo_alice\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\nfm> whoami\n{\n  \"id\": \"67c6bcdd-df46-434d-a630-ece7e5d77cc1\",\n  \"username\": \"demo_alice\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\n"
+  },
+  {
+    "key": "disks",
+    "title": "Информация о дисках",
+    "source": "scenarios03.json · 4",
+    "output": "fm> disks\n[\n  {\n    \"device\": \"C:\\\\\",\n    \"filesystem\": \"NTFS\",\n    \"total\": 1023035830272,\n    \"free\": 548784418816,\n    \"used\": 474251411456\n  },\n  {\n    \"device\": \"D:\\\\\",\n    \"filesystem\": \"exFAT\",\n    \"total\": 1000186839040,\n    \"free\": 691148947456,\n    \"used\": 309037891584\n  }\n]\n"
+  },
+  {
+    "key": "locations",
+    "title": "Каталоги импорта и экспорта",
+    "source": "scenarios03.json · 25",
+    "output": "fm> locations\n{\n  \"inbox\": \"D:\\\\University\\\\Проектирование и разработка безопасного программного обеспечения\\\\Практики\\\\Семестровое задание 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\inbox\\\\67c6bcdddf46434da630ece7e5d77cc1\",\n  \"outbox\": \"D:\\\\University\\\\Проектирование и разработка безопасного программного обеспечения\\\\Практики\\\\Семестровое задание 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\outbox\\\\67c6bcdddf46434da630ece7e5d77cc1\"\n}\n"
+  },
+  {
+    "key": "text",
+    "title": "Создание и чтение текстового файла",
+    "source": "scenarios03.json · 5",
+    "output": "fm> new note.txt text\nСодержимое: Semester report demo\n{\n  \"id\": \"ac735281-bd45-4f39-9c52-07a9cf329929\",\n  \"name\": \"note.txt\",\n  \"size\": 20,\n  \"format\": \"text\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:51.568061+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:51.568061+03:00\"\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nSemester report demo\n"
+  },
+  {
+    "key": "version",
+    "title": "Изменение файла и конфликт версии",
+    "source": "scenarios03.json · 6",
+    "output": "fm> write ac735281-bd45-4f39-9c52-07a9cf329929 1\nНовое содержимое: Updated content\n{\n  \"id\": \"ac735281-bd45-4f39-9c52-07a9cf329929\",\n  \"name\": \"note.txt\",\n  \"size\": 15,\n  \"format\": \"text\",\n  \"version\": 2,\n  \"created_at\": \"2026-11-14 17:03:51.568061+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:52.580905+03:00\"\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nUpdated content\nfm> write ac735281-bd45-4f39-9c52-07a9cf329929 1\nНовое содержимое: Stale update\nОшибка: VERSION_CONFLICT\n"
+  },
+  {
+    "key": "json",
+    "title": "Работа с JSON",
+    "source": "scenarios03.json · 7",
+    "output": "fm> new settings.json json\nСодержимое: {\"course\":\"secure software\",\"semester\":1}\n{\n  \"id\": \"6353bbf3-7dea-4476-b5a4-84b653af6a05\",\n  \"name\": \"settings.json\",\n  \"size\": 50,\n  \"format\": \"json\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:54.772325+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:54.772325+03:00\"\n}\nfm> read 6353bbf3-7dea-4476-b5a4-84b653af6a05\n{\\u000a  \"course\": \"secure software\",\\u000a  \"semester\": 1\\u000a}\n"
+  },
+  {
+    "key": "xml",
+    "title": "Работа с XML",
+    "source": "scenarios03.json · 8",
+    "output": "fm> new data.xml xml\nСодержимое: <report><status>ready</status></report>\n{\n  \"id\": \"f87f9943-c85e-45f5-b678-24a363303332\",\n  \"name\": \"data.xml\",\n  \"size\": 78,\n  \"format\": \"xml\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:57.749143+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:57.749143+03:00\"\n}\nfm> read f87f9943-c85e-45f5-b678-24a363303332\n<?xml version='1.0' encoding='utf-8'?>\\u000a<report><status>ready</status></report>\n"
+  },
+  {
+    "key": "zip",
+    "title": "Создание и извлечение ZIP",
+    "source": "scenarios03.json · 9,10",
+    "output": "fm> zip backup.zip ac735281-bd45-4f39-9c52-07a9cf329929\n{\n  \"id\": \"1ed4d206-aac5-40d9-b5aa-283fe94ddc6f\",\n  \"name\": \"backup.zip\",\n  \"size\": 131,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:03:59.847566+03:00\",\n  \"updated_at\": \"2026-11-14 17:03:59.847566+03:00\"\n}\n\nfm> unzip 1ed4d206-aac5-40d9-b5aa-283fe94ddc6f copy\n[\n  {\n    \"id\": \"0199da2d-ce0f-4097-b77d-5b2f9534e5da\",\n    \"name\": \"copy/note.txt\",\n    \"size\": 15,\n    \"format\": \"binary\",\n    \"version\": 1,\n    \"created_at\": \"2026-11-14 17:04:01.786924+03:00\",\n    \"updated_at\": \"2026-11-14 17:04:01.786925+03:00\"\n  }\n]\n"
+  },
+  {
+    "key": "aes",
+    "title": "Создание и извлечение AES ZIP",
+    "source": "scenarios03.json · 11,12",
+    "output": "fm> zip-aes secret.zip ac735281-bd45-4f39-9c52-07a9cf329929\nПароль ZIP: [скрытый ввод]\n{\n  \"id\": \"c16c884e-0abe-4b65-ab77-0af5b6337a9f\",\n  \"name\": \"secret.zip\",\n  \"size\": 181,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:04.555766+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:04.555766+03:00\"\n}\n\nfm> unzip-aes c16c884e-0abe-4b65-ab77-0af5b6337a9f private\nПароль ZIP: [скрытый ввод]\n[\n  {\n    \"id\": \"32e83e83-0079-46b5-acad-4598e2b952b5\",\n    \"name\": \"private/note.txt\",\n    \"size\": 15,\n    \"format\": \"binary\",\n    \"version\": 1,\n    \"created_at\": \"2026-11-14 17:04:06.559409+03:00\",\n    \"updated_at\": \"2026-11-14 17:04:06.559410+03:00\"\n  }\n]\n"
+  },
+  {
+    "key": "import",
+    "title": "Импорт файла",
+    "source": "scenarios03.json · 13",
+    "output": "fm> import input.txt text\n{\n  \"id\": \"221ba547-2522-4845-9fc9-9d3122e46ea8\",\n  \"name\": \"input.txt\",\n  \"size\": 29,\n  \"format\": \"text\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:07.977668+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:07.977668+03:00\"\n}\n"
+  },
+  {
+    "key": "export",
+    "title": "Экспорт и запрет перезаписи",
+    "source": "scenarios03.json · 14",
+    "output": "fm> export 221ba547-2522-4845-9fc9-9d3122e46ea8 output.txt\n\"D:\\\\University\\\\Проектирование и разработка безопасного программного обеспечения\\\\Практики\\\\Семестровое задание 1\\\\secure_filemanager\\\\work\\\\report\\\\evidence\\\\data03\\\\outbox\\\\67c6bcdddf46434da630ece7e5d77cc1\\\\output.txt\"\nПроверка байтов: вход == выход: True\nSHA-256: 2071e3f48dc78236af6a9dd103914978d690426b9bfc26cc0794b58e45563b9d\nfm> export 221ba547-2522-4845-9fc9-9d3122e46ea8 output.txt\nОшибка: OPERATION_FAILED\n"
+  },
+  {
+    "key": "delete",
+    "title": "Удаление файла",
+    "source": "scenarios03.json · 15",
+    "output": "fm> delete 221ba547-2522-4845-9fc9-9d3122e46ea8 1\nФайл удалён.\nfm> read 221ba547-2522-4845-9fc9-9d3122e46ea8\nОшибка: FILE_NOT_FOUND_OR_DENIED\n"
+  },
+  {
+    "key": "documents",
+    "title": "Проверка опасных имён JSON и XML",
+    "source": "scenarios03.json · 16",
+    "output": "fm> new ../outside.txt text\nСодержимое: unsafe\nОшибка: UNSAFE_NAME\nfm> new duplicate.json json\nСодержимое: {\"a\":1,\"a\":2}\nОшибка: JSON_DUPLICATE_KEY\nfm> new xxe.xml xml\nСодержимое: <!DOCTYPE a [<!ENTITY x SYSTEM \"file:///C:/Windows/win.ini\">]><a>&x;</a>\nОшибка: INVALID_XML\n"
+  },
+  {
+    "key": "zipslip",
+    "title": "Проверка защиты от ZipSlip",
+    "source": "scenarios03.json · 17",
+    "output": "fm> import zipslip.zip zip\n{\n  \"id\": \"d558b4d2-3edc-42b6-9931-e8527229bcfe\",\n  \"name\": \"zipslip.zip\",\n  \"size\": 130,\n  \"format\": \"zip\",\n  \"version\": 1,\n  \"created_at\": \"2026-11-14 17:04:14.290078+03:00\",\n  \"updated_at\": \"2026-11-14 17:04:14.290078+03:00\"\n}\nfm> unzip d558b4d2-3edc-42b6-9931-e8527229bcfe attack\nОшибка: UNSAFE_NAME\n"
+  },
+  {
+    "key": "access",
+    "title": "Проверка разграничения доступа",
+    "source": "scenarios03.json · 18",
+    "output": "fm> logout\nСессия завершена.\nfm> login\nЛогин: demo_bob\nПароль: [скрытый ввод]\n{\n  \"id\": \"97593d3b-0c22-4e63-bad3-fa581b885bc8\",\n  \"username\": \"demo_bob\",\n  \"role\": \"user\",\n  \"auth_version\": 1\n}\nfm> read ac735281-bd45-4f39-9c52-07a9cf329929\nОшибка: FILE_NOT_FOUND_OR_DENIED\nfm> write ac735281-bd45-4f39-9c52-07a9cf329929 2\nНовое содержимое: forbidden\nОшибка: FILE_NOT_FOUND_OR_DENIED\nfm> audit 1\nОшибка: ACCESS_DENIED\n"
+  },
+  {
+    "key": "password",
+    "title": "Смена пароля и отзыв сессий",
+    "source": "scenarios03.json · 19",
+    "output": "fm> passwd\nТекущий пароль: [скрытый ввод]\nНовый пароль: [скрытый ввод]\nПовтор нового пароля: [скрытый ввод]\nПароль изменён. Войдите снова.\nfm> whoami\nОшибка: LOGIN_REQUIRED\nПроверка сессии, открытой до смены пароля: SESSION_REVOKED\nfm> login\nЛогин: demo_bob\nПароль: [скрытый ввод]\n{\n  \"id\": \"97593d3b-0c22-4e63-bad3-fa581b885bc8\",\n  \"username\": \"demo_bob\",\n  \"role\": \"user\",\n  \"auth_version\": 2\n}\n"
+  },
+  {
+    "key": "disable",
+    "title": "Отключение пользователя и его сессии",
+    "source": "scenarios03.json · 20,21",
+    "output": "fm> logout\nСессия завершена.\nfm> login\nЛогин: demo_admin\nПароль: [скрытый ввод]\n{\n  \"id\": \"68338285-11fb-46f4-a38d-e0a96d259aec\",\n  \"username\": \"demo_admin\",\n  \"role\": \"admin\",\n  \"auth_version\": 1\n}\nfm> disable-user demo_bob\nПользователь отключён.\n\nПроверка ранее открытой сессии: ACCOUNT_DISABLED\n"
+  },
+  {
+    "key": "audit",
+    "title": "Проверка целостности журнала",
+    "source": "scenarios03.json · 22",
+    "output": "fm> verify-audit\n{\n  \"verified_events\": 74\n}\n"
+  },
+  {
+    "key": "audit",
+    "title": "Запись операции в журнале",
+    "source": "scenarios03.json · 23",
+    "output": "fm> audit 1\n[\n  {\n    \"seq\": 75,\n    \"time\": \"2026-11-14T14:14:35.030699+00:00\",\n    \"action\": \"AUDIT_VERIFY\",\n    \"reason\": \"OK\",\n    \"file_id\": null,\n    \"outcome\": \"success\",\n    \"user_id\": \"68338285-11fb-46f4-a38d-e0a96d259aec\",\n    \"snapshot\": null,\n    \"request_id\": \"88b0c006-7a53-4eef-9287-2a80aecb3f0c\",\n    \"previous_hmac\": \"247a00802a15ddfc06e054212d7108b3a4bcec7553780039f5556fc2a1ac4777\"\n  }\n]\n"
+  },
+  {
+    "key": "recover",
+    "title": "Очистка незавершённого объекта",
+    "source": "scenarios03.json · 24",
+    "output": "fm> recover\n{\n  \"removed_objects\": 1\n}\n"
+  },
+  {
+    "key": "tests",
+    "title": "Повторный полный прогон тестов",
+    "source": "pytest-output.txt · tests.xml",
+    "output": "> .venv/Scripts/python.exe -m pytest -q --tb=short\n........................................................s............... [ 75%]\n........................                                                 [100%]\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_integration.py:396: Native NTFS hardlinks/junctions unavailable on this exFAT project volume; handle validation is tested independently\n95 passed, 1 skipped in 410.05s (0:06:50)\nexit_code=0\n"
+  },
+  {
+    "key": "static",
+    "title": "Статический анализ Ruff и Bandit",
+    "source": "checks.json",
+    "output": "> .venv/Scripts/python.exe -m ruff check src scripts tests migrations\nAll checks passed!\nКод завершения: 0\n\n> .venv/Scripts/python.exe -m bandit -r src scripts -c pyproject.toml -f txt\nRun started:2026-11-14 13:58:40.650785+00:00\n\nTest results:\n\tNo issues identified.\n\nCode scanned:\n\tTotal lines of code: 1583\n\tTotal lines skipped (#nosec): 0\n\tTotal potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 3\n\nRun metrics:\n\tTotal issues (by severity):\n\t\tUndefined: 0\n\t\tLow: 0\n\t\tMedium: 0\n\t\tHigh: 0\n\tTotal issues (by confidence):\n\t\tUndefined: 0\n\t\tLow: 0\n\t\tMedium: 0\n\t\tHigh: 0\nFiles skipped (0):\n[main]\tINFO\tprofile include tests: None\n[main]\tINFO\tprofile exclude tests: None\n[main]\tINFO\tcli include tests: None\n[main]\tINFO\tcli exclude tests: None\n[main]\tINFO\tusing config: pyproject.toml\n[main]\tINFO\trunning on Python 3.12.14\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src\\filemanager\\config.py:75\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src\\filemanager\\config.py:41\nКод завершения: 0\n"
+  },
+  {
+    "key": "static",
+    "title": "Semgrep и аудит зависимостей",
+    "source": "checks.json",
+    "output": "> .venv/Scripts/python.exe scripts/scan_semgrep.py --self-test\nSemgrep 1.185.0: 31 files, 0 findings, self-test=True\nКод завершения: 0\n\n> .venv/Scripts/python.exe -m pip check\nNo broken requirements found.\nКод завершения: 0\n\n> .venv/Scripts/python.exe -m pip_audit --skip-editable --progress-spinner off\nName                          Skip Reason\n----------------------------- -------------------------------\nuniversity-secure-filemanager distribution marked as editable\nNo known vulnerabilities found\nКод завершения: 0\n"
+  }
+]

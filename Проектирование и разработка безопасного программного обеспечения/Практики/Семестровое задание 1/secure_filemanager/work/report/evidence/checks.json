@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Ruff",
+    "command": ".venv/Scripts/python.exe -m ruff check src scripts tests migrations",
+    "output": "All checks passed!\n",
+    "exit_code": 0
+  },
+  {
+    "title": "Bandit",
+    "command": ".venv/Scripts/python.exe -m bandit -r src scripts -c pyproject.toml -f txt",
+    "output": "Run started:2026-11-14 13:58:40.650785+00:00\n\nTest results:\n\tNo issues identified.\n\nCode scanned:\n\tTotal lines of code: 1583\n\tTotal lines skipped (#nosec): 0\n\tTotal potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 3\n\nRun metrics:\n\tTotal issues (by severity):\n\t\tUndefined: 0\n\t\tLow: 0\n\t\tMedium: 0\n\t\tHigh: 0\n\tTotal issues (by confidence):\n\t\tUndefined: 0\n\t\tLow: 0\n\t\tMedium: 0\n\t\tHigh: 0\nFiles skipped (0):\n[main]\tINFO\tprofile include tests: None\n[main]\tINFO\tprofile exclude tests: None\n[main]\tINFO\tcli include tests: None\n[main]\tINFO\tcli exclude tests: None\n[main]\tINFO\tusing config: pyproject.toml\n[main]\tINFO\trunning on Python 3.12.14\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src\\filemanager\\config.py:75\n[tester]\tWARNING\tnosec encountered (B105), but no failed test on file src\\filemanager\\config.py:41\n",
+    "exit_code": 0
+  },
+  {
+    "title": "Semgrep",
+    "command": ".venv/Scripts/python.exe scripts/scan_semgrep.py --self-test",
+    "output": "Semgrep 1.185.0: 31 files, 0 findings, self-test=True\n",
+    "exit_code": 0
+  },
+  {
+    "title": "pip check",
+    "command": ".venv/Scripts/python.exe -m pip check",
+    "output": "No broken requirements found.\n",
+    "exit_code": 0
+  },
+  {
+    "title": "pip-audit",
+    "command": ".venv/Scripts/python.exe -m pip_audit --skip-editable --progress-spinner off",
+    "output": "Name                          Skip Reason\n----------------------------- -------------------------------\nuniversity-secure-filemanager distribution marked as editable\nNo known vulnerabilities found\n",
+    "exit_code": 0
+  }
+]

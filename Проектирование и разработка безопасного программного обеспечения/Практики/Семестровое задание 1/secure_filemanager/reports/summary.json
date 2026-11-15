@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-14",
+  "tests_passed": 95,
+  "tests_skipped": 1,
+  "tests_failed": 0,
+  "coverage_measured_parent_percent": 76,
+  "bandit_findings": 0,
+  "semgrep_findings": 0,
+  "python_dependency_vulnerabilities": 0,
+  "native_ntfs_test_skip_reason": "Project resides on exFAT",
+  "runtime": "Python 3.12.14 / PostgreSQL 16.16"
+}
