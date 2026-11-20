@@ -1,0 +1,1638 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:cb="urn:cyberbara:practice6:v4" id="Definitions_Cyberbara_V4" targetNamespace="urn:cyberbara:practice6:v4">
+  <bpmn:itemDefinition id="Type_RawBatch"/>
+  <bpmn:itemDefinition id="Type_MsgOriginal"/>
+  <bpmn:itemDefinition id="Type_MsgClean"/>
+  <bpmn:itemDefinition id="Type_ClassDraft"/>
+  <bpmn:itemDefinition id="Type_Analyzed"/>
+  <bpmn:itemDefinition id="Type_MentionMetrics"/>
+  <bpmn:itemDefinition id="Type_Signal"/>
+  <bpmn:itemDefinition id="Type_CardData"/>
+  <bpmn:itemDefinition id="Type_Notice"/>
+  <bpmn:itemDefinition id="Type_ReadContext"/>
+  <bpmn:itemDefinition id="Type_Decision"/>
+  <bpmn:itemDefinition id="Type_Finding"/>
+  <bpmn:itemDefinition id="Type_Summary"/>
+  <bpmn:collaboration id="OrgCollaboration">
+    <bpmn:participant id="Pool" name="Организация" processRef="Cyberbara"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Cyberbara" name="Обработать репутационный сигнал в Cyberbara" isExecutable="false">
+    <bpmn:documentation>Пилотный процесс для одной организации. Синие задания показывают внутренние компоненты Cyberbara. Зелёные относятся к аналитику, янтарные к ИБ, фиолетовые к руководителю. Модули описаны по функциональной ответственности. Схема не требует развёртывать их отдельными сервисами.
+
+Контуры: коннекторы передают пакет в хранилище. Предобработка подготавливает уникальные сообщения. Классификация присваивает тему и тональность. Сборщик агрегатов и модуль правил формируют сигнал. Модуль карточек ведёт состояние и решения. Модуль уведомлений управляет каналом доставки. API и RBAC ограничивают операции с данными по роли и назначению. Маршрутизация создаёт назначение ИБ. Модуль отчётности публикует сводку. Основные взаимодействия в BPMN показаны ассоциациями данных.
+
+Нотация описывает согласованный пилотный путь сотрудников с необходимыми правами. Сетевые ошибки и отказ доступа описаны в свойствах задач API, кроме явно показанного сбоя уведомления. Пороги, канал уведомления и период просмотра очереди определяются для пилота.
+
+Словарь сущностей:
+• Пакет исходных сообщений. Коннекторы → Хранилище. Поля: batchId, collectedAt, список сообщений, идентификаторы источников.
+• Сохранённые сообщения. Запись сообщения: messageId, sourceId, externalId, publishedAt, collectedAt, originalText, sourceUrl. Хранится исходный текст и связь с источником.
+• Сообщения после очистки. Поля: normalizedText, originalMessageId, признак дубликата или ссылка на уникальное сообщение. Дубликаты исключаются из подсчёта.
+• Присвоенные тема и тональность. Поля: messageId, тема, тональность и версия модели. Модуль классификации формирует запись для сохранения.
+• Результаты классификации. Сохранённые результаты на наборе сообщений. Связь по messageId позволяет поднять первоисточник при ручной проверке.
+• Агрегаты упоминаний. Поля: интервал, тема, число уникальных сообщений, число негативных сообщений и показатель сравнения с базой.
+• Репутационный сигнал. Поля: signalId, ruleId, detectedAt, actualValue, thresholdValue, период, тема и ссылки на сообщения-доказательства. Фиксирует факт срабатывания правила.
+• Карточка события. Поля: cardId, signalId, статус, исполнитель, первоисточники, даты создания, назначения и закрытия, решения. Состояния: «Новая», «Назначена», «Рассмотрена» либо «Отклонена».
+• Уведомление. Поля: notificationId, cardId, адресат, канал, ссылка, createdAt, attempts, lastAttemptAt, deliveryStatus. Состояния: «Сформировано», «Доставлено», «Сбой». Доставка и просмотр карточки фиксируются раздельно.
+• Карточка и первоисточники. Поля: cardId, signalId, тема, тональность, список sourceUrl и исходных текстов, доступных по роли. Представление для аналитика.
+• Решение аналитика. Поля: cardId, analystId, signalConfirmed, причина, ручные уточнения темы или тональности, reviewedAt.
+• Заключение ИБ. Поля: cardId, reviewerId, оценка обстоятельств, решение, меры либо отметка об их отсутствии, ссылки на доказательства, handledAt.
+• Сводка по событию. Поля: cardId, тема, основание сигнала, принятое решение, время обнаружения, передачи и закрытия. Представление для руководителя.</bpmn:documentation>
+    <bpmn:dataObject id="Analyzed" name="Результаты классификации" itemSubjectRef="cb:Type_Analyzed">
+      <bpmn:documentation>Сохранённые результаты на наборе сообщений. Связь по messageId позволяет поднять первоисточник при ручной проверке.</bpmn:documentation>
+    </bpmn:dataObject>
+    <bpmn:dataObject id="Signal" name="Репутационный сигнал" itemSubjectRef="cb:Type_Signal">
+      <bpmn:documentation>Поля: signalId, ruleId, detectedAt, actualValue, thresholdValue, период, тема и ссылки на сообщения-доказательства. Фиксирует факт срабатывания правила.</bpmn:documentation>
+    </bpmn:dataObject>
+    <bpmn:dataObject id="CardData" name="Карточка события" itemSubjectRef="cb:Type_CardData">
+      <bpmn:documentation>Поля: cardId, signalId, статус, исполнитель, первоисточники, даты создания, назначения и закрытия, решения. Состояния: «Новая», «Назначена», «Рассмотрена» либо «Отклонена».</bpmn:documentation>
+    </bpmn:dataObject>
+    <bpmn:dataObject id="Finding" name="Заключение ИБ" itemSubjectRef="cb:Type_Finding">
+      <bpmn:documentation>Поля: cardId, reviewerId, оценка обстоятельств, решение, меры либо отметка об их отсутствии, ссылки на доказательства, handledAt.</bpmn:documentation>
+    </bpmn:dataObject>
+    <bpmn:dataObject id="Summary" name="Сводка по событию" itemSubjectRef="cb:Type_Summary">
+      <bpmn:documentation>Поля: cardId, тема, основание сигнала, принятое решение, время обнаружения, передачи и закрытия. Представление для руководителя.</bpmn:documentation>
+    </bpmn:dataObject>
+    <bpmn:dataObjectReference id="ClassifiedRef" name="Результаты классификации" dataObjectRef="Analyzed" itemSubjectRef="cb:Type_Analyzed">
+      <bpmn:documentation>Сохранённые результаты на наборе сообщений. Связь по messageId позволяет поднять первоисточник при ручной проверке.</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:dataObjectReference id="DetectedSignalRef" name="Репутационный сигнал" dataObjectRef="Signal" itemSubjectRef="cb:Type_Signal">
+      <bpmn:documentation>Поля: signalId, ruleId, detectedAt, actualValue, thresholdValue, период, тема и ссылки на сообщения-доказательства. Фиксирует факт срабатывания правила.</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:dataObjectReference id="NewCardRef" name="Карточка события" dataObjectRef="CardData" itemSubjectRef="cb:Type_CardData">
+      <bpmn:documentation>Поля: cardId, signalId, статус, исполнитель, первоисточники, даты создания, назначения и закрытия, решения. Состояния: «Новая», «Назначена», «Рассмотрена» либо «Отклонена».</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:dataObjectReference id="AssignedCardRef" name="Карточка события" dataObjectRef="CardData" itemSubjectRef="cb:Type_CardData">
+      <bpmn:documentation>Поля: cardId, signalId, статус, исполнитель, первоисточники, даты создания, назначения и закрытия, решения. Состояния: «Новая», «Назначена», «Рассмотрена» либо «Отклонена».</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:dataObjectReference id="IBConclusionRef" name="Заключение ИБ" dataObjectRef="Finding" itemSubjectRef="cb:Type_Finding">
+      <bpmn:documentation>Поля: cardId, reviewerId, оценка обстоятельств, решение, меры либо отметка об их отсутствии, ссылки на доказательства, handledAt.</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:dataObjectReference id="SummaryRef" name="Сводка по событию" dataObjectRef="Summary" itemSubjectRef="cb:Type_Summary">
+      <bpmn:documentation>Поля: cardId, тема, основание сигнала, принятое решение, время обнаружения, передачи и закрытия. Представление для руководителя.</bpmn:documentation>
+    </bpmn:dataObjectReference>
+    <bpmn:startEvent id="Start" name="Новые сообщения доступны">
+      <bpmn:outgoing>OrgCollaboration_F01</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:subProcess id="Prepare" name="Подготовить сообщения&#10;(Сбор и классификация)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Сбор и классификация. Коннекторы принимают пакет, хранилище сохраняет первоисточники, предобработка исключает дубли, модуль классификации добавляет тему и тональность. Результат передаётся модулю мониторинга.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F01</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F02</bpmn:outgoing>
+      <bpmn:ioSpecification id="Prepare_io">
+        <bpmn:dataOutput id="Prepare_out1" name="Результаты классификации"/>
+        <bpmn:inputSet id="Prepare_inputs"/>
+        <bpmn:outputSet id="Prepare_outputs">
+          <bpmn:dataOutputRefs>Prepare_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataOutputAssociation id="ClassifiedRef_outAssoc">
+        <bpmn:sourceRef>Prepare_out1</bpmn:sourceRef>
+        <bpmn:targetRef>ClassifiedRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+      <bpmn:dataObject id="RawBatch" name="Пакет исходных сообщений" itemSubjectRef="cb:Type_RawBatch">
+        <bpmn:documentation>Коннекторы → Хранилище. Поля: batchId, collectedAt, список сообщений, идентификаторы источников.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObject id="MsgOriginal" name="Сохранённые сообщения" itemSubjectRef="cb:Type_MsgOriginal">
+        <bpmn:documentation>Запись сообщения: messageId, sourceId, externalId, publishedAt, collectedAt, originalText, sourceUrl. Хранится исходный текст и связь с источником.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObject id="MsgClean" name="Сообщения после очистки" itemSubjectRef="cb:Type_MsgClean">
+        <bpmn:documentation>Поля: normalizedText, originalMessageId, признак дубликата или ссылка на уникальное сообщение. Дубликаты исключаются из подсчёта.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObject id="ClassDraft" name="Тема и тональность" itemSubjectRef="cb:Type_ClassDraft">
+        <bpmn:documentation>Поля: messageId, тема, тональность и версия модели. Модуль классификации формирует запись для сохранения.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObjectReference id="RawBatchRef" name="Пакет исходных сообщений" dataObjectRef="RawBatch" itemSubjectRef="cb:Type_RawBatch">
+        <bpmn:documentation>Коннекторы → Хранилище. Поля: batchId, collectedAt, список сообщений, идентификаторы источников.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:dataObjectReference id="StoredMessagesRef" name="Сохранённые сообщения" dataObjectRef="MsgOriginal" itemSubjectRef="cb:Type_MsgOriginal">
+        <bpmn:documentation>Запись сообщения: messageId, sourceId, externalId, publishedAt, collectedAt, originalText, sourceUrl. Хранится исходный текст и связь с источником.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:dataObjectReference id="CleanMessagesRef" name="Сообщения после очистки" dataObjectRef="MsgClean" itemSubjectRef="cb:Type_MsgClean">
+        <bpmn:documentation>Поля: normalizedText, originalMessageId, признак дубликата или ссылка на уникальное сообщение. Дубликаты исключаются из подсчёта.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:dataObjectReference id="DraftClassificationRef" name="Тема и тональность" dataObjectRef="ClassDraft" itemSubjectRef="cb:Type_ClassDraft">
+        <bpmn:documentation>Поля: messageId, тема, тональность и версия модели. Модуль классификации формирует запись для сохранения.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:startEvent id="PStart" name="Пакет доступен">
+        <bpmn:outgoing>Prepare_F01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:serviceTask id="PAccept" name="Принять пакет сообщений&#10;(Коннекторы)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Коннекторы. Коннекторы принимают пакет из согласованных источников: соцсеть, мессенджер, СМИ/RSS или разрешённый импорт. Сохраняют идентификатор источника, внешний ключ, ссылку и время получения.</bpmn:documentation>
+        <bpmn:incoming>Prepare_F01</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F02</bpmn:outgoing>
+        <bpmn:ioSpecification id="PAccept_io">
+          <bpmn:dataOutput id="PAccept_out1" name="Пакет исходных сообщений"/>
+          <bpmn:inputSet id="PAccept_inputs"/>
+          <bpmn:outputSet id="PAccept_outputs">
+            <bpmn:dataOutputRefs>PAccept_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="RawBatchRef_outAssoc">
+          <bpmn:sourceRef>PAccept_out1</bpmn:sourceRef>
+          <bpmn:targetRef>RawBatchRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="PStore" name="Сохранить исходные сообщения&#10;(Хранилище)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Хранилище. Хранилище присваивает messageId и сохраняет исходный текст. Повторная загрузка пары sourceId + externalId использует существующую запись.</bpmn:documentation>
+        <bpmn:incoming>Prepare_F02</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F03</bpmn:outgoing>
+        <bpmn:ioSpecification id="PStore_io">
+          <bpmn:dataInput id="PStore_in1" name="Пакет исходных сообщений"/>
+          <bpmn:dataOutput id="PStore_out1" name="Сохранённые сообщения"/>
+          <bpmn:inputSet id="PStore_inputs">
+            <bpmn:dataInputRefs>PStore_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="PStore_outputs">
+            <bpmn:dataOutputRefs>PStore_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="RawBatchRef_inAssoc">
+          <bpmn:sourceRef>RawBatchRef</bpmn:sourceRef>
+          <bpmn:targetRef>PStore_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+        <bpmn:dataOutputAssociation id="StoredMessagesRef_outAssoc">
+          <bpmn:sourceRef>PStore_out1</bpmn:sourceRef>
+          <bpmn:targetRef>StoredMessagesRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="PClean" name="Очистить тексты и удалить дубли&#10;(Предобработка)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Предобработка. Нормализовать текст перед классификацией, исключить повторы из анализа, сохранить связь с оригиналом. Установить newMessagesAvailable по наличию уникальных новых сообщений.</bpmn:documentation>
+        <bpmn:incoming>Prepare_F03</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F04</bpmn:outgoing>
+        <bpmn:ioSpecification id="PClean_io">
+          <bpmn:dataInput id="PClean_in1" name="Сохранённые сообщения"/>
+          <bpmn:dataOutput id="PClean_out1" name="Сообщения после очистки"/>
+          <bpmn:inputSet id="PClean_inputs">
+            <bpmn:dataInputRefs>PClean_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="PClean_outputs">
+            <bpmn:dataOutputRefs>PClean_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="StoredMessagesRef_inAssoc">
+          <bpmn:sourceRef>StoredMessagesRef</bpmn:sourceRef>
+          <bpmn:targetRef>PClean_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+        <bpmn:dataOutputAssociation id="CleanMessagesRef_outAssoc">
+          <bpmn:sourceRef>PClean_out1</bpmn:sourceRef>
+          <bpmn:targetRef>CleanMessagesRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:exclusiveGateway id="PHasTexts" name="Остались новые сообщения?" gatewayDirection="Diverging" default="Prepare_F06">
+        <bpmn:incoming>Prepare_F04</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F05</bpmn:outgoing>
+        <bpmn:outgoing>Prepare_F06</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:serviceTask id="PClassify" name="Определить тему и тональность&#10;(Модуль классификации)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль классификации. Присвоить тему и тональность нормализованному тексту и записать версию модели. Вход связан с messageId.</bpmn:documentation>
+        <bpmn:incoming>Prepare_F05</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F07</bpmn:outgoing>
+        <bpmn:ioSpecification id="PClassify_io">
+          <bpmn:dataInput id="PClassify_in1" name="Сообщения после очистки"/>
+          <bpmn:dataOutput id="PClassify_out1" name="Тема и тональность"/>
+          <bpmn:inputSet id="PClassify_inputs">
+            <bpmn:dataInputRefs>PClassify_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="PClassify_outputs">
+            <bpmn:dataOutputRefs>PClassify_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="CleanMessagesRef_inAssoc">
+          <bpmn:sourceRef>CleanMessagesRef</bpmn:sourceRef>
+          <bpmn:targetRef>PClassify_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+        <bpmn:dataOutputAssociation id="DraftClassificationRef_outAssoc">
+          <bpmn:sourceRef>PClassify_out1</bpmn:sourceRef>
+          <bpmn:targetRef>DraftClassificationRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="PSave" name="Сохранить классификацию&#10;(Хранилище)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Хранилище. Сохранить результаты под messageId и передать набор в мониторинг. При отсутствии новых сообщений выход пустой.</bpmn:documentation>
+        <bpmn:incoming>Prepare_F07</bpmn:incoming>
+        <bpmn:outgoing>Prepare_F08</bpmn:outgoing>
+        <bpmn:ioSpecification id="PSave_io">
+          <bpmn:dataInput id="PSave_in1" name="Тема и тональность"/>
+          <bpmn:inputSet id="PSave_inputs">
+            <bpmn:dataInputRefs>PSave_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="PSave_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="DraftClassificationRef_inAssoc">
+          <bpmn:sourceRef>DraftClassificationRef</bpmn:sourceRef>
+          <bpmn:targetRef>PSave_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="PEnd" name="Пакет обработан">
+        <bpmn:incoming>Prepare_F08</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:endEvent id="PEndEmpty" name="Новых сообщений для анализа нет">
+        <bpmn:incoming>Prepare_F06</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Prepare_F01" sourceRef="PStart" targetRef="PAccept"/>
+      <bpmn:sequenceFlow id="Prepare_F02" sourceRef="PAccept" targetRef="PStore"/>
+      <bpmn:sequenceFlow id="Prepare_F03" sourceRef="PStore" targetRef="PClean"/>
+      <bpmn:sequenceFlow id="Prepare_F04" sourceRef="PClean" targetRef="PHasTexts"/>
+      <bpmn:sequenceFlow id="Prepare_F05" sourceRef="PHasTexts" targetRef="PClassify" name="Да">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">newMessagesAvailable = true</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="Prepare_F06" sourceRef="PHasTexts" targetRef="PEndEmpty" name="В остальных случаях"/>
+      <bpmn:sequenceFlow id="Prepare_F07" sourceRef="PClassify" targetRef="PSave"/>
+      <bpmn:sequenceFlow id="Prepare_F08" sourceRef="PSave" targetRef="PEnd"/>
+    </bpmn:subProcess>
+    <bpmn:subProcess id="AssessTrend" name="Проверить правила мониторинга&#10;(Мониторинг)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Мониторинг. Сборщик агрегатов рассчитывает динамику, модуль правил сравнивает её с условиями пилота. Выход: thresholdExceeded и репутационный сигнал при срабатывании.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F02</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F03</bpmn:outgoing>
+      <bpmn:ioSpecification id="AssessTrend_io">
+        <bpmn:dataInput id="AssessTrend_in1" name="Результаты классификации"/>
+        <bpmn:dataOutput id="AssessTrend_out1" name="Репутационный сигнал"/>
+        <bpmn:inputSet id="AssessTrend_inputs">
+          <bpmn:dataInputRefs>AssessTrend_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="AssessTrend_outputs">
+          <bpmn:dataOutputRefs>AssessTrend_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="ClassifiedRef_inAssoc">
+        <bpmn:sourceRef>ClassifiedRef</bpmn:sourceRef>
+        <bpmn:targetRef>AssessTrend_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="DetectedSignalRef_outAssoc">
+        <bpmn:sourceRef>AssessTrend_out1</bpmn:sourceRef>
+        <bpmn:targetRef>DetectedSignalRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+      <bpmn:dataObject id="MentionMetrics" name="Агрегаты упоминаний" itemSubjectRef="cb:Type_MentionMetrics">
+        <bpmn:documentation>Поля: интервал, тема, число уникальных сообщений, число негативных сообщений и показатель сравнения с базой.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObjectReference id="MentionMetricsRef" name="Агрегаты упоминаний" dataObjectRef="MentionMetrics" itemSubjectRef="cb:Type_MentionMetrics">
+        <bpmn:documentation>Поля: интервал, тема, число уникальных сообщений, число негативных сообщений и показатель сравнения с базой.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:startEvent id="MStart" name="Пакет обработан">
+        <bpmn:outgoing>AssessTrend_F01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:serviceTask id="MAggregate" name="Собрать агрегаты за период&#10;(Сборщик агрегатов)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Сборщик агрегатов. Посчитать число уникальных сообщений и динамику негатива в разрезе темы и периода. Привязать агрегаты к сообщениям, вошедшим в расчёт.</bpmn:documentation>
+        <bpmn:incoming>AssessTrend_F01</bpmn:incoming>
+        <bpmn:outgoing>AssessTrend_F02</bpmn:outgoing>
+        <bpmn:ioSpecification id="MAggregate_io">
+          <bpmn:dataOutput id="MAggregate_out1" name="Агрегаты упоминаний"/>
+          <bpmn:inputSet id="MAggregate_inputs"/>
+          <bpmn:outputSet id="MAggregate_outputs">
+            <bpmn:dataOutputRefs>MAggregate_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="MentionMetricsRef_outAssoc">
+          <bpmn:sourceRef>MAggregate_out1</bpmn:sourceRef>
+          <bpmn:targetRef>MentionMetricsRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="MApply" name="Сравнить агрегаты с порогом&#10;(Модуль правил)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль правил. Применить настроенное правило к теме и периоду. Установить thresholdExceeded = true при превышении порога на непустом пакете. Для пустого пакета или непревышения порога вернуть false. Настройки уточняются на пилоте.</bpmn:documentation>
+        <bpmn:incoming>AssessTrend_F02</bpmn:incoming>
+        <bpmn:outgoing>AssessTrend_F03</bpmn:outgoing>
+        <bpmn:ioSpecification id="MApply_io">
+          <bpmn:dataInput id="MApply_in1" name="Агрегаты упоминаний"/>
+          <bpmn:inputSet id="MApply_inputs">
+            <bpmn:dataInputRefs>MApply_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="MApply_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="MentionMetricsRef_inAssoc">
+          <bpmn:sourceRef>MentionMetricsRef</bpmn:sourceRef>
+          <bpmn:targetRef>MApply_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:exclusiveGateway id="MRule" name="Правило сработало?" gatewayDirection="Diverging" default="AssessTrend_F05">
+        <bpmn:incoming>AssessTrend_F03</bpmn:incoming>
+        <bpmn:outgoing>AssessTrend_F04</bpmn:outgoing>
+        <bpmn:outgoing>AssessTrend_F05</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:serviceTask id="MSignal" name="Сформировать репутационный сигнал&#10;(Модуль правил)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль правил. Сохранить ruleId, фактическое значение, порог, время обнаружения и ссылки на сообщения-доказательства. Передать сигнал на основной уровень для создания карточки.</bpmn:documentation>
+        <bpmn:incoming>AssessTrend_F04</bpmn:incoming>
+        <bpmn:outgoing>AssessTrend_F06</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="MEnd" name="Сигнал сформирован">
+        <bpmn:incoming>AssessTrend_F06</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:endEvent id="MEndQuiet" name="Условие не выполнено">
+        <bpmn:incoming>AssessTrend_F05</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="AssessTrend_F01" sourceRef="MStart" targetRef="MAggregate"/>
+      <bpmn:sequenceFlow id="AssessTrend_F02" sourceRef="MAggregate" targetRef="MApply"/>
+      <bpmn:sequenceFlow id="AssessTrend_F03" sourceRef="MApply" targetRef="MRule"/>
+      <bpmn:sequenceFlow id="AssessTrend_F04" sourceRef="MRule" targetRef="MSignal" name="Да">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">thresholdExceeded = true</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="AssessTrend_F05" sourceRef="MRule" targetRef="MEndQuiet" name="В остальных случаях"/>
+      <bpmn:sequenceFlow id="AssessTrend_F06" sourceRef="MSignal" targetRef="MEnd"/>
+    </bpmn:subProcess>
+    <bpmn:exclusiveGateway id="Threshold" name="Порог превышен?" gatewayDirection="Diverging" default="OrgCollaboration_F05">
+      <bpmn:incoming>OrgCollaboration_F03</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F04</bpmn:outgoing>
+      <bpmn:outgoing>OrgCollaboration_F05</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="EndMonitor" name="Сигнал не сформирован">
+      <bpmn:incoming>OrgCollaboration_F05</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="CreateCard" name="Создать карточку события&#10;(Модуль карточек)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль карточек. Получить signalId и список доказательств от модуля правил. Создать карточку со статусом «Новая» и вернуть cardId. Отдельная карточка используется как рабочая запись сотрудника.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F04</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F06</bpmn:outgoing>
+      <bpmn:ioSpecification id="CreateCard_io">
+        <bpmn:dataInput id="CreateCard_in1" name="Репутационный сигнал"/>
+        <bpmn:dataOutput id="CreateCard_out1" name="Карточка события"/>
+        <bpmn:inputSet id="CreateCard_inputs">
+          <bpmn:dataInputRefs>CreateCard_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="CreateCard_outputs">
+          <bpmn:dataOutputRefs>CreateCard_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="DetectedSignalRef_inAssoc">
+        <bpmn:sourceRef>DetectedSignalRef</bpmn:sourceRef>
+        <bpmn:targetRef>CreateCard_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="NewCardRef_outAssoc">
+        <bpmn:sourceRef>CreateCard_out1</bpmn:sourceRef>
+        <bpmn:targetRef>NewCardRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:subProcess id="Notify" name="Доставить уведомление&#10;(Модуль уведомлений)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль уведомлений. Модуль уведомлений формирует запись со ссылкой на карточку. Канал доставки возвращает статус попытки. Модуль уведомлений фиксирует итог и возвращает notificationDelivered.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F06</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F07</bpmn:outgoing>
+      <bpmn:ioSpecification id="Notify_io">
+        <bpmn:dataInput id="Notify_in1" name="Карточка события"/>
+        <bpmn:inputSet id="Notify_inputs">
+          <bpmn:dataInputRefs>Notify_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="Notify_outputs"/>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="NewCardRef_inAssoc">
+        <bpmn:sourceRef>NewCardRef</bpmn:sourceRef>
+        <bpmn:targetRef>Notify_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataObject id="Notice" name="Уведомление" itemSubjectRef="cb:Type_Notice">
+        <bpmn:documentation>Поля: notificationId, cardId, адресат, канал, ссылка, createdAt, attempts, lastAttemptAt, deliveryStatus. Состояния: «Сформировано», «Доставлено», «Сбой». Доставка и просмотр карточки фиксируются раздельно.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObjectReference id="NotificationRef" name="Уведомление" dataObjectRef="Notice" itemSubjectRef="cb:Type_Notice">
+        <bpmn:documentation>Поля: notificationId, cardId, адресат, канал, ссылка, createdAt, attempts, lastAttemptAt, deliveryStatus. Состояния: «Сформировано», «Доставлено», «Сбой». Доставка и просмотр карточки фиксируются раздельно.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:startEvent id="NStart" name="Карточка создана">
+        <bpmn:outgoing>Notify_F01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:serviceTask id="NCompose" name="Сформировать уведомление&#10;(Модуль уведомлений)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль уведомлений. Получить cardId, выбрать адресата и согласованный канал. Создать notificationId и ссылку. Сохранить состояние «Сформировано».</bpmn:documentation>
+        <bpmn:incoming>Notify_F01</bpmn:incoming>
+        <bpmn:outgoing>Notify_F02</bpmn:outgoing>
+        <bpmn:ioSpecification id="NCompose_io">
+          <bpmn:dataOutput id="NCompose_out1" name="Уведомление"/>
+          <bpmn:inputSet id="NCompose_inputs"/>
+          <bpmn:outputSet id="NCompose_outputs">
+            <bpmn:dataOutputRefs>NCompose_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="NotificationRef_outAssoc">
+          <bpmn:sourceRef>NCompose_out1</bpmn:sourceRef>
+          <bpmn:targetRef>NotificationRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:serviceTask id="NSend" name="Отправить ссылку на карточку&#10;(Канал доставки)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Канал доставки. Отправить уведомление адресату. Вернуть результат попытки и время. notificationDelivered = true только при подтверждённой доставке.</bpmn:documentation>
+        <bpmn:incoming>Notify_F02</bpmn:incoming>
+        <bpmn:outgoing>Notify_F03</bpmn:outgoing>
+        <bpmn:ioSpecification id="NSend_io">
+          <bpmn:dataInput id="NSend_in1" name="Уведомление"/>
+          <bpmn:inputSet id="NSend_inputs">
+            <bpmn:dataInputRefs>NSend_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="NSend_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="NotificationRef_inAssoc">
+          <bpmn:sourceRef>NotificationRef</bpmn:sourceRef>
+          <bpmn:targetRef>NSend_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:exclusiveGateway id="NFirst" name="Первая попытка успешна?" gatewayDirection="Diverging" default="Notify_F05">
+        <bpmn:incoming>Notify_F03</bpmn:incoming>
+        <bpmn:outgoing>Notify_F04</bpmn:outgoing>
+        <bpmn:outgoing>Notify_F05</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:serviceTask id="NRetry" name="Повторить отправку уведомления&#10;(Канал доставки)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Канал доставки. Повторно отправить существующее уведомление ровно один раз. Использовать тот же notificationId и cardId. Заменить результат последней попыткой.</bpmn:documentation>
+        <bpmn:incoming>Notify_F05</bpmn:incoming>
+        <bpmn:outgoing>Notify_F06</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:exclusiveGateway id="NMerge" gatewayDirection="Converging">
+        <bpmn:incoming>Notify_F04</bpmn:incoming>
+        <bpmn:incoming>Notify_F06</bpmn:incoming>
+        <bpmn:outgoing>Notify_F07</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:serviceTask id="NSave" name="Записать итог доставки&#10;(Модуль уведомлений)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль уведомлений. Сохранить количество попыток, время последней попытки и состояние «Доставлено» или «Сбой». Передать notificationDelivered основному процессу.</bpmn:documentation>
+        <bpmn:incoming>Notify_F07</bpmn:incoming>
+        <bpmn:outgoing>Notify_F08</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="NEnd" name="Итог доставки записан">
+        <bpmn:incoming>Notify_F08</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Notify_F01" sourceRef="NStart" targetRef="NCompose"/>
+      <bpmn:sequenceFlow id="Notify_F02" sourceRef="NCompose" targetRef="NSend"/>
+      <bpmn:sequenceFlow id="Notify_F03" sourceRef="NSend" targetRef="NFirst"/>
+      <bpmn:sequenceFlow id="Notify_F04" sourceRef="NFirst" targetRef="NMerge" name="Да">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">notificationDelivered = true</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="Notify_F05" sourceRef="NFirst" targetRef="NRetry" name="В остальных случаях"/>
+      <bpmn:sequenceFlow id="Notify_F06" sourceRef="NRetry" targetRef="NMerge"/>
+      <bpmn:sequenceFlow id="Notify_F07" sourceRef="NMerge" targetRef="NSave"/>
+      <bpmn:sequenceFlow id="Notify_F08" sourceRef="NSave" targetRef="NEnd"/>
+    </bpmn:subProcess>
+    <bpmn:exclusiveGateway id="Delivered" name="Уведомление доставлено?" gatewayDirection="Diverging" default="OrgCollaboration_F09">
+      <bpmn:incoming>OrgCollaboration_F07</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F08</bpmn:outgoing>
+      <bpmn:outgoing>OrgCollaboration_F09</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="OpenAlert" name="Открыть карточку из уведомления&#10;(Аналитик)">
+      <bpmn:documentation>Исполнитель: Аналитик. Открыть ссылку в панели аналитика. Панель передаёт cardId в API карточек. Уведомление содержит ссылку, исходные тексты запрашиваются по правам доступа.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F08</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F11</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="LogFailure" name="Показать карточку в очереди&#10;(Панель аналитика)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Панель аналитика. После сбоя доставки показать сохранённую карточку в очереди новых событий. Статус доставки хранится в уведомлении. Новая карточка не создаётся.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F09</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F10</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="Queue" name="Открыть карточку из очереди&#10;(Аналитик)">
+      <bpmn:documentation>Исполнитель: Аналитик. Выбрать сохранённую карточку в панели аналитика. Панель передаёт cardId в то же API карточек. Периодичность штатной проверки очереди согласуется на пилоте.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F10</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F12</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="MergeOpen" gatewayDirection="Converging">
+      <bpmn:incoming>OrgCollaboration_F11</bpmn:incoming>
+      <bpmn:incoming>OrgCollaboration_F12</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F13</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:subProcess id="Verify" name="Проверить репутационный сигнал&#10;(Аналитик)">
+      <bpmn:documentation>Исполнитель: Аналитик. Панель получает карточку и первоисточники через API. Аналитик сверяет результаты и вводит решение. Модуль карточек сохраняет решение и возвращает signalConfirmed.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F13</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F14</bpmn:outgoing>
+      <bpmn:dataObject id="ReadContext" name="Карточка и первоисточники" itemSubjectRef="cb:Type_ReadContext">
+        <bpmn:documentation>Поля: cardId, signalId, тема, тональность, список sourceUrl и исходных текстов, доступных по роли. Представление для аналитика.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObject id="Decision" name="Решение аналитика" itemSubjectRef="cb:Type_Decision">
+        <bpmn:documentation>Поля: cardId, analystId, signalConfirmed, причина, ручные уточнения темы или тональности, reviewedAt.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObjectReference id="ReadContextRef" name="Карточка и первоисточники" dataObjectRef="ReadContext" itemSubjectRef="cb:Type_ReadContext">
+        <bpmn:documentation>Поля: cardId, signalId, тема, тональность, список sourceUrl и исходных текстов, доступных по роли. Представление для аналитика.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:dataObjectReference id="DecisionRef" name="Решение аналитика" dataObjectRef="Decision" itemSubjectRef="cb:Type_Decision">
+        <bpmn:documentation>Поля: cardId, analystId, signalConfirmed, причина, ручные уточнения темы или тональности, reviewedAt.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:startEvent id="VStart" name="Карточка выбрана аналитиком">
+        <bpmn:outgoing>Verify_F01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:serviceTask id="VFetch" name="Предоставить карточку и источники&#10;(API карточек и RBAC)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: API карточек и RBAC. По cardId проверить область организации и права аналитика. Вернуть карточку и разрешённые первоисточники из хранилища. При отказе API не передаёт содержимое и не изменяет карточку. На схеме показан путь сотрудника с необходимыми правами.</bpmn:documentation>
+        <bpmn:incoming>Verify_F01</bpmn:incoming>
+        <bpmn:outgoing>Verify_F02</bpmn:outgoing>
+        <bpmn:ioSpecification id="VFetch_io">
+          <bpmn:dataOutput id="VFetch_out1" name="Карточка и первоисточники"/>
+          <bpmn:inputSet id="VFetch_inputs"/>
+          <bpmn:outputSet id="VFetch_outputs">
+            <bpmn:dataOutputRefs>VFetch_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="ReadContextRef_outAssoc">
+          <bpmn:sourceRef>VFetch_out1</bpmn:sourceRef>
+          <bpmn:targetRef>ReadContextRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:userTask id="VSources" name="Проверить первоисточники&#10;(Аналитик)">
+        <bpmn:documentation>Исполнитель: Аналитик. В панели аналитика открыть разрешённые оригиналы, сравнить даты, контекст и источники.</bpmn:documentation>
+        <bpmn:incoming>Verify_F02</bpmn:incoming>
+        <bpmn:outgoing>Verify_F03</bpmn:outgoing>
+        <bpmn:ioSpecification id="VSources_io">
+          <bpmn:dataInput id="VSources_in1" name="Карточка и первоисточники"/>
+          <bpmn:inputSet id="VSources_inputs">
+            <bpmn:dataInputRefs>VSources_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="VSources_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="ReadContextRef_inAssoc">
+          <bpmn:sourceRef>ReadContextRef</bpmn:sourceRef>
+          <bpmn:targetRef>VSources_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:userTask>
+      <bpmn:userTask id="VCompare" name="Сопоставить тему и тональность&#10;(Аналитик)">
+        <bpmn:documentation>Исполнитель: Аналитик. Сверить ответ классификатора с исходными текстами. Установить classificationNeedsCorrection при необходимости уточнения.</bpmn:documentation>
+        <bpmn:incoming>Verify_F03</bpmn:incoming>
+        <bpmn:outgoing>Verify_F04</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:exclusiveGateway id="VDecide" name="Нужно уточнить классификацию?" gatewayDirection="Diverging" default="Verify_F06">
+        <bpmn:incoming>Verify_F04</bpmn:incoming>
+        <bpmn:outgoing>Verify_F05</bpmn:outgoing>
+        <bpmn:outgoing>Verify_F06</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:userTask id="VCorrect" name="Уточнить тему или тональность&#10;(Аналитик)">
+        <bpmn:documentation>Исполнитель: Аналитик. Ввести исправленную тему или тональность для карточки. Сохранить исходную классификацию для сопоставления.</bpmn:documentation>
+        <bpmn:incoming>Verify_F05</bpmn:incoming>
+        <bpmn:outgoing>Verify_F07</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:exclusiveGateway id="VMerge" gatewayDirection="Converging">
+        <bpmn:incoming>Verify_F06</bpmn:incoming>
+        <bpmn:incoming>Verify_F07</bpmn:incoming>
+        <bpmn:outgoing>Verify_F08</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:userTask id="VRecord" name="Ввести решение по сигналу&#10;(Аналитик)">
+        <bpmn:documentation>Исполнитель: Аналитик. Подтвердить или отклонить сигнал. Заполнить основание и ссылки на доказательства.</bpmn:documentation>
+        <bpmn:incoming>Verify_F08</bpmn:incoming>
+        <bpmn:outgoing>Verify_F09</bpmn:outgoing>
+        <bpmn:ioSpecification id="VRecord_io">
+          <bpmn:dataOutput id="VRecord_out1" name="Решение аналитика"/>
+          <bpmn:inputSet id="VRecord_inputs"/>
+          <bpmn:outputSet id="VRecord_outputs">
+            <bpmn:dataOutputRefs>VRecord_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="DecisionRef_outAssoc">
+          <bpmn:sourceRef>VRecord_out1</bpmn:sourceRef>
+          <bpmn:targetRef>DecisionRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:userTask>
+      <bpmn:serviceTask id="VSave" name="Сохранить решение аналитика&#10;(Модуль карточек)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль карточек. Проверить право на изменение, сохранить решение, время и ручные уточнения. Установить signalConfirmed = true только при подтверждении.</bpmn:documentation>
+        <bpmn:incoming>Verify_F09</bpmn:incoming>
+        <bpmn:outgoing>Verify_F10</bpmn:outgoing>
+        <bpmn:ioSpecification id="VSave_io">
+          <bpmn:dataInput id="VSave_in1" name="Решение аналитика"/>
+          <bpmn:inputSet id="VSave_inputs">
+            <bpmn:dataInputRefs>VSave_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="VSave_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="DecisionRef_inAssoc">
+          <bpmn:sourceRef>DecisionRef</bpmn:sourceRef>
+          <bpmn:targetRef>VSave_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="VEnd" name="Решение записано">
+        <bpmn:incoming>Verify_F10</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Verify_F01" sourceRef="VStart" targetRef="VFetch"/>
+      <bpmn:sequenceFlow id="Verify_F02" sourceRef="VFetch" targetRef="VSources"/>
+      <bpmn:sequenceFlow id="Verify_F03" sourceRef="VSources" targetRef="VCompare"/>
+      <bpmn:sequenceFlow id="Verify_F04" sourceRef="VCompare" targetRef="VDecide"/>
+      <bpmn:sequenceFlow id="Verify_F05" sourceRef="VDecide" targetRef="VCorrect" name="Да">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">classificationNeedsCorrection = true</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:sequenceFlow id="Verify_F06" sourceRef="VDecide" targetRef="VMerge" name="В остальных случаях"/>
+      <bpmn:sequenceFlow id="Verify_F07" sourceRef="VCorrect" targetRef="VMerge"/>
+      <bpmn:sequenceFlow id="Verify_F08" sourceRef="VMerge" targetRef="VRecord"/>
+      <bpmn:sequenceFlow id="Verify_F09" sourceRef="VRecord" targetRef="VSave"/>
+      <bpmn:sequenceFlow id="Verify_F10" sourceRef="VSave" targetRef="VEnd"/>
+    </bpmn:subProcess>
+    <bpmn:exclusiveGateway id="Confirmed" name="Сигнал подтверждён?" gatewayDirection="Diverging" default="OrgCollaboration_F16">
+      <bpmn:incoming>OrgCollaboration_F14</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F15</bpmn:outgoing>
+      <bpmn:outgoing>OrgCollaboration_F16</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="Reject" name="Закрыть карточку с указанием причины&#10;(Аналитик)">
+      <bpmn:documentation>Исполнитель: Аналитик. Подтвердить закрытие с причиной, указанной при проверке. Модуль карточек переводит запись в состояние «Отклонена».</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F16</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F17</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="EndRejected" name="Сигнал отклонён">
+      <bpmn:incoming>OrgCollaboration_F17</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="Assign" name="Назначить исполнителя ИБ&#10;(Аналитик)">
+      <bpmn:documentation>Исполнитель: Аналитик. Выбрать исполнителя ИБ в панели аналитика и подтвердить назначение. Панель передаёт cardId и assigneeId в модуль маршрутизации.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F15</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F18</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Route" name="Передать карточку в очередь ИБ&#10;(Маршрутизация)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Маршрутизация. Модуль маршрутизации сохраняет assigneeId, assignedAt и состояние «Назначена». Карточка становится доступна ответственному специалисту в очереди ИБ.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F18</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F19</bpmn:outgoing>
+      <bpmn:ioSpecification id="Route_io">
+        <bpmn:dataOutput id="Route_out1" name="Карточка события"/>
+        <bpmn:inputSet id="Route_inputs"/>
+        <bpmn:outputSet id="Route_outputs">
+          <bpmn:dataOutputRefs>Route_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataOutputAssociation id="AssignedCardRef_outAssoc">
+        <bpmn:sourceRef>Route_out1</bpmn:sourceRef>
+        <bpmn:targetRef>AssignedCardRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:subProcess id="Handle" name="Рассмотреть событие в ИБ&#10;(Специалист ИБ)">
+      <bpmn:documentation>Исполнитель: Специалист ИБ. Из очереди ИБ запросить назначенную карточку через API, рассмотреть событие и сохранить заключение.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F19</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F20</bpmn:outgoing>
+      <bpmn:ioSpecification id="Handle_io">
+        <bpmn:dataInput id="Handle_in1" name="Карточка события"/>
+        <bpmn:dataOutput id="Handle_out1" name="Заключение ИБ"/>
+        <bpmn:inputSet id="Handle_inputs">
+          <bpmn:dataInputRefs>Handle_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="Handle_outputs">
+          <bpmn:dataOutputRefs>Handle_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="AssignedCardRef_inAssoc">
+        <bpmn:sourceRef>AssignedCardRef</bpmn:sourceRef>
+        <bpmn:targetRef>Handle_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="IBConclusionRef_outAssoc">
+        <bpmn:sourceRef>Handle_out1</bpmn:sourceRef>
+        <bpmn:targetRef>IBConclusionRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+      <bpmn:dataObject id="FindingEntry" name="Заключение ИБ" itemSubjectRef="cb:Type_Finding">
+        <bpmn:documentation>Поля: cardId, reviewerId, оценка обстоятельств, решение, меры либо отметка об их отсутствии, ссылки на доказательства, handledAt.</bpmn:documentation>
+      </bpmn:dataObject>
+      <bpmn:dataObjectReference id="IBFindingRef" name="Заключение ИБ" dataObjectRef="FindingEntry" itemSubjectRef="cb:Type_Finding">
+        <bpmn:documentation>Поля: cardId, reviewerId, оценка обстоятельств, решение, меры либо отметка об их отсутствии, ссылки на доказательства, handledAt.</bpmn:documentation>
+      </bpmn:dataObjectReference>
+      <bpmn:startEvent id="HStart" name="Карточка назначена">
+        <bpmn:outgoing>Handle_F01</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:userTask id="HOpen" name="Запросить назначенную карточку&#10;(Специалист ИБ)">
+        <bpmn:documentation>Исполнитель: Специалист ИБ. Выбрать карточку в очереди ИБ и отправить запрос из панели специалиста.</bpmn:documentation>
+        <bpmn:incoming>Handle_F01</bpmn:incoming>
+        <bpmn:outgoing>Handle_F02</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:serviceTask id="HFetch" name="Предоставить материалы события&#10;(API карточек и RBAC)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: API карточек и RBAC. Проверить роль и назначение. Выдать доступные материалы из хранилища. При отказе данные не возвращаются. Схема показывает работу назначенного специалиста.</bpmn:documentation>
+        <bpmn:incoming>Handle_F02</bpmn:incoming>
+        <bpmn:outgoing>Handle_F03</bpmn:outgoing>
+      </bpmn:serviceTask>
+      <bpmn:userTask id="HAssess" name="Оценить обстоятельства события&#10;(Специалист ИБ)">
+        <bpmn:documentation>Исполнитель: Специалист ИБ. Проверить состав сообщений, источник, охват и контекст.</bpmn:documentation>
+        <bpmn:incoming>Handle_F03</bpmn:incoming>
+        <bpmn:outgoing>Handle_F04</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:userTask id="HDecide" name="Определить меры по событию&#10;(Специалист ИБ)">
+        <bpmn:documentation>Исполнитель: Специалист ИБ. Выбрать меры по регламенту организации либо указать, что меры не нужны.</bpmn:documentation>
+        <bpmn:incoming>Handle_F04</bpmn:incoming>
+        <bpmn:outgoing>Handle_F05</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:userTask id="HRecord" name="Ввести итог рассмотрения&#10;(Специалист ИБ)">
+        <bpmn:documentation>Исполнитель: Специалист ИБ. Заполнить вывод, меры и основания в панели ИБ.</bpmn:documentation>
+        <bpmn:incoming>Handle_F05</bpmn:incoming>
+        <bpmn:outgoing>Handle_F06</bpmn:outgoing>
+        <bpmn:ioSpecification id="HRecord_io">
+          <bpmn:dataOutput id="HRecord_out1" name="Заключение ИБ"/>
+          <bpmn:inputSet id="HRecord_inputs"/>
+          <bpmn:outputSet id="HRecord_outputs">
+            <bpmn:dataOutputRefs>HRecord_out1</bpmn:dataOutputRefs>
+          </bpmn:outputSet>
+        </bpmn:ioSpecification>
+        <bpmn:dataOutputAssociation id="IBFindingRef_outAssoc">
+          <bpmn:sourceRef>HRecord_out1</bpmn:sourceRef>
+          <bpmn:targetRef>IBFindingRef</bpmn:targetRef>
+        </bpmn:dataOutputAssociation>
+      </bpmn:userTask>
+      <bpmn:serviceTask id="HSave" name="Сохранить заключение ИБ&#10;(Модуль карточек)">
+        <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль карточек. Проверить доступ, записать заключение и время рассмотрения. Передать заключение основному процессу для закрытия карточки.</bpmn:documentation>
+        <bpmn:incoming>Handle_F06</bpmn:incoming>
+        <bpmn:outgoing>Handle_F07</bpmn:outgoing>
+        <bpmn:ioSpecification id="HSave_io">
+          <bpmn:dataInput id="HSave_in1" name="Заключение ИБ"/>
+          <bpmn:inputSet id="HSave_inputs">
+            <bpmn:dataInputRefs>HSave_in1</bpmn:dataInputRefs>
+          </bpmn:inputSet>
+          <bpmn:outputSet id="HSave_outputs"/>
+        </bpmn:ioSpecification>
+        <bpmn:dataInputAssociation id="IBFindingRef_inAssoc">
+          <bpmn:sourceRef>IBFindingRef</bpmn:sourceRef>
+          <bpmn:targetRef>HSave_in1</bpmn:targetRef>
+        </bpmn:dataInputAssociation>
+      </bpmn:serviceTask>
+      <bpmn:endEvent id="HEnd" name="Заключение записано">
+        <bpmn:incoming>Handle_F07</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Handle_F01" sourceRef="HStart" targetRef="HOpen"/>
+      <bpmn:sequenceFlow id="Handle_F02" sourceRef="HOpen" targetRef="HFetch"/>
+      <bpmn:sequenceFlow id="Handle_F03" sourceRef="HFetch" targetRef="HAssess"/>
+      <bpmn:sequenceFlow id="Handle_F04" sourceRef="HAssess" targetRef="HDecide"/>
+      <bpmn:sequenceFlow id="Handle_F05" sourceRef="HDecide" targetRef="HRecord"/>
+      <bpmn:sequenceFlow id="Handle_F06" sourceRef="HRecord" targetRef="HSave"/>
+      <bpmn:sequenceFlow id="Handle_F07" sourceRef="HSave" targetRef="HEnd"/>
+    </bpmn:subProcess>
+    <bpmn:serviceTask id="Close" name="Закрыть карточку события&#10;(Модуль карточек)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Модуль карточек. Принять заключение ИБ. Установить состояние «Рассмотрена» и заполнить closedAt.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F20</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F21</bpmn:outgoing>
+      <bpmn:ioSpecification id="Close_io">
+        <bpmn:dataInput id="Close_in1" name="Заключение ИБ"/>
+        <bpmn:inputSet id="Close_inputs">
+          <bpmn:dataInputRefs>Close_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="Close_outputs"/>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="IBConclusionRef_inAssoc">
+        <bpmn:sourceRef>IBConclusionRef</bpmn:sourceRef>
+        <bpmn:targetRef>Close_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="BuildSummary" name="Сформировать сводку&#10;(Отчётность)">
+      <bpmn:documentation>Исполнитель: Система Cyberbara. Компонент: Отчётность. Модуль отчётности читает закрытую карточку, заключение ИБ и интервалы обработки. Публикует доступную руководителю сводку в ролевой панели.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F21</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F22</bpmn:outgoing>
+      <bpmn:ioSpecification id="BuildSummary_io">
+        <bpmn:dataOutput id="BuildSummary_out1" name="Сводка по событию"/>
+        <bpmn:inputSet id="BuildSummary_inputs"/>
+        <bpmn:outputSet id="BuildSummary_outputs">
+          <bpmn:dataOutputRefs>BuildSummary_out1</bpmn:dataOutputRefs>
+        </bpmn:outputSet>
+      </bpmn:ioSpecification>
+      <bpmn:dataOutputAssociation id="SummaryRef_outAssoc">
+        <bpmn:sourceRef>BuildSummary_out1</bpmn:sourceRef>
+        <bpmn:targetRef>SummaryRef</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="ViewSummary" name="Просмотреть сводку по событию&#10;(Руководитель)">
+      <bpmn:documentation>Исполнитель: Руководитель. Получить сводку в панели руководителя и просмотреть итог. Для метрики обработки используется closedAt, поэтому длительность не зависит от времени просмотра.</bpmn:documentation>
+      <bpmn:incoming>OrgCollaboration_F22</bpmn:incoming>
+      <bpmn:outgoing>OrgCollaboration_F23</bpmn:outgoing>
+      <bpmn:ioSpecification id="ViewSummary_io">
+        <bpmn:dataInput id="ViewSummary_in1" name="Сводка по событию"/>
+        <bpmn:inputSet id="ViewSummary_inputs">
+          <bpmn:dataInputRefs>ViewSummary_in1</bpmn:dataInputRefs>
+        </bpmn:inputSet>
+        <bpmn:outputSet id="ViewSummary_outputs"/>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="SummaryRef_inAssoc">
+        <bpmn:sourceRef>SummaryRef</bpmn:sourceRef>
+        <bpmn:targetRef>ViewSummary_in1</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:userTask>
+    <bpmn:endEvent id="EndReviewed" name="Результат просмотрен руководителем">
+      <bpmn:incoming>OrgCollaboration_F23</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="OrgCollaboration_F01" sourceRef="Start" targetRef="Prepare"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F02" sourceRef="Prepare" targetRef="AssessTrend"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F03" sourceRef="AssessTrend" targetRef="Threshold"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F04" sourceRef="Threshold" targetRef="CreateCard" name="Да">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">thresholdExceeded = true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="OrgCollaboration_F05" sourceRef="Threshold" targetRef="EndMonitor" name="В остальных случаях"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F06" sourceRef="CreateCard" targetRef="Notify"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F07" sourceRef="Notify" targetRef="Delivered"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F08" sourceRef="Delivered" targetRef="OpenAlert" name="Да">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">notificationDelivered = true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="OrgCollaboration_F09" sourceRef="Delivered" targetRef="LogFailure" name="В остальных случаях"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F10" sourceRef="LogFailure" targetRef="Queue"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F11" sourceRef="OpenAlert" targetRef="MergeOpen"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F12" sourceRef="Queue" targetRef="MergeOpen"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F13" sourceRef="MergeOpen" targetRef="Verify"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F14" sourceRef="Verify" targetRef="Confirmed"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F15" sourceRef="Confirmed" targetRef="Assign" name="Да">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">signalConfirmed = true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="OrgCollaboration_F16" sourceRef="Confirmed" targetRef="Reject" name="В остальных случаях"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F17" sourceRef="Reject" targetRef="EndRejected"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F18" sourceRef="Assign" targetRef="Route"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F19" sourceRef="Route" targetRef="Handle"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F20" sourceRef="Handle" targetRef="Close"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F21" sourceRef="Close" targetRef="BuildSummary"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F22" sourceRef="BuildSummary" targetRef="ViewSummary"/>
+    <bpmn:sequenceFlow id="OrgCollaboration_F23" sourceRef="ViewSummary" targetRef="EndReviewed"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="OrgCollaboration_diagram" name="Обработка репутационного сигнала">
+    <bpmndi:BPMNPlane id="OrgCollaboration_plane" bpmnElement="OrgCollaboration">
+      <bpmndi:BPMNShape id="Pool_di" bpmnElement="Pool" isHorizontal="true">
+        <dc:Bounds x="30" y="25" width="1825" height="748"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start">
+        <dc:Bounds x="85" y="195" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="30" y="236" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Prepare_di" bpmnElement="Prepare" isExpanded="false" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="163" y="172" width="164" height="82"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="AssessTrend_di" bpmnElement="AssessTrend" isExpanded="false" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="372" y="172" width="171" height="82"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Threshold_di" bpmnElement="Threshold" isMarkerVisible="true">
+        <dc:Bounds x="582" y="190" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="523" y="139" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndMonitor_di" bpmnElement="EndMonitor">
+        <dc:Bounds x="705" y="326" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="650" y="367" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CreateCard_di" bpmnElement="CreateCard" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="668" y="175" width="162" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Notify_di" bpmnElement="Notify" isExpanded="false" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="877" y="172" width="164" height="82"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Delivered_di" bpmnElement="Delivered" isMarkerVisible="true">
+        <dc:Bounds x="1081" y="190" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1022" y="139" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="OpenAlert_di" bpmnElement="OpenAlert" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="1182" y="175" width="188" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LogFailure_di" bpmnElement="LogFailure" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1182" y="306" width="162" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Queue_di" bpmnElement="Queue" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="1391" y="306" width="174" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MergeOpen_di" bpmnElement="MergeOpen" isMarkerVisible="true">
+        <dc:Bounds x="1604" y="190" width="46" height="46"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Verify_di" bpmnElement="Verify" isExpanded="false" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="163" y="528" width="168" height="82"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Confirmed_di" bpmnElement="Confirmed" isMarkerVisible="true">
+        <dc:Bounds x="365" y="546" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="306" y="495" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Reject_di" bpmnElement="Reject" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="451" y="670" width="180" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndRejected_di" bpmnElement="EndRejected">
+        <dc:Bounds x="668" y="690" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="613" y="731" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Assign_di" bpmnElement="Assign" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="451" y="531" width="158" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Route_di" bpmnElement="Route" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="651" y="531" width="172" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Handle_di" bpmnElement="Handle" isExpanded="false" bioc:fill="#FFF0D6" bioc:stroke="#8A6028" color:background-color="#FFF0D6" color:border-color="#8A6028">
+        <dc:Bounds x="868" y="528" width="175" height="82"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Close_di" bpmnElement="Close" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1089" y="531" width="162" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BuildSummary_di" bpmnElement="BuildSummary" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1297" y="531" width="164" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ViewSummary_di" bpmnElement="ViewSummary" bioc:fill="#F0E5FF" bioc:stroke="#704B96" color:background-color="#F0E5FF" color:border-color="#704B96">
+        <dc:Bounds x="1508" y="531" width="183" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndReviewed_di" bpmnElement="EndReviewed">
+        <dc:Bounds x="1747" y="551" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1692" y="592" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ClassifiedRef_di" bpmnElement="ClassifiedRef">
+        <dc:Bounds x="331" y="76" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="282" y="45" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="ClassifiedRef_outAssoc_di" bpmnElement="ClassifiedRef_outAssoc">
+        <di:waypoint x="272" y="172"/>
+        <di:waypoint x="272" y="97"/>
+        <di:waypoint x="331" y="97"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="ClassifiedRef_inAssoc_di" bpmnElement="ClassifiedRef_inAssoc">
+        <di:waypoint x="365" y="97"/>
+        <di:waypoint x="429" y="97"/>
+        <di:waypoint x="429" y="172"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DetectedSignalRef_di" bpmnElement="DetectedSignalRef">
+        <dc:Bounds x="605" y="76" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="556" y="45" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DetectedSignalRef_outAssoc_di" bpmnElement="DetectedSignalRef_outAssoc">
+        <di:waypoint x="486" y="172"/>
+        <di:waypoint x="486" y="97"/>
+        <di:waypoint x="605" y="97"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DetectedSignalRef_inAssoc_di" bpmnElement="DetectedSignalRef_inAssoc">
+        <di:waypoint x="639" y="97"/>
+        <di:waypoint x="722" y="97"/>
+        <di:waypoint x="722" y="175"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="NewCardRef_di" bpmnElement="NewCardRef">
+        <dc:Bounds x="835" y="76" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="786" y="45" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="NewCardRef_outAssoc_di" bpmnElement="NewCardRef_outAssoc">
+        <di:waypoint x="776" y="175"/>
+        <di:waypoint x="776" y="97"/>
+        <di:waypoint x="835" y="97"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="NewCardRef_inAssoc_di" bpmnElement="NewCardRef_inAssoc">
+        <di:waypoint x="869" y="97"/>
+        <di:waypoint x="931" y="97"/>
+        <di:waypoint x="931" y="172"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="AssignedCardRef_di" bpmnElement="AssignedCardRef">
+        <dc:Bounds x="827" y="471" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="778" y="440" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="AssignedCardRef_outAssoc_di" bpmnElement="AssignedCardRef_outAssoc">
+        <di:waypoint x="765" y="531"/>
+        <di:waypoint x="765" y="492"/>
+        <di:waypoint x="827" y="492"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssignedCardRef_inAssoc_di" bpmnElement="AssignedCardRef_inAssoc">
+        <di:waypoint x="861" y="492"/>
+        <di:waypoint x="926" y="492"/>
+        <di:waypoint x="926" y="528"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IBConclusionRef_di" bpmnElement="IBConclusionRef">
+        <dc:Bounds x="1048" y="471" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="999" y="440" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="IBConclusionRef_outAssoc_di" bpmnElement="IBConclusionRef_outAssoc">
+        <di:waypoint x="984" y="528"/>
+        <di:waypoint x="984" y="492"/>
+        <di:waypoint x="1048" y="492"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="IBConclusionRef_inAssoc_di" bpmnElement="IBConclusionRef_inAssoc">
+        <di:waypoint x="1082" y="492"/>
+        <di:waypoint x="1143" y="492"/>
+        <di:waypoint x="1143" y="531"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="SummaryRef_di" bpmnElement="SummaryRef">
+        <dc:Bounds x="1466" y="471" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1417" y="440" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SummaryRef_outAssoc_di" bpmnElement="SummaryRef_outAssoc">
+        <di:waypoint x="1406" y="531"/>
+        <di:waypoint x="1406" y="492"/>
+        <di:waypoint x="1466" y="492"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SummaryRef_inAssoc_di" bpmnElement="SummaryRef_inAssoc">
+        <di:waypoint x="1500" y="492"/>
+        <di:waypoint x="1569" y="492"/>
+        <di:waypoint x="1569" y="531"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F01_di" bpmnElement="OrgCollaboration_F01">
+        <di:waypoint x="121" y="213"/>
+        <di:waypoint x="163" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F02_di" bpmnElement="OrgCollaboration_F02">
+        <di:waypoint x="327" y="213"/>
+        <di:waypoint x="372" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F03_di" bpmnElement="OrgCollaboration_F03">
+        <di:waypoint x="543" y="213"/>
+        <di:waypoint x="582" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F04_di" bpmnElement="OrgCollaboration_F04">
+        <di:waypoint x="628" y="213"/>
+        <di:waypoint x="668" y="213"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="635" y="184" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F05_di" bpmnElement="OrgCollaboration_F05">
+        <di:waypoint x="605" y="236"/>
+        <di:waypoint x="605" y="344"/>
+        <di:waypoint x="705" y="344"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="600" y="311" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F06_di" bpmnElement="OrgCollaboration_F06">
+        <di:waypoint x="830" y="213"/>
+        <di:waypoint x="877" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F07_di" bpmnElement="OrgCollaboration_F07">
+        <di:waypoint x="1041" y="213"/>
+        <di:waypoint x="1081" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F08_di" bpmnElement="OrgCollaboration_F08">
+        <di:waypoint x="1127" y="213"/>
+        <di:waypoint x="1182" y="213"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1138" y="184" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F09_di" bpmnElement="OrgCollaboration_F09">
+        <di:waypoint x="1104" y="236"/>
+        <di:waypoint x="1104" y="344"/>
+        <di:waypoint x="1182" y="344"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1108" y="276" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F10_di" bpmnElement="OrgCollaboration_F10">
+        <di:waypoint x="1344" y="344"/>
+        <di:waypoint x="1391" y="344"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F11_di" bpmnElement="OrgCollaboration_F11">
+        <di:waypoint x="1370" y="213"/>
+        <di:waypoint x="1604" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F12_di" bpmnElement="OrgCollaboration_F12">
+        <di:waypoint x="1565" y="344"/>
+        <di:waypoint x="1627" y="344"/>
+        <di:waypoint x="1627" y="236"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F13_di" bpmnElement="OrgCollaboration_F13">
+        <di:waypoint x="1650" y="213"/>
+        <di:waypoint x="1778" y="213"/>
+        <di:waypoint x="1778" y="442"/>
+        <di:waypoint x="106" y="442"/>
+        <di:waypoint x="106" y="569"/>
+        <di:waypoint x="163" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F14_di" bpmnElement="OrgCollaboration_F14">
+        <di:waypoint x="331" y="569"/>
+        <di:waypoint x="365" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F15_di" bpmnElement="OrgCollaboration_F15">
+        <di:waypoint x="411" y="569"/>
+        <di:waypoint x="451" y="569"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="416" y="540" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F16_di" bpmnElement="OrgCollaboration_F16">
+        <di:waypoint x="388" y="592"/>
+        <di:waypoint x="388" y="708"/>
+        <di:waypoint x="451" y="708"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="378" y="654" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F17_di" bpmnElement="OrgCollaboration_F17">
+        <di:waypoint x="631" y="708"/>
+        <di:waypoint x="668" y="708"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F18_di" bpmnElement="OrgCollaboration_F18">
+        <di:waypoint x="609" y="569"/>
+        <di:waypoint x="651" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F19_di" bpmnElement="OrgCollaboration_F19">
+        <di:waypoint x="823" y="569"/>
+        <di:waypoint x="868" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F20_di" bpmnElement="OrgCollaboration_F20">
+        <di:waypoint x="1043" y="569"/>
+        <di:waypoint x="1089" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F21_di" bpmnElement="OrgCollaboration_F21">
+        <di:waypoint x="1251" y="569"/>
+        <di:waypoint x="1297" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F22_di" bpmnElement="OrgCollaboration_F22">
+        <di:waypoint x="1461" y="569"/>
+        <di:waypoint x="1508" y="569"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="OrgCollaboration_F23_di" bpmnElement="OrgCollaboration_F23">
+        <di:waypoint x="1691" y="569"/>
+        <di:waypoint x="1747" y="569"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Prepare_diagram" name="Подготовить сообщения">
+    <bpmndi:BPMNPlane id="Prepare_plane" bpmnElement="Prepare">
+      <bpmndi:BPMNShape id="PStart_di" bpmnElement="PStart">
+        <dc:Bounds x="67" y="201" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="12" y="242" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PAccept_di" bpmnElement="PAccept" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="145" y="181" width="175" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PStore_di" bpmnElement="PStore" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="364" y="181" width="175" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PClean_di" bpmnElement="PClean" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="583" y="181" width="175" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PHasTexts_di" bpmnElement="PHasTexts" isMarkerVisible="true">
+        <dc:Bounds x="792" y="196" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="733" y="145" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PClassify_di" bpmnElement="PClassify" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="876" y="181" width="178" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PSave_di" bpmnElement="PSave" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1100" y="181" width="178" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PEnd_di" bpmnElement="PEnd">
+        <dc:Bounds x="1326" y="201" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1271" y="242" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="PEndEmpty_di" bpmnElement="PEndEmpty">
+        <dc:Bounds x="972" y="331" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="917" y="372" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="RawBatchRef_di" bpmnElement="RawBatchRef">
+        <dc:Bounds x="325" y="296" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="276" y="265" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="RawBatchRef_outAssoc_di" bpmnElement="RawBatchRef_outAssoc">
+        <di:waypoint x="261" y="257"/>
+        <di:waypoint x="261" y="317"/>
+        <di:waypoint x="325" y="317"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="RawBatchRef_inAssoc_di" bpmnElement="RawBatchRef_inAssoc">
+        <di:waypoint x="359" y="317"/>
+        <di:waypoint x="422" y="317"/>
+        <di:waypoint x="422" y="257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="StoredMessagesRef_di" bpmnElement="StoredMessagesRef">
+        <dc:Bounds x="544" y="296" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="495" y="265" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="StoredMessagesRef_outAssoc_di" bpmnElement="StoredMessagesRef_outAssoc">
+        <di:waypoint x="480" y="257"/>
+        <di:waypoint x="480" y="317"/>
+        <di:waypoint x="544" y="317"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="StoredMessagesRef_inAssoc_di" bpmnElement="StoredMessagesRef_inAssoc">
+        <di:waypoint x="578" y="317"/>
+        <di:waypoint x="641" y="317"/>
+        <di:waypoint x="641" y="257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="CleanMessagesRef_di" bpmnElement="CleanMessagesRef">
+        <dc:Bounds x="795" y="98" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="746" y="67" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="CleanMessagesRef_outAssoc_di" bpmnElement="CleanMessagesRef_outAssoc">
+        <di:waypoint x="699" y="181"/>
+        <di:waypoint x="699" y="119"/>
+        <di:waypoint x="795" y="119"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="CleanMessagesRef_inAssoc_di" bpmnElement="CleanMessagesRef_inAssoc">
+        <di:waypoint x="829" y="119"/>
+        <di:waypoint x="935" y="119"/>
+        <di:waypoint x="935" y="181"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DraftClassificationRef_di" bpmnElement="DraftClassificationRef">
+        <dc:Bounds x="1060" y="296" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1011" y="265" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DraftClassificationRef_outAssoc_di" bpmnElement="DraftClassificationRef_outAssoc">
+        <di:waypoint x="994" y="257"/>
+        <di:waypoint x="994" y="317"/>
+        <di:waypoint x="1060" y="317"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DraftClassificationRef_inAssoc_di" bpmnElement="DraftClassificationRef_inAssoc">
+        <di:waypoint x="1094" y="317"/>
+        <di:waypoint x="1159" y="317"/>
+        <di:waypoint x="1159" y="257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F01_di" bpmnElement="Prepare_F01">
+        <di:waypoint x="103" y="219"/>
+        <di:waypoint x="145" y="219"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F02_di" bpmnElement="Prepare_F02">
+        <di:waypoint x="320" y="219"/>
+        <di:waypoint x="364" y="219"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F03_di" bpmnElement="Prepare_F03">
+        <di:waypoint x="539" y="219"/>
+        <di:waypoint x="583" y="219"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F04_di" bpmnElement="Prepare_F04">
+        <di:waypoint x="758" y="219"/>
+        <di:waypoint x="792" y="219"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F05_di" bpmnElement="Prepare_F05">
+        <di:waypoint x="838" y="219"/>
+        <di:waypoint x="876" y="219"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="840" y="189" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F06_di" bpmnElement="Prepare_F06">
+        <di:waypoint x="815" y="242"/>
+        <di:waypoint x="815" y="349"/>
+        <di:waypoint x="972" y="349"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="843" y="318" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F07_di" bpmnElement="Prepare_F07">
+        <di:waypoint x="1054" y="219"/>
+        <di:waypoint x="1100" y="219"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Prepare_F08_di" bpmnElement="Prepare_F08">
+        <di:waypoint x="1278" y="219"/>
+        <di:waypoint x="1326" y="219"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="AssessTrend_diagram" name="Проверить правила мониторинга">
+    <bpmndi:BPMNPlane id="AssessTrend_plane" bpmnElement="AssessTrend">
+      <bpmndi:BPMNShape id="MStart_di" bpmnElement="MStart">
+        <dc:Bounds x="62" y="170" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="7" y="211" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MAggregate_di" bpmnElement="MAggregate" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="145" y="150" width="182" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MApply_di" bpmnElement="MApply" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="380" y="150" width="186" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MRule_di" bpmnElement="MRule" isMarkerVisible="true">
+        <dc:Bounds x="602" y="165" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="543" y="114" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MSignal_di" bpmnElement="MSignal" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="698" y="150" width="190" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MEnd_di" bpmnElement="MEnd">
+        <dc:Bounds x="940" y="170" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="885" y="211" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MEndQuiet_di" bpmnElement="MEndQuiet">
+        <dc:Bounds x="788" y="296" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="733" y="337" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="MentionMetricsRef_di" bpmnElement="MentionMetricsRef">
+        <dc:Bounds x="336" y="83" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="287" y="52" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="MentionMetricsRef_outAssoc_di" bpmnElement="MentionMetricsRef_outAssoc">
+        <di:waypoint x="266" y="150"/>
+        <di:waypoint x="266" y="104"/>
+        <di:waypoint x="336" y="104"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="MentionMetricsRef_inAssoc_di" bpmnElement="MentionMetricsRef_inAssoc">
+        <di:waypoint x="370" y="104"/>
+        <di:waypoint x="442" y="104"/>
+        <di:waypoint x="442" y="150"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F01_di" bpmnElement="AssessTrend_F01">
+        <di:waypoint x="98" y="188"/>
+        <di:waypoint x="145" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F02_di" bpmnElement="AssessTrend_F02">
+        <di:waypoint x="327" y="188"/>
+        <di:waypoint x="380" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F03_di" bpmnElement="AssessTrend_F03">
+        <di:waypoint x="566" y="188"/>
+        <di:waypoint x="602" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F04_di" bpmnElement="AssessTrend_F04">
+        <di:waypoint x="648" y="188"/>
+        <di:waypoint x="698" y="188"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="653" y="158" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F05_di" bpmnElement="AssessTrend_F05">
+        <di:waypoint x="625" y="211"/>
+        <di:waypoint x="625" y="314"/>
+        <di:waypoint x="788" y="314"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="647" y="279" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="AssessTrend_F06_di" bpmnElement="AssessTrend_F06">
+        <di:waypoint x="888" y="188"/>
+        <di:waypoint x="940" y="188"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Notify_diagram" name="Доставить уведомление">
+    <bpmndi:BPMNPlane id="Notify_plane" bpmnElement="Notify">
+      <bpmndi:BPMNShape id="NStart_di" bpmnElement="NStart">
+        <dc:Bounds x="63" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NCompose_di" bpmnElement="NCompose" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="145" y="152" width="178" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NSend_di" bpmnElement="NSend" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="377" y="152" width="178" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NFirst_di" bpmnElement="NFirst" isMarkerVisible="true">
+        <dc:Bounds x="594" y="167" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="535" y="116" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NRetry_di" bpmnElement="NRetry" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="691" y="284" width="182" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NMerge_di" bpmnElement="NMerge" isMarkerVisible="true">
+        <dc:Bounds x="917" y="167" width="46" height="46"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NSave_di" bpmnElement="NSave" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1004" y="152" width="177" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NEnd_di" bpmnElement="NEnd">
+        <dc:Bounds x="1232" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1177" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="NotificationRef_di" bpmnElement="NotificationRef">
+        <dc:Bounds x="333" y="83" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="284" y="52" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="NotificationRef_outAssoc_di" bpmnElement="NotificationRef_outAssoc">
+        <di:waypoint x="263" y="152"/>
+        <di:waypoint x="263" y="104"/>
+        <di:waypoint x="333" y="104"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="NotificationRef_inAssoc_di" bpmnElement="NotificationRef_inAssoc">
+        <di:waypoint x="367" y="104"/>
+        <di:waypoint x="436" y="104"/>
+        <di:waypoint x="436" y="152"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F01_di" bpmnElement="Notify_F01">
+        <di:waypoint x="99" y="190"/>
+        <di:waypoint x="145" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F02_di" bpmnElement="Notify_F02">
+        <di:waypoint x="323" y="190"/>
+        <di:waypoint x="377" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F03_di" bpmnElement="Notify_F03">
+        <di:waypoint x="555" y="190"/>
+        <di:waypoint x="594" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F04_di" bpmnElement="Notify_F04">
+        <di:waypoint x="640" y="190"/>
+        <di:waypoint x="917" y="190"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="665" y="160" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F05_di" bpmnElement="Notify_F05">
+        <di:waypoint x="617" y="213"/>
+        <di:waypoint x="617" y="322"/>
+        <di:waypoint x="691" y="322"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="629" y="262" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F06_di" bpmnElement="Notify_F06">
+        <di:waypoint x="873" y="322"/>
+        <di:waypoint x="940" y="322"/>
+        <di:waypoint x="940" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F07_di" bpmnElement="Notify_F07">
+        <di:waypoint x="963" y="190"/>
+        <di:waypoint x="1004" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Notify_F08_di" bpmnElement="Notify_F08">
+        <di:waypoint x="1181" y="190"/>
+        <di:waypoint x="1232" y="190"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Verify_diagram" name="Проверить репутационный сигнал">
+    <bpmndi:BPMNPlane id="Verify_plane" bpmnElement="Verify">
+      <bpmndi:BPMNShape id="VStart_di" bpmnElement="VStart">
+        <dc:Bounds x="66" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="11" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VFetch_di" bpmnElement="VFetch" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="145" y="152" width="181" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VSources_di" bpmnElement="VSources" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="380" y="152" width="176" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VCompare_di" bpmnElement="VCompare" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="603" y="152" width="179" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VDecide_di" bpmnElement="VDecide" isMarkerVisible="true">
+        <dc:Bounds x="819" y="167" width="46" height="46"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="760" y="116" width="164" height="45"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VCorrect_di" bpmnElement="VCorrect" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="915" y="279" width="192" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VMerge_di" bpmnElement="VMerge" isMarkerVisible="true">
+        <dc:Bounds x="1147" y="167" width="46" height="46"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VRecord_di" bpmnElement="VRecord" bioc:fill="#DFF4E9" bioc:stroke="#387A5B" color:background-color="#DFF4E9" color:border-color="#387A5B">
+        <dc:Bounds x="1231" y="152" width="179" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VSave_di" bpmnElement="VSave" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1464" y="152" width="180" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="VEnd_di" bpmnElement="VEnd">
+        <dc:Bounds x="1696" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1641" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ReadContextRef_di" bpmnElement="ReadContextRef">
+        <dc:Bounds x="336" y="83" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="287" y="52" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="ReadContextRef_outAssoc_di" bpmnElement="ReadContextRef_outAssoc">
+        <di:waypoint x="265" y="152"/>
+        <di:waypoint x="265" y="104"/>
+        <di:waypoint x="336" y="104"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="ReadContextRef_inAssoc_di" bpmnElement="ReadContextRef_inAssoc">
+        <di:waypoint x="370" y="104"/>
+        <di:waypoint x="438" y="104"/>
+        <di:waypoint x="438" y="152"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="DecisionRef_di" bpmnElement="DecisionRef">
+        <dc:Bounds x="1420" y="83" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1371" y="52" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="DecisionRef_outAssoc_di" bpmnElement="DecisionRef_outAssoc">
+        <di:waypoint x="1350" y="152"/>
+        <di:waypoint x="1350" y="104"/>
+        <di:waypoint x="1420" y="104"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DecisionRef_inAssoc_di" bpmnElement="DecisionRef_inAssoc">
+        <di:waypoint x="1454" y="104"/>
+        <di:waypoint x="1524" y="104"/>
+        <di:waypoint x="1524" y="152"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F01_di" bpmnElement="Verify_F01">
+        <di:waypoint x="102" y="190"/>
+        <di:waypoint x="145" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F02_di" bpmnElement="Verify_F02">
+        <di:waypoint x="326" y="190"/>
+        <di:waypoint x="380" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F03_di" bpmnElement="Verify_F03">
+        <di:waypoint x="556" y="190"/>
+        <di:waypoint x="603" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F04_di" bpmnElement="Verify_F04">
+        <di:waypoint x="782" y="190"/>
+        <di:waypoint x="819" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F05_di" bpmnElement="Verify_F05">
+        <di:waypoint x="842" y="213"/>
+        <di:waypoint x="842" y="317"/>
+        <di:waypoint x="915" y="317"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="871" y="284" width="30" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F06_di" bpmnElement="Verify_F06">
+        <di:waypoint x="865" y="190"/>
+        <di:waypoint x="1147" y="190"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="904" y="160" width="145" height="19"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F07_di" bpmnElement="Verify_F07">
+        <di:waypoint x="1107" y="317"/>
+        <di:waypoint x="1170" y="317"/>
+        <di:waypoint x="1170" y="213"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F08_di" bpmnElement="Verify_F08">
+        <di:waypoint x="1193" y="190"/>
+        <di:waypoint x="1231" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F09_di" bpmnElement="Verify_F09">
+        <di:waypoint x="1410" y="190"/>
+        <di:waypoint x="1464" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Verify_F10_di" bpmnElement="Verify_F10">
+        <di:waypoint x="1644" y="190"/>
+        <di:waypoint x="1696" y="190"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram id="Handle_diagram" name="Рассмотреть событие в ИБ">
+    <bpmndi:BPMNPlane id="Handle_plane" bpmnElement="Handle">
+      <bpmndi:BPMNShape id="HStart_di" bpmnElement="HStart">
+        <dc:Bounds x="63" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="8" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HOpen_di" bpmnElement="HOpen" bioc:fill="#FFF0D6" bioc:stroke="#8A6028" color:background-color="#FFF0D6" color:border-color="#8A6028">
+        <dc:Bounds x="141" y="152" width="181" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HFetch_di" bpmnElement="HFetch" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="370" y="152" width="181" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HAssess_di" bpmnElement="HAssess" bioc:fill="#FFF0D6" bioc:stroke="#8A6028" color:background-color="#FFF0D6" color:border-color="#8A6028">
+        <dc:Bounds x="599" y="152" width="182" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HDecide_di" bpmnElement="HDecide" bioc:fill="#FFF0D6" bioc:stroke="#8A6028" color:background-color="#FFF0D6" color:border-color="#8A6028">
+        <dc:Bounds x="828" y="152" width="181" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HRecord_di" bpmnElement="HRecord" bioc:fill="#FFF0D6" bioc:stroke="#8A6028" color:background-color="#FFF0D6" color:border-color="#8A6028">
+        <dc:Bounds x="1056" y="152" width="180" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HSave_di" bpmnElement="HSave" bioc:fill="#DDEEFF" bioc:stroke="#376B97" color:background-color="#DDEEFF" color:border-color="#376B97">
+        <dc:Bounds x="1290" y="152" width="179" height="76"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="HEnd_di" bpmnElement="HEnd">
+        <dc:Bounds x="1521" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1466" y="213" width="146" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IBFindingRef_di" bpmnElement="IBFindingRef">
+        <dc:Bounds x="1246" y="83" width="34" height="42"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1197" y="52" width="132" height="27"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="IBFindingRef_outAssoc_di" bpmnElement="IBFindingRef_outAssoc">
+        <di:waypoint x="1176" y="152"/>
+        <di:waypoint x="1176" y="104"/>
+        <di:waypoint x="1246" y="104"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="IBFindingRef_inAssoc_di" bpmnElement="IBFindingRef_inAssoc">
+        <di:waypoint x="1280" y="104"/>
+        <di:waypoint x="1349" y="104"/>
+        <di:waypoint x="1349" y="152"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F01_di" bpmnElement="Handle_F01">
+        <di:waypoint x="99" y="190"/>
+        <di:waypoint x="141" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F02_di" bpmnElement="Handle_F02">
+        <di:waypoint x="322" y="190"/>
+        <di:waypoint x="370" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F03_di" bpmnElement="Handle_F03">
+        <di:waypoint x="551" y="190"/>
+        <di:waypoint x="599" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F04_di" bpmnElement="Handle_F04">
+        <di:waypoint x="781" y="190"/>
+        <di:waypoint x="828" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F05_di" bpmnElement="Handle_F05">
+        <di:waypoint x="1009" y="190"/>
+        <di:waypoint x="1056" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F06_di" bpmnElement="Handle_F06">
+        <di:waypoint x="1236" y="190"/>
+        <di:waypoint x="1290" y="190"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Handle_F07_di" bpmnElement="Handle_F07">
+        <di:waypoint x="1469" y="190"/>
+        <di:waypoint x="1521" y="190"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
