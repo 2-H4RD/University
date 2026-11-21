@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+verification/avd/
+verification/avd-home/

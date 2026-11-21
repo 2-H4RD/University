@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="4" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-23T19:25:31" hostname="localhost">
+  <testsuite name="ru.mirea.ZubarevVS.lesson8.uitests.LabSuite" tests="4" failures="0" errors="0" skipped="0" time="28.381" timestamp="2026-10-23T19:25:31" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="mapkitConfigurationVisible" classname="ru.mirea.ZubarevVS.lesson8.uitests.LabSuite" time="5.371" />
+    <testcase name="mireaPlacesListAndCustomPlace" classname="ru.mirea.ZubarevVS.lesson8.uitests.LabSuite" time="10.146" />
+    <testcase name="osmGpsAndRealRoadRoutes" classname="ru.mirea.ZubarevVS.lesson8.uitests.LabSuite" time="10.662" />
+    <testcase name="osmMapControls" classname="ru.mirea.ZubarevVS.lesson8.uitests.LabSuite" time="2.202" />
+  </testsuite>
+</testsuites>

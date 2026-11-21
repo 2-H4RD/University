@@ -1,0 +1,73 @@
+[
+  {
+    "module": "YandexMaps",
+    "applicationId": "ru.mirea.ZubarevVS.lesson8.yandexmaps",
+    "path": "YandexMaps/build/outputs/apk/debug/YandexMaps-debug.apk",
+    "bytes": 149308696,
+    "sha256": "9d1c143c352016b345aa91c4a68ee3a200529b583632aeecb1beecc3649adec0",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 8,
+      "packagePath": "/data/app/~~ZhDjqB_S_zs9pLZRRZ8Cgg==/ru.mirea.ZubarevVS.lesson8.yandexmaps-hh05ey1eYSp8VlJK33BSnQ==/base.apk",
+      "installedSha256": "9d1c143c352016b345aa91c4a68ee3a200529b583632aeecb1beecc3649adec0",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "YandexDriver",
+    "applicationId": "ru.mirea.ZubarevVS.lesson8.yandexdriver",
+    "path": "YandexDriver/build/outputs/apk/debug/YandexDriver-debug.apk",
+    "bytes": 149334597,
+    "sha256": "ad53fd666e493c7b8c2fc60e91ecd57c11efe2dd0ebc4ebf06faf6abc643b9c3",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 8,
+      "packagePath": "/data/app/~~qeAz8PIIhqn4upflD0kwew==/ru.mirea.ZubarevVS.lesson8.yandexdriver-T7zsum_5vS4GuV1c5lP-Uw==/base.apk",
+      "installedSha256": "ad53fd666e493c7b8c2fc60e91ecd57c11efe2dd0ebc4ebf06faf6abc643b9c3",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "OSMMaps",
+    "applicationId": "ru.mirea.ZubarevVS.lesson8.osmmaps",
+    "path": "OSMMaps/build/outputs/apk/debug/OSMMaps-debug.apk",
+    "bytes": 7356903,
+    "sha256": "22c09ca1a7bbe70a40f64572801c083288c317600af9339dcca90b930557d961",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 8,
+      "packagePath": "/data/app/~~yXgMyvXB8ENdwxS0ER-XVA==/ru.mirea.ZubarevVS.lesson8.osmmaps-ibG1LLS8xeg2i5iaVeyfNQ==/base.apk",
+      "installedSha256": "22c09ca1a7bbe70a40f64572801c083288c317600af9339dcca90b930557d961",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "MireaProject",
+    "applicationId": "ru.mirea.ZubarevVS.mireaproject",
+    "path": "MireaProject/app/build/outputs/apk/debug/MireaProject-debug.apk",
+    "bytes": 9940848,
+    "sha256": "ce88cf82d4754f282b1fd3ed478fe7ad2e1ae3b1a50e0f2c30f8977feae40281",
+    "finalInstallation": {
+      "device": "emulator-5554 / Pixel_9 / API 35",
+      "checkedAt": "2026-10-24T09:01:24.990592+03:00",
+      "finalVersionFromLesson": 8,
+      "packagePath": "/data/app/~~veh8xoqByw5SAKvMleISSQ==/ru.mirea.ZubarevVS.mireaproject-Hn-vMWhDH1k14o5nlXAVSA==/base.apk",
+      "installedSha256": "ce88cf82d4754f282b1fd3ed478fe7ad2e1ae3b1a50e0f2c30f8977feae40281",
+      "matchesFinalApk": true
+    }
+  },
+  {
+    "module": "UITests",
+    "applicationId": "ru.mirea.ZubarevVS.lesson8.uitests",
+    "path": "UITests/build/outputs/apk/debug/UITests-debug.apk",
+    "bytes": 465022,
+    "sha256": "6be62a9c639d32e0850b0566047697826ae85f680e68887c821e718d3f591bc3",
+    "finalInstallation": {
+      "installed": false,
+      "reason": "UITests APK удалён штатным cleanup Android Gradle Plugin; это отдельная проверочная инфраструктура."
+    }
+  }
+]

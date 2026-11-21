@@ -1,0 +1,5 @@
+<resources>
+    <string name="camera_take_text">Сделать фотографию</string>
+    <string name="camera_photo_text"></string>
+    <string name="camera_status_text">Нажмите на изображение или кнопку</string>
+</resources>

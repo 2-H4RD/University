@@ -1,0 +1,18 @@
+<resources>
+    <string name="locate_text">Моё местоположение</string>
+    <string name="route_text">Построить маршруты</string>
+    <string name="select_start">Выбрать старт</string>
+    <string name="select_end">Выбрать финиш</string>
+    <string name="route_start">Старт A</string>
+    <string name="route_end">Финиш B</string>
+    <string name="pick_start">Удерживайте на карте выбранную точку старта A</string>
+    <string name="pick_end">Удерживайте на карте выбранную точку финиша B</string>
+    <string name="route_gps">местоположение (GPS)</string>
+    <string name="route_example">Парк Горького (пример)</string>
+    <string name="route_points">A: %1$s\nB: %2$s\n© OpenStreetMap contributors</string>
+    <string name="route_needs_start">Сначала получите местоположение устройства или выберите старт на карте</string>
+    <string name="route_same_points">Выберите разные точки старта и финиша</string>
+    <string name="route_empty">Сервис не вернул маршруты</string>
+    <string name="status_text">© OpenStreetMap contributors</string>
+    <string name="mapHost_text"></string>
+</resources>

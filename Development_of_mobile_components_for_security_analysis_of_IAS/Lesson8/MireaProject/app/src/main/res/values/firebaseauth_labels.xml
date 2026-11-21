@@ -1,0 +1,12 @@
+<resources>
+    <string name="firebaseauth_mode_text">Firebase Email/Password</string>
+    <string name="firebaseauth_email_text">Email</string>
+    <string name="firebaseauth_password_text">Пароль (не менее 6 символов)</string>
+    <string name="firebaseauth_signIn_text">Войти</string>
+    <string name="firebaseauth_register_text">Создать пользователя</string>
+    <string name="firebaseauth_verify_text">Отправить письмо проверки</string>
+    <string name="firebaseauth_reload_text">Обновить статус почты</string>
+    <string name="firebaseauth_continueButton_text">Продолжить</string>
+    <string name="firebaseauth_signOut_text">Выйти</string>
+    <string name="firebaseauth_status_text"></string>
+</resources>

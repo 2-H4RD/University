@@ -1,0 +1,20 @@
+<!--
+  ПОДРОБНЫЙ РАЗБОР РЕСУРСА themes.xml.
+  strings: name становится R.string.name, значение - текст getString/setText.
+  Формат %1$s/%2$s подставляет строки, %1$d - число; dp задаёт отступы, sp - текст.
+  style/theme: parent наследует оформление, item переопределяет конкретный атрибут.
+  values-night автоматически выбирается при тёмной теме. Цвета темы используются через ?attr.
+-->
+<resources>
+    <!-- Material 3 использует семантические цвета и скругления Material You. -->
+    <style name="Theme.Lesson3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#365E9D</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D8E2FF</item>
+        <item name="colorOnPrimaryContainer">#001A41</item>
+        <item name="colorSecondaryContainer">#DCE2F0</item>
+        <item name="colorOnSecondaryContainer">#151C2B</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

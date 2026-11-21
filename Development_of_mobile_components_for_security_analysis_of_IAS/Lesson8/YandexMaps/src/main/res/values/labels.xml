@@ -1,0 +1,5 @@
+<resources>
+    <string name="locate_text">Моё местоположение</string>
+    <string name="status_text"></string>
+    <string name="mapHost_text"></string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Theme.Lab" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#355E74</item>
+        <item name="colorSecondary">#486B52</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

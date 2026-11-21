@@ -1,0 +1,9 @@
+<resources>
+    <string name="locate_text">Моё местоположение</string>
+    <string name="status_text"></string>
+    <string name="destination_text">Заведение: название, адрес, описание</string>
+    <string name="latitude_text">Широта заведения</string>
+    <string name="longitude_text">Долгота заведения</string>
+    <string name="route_text">Маршруты от устройства до заведения</string>
+    <string name="mapHost_text"></string>
+</resources>

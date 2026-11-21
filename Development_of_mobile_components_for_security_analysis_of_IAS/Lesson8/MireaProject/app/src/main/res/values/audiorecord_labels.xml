@@ -1,0 +1,5 @@
+<resources>
+    <string name="audiorecord_record_text">Начать запись · №5 · БИСО-02-22</string>
+    <string name="audiorecord_play_text">Воспроизвести</string>
+    <string name="audiorecord_status_text">Запишите голосовую заметку</string>
+</resources>
